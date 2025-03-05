@@ -1,0 +1,2 @@
+@E: CS153 :"D:\files\fpga\rs485\hdl\uart_rx.v":168:40:168:40|Can't mix blocking and non-blocking assignments to a variable
+

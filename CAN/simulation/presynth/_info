@@ -1,0 +1,145 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/CAN/simulation
+vcan_level_bit
+Z1 !s110 1740894099
+!i10b 1
+!s100 M0bPDIHaMK2MoOfZgfO]g3
+IOMIPZ<WA0Fg:k<[H_2_kL1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1740298947
+8D:/files/fpga/CAN/hdl/can_level_bit.v
+FD:/files/fpga/CAN/hdl/can_level_bit.v
+Z4 L0 10
+Z5 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z6 !s108 1740894099.000000
+!s107 D:/files/fpga/CAN/hdl/can_level_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/CAN/hdl/can_level_bit.v|
+!s101 -O0
+!i113 1
+Z7 o-vlog01compat -work presynth -O0
+Z8 tCvgOpt 0
+vcan_level_packet
+R1
+!i10b 1
+!s100 GW?S8]9zE28YEfY74Yf_d2
+IGLDInQI>;5C@XLT@ZkmH12
+R2
+R0
+w1740811746
+8D:/files/fpga/CAN/hdl/can_level_packet.v
+FD:/files/fpga/CAN/hdl/can_level_packet.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/CAN/hdl/can_level_packet.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/CAN/hdl/can_level_packet.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vcan_top
+R1
+!i10b 1
+!s100 @9A^4<DUVV0>B@EOiom1a3
+IWe=K]LzWF:82]`iCnJ1Ul1
+R2
+R0
+R3
+8D:/files/fpga/CAN/hdl/can_top.v
+FD:/files/fpga/CAN/hdl/can_top.v
+Z9 L0 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/CAN/hdl/can_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/CAN/hdl/can_top.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vtb_can_phy
+R1
+!i10b 1
+!s100 MGTjmU8n:XRm?UX5FA[0^1
+IFHm[l_VhQ5BnYbjh@IGn73
+R2
+R0
+Z10 w1740818489
+Z11 8D:/files/fpga/CAN/stimulus/tb_can_top.v
+Z12 FD:/files/fpga/CAN/stimulus/tb_can_top.v
+L0 351
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 D:/files/fpga/CAN/stimulus/tb_can_top.v|
+Z14 !s90 -reportprogress|300|+incdir+D:/files/fpga/CAN/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/CAN/stimulus/tb_can_top.v|
+!s101 -O0
+!i113 1
+R7
+Z15 !s92 +incdir+D:/files/fpga/CAN/stimulus -vlog01compat -work presynth -O0
+R8
+vtb_can_top
+R1
+!i10b 1
+!s100 c4;2BQ@T`OVADURc`b8lJ0
+ImOJ@@0a[F8K70nmo5G2<J0
+R2
+R0
+R10
+R11
+R12
+R9
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!s101 -O0
+!i113 1
+R7
+R15
+R8
+vtb_gen_clkrst
+R1
+!i10b 1
+!s100 `Z`C5WT8DB]mi^Cd@fnfI0
+IA_Ne6GekJ;MaQ:M8=i1kD2
+R2
+R0
+R10
+R11
+R12
+L0 329
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!s101 -O0
+!i113 1
+R7
+R15
+R8

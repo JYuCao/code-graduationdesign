@@ -1,0 +1,16 @@
+Project Name: eeprom
+Location: D:\files\fpga\eeprom
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A3P250-VQ100
+Family         : ProASIC3
+Die            : A3P250
+Package        : 100 VQFP
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM

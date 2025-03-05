@@ -1,0 +1,122 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/flash_test/simulation
+vflash_a
+Z1 !s110 1737975038
+!i10b 1
+!s100 mhG]mIUedD5a<=U>j]Bn30
+IZ;UA7J=3@AQnY^:Dgmg8c3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1737350643
+8D:/files/fpga/flash_test/hdl/flash_a.v
+FD:/files/fpga/flash_test/hdl/flash_a.v
+L0 34
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1737975038.000000
+!s107 D:/files/fpga/flash_test/hdl/flash_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/hdl/flash_a.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vflash_b
+R1
+!i10b 1
+!s100 o<_HX^1KGR7i]jNc:Ug3c1
+I24C81j1fdZlO:aM4`C0Q[3
+R2
+R0
+w1737972386
+8D:/files/fpga/flash_test/hdl/flash_b.v
+FD:/files/fpga/flash_test/hdl/flash_b.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/flash_test/hdl/flash_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/hdl/flash_b.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vflash_c
+R1
+!i10b 1
+!s100 9dLDYm?hBizo]5aYC_=WX2
+I]e5eYWcfXfo@W4CiW4QT>0
+R2
+R0
+w1737974754
+8D:/files/fpga/flash_test/hdl/flash_c.v
+FD:/files/fpga/flash_test/hdl/flash_c.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/flash_test/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/hdl/flash_c.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vtb_flash_c
+R1
+!i10b 1
+!s100 7cA5bMbn^9TH:DG[dFCD:3
+ICLPhYIYm?EEP0gNSDIdIK3
+R2
+R0
+w1737974943
+8D:/files/fpga/flash_test/stimulus/tb_flashc.v
+FD:/files/fpga/flash_test/stimulus/tb_flashc.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/flash_test/stimulus/tb_flashc.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flashc.v|
+!s101 -O0
+!i113 1
+R5
+Z7 !s92 +incdir+D:/files/fpga/flash_test/stimulus -vlog01compat -work presynth -O0
+R6
+vtf
+!s110 1737973976
+!i10b 1
+!s100 e1X:89`[2Q;>@bh3EZo_70
+If?o[@U_2?VdA5EOhdWnKe2
+R2
+R0
+w1737973907
+8D:/files/fpga/flash_test/stimulus/test_tf.v
+FD:/files/fpga/flash_test/stimulus/test_tf.v
+L0 33
+R3
+r1
+!s85 0
+31
+!s108 1737973976.000000
+!s107 D:/files/fpga/flash_test/stimulus/test_tf.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/test_tf.v|
+!s101 -O0
+!i113 1
+R5
+R7
+R6

@@ -1,0 +1,144 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/spi/simulation
+vspi_contrl_tb
+Z1 !s110 1736741350
+!i10b 1
+!s100 i<7TIGklbX>0bMeID1?_<1
+IElcAlXW1^oK0UgaCGVI6Y0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1736741319
+8D:/files/fpga/spi/stimulus/tb_spi.v
+FD:/files/fpga/spi/stimulus/tb_spi.v
+L0 5
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1736741350.000000
+!s107 D:/files/fpga/spi/stimulus/tb_spi.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/spi/hdl|+incdir+D:/files/fpga/spi/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/spi/stimulus/tb_spi.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+!s92 +incdir+D:/files/fpga/spi/hdl +incdir+D:/files/fpga/spi/stimulus -vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vspi_master
+R1
+!i10b 1
+!s100 id4G0=kCN6nk;^`Pf^9f`3
+IG_=>c<Q2^lJkY7Z[AoV^`1
+R2
+R0
+w1736741209
+8D:/files/fpga/spi/hdl/spi_master.v
+FD:/files/fpga/spi/hdl/spi_master.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/spi/hdl/spi_master.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/spi/hdl/spi_master.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vspi_module
+Z7 !s110 1736741983
+!i10b 1
+!s100 XW0Fg4kNRgV;8a3c[XGX;0
+I9a7FChdZ]?SkUI[C5_B3I3
+R2
+R0
+w1736741902
+8D:/files/fpga/spi/hdl/spi_module.v
+FD:/files/fpga/spi/hdl/spi_module.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z8 !s108 1736741983.000000
+!s107 D:/files/fpga/spi/hdl/spi_module.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/spi/hdl/spi_module.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vspi_salve
+!s110 1736739629
+!i10b 1
+!s100 ej0UFd[aaYE>[lPoVoD>S0
+IagIHd7F9AY?FFjSa]Fn6I3
+R2
+R0
+w1736738354
+Z9 8D:/files/fpga/spi/hdl/spi_slave.v
+Z10 FD:/files/fpga/spi/hdl/spi_slave.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1736739629.000000
+Z11 !s107 D:/files/fpga/spi/hdl/spi_slave.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/spi/hdl/spi_slave.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vspi_slave
+R1
+!i10b 1
+!s100 iJd0bR[9laFEfoMB59nK`2
+I3JG<ZD8fOldgg6QlC8WzA1
+R2
+R0
+w1736741314
+R9
+R10
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R11
+R12
+!s101 -O0
+!i113 1
+R5
+R6
+vtb_spi_module
+R7
+!i10b 1
+!s100 ;X]lJGTF^0WRK[5eF^jEk3
+ICm6Fe9Pz^m]7maE_?7:Mf0
+R2
+R0
+w1736741958
+8D:/files/fpga/spi/stimulus/tb_spi_module.v
+FD:/files/fpga/spi/stimulus/tb_spi_module.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/files/fpga/spi/stimulus/tb_spi_module.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/spi/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/spi/stimulus/tb_spi_module.v|
+!s101 -O0
+!i113 1
+R5
+!s92 +incdir+D:/files/fpga/spi/stimulus -vlog01compat -work presynth -O0
+R6

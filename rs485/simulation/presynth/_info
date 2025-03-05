@@ -1,0 +1,168 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/rs485/simulation
+vtb_uart_rx
+!s110 1736669852
+!i10b 1
+!s100 5^5`5z=_Pa1SoCkkecAdm3
+I;hGWKQ>mTGD5jQ;o@bRh00
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1736500154
+8D:/files/fpga/rs485/stimulus/tb_uart_rx.v
+FD:/files/fpga/rs485/stimulus/tb_uart_rx.v
+Z2 L0 30
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+!s108 1736669852.000000
+!s107 D:/files/fpga/rs485/stimulus/tb_uart_rx.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_rx.v|
+!s101 -O0
+!i113 1
+Z4 o-vlog01compat -work presynth -O0
+Z5 !s92 +incdir+D:/files/fpga/rs485/stimulus -vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vtb_uart_top
+Z7 !s110 1736670267
+!i10b 1
+!s100 0R[kbL<RnZo>24B4c1K2X2
+IgbdGY^d@7N]H:N`K7=a<W1
+R1
+R0
+w1736509573
+8D:/files/fpga/rs485/stimulus/tb_uart_top.v
+FD:/files/fpga/rs485/stimulus/tb_uart_top.v
+R2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1736670267.000000
+!s107 D:/files/fpga/rs485/stimulus/tb_uart_top.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_top.v|
+!s101 -O0
+!i113 1
+R4
+R5
+R6
+vtb_uart_tx
+!s110 1736669988
+!i10b 1
+!s100 bZh?jY?:LzD>ZRLJo1PD@2
+IRKf=d6QKNd9Dk1Ih5kbkg0
+R1
+R0
+w1736498264
+Z9 8D:/files/fpga/rs485/stimulus/tb_uart_tx.v
+Z10 FD:/files/fpga/rs485/stimulus/tb_uart_tx.v
+R2
+R3
+r1
+!s85 0
+31
+!s108 1736669988.000000
+Z11 !s107 D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+Z12 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+!s101 -O0
+!i113 1
+R4
+R5
+R6
+vuart_byte_tx_tb
+!s110 1736490388
+!i10b 1
+!s100 JHJ>edYKK[TlMl`G_?kA20
+IJK4;fkUXV75PcFZ]2i50M3
+R1
+R0
+w1736490361
+R9
+R10
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1736490388.000000
+R11
+R12
+!s101 -O0
+!i113 1
+R4
+R5
+R6
+vuart_rx
+R7
+!i10b 1
+!s100 F_:FB1k5eP[mNHAP]cjd^2
+Ieg20N]:]cI3U]Q@_kkGGO3
+R1
+R0
+w1736497627
+8D:/files/fpga/rs485/hdl/uart_rx.v
+FD:/files/fpga/rs485/hdl/uart_rx.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/files/fpga/rs485/hdl/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_rx.v|
+!s101 -O0
+!i113 1
+R4
+R6
+vuart_top
+R7
+!i10b 1
+!s100 0HBlze[?Ah75jYRH9h;6b3
+I8PJmTPASU>j;3k:Rm]J6O1
+R1
+R0
+w1736510433
+8D:/files/fpga/rs485/hdl/uart_top.v
+FD:/files/fpga/rs485/hdl/uart_top.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/files/fpga/rs485/hdl/uart_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_top.v|
+!s101 -O0
+!i113 1
+R4
+R6
+vuart_tx
+R7
+!i10b 1
+!s100 =]O=;__of=3iC5a[EK_?L2
+I5d;;d5KockT[HlnGBc>8B1
+R1
+R0
+w1736415058
+8D:/files/fpga/rs485/hdl/uart_tx.v
+FD:/files/fpga/rs485/hdl/uart_tx.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 D:/files/fpga/rs485/hdl/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_tx.v|
+!s101 -O0
+!i113 1
+R4
+R6

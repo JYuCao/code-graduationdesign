@@ -1,0 +1,8 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  D:\files\fpga\rs485\synthesis\synwork\uart_rx_comp.srs  -hdllog  D:\files\fpga\rs485\synthesis\synlog\uart_rx_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I D:\files\fpga\rs485\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -encrypt  -pro  -dmgen  D:\files\fpga\rs485\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work D:\files\fpga\rs485\hdl\uart_rx.v 
+rc:2 success:0 runtime:0
+file:D:\files\fpga\rs485\synthesis\synwork\uart_rx_comp.srs|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\rs485\synthesis\synlog\uart_rx_compiler.srr|io:o|time:1736488185|size:2219|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\rs485\hdl\uart_rx.v|io:i|time:1736414340|size:6315|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479348364|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479348568|size:1973248|exec:1
