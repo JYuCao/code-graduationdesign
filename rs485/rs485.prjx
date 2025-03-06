@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\files\fpga\rs485"
+KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,143 +43,153 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\uart_rx.adb,adb"
 STATE="ood"
-TIME="1741141428"
+TIME="1741257295"
 SIZE="147968"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx.ide_des,ide_des"
 STATE="utd"
-TIME="1741141428"
+TIME="1741257295"
 SIZE="931"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_compile_log.rpt,log"
 STATE="utd"
-TIME="1741141414"
+TIME="1741257295"
 SIZE="7901"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1741141428"
+TIME="1741257295"
 SIZE="2422"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.adb,adb"
-STATE="utd"
-TIME="1741237546"
-SIZE="144896"
+STATE="ood"
+TIME="1741258718"
+SIZE="340992"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.ide_des,ide_des"
 STATE="utd"
-TIME="1741235962"
-SIZE="179"
+TIME="1741258718"
+SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_compile_log.rpt,log"
 STATE="utd"
-TIME="1741237546"
-SIZE="8366"
+TIME="1741258683"
+SIZE="8420"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_fp\projectData\uart_top.pdb,pdb"
+STATE="utd"
+TIME="1741258762"
+SIZE="53629"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_fp\uart_top.pro,pro"
+STATE="utd"
+TIME="1741258762"
+SIZE="2435"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_tx.ide_des,ide_des"
 STATE="utd"
-TIME="1736394986"
+TIME="1741257295"
 SIZE="178"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1741143374"
-SIZE="6169"
+TIME="1741258024"
+SIZE="6693"
 ENDFILE
 VALUE "<project>\hdl\uart_top.v,hdl"
 STATE="utd"
-TIME="1736510433"
-SIZE="899"
+TIME="1741258079"
+SIZE="909"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1741142529"
-SIZE="3236"
+TIME="1741258037"
+SIZE="3764"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1741155268"
-SIZE="784"
+TIME="1741257295"
+SIZE="772"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_rx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741143411"
+TIME="1741257295"
 SIZE="2332"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_top_presynth_simulation.log,log"
 STATE="utd"
-TIME="1736670289"
-SIZE="3131"
+TIME="1741259442"
+SIZE="68"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_tx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1736670075"
+TIME="1741257295"
 SIZE="2333"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_rx.v,tb_hdl"
 STATE="utd"
-TIME="1741235245"
+TIME="1741257295"
 SIZE="3296"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
 STATE="utd"
-TIME="1741143278"
-SIZE="2968"
+TIME="1741259419"
+SIZE="2907"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_tx.v,tb_hdl"
 STATE="utd"
-TIME="1741143277"
+TIME="1741257295"
 SIZE="2442"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback.so,so"
 STATE="utd"
-TIME="1741142375"
+TIME="1741257295"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback_syn.prj,prj"
 STATE="utd"
-TIME="1741142375"
-SIZE="1795"
+TIME="1741257498"
+SIZE="1927"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.edn,syn_edn"
 STATE="ood"
-TIME="1741140658"
+TIME="1741257295"
 SIZE="136896"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.so,so"
 STATE="utd"
-TIME="1741140658"
+TIME="1741257295"
 SIZE="203"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1741140658"
+TIME="1741257295"
 SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_syn.prj,prj"
 STATE="utd"
-TIME="1741140658"
-SIZE="1665"
+TIME="1741257498"
+SIZE="0"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.edn,syn_edn"
 STATE="utd"
-TIME="1741236160"
-SIZE="182785"
+TIME="1741258671"
+SIZE="225572"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.so,so"
 STATE="utd"
-TIME="1741236160"
-SIZE="205"
+TIME="1741258671"
+SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1741236160"
+TIME="1741258671"
 SIZE="405"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_syn.prj,prj"
 STATE="utd"
-TIME="1741236160"
-SIZE="1779"
+TIME="1741258672"
+SIZE="1911"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -199,10 +209,6 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
-ENDLIST
-LIST PinReports
-VALUE "<project>\designer\impl1\uart_top_report_pin_byname.txt,log"
-VALUE "<project>\designer\impl1\uart_top_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -337,9 +343,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Compile:uart_top_compile_log.rpt
+ReportsCurrentItem;Synthesize:uart_top.areasrr
 StartPage;StartPage;0
-HDL;stimulus\tb_uart_rx.v;0
+HDL;hdl\uart_rx.v;0
+HDL;hdl\uart_tx.v;0
+HDL;hdl\uart_top.v;0
 HDL;stimulus\tb_uart_top.v;0
 ACTIVEVIEW;Reports
 ENDLIST

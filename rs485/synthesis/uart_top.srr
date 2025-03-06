@@ -1,9 +1,9 @@
 #Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
 #install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
 #OS: Windows 8 6.2
-#Hostname: DESKTOP-ONDGHL5
+#Hostname: DESKTOP-T3Q272P
 
-# Thu Mar 06 12:42:36 2025
+# Thu Mar 06 19:14:43 2025
 
 #Implementation: synthesis
 
@@ -20,45 +20,46 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"D:\files\fpga\rs485\hdl\uart_rx.v" (library work)
-@I::"D:\files\fpga\rs485\hdl\uart_tx.v" (library work)
-@I::"D:\files\fpga\rs485\hdl\uart_top.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v" (library work)
 Verilog syntax check successful!
+
+Compiler output is up to date.  No re-compile necessary
+
 Selecting top level module uart_top
-@N: CG364 :"D:\files\fpga\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
 
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":103:23:103:29|Removing redundant assignment.
-@N: CG364 :"D:\files\fpga\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
 
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":109:23:109:29|Removing redundant assignment.
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":172:37:172:45|Removing redundant assignment.
-@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":194:26:194:35|Removing redundant assignment.
-@N: CG364 :"D:\files\fpga\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":124:23:124:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":187:37:187:45|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":209:26:209:35|Removing redundant assignment.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
 
-@W: CG360 :"D:\files\fpga\rs485\hdl\uart_top.v":21:11:21:14|Removing wire data, as there is no assignment to it.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[15] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[14] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[13] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[12] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[11] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[10] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[9] is always 0.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Pruning register bits 15 to 9 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[15] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[14] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[13] is always 0.
-@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[0] is always 0.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Pruning register bits 15 to 13 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL260 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Pruning register bit 0 of bps_DR[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 12:42:37 2025
+# Thu Mar 06 19:14:43 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -69,7 +70,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 12:42:37 2025
+# Thu Mar 06 19:14:43 2025
 
 ###########################################################]
 @END
@@ -79,44 +80,45 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 12:42:37 2025
+# Thu Mar 06 19:14:43 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
 @N|Running in 64-bit mode
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synwork\uart_top_comp.srs changed - recompiling
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 68MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 12:42:38 2025
+# Thu Mar 06 19:14:44 2025
 
 ###########################################################]
 Pre-mapping Report
 
-# Thu Mar 06 12:42:39 2025
+# Thu Mar 06 19:14:44 2025
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 Product Version L-2016.09M-2
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @A: MF827 |No constraint file specified.
-@L: D:\files\fpga\rs485\synthesis\uart_top_scck.rpt 
-Printing clock  summary report in "D:\files\fpga\rs485\synthesis\uart_top_scck.rpt" file 
+@L: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_scck.rpt 
+Printing clock  summary report in "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 102MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
 
-@N: BN362 :"d:\files\fpga\rs485\hdl\uart_tx.v":105:1:105:6|Removing sequential instance Tx_Done (in view: work.uart_tx(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":120:1:120:6|Removing sequential instance Tx_Done (in view: work.uart_tx(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
 
 
 
@@ -126,46 +128,46 @@ Clock Summary
 Start                Requested     Requested     Clock        Clock                   Clock
 Clock                Frequency     Period        Type         Group                   Load 
 -------------------------------------------------------------------------------------------
-uart_top|sys_clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     118  
+uart_top|sys_clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     155  
 ===========================================================================================
 
-@W: MT530 :"d:\files\fpga\rs485\hdl\uart_tx.v":95:1:95:6|Found inferred clock uart_top|sys_clk which controls 118 sequential elements including uart_byte_tx.bps_cnt[3:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":110:1:110:6|Found inferred clock uart_top|sys_clk which controls 155 sequential elements including uart_byte_tx.bps_cnt[24:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file D:\files\fpga\rs485\synthesis\uart_top.sap.
+@N: BN225 |Writing default property annotation file C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
 
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 109MB)
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 109MB)
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 24MB peak: 110MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 06 12:42:39 2025
+# Thu Mar 06 19:14:45 2025
 
 ###########################################################]
 Map & Optimize Report
 
-# Thu Mar 06 12:42:39 2025
+# Thu Mar 06 19:14:45 2025
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 Product Version L-2016.09M-2
 
-Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
 
 
 
@@ -178,72 +180,87 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 108MB peak: 110MB)
 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_tx.v":73:1:73:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[7\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[6\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[5\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[4\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[3\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[2\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[1\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[0\][2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance START_BIT[2:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":79:1:79:6|Found counter in view:work.uart_rx(verilog) instance div_cnt[15:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":88:1:88:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Sequential instance uart_byte_tx.bps_DR[11] is reduced to a combinational gate by constant propagation.
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[7\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[6\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[5\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[4\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[3\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[2\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[1\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance r_data_byte\[0\][2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":148:1:148:6|Found counter in view:work.uart_rx(verilog) instance START_BIT[2:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":94:1:94:6|Found counter in view:work.uart_rx(verilog) instance div_cnt[15:0] 
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Sequential instance uart_byte_rx.bps_DR[6] is reduced to a combinational gate by constant propagation.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
 
 
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 115MB)
-
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[9] because it is equivalent to instance uart_byte_rx.bps_DR[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 115MB)
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 116MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 116MB peak: 116MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
-
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[12] because it is equivalent to instance uart_byte_rx.bps_DR[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[10] because it is equivalent to instance uart_byte_rx.bps_DR[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[6] because it is equivalent to instance uart_byte_rx.bps_DR[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[11] because it is equivalent to instance uart_byte_rx.bps_DR[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[8] because it is equivalent to instance uart_byte_rx.bps_DR[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"d:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Removing sequential instance uart_byte_tx.bps_DR[7] because it is equivalent to instance uart_byte_rx.bps_DR[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
 
 
 High Fanout Net Report
 **********************
 
-Driver Instance / Pin Name     Fanout, notes                   
----------------------------------------------------------------
-sys_rst_n_pad / Y              111 : 111 asynchronous set/reset
-===============================================================
+Driver Instance / Pin Name                     Fanout, notes                   
+-------------------------------------------------------------------------------
+sys_rst_n_pad / Y                              135 : 135 asynchronous set/reset
+uart_byte_rx.r_data_byte[7]_0_sqmuxa_x / Y     28                              
+===============================================================================
 
 @N: FP130 |Promoting Net sys_rst_n_c on CLKBUF  sys_rst_n_pad 
 @N: FP130 |Promoting Net sys_clk_c on CLKBUF  sys_clk_pad 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
+Replicating Combinational Instance uart_byte_rx.r_data_byte[7]_0_sqmuxa_x, fanout 28 segments 2
 
 Added 0 Buffers
-Added 0 Cells via replication
+Added 1 Cells via replication
 	Added 0 Sequential Cells via replication
-	Added 0 Combinational Cells via replication
+	Added 1 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 
 
@@ -253,39 +270,39 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-1 non-gated/non-generated clock tree(s) driving 111 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 135 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=============================== Non-Gated/Non-Generated Clocks ===============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance       
-----------------------------------------------------------------------------------------------
-@K:CKID0001       sys_clk             port                   111        uart_byte_rx.bps_DR[8]
-==============================================================================================
+================================ Non-Gated/Non-Generated Clocks ================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance         
+------------------------------------------------------------------------------------------------
+@K:CKID0001       sys_clk             port                   135        uart_byte_rx.bps_cnt[24]
+================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
-Writing Analyst data base D:\files\fpga\rs485\synthesis\synwork\uart_top_m.srm
+Writing Analyst data base C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synwork\uart_top_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-2
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 114MB peak: 117MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 @W: MT420 |Found inferred clock uart_top|sys_clk with period 10.00ns. Please declare a user-defined clock on object "p:sys_clk"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Mar 06 12:42:40 2025
+# Timing Report written on Thu Mar 06 19:14:47 2025
 #
 
 
@@ -307,13 +324,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -1.858
+Worst slack in design: -10.266
 
-                     Requested     Estimated     Requested     Estimated                Clock        Clock              
-Starting Clock       Frequency     Frequency     Period        Period        Slack      Type         Group              
-------------------------------------------------------------------------------------------------------------------------
-uart_top|sys_clk     100.0 MHz     84.3 MHz      10.000        11.858        -1.858     inferred     Inferred_clkgroup_0
-========================================================================================================================
+                     Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock       Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------
+uart_top|sys_clk     100.0 MHz     49.3 MHz      10.000        20.266        -10.266     inferred     Inferred_clkgroup_0
+=========================================================================================================================
 
 
 
@@ -322,12 +339,12 @@ uart_top|sys_clk     100.0 MHz     84.3 MHz      10.000        11.858        -1.
 Clock Relationships
 *******************
 
-Clocks                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
----------------------------------------------------------------------------------------------------------------------------
-Starting          Ending            |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
----------------------------------------------------------------------------------------------------------------------------
-uart_top|sys_clk  uart_top|sys_clk  |  10.000      -1.858  |  No paths    -      |  No paths    -      |  No paths    -    
-===========================================================================================================================
+Clocks                              |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------
+Starting          Ending            |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------
+uart_top|sys_clk  uart_top|sys_clk  |  10.000      -10.266  |  No paths    -      |  No paths    -      |  No paths    -    
+============================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -349,41 +366,41 @@ Detailed Report for Clock: uart_top|sys_clk
 Starting Points with Worst Slack
 ********************************
 
-                            Starting                                               Arrival           
-Instance                    Reference            Type       Pin     Net            Time        Slack 
-                            Clock                                                                    
------------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[2]     0.580       -1.858
-uart_byte_rx.bps_cnt[1]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[1]     0.580       -1.820
-uart_byte_rx.bps_cnt[3]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[3]     0.580       -1.594
-uart_byte_rx.bps_cnt[0]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[0]     0.580       -1.524
-uart_byte_rx.div_cnt[0]     uart_top|sys_clk     DFN1C0     Q       div_cnt[0]     0.737       -1.387
-uart_byte_tx.div_cnt[0]     uart_top|sys_clk     DFN1C0     Q       div_cnt[0]     0.737       -1.387
-uart_byte_rx.div_cnt[2]     uart_top|sys_clk     DFN1C0     Q       div_cnt[2]     0.737       -1.182
-uart_byte_tx.div_cnt[2]     uart_top|sys_clk     DFN1C0     Q       div_cnt[2]     0.737       -1.182
-uart_byte_rx.div_cnt[1]     uart_top|sys_clk     DFN1C0     Q       div_cnt[1]     0.737       -1.100
-uart_byte_tx.div_cnt[1]     uart_top|sys_clk     DFN1C0     Q       div_cnt[1]     0.737       -1.100
-=====================================================================================================
+                             Starting                                                Arrival            
+Instance                     Reference            Type       Pin     Net             Time        Slack  
+                             Clock                                                                      
+--------------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[12]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[12]     0.737       -10.266
+uart_byte_tx.bps_cnt[4]      uart_top|sys_clk     DFN1C0     Q       bps_cnt[4]      0.737       -10.238
+uart_byte_tx.bps_cnt[13]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[13]     0.737       -9.749 
+uart_byte_tx.bps_cnt[5]      uart_top|sys_clk     DFN1C0     Q       bps_cnt[5]      0.737       -9.722 
+uart_byte_tx.bps_cnt[2]      uart_top|sys_clk     DFN1C0     Q       bps_cnt[2]      0.737       -9.560 
+uart_byte_tx.bps_cnt[1]      uart_top|sys_clk     DFN1C0     Q       bps_cnt[1]      0.737       -9.491 
+uart_byte_tx.bps_cnt[14]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[14]     0.737       -9.350 
+uart_byte_tx.bps_cnt[22]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[22]     0.737       -9.239 
+uart_byte_tx.bps_cnt[10]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[10]     0.737       -9.211 
+uart_byte_tx.bps_cnt[20]     uart_top|sys_clk     DFN1C0     Q       bps_cnt[20]     0.737       -9.199 
+========================================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                     Starting                                                        Required           
-Instance                             Reference            Type         Pin     Net                   Time         Slack 
-                                     Clock                                                                              
-------------------------------------------------------------------------------------------------------------------------
-uart_byte_rx.r_data_byte\[1\][0]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[1\]e     9.392        -1.858
-uart_byte_rx.r_data_byte\[1\][1]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[1\]e     9.392        -1.858
-uart_byte_rx.r_data_byte\[1\][2]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[1\]e     9.392        -1.858
-uart_byte_rx.r_data_byte\[5\][0]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[5\]e     9.392        -1.858
-uart_byte_rx.r_data_byte\[5\][1]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[5\]e     9.392        -1.858
-uart_byte_rx.r_data_byte\[5\][2]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[5\]e     9.392        -1.858
-uart_byte_tx.div_cnt[11]             uart_top|sys_clk     DFN1C0       D       div_cnt_n11           9.427        -1.387
-uart_byte_rx.div_cnt[11]             uart_top|sys_clk     DFN1C0       D       div_cnt_n11           9.427        -1.387
-uart_byte_rx.r_data_byte\[3\][0]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[3\]e     9.392        -0.845
-uart_byte_rx.r_data_byte\[3\][1]     uart_top|sys_clk     DFN1E1C0     E       r_data_byte\[3\]e     9.392        -0.845
-========================================================================================================================
+                             Starting                                          Required            
+Instance                     Reference            Type       Pin     Net       Time         Slack  
+                             Clock                                                                 
+---------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[23]     uart_top|sys_clk     DFN1C0     D       I_93      9.461        -10.266
+uart_byte_tx.bps_cnt[22]     uart_top|sys_clk     DFN1C0     D       I_89      9.461        -9.430 
+uart_byte_tx.bps_cnt[21]     uart_top|sys_clk     DFN1C0     D       I_86      9.461        -9.366 
+uart_byte_tx.bps_cnt[19]     uart_top|sys_clk     DFN1C0     D       I_99      9.461        -8.945 
+uart_byte_tx.bps_cnt[20]     uart_top|sys_clk     DFN1C0     D       I_87      9.461        -8.530 
+uart_byte_tx.bps_cnt[15]     uart_top|sys_clk     DFN1C0     D       I_100     9.461        -8.472 
+uart_byte_tx.bps_cnt[18]     uart_top|sys_clk     DFN1C0     D       I_92      9.461        -8.109 
+uart_byte_tx.bps_cnt[17]     uart_top|sys_clk     DFN1C0     D       I_101     9.461        -8.045 
+uart_byte_tx.bps_cnt[24]     uart_top|sys_clk     DFN1C0     D       I_95      9.461        -8.045 
+uart_byte_tx.bps_cnt[14]     uart_top|sys_clk     DFN1C0     D       I_88      9.461        -7.636 
+===================================================================================================
 
 
 
@@ -393,241 +410,343 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.608
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.392
+    = Required time:                         9.461
 
-    - Propagation time:                      11.250
+    - Propagation time:                      19.727
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.858
+    = Slack (critical) :                     -10.266
 
-    Number of logic level(s):                7
-    Starting point:                          uart_byte_rx.bps_cnt[2] / Q
-    Ending point:                            uart_byte_rx.r_data_byte\[5\][0] / E
+    Number of logic level(s):                14
+    Starting point:                          uart_byte_tx.bps_cnt[12] / Q
+    Ending point:                            uart_byte_tx.bps_cnt[23] / D
     The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
     The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
 
-Instance / Net                                     Pin      Pin               Arrival     No. of    
-Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]               DFN1C0       Q        Out     0.580     0.580       -         
-bps_cnt[2]                            Net          -        -       1.639     -           8         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         B        In      -         2.219       -         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         Y        Out     0.514     2.734       -         
-m3_1                                  Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        A        In      -         3.055       -         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        Y        Out     0.514     3.570       -         
-N_73_mux                              Net          -        -       1.279     -           5         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        A        In      -         4.849       -         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        Y        Out     0.627     5.476       -         
-N_5_0                                 Net          -        -       1.526     -           7         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        A        In      -         7.002       -         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        Y        Out     0.514     7.517       -         
-N_6_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        A        In      -         7.902       -         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        Y        Out     0.627     8.530       -         
-N_7_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          A        In      -         8.916       -         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          Y        Out     0.579     9.494       -         
-N_55_0                                Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        A        In      -         9.816       -         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        Y        Out     0.627     10.443      -         
-r_data_byte\[5\]e                     Net          -        -       0.806     -           3         
-uart_byte_rx.r_data_byte\[5\][0]      DFN1E1C0     E        In      -         11.250      -         
-====================================================================================================
-Total path delay (propagation time + setup) of 11.858 is 5.193(43.8%) logic and 6.665(56.2%) route.
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[12]              DFN1C0     Q        Out     0.737     0.737       -         
+bps_cnt[12]                           Net        -        -       1.184     -           4         
+uart_byte_tx.bps_cnt_RNIP9AI[13]      NOR2       B        In      -         1.921       -         
+uart_byte_tx.bps_cnt_RNIP9AI[13]      NOR2       Y        Out     0.646     2.567       -         
+bps_cnt8_0_a2_22_3                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIOPK41[17]     NOR3A      A        In      -         2.889       -         
+uart_byte_tx.bps_cnt_RNIOPK41[17]     NOR3A      Y        Out     0.664     3.552       -         
+bps_cnt8_0_a2_22_9                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIPTA92[17]     NOR3C      C        In      -         3.874       -         
+uart_byte_tx.bps_cnt_RNIPTA92[17]     NOR3C      Y        Out     0.666     4.540       -         
+bps_cnt8_0_a2_22_12                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      B        In      -         4.861       -         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      Y        Out     0.516     5.377       -         
+bps_cnt8_22                           Net        -        -       1.423     -           6         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      B        In      -         6.801       -         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      Y        Out     0.607     7.407       -         
+bps_cnt9                              Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       B        In      -         7.793       -         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       Y        Out     0.627     8.420       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      A        In      -         8.806       -         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      Y        Out     0.514     9.320       -         
+DWACT_ADD_CI_0_g_array_1[0]           Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      A        In      -         10.127      -         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      Y        Out     0.514     10.641      -         
+DWACT_ADD_CI_0_g_array_2[0]           Net        -        -       1.184     -           4         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      A        In      -         11.825      -         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      Y        Out     0.514     12.339      -         
+DWACT_ADD_CI_0_g_array_3[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      A        In      -         13.618      -         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      Y        Out     0.514     14.133      -         
+DWACT_ADD_CI_0_g_array_4[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      A        In      -         15.412      -         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      Y        Out     0.514     15.926      -         
+DWACT_ADD_CI_0_g_array_10_1[0]        Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      A        In      -         16.733      -         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      Y        Out     0.514     17.247      -         
+DWACT_ADD_CI_0_g_array_11_4[0]        Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      A        In      -         17.633      -         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      Y        Out     0.514     18.147      -         
+DWACT_ADD_CI_0_g_array_12_10[0]       Net        -        -       0.322     -           1         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       B        In      -         18.469      -         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       Y        Out     0.937     19.406      -         
+I_93                                  Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt[23]              DFN1C0     D        In      -         19.727      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 20.266 is 9.539(47.1%) logic and 10.727(52.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
       Requested Period:                      10.000
-    - Setup time:                            0.608
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.392
+    = Required time:                         9.461
 
-    - Propagation time:                      11.250
+    - Propagation time:                      19.699
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.858
+    = Slack (non-critical) :                 -10.238
 
-    Number of logic level(s):                7
-    Starting point:                          uart_byte_rx.bps_cnt[2] / Q
-    Ending point:                            uart_byte_rx.r_data_byte\[1\][0] / E
+    Number of logic level(s):                14
+    Starting point:                          uart_byte_tx.bps_cnt[4] / Q
+    Ending point:                            uart_byte_tx.bps_cnt[23] / D
     The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
     The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
 
-Instance / Net                                      Pin      Pin               Arrival     No. of    
-Name                                   Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]                DFN1C0       Q        Out     0.580     0.580       -         
-bps_cnt[2]                             Net          -        -       1.639     -           8         
-uart_byte_rx.bps_cnt_RNIJQRK[3]        NOR2         B        In      -         2.219       -         
-uart_byte_rx.bps_cnt_RNIJQRK[3]        NOR2         Y        Out     0.514     2.734       -         
-m3_1                                   Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNI2HN91[3]       NOR2B        A        In      -         3.055       -         
-uart_byte_rx.bps_cnt_RNI2HN91[3]       NOR2B        Y        Out     0.514     3.570       -         
-N_73_mux                               Net          -        -       1.279     -           5         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]       NOR2A        A        In      -         4.849       -         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]       NOR2A        Y        Out     0.627     5.476       -         
-N_5_0                                  Net          -        -       1.526     -           7         
-uart_byte_rx.bps_sys_clk_RNI2VDN1      NOR2B        A        In      -         7.002       -         
-uart_byte_rx.bps_sys_clk_RNI2VDN1      NOR2B        Y        Out     0.514     7.517       -         
-N_6_0                                  Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIVVR12[6]       NOR2A        A        In      -         7.902       -         
-uart_byte_rx.bps_cnt_RNIVVR12[6]       NOR2A        Y        Out     0.627     8.530       -         
-N_7_0                                  Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIM7IG4_0[5]     MX2          A        In      -         8.916       -         
-uart_byte_rx.bps_cnt_RNIM7IG4_0[5]     MX2          Y        Out     0.579     9.494       -         
-N_37                                   Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNIH60R4_0[4]     NOR2A        A        In      -         9.816       -         
-uart_byte_rx.bps_cnt_RNIH60R4_0[4]     NOR2A        Y        Out     0.627     10.443      -         
-r_data_byte\[1\]e                      Net          -        -       0.806     -           3         
-uart_byte_rx.r_data_byte\[1\][0]       DFN1E1C0     E        In      -         11.250      -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 11.858 is 5.193(43.8%) logic and 6.665(56.2%) route.
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[4]               DFN1C0     Q        Out     0.737     0.737       -         
+bps_cnt[4]                            Net        -        -       1.184     -           4         
+uart_byte_tx.bps_cnt_RNIRE5D[5]       NOR2       B        In      -         1.921       -         
+uart_byte_tx.bps_cnt_RNIRE5D[5]       NOR2       Y        Out     0.646     2.567       -         
+bps_cnt8_0_a2_22_7                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIQ1BQ[7]       NOR3A      A        In      -         2.889       -         
+uart_byte_tx.bps_cnt_RNIQ1BQ[7]       NOR3A      Y        Out     0.664     3.552       -         
+bps_cnt8_0_a2_22_11                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIIUQP1[7]      NOR3C      C        In      -         3.874       -         
+uart_byte_tx.bps_cnt_RNIIUQP1[7]      NOR3C      Y        Out     0.666     4.540       -         
+bps_cnt8_0_a2_22_13                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      A        In      -         4.861       -         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      Y        Out     0.488     5.349       -         
+bps_cnt8_22                           Net        -        -       1.423     -           6         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      B        In      -         6.773       -         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      Y        Out     0.607     7.379       -         
+bps_cnt9                              Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       B        In      -         7.765       -         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       Y        Out     0.627     8.392       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      A        In      -         8.778       -         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      Y        Out     0.514     9.293       -         
+DWACT_ADD_CI_0_g_array_1[0]           Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      A        In      -         10.099      -         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      Y        Out     0.514     10.613      -         
+DWACT_ADD_CI_0_g_array_2[0]           Net        -        -       1.184     -           4         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      A        In      -         11.797      -         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      Y        Out     0.514     12.311      -         
+DWACT_ADD_CI_0_g_array_3[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      A        In      -         13.591      -         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      Y        Out     0.514     14.105      -         
+DWACT_ADD_CI_0_g_array_4[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      A        In      -         15.384      -         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      Y        Out     0.514     15.899      -         
+DWACT_ADD_CI_0_g_array_10_1[0]        Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      A        In      -         16.705      -         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      Y        Out     0.514     17.219      -         
+DWACT_ADD_CI_0_g_array_11_4[0]        Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      A        In      -         17.605      -         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      Y        Out     0.514     18.120      -         
+DWACT_ADD_CI_0_g_array_12_10[0]       Net        -        -       0.322     -           1         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       B        In      -         18.441      -         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       Y        Out     0.937     19.378      -         
+I_93                                  Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt[23]              DFN1C0     D        In      -         19.699      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 20.238 is 9.511(47.0%) logic and 10.727(53.0%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
       Requested Period:                      10.000
-    - Setup time:                            0.608
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.392
+    = Required time:                         9.461
 
-    - Propagation time:                      11.250
+    - Propagation time:                      19.211
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.858
+    = Slack (non-critical) :                 -9.749
 
-    Number of logic level(s):                7
-    Starting point:                          uart_byte_rx.bps_cnt[2] / Q
-    Ending point:                            uart_byte_rx.r_data_byte\[5\][2] / E
+    Number of logic level(s):                14
+    Starting point:                          uart_byte_tx.bps_cnt[13] / Q
+    Ending point:                            uart_byte_tx.bps_cnt[23] / D
     The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
     The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
 
-Instance / Net                                     Pin      Pin               Arrival     No. of    
-Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]               DFN1C0       Q        Out     0.580     0.580       -         
-bps_cnt[2]                            Net          -        -       1.639     -           8         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         B        In      -         2.219       -         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         Y        Out     0.514     2.734       -         
-m3_1                                  Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        A        In      -         3.055       -         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        Y        Out     0.514     3.570       -         
-N_73_mux                              Net          -        -       1.279     -           5         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        A        In      -         4.849       -         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        Y        Out     0.627     5.476       -         
-N_5_0                                 Net          -        -       1.526     -           7         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        A        In      -         7.002       -         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        Y        Out     0.514     7.517       -         
-N_6_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        A        In      -         7.902       -         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        Y        Out     0.627     8.530       -         
-N_7_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          A        In      -         8.916       -         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          Y        Out     0.579     9.494       -         
-N_55_0                                Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        A        In      -         9.816       -         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        Y        Out     0.627     10.443      -         
-r_data_byte\[5\]e                     Net          -        -       0.806     -           3         
-uart_byte_rx.r_data_byte\[5\][2]      DFN1E1C0     E        In      -         11.250      -         
-====================================================================================================
-Total path delay (propagation time + setup) of 11.858 is 5.193(43.8%) logic and 6.665(56.2%) route.
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[13]              DFN1C0     Q        Out     0.737     0.737       -         
+bps_cnt[13]                           Net        -        -       0.806     -           3         
+uart_byte_tx.bps_cnt_RNIP9AI[13]      NOR2       A        In      -         1.543       -         
+uart_byte_tx.bps_cnt_RNIP9AI[13]      NOR2       Y        Out     0.507     2.051       -         
+bps_cnt8_0_a2_22_3                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIOPK41[17]     NOR3A      A        In      -         2.372       -         
+uart_byte_tx.bps_cnt_RNIOPK41[17]     NOR3A      Y        Out     0.664     3.036       -         
+bps_cnt8_0_a2_22_9                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIPTA92[17]     NOR3C      C        In      -         3.358       -         
+uart_byte_tx.bps_cnt_RNIPTA92[17]     NOR3C      Y        Out     0.666     4.023       -         
+bps_cnt8_0_a2_22_12                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      B        In      -         4.345       -         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      Y        Out     0.516     4.861       -         
+bps_cnt8_22                           Net        -        -       1.423     -           6         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      B        In      -         6.284       -         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      Y        Out     0.607     6.891       -         
+bps_cnt9                              Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       B        In      -         7.277       -         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       Y        Out     0.627     7.904       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      A        In      -         8.290       -         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      Y        Out     0.514     8.804       -         
+DWACT_ADD_CI_0_g_array_1[0]           Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      A        In      -         9.611       -         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      Y        Out     0.514     10.125      -         
+DWACT_ADD_CI_0_g_array_2[0]           Net        -        -       1.184     -           4         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      A        In      -         11.309      -         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      Y        Out     0.514     11.823      -         
+DWACT_ADD_CI_0_g_array_3[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      A        In      -         13.102      -         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      Y        Out     0.514     13.617      -         
+DWACT_ADD_CI_0_g_array_4[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      A        In      -         14.896      -         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      Y        Out     0.514     15.410      -         
+DWACT_ADD_CI_0_g_array_10_1[0]        Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      A        In      -         16.217      -         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      Y        Out     0.514     16.731      -         
+DWACT_ADD_CI_0_g_array_11_4[0]        Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      A        In      -         17.117      -         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      Y        Out     0.514     17.631      -         
+DWACT_ADD_CI_0_g_array_12_10[0]       Net        -        -       0.322     -           1         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       B        In      -         17.953      -         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       Y        Out     0.937     18.889      -         
+I_93                                  Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt[23]              DFN1C0     D        In      -         19.211      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 19.749 is 9.400(47.6%) logic and 10.349(52.4%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
       Requested Period:                      10.000
-    - Setup time:                            0.608
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.392
+    = Required time:                         9.461
 
-    - Propagation time:                      11.250
+    - Propagation time:                      19.183
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.858
+    = Slack (non-critical) :                 -9.722
 
-    Number of logic level(s):                7
-    Starting point:                          uart_byte_rx.bps_cnt[2] / Q
-    Ending point:                            uart_byte_rx.r_data_byte\[5\][1] / E
+    Number of logic level(s):                14
+    Starting point:                          uart_byte_tx.bps_cnt[5] / Q
+    Ending point:                            uart_byte_tx.bps_cnt[23] / D
     The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
     The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
 
-Instance / Net                                     Pin      Pin               Arrival     No. of    
-Name                                  Type         Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]               DFN1C0       Q        Out     0.580     0.580       -         
-bps_cnt[2]                            Net          -        -       1.639     -           8         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         B        In      -         2.219       -         
-uart_byte_rx.bps_cnt_RNIJQRK[3]       NOR2         Y        Out     0.514     2.734       -         
-m3_1                                  Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        A        In      -         3.055       -         
-uart_byte_rx.bps_cnt_RNI2HN91[3]      NOR2B        Y        Out     0.514     3.570       -         
-N_73_mux                              Net          -        -       1.279     -           5         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        A        In      -         4.849       -         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]      NOR2A        Y        Out     0.627     5.476       -         
-N_5_0                                 Net          -        -       1.526     -           7         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        A        In      -         7.002       -         
-uart_byte_rx.bps_sys_clk_RNI2VDN1     NOR2B        Y        Out     0.514     7.517       -         
-N_6_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        A        In      -         7.902       -         
-uart_byte_rx.bps_cnt_RNIVVR12[6]      NOR2A        Y        Out     0.627     8.530       -         
-N_7_0                                 Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          A        In      -         8.916       -         
-uart_byte_rx.bps_cnt_RNIM7IG4[5]      MX2          Y        Out     0.579     9.494       -         
-N_55_0                                Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        A        In      -         9.816       -         
-uart_byte_rx.bps_cnt_RNIH60R4[4]      NOR2A        Y        Out     0.627     10.443      -         
-r_data_byte\[5\]e                     Net          -        -       0.806     -           3         
-uart_byte_rx.r_data_byte\[5\][1]      DFN1E1C0     E        In      -         11.250      -         
-====================================================================================================
-Total path delay (propagation time + setup) of 11.858 is 5.193(43.8%) logic and 6.665(56.2%) route.
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[5]               DFN1C0     Q        Out     0.737     0.737       -         
+bps_cnt[5]                            Net        -        -       0.806     -           3         
+uart_byte_tx.bps_cnt_RNIRE5D[5]       NOR2       A        In      -         1.543       -         
+uart_byte_tx.bps_cnt_RNIRE5D[5]       NOR2       Y        Out     0.507     2.051       -         
+bps_cnt8_0_a2_22_7                    Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIQ1BQ[7]       NOR3A      A        In      -         2.372       -         
+uart_byte_tx.bps_cnt_RNIQ1BQ[7]       NOR3A      Y        Out     0.664     3.036       -         
+bps_cnt8_0_a2_22_11                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIIUQP1[7]      NOR3C      C        In      -         3.358       -         
+uart_byte_tx.bps_cnt_RNIIUQP1[7]      NOR3C      Y        Out     0.666     4.023       -         
+bps_cnt8_0_a2_22_13                   Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      A        In      -         4.345       -         
+uart_byte_tx.bps_cnt_RNIBS534[7]      NOR2B      Y        Out     0.488     4.833       -         
+bps_cnt8_22                           Net        -        -       1.423     -           6         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      B        In      -         6.256       -         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      Y        Out     0.607     6.863       -         
+bps_cnt9                              Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       B        In      -         7.249       -         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       Y        Out     0.627     7.876       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      A        In      -         8.262       -         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      Y        Out     0.514     8.776       -         
+DWACT_ADD_CI_0_g_array_1[0]           Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      A        In      -         9.583       -         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      Y        Out     0.514     10.097      -         
+DWACT_ADD_CI_0_g_array_2[0]           Net        -        -       1.184     -           4         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      A        In      -         11.281      -         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      Y        Out     0.514     11.795      -         
+DWACT_ADD_CI_0_g_array_3[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      A        In      -         13.074      -         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      Y        Out     0.514     13.589      -         
+DWACT_ADD_CI_0_g_array_4[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      A        In      -         14.868      -         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      Y        Out     0.514     15.382      -         
+DWACT_ADD_CI_0_g_array_10_1[0]        Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      A        In      -         16.189      -         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      Y        Out     0.514     16.703      -         
+DWACT_ADD_CI_0_g_array_11_4[0]        Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      A        In      -         17.089      -         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      Y        Out     0.514     17.603      -         
+DWACT_ADD_CI_0_g_array_12_10[0]       Net        -        -       0.322     -           1         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       B        In      -         17.925      -         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       Y        Out     0.937     18.861      -         
+I_93                                  Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt[23]              DFN1C0     D        In      -         19.183      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 19.722 is 9.372(47.5%) logic and 10.349(52.5%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
       Requested Period:                      10.000
-    - Setup time:                            0.608
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.392
+    = Required time:                         9.461
 
-    - Propagation time:                      11.250
+    - Propagation time:                      19.022
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.858
+    = Slack (non-critical) :                 -9.560
 
-    Number of logic level(s):                7
-    Starting point:                          uart_byte_rx.bps_cnt[2] / Q
-    Ending point:                            uart_byte_rx.r_data_byte\[1\][2] / E
+    Number of logic level(s):                13
+    Starting point:                          uart_byte_tx.bps_cnt[2] / Q
+    Ending point:                            uart_byte_tx.bps_cnt[23] / D
     The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
     The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
 
-Instance / Net                                      Pin      Pin               Arrival     No. of    
-Name                                   Type         Name     Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------------------
-uart_byte_rx.bps_cnt[2]                DFN1C0       Q        Out     0.580     0.580       -         
-bps_cnt[2]                             Net          -        -       1.639     -           8         
-uart_byte_rx.bps_cnt_RNIJQRK[3]        NOR2         B        In      -         2.219       -         
-uart_byte_rx.bps_cnt_RNIJQRK[3]        NOR2         Y        Out     0.514     2.734       -         
-m3_1                                   Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNI2HN91[3]       NOR2B        A        In      -         3.055       -         
-uart_byte_rx.bps_cnt_RNI2HN91[3]       NOR2B        Y        Out     0.514     3.570       -         
-N_73_mux                               Net          -        -       1.279     -           5         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]       NOR2A        A        In      -         4.849       -         
-uart_byte_rx.bps_cnt_RNI0J5K1[7]       NOR2A        Y        Out     0.627     5.476       -         
-N_5_0                                  Net          -        -       1.526     -           7         
-uart_byte_rx.bps_sys_clk_RNI2VDN1      NOR2B        A        In      -         7.002       -         
-uart_byte_rx.bps_sys_clk_RNI2VDN1      NOR2B        Y        Out     0.514     7.517       -         
-N_6_0                                  Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIVVR12[6]       NOR2A        A        In      -         7.902       -         
-uart_byte_rx.bps_cnt_RNIVVR12[6]       NOR2A        Y        Out     0.627     8.530       -         
-N_7_0                                  Net          -        -       0.386     -           2         
-uart_byte_rx.bps_cnt_RNIM7IG4_0[5]     MX2          A        In      -         8.916       -         
-uart_byte_rx.bps_cnt_RNIM7IG4_0[5]     MX2          Y        Out     0.579     9.494       -         
-N_37                                   Net          -        -       0.322     -           1         
-uart_byte_rx.bps_cnt_RNIH60R4_0[4]     NOR2A        A        In      -         9.816       -         
-uart_byte_rx.bps_cnt_RNIH60R4_0[4]     NOR2A        Y        Out     0.627     10.443      -         
-r_data_byte\[1\]e                      Net          -        -       0.806     -           3         
-uart_byte_rx.r_data_byte\[1\][2]       DFN1E1C0     E        In      -         11.250      -         
-=====================================================================================================
-Total path delay (propagation time + setup) of 11.858 is 5.193(43.8%) logic and 6.665(56.2%) route.
+Instance / Net                                   Pin      Pin               Arrival     No. of    
+Name                                  Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+uart_byte_tx.bps_cnt[2]               DFN1C0     Q        Out     0.737     0.737       -         
+bps_cnt[2]                            Net        -        -       1.669     -           9         
+uart_byte_tx.bps_cnt_RNIL85D[1]       NOR2A      B        In      -         2.405       -         
+uart_byte_tx.bps_cnt_RNIL85D[1]       NOR2A      Y        Out     0.407     2.812       -         
+bps_cnt8_0_a2_1                       Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIA3UH1[1]      NOR3C      C        In      -         3.134       -         
+uart_byte_tx.bps_cnt_RNIA3UH1[1]      NOR3C      Y        Out     0.666     3.799       -         
+bps_cnt8_0_a2_3                       Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt_RNIEJ882[0]      NOR3C      C        In      -         4.121       -         
+uart_byte_tx.bps_cnt_RNIEJ882[0]      NOR3C      Y        Out     0.666     4.786       -         
+bps_cnt8_0_a2_4                       Net        -        -       1.279     -           5         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      A        In      -         6.065       -         
+uart_byte_tx.bps_sys_clk_RNITLJF6     AOI1B      Y        Out     0.636     6.702       -         
+bps_cnt9                              Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       B        In      -         7.087       -         
+uart_byte_tx.un1_bps_cnt_12.I_1       AND2       Y        Out     0.627     7.715       -         
+DWACT_ADD_CI_0_TMP[0]                 Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      A        In      -         8.101       -         
+uart_byte_tx.un1_bps_cnt_12.I_104     NOR2B      Y        Out     0.514     8.615       -         
+DWACT_ADD_CI_0_g_array_1[0]           Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      A        In      -         9.421       -         
+uart_byte_tx.un1_bps_cnt_12.I_115     NOR2B      Y        Out     0.514     9.936       -         
+DWACT_ADD_CI_0_g_array_2[0]           Net        -        -       1.184     -           4         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      A        In      -         11.119      -         
+uart_byte_tx.un1_bps_cnt_12.I_120     NOR2B      Y        Out     0.514     11.634      -         
+DWACT_ADD_CI_0_g_array_3[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      A        In      -         12.913      -         
+uart_byte_tx.un1_bps_cnt_12.I_140     NOR2B      Y        Out     0.514     13.427      -         
+DWACT_ADD_CI_0_g_array_4[0]           Net        -        -       1.279     -           5         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      A        In      -         14.707      -         
+uart_byte_tx.un1_bps_cnt_12.I_131     NOR2B      Y        Out     0.514     15.221      -         
+DWACT_ADD_CI_0_g_array_10_1[0]        Net        -        -       0.806     -           3         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      A        In      -         16.027      -         
+uart_byte_tx.un1_bps_cnt_12.I_107     NOR2B      Y        Out     0.514     16.542      -         
+DWACT_ADD_CI_0_g_array_11_4[0]        Net        -        -       0.386     -           2         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      A        In      -         16.927      -         
+uart_byte_tx.un1_bps_cnt_12.I_112     NOR2B      Y        Out     0.514     17.442      -         
+DWACT_ADD_CI_0_g_array_12_10[0]       Net        -        -       0.322     -           1         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       B        In      -         17.763      -         
+uart_byte_tx.un1_bps_cnt_12.I_93      XOR2       Y        Out     0.937     18.700      -         
+I_93                                  Net        -        -       0.322     -           1         
+uart_byte_tx.bps_cnt[23]              DFN1C0     D        In      -         19.022      -         
+==================================================================================================
+Total path delay (propagation time + setup) of 19.560 is 8.814(45.1%) logic and 10.746(54.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -637,74 +756,72 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 115MB peak: 117MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
 
 --------------------------------------------------------------------------------
 Target Part: A3P250_VQFP100_STD
 Report for cell uart_top.verilog
   Core Cell usage:
               cell count     area count*area
-              AND2     4      1.0        4.0
-              AO1A     2      1.0        2.0
-              AX1A     1      1.0        1.0
-              AX1B     1      1.0        1.0
-              AX1C    17      1.0       17.0
-             AXOI5     1      1.0        1.0
+              AND2    38      1.0       38.0
+               AO1    11      1.0       11.0
+             AOI1B     4      1.0        4.0
+              AX1C     2      1.0        2.0
                GND     3      0.0        0.0
-               INV     3      1.0        3.0
-               MX2    15      1.0       15.0
-              MX2A     2      1.0        2.0
+               MX2     1      1.0        1.0
+              MX2B     1      1.0        1.0
               MX2C     1      1.0        1.0
-              NOR2    24      1.0       24.0
-             NOR2A    34      1.0       34.0
-             NOR2B    49      1.0       49.0
+              NOR2    29      1.0       29.0
+             NOR2A    13      1.0       13.0
+             NOR2B    95      1.0       95.0
               NOR3     1      1.0        1.0
-             NOR3A     6      1.0        6.0
-             NOR3B     6      1.0        6.0
-             NOR3C    23      1.0       23.0
-               OA1     1      1.0        1.0
-              OA1A     4      1.0        4.0
+             NOR3A    31      1.0       31.0
+             NOR3B     9      1.0        9.0
+             NOR3C    14      1.0       14.0
+               OA1     4      1.0        4.0
               OA1B     1      1.0        1.0
               OAI1     1      1.0        1.0
-               OR2     4      1.0        4.0
-               OR3    10      1.0       10.0
+               OR2    11      1.0       11.0
+              OR2A     2      1.0        2.0
+              OR2B     1      1.0        1.0
+               OR3     6      1.0        6.0
+              OR3B     2      1.0        2.0
                VCC     3      0.0        0.0
-               XA1    15      1.0       15.0
-              XA1B    13      1.0       13.0
-               XO1     8      1.0        8.0
-              XOR2    30      1.0       30.0
+               XA1    28      1.0       28.0
+              XA1B    18      1.0       18.0
+              XOR2    50      1.0       50.0
 
 
-            DFN1C0    60      1.0       60.0
+            DFN1C0    89      1.0       89.0
           DFN1E1C0    45      1.0       45.0
-            DFN1P0     6      1.0        6.0
+            DFN1P0     1      1.0        1.0
                    -----          ----------
-             TOTAL   394               388.0
+             TOTAL   515               509.0
 
 
   IO Cell usage:
               cell count
             CLKBUF     2
-             INBUF     4
+             INBUF     1
             OUTBUF     2
                    -----
-             TOTAL     8
+             TOTAL     5
 
 
-Core Cells         : 388 of 6144 (6%)
-IO Cells           : 8
+Core Cells         : 509 of 6144 (8%)
+IO Cells           : 5
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 117MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 113MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 06 12:42:40 2025
+# Thu Mar 06 19:14:47 2025
 
 ###########################################################]

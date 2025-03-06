@@ -2,19 +2,12 @@ Microsemi Libero Software
 Version: 11.8.2.4
 Release: Libero SoC v11.8 SP2
 
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'D:\files\fpga\rs485\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to
+'C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer'
 Info: The design uart_top.adb was last modified by software version 11.8.2.4.
 Opened an existing Libero design uart_top.adb.
-WARNING: DEFUSR table not loaded - file: C:\Users\JYCao\AppData\Roaming\Actel/designer.def
 
-The Execute Script command succeeded ( 00:00:15 )
-This program can detect if an updated version of the software is available by
-checking the Actel web-site.
-
-Would you like to have this check automatically done when you startup the program?
-
-(To change this setting later, go to the File menu and select Preferences.
-From the Updates tab, you can change your selection.) [YES]
+The Execute Script command succeeded ( 00:00:25 )
 Checking for software updates...
 Info: The software cannot reach the Microsemi SoC server to confirm the version you are running.
       Visit
@@ -22,14 +15,19 @@ Info: The software cannot reach the Microsemi SoC server to confirm the version 
       wnloads to download the latest major release or service pack.
       You can check the version of your current installation by starting the tool and selecting
       Help -> About.
-Design saved to file D:\files\fpga\rs485\designer\impl1\uart_top.adb.
-Wrote pin report to file: D:\files\fpga\rs485\designer\impl1\uart_top_report_pin_byname.txt
+Design saved to file
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top.adb.
+Wrote pin report to file:
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_report_pin_byname.\
+txt
 
-The Report command succeeded ( 00:00:00 )
-Wrote pin report to file: D:\files\fpga\rs485\designer\impl1\uart_top_report_pin_bynumber.txt
+The Report command succeeded ( 00:00:01 )
+Wrote pin report to file:
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_report_pin_bynumbe\
+r.txt
 
 The Report command succeeded ( 00:00:01 )
 
-The Execute Script command succeeded ( 00:00:01 )
+The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 

@@ -29,12 +29,11 @@
 
 module tb_uart_top;
 
-parameter SYSCLK_PERIOD = 20;// 50MHZ
+parameter SYSCLK_PERIOD = 50;// 20MHZ
 
 reg SYSCLK;
 reg NSYSRESET;
 reg rx;
-reg [2:0] baud_set;
 
 wire tx;
 wire re;
@@ -44,7 +43,6 @@ begin
     SYSCLK = 1'b0;
     NSYSRESET = 1'b0;
     rx = 1;
-    baud_set = 3'd0;
 end
 
 
@@ -63,7 +61,6 @@ uart_top uart_top_0 (
     .sys_clk(SYSCLK),
     .sys_rst_n(NSYSRESET),
     .rx(rx),
-    .baud_set(baud_set),
 
     // Outputs
     .tx(tx),
@@ -93,14 +90,14 @@ task send_byte;
     integer bit_time;
     begin
         // Calculate bit time based on baud_set
-        case (baud_set)
-            3'd0: bit_time = 104160;   // 9600 baud rate
-            3'd1: bit_time = 52080;    // 19200 baud rate
-            3'd2: bit_time = 26040;    // 38400 baud rate
-            3'd3: bit_time = 17360;    // 57600 baud rate
-            3'd4: bit_time = 86800;     // 115200 baud rate
-            default: bit_time = 1041660; // Default to 9600 baud rate
-        endcase
+        //case (baud_set)
+            bit_time = 104160;   // 9600 baud rate
+            //3'd1: bit_time = 52080;    // 19200 baud rate
+            //3'd2: bit_time = 26040;    // 38400 baud rate
+            //3'd3: bit_time = 17360;    // 57600 baud rate
+            //3'd4: bit_time = 86800;     // 115200 baud rate
+            //default: bit_time = 1041660; // Default to 9600 baud rate
+        //endcase
 
         // Send start bit
         rx = 0;

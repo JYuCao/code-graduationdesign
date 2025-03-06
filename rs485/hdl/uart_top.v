@@ -5,7 +5,6 @@ module uart_top(
     sys_clk,      
     sys_rst_n,   
     rx,
-    baud_set,
     tx,   
     re    
 );
@@ -13,7 +12,7 @@ module uart_top(
 	input sys_clk;
 	input sys_rst_n;
     input rx;
-    input [2:0]baud_set;
+    wire [2:0]baud_set;
 	
 	output tx;
 	output re;
@@ -28,6 +27,7 @@ module uart_top(
     assign re = uart_state;
     assign data_to_send = received_data; 
     assign send_en = Rx_Done;
+    assign baud_set = 0;
 
 	uart_tx uart_byte_tx(
 		.sys_clk(sys_clk),

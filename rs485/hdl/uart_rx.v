@@ -26,7 +26,7 @@ module uart_rx(
 	reg [15:0]bps_DR;
 	reg [15:0]div_cnt;
 	reg bps_sys_clk;
-	reg [7:0]bps_cnt;
+	reg [24:0]bps_cnt;
 	
 	reg uart_state;
 	
@@ -60,18 +60,33 @@ module uart_rx(
 	
 	assign nedege = !tmp0_rx & tmp1_rx;
 	
-    // set bps
-	always@(posedge sys_clk or negedge sys_rst_n)
+    // 50M
+	//always@(posedge sys_clk or negedge sys_rst_n)
+        //if(!sys_rst_n)
+            //bps_DR <= 16'd324;
+        //else begin
+            //case(baud_set)
+                //0: bps_DR <= 16'd324;  // 9600 
+                //1: bps_DR <= 16'd162;  // 19200
+                //2: bps_DR <= 16'd80;   // 38400
+                //3: bps_DR <= 16'd53;   // 57600
+                //4: bps_DR <= 16'd26;   // 115200
+                //default: bps_DR <= 16'd324;
+            //endcase
+        //end
+
+    // 20M
+    always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
-            bps_DR <= 16'd324;
+            bps_DR <= 16'd2083;
         else begin
             case(baud_set)
-                0: bps_DR <= 16'd324;  // 9600 
-                1: bps_DR <= 16'd162;  // 19200
-                2: bps_DR <= 16'd80;   // 38400
-                3: bps_DR <= 16'd53;   // 57600
-                4: bps_DR <= 16'd26;   // 115200
-                default: bps_DR <= 16'd324;
+                0: bps_DR <= 16'd2083;  // 9600 
+                1: bps_DR <= 16'd1041;  // 19200
+                2: bps_DR <= 16'd520;   // 38400
+                3: bps_DR <= 16'd346;   // 57600
+                4: bps_DR <= 16'd173;   // 115200
+                default: bps_DR <= 16'd2083;
             endcase
         end
 	
