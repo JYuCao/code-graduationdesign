@@ -1,0 +1,9 @@
+@P:  Worst Slack : -0.711
+@P:  uart_rx|sys_clk - Estimated Frequency : 93.4 MHz
+@P:  uart_rx|sys_clk - Requested Frequency : 100.0 MHz
+@P:  uart_rx|sys_clk - Estimated Period : 10.711
+@P:  uart_rx|sys_clk - Requested Period : 10.000
+@P:  uart_rx|sys_clk - Slack : -0.711
+@P:  Total Area : 286.0
+@P:  Total Area : 286.0
+@P:  CPU Time : 0h:00m:00s

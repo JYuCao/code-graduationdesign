@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>top_loopback</design>
+	<target_edif>D:\files\fpga\rs485\synthesis\top_loopback.edn</target_edif>
+</SynplifyOutput>

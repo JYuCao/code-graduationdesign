@@ -1,0 +1,1 @@
+@W: MT530 :"d:\files\fpga\rs485\hdl\uart_rx.v":133:1:133:6|Found inferred clock top_loopback|sys_clk which controls 126 sequential elements including uart_rx_inst.r_data_byte\[7\][2:0]. This clock has no specified timing constraint which may adversely impact design performance. 

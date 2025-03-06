@@ -35,16 +35,46 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "uart_rx::work"
+KEY ActiveRoot "uart_top::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl1\uart_rx.adb,adb"
+STATE="ood"
+TIME="1741141428"
+SIZE="147968"
+ENDFILE
 VALUE "<project>\designer\impl1\uart_rx.ide_des,ide_des"
 STATE="utd"
-TIME="1736395293"
-SIZE="178"
+TIME="1741141428"
+SIZE="931"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_rx_compile_log.rpt,log"
+STATE="utd"
+TIME="1741141414"
+SIZE="7901"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_rx_placeroute_log.rpt,log"
+STATE="utd"
+TIME="1741141428"
+SIZE="2422"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top.adb,adb"
+STATE="utd"
+TIME="1741237546"
+SIZE="144896"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top.ide_des,ide_des"
+STATE="utd"
+TIME="1741235962"
+SIZE="179"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_compile_log.rpt,log"
+STATE="utd"
+TIME="1741237546"
+SIZE="8366"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_tx.ide_des,ide_des"
 STATE="utd"
@@ -53,8 +83,8 @@ SIZE="178"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1736497627"
-SIZE="6080"
+TIME="1741143374"
+SIZE="6169"
 ENDFILE
 VALUE "<project>\hdl\uart_top.v,hdl"
 STATE="utd"
@@ -63,17 +93,17 @@ SIZE="899"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1736415058"
-SIZE="3181"
+TIME="1741142529"
+SIZE="3236"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1736670264"
-SIZE="772"
+TIME="1741155268"
+SIZE="784"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_rx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1736669981"
+TIME="1741143411"
 SIZE="2332"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_top_presynth_simulation.log,log"
@@ -88,39 +118,79 @@ SIZE="2333"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_rx.v,tb_hdl"
 STATE="utd"
-TIME="1736500154"
-SIZE="3298"
+TIME="1741235245"
+SIZE="3296"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
 STATE="utd"
-TIME="1736509573"
-SIZE="2970"
+TIME="1741143278"
+SIZE="2968"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_tx.v,tb_hdl"
 STATE="utd"
-TIME="1736498264"
-SIZE="2444"
+TIME="1741143277"
+SIZE="2442"
 ENDFILE
-VALUE "<project>\synthesis\synwork\layer0.so,so"
+VALUE "<project>\synthesis\top_loopback.so,so"
 STATE="utd"
-TIME="1736488185"
-SIZE="159"
+TIME="1741142375"
+SIZE="213"
+ENDFILE
+VALUE "<project>\synthesis\top_loopback_syn.prj,prj"
+STATE="utd"
+TIME="1741142375"
+SIZE="1795"
+ENDFILE
+VALUE "<project>\synthesis\uart_rx.edn,syn_edn"
+STATE="ood"
+TIME="1741140658"
+SIZE="136896"
+ENDFILE
+VALUE "<project>\synthesis\uart_rx.so,so"
+STATE="utd"
+TIME="1741140658"
+SIZE="203"
+ENDFILE
+VALUE "<project>\synthesis\uart_rx_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1741140658"
+SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_syn.prj,prj"
 STATE="utd"
-TIME="1736488185"
-SIZE="540"
+TIME="1741140658"
+SIZE="1665"
+ENDFILE
+VALUE "<project>\synthesis\uart_top.edn,syn_edn"
+STATE="utd"
+TIME="1741236160"
+SIZE="182785"
+ENDFILE
+VALUE "<project>\synthesis\uart_top.so,so"
+STATE="utd"
+TIME="1741236160"
+SIZE="205"
+ENDFILE
+VALUE "<project>\synthesis\uart_top_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1741236160"
+SIZE="405"
+ENDFILE
+VALUE "<project>\synthesis\uart_top_syn.prj,prj"
+STATE="utd"
+TIME="1741236160"
+SIZE="1779"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "uart_rx::work"
-FILE "<project>\hdl\uart_rx.v,hdl"
+LIST "uart_top::work"
+FILE "<project>\hdl\uart_top.v,hdl"
 LIST ProjectState5.1
 LIST Impl1
-ideSYNTHESIS(<project>\synthesis\uart_rx.edn,syn_edn)=StateFailure
-ideSYNTHESIS(<project>\synthesis\uart_rx.vm,syn_vm)=StateFailure
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\uart_top.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -129,6 +199,10 @@ ENDLIST
 Used_File_List
 ENDUsed_File_List
 ENDLIST
+ENDLIST
+LIST PinReports
+VALUE "<project>\designer\impl1\uart_top_report_pin_byname.txt,log"
+VALUE "<project>\designer\impl1\uart_top_report_pin_bynumber.txt,log"
 ENDLIST
 ENDLIST
 ENDLIST
@@ -202,8 +276,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -211,7 +285,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_uart_top_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -236,10 +310,10 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "uart_rx::work"
+LIST "uart_top::work"
 LIST Impl1
-ideSYNTHESIS(<project>\synthesis\uart_rx.edn,syn_edn)=StateFailure
-ideSYNTHESIS(<project>\synthesis\uart_rx.vm,syn_vm)=StateFailure
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\uart_top.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -262,8 +336,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Compile:uart_top_compile_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;stimulus\tb_uart_rx.v;0
+HDL;stimulus\tb_uart_top.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"

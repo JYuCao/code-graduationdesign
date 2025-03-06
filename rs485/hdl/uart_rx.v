@@ -31,7 +31,8 @@ module uart_rx(
 	reg uart_state;
 	
 	reg [2:0] r_data_byte [7:0];
-	reg [2:0] START_BIT,STOP_BIT;
+	reg [2:0] START_BIT;
+    //reg [2:0] STOP_BIT;
 	
 	wire nedege;
 	
@@ -65,12 +66,12 @@ module uart_rx(
             bps_DR <= 16'd324;
         else begin
             case(baud_set)
-                0:bps_DR <= 16'd324;
-                1:bps_DR <= 16'd162;
-                2:bps_DR <= 16'd80;
-                3:bps_DR <= 16'd53;
-                4:bps_DR <= 16'd26;
-                default:bps_DR <= 16'd324;			
+                0: bps_DR <= 16'd324;  // 9600 
+                1: bps_DR <= 16'd162;  // 19200
+                2: bps_DR <= 16'd80;   // 38400
+                3: bps_DR <= 16'd53;   // 57600
+                4: bps_DR <= 16'd26;   // 115200
+                default: bps_DR <= 16'd324;
             endcase
         end
 	
@@ -131,7 +132,7 @@ module uart_rx(
 		
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)begin
-            START_BIT = 3'd0;
+            START_BIT <= 3'd0;
             r_data_byte[0] <= 3'd0;
             r_data_byte[1] <= 3'd0;
             r_data_byte[2] <= 3'd0;
@@ -140,12 +141,12 @@ module uart_rx(
             r_data_byte[5] <= 3'd0;
             r_data_byte[6] <= 3'd0;
             r_data_byte[7] <= 3'd0;
-            STOP_BIT = 3'd0;
+            //STOP_BIT <= 3'd0;
         end
         else if(bps_sys_clk)begin
             case(bps_cnt)
                 0:begin
-                        START_BIT = 3'd0;
+                        START_BIT <= 3'd0;
                         r_data_byte[0] <= 3'd0;
                         r_data_byte[1] <= 3'd0;
                         r_data_byte[2] <= 3'd0;
@@ -154,7 +155,7 @@ module uart_rx(
                         r_data_byte[5] <= 3'd0;
                         r_data_byte[6] <= 3'd0;
                         r_data_byte[7] <= 3'd0;
-                        STOP_BIT = 3'd0;			
+                        //STOP_BIT <= 3'd0;			
                     end
                 6,7,8,9,10,11:START_BIT <= START_BIT + s1_rx;
                 22,23,24,25,26,27:r_data_byte[0] <= r_data_byte[0] + s1_rx;
@@ -165,10 +166,10 @@ module uart_rx(
                 102,103,104,105,106,107:r_data_byte[5] <= r_data_byte[5] + s1_rx;
                 118,119,120,121,122,123:r_data_byte[6] <= r_data_byte[6] + s1_rx;
                 134,135,136,137,138,139:r_data_byte[7] <= r_data_byte[7] + s1_rx;
-                150,151,152,153,154,155:STOP_BIT <= STOP_BIT + s1_rx;
+                //150,151,152,153,154,155:STOP_BIT <= STOP_BIT + s1_rx;
                 default:
                     begin
-                        START_BIT = START_BIT;
+                        START_BIT <= START_BIT;
                         r_data_byte[0] <= r_data_byte[0];
                         r_data_byte[1] <= r_data_byte[1];
                         r_data_byte[2] <= r_data_byte[2];
@@ -177,7 +178,7 @@ module uart_rx(
                         r_data_byte[5] <= r_data_byte[5];
                         r_data_byte[6] <= r_data_byte[6];
                         r_data_byte[7] <= r_data_byte[7];
-                        STOP_BIT = STOP_BIT;						
+                        //STOP_BIT <= STOP_BIT;						
                     end
             endcase
         end

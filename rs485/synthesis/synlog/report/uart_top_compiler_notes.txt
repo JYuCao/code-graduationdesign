@@ -1,0 +1,24 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":103:23:103:29|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":109:23:109:29|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":172:37:172:45|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":194:26:194:35|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[15] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[14] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[13] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[12] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[11] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[10] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Register bit bps_DR[9] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[15] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[14] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[13] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Register bit bps_DR[0] is always 0.
+@N|Running in 64-bit mode
+

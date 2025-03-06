@@ -1,0 +1,23 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: Libero SoC v11.8 SP2
+Version: 11.8.2.4
+Date: Wed Mar 05 10:23:46 2025
+Design Name: uart_rx  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    75                Net   : sys_clk_c
+                      Driver: sys_clk_pad/U0/U1/U_GL
+    75                Net   : sys_rst_n_c
+                      Driver: sys_rst_n_pad/U0/U1/U_GL
+
+
+
+

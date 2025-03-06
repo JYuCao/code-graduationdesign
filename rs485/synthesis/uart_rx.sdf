@@ -1,0 +1,822 @@
+(DELAYFILE
+(SDFVERSION "OVI 2.1")
+(DESIGN "uart_rx")
+(DATE "123")
+(VENDOR "ProASIC3")
+(PROGRAM "Synplify")
+(VERSION "mapact, Build 1920R")
+(DIVIDER /)
+(VOLTAGE 2.500000:2.500000:2.500000)
+(PROCESS "TYPICAL")
+(TEMPERATURE 70.000000:70.000000:70.000000)
+(TIMESCALE 1ns)
+(CELL
+  (CELLTYPE "uart_rx")
+  (INSTANCE)
+  (TIMINGCHECK
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[0\]/CLK  div_cnt\[0\]/Q  div_cnt_RNIVFCO\[1\]/A  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  bps_sys_clk_RNIK309/A  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A\[3\]/B  bps_cnt_RNI7M7A\[3\]/Y  bps_cnt_RNI65O91\[1\]/C  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  un1_bps_cnt_20_I_1/A  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNISIBF\[1\]/A  bps_cnt_RNISIBF\[1\]/Y  bps_cnt_RNI65O91\[1\]/B  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNISIBF\[1\]/C  bps_cnt_RNISIBF\[1\]/Y  bps_cnt_RNI65O91\[1\]/B  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNISIBF\[1\]/B  bps_cnt_RNISIBF\[1\]/Y  bps_cnt_RNI65O91\[1\]/B  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[2\]/B  bps_cnt_RNO\[2\]/Y  bps_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[3\]/B  bps_cnt_RNO\[3\]/Y  bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[4\]/B  bps_cnt_RNO\[4\]/Y  bps_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[5\]/B  bps_cnt_RNO\[5\]/Y  bps_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNIPFBF\[3\]/A  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNIGFG81/A  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[2\]/C  r_data_byte\[0\]_RNO\[2\]/Y  r_data_byte\[0\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNIGFG81/A  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNI7M7A\[3\]/A  bps_cnt_RNI7M7A\[3\]/Y  bps_cnt_RNI65O91\[1\]/C  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO\[14\]/B  div_cnt_RNO\[14\]/Y  div_cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71_0\[0\]/C  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[8\]/C  div_cnt_RNO\[8\]/Y  div_cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[10\]/C  div_cnt_RNO\[10\]/Y  div_cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[12\]/C  div_cnt_RNO\[12\]/Y  div_cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[13\]/C  div_cnt_RNO\[13\]/Y  div_cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[14\]/C  div_cnt_RNO\[14\]/Y  div_cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[11\]/C  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[15\]/C  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[0\]/A  div_cnt_RNO\[0\]/Y  div_cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[5\]/A  div_cnt_RNO\[5\]/Y  div_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[7\]/A  div_cnt_RNO\[7\]/Y  div_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_DR_RNI1AOD\[8\]/B  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[9\]/A  div_cnt_RNO\[9\]/Y  div_cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  bps_DR_RNIJRND\[1\]/B  bps_DR_RNIJRND\[1\]/Y  bps_DR_RNIH3EL1\[0\]/B  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[1\]/B  r_data_byte\[5\]_RNO_1\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/C  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  bps_sys_clk_RNIQ8OI1/B  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNI7M7A_1\[3\]/A  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71_0\[0\]/C  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s1_rx/CLK  s1_rx/Q  s1_rx_RNI3S4G/A  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[2\]/CLK  div_cnt\[2\]/Q  div_cnt_RNIMVI41\[2\]/C  div_cnt_RNIMVI41\[2\]/Y  div_cnt_RNI9S592\[5\]/B  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  un1_bps_cnt_20_I_36/B  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  div_cnt_RNIJ51H\[11\]/C  div_cnt_RNIJ51H\[11\]/Y  div_cnt_RNISVD91\[5\]/C  div_cnt_RNISVD91\[5\]/Y  div_cnt_RNI4KQU3\[5\]/A  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[4\]/CLK  div_cnt\[4\]/Q  div_cnt_RNIBSCO\[4\]/B  div_cnt_RNIBSCO\[4\]/Y  div_cnt_RNIOQPG1\[7\]/C  div_cnt_RNIOQPG1\[7\]/Y  div_cnt_RNI4KQU3\[5\]/B  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  div_cnt_RNIMVI41\[2\]/A  div_cnt_RNIMVI41\[2\]/Y  div_cnt_RNI9S592\[5\]/B  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[4\]/CLK  div_cnt\[4\]/Q  div_cnt_RNIMVI41\[2\]/B  div_cnt_RNIMVI41\[2\]/Y  div_cnt_RNI9S592\[5\]/B  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[0\]/CLK  div_cnt\[0\]/Q  bps_DR_RNI9AUP\[0\]/A  bps_DR_RNI9AUP\[0\]/Y  bps_DR_RNIH3EL1\[0\]/C  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[2\]/CLK  div_cnt\[2\]/Q  bps_DR_RNILTND\[2\]/B  bps_DR_RNILTND\[2\]/Y  bps_DR_RNIH3EL1\[0\]/A  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[4\]_RNO\[1\]/A  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[3\]_RNO\[0\]/A  r_data_byte\[3\]_RNO\[0\]/Y  r_data_byte\[3\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[4\]_RNO\[0\]/B  r_data_byte\[4\]_RNO\[0\]/Y  r_data_byte\[4\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  bps_cnt_RNI3I7A\[0\]/A  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[9\]/CLK  div_cnt\[9\]/Q  div_cnt_RNIBSCO\[4\]/A  div_cnt_RNIBSCO\[4\]/Y  div_cnt_RNIOQPG1\[7\]/C  div_cnt_RNIOQPG1\[7\]/Y  div_cnt_RNI4KQU3\[5\]/B  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNI7EKD1_0\[6\]/A  bps_cnt_RNI7EKD1_0\[6\]/Y  bps_cnt_RNI7JFQ2\[4\]/B  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNI7EKD1_0\[6\]/A  bps_cnt_RNI7EKD1_0\[6\]/Y  bps_cnt_RNI7JFQ2\[4\]/B  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[9\]/CLK  div_cnt\[9\]/Q  bps_DR_RNI9AUP\[0\]/C  bps_DR_RNI9AUP\[0\]/Y  bps_DR_RNIH3EL1\[0\]/C  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNI7EKD1_0\[6\]/A  bps_cnt_RNI7EKD1_0\[6\]/Y  bps_cnt_RNI7JFQ2\[4\]/B  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNIPFBF\[3\]/C  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNIGFG81/A  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO\[10\]/B  div_cnt_RNO\[10\]/Y  div_cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G_0/B  s1_rx_RNI3S4G_0/Y  s1_rx_RNIGFG81/B  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI2PBF\[5\]/C  bps_cnt_RNI2PBF\[5\]/Y  bps_cnt_RNI41V81\[5\]/C  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  bps_DR_RNIT5OD\[6\]/B  bps_DR_RNIT5OD\[6\]/Y  bps_DR_RNIO9GR\[5\]/C  bps_DR_RNIO9GR\[5\]/Y  bps_DR_RNI3AH33\[4\]/A  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[2\]_RNO\[0\]/A  r_data_byte\[2\]_RNO\[0\]/Y  r_data_byte\[2\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO\[0\]/A  r_data_byte\[5\]_RNO\[0\]/Y  r_data_byte\[5\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[2\]_RNO\[1\]/A  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71\[0\]/B  bps_cnt_RNIB8N71\[0\]/Y  bps_cnt_RNI05RC1\[4\]/A  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[2\]_RNO\[1\]/C  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISFJV2\[6\]/B  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNISFJV2\[6\]/B  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[3\]_RNO\[0\]/C  r_data_byte\[3\]_RNO\[0\]/Y  r_data_byte\[3\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_43/A  un1_bps_cnt_20_I_43/Y  un1_bps_cnt_20_I_28/B  un1_bps_cnt_20_I_28/Y  bps_cnt_RNO\[5\]/A  bps_cnt_RNO\[5\]/Y  bps_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  START_BIT_RNI26OH\[2\]/C  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  uart_state_RNO_0/A  uart_state_RNO_0/Y  uart_state_RNO/C  uart_state_RNO/Y  uart_state/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI05RC1_1\[4\]/C  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[10\]/CLK  div_cnt\[10\]/Q  div_cnt_RNI1RQ4\[11\]/B  div_cnt_RNI1RQ4\[11\]/Y  bps_DR_RNIQSII\[4\]/C  bps_DR_RNIQSII\[4\]/Y  bps_DR_RNI3AH33\[4\]/B  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_sys_clk_RNIK9J21/C  bps_sys_clk_RNIK9J21/Y  bps_cnt_RNICGBL2\[4\]/A  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s1_rx/CLK  s1_rx/Q  s1_rx_RNI3S4G_0/A  s1_rx_RNI3S4G_0/Y  s1_rx_RNIGFG81/B  s1_rx_RNIGFG81/Y  bps_cnt_RNISAOI1\[6\]/B  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNO_0\[9\]/B  div_cnt_RNO_0\[9\]/Y  div_cnt_RNO\[9\]/B  div_cnt_RNO\[9\]/Y  div_cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[10\]/CLK  div_cnt\[10\]/Q  div_cnt_RNIJ51H\[11\]/A  div_cnt_RNIJ51H\[11\]/Y  div_cnt_RNISVD91\[5\]/C  div_cnt_RNISVD91\[5\]/Y  div_cnt_RNI4KQU3\[5\]/A  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  un1_bps_cnt_20_I_46/B  un1_bps_cnt_20_I_46/Y  un1_bps_cnt_20_I_35/B  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[2\]/CLK  div_cnt\[2\]/Q  div_cnt_RNIGPI41\[2\]/B  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[2\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[2\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  bps_cnt_RNIQDJV2\[4\]/B  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[2\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIRHBF\[0\]/C  bps_cnt_RNIRHBF\[0\]/Y  bps_cnt_RNI41V81\[5\]/B  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  un1_bps_cnt_20_I_46/A  un1_bps_cnt_20_I_46/Y  un1_bps_cnt_20_I_35/B  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNIA14E/C  bps_sys_clk_RNIA14E/Y  bps_cnt_RNIB8N71_0\[0\]/A  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  bps_DR_RNINVND\[3\]/B  bps_DR_RNINVND\[3\]/Y  bps_DR_RNI5KUI1\[3\]/B  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIB8N71_0\[0\]/B  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNIRN7G2\[6\]/B  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  bps_cnt_RNINDBF\[3\]/A  bps_cnt_RNINDBF\[3\]/Y  bps_cnt_RNIGTMU\[2\]/A  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNIRN7G2\[6\]/B  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[7\]_RNO\[0\]/B  r_data_byte\[7\]_RNO\[0\]/Y  r_data_byte\[7\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[6\]_RNO\[0\]/B  r_data_byte\[6\]_RNO\[0\]/Y  r_data_byte\[6\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIQHC31/A  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[12\]/CLK  div_cnt\[12\]/Q  div_cnt_RNI71R4\[15\]/B  div_cnt_RNI71R4\[15\]/Y  div_cnt_RNIE2M9\[13\]/C  div_cnt_RNIE2M9\[13\]/Y  bps_DR_RNI5KUI1\[3\]/A  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIQHC31/A  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIVLBF\[7\]/A  bps_cnt_RNIVLBF\[7\]/Y  bps_cnt_RNI41V81\[7\]/B  bps_cnt_RNI41V81\[7\]/Y  r_data_byte\[4\]_RNIMACD1\[0\]/B  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[1\]/C  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A\[3\]/B  bps_cnt_RNI7M7A\[3\]/Y  bps_cnt_RNICAFK\[1\]/C  bps_cnt_RNICAFK\[1\]/Y  bps_cnt_RNI3AKD1\[1\]/A  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNI2PBF\[5\]/A  bps_cnt_RNI2PBF\[5\]/Y  bps_cnt_RNI41V81\[5\]/C  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[11\]/CLK  div_cnt\[11\]/Q  div_cnt_RNIJ51H\[11\]/B  div_cnt_RNIJ51H\[11\]/Y  div_cnt_RNISVD91\[5\]/C  div_cnt_RNISVD91\[5\]/Y  div_cnt_RNI4KQU3\[5\]/A  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIGFG81/C  s1_rx_RNIGFG81/Y  bps_cnt_RNI7EKD1\[6\]/A  bps_cnt_RNI7EKD1\[6\]/Y  bps_cnt_RNI7JFQ2_0\[4\]/B  bps_cnt_RNI7JFQ2_0\[4\]/Y  r_data_byte\[4\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNO\[13\]/B  div_cnt_RNO\[13\]/Y  div_cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNIRHBF\[0\]/A  bps_cnt_RNIRHBF\[0\]/Y  bps_cnt_RNI41V81\[5\]/B  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNI2PBF\[5\]/B  bps_cnt_RNI2PBF\[5\]/Y  bps_cnt_RNI41V81\[5\]/C  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  START_BIT_RNO\[2\]/C  START_BIT_RNO\[2\]/Y  START_BIT\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[6\]_RNO\[2\]/C  r_data_byte\[6\]_RNO\[2\]/Y  r_data_byte\[6\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[3\]_RNO\[2\]/C  r_data_byte\[3\]_RNO\[2\]/Y  r_data_byte\[3\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[4\]_RNO\[2\]/C  r_data_byte\[4\]_RNO\[2\]/Y  r_data_byte\[4\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[7\]_RNO\[2\]/C  r_data_byte\[7\]_RNO\[2\]/Y  r_data_byte\[7\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[6\]_RNO\[1\]/C  r_data_byte\[6\]_RNO\[1\]/Y  r_data_byte\[6\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI41V81\[5\]/A  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[7\]_RNO\[1\]/C  r_data_byte\[7\]_RNO\[1\]/Y  r_data_byte\[7\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  bps_cnt_RNIRHBF\[0\]/B  bps_cnt_RNIRHBF\[0\]/Y  bps_cnt_RNI41V81\[5\]/B  bps_cnt_RNI41V81\[5\]/Y  r_data_byte\[5\]_RNO_1\[2\]/B  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71_0\[0\]/C  bps_cnt_RNIB8N71_0\[0\]/Y  r_data_byte\[0\]_RNO_0\[1\]/A  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[0\]/CLK  bps_DR\[0\]/Q  bps_DR_RNI9AUP\[0\]/B  bps_DR_RNI9AUP\[0\]/Y  bps_DR_RNIH3EL1\[0\]/C  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIK9J21\[7\]/C  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2\[6\]/A  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIK9J21\[7\]/C  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2_0\[6\]/A  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNIET7A_0\[7\]/B  bps_cnt_RNIET7A_0\[7\]/Y  bps_cnt_RNICIJP\[6\]/B  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIA8FK\[0\]/A  bps_cnt_RNIA8FK\[0\]/Y  bps_cnt_RNI8MVJ1\[7\]/A  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIA8FK\[0\]/A  bps_cnt_RNIA8FK\[0\]/Y  bps_cnt_RNI8MVJ1\[7\]/A  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIA8FK\[0\]/A  bps_cnt_RNIA8FK\[0\]/Y  s1_rx_RNI747U1/A  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIA8FK\[0\]/A  bps_cnt_RNIA8FK\[0\]/Y  s1_rx_RNI747U1/A  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIA14E/B  bps_sys_clk_RNIA14E/Y  bps_cnt_RNIB8N71_0\[0\]/A  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  r_data_byte\[0\]_RNO_2\[1\]/A  r_data_byte\[0\]_RNO_2\[1\]/Y  r_data_byte\[0\]_RNO_1\[1\]/B  r_data_byte\[0\]_RNO_1\[1\]/Y  r_data_byte\[0\]_RNO_0\[1\]/B  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[11\]/CLK  div_cnt\[11\]/Q  div_cnt_RNI1RQ4\[11\]/A  div_cnt_RNI1RQ4\[11\]/Y  bps_DR_RNIQSII\[4\]/C  bps_DR_RNIQSII\[4\]/Y  bps_DR_RNI3AH33\[4\]/B  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[0\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[0\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[0\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNI7M7A_0\[3\]/B  bps_cnt_RNI7M7A_0\[3\]/Y  bps_cnt_RNICIJP\[6\]/A  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNIQGBF_0\[0\]/A  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIB8N71\[0\]/C  bps_cnt_RNIB8N71\[0\]/Y  bps_cnt_RNI05RC1\[4\]/A  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[2\]_RNO\[1\]/C  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNIA14E/C  bps_sys_clk_RNIA14E/Y  bps_cnt_RNIB8N71\[0\]/A  bps_cnt_RNIB8N71\[0\]/Y  bps_cnt_RNI05RC1\[4\]/A  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[2\]_RNO\[1\]/C  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNIA14E/C  bps_sys_clk_RNIA14E/Y  bps_cnt_RNI05RC1_1\[4\]/B  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  bps_sys_clk_RNIK9J21/A  bps_sys_clk_RNIK9J21/Y  bps_cnt_RNICGBL2\[4\]/A  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNIA14E/C  bps_sys_clk_RNIA14E/Y  bps_sys_clk_RNIK9J21/B  bps_sys_clk_RNIK9J21/Y  bps_cnt_RNICGBL2\[4\]/A  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIERV52\[5\]/B  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIERV52\[5\]/B  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  bps_cnt_RNIQGBF_0\[0\]/B  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[7\]/CLK  div_cnt\[7\]/Q  bps_DR_RNI0IGR\[7\]/A  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIERV52\[5\]/B  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  div_cnt_RNI9S592\[5\]/C  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  bps_sys_clk_RNIA14E/A  bps_sys_clk_RNIA14E/Y  bps_cnt_RNIB8N71_0\[0\]/A  bps_cnt_RNIB8N71_0\[0\]/Y  bps_cnt_RNIQDJV2\[4\]/A  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  div_cnt_RNIOQPG1\[7\]/A  div_cnt_RNIOQPG1\[7\]/Y  div_cnt_RNI4KQU3\[5\]/B  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[7\]/CLK  div_cnt\[7\]/Q  div_cnt_RNIOQPG1\[7\]/B  div_cnt_RNIOQPG1\[7\]/Y  div_cnt_RNI4KQU3\[5\]/B  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_sys_clk_RNIUBFT/A  bps_sys_clk_RNIUBFT/Y  bps_cnt_RNIERV52\[5\]/A  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_41/A  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_31/B  un1_bps_cnt_20_I_31/Y  bps_cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_0\[3\]/A  bps_cnt_RNI7M7A_0\[3\]/Y  bps_cnt_RNICIJP\[6\]/A  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIET7A_0\[7\]/A  bps_cnt_RNIET7A_0\[7\]/Y  bps_cnt_RNICIJP\[6\]/B  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIET7A_0\[7\]/A  bps_cnt_RNIET7A_0\[7\]/Y  bps_cnt_RNICIJP\[6\]/B  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[1\]/B  bps_cnt_RNO\[1\]/Y  bps_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[4\]/CLK  div_cnt\[4\]/Q  bps_DR_RNIQSII\[4\]/A  bps_DR_RNIQSII\[4\]/Y  bps_DR_RNI3AH33\[4\]/B  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIET7A_0\[7\]/A  bps_cnt_RNIET7A_0\[7\]/Y  bps_cnt_RNICIJP\[6\]/B  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[0\]/B  bps_cnt_RNO\[0\]/Y  bps_cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_35/A  un1_bps_cnt_20_I_35/Y  un1_bps_cnt_20_I_33/B  un1_bps_cnt_20_I_33/Y  bps_cnt_RNO\[4\]/A  bps_cnt_RNO\[4\]/Y  bps_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  div_cnt_RNISVD91\[5\]/A  div_cnt_RNISVD91\[5\]/Y  div_cnt_RNI4KQU3\[5\]/A  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  div_cnt_RNISVD91\[5\]/B  div_cnt_RNISVD91\[5\]/Y  div_cnt_RNI4KQU3\[5\]/A  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNI63814\[12\]/A  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  bps_cnt_RNI3AKD1\[1\]/C  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[1\]/CLK  bps_DR\[1\]/Q  bps_DR_RNIJRND\[1\]/A  bps_DR_RNIJRND\[1\]/Y  bps_DR_RNIH3EL1\[0\]/B  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[15\]/CLK  div_cnt\[15\]/Q  div_cnt_RNI71R4\[15\]/A  div_cnt_RNI71R4\[15\]/Y  div_cnt_RNIE2M9\[13\]/C  div_cnt_RNIE2M9\[13\]/Y  bps_DR_RNI5KUI1\[3\]/A  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  bps_cnt_RNI3AKD1\[1\]/C  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[0\]/A  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNIKOI13\[7\]/B  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNO\[8\]/B  div_cnt_RNO\[8\]/Y  div_cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A\[6\]/A  bps_cnt_RNICR7A\[6\]/Y  bps_cnt_RNISAOI1\[6\]/A  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A\[6\]/A  bps_cnt_RNICR7A\[6\]/Y  bps_cnt_RNISAOI1\[6\]/A  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[2\]/B  r_data_byte\[5\]_RNO_0\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/B  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  un1_bps_cnt_20_I_49/A  un1_bps_cnt_20_I_49/Y  un1_bps_cnt_20_I_41/B  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  bps_cnt_RNIA8FK\[0\]/B  bps_cnt_RNIA8FK\[0\]/Y  bps_cnt_RNI8MVJ1\[7\]/A  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71\[0\]/B  bps_cnt_RNIB8N71\[0\]/Y  bps_cnt_RNI7JFQ2_0\[4\]/A  bps_cnt_RNI7JFQ2_0\[4\]/Y  r_data_byte\[4\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNIB8N71\[0\]/B  bps_cnt_RNIB8N71\[0\]/Y  bps_cnt_RNI7JFQ2\[4\]/A  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNISIBF\[1\]/A  bps_cnt_RNISIBF\[1\]/Y  r_data_byte\[0\]_RNO_2\[1\]/B  r_data_byte\[0\]_RNO_2\[1\]/Y  r_data_byte\[0\]_RNO_1\[1\]/B  r_data_byte\[0\]_RNO_1\[1\]/Y  r_data_byte\[0\]_RNO_0\[1\]/B  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_0\[4\]/C  bps_cnt_RNI05RC1_0\[4\]/Y  r_data_byte\[5\]_RNO\[2\]/A  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF_0\[0\]/C  bps_cnt_RNIQGBF_0\[0\]/Y  bps_cnt_RNIFDFK\[4\]/A  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_0\[4\]/C  bps_cnt_RNI05RC1_0\[4\]/Y  r_data_byte\[5\]_RNO\[1\]/A  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIRHBF\[0\]/C  bps_cnt_RNIRHBF\[0\]/Y  bps_sys_clk_RNIUBFT/B  bps_sys_clk_RNIUBFT/Y  bps_cnt_RNIERV52\[5\]/A  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  bps_DR_RNIO9GR\[5\]/A  bps_DR_RNIO9GR\[5\]/Y  bps_DR_RNI3AH33\[4\]/A  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[8\]/CLK  bps_DR\[8\]/Q  bps_DR_RNI1AOD\[8\]/A  bps_DR_RNI1AOD\[8\]/Y  bps_DR_RNI0IGR\[7\]/C  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  bps_DR_RNIO9GR\[5\]/A  bps_DR_RNIO9GR\[5\]/Y  bps_DR_RNI3AH33\[4\]/A  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[6\]/C  div_cnt_RNO\[6\]/Y  div_cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  bps_cnt_RNIK9J21\[7\]/A  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2\[6\]/A  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  r_data_byte\[1\]_RNO\[1\]/C  r_data_byte\[1\]_RNO\[1\]/Y  r_data_byte\[1\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNII109/B  bps_sys_clk_RNII109/Y  bps_cnt_RNIA14E\[7\]/A  bps_cnt_RNIA14E\[7\]/Y  bps_cnt_RNIK9J21\[7\]/B  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2\[6\]/A  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_DR\[2\]/CLK  bps_DR\[2\]/Q  bps_DR_RNILTND\[2\]/A  bps_DR_RNILTND\[2\]/Y  bps_DR_RNIH3EL1\[0\]/A  bps_DR_RNIH3EL1\[0\]/Y  bps_DR_RNI3AH33\[4\]/C  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI3AKD1\[1\]/B  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  r_data_byte\[1\]_RNO\[0\]/A  r_data_byte\[1\]_RNO\[0\]/Y  r_data_byte\[1\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  bps_sys_clk_RNII109/A  bps_sys_clk_RNII109/Y  bps_cnt_RNIA14E\[7\]/A  bps_cnt_RNIA14E\[7\]/Y  bps_cnt_RNIK9J21\[7\]/B  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2\[6\]/A  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT START_BIT\[0\]/CLK  START_BIT\[0\]/Q  START_BIT_RNI9C05\[1\]/B  START_BIT_RNI9C05\[1\]/Y  START_BIT_RNI26OH\[2\]/A  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNI4KQU3\[5\]/C  div_cnt_RNI4KQU3\[5\]/Y  div_cnt_RNO\[12\]/B  div_cnt_RNO\[12\]/Y  div_cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  bps_cnt_RNI65O91\[1\]/A  bps_cnt_RNI65O91\[1\]/Y  bps_sys_clk_RNIQ8OI1/A  bps_sys_clk_RNIQ8OI1/Y  r_data_byte\[1\]_RNO\[2\]/A  r_data_byte\[1\]_RNO\[2\]/Y  r_data_byte\[1\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[13\]/CLK  div_cnt\[13\]/Q  div_cnt_RNIE2M9\[13\]/B  div_cnt_RNIE2M9\[13\]/Y  bps_DR_RNI5KUI1\[3\]/A  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_45/A  un1_bps_cnt_20_I_45/Y  un1_bps_cnt_20_I_27/B  un1_bps_cnt_20_I_27/Y  bps_cnt_RNO\[3\]/A  bps_cnt_RNO\[3\]/Y  bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  un1_bps_cnt_20_I_49/B  un1_bps_cnt_20_I_49/Y  un1_bps_cnt_20_I_41/B  un1_bps_cnt_20_I_41/Y  un1_bps_cnt_20_I_44/A  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNICR7A\[6\]/B  bps_cnt_RNICR7A\[6\]/Y  bps_cnt_RNISAOI1\[6\]/A  bps_cnt_RNISAOI1\[6\]/Y  r_data_byte\[5\]_RNO_0\[1\]/B  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  bps_cnt_RNI05RC1_0\[4\]/B  bps_cnt_RNI05RC1_0\[4\]/Y  r_data_byte\[5\]_RNO\[2\]/A  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s1_rx/CLK  s1_rx/Q  s1_rx_RNI6ECQ/B  s1_rx_RNI6ECQ/Y  s1_rx_RNIQHC31/B  s1_rx_RNIQHC31/Y  bps_cnt_RNIGFG81\[5\]/A  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNICIJP\[6\]/C  bps_cnt_RNICIJP\[6\]/Y  START_BIT_RNIEOBB1\[2\]/A  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[6\]/CLK  bps_DR\[6\]/Q  bps_DR_RNIT5OD\[6\]/A  bps_DR_RNIT5OD\[6\]/Y  bps_DR_RNIO9GR\[5\]/C  bps_DR_RNIO9GR\[5\]/Y  bps_DR_RNI3AH33\[4\]/A  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNIFDFK\[4\]/B  bps_cnt_RNIFDFK\[4\]/Y  bps_cnt_RNI05RC1_1\[4\]/A  bps_cnt_RNI05RC1_1\[4\]/Y  bps_cnt_RNISFJV2\[6\]/A  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNI7M7A_0\[3\]/B  bps_cnt_RNI7M7A_0\[3\]/Y  bps_cnt_RNIF4R31\[0\]/B  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNIQGBF\[0\]/A  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[7\]/CLK  bps_DR\[7\]/Q  bps_DR_RNI0IGR\[7\]/B  bps_DR_RNI0IGR\[7\]/Y  bps_DR_RNI5KUI1\[3\]/C  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNO_0\[4\]/A  div_cnt_RNO_0\[4\]/Y  div_cnt_RNO\[4\]/B  div_cnt_RNO\[4\]/Y  div_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNICAFK\[1\]/A  bps_cnt_RNICAFK\[1\]/Y  bps_cnt_RNI3AKD1\[1\]/A  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[14\]/CLK  div_cnt\[14\]/Q  div_cnt_RNIE2M9\[13\]/A  div_cnt_RNIE2M9\[13\]/Y  bps_DR_RNI5KUI1\[3\]/A  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNO_0\[7\]/B  div_cnt_RNO_0\[7\]/Y  div_cnt_RNO\[7\]/B  div_cnt_RNO\[7\]/Y  div_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNICAFK\[1\]/B  bps_cnt_RNICAFK\[1\]/Y  bps_cnt_RNI3AKD1\[1\]/A  bps_cnt_RNI3AKD1\[1\]/Y  bps_cnt_RNICGBL2\[4\]/B  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[4\]/CLK  bps_DR\[4\]/Q  bps_DR_RNIQSII\[4\]/B  bps_DR_RNIQSII\[4\]/Y  bps_DR_RNI3AH33\[4\]/B  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI2PBF\[5\]/C  bps_cnt_RNI2PBF\[5\]/Y  bps_cnt_RNI41V81\[7\]/C  bps_cnt_RNI41V81\[7\]/Y  r_data_byte\[4\]_RNIMACD1\[0\]/B  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[1\]/C  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  bps_cnt_RNI8MVJ1\[7\]/B  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  s1_rx_RNI3S4G/B  s1_rx_RNI3S4G/Y  r_data_byte\[0\]_RNO_1\[1\]/A  r_data_byte\[0\]_RNO_1\[1\]/Y  r_data_byte\[0\]_RNO_0\[1\]/B  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  bps_cnt_RNI41V81\[7\]/A  bps_cnt_RNI41V81\[7\]/Y  r_data_byte\[4\]_RNIMACD1\[0\]/B  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[1\]/C  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIET7A\[7\]/A  bps_cnt_RNIET7A\[7\]/Y  bps_cnt_RNIF4R31\[0\]/A  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNIET7A\[7\]/B  bps_cnt_RNIET7A\[7\]/Y  bps_cnt_RNIF4R31\[0\]/A  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A\[3\]/B  bps_cnt_RNI7M7A\[3\]/Y  r_data_byte\[0\]_RNO_1\[1\]/C  r_data_byte\[0\]_RNO_1\[1\]/Y  r_data_byte\[0\]_RNO_0\[1\]/B  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIPFBF\[3\]/B  bps_cnt_RNIPFBF\[3\]/Y  s1_rx_RNI6ECQ/A  s1_rx_RNI6ECQ/Y  bps_cnt_RNI8MVJ1\[7\]/B  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_DR\[3\]/CLK  bps_DR\[3\]/Q  bps_DR_RNINVND\[3\]/A  bps_DR_RNINVND\[3\]/Y  bps_DR_RNI5KUI1\[3\]/B  bps_DR_RNI5KUI1\[3\]/Y  uart_state_RNI4K5U4/A  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  bps_cnt_RNIQGBF\[0\]/B  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNIIPAK2\[4\]/B  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[1\]/CLK  START_BIT\[1\]/Q  START_BIT_RNI9C05\[1\]/A  START_BIT_RNI9C05\[1\]/Y  START_BIT_RNI26OH\[2\]/A  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_DR\[5\]/CLK  bps_DR\[5\]/Q  bps_DR_RNIO9GR\[5\]/B  bps_DR_RNIO9GR\[5\]/Y  bps_DR_RNI3AH33\[4\]/A  bps_DR_RNI3AH33\[4\]/Y  uart_state_RNI4K5U4/B  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  Rx_Done/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI3I7A\[0\]/B  bps_cnt_RNI3I7A\[0\]/Y  r_data_byte\[3\]_RNO_0\[1\]/C  r_data_byte\[3\]_RNO_0\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/A  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[6\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[5\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[4\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[3\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[0\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIQGBF\[0\]/C  bps_cnt_RNIQGBF\[0\]/Y  bps_cnt_RNIF4R31\[0\]/C  bps_cnt_RNIF4R31\[0\]/Y  bps_cnt_RNI41V81\[4\]/A  bps_cnt_RNI41V81\[4\]/Y  data\[7\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI6L7A\[3\]/A  bps_cnt_RNI6L7A\[3\]/Y  bps_cnt_RNIGTMU\[2\]/B  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNIA14E/C  bps_sys_clk_RNIA14E/Y  bps_cnt_RNI05RC1_0\[4\]/A  bps_cnt_RNI05RC1_0\[4\]/Y  r_data_byte\[5\]_RNO\[2\]/A  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNINDBF\[3\]/B  bps_cnt_RNINDBF\[3\]/Y  bps_cnt_RNIGTMU\[2\]/A  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[7\]/CLK  div_cnt\[7\]/Q  div_cnt_RNIKOI13\[7\]/C  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  div_cnt_RNIKOI13\[7\]/A  div_cnt_RNIKOI13\[7\]/Y  div_cnt_RNI3PVP3\[9\]/B  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  bps_cnt_RNI6L7A\[3\]/A  bps_cnt_RNI6L7A\[3\]/Y  bps_cnt_RNIGTMU\[2\]/B  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[1\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_36/A  un1_bps_cnt_20_I_36/Y  un1_bps_cnt_20_I_29/B  un1_bps_cnt_20_I_29/Y  bps_cnt_RNO\[2\]/A  bps_cnt_RNO\[2\]/Y  bps_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A\[6\]/A  bps_cnt_RNICR7A\[6\]/Y  bps_cnt_RNISFJV2\[6\]/S  bps_cnt_RNISFJV2\[6\]/Y  r_data_byte\[2\]_RNO\[2\]/C  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIA14E\[7\]/B  bps_cnt_RNIA14E\[7\]/Y  bps_cnt_RNIK9J21\[7\]/B  bps_cnt_RNIK9J21\[7\]/Y  bps_cnt_RNIRN7G2\[6\]/A  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI6L7A\[3\]/B  bps_cnt_RNI6L7A\[3\]/Y  bps_cnt_RNIGTMU\[2\]/B  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNI9S592\[5\]/A  div_cnt_RNI9S592\[5\]/Y  div_cnt_RNO\[6\]/B  div_cnt_RNO\[6\]/Y  div_cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNIGPI41\[2\]/A  div_cnt_RNIGPI41\[2\]/Y  div_cnt_RNO\[3\]/B  div_cnt_RNO\[3\]/Y  div_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  START_BIT_RNO\[0\]/B  START_BIT_RNO\[0\]/Y  START_BIT\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  START_BIT_RNO\[1\]/B  START_BIT_RNO\[1\]/Y  START_BIT\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  bps_cnt_RNI7M7A_1\[3\]/B  bps_cnt_RNI7M7A_1\[3\]/Y  r_data_byte\[3\]_RNO\[1\]/B  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A_0\[6\]/B  bps_cnt_RNICR7A_0\[6\]/Y  r_data_byte\[3\]_RNO_0\[1\]/A  r_data_byte\[3\]_RNO_0\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/A  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  un1_bps_cnt_20_I_43/B  un1_bps_cnt_20_I_43/Y  un1_bps_cnt_20_I_28/B  un1_bps_cnt_20_I_28/Y  bps_cnt_RNO\[5\]/A  bps_cnt_RNO\[5\]/Y  bps_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNIQDJV2\[4\]/S  bps_cnt_RNIQDJV2\[4\]/Y  r_data_byte\[0\]_RNO\[0\]/B  r_data_byte\[0\]_RNO\[0\]/Y  r_data_byte\[0\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[2\]/CLK  START_BIT\[2\]/Q  START_BIT_RNI26OH\[2\]/B  START_BIT_RNI26OH\[2\]/Y  START_BIT_RNIEOBB1\[2\]/B  START_BIT_RNIEOBB1\[2\]/Y  bps_cnt_RNIIPAK2\[4\]/A  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNIGFG81\[5\]/B  bps_cnt_RNIGFG81\[5\]/Y  bps_cnt_RNIRN7G2_0\[6\]/B  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNICR7A_0\[6\]/A  bps_cnt_RNICR7A_0\[6\]/Y  r_data_byte\[3\]_RNO_0\[1\]/A  r_data_byte\[3\]_RNO_0\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/A  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI2PBF\[5\]/C  bps_cnt_RNI2PBF\[5\]/Y  s1_rx_RNIT0JM2/B  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  un1_bps_cnt_20_I_44/B  un1_bps_cnt_20_I_44/Y  un1_bps_cnt_20_I_34/B  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNO_0\[5\]/A  div_cnt_RNO_0\[5\]/Y  div_cnt_RNO\[5\]/B  div_cnt_RNO\[5\]/Y  div_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[12\]/CLK  div_cnt\[12\]/Q  div_cnt_RNI63814\[12\]/B  div_cnt_RNI63814\[12\]/Y  div_cnt_RNI9JL34\[13\]/A  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNIIPAK2\[4\]/S  bps_cnt_RNIIPAK2\[4\]/Y  bps_cnt_RNO\[7\]/B  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNIET7A_0\[7\]/B  bps_cnt_RNIET7A_0\[7\]/Y  r_data_byte\[3\]_RNO_0\[1\]/B  r_data_byte\[3\]_RNO_0\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/A  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A_0\[6\]/B  bps_cnt_RNICR7A_0\[6\]/Y  bps_cnt_RNI6J772\[7\]/A  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIVLBF\[7\]/B  bps_cnt_RNIVLBF\[7\]/Y  bps_cnt_RNI41V81\[7\]/B  bps_cnt_RNI41V81\[7\]/Y  r_data_byte\[4\]_RNIMACD1\[0\]/B  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[1\]/C  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICR7A_0\[6\]/B  bps_cnt_RNICR7A_0\[6\]/Y  bps_cnt_RNIQM7G2\[5\]/A  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNICGBL2\[4\]/S  bps_cnt_RNICGBL2\[4\]/Y  r_data_byte\[0\]_RNIH84U2\[0\]/B  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_sys_clk_RNIK309/B  bps_sys_clk_RNIK309/Y  s1_rx_RNIT0JM2/A  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  bps_cnt_RNIGTMU\[2\]/S  bps_cnt_RNIGTMU\[2\]/Y  s1_rx_RNI747U1/B  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIRHBF\[0\]/C  bps_cnt_RNIRHBF\[0\]/Y  START_BIT_RNO\[0\]/A  START_BIT_RNO\[0\]/Y  START_BIT\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNIRHBF\[0\]/C  bps_cnt_RNIRHBF\[0\]/Y  START_BIT_RNO\[1\]/A  START_BIT_RNO\[1\]/Y  START_BIT\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  bps_sys_clk_RNIUBFT/C  bps_sys_clk_RNIUBFT/Y  bps_cnt_RNIERV52\[5\]/A  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  un1_bps_cnt_20_I_45/B  un1_bps_cnt_20_I_45/Y  un1_bps_cnt_20_I_27/B  un1_bps_cnt_20_I_27/Y  bps_cnt_RNO\[3\]/A  bps_cnt_RNO\[3\]/Y  bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[12\]/CLK  div_cnt\[12\]/Q  div_cnt_RNI71R4\[15\]/B  div_cnt_RNI71R4\[15\]/Y  div_cnt_RNIE2M9\[13\]/C  div_cnt_RNIE2M9\[13\]/Y  bps_sys_clk_RNO_2/C  bps_sys_clk_RNO_2/Y  bps_sys_clk_RNO/C  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI41V81\[4\]/B  bps_cnt_RNI41V81\[4\]/Y  Rx_Done/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_1/B  un1_bps_cnt_20_I_1/Y  un1_bps_cnt_20_I_30/B  un1_bps_cnt_20_I_30/Y  bps_cnt_RNO\[1\]/A  bps_cnt_RNO\[1\]/Y  bps_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[9\]/CLK  div_cnt\[9\]/Q  div_cnt_RNI3PVP3\[9\]/C  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNI7EKD1\[6\]/B  bps_cnt_RNI7EKD1\[6\]/Y  bps_cnt_RNI7JFQ2_0\[4\]/B  bps_cnt_RNI7JFQ2_0\[4\]/Y  r_data_byte\[4\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNI7EKD1_0\[6\]/B  bps_cnt_RNI7EKD1_0\[6\]/Y  bps_cnt_RNI7JFQ2\[4\]/B  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  div_cnt_RNIMVI41\[2\]/A  div_cnt_RNIMVI41\[2\]/Y  div_cnt_RNO_0\[5\]/B  div_cnt_RNO_0\[5\]/Y  div_cnt_RNO\[5\]/B  div_cnt_RNO\[5\]/Y  div_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  div_cnt_RNI3PVP3\[9\]/A  div_cnt_RNI3PVP3\[9\]/Y  div_cnt_RNO_0\[11\]/A  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI05RC1\[4\]/B  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[2\]_RNO\[1\]/C  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI05RC1\[4\]/B  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[2\]_RNO\[0\]/C  r_data_byte\[2\]_RNO\[0\]/Y  r_data_byte\[2\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI05RC1\[4\]/B  bps_cnt_RNI05RC1\[4\]/Y  r_data_byte\[5\]_RNO\[0\]/C  r_data_byte\[5\]_RNO\[0\]/Y  r_data_byte\[5\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  r_data_byte\[0\]_RNO_0\[1\]/S  r_data_byte\[0\]_RNO_0\[1\]/Y  r_data_byte\[0\]_RNO\[1\]/A  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNIVFCO\[1\]/B  div_cnt_RNIVFCO\[1\]/Y  div_cnt_RNO\[2\]/B  div_cnt_RNO\[2\]/Y  div_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIRN7G2\[6\]/S  bps_cnt_RNIRN7G2\[6\]/Y  bps_cnt_RNIGKBL2\[4\]/A  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  bps_cnt_RNIRN7G2_0\[6\]/S  bps_cnt_RNIRN7G2_0\[6\]/Y  bps_cnt_RNIGKBL2_0\[4\]/A  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT uart_state/CLK  uart_state/Q  uart_state_RNI4K5U4/C  uart_state_RNI4K5U4/Y  div_cnt_RNO\[1\]/C  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[9\]/CLK  div_cnt\[9\]/Q  bps_sys_clk_RNO_4/B  bps_sys_clk_RNO_4/Y  bps_sys_clk_RNO_2/A  bps_sys_clk_RNO_2/Y  bps_sys_clk_RNO/C  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  bps_sys_clk_RNO_3/A  bps_sys_clk_RNO_3/Y  bps_sys_clk_RNO_1/A  bps_sys_clk_RNO_1/Y  bps_sys_clk_RNO/B  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[7\]/CLK  div_cnt\[7\]/Q  bps_sys_clk_RNO_3/B  bps_sys_clk_RNO_3/Y  bps_sys_clk_RNO_1/A  bps_sys_clk_RNO_1/Y  bps_sys_clk_RNO/B  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[0\]/CLK  div_cnt\[0\]/Q  bps_sys_clk_RNO_5/A  bps_sys_clk_RNO_5/Y  bps_sys_clk_RNO_2/B  bps_sys_clk_RNO_2/Y  bps_sys_clk_RNO/C  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[10\]/CLK  div_cnt\[10\]/Q  div_cnt_RNI1RQ4\[11\]/B  div_cnt_RNI1RQ4\[11\]/Y  bps_sys_clk_RNO_0/C  bps_sys_clk_RNO_0/Y  bps_sys_clk_RNO/A  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT uart_state/CLK  uart_state/Q  uart_state_RNI4K5U4/C  uart_state_RNI4K5U4/Y  div_cnt_RNO\[2\]/C  div_cnt_RNO\[2\]/Y  div_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT uart_state/CLK  uart_state/Q  uart_state_RNI4K5U4/C  uart_state_RNI4K5U4/Y  div_cnt_RNO\[3\]/C  div_cnt_RNO\[3\]/Y  div_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT uart_state/CLK  uart_state/Q  uart_state_RNI4K5U4/C  uart_state_RNI4K5U4/Y  div_cnt_RNO\[4\]/C  div_cnt_RNO\[4\]/Y  div_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  uart_state_RNO_0/B  uart_state_RNO_0/Y  uart_state_RNO/C  uart_state_RNO/Y  uart_state/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[13\]/CLK  div_cnt\[13\]/Q  div_cnt_RNI9JL34\[13\]/B  div_cnt_RNI9JL34\[13\]/Y  div_cnt_RNO_0\[15\]/B  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_sys_clk_RNII109/B  bps_sys_clk_RNII109/Y  bps_cnt_RNI6J772\[7\]/B  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  bps_cnt_RNIERV52\[5\]/S  bps_cnt_RNIERV52\[5\]/Y  bps_cnt_RNIQM7G2\[5\]/B  bps_cnt_RNIQM7G2\[5\]/Y  r_data_byte\[1\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[0\]/CLK  r_data_byte\[5\]\[0\]/Q  r_data_byte\[5\]_RNO_2\[2\]/B  r_data_byte\[5\]_RNO_2\[2\]/Y  r_data_byte\[5\]_RNO_0\[2\]/A  r_data_byte\[5\]_RNO_0\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/B  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  bps_sys_clk_RNO_4/A  bps_sys_clk_RNO_4/Y  bps_sys_clk_RNO_2/A  bps_sys_clk_RNO_2/Y  bps_sys_clk_RNO/C  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  un1_bps_cnt_20_I_33/A  un1_bps_cnt_20_I_33/Y  bps_cnt_RNO\[4\]/A  bps_cnt_RNO\[4\]/Y  bps_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[2\]/CLK  div_cnt\[2\]/Q  bps_sys_clk_RNO_5/B  bps_sys_clk_RNO_5/Y  bps_sys_clk_RNO_2/B  bps_sys_clk_RNO_2/Y  bps_sys_clk_RNO/C  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  bps_cnt_RNI8MVJ1\[7\]/S  bps_cnt_RNI8MVJ1\[7\]/Y  bps_cnt_RNI6J772\[7\]/C  bps_cnt_RNI6J772\[7\]/Y  r_data_byte\[7\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  div_cnt_RNO_0\[4\]/B  div_cnt_RNO_0\[4\]/Y  div_cnt_RNO\[4\]/B  div_cnt_RNO\[4\]/Y  div_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  r_data_byte\[0\]_RNIH84U2\[0\]/A  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI7JFQ2\[4\]/S  bps_cnt_RNI7JFQ2\[4\]/Y  r_data_byte\[6\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNI7JFQ2_0\[4\]/S  bps_cnt_RNI7JFQ2_0\[4\]/Y  r_data_byte\[4\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  div_cnt_RNO_0\[9\]/A  div_cnt_RNO_0\[9\]/Y  div_cnt_RNO\[9\]/B  div_cnt_RNO\[9\]/Y  div_cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  div_cnt_RNO_0\[7\]/A  div_cnt_RNO_0\[7\]/Y  div_cnt_RNO\[7\]/B  div_cnt_RNO\[7\]/Y  div_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_sys_clk/CLK  bps_sys_clk/Q  un1_bps_cnt_20_I_24/B  un1_bps_cnt_20_I_24/Y  bps_cnt_RNO\[0\]/A  bps_cnt_RNO\[0\]/Y  bps_cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s1_rx/CLK  s1_rx/Q  s1_rx_RNI747U1/S  s1_rx_RNI747U1/Y  s1_rx_RNIT0JM2/C  s1_rx_RNIT0JM2/Y  START_BIT\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[5\]/CLK  bps_cnt\[5\]/Q  un1_bps_cnt_20_I_28/A  un1_bps_cnt_20_I_28/Y  bps_cnt_RNO\[5\]/A  bps_cnt_RNO\[5\]/Y  bps_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[10\]/CLK  div_cnt\[10\]/Q  div_cnt_RNO_0\[11\]/B  div_cnt_RNO_0\[11\]/Y  div_cnt_RNO\[11\]/B  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[1\]/CLK  r_data_byte\[5\]\[1\]/Q  r_data_byte\[5\]_RNO_2\[2\]/A  r_data_byte\[5\]_RNO_2\[2\]/Y  r_data_byte\[5\]_RNO_0\[2\]/A  r_data_byte\[5\]_RNO_0\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/B  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[2\]/CLK  bps_cnt\[2\]/Q  un1_bps_cnt_20_I_29/A  un1_bps_cnt_20_I_29/Y  bps_cnt_RNO\[2\]/A  bps_cnt_RNO\[2\]/Y  bps_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[1\]/CLK  bps_cnt\[1\]/Q  un1_bps_cnt_20_I_30/A  un1_bps_cnt_20_I_30/Y  bps_cnt_RNO\[1\]/A  bps_cnt_RNO\[1\]/Y  bps_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[7\]/CLK  bps_cnt\[7\]/Q  un1_bps_cnt_20_I_34/A  un1_bps_cnt_20_I_34/Y  bps_cnt_RNO\[7\]/A  bps_cnt_RNO\[7\]/Y  bps_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNIGKBL2\[4\]/B  bps_cnt_RNIGKBL2\[4\]/Y  r_data_byte\[3\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[4\]/CLK  bps_cnt\[4\]/Q  bps_cnt_RNIGKBL2_0\[4\]/B  bps_cnt_RNIGKBL2_0\[4\]/Y  r_data_byte\[5\]\[2\]/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT bps_cnt\[3\]/CLK  bps_cnt\[3\]/Q  un1_bps_cnt_20_I_27/A  un1_bps_cnt_20_I_27/Y  bps_cnt_RNO\[3\]/A  bps_cnt_RNO\[3\]/Y  bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  bps_sys_clk_RNO_0/B  bps_sys_clk_RNO_0/Y  bps_sys_clk_RNO/A  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[4\]/CLK  div_cnt\[4\]/Q  bps_sys_clk_RNO_1/C  bps_sys_clk_RNO_1/Y  bps_sys_clk_RNO/B  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[0\]/CLK  bps_cnt\[0\]/Q  un1_bps_cnt_20_I_24/A  un1_bps_cnt_20_I_24/Y  bps_cnt_RNO\[0\]/A  bps_cnt_RNO\[0\]/Y  bps_cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  bps_sys_clk_RNO_0/A  bps_sys_clk_RNO_0/Y  bps_sys_clk_RNO/A  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[0\]/CLK  r_data_byte\[5\]\[0\]/Q  r_data_byte\[5\]_RNO_0\[1\]/A  r_data_byte\[5\]_RNO_0\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/B  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  bps_sys_clk_RNO_1/B  bps_sys_clk_RNO_1/Y  bps_sys_clk_RNO/B  bps_sys_clk_RNO/Y  bps_sys_clk/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[0\]/CLK  r_data_byte\[2\]\[0\]/Q  r_data_byte\[2\]_RNO_0\[1\]/B  r_data_byte\[2\]_RNO_0\[1\]/Y  r_data_byte\[2\]_RNO\[1\]/B  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[9\]/CLK  div_cnt\[9\]/Q  div_cnt_RNO_0\[9\]/C  div_cnt_RNO_0\[9\]/Y  div_cnt_RNO\[9\]/B  div_cnt_RNO\[9\]/Y  div_cnt\[9\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[7\]/CLK  div_cnt\[7\]/Q  div_cnt_RNO_0\[7\]/C  div_cnt_RNO_0\[7\]/Y  div_cnt_RNO\[7\]/B  div_cnt_RNO\[7\]/Y  div_cnt\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[5\]/CLK  div_cnt\[5\]/Q  div_cnt_RNO_0\[5\]/C  div_cnt_RNO_0\[5\]/Y  div_cnt_RNO\[5\]/B  div_cnt_RNO\[5\]/Y  div_cnt\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[14\]/CLK  div_cnt\[14\]/Q  div_cnt_RNO_0\[15\]/A  div_cnt_RNO_0\[15\]/Y  div_cnt_RNO\[15\]/B  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[0\]/CLK  r_data_byte\[1\]\[0\]/Q  r_data_byte\[1\]_RNO_0\[2\]/B  r_data_byte\[1\]_RNO_0\[2\]/Y  r_data_byte\[1\]_RNO\[2\]/B  r_data_byte\[1\]_RNO\[2\]/Y  r_data_byte\[1\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT bps_cnt\[6\]/CLK  bps_cnt\[6\]/Q  un1_bps_cnt_20_I_31/A  un1_bps_cnt_20_I_31/Y  bps_cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[0\]/CLK  START_BIT\[0\]/Q  START_BIT_RNO_0\[1\]/B  START_BIT_RNO_0\[1\]/Y  START_BIT_RNO\[1\]/C  START_BIT_RNO\[1\]/Y  START_BIT\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[0\]/CLK  START_BIT\[0\]/Q  START_BIT_RNI9C05\[1\]/B  START_BIT_RNI9C05\[1\]/Y  START_BIT_RNO\[2\]/B  START_BIT_RNO\[2\]/Y  START_BIT\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[0\]/CLK  r_data_byte\[3\]\[0\]/Q  r_data_byte\[3\]_RNO_0\[2\]/A  r_data_byte\[3\]_RNO_0\[2\]/Y  r_data_byte\[3\]_RNO\[2\]/A  r_data_byte\[3\]_RNO\[2\]/Y  r_data_byte\[3\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[0\]/CLK  r_data_byte\[7\]\[0\]/Q  r_data_byte\[7\]_RNO_0\[2\]/A  r_data_byte\[7\]_RNO_0\[2\]/Y  r_data_byte\[7\]_RNO\[2\]/A  r_data_byte\[7\]_RNO\[2\]/Y  r_data_byte\[7\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[0\]/CLK  r_data_byte\[6\]\[0\]/Q  r_data_byte\[6\]_RNO_0\[2\]/A  r_data_byte\[6\]_RNO_0\[2\]/Y  r_data_byte\[6\]_RNO\[2\]/A  r_data_byte\[6\]_RNO\[2\]/Y  r_data_byte\[6\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[0\]/CLK  r_data_byte\[2\]\[0\]/Q  r_data_byte\[2\]_RNO_0\[2\]/A  r_data_byte\[2\]_RNO_0\[2\]/Y  r_data_byte\[2\]_RNO\[2\]/A  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[1\]/CLK  div_cnt\[1\]/Q  div_cnt_RNO\[1\]/B  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[1\]/CLK  r_data_byte\[1\]\[1\]/Q  r_data_byte\[1\]_RNO_0\[2\]/A  r_data_byte\[1\]_RNO_0\[2\]/Y  r_data_byte\[1\]_RNO\[2\]/B  r_data_byte\[1\]_RNO\[2\]/Y  r_data_byte\[1\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[1\]/CLK  r_data_byte\[0\]\[1\]/Q  r_data_byte\[0\]_RNO_0\[2\]/B  r_data_byte\[0\]_RNO_0\[2\]/Y  r_data_byte\[0\]_RNO\[2\]/A  r_data_byte\[0\]_RNO\[2\]/Y  r_data_byte\[0\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[1\]/CLK  r_data_byte\[2\]\[1\]/Q  r_data_byte\[2\]_RNO_0\[2\]/B  r_data_byte\[2\]_RNO_0\[2\]/Y  r_data_byte\[2\]_RNO\[2\]/A  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[1\]/CLK  r_data_byte\[4\]\[1\]/Q  r_data_byte\[4\]_RNO_0\[2\]/B  r_data_byte\[4\]_RNO_0\[2\]/Y  r_data_byte\[4\]_RNO\[2\]/A  r_data_byte\[4\]_RNO\[2\]/Y  r_data_byte\[4\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[1\]/CLK  r_data_byte\[3\]\[1\]/Q  r_data_byte\[3\]_RNO_0\[2\]/B  r_data_byte\[3\]_RNO_0\[2\]/Y  r_data_byte\[3\]_RNO\[2\]/A  r_data_byte\[3\]_RNO\[2\]/Y  r_data_byte\[3\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[1\]/CLK  r_data_byte\[7\]\[1\]/Q  r_data_byte\[7\]_RNO_0\[2\]/B  r_data_byte\[7\]_RNO_0\[2\]/Y  r_data_byte\[7\]_RNO\[2\]/A  r_data_byte\[7\]_RNO\[2\]/Y  r_data_byte\[7\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[1\]/CLK  r_data_byte\[6\]\[1\]/Q  r_data_byte\[6\]_RNO_0\[2\]/B  r_data_byte\[6\]_RNO_0\[2\]/Y  r_data_byte\[6\]_RNO\[2\]/A  r_data_byte\[6\]_RNO\[2\]/Y  r_data_byte\[6\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[1\]/CLK  r_data_byte\[3\]\[1\]/Q  r_data_byte\[3\]_RNO_1\[1\]/B  r_data_byte\[3\]_RNO_1\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/C  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[0\]/CLK  r_data_byte\[3\]\[0\]/Q  r_data_byte\[3\]_RNO_1\[1\]/A  r_data_byte\[3\]_RNO_1\[1\]/Y  r_data_byte\[3\]_RNO\[1\]/C  r_data_byte\[3\]_RNO\[1\]/Y  r_data_byte\[3\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[0\]/CLK  r_data_byte\[0\]\[0\]/Q  r_data_byte\[0\]_RNO_0\[2\]/A  r_data_byte\[0\]_RNO_0\[2\]/Y  r_data_byte\[0\]_RNO\[2\]/A  r_data_byte\[0\]_RNO\[2\]/Y  r_data_byte\[0\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[0\]/CLK  r_data_byte\[4\]\[0\]/Q  r_data_byte\[4\]_RNO_0\[2\]/A  r_data_byte\[4\]_RNO_0\[2\]/Y  r_data_byte\[4\]_RNO\[2\]/A  r_data_byte\[4\]_RNO\[2\]/Y  r_data_byte\[4\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[8\]/CLK  div_cnt\[8\]/Q  div_cnt_RNO\[8\]/A  div_cnt_RNO\[8\]/Y  div_cnt\[8\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[3\]/CLK  div_cnt\[3\]/Q  div_cnt_RNO\[3\]/A  div_cnt_RNO\[3\]/Y  div_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[6\]/CLK  div_cnt\[6\]/Q  div_cnt_RNO\[6\]/A  div_cnt_RNO\[6\]/Y  div_cnt\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT tmp1_rx/CLK  tmp1_rx/Q  tmp1_rx_RNIL14J/A  tmp1_rx_RNIL14J/Y  uart_state_RNO/A  uart_state_RNO/Y  uart_state/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[0\]/CLK  r_data_byte\[0\]\[0\]/Q  r_data_byte\[0\]_RNIH84U2\[0\]/C  r_data_byte\[0\]_RNIH84U2\[0\]/Y  r_data_byte\[0\]_RNO\[1\]/C  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[0\]/CLK  r_data_byte\[4\]\[0\]/Q  r_data_byte\[4\]_RNIMACD1\[0\]/A  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[1\]/C  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[0\]/CLK  r_data_byte\[4\]\[0\]/Q  r_data_byte\[4\]_RNIMACD1\[0\]/A  r_data_byte\[4\]_RNIMACD1\[0\]/Y  r_data_byte\[4\]_RNO\[0\]/A  r_data_byte\[4\]_RNO\[0\]/Y  r_data_byte\[4\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[1\]/CLK  r_data_byte\[2\]\[1\]/Q  r_data_byte\[2\]_RNO_0\[1\]/A  r_data_byte\[2\]_RNO_0\[1\]/Y  r_data_byte\[2\]_RNO\[1\]/B  r_data_byte\[2\]_RNO\[1\]/Y  r_data_byte\[2\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[2\]/CLK  r_data_byte\[5\]\[2\]/Q  r_data_byte\[5\]_RNO_1\[2\]/A  r_data_byte\[5\]_RNO_1\[2\]/Y  r_data_byte\[5\]_RNO\[2\]/C  r_data_byte\[5\]_RNO\[2\]/Y  r_data_byte\[5\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[1\]/CLK  r_data_byte\[5\]\[1\]/Q  r_data_byte\[5\]_RNO_1\[1\]/A  r_data_byte\[5\]_RNO_1\[1\]/Y  r_data_byte\[5\]_RNO\[1\]/C  r_data_byte\[5\]_RNO\[1\]/Y  r_data_byte\[5\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[0\]/CLK  r_data_byte\[3\]\[0\]/Q  r_data_byte\[3\]_RNO\[0\]/B  r_data_byte\[3\]_RNO\[0\]/Y  r_data_byte\[3\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[0\]/CLK  div_cnt\[0\]/Q  div_cnt_RNO\[1\]/A  div_cnt_RNO\[1\]/Y  div_cnt\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[2\]/CLK  div_cnt\[2\]/Q  div_cnt_RNO\[2\]/A  div_cnt_RNO\[2\]/Y  div_cnt\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[4\]/CLK  div_cnt\[4\]/Q  div_cnt_RNO\[4\]/A  div_cnt_RNO\[4\]/Y  div_cnt\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[0\]/CLK  r_data_byte\[1\]\[0\]/Q  r_data_byte\[1\]_RNO\[1\]/B  r_data_byte\[1\]_RNO\[1\]/Y  r_data_byte\[1\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[2\]/CLK  r_data_byte\[1\]\[2\]/Q  r_data_byte\[1\]_RNO_0\[2\]/C  r_data_byte\[1\]_RNO_0\[2\]/Y  r_data_byte\[1\]_RNO\[2\]/B  r_data_byte\[1\]_RNO\[2\]/Y  r_data_byte\[1\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[0\]/CLK  div_cnt\[0\]/Q  div_cnt_RNO\[0\]/B  div_cnt_RNO\[0\]/Y  div_cnt\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[10\]/CLK  div_cnt\[10\]/Q  div_cnt_RNO\[10\]/A  div_cnt_RNO\[10\]/Y  div_cnt\[10\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[1\]/CLK  START_BIT\[1\]/Q  START_BIT_RNO_0\[1\]/A  START_BIT_RNO_0\[1\]/Y  START_BIT_RNO\[1\]/C  START_BIT_RNO\[1\]/Y  START_BIT\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[0\]/CLK  r_data_byte\[7\]\[0\]/Q  r_data_byte\[7\]_RNO\[1\]/A  r_data_byte\[7\]_RNO\[1\]/Y  r_data_byte\[7\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[0\]/CLK  r_data_byte\[6\]\[0\]/Q  r_data_byte\[6\]_RNO\[1\]/A  r_data_byte\[6\]_RNO\[1\]/Y  r_data_byte\[6\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT tmp0_rx/CLK  tmp0_rx/Q  tmp1_rx_RNIL14J/B  tmp1_rx_RNIL14J/Y  uart_state_RNO/A  uart_state_RNO/Y  uart_state/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[0\]/CLK  r_data_byte\[5\]\[0\]/Q  r_data_byte\[5\]_RNO\[0\]/B  r_data_byte\[5\]_RNO\[0\]/Y  r_data_byte\[5\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[0\]/CLK  r_data_byte\[2\]\[0\]/Q  r_data_byte\[2\]_RNO\[0\]/B  r_data_byte\[2\]_RNO\[0\]/Y  r_data_byte\[2\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[1\]/CLK  r_data_byte\[0\]\[1\]/Q  r_data_byte\[0\]_RNO\[1\]/B  r_data_byte\[0\]_RNO\[1\]/Y  r_data_byte\[0\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[1\]/CLK  r_data_byte\[4\]\[1\]/Q  r_data_byte\[4\]_RNO\[1\]/B  r_data_byte\[4\]_RNO\[1\]/Y  r_data_byte\[4\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT START_BIT\[0\]/CLK  START_BIT\[0\]/Q  START_BIT_RNO\[0\]/C  START_BIT_RNO\[0\]/Y  START_BIT\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[0\]/CLK  r_data_byte\[7\]\[0\]/Q  r_data_byte\[7\]_RNO\[0\]/A  r_data_byte\[7\]_RNO\[0\]/Y  r_data_byte\[7\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[0\]/CLK  r_data_byte\[6\]\[0\]/Q  r_data_byte\[6\]_RNO\[0\]/A  r_data_byte\[6\]_RNO\[0\]/Y  r_data_byte\[6\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[12\]/CLK  div_cnt\[12\]/Q  div_cnt_RNO\[12\]/A  div_cnt_RNO\[12\]/Y  div_cnt\[12\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[11\]/CLK  div_cnt\[11\]/Q  div_cnt_RNO\[11\]/A  div_cnt_RNO\[11\]/Y  div_cnt\[11\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[13\]/CLK  div_cnt\[13\]/Q  div_cnt_RNO\[13\]/A  div_cnt_RNO\[13\]/Y  div_cnt\[13\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[14\]/CLK  div_cnt\[14\]/Q  div_cnt_RNO\[14\]/A  div_cnt_RNO\[14\]/Y  div_cnt\[14\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[0\]/CLK  r_data_byte\[1\]\[0\]/Q  r_data_byte\[1\]_RNO\[0\]/B  r_data_byte\[1\]_RNO\[0\]/Y  r_data_byte\[1\]\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT Rx_Done/CLK  Rx_Done/Q  uart_state_RNO/B  uart_state_RNO/Y  uart_state/E  	(9.6:9.6:9.6) )
+
+    (PATHCONSTRAINT START_BIT\[2\]/CLK  START_BIT\[2\]/Q  START_BIT_RNO\[2\]/A  START_BIT_RNO\[2\]/Y  START_BIT\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s1_rx/CLK  s1_rx/Q  tmp0_rx/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[2\]/CLK  r_data_byte\[0\]\[2\]/Q  r_data_byte\[0\]_RNO\[2\]/B  r_data_byte\[0\]_RNO\[2\]/Y  r_data_byte\[0\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[2\]/CLK  r_data_byte\[2\]\[2\]/Q  r_data_byte\[2\]_RNO\[2\]/B  r_data_byte\[2\]_RNO\[2\]/Y  r_data_byte\[2\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[2\]/CLK  r_data_byte\[4\]\[2\]/Q  r_data_byte\[4\]_RNO\[2\]/B  r_data_byte\[4\]_RNO\[2\]/Y  r_data_byte\[4\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[2\]/CLK  r_data_byte\[3\]\[2\]/Q  r_data_byte\[3\]_RNO\[2\]/B  r_data_byte\[3\]_RNO\[2\]/Y  r_data_byte\[3\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[2\]/CLK  r_data_byte\[7\]\[2\]/Q  r_data_byte\[7\]_RNO\[2\]/B  r_data_byte\[7\]_RNO\[2\]/Y  r_data_byte\[7\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[2\]/CLK  r_data_byte\[6\]\[2\]/Q  r_data_byte\[6\]_RNO\[2\]/B  r_data_byte\[6\]_RNO\[2\]/Y  r_data_byte\[6\]\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[1\]/CLK  r_data_byte\[7\]\[1\]/Q  r_data_byte\[7\]_RNO\[1\]/B  r_data_byte\[7\]_RNO\[1\]/Y  r_data_byte\[7\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[1\]/CLK  r_data_byte\[6\]\[1\]/Q  r_data_byte\[6\]_RNO\[1\]/B  r_data_byte\[6\]_RNO\[1\]/Y  r_data_byte\[6\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT tmp1_rx/CLK  tmp1_rx/Q  tmp1_rx_RNIL14J/A  tmp1_rx_RNIL14J/Y  uart_state/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT div_cnt\[15\]/CLK  div_cnt\[15\]/Q  div_cnt_RNO\[15\]/A  div_cnt_RNO\[15\]/Y  div_cnt\[15\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[1\]/CLK  r_data_byte\[1\]\[1\]/Q  r_data_byte\[1\]_RNO\[1\]/A  r_data_byte\[1\]_RNO\[1\]/Y  r_data_byte\[1\]\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT s0_rx/CLK  s0_rx/Q  s1_rx/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[5\]\[2\]/CLK  r_data_byte\[5\]\[2\]/Q  data\[5\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[1\]\[2\]/CLK  r_data_byte\[1\]\[2\]/Q  data\[1\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[0\]\[2\]/CLK  r_data_byte\[0\]\[2\]/Q  data\[0\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[2\]\[2\]/CLK  r_data_byte\[2\]\[2\]/Q  data\[2\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[4\]\[2\]/CLK  r_data_byte\[4\]\[2\]/Q  data\[4\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[3\]\[2\]/CLK  r_data_byte\[3\]\[2\]/Q  data\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[7\]\[2\]/CLK  r_data_byte\[7\]\[2\]/Q  data\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT r_data_byte\[6\]\[2\]/CLK  r_data_byte\[6\]\[2\]/Q  data\[6\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT tmp0_rx/CLK  tmp0_rx/Q  tmp1_rx/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT Rx_Done/CLK  Rx_Done/Q  Rx_Done_pad/D  Rx_Done_pad/PAD  	(10.0:10.0:10.0) )
+
+  )
+)
+)

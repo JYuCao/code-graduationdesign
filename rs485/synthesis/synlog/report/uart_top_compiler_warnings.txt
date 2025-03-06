@@ -1,0 +1,5 @@
+@W: CG360 :"D:\files\fpga\rs485\hdl\uart_top.v":21:11:21:14|Removing wire data, as there is no assignment to it.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:1:64:6|Pruning register bits 15 to 9 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Pruning register bits 15 to 13 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"D:\files\fpga\rs485\hdl\uart_tx.v":58:1:58:6|Pruning register bit 0 of bps_DR[15:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+

@@ -1,0 +1,60 @@
+Target Part: A3P250_VQFP100_STD
+Report for cell uart_rx.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     3      1.0        3.0
+              AO1A     1      1.0        1.0
+              AOI1     2      1.0        2.0
+             AOI1B     1      1.0        1.0
+               AX1     3      1.0        3.0
+              AX1A     2      1.0        2.0
+              AX1B     1      1.0        1.0
+              AX1C     4      1.0        4.0
+             AXOI5     1      1.0        1.0
+               GND     1      0.0        0.0
+            MIN3XI     1      1.0        1.0
+               MX2    11      1.0       11.0
+              MX2A     1      1.0        1.0
+              MX2C     1      1.0        1.0
+              NOR2    10      1.0       10.0
+             NOR2A    30      1.0       30.0
+             NOR2B    40      1.0       40.0
+              NOR3     7      1.0        7.0
+             NOR3A     4      1.0        4.0
+             NOR3B     6      1.0        6.0
+             NOR3C    24      1.0       24.0
+               OA1     2      1.0        2.0
+              OA1C     2      1.0        2.0
+              OAI1     1      1.0        1.0
+               OR2     2      1.0        2.0
+               OR3     5      1.0        5.0
+               VCC     1      0.0        0.0
+               XA1    13      1.0       13.0
+              XA1B    10      1.0       10.0
+             XNOR2     4      1.0        4.0
+               XO1     4      1.0        4.0
+              XOR2    15      1.0       15.0
+
+
+            DFN1C0    36      1.0       36.0
+          DFN1E1C0    36      1.0       36.0
+            DFN1P0     3      1.0        3.0
+                   -----          ----------
+             TOTAL   288               286.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF     4
+            OUTBUF     9
+                   -----
+             TOTAL    15
+
+
+Core Cells         : 286 of 6144 (5%)
+IO Cells           : 15
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

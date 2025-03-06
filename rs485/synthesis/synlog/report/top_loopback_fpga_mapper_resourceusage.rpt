@@ -1,0 +1,55 @@
+Target Part: A3P250_VQFP100_STD
+Report for cell top_loopback.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     4      1.0        4.0
+              AO1A     2      1.0        2.0
+              AX1B     1      1.0        1.0
+              AX1C    17      1.0       17.0
+             AXOI5     1      1.0        1.0
+               GND     3      0.0        0.0
+               INV     2      1.0        2.0
+               MX2    14      1.0       14.0
+              MX2A     3      1.0        3.0
+              MX2C     1      1.0        1.0
+              NOR2    23      1.0       23.0
+             NOR2A    39      1.0       39.0
+             NOR2B    48      1.0       48.0
+              NOR3     2      1.0        2.0
+             NOR3A     5      1.0        5.0
+             NOR3B     6      1.0        6.0
+             NOR3C    23      1.0       23.0
+               OA1     2      1.0        2.0
+               OR2     7      1.0        7.0
+               OR3     8      1.0        8.0
+              OR3A     1      1.0        1.0
+               VCC     3      0.0        0.0
+               XA1    16      1.0       16.0
+              XA1B    12      1.0       12.0
+               XO1     8      1.0        8.0
+              XO1A     1      1.0        1.0
+              XOR2    29      1.0       29.0
+
+
+            DFN1C0    59      1.0       59.0
+          DFN1E1C0    54      1.0       54.0
+            DFN1P0     6      1.0        6.0
+                   -----          ----------
+             TOTAL   400               394.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF     4
+            OUTBUF     1
+                   -----
+             TOTAL     7
+
+
+Core Cells         : 394 of 6144 (6%)
+IO Cells           : 7
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

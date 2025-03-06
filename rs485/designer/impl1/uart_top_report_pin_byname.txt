@@ -1,0 +1,20 @@
+*****************************************************************
+Pin Report - Date: Thu Mar 06 13:06:31 2025 UNCOMPLETED LAYOUT
+Product: Designer
+Release: Libero SoC v11.8 SP2
+Version: 11.8.2.4
+Design Name: uart_top
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port        |Pin        |Fixed      |Function |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|-----------|-----------|---------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+baud_set[0]  Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+baud_set[1]  Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+baud_set[2]  Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+re           Unassigned  Unassigned            LVTTL    12                 High  None           No    35                No           No
+rx           Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+sys_clk      Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+sys_rst_n    Unassigned  Unassigned            LVTTL    ---                ---   None           ---   ---               No           No
+tx           Unassigned  Unassigned            LVTTL    12                 High  None           No    35                No           No

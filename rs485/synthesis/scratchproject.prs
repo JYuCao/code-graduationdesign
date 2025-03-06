@@ -4,6 +4,8 @@
 
 #project files
 add_file -verilog "D:/files/fpga/rs485/hdl/uart_rx.v"
+add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
+add_file -verilog "D:/files/fpga/rs485/hdl/uart_top.v"
 
 
 
@@ -24,6 +26,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
+set_option -top_module "uart_top"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -69,5 +72,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "D:/files/fpga/rs485/synthesis/uart_rx.edn"
+project -result_file "D:/files/fpga/rs485/synthesis/uart_top.edn"
 impl -active "synthesis"

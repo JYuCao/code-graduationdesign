@@ -57,17 +57,17 @@ module uart_tx(
 	// 50M
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
-            bps_DR <= 16'd5207;
+            bps_DR <= 16'd5208;
         else begin
             case(baud_set)
-                0:bps_DR <= 16'd5207;
-                1:bps_DR <= 16'd2603;
-                2:bps_DR <= 16'd1301;
-                3:bps_DR <= 16'd867;
-                4:bps_DR <= 16'd433;
-                default:bps_DR <= 16'd5207;			
+                0: bps_DR <= 16'd5208;  // 9600 
+                1: bps_DR <= 16'd2604;  // 19200
+                2: bps_DR <= 16'd1302;  // 38400
+                3: bps_DR <= 16'd868;   // 57600
+                4: bps_DR <= 16'd434;   // 115200
+                default: bps_DR <= 16'd5208;
             endcase
-        end	
+        end
 	
 	//counter
 	always@(posedge sys_clk or negedge sys_rst_n)

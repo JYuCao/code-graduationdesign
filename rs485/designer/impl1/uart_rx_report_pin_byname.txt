@@ -1,0 +1,27 @@
+*****************************************************************
+Pin Report - Date: Wed Mar 05 10:23:47 2025 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: Libero SoC v11.8 SP2
+Version: 11.8.2.4
+Design Name: uart_rx
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+*****************************************************************
+Port        |Pin |Fixed |Function       |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|----|------|---------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+baud_set[0]  11   No     GFB0/IO109NDB3  LVTTL    ---                ---   None           ---   ---               No           No
+baud_set[1]  94   No     GAC0/IO04RSB0   LVTTL    ---                ---   None           ---   ---               No           No
+baud_set[2]  93   No     GAC1/IO05RSB0   LVTTL    ---                ---   None           ---   ---               No           No
+data[0]      92   No     IO11RSB0        LVTTL    12                 High  None           No    35                No           No
+data[1]      91   No     IO13RSB0        LVTTL    12                 High  None           No    35                No           No
+data[2]      15   No     GFA1/IO108PPB3  LVTTL    12                 High  None           No    35                No           No
+data[3]      35   No     IO85RSB2        LVTTL    12                 High  None           No    35                No           No
+data[4]      36   No     IO84RSB2        LVTTL    12                 High  None           No    35                No           No
+data[5]      31   No     IO91RSB2        LVTTL    12                 High  None           No    35                No           No
+data[6]      33   No     IO88RSB2        LVTTL    12                 High  None           No    35                No           No
+data[7]      34   No     IO86RSB2        LVTTL    12                 High  None           No    35                No           No
+rx           90   No     IO15RSB0        LVTTL    ---                ---   None           ---   ---               No           No
+Rx_Done      40   No     IO77RSB2        LVTTL    12                 High  None           No    35                No           No
+sys_clk      64   No     GCC0/IO48NDB1   LVTTL    ---                ---   None           ---   ---               No           No
+sys_rst_n    10   No     GFB1/IO109PDB3  LVTTL    ---                ---   None           ---   ---               No           No
