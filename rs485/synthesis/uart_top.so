@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>uart_top</design>
-	<target_edif>C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.edn</target_edif>
+	<target_edif>D:\files\fpga\rs485\synthesis\uart_top.edn</target_edif>
 </SynplifyOutput>

@@ -1,15 +1,15 @@
-C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synlog\report\uart_top_fpga_mapper.xml  -top_level_module  uart_top  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.edn   -freq 100.000   C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synwork\uart_top_prem.srd  -sap  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.sap  -otap  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.tap  -omap  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -sap  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.sap  -ologparam  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\syntmp\uart_top.plg  -osyn  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.srm  -prjdir  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\  -prjname  uart_top_syn  -log  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synlog\uart_top_fpga_mapper.srr 
-rc:1 success:1 runtime:2
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\scratchproject.prs|io:o|time:1741257536|size:1983|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.edn|io:o|time:1741259687|size:225572|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synwork\uart_top_prem.srd|io:i|time:1741259685|size:14240|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.sap|io:o|time:1741259685|size:993|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.tap|io:o|time:0|size:0|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.map|io:o|time:1741259687|size:28|exec:0
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\rs485\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\rs485\synthesis\synlog\report\uart_top_fpga_mapper.xml  -top_level_module  uart_top  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  D:\files\fpga\rs485\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  D:\files\fpga\rs485\synthesis\uart_top.edn   -freq 100.000   D:\files\fpga\rs485\synthesis\synwork\uart_top_prem.srd  -sap  D:\files\fpga\rs485\synthesis\uart_top.sap  -otap  D:\files\fpga\rs485\synthesis\uart_top.tap  -omap  D:\files\fpga\rs485\synthesis\uart_top.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -sap  D:\files\fpga\rs485\synthesis\uart_top.sap  -ologparam  D:\files\fpga\rs485\synthesis\syntmp\uart_top.plg  -osyn  D:\files\fpga\rs485\synthesis\uart_top.srm  -prjdir  D:\files\fpga\rs485\synthesis\  -prjname  uart_top_syn  -log  D:\files\fpga\rs485\synthesis\synlog\uart_top_fpga_mapper.srr 
+rc:1 success:1 runtime:1
+file:D:\files\fpga\rs485\synthesis\scratchproject.prs|io:o|time:1741316867|size:1785|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.edn|io:o|time:1741316871|size:187481|exec:0
+file:D:\files\fpga\rs485\synthesis\synwork\uart_top_prem.srd|io:i|time:1741316870|size:12216|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.sap|io:o|time:1741316870|size:908|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.tap|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.map|io:o|time:1741316871|size:28|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.sap|io:o|time:1741259685|size:993|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\syntmp\uart_top.plg|io:o|time:1741259687|size:412|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top.srm|io:o|time:1741259687|size:65698|exec:0
-file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synlog\uart_top_fpga_mapper.srr|io:o|time:1741259687|size:49151|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.sap|io:o|time:1741316870|size:908|exec:0
+file:D:\files\fpga\rs485\synthesis\syntmp\uart_top.plg|io:o|time:1741316871|size:412|exec:0
+file:D:\files\fpga\rs485\synthesis\uart_top.srm|io:o|time:1741316871|size:65432|exec:0
+file:D:\files\fpga\rs485\synthesis\synlog\uart_top_fpga_mapper.srr|io:o|time:1741316871|size:47059|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1

@@ -3,39 +3,41 @@ Report for cell uart_top.verilog
   Core Cell usage:
               cell count     area count*area
               AND2    38      1.0       38.0
-               AO1    11      1.0       11.0
+               AO1     2      1.0        2.0
              AOI1B     4      1.0        4.0
               AX1C     2      1.0        2.0
                GND     3      0.0        0.0
+               INV     1      1.0        1.0
                MX2     1      1.0        1.0
               MX2B     1      1.0        1.0
               MX2C     1      1.0        1.0
-              NOR2    29      1.0       29.0
-             NOR2A    13      1.0       13.0
-             NOR2B    95      1.0       95.0
-              NOR3     1      1.0        1.0
-             NOR3A    31      1.0       31.0
-             NOR3B     9      1.0        9.0
-             NOR3C    14      1.0       14.0
-               OA1     4      1.0        4.0
-              OA1B     1      1.0        1.0
+              NOR2    12      1.0       12.0
+             NOR2A    11      1.0       11.0
+             NOR2B    78      1.0       78.0
+              NOR3     2      1.0        2.0
+             NOR3A     9      1.0        9.0
+             NOR3B     4      1.0        4.0
+             NOR3C     4      1.0        4.0
+               OA1     3      1.0        3.0
+              OA1B     5      1.0        5.0
+              OA1C     4      1.0        4.0
               OAI1     1      1.0        1.0
-               OR2    11      1.0       11.0
-              OR2A     2      1.0        2.0
-              OR2B     1      1.0        1.0
-               OR3     6      1.0        6.0
+               OR2    15      1.0       15.0
+              OR2A     6      1.0        6.0
+              OR2B     2      1.0        2.0
+               OR3    19      1.0       19.0
               OR3B     2      1.0        2.0
                VCC     3      0.0        0.0
                XA1    28      1.0       28.0
-              XA1B    18      1.0       18.0
               XOR2    50      1.0       50.0
 
 
-            DFN1C0    89      1.0       89.0
-          DFN1E1C0    45      1.0       45.0
+          DFI1E0P0     4      1.0        4.0
+            DFN1C0    93      1.0       93.0
+          DFN1E1C0    18      1.0       18.0
             DFN1P0     1      1.0        1.0
                    -----          ----------
-             TOTAL   515               509.0
+             TOTAL   427               421.0
 
 
   IO Cell usage:
@@ -47,7 +49,7 @@ Report for cell uart_top.verilog
              TOTAL     5
 
 
-Core Cells         : 509 of 6144 (8%)
+Core Cells         : 421 of 6144 (7%)
 IO Cells           : 5
 
   RAM/ROM Usage Summary

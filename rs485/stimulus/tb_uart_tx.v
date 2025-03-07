@@ -29,7 +29,7 @@
 
 module tb_uart_tx;
 
-parameter SYSCLK_PERIOD = 20;// 50MHZ
+parameter SYSCLK_PERIOD = 50;// 20MHZ
 
 reg SYSCLK;
 reg NSYSRESET;

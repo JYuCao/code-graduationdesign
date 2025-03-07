@@ -11,46 +11,44 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v" (library work)
-@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v" (library work)
-@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v" (library work)
+@I::"D:\files\fpga\rs485\hdl\uart_tx.v" (library work)
+@I::"D:\files\fpga\rs485\hdl\uart_rx.v" (library work)
+@I::"D:\files\fpga\rs485\hdl\uart_top.v" (library work)
 Verilog syntax check successful!
-
-Compiler output is up to date.  No re-compile necessary
-
+Options changed - recompiling
 Selecting top level module uart_top
-@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
 
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
-@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
 
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":124:23:124:29|Removing redundant assignment.
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":187:37:187:45|Removing redundant assignment.
-@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":209:26:209:35|Removing redundant assignment.
-@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":109:23:109:29|Removing redundant assignment.
+@N: CG179 :"D:\files\fpga\rs485\hdl\uart_rx.v":148:26:148:35|Removing redundant assignment.
+@W: CG133 :"D:\files\fpga\rs485\hdl\uart_rx.v":34:11:34:19|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"D:\files\fpga\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
 
-@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[15] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[14] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[13] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Register bit bps_DR[12] is always 0.
-@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:4:79:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[15] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[14] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[13] is always 0.
-@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[12] is always 0.
-@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG360 :"D:\files\fpga\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 74MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 19:14:43 2025
+# Fri Mar 07 11:07:48 2025
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
@@ -61,7 +59,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 19:14:43 2025
+# Fri Mar 07 11:07:48 2025
 
 ###########################################################]
 @END
@@ -71,6 +69,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 06 19:14:43 2025
+# Fri Mar 07 11:07:48 2025
 
 ###########################################################]

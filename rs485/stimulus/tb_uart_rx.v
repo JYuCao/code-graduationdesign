@@ -29,7 +29,7 @@
 
 module tb_uart_rx;
 
-parameter SYSCLK_PERIOD = 20;// 50MHZ
+parameter SYSCLK_PERIOD = 50;// 20MHZ
 parameter BAUD_RATE = 9600;
 
 reg SYSCLK;
@@ -75,26 +75,15 @@ uart_rx uart_rx_0 (
 );
 
 initial begin
-    // Wait for global reset to finish
     #(SYSCLK_PERIOD*20 + 1)
     NSYSRESET = 1;
     #(SYSCLK_PERIOD*50);
 
-    // Send a byte (0x55) over UART
     send_byte(8'h55);
-
-    // Wait for reception to complete
-    @(posedge Rx_Done)
-    #(SYSCLK_PERIOD*5000);
-
-    // Send another byte (0xAA) over UART
+    #(1041600);
     send_byte(8'hAA);
+    #(1041600);
 
-    // Wait for reception to complete
-    @(posedge Rx_Done)
-    #(SYSCLK_PERIOD*5000);
-
-    // Finish simulation
     $stop;
 end
 
@@ -110,7 +99,7 @@ task send_byte;
             3'd2: bit_time = 26040;    // 38400 baud rate
             3'd3: bit_time = 17360;    // 57600 baud rate
             3'd4: bit_time = 86800;     // 115200 baud rate
-            default: bit_time = 1041660; // Default to 9600 baud rate
+            default: bit_time = 104160; // Default to 9600 baud rate
         endcase
 
         // Send start bit
