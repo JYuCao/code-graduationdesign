@@ -1,0 +1,947 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version Libero SoC v11.8 SP2
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
+Date: Fri Mar 07 19:27:23 2025
+
+
+Design: uart_top
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               atck
+Period (ns):                60.968
+Frequency (MHz):            16.402
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        30.424
+External Hold (ns):         -7.531
+Min Clock-To-Out (ns):      5.940
+Max Clock-To-Out (ns):      17.383
+
+Clock Domain:               sys_clk
+Period (ns):                13.037
+Frequency (MHz):            76.705
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        1.348
+External Hold (ns):         0.086
+Min Clock-To-Out (ns):      2.453
+Max Clock-To-Out (ns):      8.149
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain atck
+
+SET Register to Register
+
+Path 1
+  From:                        ident_coreinst/IICE_INST/b3_SoW/samplerStatus/genblk1.b13_PLF_2grFt_FH9[0]:CLK
+  To:                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UTDO
+  Delay (ns):                  10.006
+  Slack (ns):
+  Arrival (ns):                13.101
+  Required (ns):
+  Setup (ns):                  17.383
+  Minimum Period (ns):         60.968
+
+Path 2
+  From:                        ident_coreinst/IICE_INST/b3_SoW/virOut/genblk1.b13_PLF_2grFt_FH9[0]:CLK
+  To:                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UTDO
+  Delay (ns):                  9.997
+  Slack (ns):
+  Arrival (ns):                13.084
+  Required (ns):
+  Setup (ns):                  17.383
+  Minimum Period (ns):         60.934
+
+Path 3
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         60.848
+
+Path 4
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[5]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         60.822
+
+Path 5
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[4]:D
+  Delay (ns):                  32.945
+  Slack (ns):
+  Arrival (ns):                32.945
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         60.808
+
+
+Expanded Path 1
+  From: ident_coreinst/IICE_INST/b3_SoW/samplerStatus/genblk1.b13_PLF_2grFt_FH9[0]:CLK
+  To: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UTDO
+  data required time                             N/C
+  data arrival time                          -   13.101
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        atck
+               +     0.000          Clock source
+  0.000                        atck (r)
+               +     0.000          net: atck
+  0.000                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (r)
+               +     0.174          cell: ADLIB:UJTAG
+  0.174                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UDRCK (r)
+               +     1.462          net: ident_coreinst/comm_block_INST/jtagi/identify_clk_int
+  1.636                        ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:A (r)
+               +     0.747          cell: ADLIB:CLKINT
+  2.383                        ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:Y (r)
+               +     0.712          net: ident_coreinst/IICE_comm2iice[11]
+  3.095                        ident_coreinst/IICE_INST/b3_SoW/samplerStatus/genblk1.b13_PLF_2grFt_FH9[0]:CLK (r)
+               +     0.581          cell: ADLIB:DFN1E1
+  3.676                        ident_coreinst/IICE_INST/b3_SoW/samplerStatus/genblk1.b13_PLF_2grFt_FH9[0]:Q (r)
+               +     0.320          net: ident_coreinst/IICE_INST/b3_SoW/ttdo
+  3.996                        ident_coreinst/IICE_INST/b3_SoW/virOut/genblk1.b13_PLF_2grFt_FH9_RNIRVSD[0]:B (r)
+               +     0.678          cell: ADLIB:MX2
+  4.674                        ident_coreinst/IICE_INST/b3_SoW/virOut/genblk1.b13_PLF_2grFt_FH9_RNIRVSD[0]:Y (r)
+               +     1.351          net: ident_coreinst/IICE_INST/b3_SoW/virOut/N_500
+  6.025                        ident_coreinst/IICE_INST/b3_SoW/virOut/genblk1.b13_PLF_2grFt_FH9_RNI4MEM[0]:C (r)
+               +     0.666          cell: ADLIB:NOR3C
+  6.691                        ident_coreinst/IICE_INST/b3_SoW/virOut/genblk1.b13_PLF_2grFt_FH9_RNI4MEM[0]:Y (r)
+               +     0.334          net: ident_coreinst/IICE_INST/b8_yYh0_XlK
+  7.025                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b8_yYh0_XlK_RNIBONH:B (r)
+               +     0.624          cell: ADLIB:NOR3C
+  7.649                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b8_yYh0_XlK_RNIBONH:Y (r)
+               +     0.334          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/b3_PLF_0_iv_0_a2_out
+  7.983                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIVSTB2[2]:C (r)
+               +     0.683          cell: ADLIB:NOR3
+  8.666                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIVSTB2[2]:Y (f)
+               +     0.323          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/b3_PLF_0_iv_0_a0_2
+  8.989                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNIBM3B5:A (f)
+               +     0.933          cell: ADLIB:AOI1B
+  9.922                        ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNIBM3B5:Y (r)
+               +     1.540          net: ident_coreinst/IICE_iice2comm
+  11.462                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNO:B (r)
+               +     0.586          cell: ADLIB:MX2
+  12.048                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNO:Y (r)
+               +     1.053          net: ident_coreinst/comm_block_INST/jtagi/b9_PLF_6lNa2
+  13.101                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UTDO (r)
+                                    
+  13.101                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          atck
+               +     0.000          Clock source
+  N/C                          atck (f)
+               +     0.000          net: atck
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (f)
+               -    17.383          Library setup time: ADLIB:UJTAG
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UTDO
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):
+
+Path 2
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[5]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):
+
+Path 3
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[4]:D
+  Delay (ns):                  32.945
+  Slack (ns):
+  Arrival (ns):                32.945
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):
+
+Path 4
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[2]:D
+  Delay (ns):                  31.867
+  Slack (ns):
+  Arrival (ns):                31.867
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):
+
+Path 5
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[3]:D
+  Delay (ns):                  31.858
+  Slack (ns):
+  Arrival (ns):                31.858
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):
+
+
+Expanded Path 1
+  From: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To: ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+  data required time                             N/C
+  data arrival time                          -   32.952
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        atck
+               +     0.000          Clock source
+  0.000                        atck (f)
+               +     0.000          net: atck
+  0.000                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (f)
+               +    17.383          cell: ADLIB:UJTAG
+  17.383                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UIREG5 (r)
+               +     1.061          net: ident_coreinst/comm_block_INST/jtagi/UIREGdummy[5]
+  18.444                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIEGED1_0:B (r)
+               +     0.464          cell: ADLIB:NOR3A
+  18.908                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIEGED1_0:Y (f)
+               +     0.382          net: ident_coreinst/comm_block_INST/jtagi/b9_96_cLqgOF3_1
+  19.290                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIJP733:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  19.931                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIJP733:Y (f)
+               +     1.750          net: ident_coreinst/IICE_comm2iice[6]
+  21.681                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNING1H:A (f)
+               +     0.641          cell: ADLIB:NOR3A
+  22.322                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNING1H:Y (f)
+               +     0.393          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/N_38
+  22.715                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIFCGP[4]:A (f)
+               +     0.641          cell: ADLIB:NOR3B
+  23.356                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIFCGP[4]:Y (f)
+               +     1.018          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/N_41
+  24.374                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNI56V11_4[1]:B (f)
+               +     0.628          cell: ADLIB:NOR2B
+  25.002                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNI56V11_4[1]:Y (f)
+               +     1.160          net: ident_coreinst/IICE_INST/b9_OFWNT9_ab
+  26.162                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i:A (f)
+               +     0.386          cell: ADLIB:OR2B
+  26.548                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i:Y (r)
+               +     0.761          net: ident_coreinst/IICE_INST/b3_SoW/N_498
+  27.309                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b9_v_mzCDYXs13_0_a3:B (r)
+               +     0.386          cell: ADLIB:NOR2A
+  27.695                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b9_v_mzCDYXs13_0_a3:Y (f)
+               +     0.939          net: ident_coreinst/IICE_INST/b3_SoW/b9_v_mzCDYXs13
+  28.634                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_1:B (f)
+               +     0.631          cell: ADLIB:AND2
+  29.265                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_1:Y (f)
+               +     0.402          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_TMP_0[0]
+  29.667                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_32:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  30.053                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_32:Y (f)
+               +     0.489          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_g_array_1_0[0]
+  30.542                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_38:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  31.223                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_38:Y (f)
+               +     0.451          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_g_array_2_0[0]
+  31.674                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_28:A (f)
+               +     0.944          cell: ADLIB:AX1C
+  32.618                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_28:Y (r)
+               +     0.334          net: ident_coreinst/IICE_INST/b3_SoW/I_28_0
+  32.952                       ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D (r)
+                                    
+  32.952                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          atck
+               +     0.000          Clock source
+  N/C                          atck (r)
+               +     0.000          net: atck
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (r)
+               +     0.174          cell: ADLIB:UJTAG
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UDRCK (r)
+               +     1.462          net: ident_coreinst/comm_block_INST/jtagi/identify_clk_int
+  N/C                          ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:A (r)
+               +     0.747          cell: ADLIB:CLKINT
+  N/C                          ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:Y (r)
+               +     0.684          net: ident_coreinst/IICE_comm2iice[11]
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C1
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          atdo
+  Delay (ns):                  17.383
+  Slack (ns):
+  Arrival (ns):                17.383
+  Required (ns):
+  Clock to Out (ns):           17.383
+
+
+Expanded Path 1
+  From: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To: atdo
+  data required time                             N/C
+  data arrival time                          -   17.383
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        atck
+               +     0.000          Clock source
+  0.000                        atck (f)
+               +     0.000          net: atck
+  0.000                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (f)
+               +    17.383          cell: ADLIB:UJTAG
+  17.383                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TDO (r)
+               +     0.000          net: atdo
+  17.383                       atdo (r)
+                                    
+  17.383                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          atck
+               +     0.000          Clock source
+  N/C                          atck (r)
+                                    
+  N/C                          atdo (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+Path 1
+  From:                        atrstb
+  To:                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TRSTB
+  Delay (ns):                  0.000
+  Slack (ns):
+  Arrival (ns):                0.000
+  Required (ns):
+  Recovery (ns):               17.383
+  External Recovery (ns):      17.383
+
+
+Expanded Path 1
+  From: atrstb
+  To: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TRSTB
+  data required time                             N/C
+  data arrival time                          -   0.000
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        atrstb (r)
+               +     0.000          net: atrstb
+  0.000                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TRSTB (r)
+                                    
+  0.000                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          atck
+               +     0.000          Clock source
+  N/C                          atck (r)
+               +     0.000          net: atck
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (r)
+               -    17.383          Library recovery time: ADLIB:UJTAG
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TRSTB
+
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+Path 1
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+
+Path 2
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[5]:D
+  Delay (ns):                  32.952
+  Slack (ns):
+  Arrival (ns):                32.952
+  Required (ns):
+
+Path 3
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[4]:D
+  Delay (ns):                  32.945
+  Slack (ns):
+  Arrival (ns):                32.945
+  Required (ns):
+
+Path 4
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[2]:D
+  Delay (ns):                  31.867
+  Slack (ns):
+  Arrival (ns):                31.867
+  Required (ns):
+
+Path 5
+  From:                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[3]:D
+  Delay (ns):                  31.858
+  Slack (ns):
+  Arrival (ns):                31.858
+  Required (ns):
+
+
+Expanded Path 1
+  From: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK
+  To: ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+  data required time                             N/C
+  data arrival time                          -   32.952
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        atck
+               +     0.000          Clock source
+  0.000                        atck (f)
+               +     0.000          net: atck
+  0.000                        ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (f)
+               +    17.383          cell: ADLIB:UJTAG
+  17.383                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UIREG5 (r)
+               +     1.061          net: ident_coreinst/comm_block_INST/jtagi/UIREGdummy[5]
+  18.444                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIEGED1_0:B (r)
+               +     0.464          cell: ADLIB:NOR3A
+  18.908                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIEGED1_0:Y (f)
+               +     0.382          net: ident_coreinst/comm_block_INST/jtagi/b9_96_cLqgOF3_1
+  19.290                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIJP733:C (f)
+               +     0.641          cell: ADLIB:NOR3C
+  19.931                       ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIJP733:Y (f)
+               +     1.750          net: ident_coreinst/IICE_comm2iice[6]
+  21.681                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNING1H:A (f)
+               +     0.641          cell: ADLIB:NOR3A
+  22.322                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b11_uRrc_9urXBb_RNING1H:Y (f)
+               +     0.393          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/N_38
+  22.715                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIFCGP[4]:A (f)
+               +     0.641          cell: ADLIB:NOR3B
+  23.356                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNIFCGP[4]:Y (f)
+               +     1.018          net: ident_coreinst/IICE_INST/b8_uKr_IFLY/N_41
+  24.374                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNI56V11_4[1]:B (f)
+               +     0.628          cell: ADLIB:NOR2B
+  25.002                       ident_coreinst/IICE_INST/b8_uKr_IFLY/b13_nvmFL_fx2rbuQ_RNI56V11_4[1]:Y (f)
+               +     1.160          net: ident_coreinst/IICE_INST/b9_OFWNT9_ab
+  26.162                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i:A (f)
+               +     0.386          cell: ADLIB:OR2B
+  26.548                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i:Y (r)
+               +     0.761          net: ident_coreinst/IICE_INST/b3_SoW/N_498
+  27.309                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b9_v_mzCDYXs13_0_a3:B (r)
+               +     0.386          cell: ADLIB:NOR2A
+  27.695                       ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b9_v_mzCDYXs13_0_a3:Y (f)
+               +     0.939          net: ident_coreinst/IICE_INST/b3_SoW/b9_v_mzCDYXs13
+  28.634                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_1:B (f)
+               +     0.631          cell: ADLIB:AND2
+  29.265                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_1:Y (f)
+               +     0.402          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_TMP_0[0]
+  29.667                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_32:A (f)
+               +     0.386          cell: ADLIB:NOR2B
+  30.053                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_32:Y (f)
+               +     0.489          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_g_array_1_0[0]
+  30.542                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_38:C (f)
+               +     0.681          cell: ADLIB:NOR3C
+  31.223                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_38:Y (f)
+               +     0.451          net: ident_coreinst/IICE_INST/b3_SoW/DWACT_ADD_CI_0_g_array_2_0[0]
+  31.674                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_28:A (f)
+               +     0.944          cell: ADLIB:AX1C
+  32.618                       ident_coreinst/IICE_INST/b3_SoW/un1_genblk9.b9_v_mzCDYXs_I_28:Y (r)
+               +     0.334          net: ident_coreinst/IICE_INST/b3_SoW/I_28_0
+  32.952                       ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D (r)
+                                    
+  32.952                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          atck
+               +     0.000          Clock source
+  N/C                          atck (r)
+               +     0.000          net: atck
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:TCK (r)
+               +     0.174          cell: ADLIB:UJTAG
+  N/C                          ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw:UDRCK (r)
+               +     1.462          net: ident_coreinst/comm_block_INST/jtagi/identify_clk_int
+  N/C                          ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:A (r)
+               +     0.747          cell: ADLIB:CLKINT
+  N/C                          ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim:Y (r)
+               +     0.684          net: ident_coreinst/IICE_comm2iice[11]
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1C1
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/genblk9.b9_v_mzCDYXs[6]:D
+
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain sys_clk
+
+SET Register to Register
+
+Path 1
+  From:                        uart_byte_rx/div_cnt[8]:CLK
+  To:                          uart_byte_rx/bps_cnt[6]:D
+  Delay (ns):                  12.500
+  Slack (ns):
+  Arrival (ns):                14.540
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         13.037
+
+Path 2
+  From:                        uart_byte_rx/div_cnt[8]:CLK
+  To:                          uart_byte_rx/bps_cnt[7]:D
+  Delay (ns):                  12.498
+  Slack (ns):
+  Arrival (ns):                14.538
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         13.035
+
+Path 3
+  From:                        uart_byte_rx/div_cnt[9]:CLK
+  To:                          uart_byte_rx/bps_cnt[6]:D
+  Delay (ns):                  12.468
+  Slack (ns):
+  Arrival (ns):                14.508
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         13.005
+
+Path 4
+  From:                        uart_byte_rx/div_cnt[9]:CLK
+  To:                          uart_byte_rx/bps_cnt[7]:D
+  Delay (ns):                  12.466
+  Slack (ns):
+  Arrival (ns):                14.506
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         13.003
+
+Path 5
+  From:                        uart_byte_rx/div_cnt[2]:CLK
+  To:                          uart_byte_rx/bps_cnt[6]:D
+  Delay (ns):                  12.144
+  Slack (ns):
+  Arrival (ns):                14.218
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         12.715
+
+
+Expanded Path 1
+  From: uart_byte_rx/div_cnt[8]:CLK
+  To: uart_byte_rx/bps_cnt[6]:D
+  data required time                             N/C
+  data arrival time                          -   14.540
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_clk
+               +     0.000          Clock source
+  0.000                        sys_clk (r)
+               +     0.000          net: sys_clk
+  0.000                        sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  1.016                        sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.364                        sys_clk_pad/U0/U1:Y (r)
+               +     0.676          net: sys_clk_c
+  2.040                        uart_byte_rx/div_cnt[8]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1
+  2.777                        uart_byte_rx/div_cnt[8]:Q (f)
+               +     0.704          net: uart_byte_rx/div_cnt[8]
+  3.481                        uart_byte_rx/div_cnt_RNIR413[8]:B (f)
+               +     0.650          cell: ADLIB:OR2
+  4.131                        uart_byte_rx/div_cnt_RNIR413[8]:Y (f)
+               +     0.334          net: uart_byte_rx/bps_sam_plus5_NE_5
+  4.465                        uart_byte_rx/div_cnt_RNII526[6]:C (f)
+               +     0.664          cell: ADLIB:OR3
+  5.129                        uart_byte_rx/div_cnt_RNII526[6]:Y (f)
+               +     1.156          net: uart_byte_rx/bps_cnt8_NE_3
+  6.285                        uart_byte_rx/div_cnt_RNICQNI[11]:C (f)
+               +     0.664          cell: ADLIB:NOR3
+  6.949                        uart_byte_rx/div_cnt_RNICQNI[11]:Y (r)
+               +     1.728          net: uart_byte_rx/bps_cnt8_NE
+  8.677                        uart_byte_rx/un1_bps_cnt_1_I_1:B (r)
+               +     0.516          cell: ADLIB:AND2
+  9.193                        uart_byte_rx/un1_bps_cnt_1_I_1:Y (r)
+               +     1.188          net: uart_byte_rx/DWACT_ADD_CI_0_TMP[0]
+  10.381                       uart_byte_rx/un1_bps_cnt_1_I_36:A (r)
+               +     0.407          cell: ADLIB:NOR2B
+  10.788                       uart_byte_rx/un1_bps_cnt_1_I_36:Y (r)
+               +     0.448          net: uart_byte_rx/DWACT_ADD_CI_0_g_array_1[0]
+  11.236                       uart_byte_rx/un1_bps_cnt_1_I_35:C (r)
+               +     0.751          cell: ADLIB:NOR3C
+  11.987                       uart_byte_rx/un1_bps_cnt_1_I_35:Y (r)
+               +     0.483          net: uart_byte_rx/DWACT_ADD_CI_0_g_array_2[0]
+  12.470                       uart_byte_rx/un1_bps_cnt_1_I_41:C (r)
+               +     0.666          cell: ADLIB:NOR3C
+  13.136                       uart_byte_rx/un1_bps_cnt_1_I_41:Y (r)
+               +     0.406          net: uart_byte_rx/DWACT_ADD_CI_0_g_array_11[0]
+  13.542                       uart_byte_rx/un1_bps_cnt_1_I_31:B (r)
+               +     0.664          cell: ADLIB:XOR2
+  14.206                       uart_byte_rx/un1_bps_cnt_1_I_31:Y (r)
+               +     0.334          net: uart_byte_rx/I_31
+  14.540                       uart_byte_rx/bps_cnt[6]:D (r)
+                                    
+  14.540                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+               +     0.000          net: sys_clk
+  N/C                          sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  N/C                          sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  N/C                          sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          sys_clk_pad/U0/U1:Y (r)
+               +     0.678          net: sys_clk_c
+  N/C                          uart_byte_rx/bps_cnt[6]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1
+  N/C                          uart_byte_rx/bps_cnt[6]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        rx
+  To:                          ident_coreinst/IICE_INST/mdiclink_reg[21]:D
+  Delay (ns):                  2.826
+  Slack (ns):
+  Arrival (ns):                2.826
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         1.348
+
+Path 2
+  From:                        rx
+  To:                          uart_byte_rx/s0_rx:D
+  Delay (ns):                  2.563
+  Slack (ns):
+  Arrival (ns):                2.563
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         1.101
+
+
+Expanded Path 1
+  From: rx
+  To: ident_coreinst/IICE_INST/mdiclink_reg[21]:D
+  data required time                             N/C
+  data arrival time                          -   2.826
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        rx (r)
+               +     0.000          net: rx
+  0.000                        rx_pad/U0/U0:PAD (r)
+               +     1.001          cell: ADLIB:IOPAD_IN
+  1.001                        rx_pad/U0/U0:Y (r)
+               +     0.000          net: rx_pad/U0/NET1
+  1.001                        rx_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.044                        rx_pad/U0/U1:Y (r)
+               +     1.782          net: rx_c
+  2.826                        ident_coreinst/IICE_INST/mdiclink_reg[21]:D (r)
+                                    
+  2.826                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+               +     0.000          net: sys_clk
+  N/C                          sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  N/C                          sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  N/C                          sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          sys_clk_pad/U0/U1:Y (r)
+               +     0.688          net: sys_clk_c
+  N/C                          ident_coreinst/IICE_INST/mdiclink_reg[21]:CLK (r)
+               -     0.574          Library setup time: ADLIB:DFN1
+  N/C                          ident_coreinst/IICE_INST/mdiclink_reg[21]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        uart_byte_tx/tx:CLK
+  To:                          tx
+  Delay (ns):                  6.075
+  Slack (ns):
+  Arrival (ns):                8.149
+  Required (ns):
+  Clock to Out (ns):           8.149
+
+Path 2
+  From:                        uart_byte_tx/uart_state:CLK
+  To:                          re
+  Delay (ns):                  5.980
+  Slack (ns):
+  Arrival (ns):                8.026
+  Required (ns):
+  Clock to Out (ns):           8.026
+
+
+Expanded Path 1
+  From: uart_byte_tx/tx:CLK
+  To: tx
+  data required time                             N/C
+  data arrival time                          -   8.149
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_clk
+               +     0.000          Clock source
+  0.000                        sys_clk (r)
+               +     0.000          net: sys_clk
+  0.000                        sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  1.016                        sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.364                        sys_clk_pad/U0/U1:Y (r)
+               +     0.710          net: sys_clk_c
+  2.074                        uart_byte_tx/tx:CLK (r)
+               +     0.737          cell: ADLIB:DFN1
+  2.811                        uart_byte_tx/tx:Q (f)
+               +     1.597          net: tx_c
+  4.408                        tx_pad/U0/U1:D (f)
+               +     0.582          cell: ADLIB:IOTRI_OB_EB
+  4.990                        tx_pad/U0/U1:DOUT (f)
+               +     0.000          net: tx_pad/U0/NET1
+  4.990                        tx_pad/U0/U0:D (f)
+               +     3.159          cell: ADLIB:IOPAD_TRI
+  8.149                        tx_pad/U0/U0:PAD (f)
+               +     0.000          net: tx
+  8.149                        tx (f)
+                                    
+  8.149                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+                                    
+  N/C                          tx (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+Path 1
+  From:                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[2]:CLR
+  Delay (ns):                  3.247
+  Slack (ns):
+  Arrival (ns):                5.309
+  Required (ns):
+  Recovery (ns):               0.297
+  Minimum Period (ns):         3.574
+  Skew (ns):                   0.030
+
+Path 2
+  From:                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[5]:CLR
+  Delay (ns):                  3.240
+  Slack (ns):
+  Arrival (ns):                5.302
+  Required (ns):
+  Recovery (ns):               0.297
+  Minimum Period (ns):         3.557
+  Skew (ns):                   0.020
+
+Path 3
+  From:                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[6]:CLR
+  Delay (ns):                  3.240
+  Slack (ns):
+  Arrival (ns):                5.302
+  Required (ns):
+  Recovery (ns):               0.297
+  Minimum Period (ns):         3.557
+  Skew (ns):                   0.020
+
+Path 4
+  From:                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[4]:CLR
+  Delay (ns):                  3.240
+  Slack (ns):
+  Arrival (ns):                5.302
+  Required (ns):
+  Recovery (ns):               0.297
+  Minimum Period (ns):         3.557
+  Skew (ns):                   0.020
+
+Path 5
+  From:                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To:                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[1]:CLR
+  Delay (ns):                  3.244
+  Slack (ns):
+  Arrival (ns):                5.306
+  Required (ns):
+  Recovery (ns):               0.297
+  Minimum Period (ns):         3.555
+  Skew (ns):                   0.014
+
+
+Expanded Path 1
+  From: ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK
+  To: ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[2]:CLR
+  data required time                             N/C
+  data arrival time                          -   5.309
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_clk
+               +     0.000          Clock source
+  0.000                        sys_clk (r)
+               +     0.000          net: sys_clk
+  0.000                        sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  1.016                        sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.364                        sys_clk_pad/U0/U1:Y (r)
+               +     0.698          net: sys_clk_c
+  2.062                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:CLK (r)
+               +     0.737          cell: ADLIB:DFN1
+  2.799                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb:Q (f)
+               +     1.039          net: ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb
+  3.838                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb_RNI0GM6:A (f)
+               +     0.767          cell: ADLIB:CLKINT
+  4.605                        ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb_RNI0GM6:Y (f)
+               +     0.704          net: ident_coreinst/IICE_INST/b5_voSc3
+  5.309                        ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[2]:CLR (f)
+                                    
+  5.309                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+               +     0.000          net: sys_clk
+  N/C                          sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  N/C                          sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  N/C                          sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          sys_clk_pad/U0/U1:Y (r)
+               +     0.668          net: sys_clk_c
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[2]:CLK (r)
+               -     0.297          Library recovery time: ADLIB:DFN1C1
+  N/C                          ident_coreinst/IICE_INST/b3_SoW/b12_2_St6KCa_jHv[2]:CLR
+
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

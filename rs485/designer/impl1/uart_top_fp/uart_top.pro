@@ -1,6 +1,6 @@
 <project name="uart_top" version="1.1">
     <ProjectDirectory>
-        D:\files\fpga\rs485\designer\impl1\uart_top_fp
+        C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        D:\files\fpga\rs485\designer\impl1\uart_top_fp\uart_top.log
+        C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_fp\uart_top.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                D:\files\fpga\rs485\designer\impl1\uart_top.pdb
+                C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top.pdb
             </filename>
             <local>
                 projectData\uart_top.pdb

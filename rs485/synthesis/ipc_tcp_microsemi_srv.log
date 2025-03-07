@@ -1,0 +1,28 @@
+1741340675 -17:44:35 -17563916 -ipcServer::ipcServer params
+Port:      58015
+Logfile:   C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/ipc_tcp_microsemi_srv.log
+Reconnect: 0
+Use ipv6:  0
+
+1741341719 -18:01:59 -1 -ipcServer.RunServer, loop stopped normal.
+1741341866 -18:04:26 -17563916 -ipcServer::ipcServer params
+Port:      58015
+Logfile:   C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/ipc_tcp_microsemi_srv.log
+Reconnect: 0
+Use ipv6:  0
+
+1741342042 -18:07:22 -1 -ipcServer.RunServer, loop stopped normal.
+1741342325 -18:12:05 -17563916 -ipcServer::ipcServer params
+Port:      58015
+Logfile:   C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/ipc_tcp_microsemi_srv.log
+Reconnect: 0
+Use ipv6:  0
+
+1741342344 -18:12:24 -1 -ipcServer.RunServer, loop stopped normal.
+1741342460 -18:14:20 -17563916 -ipcServer::ipcServer params
+Port:      58015
+Logfile:   C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/ipc_tcp_microsemi_srv.log
+Reconnect: 0
+Use ipv6:  0
+
+1741342472 -18:14:32 -1 -ipcServer.RunServer, loop stopped normal.

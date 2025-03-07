@@ -839,13 +839,11 @@
 
     (PATHCONSTRAINT uart_byte_rx/tmp0_rx/CLK  uart_byte_rx/tmp0_rx/Q  uart_byte_rx/tmp1_rx_RNI12J3/B  uart_byte_rx/tmp1_rx_RNI12J3/Y  uart_byte_rx/uart_state_RNO/A  uart_byte_rx/uart_state_RNO/Y  uart_byte_rx/uart_state/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_rx/uart_state_RNO/B  uart_byte_rx/uart_state_RNO/Y  uart_byte_rx/uart_state/E  	(9.6:9.6:9.6) )
-
     (PATHCONSTRAINT uart_byte_tx/bps_cnt\[3\]/CLK  uart_byte_tx/bps_cnt\[3\]/Q  uart_byte_tx/un1_bps_cnt_12_I_84/A  uart_byte_tx/un1_bps_cnt_12_I_84/Y  uart_byte_tx/bps_cnt_RNO\[3\]/C  uart_byte_tx/bps_cnt_RNO\[3\]/Y  uart_byte_tx/bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/uart_state_RNO/C  uart_byte_tx/uart_state_RNO/Y  uart_byte_tx/uart_state/E  	(9.6:9.6:9.6) )
-
     (PATHCONSTRAINT uart_byte_rx/bps_cnt\[3\]/CLK  uart_byte_rx/bps_cnt\[3\]/Q  uart_byte_rx/un1_bps_cnt_1_I_84/A  uart_byte_rx/un1_bps_cnt_1_I_84/Y  uart_byte_rx/bps_cnt_RNO\[3\]/A  uart_byte_rx/bps_cnt_RNO\[3\]/Y  uart_byte_rx/bps_cnt\[3\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/uart_state_RNO/C  uart_byte_tx/uart_state_RNO/Y  uart_byte_tx/uart_state/E  	(9.6:9.6:9.6) )
 
     (PATHCONSTRAINT uart_byte_rx/div_cnt\[1\]/CLK  uart_byte_rx/div_cnt\[1\]/Q  uart_byte_rx/bps_sys_clk_RNO_0/B  uart_byte_rx/bps_sys_clk_RNO_0/Y  uart_byte_rx/bps_sys_clk_RNO/A  uart_byte_rx/bps_sys_clk_RNO/Y  uart_byte_rx/bps_sys_clk/D  	(9.5:9.5:9.5) )
 
@@ -947,23 +945,23 @@
 
     (PATHCONSTRAINT uart_byte_tx/div_cnt\[0\]/CLK  uart_byte_tx/div_cnt\[0\]/Q  uart_byte_tx/div_cnt_RNO\[0\]/B  uart_byte_tx/div_cnt_RNO\[0\]/Y  uart_byte_tx/div_cnt\[0\]/D  	(9.5:9.5:9.5) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[6\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[6\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[5\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[5\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[4\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[4\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[3\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[3\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[2\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[2\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[1\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[1\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[0\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[0\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/r_data\[7\]/E  	(9.6:9.6:9.6) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/r_data\[7\]/E  	(9.6:9.6:9.6) )
 
-    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_tx/uart_state/D  	(9.5:9.5:9.5) )
+    (PATHCONSTRAINT Rx_Done_3/CLK  Rx_Done_3/Q  uart_byte_tx/uart_state/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT uart_byte_rx/bps_cnt\[15\]/CLK  uart_byte_rx/bps_cnt\[15\]/Q  uart_byte_rx/un1_bps_cnt_1_I_100/A  uart_byte_rx/un1_bps_cnt_1_I_100/Y  uart_byte_rx/bps_cnt\[15\]/D  	(9.5:9.5:9.5) )
 
@@ -1039,11 +1037,19 @@
 
     (PATHCONSTRAINT uart_byte_tx/div_cnt\[9\]/CLK  uart_byte_tx/div_cnt\[9\]/Q  uart_byte_tx/div_cnt_RNO\[9\]/A  uart_byte_tx/div_cnt_RNO\[9\]/Y  uart_byte_tx/div_cnt\[9\]/D  	(9.5:9.5:9.5) )
 
+    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  uart_byte_rx/uart_state_RNO/B  uart_byte_rx/uart_state_RNO/Y  uart_byte_rx/uart_state/E  	(9.6:9.6:9.6) )
+
     (PATHCONSTRAINT uart_byte_rx/tmp0_rx/CLK  uart_byte_rx/tmp0_rx/Q  uart_byte_rx/tmp1_rx/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT uart_byte_rx/bps_cnt\[24\]/CLK  uart_byte_rx/bps_cnt\[24\]/Q  uart_byte_rx/un1_bps_cnt_1_I_95/A  uart_byte_rx/un1_bps_cnt_1_I_95/Y  uart_byte_rx/bps_cnt\[24\]/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT uart_byte_tx/bps_cnt\[24\]/CLK  uart_byte_tx/bps_cnt\[24\]/Q  uart_byte_tx/un1_bps_cnt_12_I_95/A  uart_byte_tx/un1_bps_cnt_12_I_95/Y  uart_byte_tx/bps_cnt\[24\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT uart_byte_rx/Rx_Done/CLK  uart_byte_rx/Rx_Done/Q  Rx_Done_1/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT Rx_Done_1/CLK  Rx_Done_1/Q  Rx_Done_2/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT Rx_Done_2/CLK  Rx_Done_2/Q  Rx_Done_3/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT uart_byte_rx/s0_rx/CLK  uart_byte_rx/s0_rx/Q  uart_byte_rx/s1_rx/D  	(9.5:9.5:9.5) )
 

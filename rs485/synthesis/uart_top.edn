@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2025 3 7 11 7 51)
+      (timeStamp 2025 3 7 17 36 42)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09M-2, mapper mapact, Build 1920R"))
      )
@@ -420,6 +420,22 @@
         (property is_ff (integer 1))
        )
     )
+    (cell DFN1 (cellType GENERIC)
+      (property is_sequential (integer 1))
+      (property dont_touch (string "false"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port Q (direction OUTPUT)
+           (property function (string "IQ"))
+ )
+           (port CLK (direction INPUT)
+           (property clock (integer 1))
+ )
+           (port D (direction INPUT))
+         )
+        (property is_ff (integer 1))
+       )
+    )
     (cell DFI1E0P0 (cellType GENERIC)
       (property is_sequential (integer 1))
       (property dont_touch (string "false"))
@@ -632,9 +648,9 @@
            (property is_instantiated (integer 1))
           )
           (instance tmp0_rx_RNIGV71 (viewRef prim (cellRef INV (libraryRef PA3)))          )
+          (instance (rename bps_cnt_RNI2DLC2_3 "bps_cnt_RNI2DLC2[3]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNIR93N2_3 "bps_cnt_RNIR93N2[3]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNIJQRK_3 "bps_cnt_RNIJQRK[3]") (viewRef prim (cellRef OR2A (libraryRef PA3)))          )
-          (instance (rename bps_cnt_RNI2DLC2_3 "bps_cnt_RNI2DLC2[3]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename div_cnt_RNIJS03_4 "div_cnt_RNIJS03[4]") (viewRef prim (cellRef OR2A (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNICIGB1_13 "bps_cnt_RNICIGB1[13]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNIRV631_9 "bps_cnt_RNIRV631[9]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
@@ -659,6 +675,11 @@
           (instance (rename div_cnt_RNO_5 "div_cnt_RNO[5]") (viewRef prim (cellRef XA1 (libraryRef PA3)))          )
           (instance (rename div_cnt_RNO_6 "div_cnt_RNO[6]") (viewRef prim (cellRef XA1 (libraryRef PA3)))          )
           (instance (rename div_cnt_RNO_7 "div_cnt_RNO[7]") (viewRef prim (cellRef XA1 (libraryRef PA3)))          )
+          (instance (rename div_cnt_RNO_0 "div_cnt_RNO[0]") (viewRef prim (cellRef NOR2A (libraryRef PA3)))          )
+          (instance (rename div_cnt_RNO_1 "div_cnt_RNO[1]") (viewRef prim (cellRef XA1 (libraryRef PA3)))          )
+          (instance (rename div_cnt_RNIFO03_2 "div_cnt_RNIFO03[2]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
+          (instance (rename div_cnt_RNIN013_6 "div_cnt_RNIN013[6]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
+          (instance (rename div_cnt_RNIR413_8 "div_cnt_RNIR413[8]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
           (instance (rename r_data_byte_RNO_2 "r_data_byte_RNO[2]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename r_data_byte_RNO_1 "r_data_byte_RNO[1]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
           (instance (rename r_data_byte_RNO_0 "r_data_byte_RNO[0]") (viewRef prim (cellRef OR3 (libraryRef PA3)))          )
@@ -678,11 +699,6 @@
           (instance (rename r_data_byte_RNO_0_5 "r_data_byte_RNO_0[5]") (viewRef prim (cellRef OA1B (libraryRef PA3)))          )
           (instance (rename r_data_byte_RNO_0_6 "r_data_byte_RNO_0[6]") (viewRef prim (cellRef OA1B (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNI7OE47_0 "bps_cnt_RNI7OE47[0]") (viewRef prim (cellRef NOR3 (libraryRef PA3)))          )
-          (instance (rename div_cnt_RNO_0 "div_cnt_RNO[0]") (viewRef prim (cellRef NOR2A (libraryRef PA3)))          )
-          (instance (rename div_cnt_RNO_1 "div_cnt_RNO[1]") (viewRef prim (cellRef XA1 (libraryRef PA3)))          )
-          (instance (rename div_cnt_RNIFO03_2 "div_cnt_RNIFO03[2]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
-          (instance (rename div_cnt_RNIN013_6 "div_cnt_RNIN013[6]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
-          (instance (rename div_cnt_RNIR413_8 "div_cnt_RNIR413[8]") (viewRef prim (cellRef OR2 (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNO_1 "bps_cnt_RNO[1]") (viewRef prim (cellRef NOR2A (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNO_0 "bps_cnt_RNO[0]") (viewRef prim (cellRef NOR2A (libraryRef PA3)))          )
           (instance (rename bps_cnt_RNO_3 "bps_cnt_RNO[3]") (viewRef prim (cellRef NOR2A (libraryRef PA3)))          )
@@ -1653,35 +1669,35 @@
            (portRef B (instanceRef tmp0_rx_RNI81RG6))
            (portRef A (instanceRef tmp0_rx_RNIGV71))
           ))
-          (net bps_cnt8_0_o3_0_1 (joined
-           (portRef Y (instanceRef bps_cnt_RNIR93N2_3))
-           (portRef B (instanceRef bps_cnt_RNI7OE47_0))
-           (portRef B (instanceRef r_data_byte_RNO_7))
+          (net (rename r_data_byte_2_i_o3_1_0_6 "r_data_byte_2_i_o3_1_0[6]") (joined
+           (portRef Y (instanceRef bps_cnt_RNI2DLC2_3))
+           (portRef A (instanceRef bps_cnt_RNIV4556_3))
           ))
           (net bps_cnt8_0_o3_1_17_4 (joined
            (portRef Y (instanceRef bps_cnt_RNIUV111_17))
-           (portRef A (instanceRef bps_cnt_RNI2DLC2_3))
            (portRef A (instanceRef bps_cnt_RNIR93N2_3))
+           (portRef A (instanceRef bps_cnt_RNI2DLC2_3))
           ))
           (net bps_cnt8_0_o3_1_17_5 (joined
            (portRef Y (instanceRef bps_cnt_RNIAF511_21))
-           (portRef B (instanceRef bps_cnt_RNI2DLC2_3))
            (portRef B (instanceRef bps_cnt_RNIR93N2_3))
-          ))
-          (net bps_cnt8_0_o3_0_0 (joined
-           (portRef Y (instanceRef bps_cnt_RNIJQRK_3))
-           (portRef C (instanceRef bps_cnt_RNIR93N2_3))
+           (portRef B (instanceRef bps_cnt_RNI2DLC2_3))
           ))
           (net (rename bps_cntZ0Z_3 "bps_cnt[3]") (joined
            (portRef Q (instanceRef bps_cnt_3))
            (portRef A (instanceRef un1_bps_cnt_1_I_84))
            (portRef B (instanceRef un1_bps_cnt_1_I_148))
-           (portRef C (instanceRef bps_cnt_RNI2DLC2_3))
            (portRef A (instanceRef bps_cnt_RNIJQRK_3))
+           (portRef C (instanceRef bps_cnt_RNI2DLC2_3))
           ))
-          (net (rename r_data_byte_2_i_o3_1_0_6 "r_data_byte_2_i_o3_1_0[6]") (joined
-           (portRef Y (instanceRef bps_cnt_RNI2DLC2_3))
-           (portRef A (instanceRef bps_cnt_RNIV4556_3))
+          (net bps_cnt8_0_o3_0_1 (joined
+           (portRef Y (instanceRef bps_cnt_RNIR93N2_3))
+           (portRef B (instanceRef bps_cnt_RNI7OE47_0))
+           (portRef B (instanceRef r_data_byte_RNO_7))
+          ))
+          (net bps_cnt8_0_o3_0_0 (joined
+           (portRef Y (instanceRef bps_cnt_RNIJQRK_3))
+           (portRef C (instanceRef bps_cnt_RNIR93N2_3))
           ))
           (net bps_cnt8_0_o3_1_18_9 (joined
            (portRef Y (instanceRef bps_cnt_RNICIGB1_13))
@@ -1837,6 +1853,14 @@
            (portRef Y (instanceRef div_cnt_RNO_7))
            (portRef D (instanceRef div_cnt_7))
           ))
+          (net div_cnt_n0 (joined
+           (portRef Y (instanceRef div_cnt_RNO_0))
+           (portRef D (instanceRef div_cnt_0))
+          ))
+          (net div_cnt_n1 (joined
+           (portRef Y (instanceRef div_cnt_RNO_1))
+           (portRef D (instanceRef div_cnt_1))
+          ))
           (net N_25 (joined
            (portRef Y (instanceRef bps_cnt_RNIFMRK_0))
            (portRef C (instanceRef bps_cnt_RNI7OE47_0))
@@ -1953,14 +1977,6 @@
            (portRef B (instanceRef bps_cnt_RNO_3))
            (portRef B (instanceRef bps_cnt_RNO_0))
            (portRef B (instanceRef bps_cnt_RNO_1))
-          ))
-          (net div_cnt_n0 (joined
-           (portRef Y (instanceRef div_cnt_RNO_0))
-           (portRef D (instanceRef div_cnt_0))
-          ))
-          (net div_cnt_n1 (joined
-           (portRef Y (instanceRef div_cnt_RNO_1))
-           (portRef D (instanceRef div_cnt_1))
           ))
           (net (rename bps_cnt_3_1 "bps_cnt_3[1]") (joined
            (portRef Y (instanceRef bps_cnt_RNO_1))
@@ -2190,7 +2206,7 @@
            (port tx_c (direction OUTPUT))
            (port sys_rst_n_c (direction INPUT))
            (port sys_clk_c (direction INPUT))
-           (port Rx_Done (direction INPUT))
+           (port Rx_Done_3 (direction INPUT))
            (port re_c (direction OUTPUT))
          )
          (contents
@@ -3467,8 +3483,8 @@
            (portRef Y (instanceRef uart_state_RNO))
            (portRef E (instanceRef uart_state))
           ))
-          (net Rx_Done (joined
-           (portRef Rx_Done)
+          (net Rx_Done_3 (joined
+           (portRef Rx_Done_3)
            (portRef E (instanceRef r_data_7))
            (portRef E (instanceRef r_data_6))
            (portRef E (instanceRef r_data_5))
@@ -3768,6 +3784,12 @@
           )
           (instance sys_rst_n_pad (viewRef prim (cellRef CLKBUF (libraryRef PA3)))
           )
+          (instance Rx_Done_1 (viewRef prim (cellRef DFN1 (libraryRef PA3)))
+          )
+          (instance Rx_Done_2 (viewRef prim (cellRef DFN1 (libraryRef PA3)))
+          )
+          (instance Rx_Done_3 (viewRef prim (cellRef DFN1 (libraryRef PA3)))
+          )
           (instance re_pad (viewRef prim (cellRef OUTBUF (libraryRef PA3)))
           )
           (instance tx_pad (viewRef prim (cellRef OUTBUF (libraryRef PA3)))
@@ -3812,12 +3834,24 @@
            (portRef (member received_data 0) (instanceRef uart_byte_rx))
            (portRef (member received_data 0) (instanceRef uart_byte_tx))
           ))
-          (net Rx_Done (joined
-           (portRef Rx_Done (instanceRef uart_byte_rx))
-           (portRef Rx_Done (instanceRef uart_byte_tx))
+          (net (rename Rx_DoneZ0Z_3 "Rx_Done_3") (joined
+           (portRef Q (instanceRef Rx_Done_3))
+           (portRef Rx_Done_3 (instanceRef uart_byte_tx))
           ))
           (net GND (joined
            (portRef Y (instanceRef GND_i))
+          ))
+          (net Rx_Done (joined
+           (portRef Rx_Done (instanceRef uart_byte_rx))
+           (portRef D (instanceRef Rx_Done_1))
+          ))
+          (net (rename Rx_DoneZ0Z_1 "Rx_Done_1") (joined
+           (portRef Q (instanceRef Rx_Done_1))
+           (portRef D (instanceRef Rx_Done_2))
+          ))
+          (net (rename Rx_DoneZ0Z_2 "Rx_Done_2") (joined
+           (portRef Q (instanceRef Rx_Done_2))
+           (portRef D (instanceRef Rx_Done_3))
           ))
           (net VCC (joined
            (portRef Y (instanceRef VCC_i))
@@ -3826,6 +3860,9 @@
            (portRef Y (instanceRef sys_clk_pad))
            (portRef sys_clk_c (instanceRef uart_byte_rx))
            (portRef sys_clk_c (instanceRef uart_byte_tx))
+           (portRef CLK (instanceRef Rx_Done_3))
+           (portRef CLK (instanceRef Rx_Done_2))
+           (portRef CLK (instanceRef Rx_Done_1))
           ))
           (net sys_clk (joined
            (portRef sys_clk)

@@ -1,0 +1,8 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\identify_instrumentor_shell.exe  -idb  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.db  -synplify_install  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro  -synplify_tool  synplify_pro  -log  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\synlog\uart_top_identify_compile.log  -family  ProASIC3  -prj  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_syn.prj  -curimpl  synthesis_1  -dbgimpl  synthesis_1  -fver  2024.09  -idc  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.idc  -f  C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identifylaunch.tcl 
+rc:0 success:1 runtime:1
+file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.db|io:i|time:1741346779|size:31105|exec:0
+file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\synlog\uart_top_identify_compile.log|io:o|time:1741346780|size:1546|exec:0
+file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_syn.prj|io:i|time:1741346778|size:3145|exec:0
+file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.idc|io:i|time:1741342127|size:378|exec:0
+file:C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identifylaunch.tcl|io:o|time:1741346779|size:123|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\identify_instrumentor_shell.exe|io:i|time:1479311952|size:125440|exec:1

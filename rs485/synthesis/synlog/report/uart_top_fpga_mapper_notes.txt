@@ -1,7 +1,7 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_tx.v":88:1:88:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
-@N: MO231 :"d:\files\fpga\rs485\hdl\uart_rx.v":79:1:79:6|Found counter in view:work.uart_rx(verilog) instance div_cnt[15:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":88:1:88:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":79:1:79:6|Found counter in view:work.uart_rx(verilog) instance div_cnt[15:0] 
 @N: FP130 |Promoting Net sys_rst_n_c on CLKBUF  sys_rst_n_pad 
 @N: FP130 |Promoting Net sys_clk_c on CLKBUF  sys_clk_pad 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.

@@ -33,11 +33,12 @@ Report for cell uart_top.verilog
 
 
           DFI1E0P0     4      1.0        4.0
+              DFN1     3      1.0        3.0
             DFN1C0    93      1.0       93.0
           DFN1E1C0    18      1.0       18.0
             DFN1P0     1      1.0        1.0
                    -----          ----------
-             TOTAL   427               421.0
+             TOTAL   430               424.0
 
 
   IO Cell usage:
@@ -49,7 +50,7 @@ Report for cell uart_top.verilog
              TOTAL     5
 
 
-Core Cells         : 421 of 6144 (7%)
+Core Cells         : 424 of 6144 (7%)
 IO Cells           : 5
 
   RAM/ROM Usage Summary

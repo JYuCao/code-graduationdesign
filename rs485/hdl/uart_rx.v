@@ -25,12 +25,11 @@ module uart_rx(
 	
 	reg [15:0]bps_DR;
 	reg [15:0]div_cnt;
-	reg bps_sys_clk;
-	reg [24:0]bps_cnt;
+	reg bps_sam_plus;
+	reg [7:0]bps_cnt;
 	
 	reg uart_state;
 	
-	reg [7:0] r_data_byte;
 	reg START_BIT;
     reg STOP_BIT;
 	
@@ -80,7 +79,7 @@ module uart_rx(
         if(!sys_rst_n)
             div_cnt <= 16'd0;
         else if(uart_state)begin
-            if(div_cnt == bps_DR)
+            if(div_cnt >= bps_DR - 1)
                 div_cnt <= 16'd0;
             else
                 div_cnt <= div_cnt + 1'b1;
@@ -88,14 +87,14 @@ module uart_rx(
         else
             div_cnt <= 16'd0;
 		
-	// bps_sys_clk gen
+	// bps_sam_plus gen
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
-            bps_sys_clk <= 1'b0;
-        else if(div_cnt == 16'd1)
-            bps_sys_clk <= 1'b1;
+            bps_sam_plus <= 1'b0;
+        else if(div_cnt == bps_DR / 2)
+            bps_sam_plus <= 1'b1;
         else
-            bps_sys_clk <= 1'b0;
+            bps_sam_plus <= 1'b0;
 	
 	//bps counter
 	always@(posedge sys_clk or negedge sys_rst_n)
@@ -103,7 +102,7 @@ module uart_rx(
             bps_cnt <= 8'd0;
         else if(bps_cnt == 8'd11)
             bps_cnt <= 8'd0;
-        else if(bps_sys_clk)
+        else if(div_cnt == bps_DR - 2)
             bps_cnt <= bps_cnt + 1'b1;
         else
             bps_cnt <= bps_cnt;
@@ -111,47 +110,35 @@ module uart_rx(
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
             Rx_Done <= 1'b0;
-        else if(bps_cnt == 8'd11)
+        else if(bps_cnt == 8'd10 && (div_cnt == bps_DR - 3))
             Rx_Done <= 1'b1;
         else
             Rx_Done <= 1'b0;
 
     always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
-            r_data_byte <= 8'd0;
-        else begin
-            if (bps_cnt == 8'd1) begin
-                if (tmp0_rx != 1'b0)
-                    uart_state <= 1'b0;
-            end else if (bps_cnt == 8'd10) begin
-                STOP_BIT <= tmp0_rx;
-            end else begin
-                r_data_byte[bps_cnt-1] <= tmp0_rx;
-            end
-        end
+            data <= 8'd0;
+        else if (bps_sam_plus)
+            data[bps_cnt-1] <= tmp0_rx;
+            //if (bps_cnt == 8'd1) begin
+                //if (tmp0_rx != 1'b0)
+                    //uart_state <= 1'b0;
+            //end else if (bps_cnt == 8'd10) begin
+                //STOP_BIT <= tmp0_rx;
+            //end else begin
+                //r_data_byte[bps_cnt-1] <= tmp0_rx;
+            //end
+                
+        //end
 
-    always@(posedge sys_clk or negedge sys_rst_n)
-        if(!sys_rst_n)
-            data <= 8'd0;
-        else if(bps_cnt == 8'd11) begin
-            if (STOP_BIT == 1'b1) begin
-                data <= r_data_byte;
-            end
-        end	
-	
-	always@(posedge sys_clk or negedge sys_rst_n)
-        if(!sys_rst_n)
-            data <= 8'd0;
-        else if(bps_cnt == 8'd11)begin
-            data[0] <= r_data_byte[0];
-            data[1] <= r_data_byte[1];
-            data[2] <= r_data_byte[2];
-            data[3] <= r_data_byte[3];
-            data[4] <= r_data_byte[4];
-            data[5] <= r_data_byte[5];
-            data[6] <= r_data_byte[6];
-            data[7] <= r_data_byte[7];
-        end	
+    //always@(posedge sys_clk or negedge sys_rst_n)
+        //if(!sys_rst_n)
+            //data <= 8'd0;
+        //else if(bps_cnt == 8'd11) begin
+            //if (STOP_BIT == 1'b1) begin
+                //data <= r_data_byte;
+            //end
+        //end	
 	
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)

@@ -32,50 +32,50 @@ Z5 o-vlog01compat -work presynth -O0
 Z6 !s92 +incdir+D:/files/fpga/rs485/stimulus -vlog01compat -work presynth -O0
 Z7 tCvgOpt 0
 vtb_uart_rx
-!s110 1741315956
+!s110 1741345296
 !i10b 1
-!s100 9<NT]2K5XU=h0o=?@l@Oc3
-IS?M]LVflMNn`zEKAX1H1e3
+!s100 QGcKYN]lfJW<NcI^VGbC:2
+I]^W;]`9FSAfQ6]jiG;n]X2
 R2
-R0
-w1741313829
-8D:/files/fpga/rs485/stimulus/tb_uart_rx.v
-FD:/files/fpga/rs485/stimulus/tb_uart_rx.v
-Z8 L0 30
+Z8 dC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/simulation
+w1741336383
+8C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v
+Z9 L0 30
 R3
 r1
 !s85 0
 31
-!s108 1741315956.000000
-!s107 D:/files/fpga/rs485/stimulus/tb_uart_rx.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_rx.v|
+!s108 1741345296.000000
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v|
+!s90 -reportprogress|300|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v|
 !s101 -O0
 !i113 1
 R5
-R6
+Z10 !s92 +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus -vlog01compat -work presynth -O0
 R7
 vtb_uart_top
-!s110 1741317398
+Z11 !s110 1741346490
 !i10b 1
-!s100 n3nm>Dd=ii^o@0?k3dObS0
-ISa4je`ci1<8eAEJ72zl693
+!s100 `mDPhTY0P3ZbG`=61H<5E1
+IIfRSXIF^<WgR]h@CWI6b>3
 R2
-R0
-w1741316844
-8D:/files/fpga/rs485/stimulus/tb_uart_top.v
-FD:/files/fpga/rs485/stimulus/tb_uart_top.v
+R8
+w1741346469
+8C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_top.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_top.v
 L0 4
 R3
 r1
 !s85 0
 31
-Z9 !s108 1741317397.000000
-!s107 D:/files/fpga/rs485/stimulus/tb_uart_top.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_top.v|
+Z12 !s108 1741346490.000000
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_top.v|
+!s90 -reportprogress|300|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_top.v|
 !s101 -O0
 !i113 1
 R5
-R6
+R10
 R7
 vtb_uart_tx
 !s110 1741316288
@@ -85,16 +85,16 @@ Iz;:XPaFiLRLSHfCAFkDbU1
 R2
 R0
 w1741316279
-Z10 8D:/files/fpga/rs485/stimulus/tb_uart_tx.v
-Z11 FD:/files/fpga/rs485/stimulus/tb_uart_tx.v
-R8
+Z13 8D:/files/fpga/rs485/stimulus/tb_uart_tx.v
+Z14 FD:/files/fpga/rs485/stimulus/tb_uart_tx.v
+R9
 R3
 r1
 !s85 0
 31
 !s108 1741316288.000000
-Z12 !s107 D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
-Z13 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+Z15 !s107 D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+Z16 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
 !s101 -O0
 !i113 1
 R5
@@ -130,83 +130,83 @@ IJK4;fkUXV75PcFZ]2i50M3
 R2
 R0
 w1736490361
-R10
-R11
+R13
+R14
 L0 4
 R3
 r1
 !s85 0
 31
 !s108 1736490388.000000
-R12
-R13
+R15
+R16
 !s101 -O0
 !i113 1
 R5
 R6
 R7
 vuart_rx
-Z14 !s110 1741317397
+R11
 !i10b 1
-!s100 zb4JbB<S66zeD?CzB6TH_0
-In1;WYeV6HfPfj5J3gMUcL1
+!s100 hSWo5DN0hJ3^hCBWSZb1[2
+ID::?EH4`a>N=QWYWO`:l41
 R2
-R0
-w1741317347
-8D:/files/fpga/rs485/hdl/uart_rx.v
-FD:/files/fpga/rs485/hdl/uart_rx.v
+R8
+w1741346281
+8C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v
 L0 4
 R3
 r1
 !s85 0
 31
-R9
-!s107 D:/files/fpga/rs485/hdl/uart_rx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_rx.v|
+!s108 1741346489.000000
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v|
 !s101 -O0
 !i113 1
 R5
 R7
 vuart_top
-R14
+R11
 !i10b 1
-!s100 0=D<NORh8Tzl7D<V[PTJ;3
-I2b?N6a9<mf6HZ7Jf7X>_G0
+!s100 Y>L@88;]]BZLam9Z]CmEU1
+I^BM`:WCLC8]Pj<^EdO=4j3
 R2
-R0
-Z15 w1741311624
-8D:/files/fpga/rs485/hdl/uart_top.v
-FD:/files/fpga/rs485/hdl/uart_top.v
+R8
+w1741346454
+8C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_top.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_top.v
 L0 4
 R3
 r1
 !s85 0
 31
-R9
-!s107 D:/files/fpga/rs485/hdl/uart_top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_top.v|
+R12
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_top.v|
 !s101 -O0
 !i113 1
 R5
 R7
 vuart_tx
-R14
+R11
 !i10b 1
 !s100 h`:YTY3z5JeXW1lzGWX3g0
-IV:4>TW2c4Hz_j[UfAY2f^0
+IGnHiFR@]d?z[jgl:>TYBZ0
 R2
-R0
-R15
-8D:/files/fpga/rs485/hdl/uart_tx.v
-FD:/files/fpga/rs485/hdl/uart_tx.v
+R8
+w1741258037
+8C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_tx.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_tx.v
 L0 4
 R3
 r1
 !s85 0
 31
-R9
-!s107 D:/files/fpga/rs485/hdl/uart_tx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_tx.v|
+R12
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_tx.v|
 !s101 -O0
 !i113 1
 R5

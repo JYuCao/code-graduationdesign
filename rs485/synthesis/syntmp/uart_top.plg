@@ -4,8 +4,8 @@
 @P:  uart_top|sys_clk - Estimated Period : 21.251
 @P:  uart_top|sys_clk - Requested Period : 10.000
 @P:  uart_top|sys_clk - Slack : -11.251
-@P:  Total Area : 421.0
+@P:  Total Area : 424.0
 @P:  Total Area : 218.0
 @P:  Total Area : 203.0
-@P:  Total Area : 421.0
-@P:  CPU Time : 0h:00m:00s
+@P:  Total Area : 424.0
+@P:  CPU Time : 0h:00m:01s

@@ -7,7 +7,7 @@ Release: Libero SoC v11.8 SP2
 Info: The design uart_top.adb was last modified by software version 11.8.2.4.
 Opened an existing Libero design uart_top.adb.
 
-The Execute Script command succeeded ( 00:00:25 )
+The Execute Script command succeeded ( 00:00:23 )
 Checking for software updates...
 Info: The software cannot reach the Microsemi SoC server to confirm the version you are running.
       Visit
