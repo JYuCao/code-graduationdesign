@@ -1,0 +1,6 @@
+CKID0001:@|S:ident_coreinst.comm_block_INST.jtagi.b9_nv_oQwfYF_RNO@|E:ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk1.b3_nfs[4]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
+CKID0002:@|S:ident_coreinst.comm_block_INST.jtagi.b10_8Kz_rKlrtX_RNO@|E:ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1.b10_dZst39_EF3[7]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 
+CKID0003:@|S:ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw@|E:ident_coreinst.comm_block_INST.b9_ORb_xNywD.b3_ORb[32]@|F:@syn_sample_clock_path==CKID0003@|M:ClockId0003 
+CKID0004:@|S:sys_clk@|E:Rx_Done_1@|F:@syn_sample_clock_path==CKID0004@|M:ClockId0004 
+CKID0005:@|S:atck@|E:ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw@|F:@syn_sample_clock_path1==CKID0005@|M:ClockId0005 
+CKID0006:@|S:ident_coreinst.comm_block_INST.dr2_tck_keep@|E:ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7]@|F:@syn_sample_clock_path==CKID0006@|M:ClockId0006 

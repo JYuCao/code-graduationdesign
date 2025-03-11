@@ -1,0 +1,30 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+4 non-gated/non-generated clock tree(s) driving 518 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 23 clock pin(s) of sequential element(s)
+0 instances converted, 23 sequential instances remain driven by gated/generated clocks
+
+====================================================================== Non-Gated/Non-Generated Clocks ======================================================================
+Clock Tree ID     Driving Element                                       Drive Element Type              Fanout     Sample Instance                                          
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0003       ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     UJTAG                           306        ident_coreinst.comm_block_INST.b9_ORb_xNywD.b3_ORb[32]   
+@K:CKID0004       sys_clk                                               port                            203        Rx_Done_1                                                
+@K:CKID0005       atck                                                  port                            1          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw        
+@K:CKID0006       ident_coreinst.comm_block_INST.dr2_tck_keep           clock definition on keepbuf     8          ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7]
+============================================================================================================================================================================
+============================================================================================ Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                             Drive Element Type     Fanout     Sample Instance                                                         Explanation              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       ident_coreinst.comm_block_INST.jtagi.b9_nv_oQwfYF_RNO       NOR2B                  14         ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk1.b3_nfs[4]     No clocks found on inputs
+@K:CKID0002       ident_coreinst.comm_block_INST.jtagi.b10_8Kz_rKlrtX_RNO     NOR2B                  9          ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1.b10_dZst39_EF3[7]     No clocks found on inputs
+=================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

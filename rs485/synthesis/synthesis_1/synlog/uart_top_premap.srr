@@ -1,0 +1,89 @@
+# Fri Mar 07 19:26:22 2025
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.sdc
+@L: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top_scck.rpt 
+Printing clock  summary report in "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+@N: MF625 |Insert Identify debug core
+*** Launch instrumentor shell: "C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\identify_instrumentor_shell.exe" -srs_gen_hw "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v" -prj "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_syn.prj" -idb "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.db" -curimpl synthesis_1 -write_sdc -log C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.log -tsl MifOIkgf -idc C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.idc
+Reading constraint file: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.sdc
+
+Making connections to hyper_source modules
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":5023:28:5023:50|Connected syn_hyper_connect ident_coreinst.ident_hyperc_tx_IICE_23, tag uart_byte_tx.tx
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":5016:28:5016:50|Connected syn_hyper_connect ident_coreinst.ident_hyperc_rx_IICE_21, tag uart_byte_rx.rx
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":5009:28:5009:54|Connected syn_hyper_connect ident_coreinst.ident_hyperc_nedege_IICE_12, tag uart_byte_rx.nedege
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":5002:28:5002:55|Connected syn_hyper_connect ident_coreinst.ident_hyperc_send_en_IICE_22, tag send_en
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4995:28:4995:61|Connected syn_hyper_connect ident_coreinst.ident_hyperc_received_data_IICE_13, tag received_data
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4988:28:4988:59|Connected syn_hyper_connect ident_coreinst.ident_hyperc_data_to_send_IICE_4, tag data_to_send
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4981:28:4981:55|Connected syn_hyper_connect ident_coreinst.ident_hyperc_baud_set_IICE_1, tag baud_set
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4974:28:4974:54|Connected syn_hyper_connect ident_coreinst.ident_hyperc_Rx_Done_IICE_0, tag Rx_Done
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4967:28:4967:47|Connected syn_hyper_connect ident_coreinst.ident_hyperc_sys_clk, tag sys_clk
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4673:6:4673:11|Removing sequential instance genblk4\.b9_ibScJX_E2 (in view: VhdlGenLib.b8_nR_ymqrG_7s_5s_0_0s_0s_1_62_x(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4381:2:4381:7|Removing sequential instance b13_xYTFKCkrt_FH9 (in view: VhdlGenLib.b7_OCByLXC_Z1_x(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4697:2:4697:7|Removing sequential instance b11_ibScJX_E2_P (in view: VhdlGenLib.b8_nR_ymqrG_7s_5s_0_0s_0s_1_62_x(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                                Requested     Requested     Clock        Clock                    Clock
+Clock                                                Frequency     Period        Type         Group                    Load 
+----------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.dr2_tck               1.0 MHz       1000.000      declared     identify_jtag_group1     8    
+jtag_interface_x|b9_nv_oQwfYF                        100.0 MHz     10.000        inferred     Inferred_clkgroup_4      13   
+jtag_interface_x|b10_8Kz_rKlrtX                      100.0 MHz     10.000        inferred     Inferred_clkgroup_3      8    
+jtag_interface_x|identify_clk_int_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_1      343  
+uart_top|atck                                        100.0 MHz     10.000        inferred     Inferred_clkgroup_2      1    
+uart_top|sys_clk                                     100.0 MHz     10.000        inferred     Inferred_clkgroup_0      273  
+============================================================================================================================
+
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":128:1:128:6|Found inferred clock uart_top|sys_clk which controls 273 sequential elements including uart_byte_tx.tx. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4236:3:4236:8|Found inferred clock jtag_interface_x|identify_clk_int_inferred_clock which controls 343 sequential elements including ident_coreinst.IICE_INST.b5_nUTGT.iclksync.dout[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":156:8:156:19|Found inferred clock uart_top|atck which controls 1 sequential elements including ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":351:6:351:11|Found inferred clock jtag_interface_x|b10_8Kz_rKlrtX which controls 8 sequential elements including ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1\.b10_dZst39_EF3[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4644:6:4644:11|Found inferred clock jtag_interface_x|b9_nv_oQwfYF which controls 13 sequential elements including ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk3\.b8_vABZ3qsY. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: BN225 |Writing default property annotation file C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+Encoding state machine b13_nAzGfFM_sLsv3[5:0] (in view: VhdlGenLib.b7_OCByLXC_Z1_x(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0011 -> 001000
+   0100 -> 010000
+   1101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 111MB peak: 113MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 27MB peak: 113MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Mar 07 19:26:25 2025
+
+###########################################################]

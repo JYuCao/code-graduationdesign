@@ -35,8 +35,8 @@ always @(SYSCLK)
 uart_top uart_top_0 (
     // Inputs
     .sys_clk(SYSCLK),
-    .sys_rst_n(NSYSRESET),
     .rx(rx),
+    .sys_rst_n(NSYSRESET),
 
     // Outputs
     .tx(tx),
@@ -50,6 +50,7 @@ initial begin
 
     send_byte(8'h55);
     #(1041600);
+    #(5000)
 
     send_byte(8'haa);
     #(1041600);

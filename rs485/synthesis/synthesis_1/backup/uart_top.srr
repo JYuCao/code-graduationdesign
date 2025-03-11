@@ -1,0 +1,1568 @@
+#Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-T3Q272P
+
+# Fri Mar 07 18:01:52 2025
+
+#Implementation: synthesis_1
+
+$ Running Identify Instrumentor. See log file:
+@N::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\synlog\uart_top_identify_compile.log"|
+#Fri Mar 07 18:01:52 2025
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v" (library work)
+Verilog syntax check successful!
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v changed - recompiling
+Selecting top level module uart_top
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":109:23:109:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":164:26:164:35|Removing redundant assignment.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":164:26:164:35|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":164:26:164:35|Object STOP_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+
+@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Removing wire data, as there is no assignment to it.
+@END
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar 07 18:01:52 2025
+
+###########################################################]
+Running in restricted mode: identify_job
+
+Starting:    C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\mbin\identify_instrumentor_shell.exe
+Install:     C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+Hostname:    DESKTOP-T3Q272P
+Date:        Fri Mar 07 18:01:53 2025
+Version:     L-2016.09M-2
+
+Arguments:   -product identify_instrumentor -tsl TnkSHvpi -af _CMD_.CML
+ProductType: identify_instrumentor
+
+
+
+
+*** Integrated Instrumentor ***
+Added instrumentation 'synthesis' to the project
+"design_flow" is unrecognized option for current device
+Added instrumentation 'synthesis_1' to the project
+"design_flow" is unrecognized option for current device
+Current design is uart_top
+Loading instrumentation 'synthesis_1'
+Source IDC file C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/identify.idc
+Setting IICE sampler (set IICE clock) to '/sys_clk' for IICE named 'IICE' (previous value: '')
+Instrumenting design `uart_top' in directory C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1
+The target device family is 'ProASIC3' (and considered a ProAsic3-based family; hence we do care about UJTAG / UJTAG_WRAPPER instances).
+The design does not contain a UJTAG_WRAPPER instance.
+OK, the design does not contain a UJTAG instance.
+Current instrumentation information: 	IICE=IICE 
+		Total instrumentation in bits: Sample Only 0, Trigger Only 0, Sample and trigger 21
+		Group wise instrumentation in bits: 
+					Groupdefault:Sample Only 0, Sample and trigger 21
+
+exit status=0
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N::Reading compiler constraint file C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.cdc
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v" (library work)
+@I::"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v" (library work)
+Verilog syntax check successful!
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.cdc changed - recompiling
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.cdc changed - recompiling
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v changed - recompiling
+Selecting top level module uart_top
+@N::Inserting syn_hyper_source for sys_clk(ident_hs_sys_clk)
+@N::Inserting syn_hyper_source for baud_set(ident_hs_baud_set)
+@N::Inserting syn_hyper_source for Rx_Done(ident_hs_Rx_Done)
+@N::Inserting syn_hyper_source for send_en(ident_hs_send_en)
+@N::Inserting syn_hyper_source for data_to_send(ident_hs_data_to_send)
+@N::Inserting syn_hyper_source for received_data(ident_hs_received_data)
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":109:23:109:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":164:26:164:35|Removing redundant assignment.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":34:5:34:13|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":35:8:35:15|Object STOP_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01110011011110010111001101011111011000110110110001101011
+   Generated name = syn_hyper_source_1s_sys_clk
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000011
+	tag=64'b0110001001100001011101010110010001011111011100110110010101110100
+   Generated name = syn_hyper_source_3s_baud_set
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01010010011110000101111101000100011011110110111001100101
+   Generated name = syn_hyper_source_1s_Rx_Done
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01110011011001010110111001100100010111110110010101101110
+   Generated name = syn_hyper_source_1s_send_en
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000001000
+	tag=96'b011001000110000101110100011000010101111101110100011011110101111101110011011001010110111001100100
+   Generated name = syn_hyper_source_8s_data_to_send
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000001000
+	tag=104'b01110010011001010110001101100101011010010111011001100101011001000101111101100100011000010111010001100001
+   Generated name = syn_hyper_source_8s_received_data
+
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+
+@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":19:11:19:14|Removing wire data, as there is no assignment to it.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 72MB peak: 75MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar 07 18:01:54 2025
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar 07 18:01:54 2025
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar 07 18:01:54 2025
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+File C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\synwork\uart_top_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 67MB peak: 68MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Fri Mar 07 18:01:55 2025
+
+###########################################################]
+Pre-mapping Report
+
+# Fri Mar 07 18:01:56 2025
+
+Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+Reading constraint file: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.sdc
+@L: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top_scck.rpt 
+Printing clock  summary report in "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+@N: MF625 |Insert Identify debug core
+*** Launch instrumentor shell: "C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\identify_instrumentor_shell.exe" -srs_gen_hw "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v" -prj "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\uart_top_syn.prj" -idb "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.db" -curimpl synthesis_1 -write_sdc -log C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.log -tsl TnkSHvpi -idc C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\identify.idc
+Reading constraint file: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.sdc
+
+Making connections to hyper_source modules
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4972:28:4972:55|Connected syn_hyper_connect ident_coreinst.ident_hyperc_send_en_IICE_20, tag send_en
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4965:28:4965:61|Connected syn_hyper_connect ident_coreinst.ident_hyperc_received_data_IICE_12, tag received_data
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4958:28:4958:59|Connected syn_hyper_connect ident_coreinst.ident_hyperc_data_to_send_IICE_4, tag data_to_send
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4951:28:4951:55|Connected syn_hyper_connect ident_coreinst.ident_hyperc_baud_set_IICE_1, tag baud_set
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4944:28:4944:54|Connected syn_hyper_connect ident_coreinst.ident_hyperc_Rx_Done_IICE_0, tag Rx_Done
+@N: BN397 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4937:28:4937:47|Connected syn_hyper_connect ident_coreinst.ident_hyperc_sys_clk, tag sys_clk
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":111:1:111:6|Sequential instance uart_byte_rx.Rx_Done is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":92:1:92:6|Sequential instance uart_byte_rx.bps_sys_clk is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":40:1:40:6|Sequential instance uart_byte_rx.s0_rx is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":40:1:40:6|Sequential instance uart_byte_rx.s1_rx is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":51:1:51:6|Sequential instance uart_byte_rx.tmp0_rx is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":51:1:51:6|Sequential instance uart_byte_rx.tmp1_rx is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":120:1:120:6|Sequential instance uart_byte_tx.Tx_Done is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":101:1:101:6|Sequential instance uart_byte_tx.bps_sys_clk is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":128:1:128:6|Sequential instance uart_byte_tx.tx is reduced to a combinational gate by constant propagation.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":49:1:49:6|Removing sequential instance r_data[7:0] (in view: work.uart_tx(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN115 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":41:9:41:20|Removing instance uart_byte_tx (in view: work.uart_top(verilog)) of type view:work.uart_tx(verilog) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4658:6:4658:11|Removing sequential instance genblk4\.b9_ibScJX_E2 (in view: VhdlGenLib.b8_nR_ymqrG_7s_5s_0_0s_0s_1_62_x(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4366:2:4366:7|Removing sequential instance b13_xYTFKCkrt_FH9 (in view: VhdlGenLib.b7_OCByLXC_Z1_x(verilog)) of type view:PrimLib.dffs(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Removing sequential instance bps_DR[11:9] (in view: work.uart_tx(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Removing sequential instance bps_DR[6:0] (in view: work.uart_tx(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Removing sequential instance bps_DR[11:9] (in view: work.uart_rx(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":64:4:64:9|Removing sequential instance bps_DR[6:0] (in view: work.uart_rx(verilog)) of type view:PrimLib.dffpatr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4682:2:4682:7|Removing sequential instance b11_ibScJX_E2_P (in view: VhdlGenLib.b8_nR_ymqrG_7s_5s_0_0s_0s_1_62_x(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+
+
+Clock Summary
+*****************
+
+Start                                                Requested     Requested     Clock        Clock                    Clock
+Clock                                                Frequency     Period        Type         Group                    Load 
+----------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.dr2_tck               1.0 MHz       1000.000      declared     identify_jtag_group1     8    
+jtag_interface_x|b9_nv_oQwfYF                        100.0 MHz     10.000        inferred     Inferred_clkgroup_4      13   
+jtag_interface_x|b10_8Kz_rKlrtX                      100.0 MHz     10.000        inferred     Inferred_clkgroup_3      8    
+jtag_interface_x|identify_clk_int_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0      325  
+uart_top|atck                                        100.0 MHz     10.000        inferred     Inferred_clkgroup_1      1    
+uart_top|sys_clk                                     100.0 MHz     10.000        inferred     Inferred_clkgroup_2      189  
+============================================================================================================================
+
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4221:3:4221:8|Found inferred clock jtag_interface_x|identify_clk_int_inferred_clock which controls 325 sequential elements including ident_coreinst.IICE_INST.b5_nUTGT.iclksync.dout[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":156:8:156:19|Found inferred clock uart_top|atck which controls 1 sequential elements including ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Found inferred clock uart_top|sys_clk which controls 189 sequential elements including uart_byte_rx.bps_cnt[24:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":351:6:351:11|Found inferred clock jtag_interface_x|b10_8Kz_rKlrtX which controls 8 sequential elements including ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1\.b10_dZst39_EF3[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4629:6:4629:11|Found inferred clock jtag_interface_x|b9_nv_oQwfYF which controls 13 sequential elements including ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk3\.b8_vABZ3qsY. This clock has no specified timing constraint which may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: BN225 |Writing default property annotation file C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top.sap.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+Encoding state machine b13_nAzGfFM_sLsv3[5:0] (in view: VhdlGenLib.b7_OCByLXC_Z1_x(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0011 -> 001000
+   0100 -> 010000
+   1101 -> 100000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 112MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Fri Mar 07 18:01:58 2025
+
+###########################################################]
+Map & Optimize Report
+
+# Fri Mar 07 18:01:58 2025
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 110MB)
+
+Dissolving instances under view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog) (flattening)
+
+
+Available hyper_sources - for debug and ip models
+HyperSrc tag sys_clk
+HyperSrc tag baud_set
+HyperSrc tag Rx_Done
+HyperSrc tag send_en
+HyperSrc tag data_to_send
+HyperSrc tag received_data
+HyperSrc tag ident_coreinst.IICE_INST.b3_SoW.identify_sampler_ready
+HyperSrc tag ident_coreinst.IICE_INST.Identify_IICE_trigger_ext
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_uireg
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_urstb
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_udrupd
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_udrck
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_udrcap
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_udrsh
+HyperSrc tag ident_coreinst.comm_block_INST.jtagi.ujtag_wrapper_utdi
+
+Making connections to hyper_source modules
+@W: BN401 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":219:20:219:44|Missing syn_hyper_source with tag ujtag_wrapper_utdo. Connecting to default value '0'
+Deleting unused hyper source hypers_sampler_ready (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog))
+Deleting unused hyper source trigger_hs (in view: VhdlGenLib.IICE_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_uireg (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_urstb (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_udrupd (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_udrck (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_udrcap (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_udrsh (in view: VhdlGenLib.jtag_interface_x(verilog))
+Deleting unused hyper source hypers_ujtag_wrapper_utdi (in view: VhdlGenLib.jtag_interface_x(verilog))
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[1] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[2] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[3] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[4] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[5] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[6] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[7] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[8] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[9] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[10] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[11] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[12] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[13] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[14] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[15] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[16] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[17] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[18] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[19] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY[20] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":142:1:142:6|Sequential instance uart_byte_rx.data[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":119:4:119:9|Sequential instance uart_byte_rx.r_data_byte[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[0] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[1] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[2] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[3] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[4] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[5] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[6] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[7] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[8] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[9] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[10] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[11] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[12] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[13] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[14] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[15] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[16] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[17] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[18] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[19] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[20] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[21] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[22] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[23] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":101:1:101:6|Sequential instance uart_byte_rx.bps_cnt[24] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[21] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[22] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[23] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[24] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[25] is reduced to a combinational gate by constant propagation.
+@W: MO129 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Sequential instance ident_coreinst.IICE_INST.b3_SoW.b3_SoW.genblk1.b8_oFTt_JaY[26] is reduced to a combinational gate by constant propagation.
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[1] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[2] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[3] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[4] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[5] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[6] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[7] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[8] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[9] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[10] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[11] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[12] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[13] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[14] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[15] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[16] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[17] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[18] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[19] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0[20] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[1] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[2] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[3] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[4] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[5] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[6] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[7] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[8] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[9] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[10] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[11] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[12] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[13] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[14] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[15] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[16] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[17] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[18] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[19] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0[20] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+Encoding state machine b13_nAzGfFM_sLsv3[5:0] (in view: VhdlGenLib.b7_OCByLXC_Z1_x(verilog))
+original code -> new code
+   0000 -> 000001
+   0001 -> 000010
+   0010 -> 000100
+   0011 -> 001000
+   0100 -> 010000
+   1101 -> 100000
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4193:3:4193:8|Register bit iclksync.int_data[4] (in view view:VhdlGenLib.b7_OCByLXC_Z1_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":4221:3:4221:8|Register bit iclksync.dout[4] (in view view:VhdlGenLib.b7_OCByLXC_Z1_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[1] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[2] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[3] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[4] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[5] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[6] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[7] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[8] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[9] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[10] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[11] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[12] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[13] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[14] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[15] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[16] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[17] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[18] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[19] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A: BN291 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2660:2:2660:7|Boundary register b3_SoW.genblk1\.b8_oFTt_JaY_0_0_0[20] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+
+ Ram Decomposition Statistics for b3_SoW.b3_SoW[20:0]
+
+ RAM 512x9 : 0
+ RAM 512x9 : 0
+@W: FX107 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2656:3:2656:8|RAM b3_SoW.b3_SoW_tile[17:0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: FX107 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2656:3:2656:8|RAM b3_SoW.b3_SoW_tile_0[17:0] (in view: VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[27] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[26] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[25] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[24] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[23] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@W: MO160 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":2523:10:2523:15|Register bit genblk9\.b3_PfG[22] (in view view:VhdlGenLib.b11_OFWNT9s_8tZ_Z3_x(verilog)) is always 0. To keep the instance, apply syn_preserve=1 on the instance.
+@N: MF794 |RAM b3_SoW.b3_SoW[20:0] required 2 registers during mapping 
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+
+@N: BN115 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":53:9:53:20|Removing instance uart_byte_rx (in view: work.uart_top(verilog)) of type view:work.uart_rx(verilog) because it does not drive other instances.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKwR.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGV.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGn.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGJ.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGA.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[4]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGU.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGQ0.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGq.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[7]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGI.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[8]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":3850:2:3850:7|Removing sequential instance ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b8_1LbcgKGS.b11_uUG_C9CrTXy because it is equivalent to instance ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2.b5_oRB_C[9]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 115MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 116MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 116MB peak: 116MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 116MB)
+
+@N: MF794 |RAM b3_SoW.b3_SoW[20:0] required 2 registers during mapping 
+
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 116MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 116MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                                                  Fanout, notes                 
+----------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b10_nv_ywKMm9X / Y                     106                           
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1.b10_dZst39_EF3[7] / Q     34                            
+ident_coreinst.comm_block_INST.b9_ORb_xNywD.un1_b3_ORb9 / Y                 32                            
+ident_coreinst.IICE_INST.b5_nUTGT.b12_voSc3_gmasbb / Q                      51 : 50 asynchronous set/reset
+ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk1.b3_nfs[1] / Q     29 : 27 asynchronous set/reset
+ident_coreinst.IICE_INST.b3_SoW.virOut.genblk9.b7_nYJ_BFM8_i / Y            30                            
+ident_coreinst.IICE_INST.b3_SoW.virOut.un1_b13_PLF_2grFt_FH911_i_a3 / Y     32                            
+ident_coreinst.IICE_INST.b4_PfFz.b5_PbrtL.b6_OKctIF4 / Y                    63                            
+==========================================================================================================
+
+@W: FP157 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.v":435:17:435:21|Found instantiated global clock buffer in clock path for net jtagi.identify_clk_int. Cannot promote clock net with multiple global clock buffers in series.
+@N: FP130 |Promoting Net sys_clk_c on CLKBUF  sys_clk_pad 
+@N: FP130 |Promoting Net ident_coreinst.IICE_comm2iice[9] on CLKINT  I_8 
+@N: FP130 |Promoting Net ident_coreinst.IICE_INST.b4_PfFz.b5_PbrtL.b6_OKctIF4 on CLKINT  I_9 
+@N: FP130 |Promoting Net ident_coreinst.IICE_INST.b5_voSc3 on CLKINT  I_10 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 116MB)
+
+
+Added 0 Buffers
+Added 0 Cells via replication
+	Added 0 Sequential Cells via replication
+	Added 0 Combinational Cells via replication
+Replicating Combinational Instance ident_coreinst.comm_block_INST.b9_ORb_xNywD.un1_b3_ORb9, fanout 32 segments 2
+Replicating Sequential Instance ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1.b10_dZst39_EF3[7], fanout 35 segments 2
+Replicating Combinational Instance ident_coreinst.comm_block_INST.jtagi.b10_nv_ywKMm9X, fanout 32 segments 2
+
+Added 0 Buffers
+Added 3 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 2 Combinational Cells via replication
+Replicating Combinational Instance ident_coreinst.IICE_INST.b3_SoW.virOut.un1_b13_PLF_2grFt_FH911_i_a3, fanout 32 segments 2
+Replicating Combinational Instance ident_coreinst.IICE_INST.b3_SoW.virOut.genblk9.b7_nYJ_BFM8_i, fanout 30 segments 2
+Replicating Sequential Instance ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk1.b3_nfs[1], fanout 29 segments 2
+
+Added 0 Buffers
+Added 3 Cells via replication
+	Added 1 Sequential Cells via replication
+	Added 2 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 114MB peak: 116MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+4 non-gated/non-generated clock tree(s) driving 407 clock pin(s) of sequential element(s)
+2 gated/generated clock tree(s) driving 23 clock pin(s) of sequential element(s)
+0 instances converted, 23 sequential instances remain driven by gated/generated clocks
+
+====================================================================== Non-Gated/Non-Generated Clocks ======================================================================
+Clock Tree ID     Driving Element                                       Drive Element Type              Fanout     Sample Instance                                          
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0003       ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     UJTAG                           291        ident_coreinst.comm_block_INST.b9_ORb_xNywD.b3_ORb[32]   
+@K:CKID0004       sys_clk                                               port                            107        ident_coreinst.IICE_INST.mdiclink_reg[0]                 
+@K:CKID0005       atck                                                  port                            1          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw        
+@K:CKID0006       ident_coreinst.comm_block_INST.dr2_tck_keep           clock definition on keepbuf     8          ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7]
+============================================================================================================================================================================
+============================================================================================ Gated/Generated Clocks =============================================================================================
+Clock Tree ID     Driving Element                                             Drive Element Type     Fanout     Sample Instance                                                         Explanation              
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       ident_coreinst.comm_block_INST.jtagi.b9_nv_oQwfYF_RNO       NOR2B                  14         ident_coreinst.IICE_INST.b5_nUTGT.b11_nUTGT_khWqH.genblk1.b3_nfs[4]     No clocks found on inputs
+@K:CKID0002       ident_coreinst.comm_block_INST.jtagi.b10_8Kz_rKlrtX_RNO     NOR2B                  9          ident_coreinst.comm_block_INST.b7_Rcmi_ql.genblk1.b10_dZst39_EF3[7]     No clocks found on inputs
+=================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 113MB peak: 116MB)
+
+Writing Analyst data base C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\synwork\uart_top_m.srm
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 113MB peak: 116MB)
+
+Writing EDIF Netlist and constraint files
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 116MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 116MB)
+
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@W: MT420 |Found inferred clock uart_top|sys_clk with period 10.00ns. Please declare a user-defined clock on object "p:sys_clk"
+@W: MT420 |Found inferred clock uart_top|atck with period 10.00ns. Please declare a user-defined clock on object "p:atck"
+@N: MT615 |Found clock ident_coreinst.comm_block_INST.dr2_tck with period 1000.00ns 
+@W: MT420 |Found inferred clock jtag_interface_x|identify_clk_int_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:ident_coreinst.comm_block_INST.jtagi.identify_clk_int"
+@W: MT420 |Found inferred clock jtag_interface_x|b10_8Kz_rKlrtX with period 10.00ns. Please declare a user-defined clock on object "n:ident_coreinst.comm_block_INST.jtagi.b10_8Kz_rKlrtX"
+@W: MT420 |Found inferred clock jtag_interface_x|b9_nv_oQwfYF with period 10.00ns. Please declare a user-defined clock on object "n:ident_coreinst.comm_block_INST.jtagi.b9_nv_oQwfYF"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Fri Mar 07 18:02:01 2025
+#
+
+
+Top view:               uart_top
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\instr_sources\syn_dics.sdc
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -2.897
+
+                                                     Requested     Estimated     Requested     Estimated                 Clock        Clock               
+Starting Clock                                       Frequency     Frequency     Period        Period        Slack       Type         Group               
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.dr2_tck               1.0 MHz       472.4 MHz     1000.000      2.117         997.883     declared     identify_jtag_group1
+jtag_interface_x|b9_nv_oQwfYF                        100.0 MHz     NA            10.000        NA            NA          inferred     Inferred_clkgroup_4 
+jtag_interface_x|b10_8Kz_rKlrtX                      100.0 MHz     NA            10.000        NA            NA          inferred     Inferred_clkgroup_3 
+jtag_interface_x|identify_clk_int_inferred_clock     100.0 MHz     118.7 MHz     10.000        8.424         1.577       inferred     Inferred_clkgroup_0 
+uart_top|atck                                        100.0 MHz     98.0 MHz      10.000        10.209        -0.209      inferred     Inferred_clkgroup_1 
+uart_top|sys_clk                                     100.0 MHz     77.5 MHz      10.000        12.897        -2.897      inferred     Inferred_clkgroup_2 
+==========================================================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                                              |    rise  to  rise     |    fall  to  fall    |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                          Ending                                            |  constraint  slack    |  constraint  slack   |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+jtag_interface_x|identify_clk_int_inferred_clock  jtag_interface_x|identify_clk_int_inferred_clock  |  10.000      1.577    |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|identify_clk_int_inferred_clock  uart_top|atck                                     |  No paths    -        |  No paths    -       |  Diff grp    -      |  No paths    -    
+jtag_interface_x|identify_clk_int_inferred_clock  uart_top|sys_clk                                  |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|identify_clk_int_inferred_clock  jtag_interface_x|b9_nv_oQwfYF                     |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+uart_top|atck                                     jtag_interface_x|identify_clk_int_inferred_clock  |  No paths    -        |  No paths    -       |  No paths    -      |  Diff grp    -    
+uart_top|atck                                     uart_top|atck                                     |  No paths    -        |  10.000      -0.209  |  No paths    -      |  No paths    -    
+uart_top|atck                                     jtag_interface_x|b10_8Kz_rKlrtX                   |  No paths    -        |  No paths    -       |  No paths    -      |  Diff grp    -    
+uart_top|atck                                     jtag_interface_x|b9_nv_oQwfYF                     |  No paths    -        |  No paths    -       |  No paths    -      |  Diff grp    -    
+uart_top|atck                                     ident_coreinst.comm_block_INST.dr2_tck            |  No paths    -        |  No paths    -       |  No paths    -      |  Diff grp    -    
+uart_top|sys_clk                                  jtag_interface_x|identify_clk_int_inferred_clock  |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+uart_top|sys_clk                                  uart_top|sys_clk                                  |  10.000      -2.897   |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|b10_8Kz_rKlrtX                   jtag_interface_x|identify_clk_int_inferred_clock  |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|b10_8Kz_rKlrtX                   uart_top|atck                                     |  No paths    -        |  No paths    -       |  Diff grp    -      |  No paths    -    
+jtag_interface_x|b10_8Kz_rKlrtX                   jtag_interface_x|b9_nv_oQwfYF                     |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|b9_nv_oQwfYF                     jtag_interface_x|identify_clk_int_inferred_clock  |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+jtag_interface_x|b9_nv_oQwfYF                     uart_top|sys_clk                                  |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+ident_coreinst.comm_block_INST.dr2_tck            uart_top|atck                                     |  No paths    -        |  No paths    -       |  Diff grp    -      |  No paths    -    
+ident_coreinst.comm_block_INST.dr2_tck            jtag_interface_x|b10_8Kz_rKlrtX                   |  Diff grp    -        |  No paths    -       |  No paths    -      |  No paths    -    
+ident_coreinst.comm_block_INST.dr2_tck            ident_coreinst.comm_block_INST.dr2_tck            |  1000.000    997.883  |  No paths    -       |  No paths    -      |  No paths    -    
+=============================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: ident_coreinst.comm_block_INST.dr2_tck
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                              Starting                                                                          Arrival            
+Instance                                                      Reference                                  Type       Pin     Net                 Time        Slack  
+                                                              Clock                                                                                                
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[7]     0.737       997.883
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[1]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[1]     0.737       998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[2]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[2]     0.737       998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[3]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[3]     0.737       998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[4]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[4]     0.737       998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[5]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[5]     0.737       998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[6]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     Q       b9_OvyH3_saL[6]     0.737       998.304
+===================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                              Starting                                                                          Required            
+Instance                                                      Reference                                  Type       Pin     Net                 Time         Slack  
+                                                              Clock                                                                                                 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[6]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[7]     999.427      997.883
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[0]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[1]     999.427      998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[1]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[2]     999.427      998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[2]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[3]     999.427      998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[3]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[4]     999.427      998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[4]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[5]     999.427      998.304
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[5]     ident_coreinst.comm_block_INST.dr2_tck     DFN1E1     D       b9_OvyH3_saL[6]     999.427      998.304
+====================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    - Setup time:                            0.573
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         999.427
+
+    - Propagation time:                      1.543
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 997.883
+
+    Number of logic level(s):                0
+    Starting point:                          ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7] / Q
+    Ending point:                            ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[6] / D
+    The start point is clocked by            ident_coreinst.comm_block_INST.dr2_tck [rising] on pin CLK
+    The end   point is clocked by            ident_coreinst.comm_block_INST.dr2_tck [rising] on pin CLK
+
+Instance / Net                                                           Pin      Pin               Arrival     No. of    
+Name                                                          Type       Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[7]     DFN1E1     Q        Out     0.737     0.737       -         
+b9_OvyH3_saL[7]                                               Net        -        -       0.806     -           3         
+ident_coreinst.comm_block_INST.b7_Rcmi_ql.b9_OvyH3_saL[6]     DFN1E1     D        In      -         1.543       -         
+==========================================================================================================================
+Total path delay (propagation time + setup) of 2.117 is 1.310(61.9%) logic and 0.806(38.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: jtag_interface_x|identify_clk_int_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                             Starting                                                                                         Arrival          
+Instance                                                     Reference                                            Type          Pin     Net                   Time        Slack
+                                                             Clock                                                                                                             
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b7_nYJ_BFM[0]       jtag_interface_x|identify_clk_int_inferred_clock     DFN1E0P1      Q       b7_nYJ_BFM[0]         0.737       1.577
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[0]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[0]       0.737       1.905
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[1]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[1]       0.737       2.692
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[3]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[3]       0.737       3.064
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[2]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[2]       0.737       3.081
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b7_nYJ_BFM[27]      jtag_interface_x|identify_clk_int_inferred_clock     DFN1E0C1      Q       b7_nYJ_BFM[27]        0.737       4.300
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[5]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[5]       0.737       4.385
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[4]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1        Q       b9_v_mzCDYXs[4]       0.737       4.402
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b11_nFG0rDY_9e2     jtag_interface_x|identify_clk_int_inferred_clock     DFN1          Q       b11_nFG0rDY_9e2_0     0.737       4.439
+ident_coreinst.IICE_INST.b3_SoW.b3_SoW.b3_SoW_tile.I_1       jtag_interface_x|identify_clk_int_inferred_clock     RAM512X18     RD0     b7_vFW_PlM[0]         2.963       5.248
+===============================================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                             Starting                                                                                 Required          
+Instance                                                     Reference                                            Type       Pin     Net              Time         Slack
+                                                             Clock                                                                                                      
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[5]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1     D       I_29             9.461        1.577
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[6]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1     D       I_28             9.461        1.577
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[4]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1     D       I_30             9.461        2.412
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[3]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1     D       I_24             9.461        2.897
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[2]     jtag_interface_x|identify_clk_int_inferred_clock     DFN1C1     D       I_26             9.461        3.733
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b3_PfG[21]          jtag_interface_x|identify_clk_int_inferred_clock     DFN1E1     D       b3_PfG_6[21]     9.427        4.300
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b3_PfG[1]           jtag_interface_x|identify_clk_int_inferred_clock     DFN1E1     D       b3_PfG_6[1]      9.461        4.482
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b3_PfG[2]           jtag_interface_x|identify_clk_int_inferred_clock     DFN1E1     D       b3_PfG_6[2]      9.461        4.482
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b3_PfG[3]           jtag_interface_x|identify_clk_int_inferred_clock     DFN1E1     D       b3_PfG_6[3]      9.461        4.482
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b3_PfG[4]           jtag_interface_x|identify_clk_int_inferred_clock     DFN1E1     D       b3_PfG_6[4]      9.461        4.482
+========================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      7.885
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 1.576
+
+    Number of logic level(s):                6
+    Starting point:                          ident_coreinst.IICE_INST.b3_SoW.genblk9\.b7_nYJ_BFM[0] / Q
+    Ending point:                            ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[6] / D
+    The start point is clocked by            jtag_interface_x|identify_clk_int_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            jtag_interface_x|identify_clk_int_inferred_clock [rising] on pin CLK
+
+Instance / Net                                                                       Pin      Pin               Arrival     No. of    
+Name                                                                    Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b7_nYJ_BFM[0]                  DFN1E0P1     Q        Out     0.737     0.737       -         
+b7_nYJ_BFM[0]                                                           Net          -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b3_SoW.virOut.genblk9\.b9_v_mzCDYXs13_0_a3     NOR2A        A        In      -         1.123       -         
+ident_coreinst.IICE_INST.b3_SoW.virOut.genblk9\.b9_v_mzCDYXs13_0_a3     NOR2A        Y        Out     0.627     1.750       -         
+b9_v_mzCDYXs13                                                          Net          -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_1           AND2         B        In      -         2.136       -         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_1           AND2         Y        Out     0.627     2.763       -         
+DWACT_ADD_CI_0_TMP_0[0]                                                 Net          -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_32          NOR2B        A        In      -         3.149       -         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_32          NOR2B        Y        Out     0.514     3.664       -         
+DWACT_ADD_CI_0_g_array_1_0[0]                                           Net          -        -       0.806     -           3         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_38          NOR2B        A        In      -         4.470       -         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_38          NOR2B        Y        Out     0.514     4.984       -         
+DWACT_ADD_CI_0_g_array_2_0[0]                                           Net          -        -       0.806     -           3         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_35          NOR2B        A        In      -         5.791       -         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_35          NOR2B        Y        Out     0.514     6.305       -         
+DWACT_ADD_CI_0_g_array_11_0[0]                                          Net          -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_28          XOR2         B        In      -         6.627       -         
+ident_coreinst.IICE_INST.b3_SoW.un1_genblk9\.b9_v_mzCDYXs.I_28          XOR2         Y        Out     0.937     7.563       -         
+I_28                                                                    Net          -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b3_SoW.genblk9\.b9_v_mzCDYXs[6]                DFN1C1       D        In      -         7.885       -         
+======================================================================================================================================
+Total path delay (propagation time + setup) of 8.424 is 5.010(59.5%) logic and 3.413(40.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: uart_top|atck
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                      Starting                                                 Arrival           
+Instance                                              Reference         Type      Pin        Net               Time        Slack 
+                                                      Clock                                                                      
+---------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG2     UIREGdummy[2]     2.211       -0.209
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG4     UIREGdummy[4]     2.211       0.243 
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG3     UIREGdummy[3]     2.211       0.382 
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG5     UIREGdummy[5]     2.211       0.492 
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG1     UIREGdummy[1]     1.960       0.566 
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UIREG6     UIREGdummy[6]     1.960       0.867 
+=================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                      Starting                                              Required           
+Instance                                              Reference         Type      Pin      Net              Time         Slack 
+                                                      Clock                                                                    
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw     uart_top|atck     UJTAG     UTDO     b9_PLF_6lNa2     8.279        -0.209
+===============================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            1.721
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.279
+
+    - Propagation time:                      8.488
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -0.209
+
+    Number of logic level(s):                4
+    Starting point:                          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UIREG2
+    Ending point:                            ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UTDO
+    The start point is clocked by            uart_top|atck [falling] on pin TCK
+    The end   point is clocked by            uart_top|atck [falling] on pin TCK
+
+Instance / Net                                                              Pin        Pin               Arrival     No. of    
+Name                                                              Type      Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UIREG2     Out     2.211     2.211       -         
+UIREGdummy[2]                                                     Net       -          -       1.279     -           5         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     C          In      -         3.490       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     Y          Out     0.716     4.206       -         
+b9_96_cLqgOF3_1                                                   Net       -          -       0.806     -           3         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     C          In      -         5.012       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     Y          Out     0.666     5.678       -         
+b11_uRrc_9urXBb[0]                                                Net       -          -       1.184     -           4         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     C          In      -         6.862       -         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     Y          Out     0.398     7.260       -         
+b3_PLF                                                            Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       B          In      -         7.581       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       Y          Out     0.586     8.167       -         
+b9_PLF_6lNa2                                                      Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UTDO       In      -         8.488       -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 10.209 is 6.297(61.7%) logic and 3.912(38.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            1.721
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.279
+
+    - Propagation time:                      8.036
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.243
+
+    Number of logic level(s):                4
+    Starting point:                          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UIREG4
+    Ending point:                            ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UTDO
+    The start point is clocked by            uart_top|atck [falling] on pin TCK
+    The end   point is clocked by            uart_top|atck [falling] on pin TCK
+
+Instance / Net                                                              Pin        Pin               Arrival     No. of    
+Name                                                              Type      Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UIREG4     Out     2.211     2.211       -         
+UIREGdummy[4]                                                     Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIKL9U         NOR2      B          In      -         2.532       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIKL9U         NOR2      Y          Out     0.646     3.179       -         
+b9_96_cLqgOF3_2                                                   Net       -          -       1.423     -           6         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     B          In      -         4.602       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     Y          Out     0.624     5.226       -         
+b11_uRrc_9urXBb[0]                                                Net       -          -       1.184     -           4         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     C          In      -         6.410       -         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     Y          Out     0.398     6.808       -         
+b3_PLF                                                            Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       B          In      -         7.129       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       Y          Out     0.586     7.715       -         
+b9_PLF_6lNa2                                                      Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UTDO       In      -         8.036       -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 9.757 is 6.185(63.4%) logic and 3.571(36.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            1.721
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.279
+
+    - Propagation time:                      7.897
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.382
+
+    Number of logic level(s):                4
+    Starting point:                          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UIREG3
+    Ending point:                            ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UTDO
+    The start point is clocked by            uart_top|atck [falling] on pin TCK
+    The end   point is clocked by            uart_top|atck [falling] on pin TCK
+
+Instance / Net                                                              Pin        Pin               Arrival     No. of    
+Name                                                              Type      Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UIREG3     Out     2.211     2.211       -         
+UIREGdummy[3]                                                     Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIKL9U         NOR2      A          In      -         2.532       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIKL9U         NOR2      Y          Out     0.507     3.040       -         
+b9_96_cLqgOF3_2                                                   Net       -          -       1.423     -           6         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     B          In      -         4.463       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     Y          Out     0.624     5.087       -         
+b11_uRrc_9urXBb[0]                                                Net       -          -       1.184     -           4         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     C          In      -         6.271       -         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     Y          Out     0.398     6.668       -         
+b3_PLF                                                            Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       B          In      -         6.990       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       Y          Out     0.586     7.576       -         
+b9_PLF_6lNa2                                                      Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UTDO       In      -         7.897       -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 9.618 is 6.046(62.9%) logic and 3.571(37.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            1.721
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.279
+
+    - Propagation time:                      7.788
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.492
+
+    Number of logic level(s):                4
+    Starting point:                          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UIREG5
+    Ending point:                            ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UTDO
+    The start point is clocked by            uart_top|atck [falling] on pin TCK
+    The end   point is clocked by            uart_top|atck [falling] on pin TCK
+
+Instance / Net                                                              Pin        Pin               Arrival     No. of    
+Name                                                              Type      Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UIREG5     Out     2.211     2.211       -         
+UIREGdummy[5]                                                     Net       -          -       0.806     -           3         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     B          In      -         3.017       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     Y          Out     0.488     3.505       -         
+b9_96_cLqgOF3_1                                                   Net       -          -       0.806     -           3         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     C          In      -         4.312       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     Y          Out     0.666     4.977       -         
+b11_uRrc_9urXBb[0]                                                Net       -          -       1.184     -           4         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     C          In      -         6.161       -         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     Y          Out     0.398     6.559       -         
+b3_PLF                                                            Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       B          In      -         6.880       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       Y          Out     0.586     7.466       -         
+b9_PLF_6lNa2                                                      Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UTDO       In      -         7.788       -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 9.508 is 6.069(63.8%) logic and 3.439(36.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            1.721
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.279
+
+    - Propagation time:                      7.713
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 0.566
+
+    Number of logic level(s):                4
+    Starting point:                          ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UIREG1
+    Ending point:                            ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw / UTDO
+    The start point is clocked by            uart_top|atck [falling] on pin TCK
+    The end   point is clocked by            uart_top|atck [falling] on pin TCK
+
+Instance / Net                                                              Pin        Pin               Arrival     No. of    
+Name                                                              Type      Name       Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UIREG1     Out     1.960     1.960       -         
+UIREGdummy[1]                                                     Net       -          -       0.806     -           3         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     A          In      -         2.767       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIEGED1_0      NOR3A     Y          Out     0.664     3.431       -         
+b9_96_cLqgOF3_1                                                   Net       -          -       0.806     -           3         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     C          In      -         4.237       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNIJP733        NOR3C     Y          Out     0.666     4.903       -         
+b11_uRrc_9urXBb[0]                                                Net       -          -       1.184     -           4         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     C          In      -         6.086       -         
+ident_coreinst.IICE_INST.b8_uKr_IFLY.b11_uRrc_9urXBb_RNIBM3B5     AOI1B     Y          Out     0.398     6.484       -         
+b3_PLF                                                            Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       B          In      -         6.806       -         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw_RNO             MX2       Y          Out     0.586     7.391       -         
+b9_PLF_6lNa2                                                      Net       -          -       0.322     -           1         
+ident_coreinst.comm_block_INST.jtagi.b9_Rcmi_KsDw                 UJTAG     UTDO       In      -         7.713       -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 9.434 is 5.994(63.5%) logic and 3.439(36.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+
+====================================
+Detailed Report for Clock: uart_top|sys_clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                                                    Starting                                                         Arrival           
+Instance                                                            Reference            Type       Pin     Net                      Time        Slack 
+                                                                    Clock                                                                              
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[2]                         uart_top|sys_clk     DFN1       Q       b3_nfs[2]                0.737       -2.897
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[4]                         uart_top|sys_clk     DFN1       Q       b3_nfs[4]                0.737       -2.855
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY                       uart_top|sys_clk     DFN1       Q       b8_vABZ3qsY              0.737       -2.706
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[0]                         uart_top|sys_clk     DFN1       Q       b3_nfs[0]                0.737       -2.615
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[3]                         uart_top|sys_clk     DFN1       Q       b3_nfs[3]                0.737       -1.865
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3[1]              uart_top|sys_clk     DFN1C1     Q       b13_nAzGfFM_sLsv3[1]     0.737       -0.980
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3[3]              uart_top|sys_clk     DFN1C1     Q       b13_nAzGfFM_sLsv3[3]     0.737       -0.327
+ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2\.b5_oRB_C[8]      uart_top|sys_clk     DFN1       Q       b11_OFWNT9L_8tZ[8]       0.737       0.634 
+ident_coreinst.IICE_INST.b3_SoW.b6_SoWyQD.genblk2\.b5_oRB_C[19]     uart_top|sys_clk     DFN1       Q       b11_OFWNT9L_8tZ[19]      0.737       0.662 
+ident_coreinst.IICE_INST.mdiclink_reg[12]                           uart_top|sys_clk     DFN1       Q       mdiclink_reg[12]         0.737       0.838 
+=======================================================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                                                                                Starting                                                         Required           
+Instance                                                                        Reference            Type       Pin     Net                      Time         Slack 
+                                                                                Clock                                                                               
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[6]          9.461        -2.897
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[5]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[5]          9.461        -1.997
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[0]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[0]          9.461        -1.852
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB                                uart_top|sys_clk     DFN1       D       b10_nYhI3_umjB_RNO       9.427        -0.511
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[1]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[1]          9.427        -0.180
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[2]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[2]          9.427        -0.158
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[3]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[3]          9.427        -0.158
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[4]                                 uart_top|sys_clk     DFN1       D       b7_nYhI39s_5[4]          9.427        -0.158
+ident_coreinst.IICE_INST.b4_PfFz.b7_PbTtl9G.b6_2ZGFQ9.b14_CZS0wfY_d_FH9m[0]     uart_top|sys_clk     DFN1       D       b13_CZS0wfY_d_FH9[0]     9.461        0.634 
+ident_coreinst.IICE_INST.b3_SoW.b12_2_St6KCa_jHv[5]                             uart_top|sys_clk     DFN1C1     D       I_29_0                   9.461        0.982 
+====================================================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      12.358
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -2.897
+
+    Number of logic level(s):                9
+    Starting point:                          ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[2] / Q
+    Ending point:                            ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6] / D
+    The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
+    The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
+
+Instance / Net                                                               Pin      Pin               Arrival     No. of    
+Name                                                                Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[2]                         DFN1     Q        Out     0.737     0.737       -         
+b3_nfs[2]                                                           Net      -        -       0.806     -           3         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2      A        In      -         1.543       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2      Y        Out     0.507     2.051       -         
+N_2_1                                                               Net      -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A     B        In      -         2.437       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A     Y        Out     0.652     3.088       -         
+b3_nfs_RNI0PP92[3]                                                  Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C     S        In      -         3.410       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C     Y        Out     0.480     3.889       -         
+N_10_mux                                                            Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C     B        In      -         4.211       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C     Y        Out     0.900     5.111       -         
+N_11_mux                                                            Net      -        -       1.423     -           6         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2     B        In      -         6.534       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2     Y        Out     0.514     7.049       -         
+b7_nYhI39s_0_sqmuxa                                                 Net      -        -       1.279     -           5         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2      A        In      -         8.328       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2      Y        Out     0.579     8.907       -         
+N_37_mux                                                            Net      -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2      A        In      -         9.293       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2      Y        Out     0.579     9.871       -         
+N_12                                                                Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2     B        In      -         10.193      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2     Y        Out     0.937     11.129      -         
+N_13                                                                Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2      B        In      -         11.451      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2      Y        Out     0.586     12.037      -         
+b7_nYhI39s_5[6]                                                     Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                     DFN1     D        In      -         12.358      -         
+==============================================================================================================================
+Total path delay (propagation time + setup) of 12.897 is 7.009(54.3%) logic and 5.888(45.7%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      12.317
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.855
+
+    Number of logic level(s):                9
+    Starting point:                          ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[4] / Q
+    Ending point:                            ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6] / D
+    The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
+    The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                Pin      Pin               Arrival     No. of    
+Name                                                                Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[4]                         DFN1      Q        Out     0.737     0.737       -         
+b3_nfs[4]                                                           Net       -        -       1.184     -           4         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNI9VTQ               NOR2A     B        In      -         1.921       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNI9VTQ               NOR2A     Y        Out     0.407     2.327       -         
+m3_e_0                                                              Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      C        In      -         2.649       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      Y        Out     0.398     3.047       -         
+b3_nfs_RNI0PP92[3]                                                  Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      S        In      -         3.368       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      Y        Out     0.480     3.848       -         
+N_10_mux                                                            Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      B        In      -         4.169       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      Y        Out     0.900     5.069       -         
+N_11_mux                                                            Net       -        -       1.423     -           6         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2      B        In      -         6.493       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2      Y        Out     0.514     7.007       -         
+b7_nYhI39s_0_sqmuxa                                                 Net       -        -       1.279     -           5         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       A        In      -         8.286       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       Y        Out     0.579     8.865       -         
+N_37_mux                                                            Net       -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       A        In      -         9.251       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       Y        Out     0.579     9.830       -         
+N_12                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      B        In      -         10.151      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      Y        Out     0.937     11.088      -         
+N_13                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       B        In      -         11.409      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       Y        Out     0.586     11.995      -         
+b7_nYhI39s_5[6]                                                     Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                     DFN1      D        In      -         12.317      -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 12.855 is 6.654(51.8%) logic and 6.201(48.2%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      12.167
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.706
+
+    Number of logic level(s):                9
+    Starting point:                          ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY / Q
+    Ending point:                            ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6] / D
+    The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
+    The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                Pin      Pin               Arrival     No. of    
+Name                                                                Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY                       DFN1      Q        Out     0.737     0.737       -         
+b8_vABZ3qsY                                                         Net       -        -       0.806     -           3         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNI9VTQ               NOR2A     A        In      -         1.543       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNI9VTQ               NOR2A     Y        Out     0.627     2.171       -         
+m3_e_0                                                              Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      C        In      -         2.492       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      Y        Out     0.405     2.897       -         
+b3_nfs_RNI0PP92[3]                                                  Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      S        In      -         3.219       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      Y        Out     0.480     3.698       -         
+N_10_mux                                                            Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      B        In      -         4.020       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      Y        Out     0.900     4.920       -         
+N_11_mux                                                            Net       -        -       1.423     -           6         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2      B        In      -         6.343       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2      Y        Out     0.514     6.858       -         
+b7_nYhI39s_0_sqmuxa                                                 Net       -        -       1.279     -           5         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       A        In      -         8.137       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       Y        Out     0.579     8.716       -         
+N_37_mux                                                            Net       -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       A        In      -         9.101       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       Y        Out     0.579     9.680       -         
+N_12                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      B        In      -         10.002      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      Y        Out     0.937     10.938      -         
+N_13                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       B        In      -         11.260      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       Y        Out     0.586     11.845      -         
+b7_nYhI39s_5[6]                                                     Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                     DFN1      D        In      -         12.167      -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 12.706 is 6.882(54.2%) logic and 5.824(45.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      12.077
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.615
+
+    Number of logic level(s):                9
+    Starting point:                          ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[0] / Q
+    Ending point:                            ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6] / D
+    The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
+    The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
+
+Instance / Net                                                               Pin      Pin               Arrival     No. of    
+Name                                                                Type     Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[0]                         DFN1     Q        Out     0.737     0.737       -         
+b3_nfs[0]                                                           Net      -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2      B        In      -         1.123       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2      Y        Out     0.646     1.769       -         
+N_2_1                                                               Net      -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A     B        In      -         2.155       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A     Y        Out     0.652     2.807       -         
+b3_nfs_RNI0PP92[3]                                                  Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C     S        In      -         3.128       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C     Y        Out     0.480     3.608       -         
+N_10_mux                                                            Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C     B        In      -         3.929       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C     Y        Out     0.900     4.830       -         
+N_11_mux                                                            Net      -        -       1.423     -           6         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2     B        In      -         6.253       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b10_nYhI3_umjB_RNIKPJU3           NOR2     Y        Out     0.514     6.767       -         
+b7_nYhI39s_0_sqmuxa                                                 Net      -        -       1.279     -           5         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2      A        In      -         8.047       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2      Y        Out     0.579     8.625       -         
+N_37_mux                                                            Net      -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2      A        In      -         9.011       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2      Y        Out     0.579     9.590       -         
+N_12                                                                Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2     B        In      -         9.911       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2     Y        Out     0.937     10.848      -         
+N_13                                                                Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2      B        In      -         11.169      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2      Y        Out     0.586     11.755      -         
+b7_nYhI39s_5[6]                                                     Net      -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                     DFN1     D        In      -         12.077      -         
+==============================================================================================================================
+Total path delay (propagation time + setup) of 12.615 is 7.148(56.7%) logic and 5.468(43.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      11.520
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -2.059
+
+    Number of logic level(s):                9
+    Starting point:                          ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[2] / Q
+    Ending point:                            ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6] / D
+    The start point is clocked by            uart_top|sys_clk [rising] on pin CLK
+    The end   point is clocked by            uart_top|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                Pin      Pin               Arrival     No. of    
+Name                                                                Type      Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------------------
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs[2]                         DFN1      Q        Out     0.737     0.737       -         
+b3_nfs[2]                                                           Net       -        -       0.806     -           3         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2       A        In      -         1.543       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNIEQ7V[0]                 OR2       Y        Out     0.507     2.051       -         
+N_2_1                                                               Net       -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      B        In      -         2.437       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b3_nfs_RNI0PP92[3]                OA1A      Y        Out     0.652     3.088       -         
+b3_nfs_RNI0PP92[3]                                                  Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      S        In      -         3.410       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b8_vABZ3qsY_RNIDIBK3              MX2C      Y        Out     0.480     3.889       -         
+N_10_mux                                                            Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      B        In      -         4.211       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b13_nAzGfFM_sLsv3_RNINFSO3[3]     OA1C      Y        Out     0.900     5.111       -         
+N_11_mux                                                            Net       -        -       1.423     -           6         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIEVN64[0]            NOR3A     C        In      -         6.534       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIEVN64[0]            NOR3A     Y        Out     0.641     7.176       -         
+N_4_0                                                               Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       B        In      -         7.497       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNIKQS59[0]            MX2       Y        Out     0.572     8.069       -         
+N_37_mux                                                            Net       -        -       0.386     -           2         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       A        In      -         8.455       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_2[6]               MX2       Y        Out     0.579     9.034       -         
+N_12                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      B        In      -         9.355       -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO_1[6]               XOR2      Y        Out     0.937     10.292      -         
+N_13                                                                Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       B        In      -         10.613      -         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s_RNO[6]                 MX2       Y        Out     0.586     11.199      -         
+b7_nYhI39s_5[6]                                                     Net       -        -       0.322     -           1         
+ident_coreinst.IICE_INST.b5_nUTGT.b7_nYhI39s[6]                     DFN1      D        In      -         11.520      -         
+===============================================================================================================================
+Total path delay (propagation time + setup) of 12.059 is 7.129(59.1%) logic and 4.930(40.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 116MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 114MB peak: 116MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_STD
+Report for cell uart_top.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     6      1.0        6.0
+               AO1    17      1.0       17.0
+              AO1A     2      1.0        2.0
+              AOI1     1      1.0        1.0
+             AOI1B    42      1.0       42.0
+               AX1     4      1.0        4.0
+            CLKINT     4      0.0        0.0
+               GND    44      0.0        0.0
+               INV     2      1.0        2.0
+               MX2   160      1.0      160.0
+              MX2C     6      1.0        6.0
+              NOR2    14      1.0       14.0
+             NOR2A    31      1.0       31.0
+             NOR2B    61      1.0       61.0
+              NOR3     5      1.0        5.0
+             NOR3A    11      1.0       11.0
+             NOR3B    15      1.0       15.0
+             NOR3C    23      1.0       23.0
+               OA1     2      1.0        2.0
+              OA1A     2      1.0        2.0
+              OA1C    22      1.0       22.0
+              OAI1    21      1.0       21.0
+               OR2    35      1.0       35.0
+              OR2A     2      1.0        2.0
+              OR2B     5      1.0        5.0
+               OR3     1      1.0        1.0
+              OR3B     1      1.0        1.0
+               VCC    44      0.0        0.0
+             XNOR2     1      1.0        1.0
+              XOR2    19      1.0       19.0
+
+
+              DFN1   140      1.0      140.0
+            DFN1C1    31      1.0       31.0
+            DFN1E0    23      1.0       23.0
+          DFN1E0C1    27      1.0       27.0
+          DFN1E0P1     1      1.0        1.0
+            DFN1E1   185      1.0      185.0
+          DFN1E1C1    17      1.0       17.0
+            DFN1P1     1      1.0        1.0
+         RAM512X18     2      0.0        0.0
+                   -----          ----------
+             TOTAL  1030               936.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     1
+            OUTBUF     2
+             UJTAG     1
+                   -----
+             TOTAL     4
+
+
+Core Cells         : 936 of 6144 (15%)
+IO Cells           : 4
+
+  RAM/ROM Usage Summary
+Block Rams : 2 of 8 (25%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 27MB peak: 116MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Mar 07 18:02:01 2025
+
+###########################################################]

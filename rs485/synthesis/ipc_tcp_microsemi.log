@@ -1,0 +1,18 @@
+1741342460 -18:14:20 -0 -Client create_ipc, start a new server process in mode B !
+1741342460 -18:14:20 -0 -Server started !?
+1741342460 -18:14:20 -0 -client create_ipc modus B, open client jtagapi_c::g_pmC !
+1741342460 -18:14:20 -17563916 -ipcClient::Reconnect params
+Hostname:  127.0.0.1
+Port:      58015
+Logfile:   C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/synthesis/ipc_tcp_microsemi.log
+Reconnect: 0
+Use ipv6:  0
+
+1741342461 -18:14:21 -0 -Check for server mode B !
+1741342461 -18:14:21 -0 -check JTAG-clients (JTAG-server is in standalone mode): no JTAG-clients found !
+
+1741342461 -18:14:21 -0 -Use a new started server process, switch to mode B !
+1741342461 -18:14:21 -0 -Use a new started server process in mode B (exit after ends last connection)!
+1741342461 -18:14:21 -0 -use a started server process in mode B !
+1741342472 -18:14:32 -0 -Client jtagexit (server shutdown if last connection, running in mode B) !
+1741342472 -18:14:32 -0 -Client shutdown (jtagapi_c::g_pmC == NULL) !

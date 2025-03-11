@@ -1,16 +1,16 @@
-#OPTIONS:"|-layerid|0|-orig_srs|D:\\files\\fpga\\rs485\\synthesis\\synwork\\uart_top_comp.srs|-top|uart_top|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|D:\\files\\fpga\\rs485\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\jycao\\Desktop\\1\\code-graduationdesign\\rs485\\synthesis\\synwork\\uart_top_comp.srs|-top|uart_top|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\jycao\\Desktop\\1\\code-graduationdesign\\rs485\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1479953424
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v":1487916450
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487916586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487916586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487916586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487916586
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_rx.v":1741684220
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_tx.v":1741684225
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_top.v":1741684213
-0			"D:\files\fpga\rs485\hdl\uart_rx.v" verilog
-1			"D:\files\fpga\rs485\hdl\uart_tx.v" verilog
-2			"D:\files\fpga\rs485\hdl\uart_top.v" verilog
+#CUR:"C:\\Users\\jycao\\Desktop\\1\\code-graduationdesign\\rs485\\hdl\\uart_rx.v":1741338242
+#CUR:"C:\\Users\\jycao\\Desktop\\1\\code-graduationdesign\\rs485\\hdl\\uart_tx.v":1741258037
+#CUR:"C:\\Users\\jycao\\Desktop\\1\\code-graduationdesign\\rs485\\hdl\\uart_top.v":1741340188
+0			"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v" verilog
+1			"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v" verilog
+2			"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

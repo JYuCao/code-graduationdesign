@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Thu Mar 06 18:58:20 2025 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Fri Mar 07 19:27:17 2025 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: Libero SoC v11.8 SP2
 Version: 11.8.2.4
@@ -8,10 +8,14 @@ Family: ProASIC3
 Die: A3P250
 Package: 100 VQFP
 *****************************************************************
-Port      |Pin |Fixed |Function       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
-----------|----|------|---------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
-re         58   Yes    GDC0/IO58VDB1   LVCMOS33  12                 High  None           No    35                No           No
-rx         2    Yes    GAA2/IO118UDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
-sys_clk    13   Yes    GFA0/IO108NPB3  LVCMOS33  ---                ---   None           ---   ---               No           No
-sys_rst_n  10   No     GFB1/IO109PDB3  LVCMOS33  ---                ---   None           ---   ---               No           No
-tx         57   Yes    GDA1/IO60USB1   LVCMOS33  12                 High  None           No    35                No           No
+Port    |Pin |Fixed |Function       |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+--------|----|------|---------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+atck     47   Fixed  TCK
+atdi     48   Fixed  TDI
+atdo     54   Fixed  TDO
+atms     49   Fixed  TMS
+atrstb   55   Fixed  TRST
+re       36   No     IO84RSB2        LVTTL    12                 High  None           No    35                No           No
+rx       34   No     IO86RSB2        LVTTL    ---                ---   None           ---   ---               No           No
+sys_clk  10   No     GFB1/IO109PDB3  LVTTL    ---                ---   None           ---   ---               No           No
+tx       41   No     IO74RSB2        LVTTL    12                 High  None           No    35                No           No

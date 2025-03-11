@@ -1,0 +1,37 @@
+FlashPro
+Version: 11.8.2.4
+Release: Libero SoC v11.8 SP2
+
+Software Version: 11.8.2.4
+PDB file
+'C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_synthesis_1.pdb'
+has been loaded successfully.
+DESIGN : uart_top;  CHECKSUM : CAB1;  PDB_VERSION : 1.9
+Embedded FlashPro5 programmer detected.
+programmer 'E2008L6ORI' : FlashPro5
+Opened
+'C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_synthesis_1_fp\ua\
+rt_top_synthesis_1.pro'
+The 'open_project' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2008L6ORI' : Scan Chain...
+Warning: programmer 'E2008L6ORI' : Vpump has been selected on programmer AND an externally
+         provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E2008L6ORI' : Scan Chain PASSED.
+programmer 'E2008L6ORI' : Executing action PROGRAM
+programmer 'E2008L6ORI' : EXPORT FSN[48] = 8185a4109064
+programmer 'E2008L6ORI' : Erase ...
+programmer 'E2008L6ORI' : Completed erase
+programmer 'E2008L6ORI' : EXPORT CHECKSUM[16] = cab1
+programmer 'E2008L6ORI' : Programming FPGA Array
+programmer 'E2008L6ORI' : Verifying FPGA Array
+programmer 'E2008L6ORI' :         Verifying FPGA Array -- pass
+programmer 'E2008L6ORI' : Finished: Fri Mar 07 19:28:23 2025 (Elapsed time 00:00:34)
+programmer 'E2008L6ORI' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

@@ -1,14 +1,14 @@
 
 module uart_top(
-    sys_clk,      
-    sys_rst_n,   
+    sys_clk,    
     rx,
+    //sys_rst_n,
     tx,   
     re    
 );
 
 	input sys_clk;
-	input sys_rst_n;
+	wire sys_rst_n;
     input rx;
     wire [2:0]baud_set;
 	
@@ -21,6 +21,14 @@ module uart_top(
     reg send_en;
     reg [7:0] data_to_send;
     wire [7:0] received_data;
+
+    reg Rx_Done_1, Rx_Done_2, Rx_Done_3;
+
+    always@(posedge sys_clk) begin
+        Rx_Done_1 <= Rx_Done;
+        Rx_Done_2 <= Rx_Done_1;
+        Rx_Done_3 <= Rx_Done_2;
+    end
 	
     assign baud_set = 3'd0;
 

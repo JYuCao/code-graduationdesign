@@ -1,0 +1,94 @@
+Selecting top level module uart_top
+@N::Inserting syn_hyper_source for sys_clk(ident_hs_sys_clk)
+@N::Inserting syn_hyper_source for baud_set(ident_hs_baud_set)
+@N::Inserting syn_hyper_source for Rx_Done(ident_hs_Rx_Done)
+@N::Inserting syn_hyper_source for send_en(ident_hs_send_en)
+@N::Inserting syn_hyper_source for data_to_send(ident_hs_data_to_send)
+@N::Inserting syn_hyper_source for received_data(ident_hs_received_data)
+@N::Inserting syn_hyper_source for tx(ident_hs_tx)
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=16'b0111010001111000
+   Generated name = syn_hyper_source_1s_tx
+
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":4:7:4:13|Synthesizing module uart_tx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":47:26:47:35|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":55:22:55:27|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":118:23:118:29|Removing redundant assignment.
+@N::Inserting syn_hyper_source for rx(ident_hs_rx)
+@N::Inserting syn_hyper_source for nedege(ident_hs_nedege)
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=16'b0111001001111000
+   Generated name = syn_hyper_source_1s_rx
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=48'b011011100110010101100100011001010110011101100101
+   Generated name = syn_hyper_source_1s_nedege
+
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":4:7:4:13|Synthesizing module uart_rx in library work.
+
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":108:23:108:29|Removing redundant assignment.
+@N: CG179 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":151:26:151:35|Removing redundant assignment.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":33:5:33:13|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":34:8:34:15|Object STOP_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01110011011110010111001101011111011000110110110001101011
+   Generated name = syn_hyper_source_1s_sys_clk
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000011
+	tag=64'b0110001001100001011101010110010001011111011100110110010101110100
+   Generated name = syn_hyper_source_3s_baud_set
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01010010011110000101111101000100011011110110111001100101
+   Generated name = syn_hyper_source_1s_Rx_Done
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000000001
+	tag=56'b01110011011001010110111001100100010111110110010101101110
+   Generated name = syn_hyper_source_1s_send_en
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000001000
+	tag=96'b011001000110000101110100011000010101111101110100011011110101111101110011011001010110111001100100
+   Generated name = syn_hyper_source_8s_data_to_send
+
+@N: CG364 :"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v":9:7:9:22|Synthesizing module syn_hyper_source in library __hyper__lib__.
+
+	w=32'b00000000000000000000000000001000
+	tag=104'b01110010011001010110001101100101011010010111011001100101011001000101111101100100011000010111010001100001
+   Generated name = syn_hyper_source_8s_received_data
+
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":4:7:4:14|Synthesizing module uart_top in library work.
+
+@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Register bit bps_DR[12] is always 0.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Pruning register bits 15 to 12 of div_cnt[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[15] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[14] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[13] is always 0.
+@N: CL189 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Register bit bps_DR[12] is always 0.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.

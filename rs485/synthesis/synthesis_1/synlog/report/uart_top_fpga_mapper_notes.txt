@@ -1,0 +1,23 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":88:1:88:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
+@N: MO231 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Found counter in view:work.uart_rx(verilog) instance div_cnt[11:0] 
+@N: MF239 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":82:26:82:36|Found 4-bit decrementor, 'un1_bps_DR[3:0]'
+@N: MF239 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":82:26:82:36|Found 4-bit decrementor, 'un1_bps_DR_0[3:0]'
+@N: MF179 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":82:15:82:36|Found 12 by 12 bit less-than operator ('<') un1_div_cnt (in view: work.uart_rx(verilog))
+@N: BN115 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":82:26:82:36|Removing instance un1_bps_DR_0 (in view: work.uart_rx(verilog)) of type view:VhdlGenLib1.DEC___const_w4_0(fdec) because it does not drive other instances.
+@N: MF794 |RAM b3_SoW.b3_SoW[23:0] required 2 registers during mapping 
+@N: BN362 :"c:\users\jycao\desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":120:1:120:6|Removing sequential instance uart_byte_tx.Tx_Done (in view: work.uart_top(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: MF794 |RAM b3_SoW.b3_SoW[23:0] required 2 registers during mapping 
+@N: FP130 |Promoting Net sys_clk_c on CLKBUF  sys_clk_pad 
+@N: FP130 |Promoting Net ident_coreinst.IICE_comm2iice[9] on CLKINT  I_17 
+@N: FP130 |Promoting Net ident_coreinst.IICE_INST.b4_PfFz.b5_PbrtL.b6_OKctIF4 on CLKINT  I_18 
+@N: FP130 |Promoting Net ident_coreinst.IICE_INST.b5_voSc3 on CLKINT  I_19 
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: MT480 :"c:/users/jycao/desktop/1/code-graduationdesign/rs485/synthesis/synthesis_1/instr_sources/syn_dics.sdc":2:0:2:0|Assigning clock "ident_coreinst.comm_block_INST.dr2_tck" to command: define_clock n:ident_coreinst.comm_block_INST.dr2_tck -period 1000.0 -clockgroup identify_jtag_group1 
+@N: MT615 |Found clock ident_coreinst.comm_block_INST.dr2_tck with period 1000.00ns 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack

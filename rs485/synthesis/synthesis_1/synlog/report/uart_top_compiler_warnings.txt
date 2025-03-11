@@ -1,0 +1,12 @@
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":33:5:33:13|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":34:8:34:15|Object STOP_BIT is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Optimizing register bit div_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":78:1:78:6|Pruning register bits 15 to 12 of div_cnt[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_rx.v":63:4:63:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+
