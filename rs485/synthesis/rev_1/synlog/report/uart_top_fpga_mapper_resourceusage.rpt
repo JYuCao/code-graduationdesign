@@ -1,0 +1,57 @@
+Target Part: A3P250_VQFP100_STD
+Report for cell uart_top.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2     1      1.0        1.0
+               AO1     1      1.0        1.0
+              AO1A     1      1.0        1.0
+              AOI1     2      1.0        2.0
+              AX1C     8      1.0        8.0
+               GND     3      0.0        0.0
+               INV     1      1.0        1.0
+               MX2     4      1.0        4.0
+              MX2A     2      1.0        2.0
+              MX2C     1      1.0        1.0
+              NOR2     6      1.0        6.0
+             NOR2A    16      1.0       16.0
+             NOR2B    28      1.0       28.0
+              NOR3     5      1.0        5.0
+             NOR3A     3      1.0        3.0
+             NOR3B     7      1.0        7.0
+             NOR3C    22      1.0       22.0
+               OA1     1      1.0        1.0
+              OA1B     1      1.0        1.0
+               OR2    12      1.0       12.0
+              OR2A     3      1.0        3.0
+              OR2B     1      1.0        1.0
+               OR3     6      1.0        6.0
+              OR3B     2      1.0        2.0
+               VCC     3      0.0        0.0
+               XA1    23      1.0       23.0
+              XA1A     1      1.0        1.0
+              XOR2     4      1.0        4.0
+
+
+            DFN1C0    47      1.0       47.0
+          DFN1E0C0     3      1.0        3.0
+          DFN1E1C0    34      1.0       34.0
+            DFN1P0     4      1.0        4.0
+                   -----          ----------
+             TOTAL   256               250.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF     1
+            OUTBUF     2
+                   -----
+             TOTAL     5
+
+
+Core Cells         : 250 of 6144 (4%)
+IO Cells           : 5
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+

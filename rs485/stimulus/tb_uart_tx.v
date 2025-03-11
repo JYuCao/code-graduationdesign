@@ -80,9 +80,9 @@ uart_tx uart_tx_0 (
 );
 
 initial begin
-    #(SYSCLK_PERIOD*20 + 1)
+    #10000;
     NSYSRESET = 1'b1;
-    #(SYSCLK_PERIOD*50);
+    #10000;
     data = 8'haa;
     send_en = 1'd1;
     #SYSCLK_PERIOD;
@@ -90,14 +90,14 @@ initial begin
 
     @(posedge Tx_Done)
     
-    #(SYSCLK_PERIOD);
+    #10000;
     data = 8'h55;
     send_en = 1'd1;
     #SYSCLK_PERIOD;
     send_en = 1'd0;
 
     @(posedge Tx_Done)
-    #(SYSCLK_PERIOD);
+    #10000;
     $stop;
 end
 

@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  D:\files\fpga\rs485\synthesis\rev_1\scratchproject.prs  -implementation  rev_1  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\rs485\synthesis\rev_1   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\rs485\synthesis\rev_1\synlog\report\uart_top_premap.xml  -top_level_module  uart_top  -oedif  D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn  -conchk_prepass  D:\files\fpga\rs485\synthesis\rev_1\uart_top_cck.rpt   -freq 100.000   D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_mult.srs  -flow prepass  -gcc_prepass  -osrd  D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_prem.srd  -qsap  D:\files\fpga\rs485\synthesis\rev_1\uart_top.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -ologparam  D:\files\fpga\rs485\synthesis\rev_1\syntmp\uart_top.plg  -osyn  D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_prem.srd  -prjdir  D:\files\fpga\rs485\synthesis\  -prjname  uart_top_syn  -log  D:\files\fpga\rs485\synthesis\rev_1\synlog\uart_top_premap.srr 
+rc:1 success:1 runtime:0
+file:D:\files\fpga\rs485\synthesis\rev_1\scratchproject.prs|io:o|time:1741685112|size:1795|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn|io:o|time:1741685114|size:2885|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\uart_top_cck.rpt|io:o|time:1741685411|size:20104|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_mult.srs|io:i|time:1741685411|size:2886|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_prem.srd|io:o|time:1741685411|size:11101|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\uart_top.sap|io:o|time:1741685411|size:1014|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\syntmp\uart_top.plg|io:o|time:1741685411|size:0|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\synwork\uart_top_prem.srd|io:o|time:1741685411|size:11101|exec:0
+file:D:\files\fpga\rs485\synthesis\rev_1\synlog\uart_top_premap.srr|io:o|time:1741685411|size:3091|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1

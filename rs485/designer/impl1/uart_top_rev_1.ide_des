@@ -1,0 +1,10 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "D:\files\fpga\rs485\designer\impl1\uart_top_rev_1.adb"
+LIST SOURCE_FILES
+VALUE "D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn;edn"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "D:\files\fpga\rs485\synthesis\rev_1\uart_top_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>uart_top</design>
+	<target_edif>D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn</target_edif>
+</SynplifyOutput>

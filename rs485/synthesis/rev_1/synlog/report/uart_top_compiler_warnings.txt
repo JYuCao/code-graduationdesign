@@ -1,0 +1,9 @@
+@W: CG360 :"D:\files\fpga\rs485\hdl\uart_top.v":11:6:11:14|Removing wire sys_rst_n, as there is no assignment to it.
+@W: CL169 :"D:\files\fpga\rs485\hdl\uart_top.v":27:4:27:9|Pruning unused register Rx_Done_1. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\rs485\hdl\uart_top.v":27:4:27:9|Pruning unused register Rx_Done_2. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\rs485\hdl\uart_top.v":27:4:27:9|Pruning unused register Rx_Done_3. Make sure that there are no unused intermediate registers.
+@W: CL155 :"D:\files\fpga\rs485\hdl\uart_top.v":44:1:44:6|Reset/set on register send_en tied to a constant
+@W: CL156 :"D:\files\fpga\rs485\hdl\uart_top.v":11:6:11:14|*Input sys_rst_n to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"D:\files\fpga\rs485\hdl\uart_top.v":11:6:11:14|*Input sys_rst_n to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL156 :"D:\files\fpga\rs485\hdl\uart_top.v":11:6:11:14|*Input sys_rst_n to expression [not] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+

@@ -1,0 +1,80 @@
+----------------------------------------------------------------------
+Report for cell uart_top.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                             CLKBUF         2       0.0        0.0
+                             DFN1C0         2       1.0        2.0
+                           DFN1E1C0         9       1.0        9.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                              INBUF         1       0.0        0.0
+                                INV         1       1.0        1.0
+                             OUTBUF         2       0.0        0.0
+                                VCC         1       0.0        0.0
+                            uart_rx         1     128.0      128.0
+                            uart_tx         1     109.0      109.0
+                            
+                         TOTAL             22                250.0
+----------------------------------------------------------------------
+Report for cell uart_rx.netlist
+     Instance path:  uart_byte_rx
+                                          Cell usage:
+                               cell       count     area    count*area
+                                AO1         1       1.0        1.0
+                               AO1A         1       1.0        1.0
+                               AOI1         2       1.0        2.0
+                               AX1C         4       1.0        4.0
+                             DFN1C0        23       1.0       23.0
+                           DFN1E0C0         3       1.0        3.0
+                           DFN1E1C0        16       1.0       16.0
+                             DFN1P0         2       1.0        2.0
+                                GND         1       0.0        0.0
+                               NOR2         2       1.0        2.0
+                              NOR2A         9       1.0        9.0
+                              NOR2B        15       1.0       15.0
+                               NOR3         4       1.0        4.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C        13       1.0       13.0
+                               OA1B         1       1.0        1.0
+                                OR2         6       1.0        6.0
+                               OR2A         1       1.0        1.0
+                               OR2B         1       1.0        1.0
+                                OR3         3       1.0        3.0
+                               OR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1        12       1.0       12.0
+                               XA1A         1       1.0        1.0
+                            
+                         TOTAL            130                128.0
+----------------------------------------------------------------------
+Report for cell uart_tx.netlist
+     Instance path:  uart_byte_tx
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         1       1.0        1.0
+                               AX1C         4       1.0        4.0
+                             DFN1C0        22       1.0       22.0
+                           DFN1E1C0         9       1.0        9.0
+                             DFN1P0         1       1.0        1.0
+                                GND         1       0.0        0.0
+                                MX2         4       1.0        4.0
+                               MX2A         2       1.0        2.0
+                               MX2C         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A         7       1.0        7.0
+                              NOR2B        13       1.0       13.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         9       1.0        9.0
+                                OA1         1       1.0        1.0
+                                OR2         6       1.0        6.0
+                               OR2A         2       1.0        2.0
+                                OR3         3       1.0        3.0
+                               OR3B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1        11       1.0       11.0
+                               XOR2         4       1.0        4.0
+                            
+                         TOTAL            111                109.0

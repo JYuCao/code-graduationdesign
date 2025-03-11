@@ -2,13 +2,13 @@
 module uart_top(
     sys_clk,    
     rx,
-    //sys_rst_n,
+    sys_rst_n,
     tx,   
     re    
 );
 
 	input sys_clk;
-	wire sys_rst_n;
+	input sys_rst_n;
     input rx;
     wire [2:0]baud_set;
 	
@@ -22,20 +22,27 @@ module uart_top(
     reg [7:0] data_to_send;
     wire [7:0] received_data;
 
-    reg Rx_Done_1, Rx_Done_2, Rx_Done_3;
+    reg Rx_Done_r1, Rx_Done_r2;
+    wire Rx_Done_pos;
 
-    always@(posedge sys_clk) begin
-        Rx_Done_1 <= Rx_Done;
-        Rx_Done_2 <= Rx_Done_1;
-        Rx_Done_3 <= Rx_Done_2;
+    always@(posedge sys_clk or negedge sys_rst_n) begin
+        if(!sys_rst_n) begin
+            Rx_Done_r1 <= 1'b0;
+            Rx_Done_r2 <= 1'b0;
+        end else begin
+            Rx_Done_r1 <= Rx_Done;
+            Rx_Done_r2 <= Rx_Done_r1;
+        end
     end
+    
+    assign Rx_Done_pos = Rx_Done_r1 & ~Rx_Done_r2;
 	
     assign baud_set = 3'd0;
 
 	always @(posedge sys_clk or negedge sys_rst_n) begin
         if(!sys_rst_n)
             re <= 1'b0;  
-        else if(Rx_Done)
+        else if(send_en)
             re <= 1'b1; 
         else if(Tx_Done)
             re <= 1'b0; 
@@ -46,7 +53,7 @@ module uart_top(
             data_to_send <= 8'd0;
             send_en <= 1'b0;
         end
-        else if(Rx_Done) begin
+        else if(Rx_Done_pos) begin
             data_to_send <= received_data; 
             send_en <= 1'b1;
         end

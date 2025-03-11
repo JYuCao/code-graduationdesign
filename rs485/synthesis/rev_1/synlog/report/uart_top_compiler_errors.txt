@@ -1,0 +1,2 @@
+@E: CS160 :"D:\files\fpga\rs485\hdl\uart_top.v":5:4:5:12|Bad or missing port direction for 'sys_rst_n'
+

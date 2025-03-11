@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485"
+KEY ProjectLocation "D:\files\fpga\rs485"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,213 +43,213 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\uart_rx.adb,adb"
 STATE="ood"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="147968"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx.ide_des,ide_des"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="931"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_compile_log.rpt,log"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="7901"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="2422"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.adb,adb"
 STATE="ood"
-TIME="1741340247"
+TIME="1741684921"
 SIZE="307712"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.ide_des,ide_des"
 STATE="utd"
-TIME="1741340247"
+TIME="1741684921"
 SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_compile_log.rpt,log"
 STATE="utd"
-TIME="1741342364"
-SIZE="12408"
+TIME="1741684921"
+SIZE="12307"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_fp\projectData\uart_top.pdb,pdb"
 STATE="utd"
-TIME="1741340292"
+TIME="1741684921"
 SIZE="50084"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_fp\uart_top.pro,pro"
 STATE="utd"
-TIME="1741340292"
+TIME="1741684921"
 SIZE="2435"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1741346838"
+TIME="1741684921"
 SIZE="2523"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1741346858"
+TIME="1741684921"
 SIZE="814"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1.adb,adb"
 STATE="utd"
-TIME="1741342415"
+TIME="1741684921"
 SIZE="1138176"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1.ide_des,ide_des"
 STATE="utd"
-TIME="1741342415"
+TIME="1741684921"
 SIZE="1022"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1.pdb,pdb"
 STATE="utd"
-TIME="1741346858"
+TIME="1741684921"
 SIZE="73720"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\projectData\uart_top_synthesis_1.pdb,pdb"
 STATE="utd"
-TIME="1741342437"
-SIZE="68546"
+TIME="1741684921"
+SIZE="73720"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\uart_top_synthesis_1.pro,pro"
 STATE="utd"
-TIME="1741342437"
+TIME="1741684921"
 SIZE="2507"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1741346844"
+TIME="1741684921"
 SIZE="1231"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_tx.ide_des,ide_des"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="178"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1741346281"
-SIZE="3886"
+TIME="1741684656"
+SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_top.v,hdl"
 STATE="utd"
-TIME="1741346766"
-SIZE="1122"
+TIME="1741684575"
+SIZE="1539"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1741258037"
-SIZE="3764"
+TIME="1741684225"
+SIZE="3110"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1741341103"
+TIME="1741684921"
 SIZE="805"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_rx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741336383"
-SIZE="2658"
+TIME="1741684921"
+SIZE="2497"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_tx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741336383"
+TIME="1741684921"
 SIZE="2659"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_rx.v,tb_hdl"
 STATE="utd"
-TIME="1741336383"
-SIZE="2995"
+TIME="1741681689"
+SIZE="2966"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
 STATE="utd"
-TIME="1741346469"
-SIZE="1870"
+TIME="1741684672"
+SIZE="1858"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_tx.v,tb_hdl"
 STATE="utd"
-TIME="1741336383"
+TIME="1741316279"
 SIZE="2442"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\synwork\layer0.so,so"
 STATE="utd"
-TIME="1741340171"
+TIME="1741684921"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top.edn,syn_edn"
 STATE="utd"
-TIME="1741342171"
-SIZE="666789"
+TIME="1741684921"
+SIZE="810530"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top.so,so"
 STATE="utd"
-TIME="1741342171"
+TIME="1741684921"
 SIZE="250"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1741342171"
+TIME="1741684921"
 SIZE="663"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1741340171"
+TIME="1741684921"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback.so,so"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback_syn.prj,prj"
 STATE="utd"
-TIME="1741338131"
+TIME="1741684921"
 SIZE="1927"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.edn,syn_edn"
 STATE="ood"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="136896"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.so,so"
 STATE="utd"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="203"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1741257295"
+TIME="1741684921"
 SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_syn.prj,prj"
 STATE="utd"
-TIME="1741338131"
+TIME="1741684921"
 SIZE="0"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.edn,syn_edn"
 STATE="ood"
-TIME="1741340202"
+TIME="1741684921"
 SIZE="188881"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.so,so"
 STATE="utd"
-TIME="1741340202"
+TIME="1741684921"
 SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1741340202"
+TIME="1741684921"
 SIZE="405"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_syn.prj,prj"
 STATE="utd"
-TIME="1741342153"
-SIZE="3145"
+TIME="1741684921"
+SIZE="3513"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -361,8 +361,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -370,7 +370,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_uart_top_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -436,16 +436,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:uart_top_prgdata_log.rpt
 StartPage;StartPage;0
-HDL;hdl\uart_rx.v;0
-HDL;stimulus\tb_uart_rx.v;0
-HDL;stimulus\tb_uart_tx.v;0
-HDL;stimulus\tb_uart_top.v;0
-HDL;hdl\uart_top.v;0
-HDL;hdl\uart_tx.v;0
-ACTIVEVIEW;stimulus\tb_uart_top.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"

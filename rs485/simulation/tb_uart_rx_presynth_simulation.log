@@ -8,25 +8,25 @@
 # vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 19:01:36 on Mar 07,2025
-# vlog -reportprogress 300 -vlog01compat -work presynth C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v 
+# Start time: 17:30:44 on Mar 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/rs485/hdl/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 19:01:36 on Mar 07,2025, Elapsed time: 0:00:00
+# End time: 17:30:44 on Mar 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 19:01:36 on Mar 07,2025
-# vlog -reportprogress 300 "+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus" -vlog01compat -work presynth C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v 
+# Start time: 17:30:44 on Mar 11,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/rs485/stimulus" -vlog01compat -work presynth D:/files/fpga/rs485/stimulus/tb_uart_rx.v 
 # -- Compiling module tb_uart_rx
 # 
 # Top level modules:
 # 	tb_uart_rx
-# End time: 19:01:36 on Mar 07,2025, Elapsed time: 0:00:00
+# End time: 17:30:44 on Mar 11,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -L proasic3 -L presynth -t 1ps presynth.tb_uart_rx 
-# Start time: 19:01:36 on Mar 07,2025
+# Start time: 17:30:45 on Mar 11,2025
 # //  ModelSim Microsemi 10.5c Jul 21 2016
 # //
 # //  Copyright 1991-2016 Mentor Graphics Corporation
@@ -43,8 +43,8 @@
 # Loading presynth.tb_uart_rx
 # Loading presynth.uart_rx
 run -all
-# ** Note: $stop    : C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v(87)
-#    Time: 3961581 ns  Iteration: 0  Instance: /tb_uart_rx
-# Break in Module tb_uart_rx at C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/stimulus/tb_uart_rx.v line 87
-# End time: 19:02:14 on Mar 07,2025, Elapsed time: 0:00:38
+# ** Note: $stop    : D:/files/fpga/rs485/stimulus/tb_uart_rx.v(87)
+#    Time: 3978080 ns  Iteration: 0  Instance: /tb_uart_rx
+# Break in Module tb_uart_rx at D:/files/fpga/rs485/stimulus/tb_uart_rx.v line 87
+# End time: 17:31:00 on Mar 11,2025, Elapsed time: 0:00:15
 # Errors: 0, Warnings: 0
