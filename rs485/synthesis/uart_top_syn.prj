@@ -1,12 +1,12 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
 #--  Project file D:\files\fpga\rs485\synthesis\uart_top_syn.prj
-#--  Written on Fri Mar 07 11:07:51 2025
+#--  Written on Tue Mar 11 17:11:05 2025
 
 
 #project files
-add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
 add_file -verilog "D:/files/fpga/rs485/hdl/uart_rx.v"
+add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
 add_file -verilog "D:/files/fpga/rs485/hdl/uart_top.v"
 
 

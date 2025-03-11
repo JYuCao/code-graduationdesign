@@ -1,7 +1,2 @@
-@W: CG133 :"D:\files\fpga\rs485\hdl\uart_rx.v":34:11:34:19|Object START_BIT is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG360 :"D:\files\fpga\rs485\hdl\uart_top.v":20:11:20:14|Removing wire data, as there is no assignment to it.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_rx.v":64:4:64:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 15 to 12 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\files\fpga\rs485\hdl\uart_tx.v":73:4:73:9|Pruning register bits 8 to 7 of bps_DR[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 

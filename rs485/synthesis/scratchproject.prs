@@ -3,8 +3,8 @@
 #--  Project file D:\files\fpga\rs485\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
 add_file -verilog "D:/files/fpga/rs485/hdl/uart_rx.v"
+add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
 add_file -verilog "D:/files/fpga/rs485/hdl/uart_top.v"
 
 

@@ -5,21 +5,21 @@
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487916586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487916586
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487916586
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_tx.v":1741311624
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_rx.v":1741316233
-#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_top.v":1741311624
-0			"D:\files\fpga\rs485\hdl\uart_tx.v" verilog
-1			"D:\files\fpga\rs485\hdl\uart_rx.v" verilog
+#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_rx.v":1741684220
+#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_tx.v":1741684225
+#CUR:"D:\\files\\fpga\\rs485\\hdl\\uart_top.v":1741684213
+0			"D:\files\fpga\rs485\hdl\uart_rx.v" verilog
+1			"D:\files\fpga\rs485\hdl\uart_tx.v" verilog
 2			"D:\files\fpga\rs485\hdl\uart_top.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1
-2 1 0
+2 0 1
 #Dependency Lists(Users Of)
 0 2
 1 2
 2 -1
 #Design Unit to File Association
 module work uart_top 2
-module work uart_rx 1
-module work uart_tx 0
+module work uart_tx 1
+module work uart_rx 0

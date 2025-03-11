@@ -83,8 +83,8 @@ SIZE="53629"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_fp\uart_top.pro,pro"
 STATE="utd"
-TIME="1741311624"
-SIZE="2435"
+TIME="1741311749"
+SIZE="2336"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_tx.ide_des,ide_des"
 STATE="utd"
@@ -93,48 +93,43 @@ SIZE="178"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1741317347"
-SIZE="4239"
+TIME="1741684220"
+SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_top.v,hdl"
 STATE="utd"
-TIME="1741311624"
-SIZE="909"
+TIME="1741684213"
+SIZE="1355"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1741311624"
-SIZE="3764"
+TIME="1741684225"
+SIZE="3110"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1741311624"
-SIZE="805"
+TIME="1741682138"
+SIZE="636"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_rx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741235105"
-SIZE="2332"
-ENDFILE
-VALUE "<project>\simulation\tb_uart_top_presynth_simulation.log,log"
-STATE="utd"
-TIME="1741317399"
-SIZE="3145"
+TIME="1741682253"
+SIZE="2955"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_tx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1736670075"
-SIZE="2333"
+TIME="1741316317"
+SIZE="2659"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_rx.v,tb_hdl"
 STATE="utd"
-TIME="1741316610"
-SIZE="2995"
+TIME="1741681689"
+SIZE="2966"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
 STATE="utd"
-TIME="1741316844"
-SIZE="1873"
+TIME="1741683478"
+SIZE="1845"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_tx.v,tb_hdl"
 STATE="utd"
@@ -148,8 +143,8 @@ SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback_syn.prj,prj"
 STATE="utd"
-TIME="1741311624"
-SIZE="1927"
+TIME="1741311749"
+SIZE="1795"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.edn,syn_edn"
 STATE="ood"
@@ -168,35 +163,58 @@ SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_syn.prj,prj"
 STATE="utd"
-TIME="1741311624"
+TIME="1741311749"
 SIZE="0"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.edn,syn_edn"
-STATE="ood"
-TIME="1741311624"
-SIZE="225572"
+STATE="utd"
+TIME="1741316871"
+SIZE="187481"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.so,so"
 STATE="utd"
-TIME="1741311624"
-SIZE="238"
+TIME="1741316871"
+SIZE="205"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1741236160"
+STATE="utd"
+TIME="1741316871"
 SIZE="405"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_syn.prj,prj"
 STATE="utd"
-TIME="1741311624"
-SIZE="1911"
+TIME="1741316871"
+SIZE="1779"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "uart_top::work"
+FILE "<project>\hdl\uart_top.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\uart_top.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST uart_top
+VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -207,7 +225,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=testbench
+EntityName=tb_uart_top
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -300,6 +318,20 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "uart_top::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\uart_top.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -316,18 +348,19 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-HDL;hdl\uart_rx.v;0
 HDL;stimulus\tb_uart_rx.v;0
-HDL;stimulus\tb_uart_tx.v;0
 HDL;stimulus\tb_uart_top.v;0
-ACTIVEVIEW;stimulus\tb_uart_rx.v
+HDL;hdl\uart_top.v;0
+HDL;hdl\uart_tx.v;0
+HDL;synthesis\uart_top.srr;0
+ACTIVEVIEW;hdl\uart_tx.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 ENDLIST
 LIST "uart_top::work","hdl\uart_top.v","FALSE","FALSE"
-SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
 SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
 ENDLIST
 LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
 ENDLIST
@@ -342,6 +375,9 @@ SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "uart_top::work"
+ACTIVETESTBENCH "tb_uart_top::work","stimulus\tb_uart_top.v","FALSE"
+ENDLIST
 ENDLIST
 LIST IOTabList
 ENDLIST

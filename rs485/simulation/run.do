@@ -10,8 +10,8 @@ if {[file exists presynth/_info]} {
 vmap presynth presynth
 vmap proasic3 "C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3"
 
-vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_tx.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_rx.v"
+vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_tx.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_top.v"
 vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_uart_top.v"
 

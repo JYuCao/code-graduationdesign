@@ -17,7 +17,7 @@ Max Top 5 critical clocks will be reported. For rest user needs to refer to Deta
 <row>
 <data>uart_top|sys_clk</data>
 <data>100.0 MHz</data>
-<data>47.1 MHz</data>
-<data>-11.251</data>
+<data>87.8 MHz</data>
+<data>-1.387</data>
 </row>
 </report_table>

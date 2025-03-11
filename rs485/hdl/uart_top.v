@@ -1,6 +1,4 @@
 
-//`timescale <time_units> / <precision>
-
 module uart_top(
     sys_clk,      
     sys_rst_n,   
@@ -15,19 +13,39 @@ module uart_top(
     wire [2:0]baud_set;
 	
 	output tx;
-	output re;
+	output reg re;
 	
-	wire [7:0]data;
     wire uart_state;
     wire Rx_Done;
-    wire send_en;
-    wire [7:0] data_to_send;
+    wire Tx_Done;
+    reg send_en;
+    reg [7:0] data_to_send;
     wire [7:0] received_data;
 	
-    assign re = uart_state;
-    assign data_to_send = received_data; 
-    assign send_en = Rx_Done;
-    assign baud_set = 0;
+    assign baud_set = 3'd0;
+
+	always @(posedge sys_clk or negedge sys_rst_n) begin
+        if(!sys_rst_n)
+            re <= 1'b0;  
+        else if(Rx_Done)
+            re <= 1'b1; 
+        else if(Tx_Done)
+            re <= 1'b0; 
+    end
+
+	always @(posedge sys_clk or negedge sys_rst_n) begin
+        if(!sys_rst_n) begin
+            data_to_send <= 8'd0;
+            send_en <= 1'b0;
+        end
+        else if(Rx_Done) begin
+            data_to_send <= received_data; 
+            send_en <= 1'b1;
+        end
+        else begin
+            send_en <= 1'b0; 
+        end
+    end
 
 	uart_tx uart_byte_tx(
 		.sys_clk(sys_clk),
@@ -37,7 +55,7 @@ module uart_top(
 		.baud_set(baud_set),
 		
 		.tx(tx),
-		.Tx_Done(),
+		.Tx_Done(Tx_Done),
 		.uart_state(uart_state)
 	);
 	

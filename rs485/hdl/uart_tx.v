@@ -1,6 +1,4 @@
 
-//`timescale <time_units> / <precision>
-
 module uart_tx(
 	sys_clk,    
 	sys_rst_n, 
@@ -29,7 +27,7 @@ module uart_tx(
 	
 	reg [15:0]bps_DR;
 	
-	reg [24:0]bps_cnt;
+	reg [3:0]bps_cnt;
 	
 	reg [7:0]r_data;
 	
@@ -43,8 +41,6 @@ module uart_tx(
             uart_state <= 1'b1;
         else if(bps_cnt == 4'd11)
             uart_state <= 1'b0;
-        else
-            uart_state <= uart_state;
 	
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
@@ -53,24 +49,9 @@ module uart_tx(
             r_data <= data;
         else
             r_data <= r_data;
-	
-	// 50M
-	//always@(posedge sys_clk or negedge sys_rst_n)
-        //if(!sys_rst_n)
-            //bps_DR <= 16'd5208;
-        //else begin
-            //case(baud_set)
-                //0: bps_DR <= 16'd5208;  // 9600 
-                //1: bps_DR <= 16'd2604;  // 19200
-                //2: bps_DR <= 16'd1302;  // 38400
-                //3: bps_DR <= 16'd868;   // 57600
-                //4: bps_DR <= 16'd434;   // 115200
-                //default: bps_DR <= 16'd5208;
-            //endcase
-        //end
 
     // 20M
-    always@(posedge sys_clk or negedge sys_rst_n)
+    always@(*)
         if(!sys_rst_n)
             bps_DR <= 16'd2083;
         else begin

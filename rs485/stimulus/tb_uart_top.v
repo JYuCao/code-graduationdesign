@@ -44,9 +44,9 @@ uart_top uart_top_0 (
 );
 
 initial begin
-    #(SYSCLK_PERIOD*20+1);
+    #10000;
     NSYSRESET = 1;
-    #(SYSCLK_PERIOD*50);
+    #10000;
 
     send_byte(8'h55);
     #(1041600);
