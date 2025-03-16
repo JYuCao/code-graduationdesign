@@ -170,7 +170,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_flash_c_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -215,7 +215,7 @@ HDL;stimulus\test_tf.v;0
 HDL;hdl\flash_b.v;0
 HDL;hdl\flash_c.v;0
 HDL;stimulus\tb_flashc.v;0
-ACTIVEVIEW;hdl\flash_b.v
+ACTIVEVIEW;stimulus\tb_flashc.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
