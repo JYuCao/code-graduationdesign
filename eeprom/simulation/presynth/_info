@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/files/fpga/eeprom/simulation
 vspi_eeprom
-Z1 !s110 1741073415
+Z1 !s110 1741425508
 !i10b 1
 !s100 ?6;n:4EI_I0;d_Ah1fU`S3
 I]9@FH;GHk=[V6jkb[odPM2
@@ -23,7 +23,7 @@ Z3 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z4 !s108 1741073415.000000
+Z4 !s108 1741425508.000000
 !s107 D:/files/fpga/eeprom/hdl/eeprom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/hdl/eeprom.v|
 !s101 -O0

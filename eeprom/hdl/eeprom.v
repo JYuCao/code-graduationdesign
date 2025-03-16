@@ -21,10 +21,10 @@ module spi_eeprom (
 
     // State machine states
     localparam IDLE  = 0;
-    localparam SEND_CMD  = 0;
-    localparam SEND_ADDR  = 0;
-    localparam TRANSFER_DATA  = 0;
-    localparam WAIT  = 0;
+    localparam SEND_CMD  = 1;
+    localparam SEND_ADDR  = 2;
+    localparam TRANSFER_DATA  = 3;
+    localparam WAIT  = 4;
 
     reg [3:0] state, next_state;
 
