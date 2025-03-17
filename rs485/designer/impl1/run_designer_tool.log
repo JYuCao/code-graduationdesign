@@ -4,8 +4,8 @@ Release: Libero SoC v11.8 SP2
 
 'IDE_DESIGNERVIEW_ROOTDIR' set to
 'C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer'
-Info: The design uart_top.adb was last modified by software version 11.8.2.4.
-Opened an existing Libero design uart_top.adb.
+Info: The design uart_top_rev_2.adb was last modified by software version 11.8.2.4.
+Opened an existing Libero design uart_top_rev_2.adb.
 
 The Execute Script command succeeded ( 00:00:23 )
 Checking for software updates...
@@ -16,7 +16,7 @@ Info: The software cannot reach the Microsemi SoC server to confirm the version 
       You can check the version of your current installation by starting the tool and selecting
       Help -> About.
 Design saved to file
-C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top.adb.
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_rev_2.adb.
 Wrote pin report to file:
 C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_report_pin_byname.\
 txt

@@ -1,0 +1,39 @@
+Software Version: 11.8.2.4
+creating folder:
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_rev_2_fp
+Embedded FlashPro5 programmer detected.
+programmer 'E2008L6ORI' : FlashPro5
+Created new project
+'C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/designer/impl1/uart_top_rev_2_fp\uart_top\
+_rev_2.pro'
+The 'new_project' command succeeded.
+PDB file
+'C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/designer/impl1/uart_top_rev_2.pdb' has
+been loaded successfully.
+DESIGN : uart_top;  CHECKSUM : 6326;  PDB_VERSION : 1.9
+The 'set_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer 'E2008L6ORI' : Scan Chain...
+Warning: programmer 'E2008L6ORI' : Vpump has been selected on programmer AND an externally
+         provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E2008L6ORI' : Scan Chain PASSED.
+programmer 'E2008L6ORI' : Executing action PROGRAM
+programmer 'E2008L6ORI' : EXPORT FSN[48] = 8185a4109064
+programmer 'E2008L6ORI' : Erase ...
+programmer 'E2008L6ORI' : Completed erase
+programmer 'E2008L6ORI' : EXPORT CHECKSUM[16] = 6326
+programmer 'E2008L6ORI' : Programming FPGA Array
+programmer 'E2008L6ORI' : Verifying FPGA Array
+programmer 'E2008L6ORI' :         Verifying FPGA Array -- pass
+programmer 'E2008L6ORI' : Finished: Mon Mar 17 16:54:31 2025 (Elapsed time 00:00:35)
+programmer 'E2008L6ORI' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+creating folder:
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_rev_2_fp\projectDa\
+ta
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

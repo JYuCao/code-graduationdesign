@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\files\fpga\rs485"
+KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\rs485"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,245 +43,302 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\uart_rx.adb,adb"
 STATE="ood"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="147968"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx.ide_des,ide_des"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="931"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_compile_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="7901"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_rx_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="2422"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.adb,adb"
 STATE="ood"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="307712"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top.ide_des,ide_des"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="998"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_compile_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="12307"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_fp\projectData\uart_top.pdb,pdb"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="50084"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_fp\uart_top.pro,pro"
 STATE="utd"
-TIME="1741684921"
-SIZE="2435"
+TIME="1742201219"
+SIZE="2336"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
-SIZE="2523"
+TIME="1742201604"
+SIZE="2505"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
-SIZE="814"
+TIME="1742201629"
+SIZE="788"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_rev_2.adb,adb"
+STATE="utd"
+TIME="1742201336"
+SIZE="98304"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_rev_2.ide_des,ide_des"
+STATE="utd"
+TIME="1742201336"
+SIZE="1116"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_rev_2.pdb,pdb"
+STATE="utd"
+TIME="1742201628"
+SIZE="47023"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_rev_2_fp\projectData\uart_top_rev_2.pdb,pdb"
+STATE="utd"
+TIME="1742201671"
+SIZE="47023"
+ENDFILE
+VALUE "<project>\designer\impl1\uart_top_rev_2_fp\uart_top_rev_2.pro,pro"
+STATE="utd"
+TIME="1742201671"
+SIZE="2471"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1.adb,adb"
-STATE="utd"
-TIME="1741684921"
+STATE="ood"
+TIME="1742201219"
 SIZE="1138176"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1.ide_des,ide_des"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="1022"
-ENDFILE
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.pdb,pdb"
-STATE="utd"
-TIME="1741684921"
-SIZE="73720"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\projectData\uart_top_synthesis_1.pdb,pdb"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="73720"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\uart_top_synthesis_1.pro,pro"
 STATE="utd"
-TIME="1741684921"
-SIZE="2507"
+TIME="1742201219"
+SIZE="0"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_top_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1741684921"
-SIZE="1231"
+TIME="1742201617"
+SIZE="1213"
 ENDFILE
 VALUE "<project>\designer\impl1\uart_tx.ide_des,ide_des"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="178"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1741684656"
+TIME="1742201219"
 SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_top.v,hdl"
 STATE="utd"
-TIME="1741684575"
-SIZE="1539"
+TIME="1742201409"
+SIZE="1776"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1741684225"
+TIME="1742201219"
 SIZE="3110"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1741684921"
-SIZE="805"
+TIME="1742201219"
+SIZE="772"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_rx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741684921"
-SIZE="2497"
+TIME="1742201219"
+SIZE="2332"
 ENDFILE
 VALUE "<project>\simulation\tb_uart_tx_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741684921"
-SIZE="2659"
+TIME="1742201219"
+SIZE="2333"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_rx.v,tb_hdl"
 STATE="utd"
-TIME="1741681689"
+TIME="1742201219"
 SIZE="2966"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_top.v,tb_hdl"
 STATE="utd"
-TIME="1741684672"
+TIME="1742201219"
 SIZE="1858"
 ENDFILE
 VALUE "<project>\stimulus\tb_uart_tx.v,tb_hdl"
 STATE="utd"
-TIME="1741316279"
-SIZE="2442"
+TIME="1742201219"
+SIZE="2393"
+ENDFILE
+VALUE "<project>\synthesis\rev_1\synwork\layer0.so,so"
+STATE="utd"
+TIME="1742201219"
+SIZE="159"
+ENDFILE
+VALUE "<project>\synthesis\rev_1\uart_top.edn,syn_edn"
+STATE="utd"
+TIME="1742201219"
+SIZE="120014"
+ENDFILE
+VALUE "<project>\synthesis\rev_1\uart_top.so,so"
+STATE="utd"
+TIME="1742201219"
+SIZE="211"
+ENDFILE
+VALUE "<project>\synthesis\rev_2\uart_top.edn,syn_edn"
+STATE="utd"
+TIME="1742201465"
+SIZE="112841"
+ENDFILE
+VALUE "<project>\synthesis\rev_2\uart_top.so,so"
+STATE="utd"
+TIME="1742201323"
+SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\rev_2\uart_top_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1742201465"
+SIZE="405"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\synwork\layer0.so,so"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top.edn,syn_edn"
-STATE="utd"
-TIME="1741684921"
+STATE="ood"
+TIME="1742201219"
 SIZE="810530"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top.so,so"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="250"
 ENDFILE
 VALUE "<project>\synthesis\synthesis_1\uart_top_sdc.sdc,syn_sdc"
-STATE="utd"
-TIME="1741684921"
+STATE="ood"
+TIME="1742201219"
 SIZE="663"
-ENDFILE
-VALUE "<project>\synthesis\synwork\layer0.so,so"
-STATE="utd"
-TIME="1741684921"
-SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback.so,so"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_loopback_syn.prj,prj"
 STATE="utd"
-TIME="1741684921"
-SIZE="1927"
+TIME="1742201219"
+SIZE="1795"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.edn,syn_edn"
 STATE="ood"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="136896"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx.so,so"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="203"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="404"
 ENDFILE
 VALUE "<project>\synthesis\uart_rx_syn.prj,prj"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="0"
-ENDFILE
-VALUE "<project>\synthesis\uart_top.edn,syn_edn"
-STATE="ood"
-TIME="1741684921"
-SIZE="188881"
 ENDFILE
 VALUE "<project>\synthesis\uart_top.so,so"
 STATE="utd"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="238"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1741684921"
+TIME="1742201219"
 SIZE="405"
 ENDFILE
 VALUE "<project>\synthesis\uart_top_syn.prj,prj"
 STATE="utd"
-TIME="1741684921"
-SIZE="3513"
+TIME="1742201219"
+SIZE="1771"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "uart_top::work"
-FILE "<project>\hdl\uart_top.v,hdl"
+LIST "uart_rx::work"
+FILE "<project>\hdl\uart_rx.v,hdl"
 LIST ProjectState5.1
 LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\synthesis_1\uart_top.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\uart_top_synthesis_1.adb,adb)=StateSuccess
+ideSYNTHESIS(D:\files\fpga\rs485\synthesis\uart_rx.edn,syn_edn)=StateFailure
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
-VALUE "<project>\synthesis\synthesis_1\uart_top.edn,syn_edn"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
+LIST "uart_top::work"
+FILE "<project>\hdl\uart_top.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\rev_2\uart_top.edn,syn_edn)=StateSuccess
+ideSYNTHESIS(D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn,syn_edn)=StateFailure
+ideSYNTHESIS(<project>\synthesis\synthesis_1\uart_top.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\uart_top_rev_2.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
 VALUE "<project>\synthesis\uart_top.vm,syn_vm"
-VALUE "<project>\synthesis\synthesis_1\uart_top_sdc.sdc,syn_sdc"
-VALUE "<project>\synthesis\synthesis_1\uart_top.v,syn_hdl"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.edn,palace_edn"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.gcf,palace_gcf"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.pdc,palace_pdc"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.sdc,palace_sdc"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.v,palace_hdl"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.adb,adb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.prb,prb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.fdb,fdb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.stp,stp"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\uart_top_synthesis_1.pro,pro"
+VALUE "<project>\synthesis\rev_2\uart_top.edn,syn_edn"
+VALUE "<project>\synthesis\rev_2\uart_top_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\rev_2\uart_top.v,syn_hdl"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\uart_top_rev_2.adb,adb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.prb,prb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.fdb,fdb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.stp,stp"
+VALUE "<project>\designer\impl1\uart_top_rev_2_fp\uart_top_rev_2.pro,pro"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -361,8 +418,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -395,31 +452,45 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "uart_top::work"
+LIST "uart_rx::work"
 LIST Impl1
-LiberoState=Post_Layout
-ideSYNTHESIS(<project>\synthesis\synthesis_1\uart_top.edn,syn_edn)=StateSuccess
-ideDESIGNER(<project>\designer\impl1\uart_top_synthesis_1.adb,adb)=StateSuccess
+ideSYNTHESIS(D:\files\fpga\rs485\synthesis\uart_rx.edn,syn_edn)=StateFailure
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
 UseFhbAutoInst=FALSE
 ENDLIST
 Used_File_List
-VALUE "<project>\synthesis\synthesis_1\uart_top.edn,syn_edn"
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+LIST "uart_top::work"
+LIST Impl1
+LiberoState=Post_Layout
+ideSYNTHESIS(<project>\synthesis\rev_2\uart_top.edn,syn_edn)=StateSuccess
+ideSYNTHESIS(D:\files\fpga\rs485\synthesis\rev_1\uart_top.edn,syn_edn)=StateFailure
+ideSYNTHESIS(<project>\synthesis\synthesis_1\uart_top.edn,syn_edn)=StateSuccess
+ideDESIGNER(<project>\designer\impl1\uart_top_rev_2.adb,adb)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
 VALUE "<project>\synthesis\uart_top.vm,syn_vm"
-VALUE "<project>\synthesis\synthesis_1\uart_top_sdc.sdc,syn_sdc"
-VALUE "<project>\synthesis\synthesis_1\uart_top.v,syn_hdl"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.edn,palace_edn"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.gcf,palace_gcf"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.pdc,palace_pdc"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.sdc,palace_sdc"
-VALUE "<project>\phy_synthesis\uart_top_synthesis_1_palace.v,palace_hdl"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.adb,adb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.prb,prb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.fdb,fdb"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1.stp,stp"
-VALUE "<project>\designer\impl1\uart_top_synthesis_1_fp\uart_top_synthesis_1.pro,pro"
+VALUE "<project>\synthesis\rev_2\uart_top.edn,syn_edn"
+VALUE "<project>\synthesis\rev_2\uart_top_sdc.sdc,syn_sdc"
+VALUE "<project>\synthesis\rev_2\uart_top.v,syn_hdl"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.edn,palace_edn"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.gcf,palace_gcf"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.pdc,palace_pdc"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.sdc,palace_sdc"
+VALUE "<project>\phy_synthesis\uart_top_rev_2_palace.v,palace_hdl"
+VALUE "<project>\designer\impl1\uart_top_rev_2.adb,adb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.prb,prb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.fdb,fdb"
+VALUE "<project>\designer\impl1\uart_top_rev_2.stp,stp"
+VALUE "<project>\designer\impl1\uart_top_rev_2_fp\uart_top_rev_2.pro,pro"
 ENDUsed_File_List
 ENDLIST
 ENDLIST
@@ -436,8 +507,11 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:uart_top_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+HDL;hdl\uart_top.v;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"

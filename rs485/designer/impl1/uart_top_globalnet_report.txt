@@ -1,0 +1,32 @@
+********************************************************************
+                            Global Net Report
+********************************************************************
+  
+Product: Designer
+Release: Libero SoC v11.8 SP2
+Version: 11.8.2.4
+Date: Mon Mar 17 16:53:22 2025
+Design Name: uart_top  Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+
+
+Automatic Global Net Placement Result:
+Status: Global net placement completed successfully
+
+
+Global Nets Information:
+
+        |-----------------------------------------------------|
+        |Global Nets         |Loads                           |
+        |-----------------------------------------------------|
+        |Name                |Core      |IO        |RAM       |
+        |-----------------------------------------------------|
+        |sys_clk_c           |       88 |        0 |        0 |
+        |-----------------------------------------------------|
+
+Summary of Global Net Placement:
+
+        |------------------------------------------------------------------------|
+        |Global Net          |Assignment          |Violation                     |
+        |------------------------------------------------------------------------|
+        |sys_clk_c           |MIDDLE_LEFT         |                              |
+        |------------------------------------------------------------------------|

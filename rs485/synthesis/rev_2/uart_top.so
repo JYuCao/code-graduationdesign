@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>uart_top</design>
+	<target_edif>C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\rev_2\uart_top.edn</target_edif>
+</SynplifyOutput>

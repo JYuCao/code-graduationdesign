@@ -2,8 +2,8 @@ Microsemi Libero Software
 Version: 11.8.2.4
 Release: Libero SoC v11.8 SP2
 
-Info: The design uart_top_synthesis_1.adb was last modified by software version 11.8.2.4.
-Opened an existing Libero design uart_top_synthesis_1.adb.
+Info: The design uart_top_rev_2.adb was last modified by software version 11.8.2.4.
+Opened an existing Libero design uart_top_rev_2.adb.
 'BA_NAME' set to 'uart_top_ba'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
 'IDE_DESIGNERVIEW_COUNT' set to '1'
@@ -15,9 +15,9 @@ Opened an existing Libero design uart_top_synthesis_1.adb.
 
  Netlist Reading Time = 0.0 seconds
 Imported the file:
-   C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top.edn
+   C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\rev_2\uart_top.edn
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:01 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -25,8 +25,7 @@ Parameters used to run compile:
 Family      : ProASIC3
 Device      : A3P250
 Package     : 100 VQFP
-Source      :
-C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\synthesis_1\uart_top.edn
+Source      : C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\rev_2\uart_top.edn
 Format      : EDIF
 Topcell     : uart_top
 Speed grade : STD
@@ -53,42 +52,20 @@ report_high_fanout_nets_limit      : 10
 =====================================================================
 Compile starts ...
 
-Warning: CMP201: Net ident_coreinst/IICE_INST/b13_PSyil9s_99H_L drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b9_PbTt39_ab drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b9_ibScJX_ab drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b7_yYh0_9u drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD6 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD7 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD8 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD9 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD10 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD11 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD12 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD13 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD14 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD15 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD16 drives no load.
-Warning: CMP201: Net ident_coreinst/IICE_INST/b3_SoW/b3_SoW/I_1_RD17 drives no load.
-Warning: CMP201: Net ident_coreinst/comm_block_INST/jtagi/UIREGdummy[0] drives no load.
-Warning: CMP201: Net ident_coreinst/comm_block_INST/jtagi/UIREGdummy[7] drives no load.
-Warning: CMP201: Net ident_coreinst/comm_block_INST/jtagi/URSTBdummy drives no load.
 
 Netlist Optimization Report
 ===========================
 
 Optimized macros:
-  - Dangling net drivers:   5
+  - Dangling net drivers:   0
   - Buffers:                0
   - Inverters:              0
   - Tieoff:                 0
-  - Logic combining:        37
+  - Logic combining:        3
 
-    Total macros optimized  42
+    Total macros optimized  3
 
-Warning: CMP503: Remapped 10 enable flip-flop(s) to a 2-tile implementation because the CLR/PRE
-         pin on the enable flip-flop is not being driven by a global net.
-
-There were 0 error(s) and 20 warning(s) in this design.
+There were 0 error(s) and 0 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -100,21 +77,21 @@ There were 0 error(s) and 0 warning(s).
 Compile report:
 ===============
 
-    CORE                       Used:   1305  Total:   6144   (21.24%)
+    CORE                       Used:    246  Total:   6144   (4.00%)
     IO (W/ clocks)             Used:      4  Total:     68   (5.88%)
     Differential IO            Used:      0  Total:     13   (0.00%)
-    GLOBAL (Chip+Quadrant)     Used:      5  Total:     18   (27.78%)
+    GLOBAL (Chip+Quadrant)     Used:      1  Total:     18   (5.56%)
     PLL                        Used:      0  Total:      1   (0.00%)
-    RAM/FIFO                   Used:      2  Total:      8   (25.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
     Low Static ICC             Used:      0  Total:      1   (0.00%)
     FlashROM                   Used:      0  Total:      1   (0.00%)
-    User JTAG                  Used:      1  Total:      1   (100.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
 
 Global Information:
 
     Type            | Used   | Total
     ----------------|--------|--------------
-    Chip global     | 5      | 6  (83.33%)*
+    Chip global     | 1      | 6  (16.67%)*
     Quadrant global | 0      | 12 (0.00%)
 
     (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
@@ -125,8 +102,8 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 770          | 770
-    SEQ     | 535          | 535
+    COMB    | 158          | 158
+    SEQ     | 88           | 88
 
 I/O Function:
 
@@ -149,97 +126,68 @@ I/O Technology:
 I/O Placement:
 
     Locked  :   0
-    Placed  :   4 ( 100.00% )
-    UnPlaced:   0
+    Placed  :   0
+    UnPlaced:   4 ( 100.00% )
 
 Net information report:
 =======================
 
-The following nets drive enable flip-flops that have been remapped to a 2-tile implementation:
-    EffCnt  Type          Name
-    --------------------------
-    10      SET/RESET_NET Net   : ident_coreinst/IICE_INST/b5_nUTGT/b6_nfs_IF_0[1]
-                          Driver:
-ident_coreinst/IICE_INST/b5_nUTGT/b11_nUTGT_khWqH/genblk1.b3_nfs_0[1]
-
 The following nets have been assigned to a chip global resource:
     Fanout  Type          Name
     --------------------------
-    314     CLK_NET       Net   : ident_coreinst/IICE_comm2iice[11]
-                          Driver: ident_coreinst/comm_block_INST/jtagi/jtag_clkint_prim
-                          Source: NETLIST
-    202     CLK_NET       Net   : sys_clk_c
+    88      CLK_NET       Net   : sys_clk_c
                           Driver: sys_clk_pad
-                          Source: NETLIST
-    74      INT_NET       Net   : ident_coreinst/IICE_comm2iice[9]
-                          Driver: ident_coreinst/comm_block_INST_IICE_comm2iice_RNISUM1[9]
-                          Source: NETLIST
-    72      INT_NET       Net   : ident_coreinst.IICE_INST.b4_PfFz.b5_PbrtL.b6_OKctIF4
-                          Driver: I_18
-                          Source: NETLIST
-    54      SET/RESET_NET Net   : ident_coreinst/IICE_INST/b5_voSc3
-                          Driver: ident_coreinst/IICE_INST/b5_nUTGT/b12_voSc3_gmasbb_RNI0GM6
                           Source: NETLIST
 
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    23      INT_NET       Net   : ident_coreinst/IICE_INST/b5_nUTGT/un1_b12_uRrc2XfY_rbN10
-                          Driver: ident_coreinst/IICE_INST/b5_nUTGT/un1_b12_uRrc2XfY_rbN10
-    18      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/samplerStatus/N_21
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/samplerStatus/un1_b13_PLF_2grFt_FH923_i_a3
-    18      INT_NET       Net   : ident_coreinst/comm_block_INST/b12_ORbIwXaEF_bd_0
-                          Driver:
-ident_coreinst/comm_block_INST/b7_Rcmi_ql/genblk1.b10_dZst39_EF3_0[7]
-    17      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
+    16      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
                           Driver: uart_byte_tx/uart_state_RNIMQV15
-    17      INT_NET       Net   : ident_coreinst/IICE_comm2iice_0[9]
-                          Driver: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIMR1A3_1
-    17      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/N_498
-                          Driver: ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i
-    17      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/N_498_0
-                          Driver: ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i_0
-    17      INT_NET       Net   : ident_coreinst/comm_block_INST/b12_ORbIwXaEF_bd
-                          Driver:
-ident_coreinst/comm_block_INST/b7_Rcmi_ql/genblk1.b10_dZst39_EF3[7]
-    16      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/virOut/N_20_0
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/virOut/un1_b13_PLF_2grFt_FH911_i_a3_0
-    16      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/virOut/N_20
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/virOut/un1_b13_PLF_2grFt_FH911_i_a3
+    16      INT_NET       Net   : uart_byte_rx/baud_cnt_1_sqmuxa
+                          Driver: uart_byte_rx/state_i_RNIPG6P5[0]
+    11      INT_NET       Net   : send_en
+                          Driver: send_en
+    11      INT_NET       Net   : rx_c
+                          Driver: rx_pad
+    10      INT_NET       Net   : uart_byte_rx/state[4]
+                          Driver: uart_byte_rx/state[4]
+    9       INT_NET       Net   : Rx_Done_pos
+                          Driver: uart_byte_rx/Rx_Done_pos
+    9       INT_NET       Net   : uart_byte_tx/bps_cnt[2]
+                          Driver: uart_byte_tx/bps_cnt[2]
+    9       INT_NET       Net   : uart_byte_rx/bit_cnt[2]
+                          Driver: uart_byte_rx/bit_cnt[2]
+    8       INT_NET       Net   : uart_byte_rx/state[2]
+                          Driver: uart_byte_rx/state[2]
+    8       INT_NET       Net   : uart_byte_rx/rx_data15
+                          Driver: uart_byte_rx/sample_pulse_RNI1LDF
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    23      INT_NET       Net   : ident_coreinst/IICE_INST/b5_nUTGT/un1_b12_uRrc2XfY_rbN10
-                          Driver: ident_coreinst/IICE_INST/b5_nUTGT/un1_b12_uRrc2XfY_rbN10
-    18      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/samplerStatus/N_21
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/samplerStatus/un1_b13_PLF_2grFt_FH923_i_a3
-    18      INT_NET       Net   : ident_coreinst/comm_block_INST/b12_ORbIwXaEF_bd_0
-                          Driver:
-ident_coreinst/comm_block_INST/b7_Rcmi_ql/genblk1.b10_dZst39_EF3_0[7]
-    17      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
+    16      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
                           Driver: uart_byte_tx/uart_state_RNIMQV15
-    17      INT_NET       Net   : ident_coreinst/IICE_comm2iice_0[9]
-                          Driver: ident_coreinst/comm_block_INST/jtagi/b9_Rcmi_KsDw_RNIMR1A3_1
-    17      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/N_498
-                          Driver: ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i
-    17      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/N_498_0
-                          Driver: ident_coreinst/IICE_INST/b3_SoW/virOut/genblk9.b7_nYJ_BFM8_i_0
-    17      INT_NET       Net   : ident_coreinst/comm_block_INST/b12_ORbIwXaEF_bd
-                          Driver:
-ident_coreinst/comm_block_INST/b7_Rcmi_ql/genblk1.b10_dZst39_EF3[7]
-    16      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/virOut/N_20_0
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/virOut/un1_b13_PLF_2grFt_FH911_i_a3_0
-    16      INT_NET       Net   : ident_coreinst/IICE_INST/b3_SoW/virOut/N_20
-                          Driver:
-ident_coreinst/IICE_INST/b3_SoW/virOut/un1_b13_PLF_2grFt_FH911_i_a3
+    16      INT_NET       Net   : uart_byte_rx/baud_cnt_1_sqmuxa
+                          Driver: uart_byte_rx/state_i_RNIPG6P5[0]
+    11      INT_NET       Net   : send_en
+                          Driver: send_en
+    11      INT_NET       Net   : rx_c
+                          Driver: rx_pad
+    10      INT_NET       Net   : uart_byte_rx/state[4]
+                          Driver: uart_byte_rx/state[4]
+    9       INT_NET       Net   : Rx_Done_pos
+                          Driver: uart_byte_rx/Rx_Done_pos
+    9       INT_NET       Net   : uart_byte_tx/bps_cnt[2]
+                          Driver: uart_byte_tx/bps_cnt[2]
+    9       INT_NET       Net   : uart_byte_rx/bit_cnt[2]
+                          Driver: uart_byte_rx/bit_cnt[2]
+    8       INT_NET       Net   : uart_byte_rx/state[2]
+                          Driver: uart_byte_rx/state[2]
+    8       INT_NET       Net   : uart_byte_rx/rx_data15
+                          Driver: uart_byte_rx/sample_pulse_RNI1LDF
 
-The Compile command succeeded ( 00:00:02 )
+The Compile command succeeded ( 00:00:01 )
 Wrote status report to file: uart_top_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -250,8 +198,8 @@ Wrote pin report to file: uart_top_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 Design saved to file
-C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_synthesis_1.adb.
+C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_rev_2.adb.
 
-The Execute Script command succeeded ( 00:00:07 )
+The Execute Script command succeeded ( 00:00:04 )
 Design closed.
 

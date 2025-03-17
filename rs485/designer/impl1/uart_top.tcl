@@ -1,9 +1,9 @@
 # Created by Microsemi Libero Software 11.8.2.4
-# Fri Mar 07 19:27:20 2025
+# Mon Mar 17 16:53:34 2025
 
 # (OPEN DESIGN)
 
-open_design "uart_top_synthesis_1.adb"
+open_design "uart_top_rev_2.adb"
 
 # set default back-annotation base-name
 set_defvar "BA_NAME" "uart_top_ba"

@@ -1,13 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
-#--  Project file D:\files\fpga\rs485\synthesis\top_loopback_syn.prj
+#--  Project file C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\top_loopback_syn.prj
 #--  Written on Wed Mar 05 10:39:35 2025
 
 
 #project files
-add_file -verilog "D:/files/fpga/rs485/hdl/uart_tx.v"
-add_file -verilog "D:/files/fpga/rs485/hdl/uart_rx.v"
-add_file -verilog "D:/files/fpga/rs485/hdl/top_loopback.v"
+add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_tx.v"
+add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/uart_rx.v"
+add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/rs485/hdl/top_loopback.v"
 
 
 

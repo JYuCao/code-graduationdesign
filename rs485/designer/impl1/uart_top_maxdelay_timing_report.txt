@@ -1,0 +1,377 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version Libero SoC v11.8 SP2
+Microsemi Corporation - Microsemi Libero Software Release Libero SoC v11.8 SP2 (Version 11.8.2.4)
+Date: Mon Mar 17 16:53:37 2025
+
+
+Design: uart_top
+Family: ProASIC3
+Die: A3P250
+Package: 100 VQFP
+Temperature Range: 0 - 70 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 70 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               sys_clk
+Period (ns):                9.273
+Frequency (MHz):            107.840
+Required Period (ns):       N/A
+Required Frequency (MHz):   N/A
+External Setup (ns):        4.454
+External Hold (ns):         0.059
+Min Clock-To-Out (ns):      2.513
+Max Clock-To-Out (ns):      8.808
+
+                            Input to Output
+Min Delay (ns):             N/A
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain sys_clk
+
+SET Register to Register
+
+Path 1
+  From:                        uart_byte_rx/baud_cnt[10]:CLK
+  To:                          uart_byte_rx/baud_cnt[11]:D
+  Delay (ns):                  8.752
+  Slack (ns):
+  Arrival (ns):                10.812
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         9.273
+
+Path 2
+  From:                        uart_byte_rx/baud_cnt[10]:CLK
+  To:                          uart_byte_rx/baud_cnt[12]:D
+  Delay (ns):                  8.619
+  Slack (ns):
+  Arrival (ns):                10.679
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         9.167
+
+Path 3
+  From:                        uart_byte_rx/baud_cnt[10]:CLK
+  To:                          uart_byte_rx/baud_cnt[1]:D
+  Delay (ns):                  8.590
+  Slack (ns):
+  Arrival (ns):                10.650
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         9.138
+
+Path 4
+  From:                        uart_byte_rx/baud_cnt[5]:CLK
+  To:                          uart_byte_rx/baud_cnt[15]:D
+  Delay (ns):                  8.536
+  Slack (ns):
+  Arrival (ns):                10.612
+  Required (ns):
+  Setup (ns):                  0.539
+  Minimum Period (ns):         9.099
+
+Path 5
+  From:                        uart_byte_rx/baud_cnt[5]:CLK
+  To:                          uart_byte_rx/baud_cnt[11]:D
+  Delay (ns):                  8.498
+  Slack (ns):
+  Arrival (ns):                10.574
+  Required (ns):
+  Setup (ns):                  0.574
+  Minimum Period (ns):         9.070
+
+
+Expanded Path 1
+  From: uart_byte_rx/baud_cnt[10]:CLK
+  To: uart_byte_rx/baud_cnt[11]:D
+  data required time                             N/C
+  data arrival time                          -   10.812
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_clk
+               +     0.000          Clock source
+  0.000                        sys_clk (r)
+               +     0.000          net: sys_clk
+  0.000                        sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  1.016                        sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.364                        sys_clk_pad/U0/U1:Y (r)
+               +     0.696          net: sys_clk_c
+  2.060                        uart_byte_rx/baud_cnt[10]:CLK (r)
+               +     0.737          cell: ADLIB:DFN1
+  2.797                        uart_byte_rx/baud_cnt[10]:Q (f)
+               +     1.495          net: uart_byte_rx/baud_cnt[10]
+  4.292                        uart_byte_rx/baud_cnt_RNII4KI[10]:B (f)
+               +     0.650          cell: ADLIB:OR2A
+  4.942                        uart_byte_rx/baud_cnt_RNII4KI[10]:Y (f)
+               +     0.362          net: uart_byte_rx/baud_cnt8_NE_2
+  5.304                        uart_byte_rx/baud_cnt_RNIJ4RH1[2]:C (f)
+               +     0.664          cell: ADLIB:OR3
+  5.968                        uart_byte_rx/baud_cnt_RNIJ4RH1[2]:Y (f)
+               +     0.334          net: uart_byte_rx/baud_cnt8_NE_4
+  6.302                        uart_byte_rx/baud_cnt_RNI9P9G3[2]:C (f)
+               +     0.664          cell: ADLIB:OR3
+  6.966                        uart_byte_rx/baud_cnt_RNI9P9G3[2]:Y (f)
+               +     0.334          net: uart_byte_rx/baud_cnt8_NE_7
+  7.300                        uart_byte_rx/state_i_RNIPG6P5[0]:B (f)
+               +     0.607          cell: ADLIB:OA1
+  7.907                        uart_byte_rx/state_i_RNIPG6P5[0]:Y (f)
+               +     1.830          net: uart_byte_rx/baud_cnt_1_sqmuxa
+  9.737                        uart_byte_rx/baud_cnt_RNO[11]:C (f)
+               +     0.713          cell: ADLIB:XA1
+  10.450                       uart_byte_rx/baud_cnt_RNO[11]:Y (f)
+               +     0.362          net: uart_byte_rx/baud_cnt_n11
+  10.812                       uart_byte_rx/baud_cnt[11]:D (f)
+                                    
+  10.812                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+               +     0.000          net: sys_clk
+  N/C                          sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  N/C                          sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  N/C                          sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          sys_clk_pad/U0/U1:Y (r)
+               +     0.714          net: sys_clk_c
+  N/C                          uart_byte_rx/baud_cnt[11]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1
+  N/C                          uart_byte_rx/baud_cnt[11]:D
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                        rx
+  To:                          uart_byte_rx/state_i[0]:D
+  Delay (ns):                  5.958
+  Slack (ns):
+  Arrival (ns):                5.958
+  Required (ns):
+  Setup (ns):                  0.539
+  External Setup (ns):         4.454
+
+Path 2
+  From:                        rx
+  To:                          uart_byte_rx/state[1]:D
+  Delay (ns):                  5.485
+  Slack (ns):
+  Arrival (ns):                5.485
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         4.016
+
+Path 3
+  From:                        rx
+  To:                          uart_byte_rx/rx_data[6]:D
+  Delay (ns):                  4.349
+  Slack (ns):
+  Arrival (ns):                4.349
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.866
+
+Path 4
+  From:                        rx
+  To:                          uart_byte_rx/rx_data[2]:D
+  Delay (ns):                  4.349
+  Slack (ns):
+  Arrival (ns):                4.349
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.866
+
+Path 5
+  From:                        rx
+  To:                          uart_byte_rx/rx_data[1]:D
+  Delay (ns):                  4.074
+  Slack (ns):
+  Arrival (ns):                4.074
+  Required (ns):
+  Setup (ns):                  0.574
+  External Setup (ns):         2.593
+
+
+Expanded Path 1
+  From: rx
+  To: uart_byte_rx/state_i[0]:D
+  data required time                             N/C
+  data arrival time                          -   5.958
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        rx (r)
+               +     0.000          net: rx
+  0.000                        rx_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        rx_pad/U0/U0:Y (r)
+               +     0.000          net: rx_pad/U0/NET1
+  1.016                        rx_pad/U0/U1:YIN (r)
+               +     0.043          cell: ADLIB:IOIN_IB
+  1.059                        rx_pad/U0/U1:Y (r)
+               +     3.027          net: rx_c
+  4.086                        uart_byte_rx/state_i_RNO_1[0]:B (r)
+               +     0.464          cell: ADLIB:NOR3A
+  4.550                        uart_byte_rx/state_i_RNO_1[0]:Y (f)
+               +     0.323          net: uart_byte_rx/N_203
+  4.873                        uart_byte_rx/state_i_RNO[0]:C (f)
+               +     0.751          cell: ADLIB:OR3
+  5.624                        uart_byte_rx/state_i_RNO[0]:Y (f)
+               +     0.334          net: uart_byte_rx/N_147_i
+  5.958                        uart_byte_rx/state_i[0]:D (f)
+                                    
+  5.958                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+               +     0.000          net: sys_clk
+  N/C                          sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  N/C                          sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  N/C                          sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  N/C                          sys_clk_pad/U0/U1:Y (r)
+               +     0.679          net: sys_clk_c
+  N/C                          uart_byte_rx/state_i[0]:CLK (r)
+               -     0.539          Library setup time: ADLIB:DFN1
+  N/C                          uart_byte_rx/state_i[0]:D
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                        re:CLK
+  To:                          re
+  Delay (ns):                  6.759
+  Slack (ns):
+  Arrival (ns):                8.808
+  Required (ns):
+  Clock to Out (ns):           8.808
+
+Path 2
+  From:                        uart_byte_tx/tx:CLK
+  To:                          tx
+  Delay (ns):                  6.287
+  Slack (ns):
+  Arrival (ns):                8.352
+  Required (ns):
+  Clock to Out (ns):           8.352
+
+
+Expanded Path 1
+  From: re:CLK
+  To: re
+  data required time                             N/C
+  data arrival time                          -   8.808
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        sys_clk
+               +     0.000          Clock source
+  0.000                        sys_clk (r)
+               +     0.000          net: sys_clk
+  0.000                        sys_clk_pad/U0/U0:PAD (r)
+               +     1.016          cell: ADLIB:IOPAD_IN
+  1.016                        sys_clk_pad/U0/U0:Y (r)
+               +     0.000          net: sys_clk_pad/U0/NET1
+  1.016                        sys_clk_pad/U0/U1:A (r)
+               +     0.348          cell: ADLIB:CLKIO
+  1.364                        sys_clk_pad/U0/U1:Y (r)
+               +     0.685          net: sys_clk_c
+  2.049                        re:CLK (r)
+               +     0.737          cell: ADLIB:DFN1
+  2.786                        re:Q (f)
+               +     1.908          net: re_c
+  4.694                        re_pad/U0/U1:D (f)
+               +     0.582          cell: ADLIB:IOTRI_OB_EB
+  5.276                        re_pad/U0/U1:DOUT (f)
+               +     0.000          net: re_pad/U0/NET1
+  5.276                        re_pad/U0/U0:D (f)
+               +     3.532          cell: ADLIB:IOPAD_TRI
+  8.808                        re_pad/U0/U0:PAD (f)
+               +     0.000          net: re
+  8.808                        re (f)
+                                    
+  8.808                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          sys_clk
+               +     0.000          Clock source
+  N/C                          sys_clk (r)
+                                    
+  N/C                          re (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

@@ -1,0 +1,260 @@
+***************************************************************************
+                               Status Report
+                          Mon Mar 17 16:53:22 2025 ***************************************************************************
+
+Product: Designer
+Release: Libero SoC v11.8 SP2
+Version: 11.8.2.4
+File Name: C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\designer\impl1\uart_top_rev_2.adb
+Design Name: uart_top  Design State: layout
+Last Saved: Mon Mar 17 16:53:00 2025
+
+***** Device Data **************************************************
+
+Family: ProASIC3  Die: A3P250  Package: 100 VQFP
+Speed: STD  Voltage: 1.5
+
+Restrict JTAG Pins: YES
+Restrict Probe Pins: YES
+
+Junction Temperature Range:   COM
+Voltage Range:   COM
+
+***** Import Variables *********************************************
+
+Source File(s) Imported on Mon Mar 17 16:51:07 2025:
+        C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\rev_2\uart_top.edn
+
+
+***** CAE Variables ************************************************
+
+Back Annotation File: N/A
+
+
+***** Bitstream Variables ******************************************
+
+Bitstream File: N/A
+     Lock Mode: OFF
+
+
+***** Compile Variables ********************************************
+
+Netlist PIN properties overwrite existing properties: 0
+
+Compile Output:
+=====================================================================
+Parameters used to run compile:
+===============================
+
+Family      : ProASIC3
+Device      : A3P250
+Package     : 100 VQFP
+Source      : C:\Users\jycao\Desktop\1\code-graduationdesign\rs485\synthesis\rev_2\uart_top.edn
+Format      : EDIF
+Topcell     : uart_top
+Speed grade : STD
+Temp        : 0:25:70
+Voltage     : 1.58:1.50:1.42
+
+Keep Existing Physical Constraints : Yes
+Keep Existing Timing Constraints   : Yes
+
+pdc_abort_on_error                 : Yes
+pdc_eco_display_unmatched_objects  : No
+pdc_eco_max_warnings               : 10000
+
+demote_globals                     : No
+promote_globals                    : No
+localclock_max_shared_instances    : 12
+localclock_buffer_tree_max_fanout  : 12
+
+combine_register                   : No
+delete_buffer_tree                 : No
+
+report_high_fanout_nets_limit      : 10
+
+=====================================================================
+Compile starts ...
+
+
+Netlist Optimization Report
+===========================
+
+Optimized macros:
+  - Dangling net drivers:   0
+  - Buffers:                0
+  - Inverters:              0
+  - Tieoff:                 0
+  - Logic combining:        3
+
+    Total macros optimized  3
+
+There were 0 error(s) and 0 warning(s) in this design.
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
+Compile report:
+===============
+
+    CORE                       Used:    246  Total:   6144   (4.00%)
+    IO (W/ clocks)             Used:      4  Total:     68   (5.88%)
+    Differential IO            Used:      0  Total:     13   (0.00%)
+    GLOBAL (Chip+Quadrant)     Used:      1  Total:     18   (5.56%)
+    PLL                        Used:      0  Total:      1   (0.00%)
+    RAM/FIFO                   Used:      0  Total:      8   (0.00%)
+    Low Static ICC             Used:      0  Total:      1   (0.00%)
+    FlashROM                   Used:      0  Total:      1   (0.00%)
+    User JTAG                  Used:      0  Total:      1   (0.00%)
+
+Global Information:
+
+    Type            | Used   | Total
+    ----------------|--------|--------------
+    Chip global     | 1      | 6  (16.67%)*
+    Quadrant global | 0      | 12 (0.00%)
+
+    (*) Chip globals may be assigned to Quadrant globals using the Multi-View Navigator (MVN)
+        or Physical Design Constraints (PDC).
+        They may also be assigned to Quadrant globals automatically during Layout.
+
+Core Information:
+
+    Type    | Instances    | Core tiles
+    --------|--------------|-----------
+    COMB    | 158          | 158
+    SEQ     | 88           | 88
+
+I/O Function:
+
+    Type                                  | w/o register  | w/ register  | w/ DDR register
+    --------------------------------------|---------------|--------------|----------------
+    Input I/O                             | 2             | 0            | 0
+    Output I/O                            | 2             | 0            | 0
+    Bidirectional I/O                     | 0             | 0            | 0
+    Differential Input I/O Pairs          | 0             | 0            | 0
+    Differential Output I/O Pairs         | 0             | 0            | 0
+
+I/O Technology:
+
+                                    |   Voltages    |             I/Os
+    --------------------------------|-------|-------|-------|--------|--------------
+    I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
+    --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 2     | 2      | 0
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   0
+    UnPlaced:   4 ( 100.00% )
+
+Net information report:
+=======================
+
+The following nets have been assigned to a chip global resource:
+    Fanout  Type          Name
+    --------------------------
+    88      CLK_NET       Net   : sys_clk_c
+                          Driver: sys_clk_pad
+                          Source: NETLIST
+
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    16      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
+                          Driver: uart_byte_tx/uart_state_RNIMQV15
+    16      INT_NET       Net   : uart_byte_rx/baud_cnt_1_sqmuxa
+                          Driver: uart_byte_rx/state_i_RNIPG6P5[0]
+    11      INT_NET       Net   : send_en
+                          Driver: send_en
+    11      INT_NET       Net   : rx_c
+                          Driver: rx_pad
+    10      INT_NET       Net   : uart_byte_rx/state[4]
+                          Driver: uart_byte_rx/state[4]
+    9       INT_NET       Net   : Rx_Done_pos
+                          Driver: uart_byte_rx/Rx_Done_pos
+    9       INT_NET       Net   : uart_byte_tx/bps_cnt[2]
+                          Driver: uart_byte_tx/bps_cnt[2]
+    9       INT_NET       Net   : uart_byte_rx/bit_cnt[2]
+                          Driver: uart_byte_rx/bit_cnt[2]
+    8       INT_NET       Net   : uart_byte_rx/state[2]
+                          Driver: uart_byte_rx/state[2]
+    8       INT_NET       Net   : uart_byte_rx/rx_data15
+                          Driver: uart_byte_rx/sample_pulse_RNI1LDF
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    16      INT_NET       Net   : uart_byte_tx/div_cnt_1_sqmuxa
+                          Driver: uart_byte_tx/uart_state_RNIMQV15
+    16      INT_NET       Net   : uart_byte_rx/baud_cnt_1_sqmuxa
+                          Driver: uart_byte_rx/state_i_RNIPG6P5[0]
+    11      INT_NET       Net   : send_en
+                          Driver: send_en
+    11      INT_NET       Net   : rx_c
+                          Driver: rx_pad
+    10      INT_NET       Net   : uart_byte_rx/state[4]
+                          Driver: uart_byte_rx/state[4]
+    9       INT_NET       Net   : Rx_Done_pos
+                          Driver: uart_byte_rx/Rx_Done_pos
+    9       INT_NET       Net   : uart_byte_tx/bps_cnt[2]
+                          Driver: uart_byte_tx/bps_cnt[2]
+    9       INT_NET       Net   : uart_byte_rx/bit_cnt[2]
+                          Driver: uart_byte_rx/bit_cnt[2]
+    8       INT_NET       Net   : uart_byte_rx/state[2]
+                          Driver: uart_byte_rx/state[2]
+    8       INT_NET       Net   : uart_byte_rx/rx_data15
+                          Driver: uart_byte_rx/sample_pulse_RNI1LDF
+
+
+Layout Output:
+***** Layout Variables *********************************************
+
+Mode: TIMING_DRIVEN
+Power-driven Layout: OFF
+Incremental Placement: OFF
+Incremental Route: OFF
+
+
+
+Running I/O Bank Assigner.
+
+I/O Bank Assigner completed successfully.
+
+
+Planning global net placement...
+
+
+Global net placement completed successfully.
+
+                        o - o - o - o - o - o
+
+Timing-driven Placer Started: Mon Mar 17 16:53:11 2025
+
+Placer Finished: Mon Mar 17 16:53:13 2025
+Total Placer CPU Time:     00:00:02
+
+                        o - o - o - o - o - o
+
+
+Timing-driven Router 
+Design: uart_top_rev_2                  Started: Mon Mar 17 16:53:15 2025
+
+ 
+Iterative improvement...
+
+Timing-driven Router completed successfully.
+
+Design: uart_top_rev_2                  
+Finished: Mon Mar 17 16:53:19 2025
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:04
+Total Memory Usage: 168.2 Mbytes
+                        o - o - o - o - o - o
+
+
+

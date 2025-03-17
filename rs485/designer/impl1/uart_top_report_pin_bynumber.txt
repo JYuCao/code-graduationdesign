@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Fri Mar 07 19:27:17 2025 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Mar 17 16:53:24 2025 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: Libero SoC v11.8 SP2
 Version: 11.8.2.4
@@ -8,8 +8,8 @@ Family: ProASIC3
 Die: A3P250
 Package: 100 VQFP
 *****************************************************************
-Number |Port    |Function       |State       |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
--------|--------|---------------|------------|--------|------------------|-----|--------------|-----|-----------------|------------|--------------|
+Number |Port    |Function       |State       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------|--------|---------------|------------|---------|------------------|-----|--------------|-----|-----------------|------------|--------------|
 1                GND             Reserved
 2                GAA2/IO118UDB3  Special
 3                IO118VDB3       Unassigned
@@ -19,10 +19,10 @@ Number |Port    |Function       |State       |I/O Std |Output Drive (mA) |Slew |
 7                IO116VDB3       Unassigned
 8                IO112PSB3       Unassigned
 9                GND             Reserved
-10      sys_clk  GFB1/IO109PDB3  Special      LVTTL    ---                ---   None           ---   ---               No           No
+10               GFB1/IO109PDB3  Special
 11               GFB0/IO109NDB3  Special
 12               VCOMPLF         Reserved
-13               GFA0/IO108NPB3  Special
+13      sys_clk  GFA0/IO108NPB3  Special      LVCMOS33  ---                ---   None           ---   ---               No           No
 14               VCCPLF          Reserved
 15               GFA1/IO108PPB3  Special
 16               GFA2/IO107PSB3  Special
@@ -43,32 +43,32 @@ Number |Port    |Function       |State       |I/O Std |Output Drive (mA) |Slew |
 31               IO91RSB2        Unassigned
 32               IO90RSB2        Unassigned
 33               IO88RSB2        Unassigned
-34      rx       IO86RSB2        Assigned     LVTTL    ---                ---   None           ---   ---               No           No
+34               IO86RSB2        Unassigned
 35               IO85RSB2        Unassigned
-36      re       IO84RSB2        Assigned     LVTTL    12                 High  None           No    35                No           No
+36               IO84RSB2        Unassigned
 37               VCC             Reserved
 38               GND             Reserved
 39               VCCIB2          Reserved
 40               IO77RSB2        Unassigned
-41      tx       IO74RSB2        Assigned     LVTTL    12                 High  None           No    35                No           No
+41               IO74RSB2        Unassigned
 42               IO71RSB2        Unassigned
 43               GDC2/IO63RSB2   Special
 44               GDB2/IO62RSB2   Special
 45               GDA2/IO61RSB2   Special
 46               GNDQ            Reserved
-47      atck     TCK             Dedicated
-48      atdi     TDI             Dedicated
-49      atms     TMS             Dedicated
+47               TCK             Reserved
+48               TDI             Reserved
+49               TMS             Reserved
 50               VMV2            Reserved
 51               GND             Reserved
 52               VPUMP           Reserved
 53               Not Bonded      Unconnected
-54      atdo     TDO             Dedicated
-55      atrstb   TRST            Dedicated
+54               TDO             Reserved
+55               TRST            Reserved
 56               VJTAG           Reserved
-57               GDA1/IO60USB1   Special
-58               GDC0/IO58VDB1   Special
-59               GDC1/IO58UDB1   Special
+57      tx       GDA1/IO60USB1   Special      LVCMOS33  12                 High  None           No    35                No           No
+58      re       GDC0/IO58VDB1   Special      LVCMOS33  12                 High  None           No    35                No           No
+59      rx       GDC1/IO58UDB1   Special      LVCMOS33  ---                ---   None           ---   ---               No           No
 60               IO52NDB1        Unassigned
 61               GCB2/IO52PDB1   Special
 62               GCA1/IO50PDB1   Special

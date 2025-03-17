@@ -2,13 +2,13 @@
 module uart_top(
     sys_clk,    
     rx,
-    sys_rst_n,
+    //sys_rst_n,
     tx,   
     re    
 );
 
 	input sys_clk;
-	input sys_rst_n;
+	wire sys_rst_n;
     input rx;
     wire [2:0]baud_set;
 	
@@ -24,6 +24,8 @@ module uart_top(
 
     reg Rx_Done_r1, Rx_Done_r2;
     wire Rx_Done_pos;
+
+    assign sys_rst_n = 1;
 
     always@(posedge sys_clk or negedge sys_rst_n) begin
         if(!sys_rst_n) begin
