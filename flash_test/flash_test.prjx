@@ -30,12 +30,12 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\files\fpga\flash_test"
+KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "flash_a::work"
+KEY ActiveRoot "flash_c::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -43,48 +43,78 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\flash_a.ide_des,ide_des"
 STATE="utd"
-TIME="1737350644"
+TIME="1742201219"
 SIZE="183"
+ENDFILE
+VALUE "<project>\designer\impl1\flash_c.ide_des,ide_des"
+STATE="utd"
+TIME="1742369106"
+SIZE="216"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1737350643"
+TIME="1742201219"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1738028014"
-SIZE="10641"
+TIME="1742373273"
+SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1737974754"
-SIZE="2865"
+TIME="1742369958"
+SIZE="3136"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1737975035"
-SIZE="772"
+TIME="1742372807"
+SIZE="805"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_c_presynth_simulation.log,log"
 STATE="utd"
-TIME="1737975478"
-SIZE="3148"
+TIME="1742373285"
+SIZE="68"
 ENDFILE
 VALUE "<project>\simulation\tf_presynth_simulation.log,log"
 STATE="utd"
-TIME="1737974177"
+TIME="1742201219"
 SIZE="2611"
 ENDFILE
-VALUE "<project>\stimulus\tb_flashc.v,tb_hdl"
+VALUE "<project>\stimulus\tb_flash_c.v,tb_hdl"
 STATE="utd"
-TIME="1737974943"
-SIZE="1482"
+TIME="1742370344"
+SIZE="5332"
 ENDFILE
 VALUE "<project>\stimulus\test_tf.v,tb_hdl"
 STATE="utd"
-TIME="1737973907"
+TIME="1742201219"
 SIZE="4242"
+ENDFILE
+VALUE "<project>\synthesis\flash_c.edn,syn_edn"
+STATE="ood"
+TIME="1742369904"
+SIZE="5283957"
+ENDFILE
+VALUE "<project>\synthesis\flash_c.so,so"
+STATE="utd"
+TIME="1742369904"
+SIZE="241"
+ENDFILE
+VALUE "<project>\synthesis\flash_c_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1742369903"
+SIZE="396"
+ENDFILE
+VALUE "<project>\synthesis\flash_c_syn.prj,prj"
+STATE="utd"
+TIME="1742369905"
+SIZE="1893"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1742369122"
+SIZE="159"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -209,13 +239,14 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;flash_c:tb_flash_c_presynth_simulation.log
+ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
 HDL;stimulus\test_tf.v;0
 HDL;hdl\flash_b.v;0
 HDL;hdl\flash_c.v;0
 HDL;stimulus\tb_flashc.v;0
-ACTIVEVIEW;stimulus\tb_flashc.v
+HDL;stimulus\tb_flash_c.v;0
+ACTIVEVIEW;stimulus\tb_flash_c.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
@@ -226,7 +257,7 @@ ENDLIST
 LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
-LIST "tb_flash_c::work","stimulus\tb_flashc.v","FALSE","TRUE"
+LIST "tb_flash_c::work","stimulus\tb_flash_c.v","FALSE","TRUE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
 LIST "tf::work","stimulus\test_tf.v","FALSE","TRUE"

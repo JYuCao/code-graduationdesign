@@ -15,7 +15,7 @@ module flash_c(
     output reg         write,
     output reg         done,
     output reg         error,
-    output wire  [3:0]  cs
+    output wire  [3:0]  cs,
 
     // Flash interface
 	input  wire        flash_q,
@@ -35,7 +35,12 @@ module flash_c(
     wire [7:0] flash_dout [15:0];
 
     wire [15:0] flash_s_n_array;
-    assign flash_s_n = flash_s_n_array[chip_select];
+
+    wire [15:0] flash_c_array;
+    wire [15:0] flash_d_array;
+    
+    assign flash_c = flash_c_array[chip_select];
+    assign flash_d = flash_d_array[chip_select];
 
     genvar i;
     generate
@@ -55,9 +60,9 @@ module flash_c(
                 .done(flash_done[i]),
                 .error(flash_error[i]),
                 .flash_q(flash_q),
-                .flash_c(flash_c),
+                .flash_c(flash_c_array[i]),
                 .flash_s_n(flash_s_n_array[i]),
-                .flash_d(flash_d)
+                .flash_d(flash_d_array[i])
             );
         end
     endgenerate

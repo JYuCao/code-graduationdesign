@@ -141,7 +141,8 @@ always @(posedge clk) begin
 					state <= s_read1;
                     count_a <= {16'h0000, addr[27:16]};
 					count_b <= length;
-                    count_c <= 30'h20000000;
+                    //count_c <= 30'h20000000;
+                    count_c <= 30'h00001000;
 				end
 			end
 

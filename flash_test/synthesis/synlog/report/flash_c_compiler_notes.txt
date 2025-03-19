@@ -1,0 +1,12 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+@N: CG364 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+@N: CL201 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_a.v":66:0:66:5|Trying to extract state machine for register state.
+@N: CL201 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_c.v":74:4:74:9|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_c.v":3:7:3:13|Selected library: work cell: flash_c view verilog as top level
+@N: NF107 :"C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\hdl\flash_c.v":3:7:3:13|Selected library: work cell: flash_c view verilog as top level
+

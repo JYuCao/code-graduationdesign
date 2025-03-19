@@ -1,0 +1,1373 @@
+----------------------------------------------------------------------
+Report for cell flash_c.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                               BUFF        13       1.0       13.0
+                             CLKBUF         1       0.0        0.0
+                             CLKINT         3       0.0        0.0
+                               DFN1         5       1.0        5.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                              INBUF        61       0.0        0.0
+                               NOR2         1       1.0        1.0
+                              NOR2A         1       1.0        1.0
+                              NOR3A         1       1.0        1.0
+                               OA1A         1       1.0        1.0
+                             OUTBUF        18       0.0        0.0
+                                VCC         1       0.0        0.0
+                         flash_b_15         1     781.0      781.0
+                       flash_b_15_0         1     758.0      758.0
+                       flash_b_15_1         1     761.0      761.0
+                      flash_b_15_10         1     768.0      768.0
+                      flash_b_15_11         1     758.0      758.0
+                      flash_b_15_12         1     755.0      755.0
+                      flash_b_15_13         1     757.0      757.0
+                      flash_b_15_14         1     774.0      774.0
+                       flash_b_15_2         1    1011.0     1011.0
+                       flash_b_15_3         1     789.0      789.0
+                       flash_b_15_4         1     762.0      762.0
+                       flash_b_15_5         1     763.0      763.0
+                       flash_b_15_6         1     760.0      760.0
+                       flash_b_15_7         1     768.0      768.0
+                       flash_b_15_8         1     770.0      770.0
+                       flash_b_15_9         1     759.0      759.0
+                            
+                         TOTAL            131              12524.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_14.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[6].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        15       1.0       15.0
+                                AO1        20       1.0       20.0
+                               AO1A         7       1.0        7.0
+                               AO1B         2       1.0        2.0
+                               AO1D         5       1.0        5.0
+                              AOI1B         2       1.0        2.0
+                                AX1         2       1.0        2.0
+                               AX1B         4       1.0        4.0
+                               AX1D         4       1.0        4.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        27       1.0       27.0
+                               MX2A         6       1.0        6.0
+                               MX2B         2       1.0        2.0
+                               NOR2        42       1.0       42.0
+                              NOR2A        77       1.0       77.0
+                              NOR2B        53       1.0       53.0
+                               NOR3        20       1.0       20.0
+                              NOR3A        34       1.0       34.0
+                              NOR3B        28       1.0       28.0
+                              NOR3C        36       1.0       36.0
+                                OA1         3       1.0        3.0
+                               OA1A         2       1.0        2.0
+                               OA1B         9       1.0        9.0
+                               OA1C         6       1.0        6.0
+                                OR2        30       1.0       30.0
+                               OR2A        11       1.0       11.0
+                               OR2B         3       1.0        3.0
+                                OR3        36       1.0       36.0
+                               OR3A         4       1.0        4.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1B         7       1.0        7.0
+                               XA1C         6       1.0        6.0
+                              XNOR2         4       1.0        4.0
+                               XO1A         1       1.0        1.0
+                               XOR2        35       1.0       35.0
+                               ZOR3         1       1.0        1.0
+                      flash_a_15_14         1     123.0      123.0
+                            
+                         TOTAL            654                774.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_14.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[6].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        21       1.0       21.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         3       1.0        3.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            125                123.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_13.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[2].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        15       1.0       15.0
+                                AO1        26       1.0       26.0
+                               AO1A        14       1.0       14.0
+                               AO1B         1       1.0        1.0
+                               AO1D         8       1.0        8.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         2       1.0        2.0
+                               AX1B         3       1.0        3.0
+                               AX1D         5       1.0        5.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         7       1.0        7.0
+                               MX2B         2       1.0        2.0
+                               NOR2        34       1.0       34.0
+                              NOR2A        67       1.0       67.0
+                              NOR2B        59       1.0       59.0
+                               NOR3        16       1.0       16.0
+                              NOR3A        28       1.0       28.0
+                              NOR3B        34       1.0       34.0
+                              NOR3C        23       1.0       23.0
+                                OA1         7       1.0        7.0
+                               OA1A         2       1.0        2.0
+                               OA1B        11       1.0       11.0
+                               OA1C         3       1.0        3.0
+                                OR2        23       1.0       23.0
+                               OR2A        10       1.0       10.0
+                               OR2B         4       1.0        4.0
+                                OR3        32       1.0       32.0
+                               OR3A         7       1.0        7.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         2       1.0        2.0
+                               XA1B        12       1.0       12.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        28       1.0       28.0
+                               ZOR3         1       1.0        1.0
+                      flash_a_15_13         1     123.0      123.0
+                            
+                         TOTAL            637                757.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_13.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[2].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         4       1.0        4.0
+                                AO1         3       1.0        3.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        23       1.0       23.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1A         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         6       1.0        6.0
+                               OR2A         2       1.0        2.0
+                               OR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            125                123.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_12.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[7].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        12       1.0       12.0
+                                AO1        19       1.0       19.0
+                               AO1A        12       1.0       12.0
+                               AO1B         2       1.0        2.0
+                               AO1D         9       1.0        9.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                                AX1         2       1.0        2.0
+                               AX1B         4       1.0        4.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                             CLKINT         1       0.0        0.0
+                               DFN1        41       1.0       41.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        27       1.0       27.0
+                               MX2A         6       1.0        6.0
+                               MX2B         1       1.0        1.0
+                               NOR2        39       1.0       39.0
+                              NOR2A        66       1.0       66.0
+                              NOR2B        56       1.0       56.0
+                               NOR3        18       1.0       18.0
+                              NOR3A        28       1.0       28.0
+                              NOR3B        26       1.0       26.0
+                              NOR3C        33       1.0       33.0
+                                OA1        10       1.0       10.0
+                               OA1A         3       1.0        3.0
+                               OA1B         5       1.0        5.0
+                               OA1C        14       1.0       14.0
+                                OR2        19       1.0       19.0
+                               OR2A         9       1.0        9.0
+                               OR2B         4       1.0        4.0
+                                OR3        37       1.0       37.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                               XA1B        10       1.0       10.0
+                               XA1C        11       1.0       11.0
+                              XNOR2         2       1.0        2.0
+                               XO1A         1       1.0        1.0
+                               XOR2        27       1.0       27.0
+                               ZOR3         1       1.0        1.0
+                      flash_a_15_12         1     122.0      122.0
+                            
+                         TOTAL            637                755.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_12.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[7].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         3       1.0        3.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        22       1.0       22.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         3       1.0        3.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         6       1.0        6.0
+                               OR2A         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            124                122.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_11.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[13].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        16       1.0       16.0
+                               AO1A         9       1.0        9.0
+                               AO1B         2       1.0        2.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         3       1.0        3.0
+                               AX1C         1       1.0        1.0
+                               AX1D         7       1.0        7.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         9       1.0        9.0
+                               NOR2        42       1.0       42.0
+                              NOR2A        76       1.0       76.0
+                              NOR2B        59       1.0       59.0
+                               NOR3        22       1.0       22.0
+                              NOR3A        30       1.0       30.0
+                              NOR3B        25       1.0       25.0
+                              NOR3C        27       1.0       27.0
+                                OA1        12       1.0       12.0
+                               OA1A         2       1.0        2.0
+                               OA1B         4       1.0        4.0
+                               OA1C         4       1.0        4.0
+                                OR2        28       1.0       28.0
+                               OR2A         9       1.0        9.0
+                               OR2B         4       1.0        4.0
+                                OR3        35       1.0       35.0
+                               OR3A         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                               XA1B        11       1.0       11.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         4       1.0        4.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                      flash_a_15_11         1     123.0      123.0
+                            
+                         TOTAL            638                758.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_11.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[13].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         5       1.0        5.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         3       1.0        3.0
+                              NOR2A        20       1.0       20.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                               OR2B         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            125                123.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_10.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[15].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        16       1.0       16.0
+                               AO1A         6       1.0        6.0
+                               AO1B         2       1.0        2.0
+                               AO1D         1       1.0        1.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                                AX1         2       1.0        2.0
+                               AX1B         3       1.0        3.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                              AXOI5         1       1.0        1.0
+                               DFN1        41       1.0       41.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        27       1.0       27.0
+                               MX2A         7       1.0        7.0
+                               MX2B         1       1.0        1.0
+                               NOR2        41       1.0       41.0
+                              NOR2A        77       1.0       77.0
+                              NOR2B        50       1.0       50.0
+                               NOR3        25       1.0       25.0
+                              NOR3A        36       1.0       36.0
+                              NOR3B        27       1.0       27.0
+                              NOR3C        35       1.0       35.0
+                                OA1        11       1.0       11.0
+                               OA1A         2       1.0        2.0
+                               OA1B         4       1.0        4.0
+                               OA1C         3       1.0        3.0
+                                OR2        28       1.0       28.0
+                               OR2A        10       1.0       10.0
+                               OR2B         4       1.0        4.0
+                                OR3        37       1.0       37.0
+                               OR3A         4       1.0        4.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         1       1.0        1.0
+                               XA1B        10       1.0       10.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        28       1.0       28.0
+                      flash_a_15_10         1     127.0      127.0
+                            
+                         TOTAL            644                768.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_10.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[15].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         5       1.0        5.0
+                                AO1         2       1.0        2.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         6       1.0        6.0
+                              NOR2A        25       1.0       25.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         1       1.0        1.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1B         1       1.0        1.0
+                               OA1C         1       1.0        1.0
+                                OR2         8       1.0        8.0
+                               OR2A         3       1.0        3.0
+                               OR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            129                127.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_9.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[10].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        12       1.0       12.0
+                                AO1        20       1.0       20.0
+                               AO1A         5       1.0        5.0
+                               AO1B         2       1.0        2.0
+                               AO1D         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         2       1.0        2.0
+                               AX1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                               AX1D         7       1.0        7.0
+                              AXOI5         1       1.0        1.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         9       1.0        9.0
+                               NOR2        38       1.0       38.0
+                              NOR2A        73       1.0       73.0
+                              NOR2B        52       1.0       52.0
+                               NOR3        23       1.0       23.0
+                              NOR3A        39       1.0       39.0
+                              NOR3B        29       1.0       29.0
+                              NOR3C        34       1.0       34.0
+                                OA1        10       1.0       10.0
+                               OA1A         2       1.0        2.0
+                               OA1B         4       1.0        4.0
+                               OA1C         3       1.0        3.0
+                                OR2        22       1.0       22.0
+                               OR2A         9       1.0        9.0
+                               OR2B         5       1.0        5.0
+                                OR3        38       1.0       38.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         1       1.0        1.0
+                               XA1B        10       1.0       10.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_9         1     122.0      122.0
+                            
+                         TOTAL            640                759.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_9.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[10].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         5       1.0        5.0
+                               AO1A         1       1.0        1.0
+                               AX1D         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         2       1.0        2.0
+                              NOR2A        19       1.0       19.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                               OR2B         2       1.0        2.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            124                122.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_8.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[1].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        14       1.0       14.0
+                                AO1        19       1.0       19.0
+                               AO1A        10       1.0       10.0
+                               AO1B         1       1.0        1.0
+                               AO1C         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         2       1.0        2.0
+                               AX1B         1       1.0        1.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         7       1.0        7.0
+                               MX2B         1       1.0        1.0
+                               NOR2        50       1.0       50.0
+                              NOR2A        80       1.0       80.0
+                              NOR2B        66       1.0       66.0
+                               NOR3        22       1.0       22.0
+                              NOR3A        27       1.0       27.0
+                              NOR3B        20       1.0       20.0
+                              NOR3C        24       1.0       24.0
+                                OA1        12       1.0       12.0
+                               OA1B         6       1.0        6.0
+                               OA1C         6       1.0        6.0
+                                OR2        22       1.0       22.0
+                               OR2A        10       1.0       10.0
+                               OR2B         3       1.0        3.0
+                                OR3        36       1.0       36.0
+                               OR3A         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                               XA1B        10       1.0       10.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         5       1.0        5.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_8         1     128.0      128.0
+                            
+                         TOTAL            645                770.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_8.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[1].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         5       1.0        5.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        22       1.0       22.0
+                              NOR2B         4       1.0        4.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         1       1.0        1.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         7       1.0        7.0
+                               OR2A         2       1.0        2.0
+                               OR2B         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            130                128.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_7.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[4].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        14       1.0       14.0
+                                AO1        20       1.0       20.0
+                               AO1A        16       1.0       16.0
+                               AO1B         2       1.0        2.0
+                               AO1D         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         3       1.0        3.0
+                               AX1C         1       1.0        1.0
+                               AX1D         7       1.0        7.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         9       1.0        9.0
+                               NOR2        42       1.0       42.0
+                              NOR2A        71       1.0       71.0
+                              NOR2B        61       1.0       61.0
+                               NOR3        18       1.0       18.0
+                              NOR3A        26       1.0       26.0
+                              NOR3B        27       1.0       27.0
+                              NOR3C        35       1.0       35.0
+                                OA1         4       1.0        4.0
+                               OA1A         1       1.0        1.0
+                               OA1B         8       1.0        8.0
+                               OA1C         4       1.0        4.0
+                                OR2        31       1.0       31.0
+                               OR2A        11       1.0       11.0
+                               OR2B         5       1.0        5.0
+                                OR3        34       1.0       34.0
+                               OR3A         4       1.0        4.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1B        11       1.0       11.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_7         1     123.0      123.0
+                            
+                         TOTAL            648                768.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_7.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[4].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         3       1.0        3.0
+                              NOR2A        20       1.0       20.0
+                              NOR2B         4       1.0        4.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         3       1.0        3.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                               OR2B         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            125                123.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_6.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[12].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        24       1.0       24.0
+                               AO1A         5       1.0        5.0
+                               AO1B         2       1.0        2.0
+                               AO1D         6       1.0        6.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                               AX1D         4       1.0        4.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         6       1.0        6.0
+                               MX2B         1       1.0        1.0
+                               NOR2        33       1.0       33.0
+                              NOR2A        72       1.0       72.0
+                              NOR2B        56       1.0       56.0
+                               NOR3        23       1.0       23.0
+                              NOR3A        34       1.0       34.0
+                              NOR3B        30       1.0       30.0
+                              NOR3C        26       1.0       26.0
+                                OA1         8       1.0        8.0
+                               OA1A         1       1.0        1.0
+                               OA1B         9       1.0        9.0
+                               OA1C         5       1.0        5.0
+                                OR2        31       1.0       31.0
+                               OR2A        10       1.0       10.0
+                               OR2B         4       1.0        4.0
+                                OR3        32       1.0       32.0
+                               OR3A         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1B        12       1.0       12.0
+                               XA1C         8       1.0        8.0
+                              XNOR2         4       1.0        4.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_6         1     125.0      125.0
+                            
+                         TOTAL            638                760.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_6.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[12].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        21       1.0       21.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         3       1.0        3.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         6       1.0        6.0
+                               OR2A         2       1.0        2.0
+                               OR2B         1       1.0        1.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            127                125.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_5.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[14].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        20       1.0       20.0
+                               AO1A         7       1.0        7.0
+                               AO1B         2       1.0        2.0
+                               AO1D         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         3       1.0        3.0
+                               AX1D         6       1.0        6.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        27       1.0       27.0
+                               MX2A         9       1.0        9.0
+                               NOR2        44       1.0       44.0
+                              NOR2A        67       1.0       67.0
+                              NOR2B        72       1.0       72.0
+                               NOR3        27       1.0       27.0
+                              NOR3A        31       1.0       31.0
+                              NOR3B        27       1.0       27.0
+                              NOR3C        24       1.0       24.0
+                                OA1         6       1.0        6.0
+                               OA1A         2       1.0        2.0
+                               OA1B         4       1.0        4.0
+                               OA1C         3       1.0        3.0
+                                OR2        27       1.0       27.0
+                               OR2A        10       1.0       10.0
+                               OR2B         4       1.0        4.0
+                                OR3        36       1.0       36.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         2       1.0        2.0
+                               XA1B        13       1.0       13.0
+                               XA1C         8       1.0        8.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_5         1     119.0      119.0
+                            
+                         TOTAL            647                763.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_5.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[14].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               AX1D         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         2       1.0        2.0
+                              NOR2A        19       1.0       19.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         4       1.0        4.0
+                               OR2A         3       1.0        3.0
+                               OR2B         2       1.0        2.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            121                119.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_4.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[5].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        18       1.0       18.0
+                               AO1A         8       1.0        8.0
+                               AO1B         2       1.0        2.0
+                               AO1D         8       1.0        8.0
+                              AOI1B         1       1.0        1.0
+                                AX1         2       1.0        2.0
+                               AX1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                              AXOI5         1       1.0        1.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         9       1.0        9.0
+                               NOR2        35       1.0       35.0
+                              NOR2A        75       1.0       75.0
+                              NOR2B        60       1.0       60.0
+                               NOR3        15       1.0       15.0
+                              NOR3A        23       1.0       23.0
+                              NOR3B        25       1.0       25.0
+                              NOR3C        33       1.0       33.0
+                                OA1         8       1.0        8.0
+                               OA1A         1       1.0        1.0
+                               OA1B        12       1.0       12.0
+                               OA1C         3       1.0        3.0
+                                OR2        30       1.0       30.0
+                               OR2A        11       1.0       11.0
+                               OR2B         4       1.0        4.0
+                                OR3        35       1.0       35.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         1       1.0        1.0
+                               XA1B        10       1.0       10.0
+                               XA1C         8       1.0        8.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        32       1.0       32.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_4         1     127.0      127.0
+                            
+                         TOTAL            638                762.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_4.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[5].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         4       1.0        4.0
+                                AO1         3       1.0        3.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        25       1.0       25.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         1       1.0        1.0
+                                OR2         6       1.0        6.0
+                               OR2A         3       1.0        3.0
+                               OR2B         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            129                127.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_3.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[8].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        20       1.0       20.0
+                                AO1        24       1.0       24.0
+                               AO1A        10       1.0       10.0
+                               AO1B         2       1.0        2.0
+                               AO1D         2       1.0        2.0
+                               AOI1         4       1.0        4.0
+                              AOI1B         6       1.0        6.0
+                                AX1         2       1.0        2.0
+                               AX1B         1       1.0        1.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        27       1.0       27.0
+                               MX2A         6       1.0        6.0
+                               MX2B         1       1.0        1.0
+                               NOR2        45       1.0       45.0
+                              NOR2A        79       1.0       79.0
+                              NOR2B        52       1.0       52.0
+                               NOR3        22       1.0       22.0
+                              NOR3A        31       1.0       31.0
+                              NOR3B        27       1.0       27.0
+                              NOR3C        30       1.0       30.0
+                                OA1        10       1.0       10.0
+                               OA1A         3       1.0        3.0
+                               OA1B        11       1.0       11.0
+                               OA1C         4       1.0        4.0
+                                OR2        26       1.0       26.0
+                               OR2A        10       1.0       10.0
+                               OR2B         3       1.0        3.0
+                                OR3        38       1.0       38.0
+                               OR3A         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1C         1       1.0        1.0
+                              XNOR2         8       1.0        8.0
+                               XOR2        42       1.0       42.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_3         1     121.0      121.0
+                            
+                         TOTAL            671                789.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_3.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[8].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         3       1.0        3.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        21       1.0       21.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         3       1.0        3.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         3       1.0        3.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            123                121.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_2.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[11].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        15       1.0       15.0
+                                AO1        13       1.0       13.0
+                               AO1A        14       1.0       14.0
+                               AO1B         2       1.0        2.0
+                               AO1D         7       1.0        7.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         2       1.0        2.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         9       1.0        9.0
+                               NOR2        41       1.0       41.0
+                              NOR2A        76       1.0       76.0
+                              NOR2B        59       1.0       59.0
+                               NOR3        18       1.0       18.0
+                              NOR3A        21       1.0       21.0
+                              NOR3B        26       1.0       26.0
+                              NOR3C        33       1.0       33.0
+                                OA1         7       1.0        7.0
+                               OA1A         3       1.0        3.0
+                               OA1B        10       1.0       10.0
+                               OA1C         5       1.0        5.0
+                                OR2        28       1.0       28.0
+                               OR2A         8       1.0        8.0
+                               OR2B         5       1.0        5.0
+                                OR3        39       1.0       39.0
+                               OR3A         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1B        12       1.0       12.0
+                               XA1C         9       1.0        9.0
+                              XNOR2         4       1.0        4.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_2         1     369.0      369.0
+                            
+                         TOTAL            645               1011.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_2.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[11].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         5       1.0        5.0
+                                AO1         4       1.0        4.0
+                               AO1A         2       1.0        2.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2       208       1.0      208.0
+                               MX2A         1       1.0        1.0
+                               MX2C        20       1.0       20.0
+                               NOR2         5       1.0        5.0
+                              NOR2A        24       1.0       24.0
+                              NOR2B        30       1.0       30.0
+                               NOR3         4       1.0        4.0
+                              NOR3A         1       1.0        1.0
+                              NOR3B         5       1.0        5.0
+                              NOR3C         2       1.0        2.0
+                               OA1C         3       1.0        3.0
+                                OR2         6       1.0        6.0
+                               OR2A         2       1.0        2.0
+                               OR2B         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                              XAI1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            371                369.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_1.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[3].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        13       1.0       13.0
+                                AO1        18       1.0       18.0
+                               AO1A        10       1.0       10.0
+                               AO1B         2       1.0        2.0
+                               AO1D         1       1.0        1.0
+                               AOI1         1       1.0        1.0
+                              AOI1B         2       1.0        2.0
+                                AX1         1       1.0        1.0
+                               AX1B         3       1.0        3.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                             CLKINT         1       0.0        0.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         8       1.0        8.0
+                               MX2B         1       1.0        1.0
+                               NOR2        38       1.0       38.0
+                              NOR2A        71       1.0       71.0
+                              NOR2B        53       1.0       53.0
+                               NOR3        27       1.0       27.0
+                              NOR3A        34       1.0       34.0
+                              NOR3B        26       1.0       26.0
+                              NOR3C        35       1.0       35.0
+                                OA1        11       1.0       11.0
+                               OA1A         1       1.0        1.0
+                               OA1B         3       1.0        3.0
+                               OA1C         4       1.0        4.0
+                               OAI1         1       1.0        1.0
+                                OR2        24       1.0       24.0
+                               OR2A         9       1.0        9.0
+                               OR2B         4       1.0        4.0
+                                OR3        34       1.0       34.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1A         2       1.0        2.0
+                               XA1B        12       1.0       12.0
+                               XA1C        10       1.0       10.0
+                              XNOR2         2       1.0        2.0
+                               XO1A         1       1.0        1.0
+                               XOR2        28       1.0       28.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_1         1     125.0      125.0
+                            
+                         TOTAL            640                761.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_1.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[3].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        21       1.0       21.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         3       1.0        3.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         6       1.0        6.0
+                               OR2A         3       1.0        3.0
+                                OR3         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            127                125.0
+----------------------------------------------------------------------
+Report for cell flash_b_15_0.netlist
+  Original Cell name flash_b_15
+     Instance path:  flash_array[9].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        16       1.0       16.0
+                                AO1        19       1.0       19.0
+                               AO1A         9       1.0        9.0
+                               AO1B         2       1.0        2.0
+                               AO1D         6       1.0        6.0
+                              AOI1B         1       1.0        1.0
+                                AX1         1       1.0        1.0
+                               AX1B         1       1.0        1.0
+                               AX1C         1       1.0        1.0
+                               AX1D         6       1.0        6.0
+                               DFN1        42       1.0       42.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        61       1.0       61.0
+                                GND         1       0.0        0.0
+                                MX2        26       1.0       26.0
+                               MX2A         8       1.0        8.0
+                               MX2B         1       1.0        1.0
+                               NOR2        35       1.0       35.0
+                              NOR2A        74       1.0       74.0
+                              NOR2B        52       1.0       52.0
+                               NOR3        21       1.0       21.0
+                              NOR3A        28       1.0       28.0
+                              NOR3B        29       1.0       29.0
+                              NOR3C        27       1.0       27.0
+                                OA1         9       1.0        9.0
+                               OA1A         2       1.0        2.0
+                               OA1B        10       1.0       10.0
+                               OA1C         4       1.0        4.0
+                                OR2        29       1.0       29.0
+                               OR2A        10       1.0       10.0
+                               OR2B         5       1.0        5.0
+                                OR3        34       1.0       34.0
+                               OR3A         5       1.0        5.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XA1B        11       1.0       11.0
+                               XA1C        11       1.0       11.0
+                              XNOR2         3       1.0        3.0
+                               XO1A         1       1.0        1.0
+                               XOR2        30       1.0       30.0
+                               ZOR3         1       1.0        1.0
+                       flash_a_15_0         1     123.0      123.0
+                            
+                         TOTAL            638                758.0
+----------------------------------------------------------------------
+Report for cell flash_a_15_0.netlist
+  Original Cell name flash_a_15
+     Instance path:  flash_array[9].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         5       1.0        5.0
+                               AO1A         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        20       1.0       20.0
+                               MX2A         1       1.0        1.0
+                               NOR2         3       1.0        3.0
+                              NOR2A        20       1.0       20.0
+                              NOR2B         3       1.0        3.0
+                               NOR3         2       1.0        2.0
+                              NOR3A         2       1.0        2.0
+                              NOR3B         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         5       1.0        5.0
+                               OR2A         4       1.0        4.0
+                                OR3         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                               XA1B         1       1.0        1.0
+                                XO1         1       1.0        1.0
+                               XO1A         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            125                123.0
+----------------------------------------------------------------------
+Report for cell flash_b_15.netlist
+  Original Cell name flash_b
+     Instance path:  flash_array[0].flash_inst
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2        12       1.0       12.0
+                                AO1        44       1.0       44.0
+                               AO1A        10       1.0       10.0
+                               AO1B         1       1.0        1.0
+                              AOI1B         1       1.0        1.0
+                               AX1A         2       1.0        2.0
+                               AX1B         1       1.0        1.0
+                               AX1D         3       1.0        3.0
+                               DFN1        43       1.0       43.0
+                             DFN1E0         3       1.0        3.0
+                             DFN1E1        62       1.0       62.0
+                                GND         1       0.0        0.0
+                                MX2         6       1.0        6.0
+                               MX2A        11       1.0       11.0
+                               NOR2        26       1.0       26.0
+                              NOR2A        56       1.0       56.0
+                              NOR2B        73       1.0       73.0
+                               NOR3        10       1.0       10.0
+                              NOR3A        22       1.0       22.0
+                              NOR3B        47       1.0       47.0
+                              NOR3C        16       1.0       16.0
+                                OA1         4       1.0        4.0
+                               OA1A         4       1.0        4.0
+                               OA1B         6       1.0        6.0
+                               OA1C         2       1.0        2.0
+                                OR2        50       1.0       50.0
+                               OR2A        14       1.0       14.0
+                               OR2B         3       1.0        3.0
+                                OR3        40       1.0       40.0
+                               OR3A         6       1.0        6.0
+                                VCC         1       0.0        0.0
+                                XA1         2       1.0        2.0
+                               XA1A         1       1.0        1.0
+                               XA1B        12       1.0       12.0
+                               XA1C        17       1.0       17.0
+                              XNOR2         5       1.0        5.0
+                               XO1A         1       1.0        1.0
+                               XOR2        25       1.0       25.0
+                         flash_a_15         1     140.0      140.0
+                            
+                         TOTAL            644                781.0
+----------------------------------------------------------------------
+Report for cell flash_a_15.netlist
+  Original Cell name flash_a
+     Instance path:  flash_array[0].flash_inst.f0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               AND2         3       1.0        3.0
+                                AO1         4       1.0        4.0
+                               AO1A         4       1.0        4.0
+                               AX1D         1       1.0        1.0
+                               DFN1        22       1.0       22.0
+                             DFN1E0         4       1.0        4.0
+                             DFN1E1         8       1.0        8.0
+                                GND         1       0.0        0.0
+                                MX2        19       1.0       19.0
+                               MX2A         1       1.0        1.0
+                               NOR2         4       1.0        4.0
+                              NOR2A        20       1.0       20.0
+                              NOR2B         9       1.0        9.0
+                               NOR3         3       1.0        3.0
+                              NOR3A         5       1.0        5.0
+                              NOR3B         6       1.0        6.0
+                              NOR3C         2       1.0        2.0
+                               OA1B         1       1.0        1.0
+                               OA1C         3       1.0        3.0
+                                OR2         4       1.0        4.0
+                               OR2A         1       1.0        1.0
+                               OR2B         3       1.0        3.0
+                                OR3         1       1.0        1.0
+                               OR3A         1       1.0        1.0
+                                VCC         1       0.0        0.0
+                                XA1         1       1.0        1.0
+                               XAI1         1       1.0        1.0
+                               XOR2         9       1.0        9.0
+                            
+                         TOTAL            142                140.0

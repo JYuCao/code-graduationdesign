@@ -1,0 +1,1 @@
+@W: MT530 :"c:\users\jycao\desktop\1\code-graduationdesign\flash_test\hdl\flash_a.v":66:0:66:5|Found inferred clock flash_c|clk which controls 3006 sequential elements including flash_array\[0\]\.flash_inst.f0.state[6:0]. This clock has no specified timing constraint which may adversely impact design performance. 

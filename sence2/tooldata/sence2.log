@@ -1,0 +1,16 @@
+Project Name: sence2
+Location: C:\Users\jycao\Desktop\1\code-graduationdesign\sence2
+Description: 
+Preferred HDL Type: Verilog
+
+#-----------------------------------------------------
+                  Device Details
+#-----------------------------------------------------
+
+Part Number    : A3P030-VQ100
+Family         : ProASIC3
+Die            : A3P030
+Package        : 100 VQFP
+Speed          : STD
+Core Voltage   : 1.5
+Range          : COM
