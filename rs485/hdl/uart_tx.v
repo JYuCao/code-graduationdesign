@@ -39,7 +39,7 @@ module uart_tx(
             uart_state <= 1'b0;
         else if(send_en)
             uart_state <= 1'b1;
-        else if(bps_cnt == 4'd11)
+        else if(bps_cnt == 4'd10 && bps_sys_clk)
             uart_state <= 1'b0;
 	
 	always@(posedge sys_clk or negedge sys_rst_n)
@@ -91,17 +91,21 @@ module uart_tx(
 	always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)	
             bps_cnt <= 4'd0;
-        else if(bps_cnt == 4'd11)
-            bps_cnt <= 4'd0;
-        else if(bps_sys_clk)
-            bps_cnt <= bps_cnt + 1'b1;
+        else if(uart_state) begin  // 在发送状态时计数
+            if(bps_sys_clk) begin
+                if(bps_cnt == 4'd10)  // 修改计数上限
+                    bps_cnt <= 4'd0;
+                else
+                    bps_cnt <= bps_cnt + 1'b1;
+            end
+        end
         else
-            bps_cnt <= bps_cnt;
+            bps_cnt <= 4'd0;
 		
-	always@(posedge sys_clk or negedge sys_rst_n)
+    always@(posedge sys_clk or negedge sys_rst_n)
         if(!sys_rst_n)
             Tx_Done <= 1'b0;
-        else if(bps_cnt == 4'd11)
+        else if(bps_cnt == 4'd10 && bps_sys_clk) 
             Tx_Done <= 1'b1;
         else
             Tx_Done <= 1'b0;

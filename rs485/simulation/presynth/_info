@@ -8,29 +8,97 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/files/fpga/rs485/simulation
+vcmd_process
+Z1 !s110 1742555934
+!i10b 1
+!s100 FE8nDYLcIbFU6MGT_IDld2
+I;RKHIIN?<WQj7H1nX<TK<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1742555411
+8D:/files/fpga/rs485/hdl/cmd_process.v
+FD:/files/fpga/rs485/hdl/cmd_process.v
+L0 1
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1742555934.000000
+!s107 D:/files/fpga/rs485/hdl/cmd_process.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/cmd_process.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vcmd_process_tb
+!s110 1742550084
+!i10b 1
+!s100 XiDJdS49RFf;bSFHXG4O50
+IDa]7cFC]=o]I=o6TMF7]91
+R2
+R0
+w1742550046
+Z7 8D:/files/fpga/rs485/stimulus/tb_cmd_process.v
+Z8 FD:/files/fpga/rs485/stimulus/tb_cmd_process.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1742550084.000000
+!s107 D:/files/fpga/rs485/stimulus/tb_cmd_process.v|
+Z9 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_cmd_process.v|
+!s101 -O0
+!i113 1
+R5
+Z10 !s92 +incdir+D:/files/fpga/rs485/stimulus -vlog01compat -work presynth -O0
+R6
+vtb_cmd_process
+R1
+!i10b 1
+!s100 >D;Kndfi`fW]K4`6;g1gB0
+IBlk7C2`e4g3CcXhAUOMC10
+R2
+R0
+w1742555922
+R7
+R8
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/rs485/stimulus/tb_cmd_process.v|
+R9
+!s101 -O0
+!i113 1
+R5
+R10
+R6
 vtb_top_loopback
-Z1 !s110 1741234879
+Z11 !s110 1741234879
 !i10b 1
 !s100 jO4][7QfD;?oQ@kXhg`:20
 I0_H<0hD67OezTPSf0o[]C2
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+R2
 R0
 w1741144829
 8D:/files/fpga/rs485/stimulus/tb_loopback.v
 FD:/files/fpga/rs485/stimulus/tb_loopback.v
 L0 4
-Z3 OW;L;10.5c;63
+R3
 r1
 !s85 0
 31
-Z4 !s108 1741234879.000000
+Z12 !s108 1741234879.000000
 !s107 D:/files/fpga/rs485/stimulus/tb_loopback.v|
 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_loopback.v|
 !s101 -O0
 !i113 1
-Z5 o-vlog01compat -work presynth -O0
-Z6 !s92 +incdir+D:/files/fpga/rs485/stimulus -vlog01compat -work presynth -O0
-Z7 tCvgOpt 0
+R5
+R10
+R6
 vtb_uart_rx
 !s110 1741685444
 !i10b 1
@@ -41,7 +109,7 @@ R0
 w1741681689
 8D:/files/fpga/rs485/stimulus/tb_uart_rx.v
 FD:/files/fpga/rs485/stimulus/tb_uart_rx.v
-Z8 L0 30
+Z13 L0 30
 R3
 r1
 !s85 0
@@ -52,10 +120,10 @@ r1
 !s101 -O0
 !i113 1
 R5
+R10
 R6
-R7
 vtb_uart_top
-Z9 !s110 1741685633
+Z14 !s110 1741685633
 !i10b 1
 !s100 X;29nbmlZUnJzLYJJbNU12
 IZ4V]^UADcHgJBJ[OgW2>g2
@@ -69,39 +137,39 @@ R3
 r1
 !s85 0
 31
-Z10 !s108 1741685633.000000
+Z15 !s108 1741685633.000000
 !s107 D:/files/fpga/rs485/stimulus/tb_uart_top.v|
 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_top.v|
 !s101 -O0
 !i113 1
 R5
+R10
 R6
-R7
 vtb_uart_tx
-!s110 1741685601
+!s110 1742554202
 !i10b 1
 !s100 FnZ?O>T0chDfUc1^YU7nX1
 I0[;9=EPH_<5AKH8K<d]Bj1
 R2
 R0
 w1741685582
-Z11 8D:/files/fpga/rs485/stimulus/tb_uart_tx.v
-Z12 FD:/files/fpga/rs485/stimulus/tb_uart_tx.v
-R8
+Z16 8D:/files/fpga/rs485/stimulus/tb_uart_tx.v
+Z17 FD:/files/fpga/rs485/stimulus/tb_uart_tx.v
+R13
 R3
 r1
 !s85 0
 31
-!s108 1741685601.000000
-Z13 !s107 D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
-Z14 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+!s108 1742554202.000000
+Z18 !s107 D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
+Z19 !s90 -reportprogress|300|+incdir+D:/files/fpga/rs485/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/rs485/stimulus/tb_uart_tx.v|
 !s101 -O0
 !i113 1
 R5
+R10
 R6
-R7
 vtop_loopback
-R1
+R11
 !i10b 1
 !s100 USgR?;X4f1[YG0>`^@=BW3
 IS0]ePBK?Noh]KB^QIl8<e3
@@ -115,13 +183,13 @@ R3
 r1
 !s85 0
 31
-R4
+R12
 !s107 D:/files/fpga/rs485/hdl/top_loopback.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/top_loopback.v|
 !s101 -O0
 !i113 1
 R5
-R7
+R6
 vuart_byte_tx_tb
 !s110 1736490388
 !i10b 1
@@ -130,23 +198,23 @@ IJK4;fkUXV75PcFZ]2i50M3
 R2
 R0
 w1736490361
-R11
-R12
+R16
+R17
 L0 4
 R3
 r1
 !s85 0
 31
 !s108 1736490388.000000
-R13
-R14
+R18
+R19
 !s101 -O0
 !i113 1
 R5
+R10
 R6
-R7
 vuart_rx
-R9
+R1
 !i10b 1
 !s100 6d?5f5MRhhPjCIP>kc6n23
 IYYJ>z0bNSSKWia7a32MJT2
@@ -160,15 +228,15 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 D:/files/fpga/rs485/hdl/uart_rx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_rx.v|
 !s101 -O0
 !i113 1
 R5
-R7
+R6
 vuart_top
-R9
+R14
 !i10b 1
 !s100 ZXfRl`I`^L_k<Q=mh]jVh2
 IMf;OhL0c18K_<ch7RYAdU2
@@ -182,21 +250,21 @@ R3
 r1
 !s85 0
 31
-R10
+R15
 !s107 D:/files/fpga/rs485/hdl/uart_top.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_top.v|
 !s101 -O0
 !i113 1
 R5
-R7
+R6
 vuart_tx
-R9
+R1
 !i10b 1
-!s100 DO<9K>gOkTfDFD?L5UEhg3
-IoGH6a_@<ZZZSTl<]JD66[1
+!s100 32dOf>17Q:>F59W1Bm=[z0
+I13mGJN6GcRWX3dBj7fdR82
 R2
 R0
-w1741684225
+w1742554188
 8D:/files/fpga/rs485/hdl/uart_tx.v
 FD:/files/fpga/rs485/hdl/uart_tx.v
 L0 2
@@ -204,10 +272,10 @@ R3
 r1
 !s85 0
 31
-R10
+R4
 !s107 D:/files/fpga/rs485/hdl/uart_tx.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/rs485/hdl/uart_tx.v|
 !s101 -O0
 !i113 1
 R5
-R7
+R6

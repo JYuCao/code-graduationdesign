@@ -1,0 +1,73 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 17:33:53 on Mar 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/rs485/hdl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 17:33:53 on Mar 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 17:33:53 on Mar 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/rs485/hdl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 17:33:53 on Mar 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 17:33:53 on Mar 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/rs485/hdl/uart_top.v 
+# -- Compiling module uart_top
+# 
+# Top level modules:
+# 	uart_top
+# End time: 17:33:53 on Mar 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 17:33:53 on Mar 11,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/rs485/stimulus" -vlog01compat -work presynth D:/files/fpga/rs485/stimulus/tb_uart_top.v 
+# -- Compiling module tb_uart_top
+# 
+# Top level modules:
+# 	tb_uart_top
+# End time: 17:33:53 on Mar 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_uart_top 
+# Start time: 17:33:53 on Mar 11,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_uart_top
+# Loading presynth.uart_top
+# Loading presynth.uart_tx
+# Loading presynth.uart_rx
+add wave -position end  sim:/tb_uart_top/uart_top_0/uart_byte_rx/baud_pulse
+add wave -position end  sim:/tb_uart_top/uart_top_0/uart_byte_rx/sample_pulse
+add wave -position end  sim:/tb_uart_top/uart_top_0/uart_byte_rx/bit_cnt
+run -all
+# ** Note: $stop    : D:/files/fpga/rs485/stimulus/tb_uart_top.v(58)
+#    Time: 3983080 ns  Iteration: 0  Instance: /tb_uart_top
+# Break in Module tb_uart_top at D:/files/fpga/rs485/stimulus/tb_uart_top.v line 58
+# End time: 17:35:56 on Mar 11,2025, Elapsed time: 0:02:03
+# Errors: 0, Warnings: 0
