@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/sence2/simulation
+vflash_a
+Z1 !s110 1742791264
+!i10b 1
+!s100 mhG]mIUedD5a<=U>j]Bn30
+I1iFCIGU:FENj[J[Ve2GI^3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1737350643
+8D:/files/fpga/sence2/hdl/flash_a.v
+FD:/files/fpga/sence2/hdl/flash_a.v
+L0 34
+Z3 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z4 !s108 1742791264.000000
+!s107 D:/files/fpga/sence2/hdl/flash_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/flash_a.v|
+!s101 -O0
+!i113 1
+Z5 o-vlog01compat -work presynth -O0
+Z6 tCvgOpt 0
+vflash_b
+R1
+!i10b 1
+!s100 zfkV7bDhk`^KQCg1gj0ob0
+IoV5:Yz>hzEDh=f0E>h^mm3
+R2
+R0
+Z7 w1742381604
+8D:/files/fpga/sence2/hdl/flash_b.v
+FD:/files/fpga/sence2/hdl/flash_b.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/sence2/hdl/flash_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/flash_b.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vflash_c
+Z8 !s110 1742791265
+!i10b 1
+!s100 DJmH4c_4PL;EEmQ>FE;[l1
+I2V?fclE9E1WE;c2L6@0DO2
+R2
+R0
+R7
+8D:/files/fpga/sence2/hdl/flash_c.v
+FD:/files/fpga/sence2/hdl/flash_c.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z9 !s108 1742791265.000000
+!s107 D:/files/fpga/sence2/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/flash_c.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vtb_cmd_process
+R8
+!i10b 1
+!s100 =7g^MGoWQV=0HTTA:9R6X1
+Ib2U?QU2J9^VR@Fl<O3<kd1
+R2
+R0
+w1742789242
+8D:/files/fpga/sence2/stimulus/tb_cmd_process.v
+FD:/files/fpga/sence2/stimulus/tb_cmd_process.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/files/fpga/sence2/stimulus/tb_cmd_process.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/sence2/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/sence2/stimulus/tb_cmd_process.v|
+!s101 -O0
+!i113 1
+R5
+!s92 +incdir+D:/files/fpga/sence2/stimulus -vlog01compat -work presynth -O0
+R6
+vtop_cmd_process
+R8
+!i10b 1
+!s100 UzkD0Gl64:PLm3EQ[g_Kc0
+I>m?E0L:>7`YH4:bTJaX4g3
+R2
+R0
+w1742791244
+8D:/files/fpga/sence2/hdl/top_cmd_process.v
+FD:/files/fpga/sence2/hdl/top_cmd_process.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/files/fpga/sence2/hdl/top_cmd_process.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/top_cmd_process.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vuart_rx
+R8
+!i10b 1
+!s100 6d?5f5MRhhPjCIP>kc6n23
+IAkO[K<I:E1mchPF4`F;7P1
+R2
+R0
+w1741684656
+8D:/files/fpga/sence2/hdl/uart_rx.v
+FD:/files/fpga/sence2/hdl/uart_rx.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/files/fpga/sence2/hdl/uart_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/uart_rx.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vuart_tx
+R8
+!i10b 1
+!s100 32dOf>17Q:>F59W1Bm=[z0
+INVi5Ua6F9z72VRzi7bYXc3
+R2
+R0
+w1742554188
+8D:/files/fpga/sence2/hdl/uart_tx.v
+FD:/files/fpga/sence2/hdl/uart_tx.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 D:/files/fpga/sence2/hdl/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/sence2/hdl/uart_tx.v|
+!s101 -O0
+!i113 1
+R5
+R6

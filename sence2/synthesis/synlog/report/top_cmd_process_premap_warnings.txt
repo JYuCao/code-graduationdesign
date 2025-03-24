@@ -1,0 +1,1 @@
+@W: MT530 :"d:\files\fpga\sence2\hdl\uart_rx.v":61:1:61:6|Found inferred clock top_cmd_process|sys_clk which controls 3225 sequential elements including uart_rx_inst.baud_cnt[15:0]. This clock has no specified timing constraint which may adversely impact design performance. 

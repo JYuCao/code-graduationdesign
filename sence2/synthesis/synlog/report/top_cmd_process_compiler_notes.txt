@@ -1,0 +1,20 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\files\fpga\sence2\hdl\uart_rx.v":2:7:2:13|Synthesizing module uart_rx in library work.
+@N: CG364 :"D:\files\fpga\sence2\hdl\uart_tx.v":2:7:2:13|Synthesizing module uart_tx in library work.
+@N: CG179 :"D:\files\fpga\sence2\hdl\uart_tx.v":51:22:51:27|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+@N: CG364 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Synthesizing module top_cmd_process in library work.
+@N: CL134 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Found RAM data_buffer, depth=16, width=8
+@N: CL201 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Trying to extract state machine for register state.
+@N: CL189 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Register bit cmd_read is always 1.
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_a.v":66:0:66:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_c.v":74:4:74:9|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\sence2\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Selected library: work cell: top_cmd_process view verilog as top level
+@N: NF107 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Selected library: work cell: top_cmd_process view verilog as top level
+

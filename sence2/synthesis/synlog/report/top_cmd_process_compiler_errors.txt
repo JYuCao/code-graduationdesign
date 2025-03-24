@@ -1,0 +1,2 @@
+@E: CL172 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":6:15:6:16|Only one always block can assign a given variable re
+

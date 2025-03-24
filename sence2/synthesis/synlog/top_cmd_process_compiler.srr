@@ -1,0 +1,469 @@
+Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016
+@N|Running in 64-bit mode
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\files\fpga\sence2\hdl\flash_a.v" (library work)
+@I::"D:\files\fpga\sence2\hdl\flash_b.v" (library work)
+@I::"D:\files\fpga\sence2\hdl\flash_c.v" (library work)
+@I::"D:\files\fpga\sence2\hdl\uart_rx.v" (library work)
+@I::"D:\files\fpga\sence2\hdl\uart_tx.v" (library work)
+@I::"D:\files\fpga\sence2\hdl\top_cmd_process.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top_cmd_process
+@N: CG364 :"D:\files\fpga\sence2\hdl\uart_rx.v":2:7:2:13|Synthesizing module uart_rx in library work.
+
+@N: CG364 :"D:\files\fpga\sence2\hdl\uart_tx.v":2:7:2:13|Synthesizing module uart_tx in library work.
+
+@N: CG179 :"D:\files\fpga\sence2\hdl\uart_tx.v":51:22:51:27|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+
+@N: CG364 :"D:\files\fpga\sence2\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+
+@N: CG364 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Synthesizing module top_cmd_process in library work.
+
+@W: CG532 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":104:4:104:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":99:14:99:17|Object crc8 is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_0_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_1_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_2_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_3_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_4_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_5_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_6_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_7_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_8_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_9_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_10_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_11_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_12_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_13_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_14_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_15_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_16_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_17_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_18_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_19_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_20_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_21_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_22_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_23_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_24_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_25_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_26_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_27_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_28_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_29_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_30_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_31_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_32_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_33_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_34_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_35_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_36_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_37_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_38_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_39_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_40_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_41_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_42_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_43_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_44_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_45_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_46_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_47_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_48_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_49_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_50_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_51_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_52_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_53_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_54_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_55_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_56_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_57_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_58_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_59_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_60_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_61_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_62_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_63_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_64_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_65_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_66_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_67_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_68_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_69_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_70_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_71_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_72_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_73_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_74_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_75_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_76_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_77_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_78_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_79_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_80_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_81_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_82_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_83_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_84_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_85_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_86_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_87_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_88_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_89_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_90_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_91_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_92_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_93_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_94_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_95_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_96_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_97_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_98_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_99_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_100_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_101_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_102_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_103_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_104_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_105_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_106_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_107_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_108_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_109_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_110_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_111_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_112_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_113_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_114_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_115_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_116_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_117_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_118_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_119_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_120_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_121_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_122_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_123_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_124_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_125_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_126_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_127_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_128_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_129_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_130_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_131_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_132_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_133_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_134_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_135_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_136_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_137_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_138_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_139_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_140_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_141_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_142_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_143_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_144_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_145_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_146_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_147_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_148_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_149_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_150_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_151_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_152_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_153_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_154_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_155_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_156_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_157_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_158_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_159_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_160_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_161_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_162_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_163_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_164_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_165_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_166_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_167_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_168_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_169_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_170_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_171_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_172_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_173_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_174_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_175_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_176_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_177_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_178_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_179_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_180_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_181_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_182_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_183_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_184_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_185_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_186_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_187_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_188_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_189_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_190_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_191_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_192_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_193_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_194_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_195_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_196_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_197_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_198_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_199_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_200_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_201_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_202_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_203_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_204_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_205_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_206_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_207_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_208_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_209_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_210_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_211_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_212_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_213_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_214_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_215_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_216_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_217_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_218_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_219_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_220_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_221_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_222_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_223_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_224_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_225_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_226_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_227_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_228_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_229_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_230_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_231_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_232_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_233_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_234_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_235_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_236_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_237_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_238_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_239_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_240_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_241_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_242_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_243_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_244_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_245_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_246_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_247_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_248_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_249_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_250_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_251_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_252_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_253_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_254_ is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Object crc8_table_255_ is declared but not assigned. Either assign a value or remove the declaration.
+@W:"D:\files\fpga\sence2\hdl\top_cmd_process.v":103:14:103:23|Some of the address location in the memory "crc8_table" are not assigned.
+@N: CL134 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Found RAM data_buffer, depth=16, width=8
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_4_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_5_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_6_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_7_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_8_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_9_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_10_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_11_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_12_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_13_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_14_[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":433:12:433:21|Pruning unused register data_buffer_15_[7:0]. Make sure that there are no unused intermediate registers.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal flash_length[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal flash_din[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal flash_addr[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal cmd_write. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal cmd_read. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal cmd_erasedies. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal addr_check[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Feedback mux created for signal addr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Optimizing register bit calc_crc8[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Pruning unused register calc_crc8[7:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 28 reachable states with original encodings of:
+   000000
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   001000
+   001001
+   001010
+   001011
+   001100
+   001101
+   001110
+   010000
+   010001
+   010010
+   010011
+   010101
+   010110
+   010111
+   011010
+   011011
+   111010
+   111011
+   111100
+   111101
+@N: CL189 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Register bit cmd_read is always 1.
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 56 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
+   00000000000000000000000000000101
+   00000000000000000000000000000110
+   00000000000000000000000000000111
+   00000000000000000000000000001000
+   00000000000000000000000000001001
+   00000000000000000000000000001010
+   00000000000000000000000000001011
+   00000000000000000000000000001100
+   00000000000000000000000000001101
+   00000000000000000000000000001110
+   00000000000000000000000000001111
+   00000000000000000000000000010000
+   00000000000000000000000000010001
+   00000000000000000000000000010010
+   00000000000000000000000000010011
+   00000000000000000000000000010100
+   00000000000000000000000000010101
+   00000000000000000000000000010110
+   00000000000000000000000000010111
+   00000000000000000000000000011000
+   00000000000000000000000000011001
+   00000000000000000000000000011010
+   00000000000000000000000000011011
+   00000000000000000000000000011100
+   00000000000000000000000000011101
+   00000000000000000000000000011110
+   00000000000000000000000000011111
+   00000000000000000000000000100000
+   00000000000000000000000000100001
+   00000000000000000000000000100010
+   00000000000000000000000000100011
+   00000000000000000000000000100100
+   00000000000000000000000000100101
+   00000000000000000000000000100110
+   00000000000000000000000000100111
+   00000000000000000000000000101000
+   00000000000000000000000000101001
+   00000000000000000000000000101010
+   00000000000000000000000000101011
+   00000000000000000000000000101100
+   00000000000000000000000000101101
+   00000000000000000000000000101110
+   00000000000000000000000000101111
+   00000000000000000000000000110000
+   00000000000000000000000000110001
+   00000000000000000000000000110010
+   00000000000000000000000000110011
+   00000000000000000000000000110100
+   00000000000000000000000000110101
+   00000000000000000000000000110110
+   00000000000000000000000000110111
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_a.v":66:0:66:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
+   00000000000000000000000000000101
+   00000000000000000000000000000110
+@N: CL201 :"D:\files\fpga\sence2\hdl\flash_c.v":74:4:74:9|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 2 reachable states with original encodings of:
+   00
+   01
+@N: CL201 :"D:\files\fpga\sence2\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 78MB peak: 83MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Mar 24 10:24:27 2025
+
+###########################################################]
+Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
+@N|Running in 64-bit mode
+@N: NF107 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Selected library: work cell: top_cmd_process view verilog as top level
+@N: NF107 :"D:\files\fpga\sence2\hdl\top_cmd_process.v":1:7:1:21|Selected library: work cell: top_cmd_process view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Mar 24 10:24:27 2025
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Mar 24 10:24:27 2025
+
+###########################################################]

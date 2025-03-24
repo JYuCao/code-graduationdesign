@@ -1,0 +1,1151 @@
+# Mon Mar 24 10:24:30 2025
+
+Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 109MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 117MB)
+
+Encoding state machine state[27:0] (in view: work.top_cmd_process(verilog))
+original code -> new code
+   000000 -> 00000
+   000001 -> 00001
+   000010 -> 00011
+   000011 -> 00010
+   000100 -> 00110
+   000101 -> 00111
+   000110 -> 00101
+   000111 -> 00100
+   001000 -> 01100
+   001001 -> 01101
+   001010 -> 01111
+   001011 -> 01110
+   001100 -> 01010
+   001101 -> 01011
+   001110 -> 01001
+   010000 -> 01000
+   010001 -> 11000
+   010010 -> 11001
+   010011 -> 11011
+   010101 -> 11010
+   010110 -> 11110
+   010111 -> 11111
+   011010 -> 11101
+   011011 -> 11100
+   111010 -> 10100
+   111011 -> 10101
+   111100 -> 10111
+   111101 -> 10110
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@N: MF135 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|RAM data_buffer[7:0] (in view: work.top_cmd_process(verilog)) is 16 words by 8 bits.
+@N: MF179 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":324:27:324:54|Found 17 by 17 bit less-than operator ('<') data_cnt12 (in view: work.top_cmd_process(verilog))
+@N: MF179 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":392:28:392:55|Found 17 by 17 bit less-than operator ('<') un1_data_cnt_1 (in view: work.top_cmd_process(verilog))
+@N: MF239 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":392:40:392:55|Found 17-bit decrementor, 'un1_data_length_0[16:0]'
+@N: MF239 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":324:38:324:54|Found 17-bit decrementor, 'un1_flash_length_0[16:0]'
+@N: MF238 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":398:51:398:63|Found 4-bit incrementor, 'un8_tx_data[3:0]'
+@N: MF176 |Default generator successful 
+@N: MO231 :"d:\files\fpga\sence2\hdl\uart_rx.v":61:1:61:6|Found counter in view:work.uart_rx(verilog) instance baud_cnt[15:0] 
+@N: MO231 :"d:\files\fpga\sence2\hdl\uart_rx.v":133:1:133:6|Found counter in view:work.uart_rx(verilog) instance bit_cnt[2:0] 
+Encoding state machine state[4:0] (in view: work.uart_rx(verilog))
+original code -> new code
+   000 -> 00001
+   001 -> 00010
+   010 -> 00100
+   011 -> 01000
+   100 -> 10000
+@N: MO231 :"d:\files\fpga\sence2\hdl\uart_tx.v":69:1:69:6|Found counter in view:work.uart_tx(verilog) instance div_cnt[15:0] 
+Encoding state machine state[1:0] (in view: work.flash_c(verilog))
+original code -> new code
+   00 -> 0
+   01 -> 1
+@N: MO225 :"d:\files\fpga\sence2\hdl\flash_c.v":74:4:74:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c(verilog)); safe FSM implementation is not required.
+@N: MO231 :"d:\files\fpga\sence2\hdl\flash_b.v":113:0:113:5|Found counter in view:work.flash_b(verilog) instance count_c[29:0] 
+@N: MO231 :"d:\files\fpga\sence2\hdl\flash_b.v":113:0:113:5|Found counter in view:work.flash_b(verilog) instance count_b[15:0] 
+Encoding state machine state[55:0] (in view: work.flash_b(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+@N: MO231 :"d:\files\fpga\sence2\hdl\flash_a.v":66:0:66:5|Found counter in view:work.flash_a(verilog) instance count[3:0] 
+Encoding state machine state[6:0] (in view: work.flash_a(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+@N: MF794 |RAM data_buffer[7:0] required 128 registers during mapping 
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 133MB peak: 134MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 153MB peak: 153MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:05s; Memory used current: 153MB peak: 157MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 173MB peak: 223MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:10s; CPU Time elapsed 0h:00m:09s; Memory used current: 177MB peak: 223MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 177MB peak: 223MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:12s; Memory used current: 174MB peak: 223MB)
+
+@N: MF794 |RAM data_buffer[7:0] required 128 registers during mapping 
+
+Finished preparing to map (Real Time elapsed 0h:00m:13s; CPU Time elapsed 0h:00m:13s; Memory used current: 168MB peak: 223MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:16s; CPU Time elapsed 0h:00m:15s; Memory used current: 195MB peak: 249MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                                                    Fanout, notes                   
+--------------------------------------------------------------------------------------------------------------
+un8_tx_data.I_5 / Y                                                           32                              
+uart_rx_inst.data[0] / Q                                                      26                              
+uart_rx_inst.data[1] / Q                                                      26                              
+uart_rx_inst.data[2] / Q                                                      26                              
+uart_rx_inst.data[3] / Q                                                      26                              
+uart_rx_inst.data[4] / Q                                                      26                              
+uart_rx_inst.data[5] / Q                                                      26                              
+uart_rx_inst.data[6] / Q                                                      26                              
+uart_rx_inst.data[7] / Q                                                      26                              
+cmd_erasedies / Q                                                             68                              
+cmd_write / Q                                                                 34                              
+flash_addr[16] / Q                                                            32                              
+flash_addr[17] / Q                                                            32                              
+flash_addr[18] / Q                                                            32                              
+flash_addr[19] / Q                                                            32                              
+flash_addr[20] / Q                                                            32                              
+flash_addr[21] / Q                                                            32                              
+flash_addr[22] / Q                                                            32                              
+flash_addr[23] / Q                                                            32                              
+flash_addr[24] / Q                                                            32                              
+flash_addr[25] / Q                                                            32                              
+flash_addr[26] / Q                                                            32                              
+flash_addr[27] / Q                                                            32                              
+data_cnt[0] / Q                                                               79                              
+data_cnt[1] / Q                                                               29                              
+data_cnt[2] / Q                                                               26                              
+flash_ctrl.flash_array[6].flash_inst.state[0] / Q                             26                              
+flash_ctrl.flash_array[6].flash_inst.state[2] / Q                             27                              
+flash_ctrl.flash_array[6].flash_inst.state[4] / Q                             26                              
+flash_ctrl.flash_array[6].flash_inst.state[5] / Q                             25                              
+flash_ctrl.flash_array[2].flash_inst.state[5] / Q                             26                              
+flash_ctrl.flash_array[7].flash_inst.state[5] / Q                             26                              
+flash_ctrl.flash_array[13].flash_inst.state[0] / Q                            25                              
+flash_ctrl.flash_array[13].flash_inst.state[5] / Q                            25                              
+flash_ctrl.flash_array[13].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     51                              
+flash_ctrl.flash_array[13].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[15].flash_inst.state[5] / Q                            25                              
+flash_ctrl.flash_array[15].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     51                              
+flash_ctrl.flash_array[10].flash_inst.state[4] / Q                            26                              
+flash_ctrl.flash_array[10].flash_inst.state[5] / Q                            27                              
+flash_ctrl.flash_array[10].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     53                              
+flash_ctrl.flash_array[10].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[1].flash_inst.state[4] / Q                             25                              
+flash_ctrl.flash_array[1].flash_inst.state[5] / Q                             25                              
+flash_ctrl.flash_array[4].flash_inst.state[5] / Q                             25                              
+flash_ctrl.flash_array[4].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      52                              
+flash_ctrl.flash_array[4].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[12].flash_inst.state[5] / Q                            25                              
+flash_ctrl.flash_array[12].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     53                              
+flash_ctrl.flash_array[12].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[14].flash_inst.state[0] / Q                            26                              
+flash_ctrl.flash_array[14].flash_inst.state[2] / Q                            27                              
+flash_ctrl.flash_array[14].flash_inst.state[4] / Q                            26                              
+flash_ctrl.flash_array[14].flash_inst.state[5] / Q                            25                              
+flash_ctrl.flash_array[14].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     52                              
+flash_ctrl.flash_array[14].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[5].flash_inst.state[4] / Q                             26                              
+flash_ctrl.flash_array[8].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[8].flash_inst.state[0] / Q                             25                              
+flash_ctrl.flash_array[8].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      52                              
+flash_ctrl.flash_array[8].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[11].flash_inst.state[5] / Q                            27                              
+flash_ctrl.flash_array[11].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y     52                              
+flash_ctrl.flash_array[11].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[3].flash_inst.state[5] / Q                             26                              
+flash_ctrl.flash_array[9].flash_inst.state[2] / Q                             25                              
+flash_ctrl.flash_array[9].flash_inst.state[5] / Q                             26                              
+flash_ctrl.flash_array[9].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      53                              
+flash_ctrl.flash_array[9].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[0].flash_inst.state[1] / Q                             25                              
+flash_ctrl.flash_array[0].flash_inst.state[2] / Q                             28                              
+flash_ctrl.flash_array[0].flash_inst.N_1224_i_0_a2 / Y                        40                              
+flash_ctrl.flash_array[0].flash_inst.count_a_8_i_a2_1[9] / Y                  57                              
+sys_rst_n_pad / Y                                                             758 : 133 asynchronous set/reset
+flash_addr[29] / Q                                                            27                              
+flash_addr[30] / Q                                                            52                              
+flash_addr[31] / Q                                                            96                              
+flash_ctrl.flash_array[8].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[10].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+flash_ctrl.flash_array[13].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+flash_ctrl.flash_array[3].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[3].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[11].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+flash_ctrl.flash_array[5].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[5].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[5].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      53                              
+flash_ctrl.flash_array[5].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[6].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[6].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      53                              
+flash_ctrl.flash_array[2].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[2].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[7].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[7].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      52                              
+flash_ctrl.flash_array[7].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        33                              
+flash_ctrl.flash_array[15].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y          29                              
+flash_ctrl.flash_array[15].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+flash_ctrl.flash_array[4].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[4].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[12].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+flash_ctrl.flash_array[3].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[3].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      52                              
+flash_ctrl.flash_array[11].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[1].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[1].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      51                              
+flash_ctrl.flash_array[1].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[1].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        33                              
+flash_ctrl.flash_array[2].flash_inst.un1_reset_8_i_a2_0_a2_0_a3 / Y           29                              
+flash_ctrl.flash_array[2].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2 / Y      52                              
+flash_ctrl.flash_array[9].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[9].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[12].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[6].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[6].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y        32                              
+flash_ctrl.flash_array[7].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[15].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[3].flash_inst.flash_addr_1_sqmuxa_i_i / Y              32                              
+flash_ctrl.flash_array[13].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[0].flash_inst.N_1224_i_0_o2 / Y                        29                              
+flash_ctrl.flash_array[0].flash_inst.state_2_sqmuxa_1_a2_0_a2_0_a3 / Y        28                              
+flash_ctrl.flash_array[0].flash_inst.count_clde_0_0 / Y                       30                              
+flash_ctrl.flash_array[10].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[14].flash_inst.count_clde_0_0 / Y                      30                              
+flash_ctrl.flash_array[14].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3 / Y       32                              
+==============================================================================================================
+
+@N: FP130 |Promoting Net sys_clk_c on CLKBUF  sys_clk_pad 
+@N: FP130 |Promoting Net sys_rst_n_c on CLKBUF  sys_rst_n_pad 
+@N: FP130 |Promoting Net flash_cs_c[3] on CLKINT  I_1581 
+@N: FP130 |Promoting Net data_cnt[0] on CLKINT  I_1582 
+@N: FP130 |Promoting Net cmd_erasedies on CLKINT  I_1583 
+@N: FP130 |Promoting Net flash_ctrl.flash_array\[0\]\.flash_inst.N_521 on CLKINT  I_1584 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:16s; Memory used current: 195MB peak: 249MB)
+
+Replicating Combinational Instance flash_ctrl.flash_array[14].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[14].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[10].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[0].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[0].flash_inst.state_2_sqmuxa_1_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[0].flash_inst.N_1224_i_0_o2, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[13].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.flash_addr_1_sqmuxa_i_i, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[15].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[7].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[6].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[6].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[12].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[9].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[9].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[2].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[2].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[1].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[1].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[1].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 51 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[1].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[11].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[12].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[4].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[4].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[15].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[15].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[7].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 34 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[7].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[7].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[2].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[2].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[6].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 53 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[6].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[5].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[5].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 53 segments 3
+Replicating Combinational Instance flash_ctrl.flash_array[5].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[5].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[11].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[13].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[10].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 33 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[8].flash_inst.state_2_sqmuxa_1_a2_0_a3_0_a3, fanout 32 segments 2
+Replicating Sequential Instance flash_addr[30], fanout 52 segments 3
+Replicating Sequential Instance flash_addr[29], fanout 27 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[0].flash_inst.N_1224_i_0_a2, fanout 40 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[0].flash_inst.state[2], fanout 28 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[0].flash_inst.state[1], fanout 25 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[9].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[9].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 53 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[9].flash_inst.state[5], fanout 26 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[9].flash_inst.state[2], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[3].flash_inst.state[5], fanout 26 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[11].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[11].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[11].flash_inst.state[5], fanout 27 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[8].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[8].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[8].flash_inst.state[0], fanout 25 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[8].flash_inst.count_clde_0_0, fanout 30 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[5].flash_inst.state[4], fanout 26 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[14].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[14].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[14].flash_inst.state[5], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[14].flash_inst.state[4], fanout 26 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[14].flash_inst.state[2], fanout 27 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[14].flash_inst.state[0], fanout 26 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[12].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[12].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 53 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[12].flash_inst.state[5], fanout 25 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[4].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[4].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 52 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[4].flash_inst.state[5], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[1].flash_inst.state[5], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[1].flash_inst.state[4], fanout 25 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[10].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[10].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 53 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[10].flash_inst.state[5], fanout 27 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[10].flash_inst.state[4], fanout 26 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[15].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 51 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[15].flash_inst.state[5], fanout 25 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[13].flash_inst.un1_reset_8_i_a2_0_a2_0_a3, fanout 29 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[13].flash_inst.count_b_0_sqmuxa_1_a2_0_a2_0_a2, fanout 51 segments 3
+Replicating Sequential Instance flash_ctrl.flash_array[13].flash_inst.state[5], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[13].flash_inst.state[0], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[7].flash_inst.state[5], fanout 26 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[2].flash_inst.state[5], fanout 26 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[6].flash_inst.state[5], fanout 25 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[6].flash_inst.state[4], fanout 26 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[6].flash_inst.state[2], fanout 27 segments 2
+Replicating Sequential Instance flash_ctrl.flash_array[6].flash_inst.state[0], fanout 26 segments 2
+Replicating Sequential Instance data_cnt[2], fanout 26 segments 2
+Replicating Sequential Instance data_cnt[1], fanout 29 segments 2
+Replicating Sequential Instance flash_addr[27], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[26], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[25], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[24], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[23], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[22], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[21], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[20], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[19], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[18], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[17], fanout 32 segments 2
+Replicating Sequential Instance flash_addr[16], fanout 32 segments 2
+Replicating Sequential Instance cmd_write, fanout 35 segments 2
+Replicating Sequential Instance uart_rx_inst.data[7], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[6], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[5], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[4], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[3], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[2], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[1], fanout 26 segments 2
+Replicating Sequential Instance uart_rx_inst.data[0], fanout 26 segments 2
+Replicating Combinational Instance un8_tx_data.I_5, fanout 32 segments 2
+Replicating Combinational Instance flash_ctrl.flash_array[3].flash_inst.flash_addr_1_sqmuxa_i_i_0, fanout 26 segments 2
+
+Added 0 Buffers
+Added 135 Cells via replication
+	Added 53 Sequential Cells via replication
+	Added 82 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:16s; Memory used current: 197MB peak: 249MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 2574 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@K:CKID0001       sys_clk             port                   2574       cmd_write_0    
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:18s; CPU Time elapsed 0h:00m:17s; Memory used current: 168MB peak: 249MB)
+
+Writing Analyst data base D:\files\fpga\sence2\synthesis\synwork\top_cmd_process_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 182MB peak: 249MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 186MB peak: 249MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:18s; Memory used current: 182MB peak: 249MB)
+
+@W: MT420 |Found inferred clock top_cmd_process|sys_clk with period 10.00ns. Please declare a user-defined clock on object "p:sys_clk"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Mon Mar 24 10:24:50 2025
+#
+
+
+Top view:               top_cmd_process
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -19.118
+
+                            Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock              Frequency     Frequency     Period        Period        Slack       Type         Group              
+--------------------------------------------------------------------------------------------------------------------------------
+top_cmd_process|sys_clk     100.0 MHz     34.3 MHz      10.000        29.118        -19.118     inferred     Inferred_clkgroup_0
+================================================================================================================================
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                            |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+------------------------------------------------------------------------------------------------------------------------------------------
+Starting                 Ending                   |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+------------------------------------------------------------------------------------------------------------------------------------------
+top_cmd_process|sys_clk  top_cmd_process|sys_clk  |  10.000      -19.118  |  No paths    -      |  No paths    -      |  No paths    -    
+==========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: top_cmd_process|sys_clk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                    Starting                                                             Arrival            
+Instance            Reference                   Type         Pin     Net                 Time        Slack  
+                    Clock                                                                                   
+------------------------------------------------------------------------------------------------------------
+data_length[1]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[1]      0.737       -19.118
+data_length[2]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[2]      0.737       -19.011
+data_length[4]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[4]      0.737       -19.002
+data_length[0]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[0]      0.737       -18.995
+data_length[5]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[5]      0.737       -18.894
+data_length[3]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[3]      0.737       -18.878
+data_length[8]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[8]      0.737       -18.213
+data_length[6]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[6]      0.737       -18.053
+data_length[7]      top_cmd_process|sys_clk     DFN1E0C0     Q       data_length[7]      0.737       -18.032
+flash_length[1]     top_cmd_process|sys_clk     DFN1E1       Q       flash_length[1]     0.737       -17.691
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                          Required            
+Instance         Reference                   Type       Pin     Net                Time         Slack  
+                 Clock                                                                                 
+-------------------------------------------------------------------------------------------------------
+data_cnt[15]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[15]     9.461        -19.118
+data_cnt[14]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[14]     9.461        -18.308
+data_cnt[13]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[13]     9.461        -18.244
+data_cnt[11]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[11]     9.461        -17.824
+data_cnt[12]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[12]     9.461        -17.434
+data_cnt[10]     top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[10]     9.461        -17.014
+data_cnt[9]      top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[9]      9.461        -16.950
+data_cnt[7]      top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[7]      9.461        -16.152
+data_cnt[8]      top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[8]      9.461        -16.140
+data_cnt[6]      top_cmd_process|sys_clk     DFN1C0     D       data_cnt_9[6]      9.461        -15.342
+=======================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      28.580
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -19.118
+
+    Number of logic level(s):                21
+    Starting point:                          data_length[1] / Q
+    Ending point:                            data_cnt[15] / D
+    The start point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+    The end   point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                 Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data_length[1]                                                                                                                                                    DFN1E0C0     Q        Out     0.737     0.737       -         
+data_length[1]                                                                                                                                                    Net          -        -       1.423     -           6         
+un1_data_length_0.I_10                                                                                                                                            OR3          B        In      -         2.160       -         
+un1_data_length_0.I_10                                                                                                                                            OR3          Y        Out     0.714     2.875       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[0]                                                                                                                             Net          -        -       1.526     -           7         
+un1_data_length_0.I_30                                                                                                                                            OR3          A        In      -         4.401       -         
+un1_data_length_0.I_30                                                                                                                                            OR3          Y        Out     0.488     4.889       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[6]                                                                                                                             Net          -        -       1.423     -           6         
+un1_data_length_0.I_31                                                                                                                                            OR3          A        In      -         6.312       -         
+un1_data_length_0.I_31                                                                                                                                            OR3          Y        Out     0.488     6.801       -         
+un1_data_length_0.N_7                                                                                                                                             Net          -        -       0.322     -           1         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        A        In      -         7.122       -         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        Y        Out     0.488     7.610       -         
+un1_data_length_n[11]                                                                                                                                             Net          -        -       0.806     -           3         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         A        In      -         8.417       -         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         Y        Out     0.537     8.954       -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[1]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        B        In      -         9.275       -         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        Y        Out     0.931     10.207      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[3]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        A        In      -         10.528      -         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        Y        Out     0.900     11.429      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_E[2]                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          B        In      -         11.750      -         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          Y        Out     0.567     12.317      -         
+un1_data_cnt_1_0.DWACT_COMP0_E[0]                                                                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          C        In      -         12.638      -         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          Y        Out     0.655     13.293      -         
+I_67_15                                                                                                                                                           Net          -        -       1.708     -           10        
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        B        In      -         15.002      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        Y        Out     0.624     15.626      -         
+N_368                                                                                                                                                             Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          C        In      -         15.947      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          Y        Out     0.655     16.602      -         
+un1_state_14_0_0_0_0                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          C        In      -         16.924      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          Y        Out     0.655     17.579      -         
+un1_state_14_0_0_0                                                                                                                                                Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         B        In      -         17.965      -         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         Y        Out     0.516     18.481      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_TMP[0]                                                                                                                              Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        A        In      -         18.867      -         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        Y        Out     0.488     19.355      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_1[0]                                                                                                                        Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        A        In      -         20.161      -         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        Y        Out     0.488     20.650      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_2[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        A        In      -         21.833      -         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        Y        Out     0.488     22.322      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_3[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        A        In      -         23.505      -         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        Y        Out     0.488     23.994      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_10[0]                                                                                                                       Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        A        In      -         24.800      -         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        Y        Out     0.488     25.288      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_11_2[0]                                                                                                                     Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        A        In      -         25.674      -         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        Y        Out     0.488     26.162      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_12_6[0]                                                                                                                     Net          -        -       0.322     -           1         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         B        In      -         26.484      -         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         Y        Out     0.937     27.421      -         
+I_51                                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        A        In      -         27.742      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        Y        Out     0.516     28.258      -         
+data_cnt_9[15]                                                                                                                                                    Net          -        -       0.322     -           1         
+data_cnt[15]                                                                                                                                                      DFN1C0       D        In      -         28.580      -         
+================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 29.118 is 13.878(47.7%) logic and 15.240(52.3%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      28.509
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.047
+
+    Number of logic level(s):                21
+    Starting point:                          data_length[1] / Q
+    Ending point:                            data_cnt[15] / D
+    The start point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+    The end   point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                 Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data_length[1]                                                                                                                                                    DFN1E0C0     Q        Out     0.737     0.737       -         
+data_length[1]                                                                                                                                                    Net          -        -       1.423     -           6         
+un1_data_length_0.I_10                                                                                                                                            OR3          B        In      -         2.160       -         
+un1_data_length_0.I_10                                                                                                                                            OR3          Y        Out     0.714     2.875       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[0]                                                                                                                             Net          -        -       1.526     -           7         
+un1_data_length_0.I_30                                                                                                                                            OR3          A        In      -         4.401       -         
+un1_data_length_0.I_30                                                                                                                                            OR3          Y        Out     0.488     4.889       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[6]                                                                                                                             Net          -        -       1.423     -           6         
+un1_data_length_0.I_42                                                                                                                                            OR3          A        In      -         6.312       -         
+un1_data_length_0.I_42                                                                                                                                            OR3          Y        Out     0.488     6.801       -         
+un1_data_length_0.N_3                                                                                                                                             Net          -        -       0.322     -           1         
+un1_data_length_0.I_43                                                                                                                                            XNOR2        A        In      -         7.122       -         
+un1_data_length_0.I_43                                                                                                                                            XNOR2        Y        Out     0.488     7.610       -         
+un1_data_length_n[15]                                                                                                                                             Net          -        -       1.184     -           4         
+un1_data_cnt_1_0.I_18                                                                                                                                             OR2A         A        In      -         8.794       -         
+un1_data_cnt_1_0.I_18                                                                                                                                             OR2A         Y        Out     0.537     9.331       -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_3\.IF_equal_30\.ACT_LT3_E[1]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_20                                                                                                                                             AOI1A        B        In      -         9.652       -         
+un1_data_cnt_1_0.I_20                                                                                                                                             AOI1A        Y        Out     0.931     10.584      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_3\.IF_equal_30\.ACT_LT3_E[3]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_23                                                                                                                                             OR2          A        In      -         10.906      -         
+un1_data_cnt_1_0.I_23                                                                                                                                             OR2          Y        Out     0.363     11.269      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_E[0]                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          C        In      -         11.590      -         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          Y        Out     0.655     12.245      -         
+un1_data_cnt_1_0.DWACT_COMP0_E[0]                                                                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          C        In      -         12.567      -         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          Y        Out     0.655     13.222      -         
+I_67_15                                                                                                                                                           Net          -        -       1.708     -           10        
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        B        In      -         14.931      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        Y        Out     0.624     15.555      -         
+N_368                                                                                                                                                             Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          C        In      -         15.876      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          Y        Out     0.655     16.531      -         
+un1_state_14_0_0_0_0                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          C        In      -         16.853      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          Y        Out     0.655     17.508      -         
+un1_state_14_0_0_0                                                                                                                                                Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         B        In      -         17.894      -         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         Y        Out     0.516     18.410      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_TMP[0]                                                                                                                              Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        A        In      -         18.796      -         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        Y        Out     0.488     19.284      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_1[0]                                                                                                                        Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        A        In      -         20.090      -         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        Y        Out     0.488     20.579      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_2[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        A        In      -         21.762      -         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        Y        Out     0.488     22.250      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_3[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        A        In      -         23.434      -         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        Y        Out     0.488     23.922      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_10[0]                                                                                                                       Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        A        In      -         24.729      -         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        Y        Out     0.488     25.217      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_11_2[0]                                                                                                                     Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        A        In      -         25.603      -         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        Y        Out     0.488     26.091      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_12_6[0]                                                                                                                     Net          -        -       0.322     -           1         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         B        In      -         26.413      -         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         Y        Out     0.937     27.349      -         
+I_51                                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        A        In      -         27.671      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        Y        Out     0.516     28.187      -         
+data_cnt_9[15]                                                                                                                                                    Net          -        -       0.322     -           1         
+data_cnt[15]                                                                                                                                                      DFN1C0       D        In      -         28.509      -         
+================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 29.047 is 13.430(46.2%) logic and 15.617(53.8%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      28.472
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.011
+
+    Number of logic level(s):                21
+    Starting point:                          data_length[2] / Q
+    Ending point:                            data_cnt[15] / D
+    The start point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+    The end   point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                 Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data_length[2]                                                                                                                                                    DFN1E0C0     Q        Out     0.737     0.737       -         
+data_length[2]                                                                                                                                                    Net          -        -       1.279     -           5         
+un1_data_length_0.I_10                                                                                                                                            OR3          C        In      -         2.016       -         
+un1_data_length_0.I_10                                                                                                                                            OR3          Y        Out     0.751     2.767       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[0]                                                                                                                             Net          -        -       1.526     -           7         
+un1_data_length_0.I_30                                                                                                                                            OR3          A        In      -         4.293       -         
+un1_data_length_0.I_30                                                                                                                                            OR3          Y        Out     0.488     4.781       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[6]                                                                                                                             Net          -        -       1.423     -           6         
+un1_data_length_0.I_31                                                                                                                                            OR3          A        In      -         6.205       -         
+un1_data_length_0.I_31                                                                                                                                            OR3          Y        Out     0.488     6.693       -         
+un1_data_length_0.N_7                                                                                                                                             Net          -        -       0.322     -           1         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        A        In      -         7.014       -         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        Y        Out     0.488     7.503       -         
+un1_data_length_n[11]                                                                                                                                             Net          -        -       0.806     -           3         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         A        In      -         8.309       -         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         Y        Out     0.537     8.846       -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[1]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        B        In      -         9.168       -         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        Y        Out     0.931     10.099      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[3]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        A        In      -         10.421      -         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        Y        Out     0.900     11.321      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_E[2]                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          B        In      -         11.642      -         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          Y        Out     0.567     12.209      -         
+un1_data_cnt_1_0.DWACT_COMP0_E[0]                                                                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          C        In      -         12.530      -         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          Y        Out     0.655     13.185      -         
+I_67_15                                                                                                                                                           Net          -        -       1.708     -           10        
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        B        In      -         14.894      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        Y        Out     0.624     15.518      -         
+N_368                                                                                                                                                             Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          C        In      -         15.839      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          Y        Out     0.655     16.495      -         
+un1_state_14_0_0_0_0                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          C        In      -         16.816      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          Y        Out     0.655     17.471      -         
+un1_state_14_0_0_0                                                                                                                                                Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         B        In      -         17.857      -         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         Y        Out     0.516     18.373      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_TMP[0]                                                                                                                              Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        A        In      -         18.759      -         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        Y        Out     0.488     19.247      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_1[0]                                                                                                                        Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        A        In      -         20.054      -         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        Y        Out     0.488     20.542      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_2[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        A        In      -         21.726      -         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        Y        Out     0.488     22.214      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_3[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        A        In      -         23.398      -         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        Y        Out     0.488     23.886      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_10[0]                                                                                                                       Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        A        In      -         24.692      -         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        Y        Out     0.488     25.180      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_11_2[0]                                                                                                                     Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        A        In      -         25.566      -         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        Y        Out     0.488     26.055      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_12_6[0]                                                                                                                     Net          -        -       0.322     -           1         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         B        In      -         26.376      -         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         Y        Out     0.937     27.313      -         
+I_51                                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        A        In      -         27.634      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        Y        Out     0.516     28.150      -         
+data_cnt_9[15]                                                                                                                                                    Net          -        -       0.322     -           1         
+data_cnt[15]                                                                                                                                                      DFN1C0       D        In      -         28.472      -         
+================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 29.011 is 13.915(48.0%) logic and 15.096(52.0%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      28.465
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.004
+
+    Number of logic level(s):                21
+    Starting point:                          data_length[1] / Q
+    Ending point:                            data_cnt[15] / D
+    The start point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+    The end   point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                 Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data_length[1]                                                                                                                                                    DFN1E0C0     Q        Out     0.737     0.737       -         
+data_length[1]                                                                                                                                                    Net          -        -       1.423     -           6         
+un1_data_length_0.I_10                                                                                                                                            OR3          B        In      -         2.160       -         
+un1_data_length_0.I_10                                                                                                                                            OR3          Y        Out     0.714     2.875       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[0]                                                                                                                             Net          -        -       1.526     -           7         
+un1_data_length_0.I_30                                                                                                                                            OR3          A        In      -         4.401       -         
+un1_data_length_0.I_30                                                                                                                                            OR3          Y        Out     0.488     4.889       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[6]                                                                                                                             Net          -        -       1.423     -           6         
+un1_data_length_0.I_34                                                                                                                                            OR2          B        In      -         6.312       -         
+un1_data_length_0.I_34                                                                                                                                            OR2          Y        Out     0.646     6.959       -         
+un1_data_length_0.N_6                                                                                                                                             Net          -        -       0.322     -           1         
+un1_data_length_0.I_35                                                                                                                                            XNOR2        A        In      -         7.280       -         
+un1_data_length_0.I_35                                                                                                                                            XNOR2        Y        Out     0.488     7.769       -         
+un1_data_length_n[12]                                                                                                                                             Net          -        -       0.806     -           3         
+un1_data_cnt_1_0.I_28                                                                                                                                             OR2A         A        In      -         8.575       -         
+un1_data_cnt_1_0.I_28                                                                                                                                             OR2A         Y        Out     0.537     9.112       -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[4]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_30                                                                                                                                             NOR2A        A        In      -         9.434       -         
+un1_data_cnt_1_0.I_30                                                                                                                                             NOR2A        Y        Out     0.627     10.061      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[6]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        B        In      -         10.382      -         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        Y        Out     0.931     11.314      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_E[2]                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          B        In      -         11.635      -         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          Y        Out     0.567     12.202      -         
+un1_data_cnt_1_0.DWACT_COMP0_E[0]                                                                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          C        In      -         12.523      -         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          Y        Out     0.655     13.179      -         
+I_67_15                                                                                                                                                           Net          -        -       1.708     -           10        
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        B        In      -         14.887      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        Y        Out     0.624     15.511      -         
+N_368                                                                                                                                                             Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          C        In      -         15.833      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          Y        Out     0.655     16.488      -         
+un1_state_14_0_0_0_0                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          C        In      -         16.809      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          Y        Out     0.655     17.464      -         
+un1_state_14_0_0_0                                                                                                                                                Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         B        In      -         17.850      -         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         Y        Out     0.516     18.366      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_TMP[0]                                                                                                                              Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        A        In      -         18.752      -         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        Y        Out     0.488     19.240      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_1[0]                                                                                                                        Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        A        In      -         20.047      -         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        Y        Out     0.488     20.535      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_2[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        A        In      -         21.719      -         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        Y        Out     0.488     22.207      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_3[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        A        In      -         23.391      -         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        Y        Out     0.488     23.879      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_10[0]                                                                                                                       Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        A        In      -         24.685      -         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        Y        Out     0.488     25.174      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_11_2[0]                                                                                                                     Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        A        In      -         25.559      -         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        Y        Out     0.488     26.048      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_12_6[0]                                                                                                                     Net          -        -       0.322     -           1         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         B        In      -         26.369      -         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         Y        Out     0.937     27.306      -         
+I_51                                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        A        In      -         27.627      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        Y        Out     0.516     28.144      -         
+data_cnt_9[15]                                                                                                                                                    Net          -        -       0.322     -           1         
+data_cnt[15]                                                                                                                                                      DFN1C0       D        In      -         28.465      -         
+================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 29.004 is 13.764(47.5%) logic and 15.240(52.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      28.463
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -19.002
+
+    Number of logic level(s):                21
+    Starting point:                          data_length[4] / Q
+    Ending point:                            data_cnt[15] / D
+    The start point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+    The end   point is clocked by            top_cmd_process|sys_clk [rising] on pin CLK
+
+Instance / Net                                                                                                                                                                 Pin      Pin               Arrival     No. of    
+Name                                                                                                                                                              Type         Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+data_length[4]                                                                                                                                                    DFN1E0C0     Q        Out     0.737     0.737       -         
+data_length[4]                                                                                                                                                    Net          -        -       1.423     -           6         
+un1_data_length_0.I_18                                                                                                                                            OR3          B        In      -         2.160       -         
+un1_data_length_0.I_18                                                                                                                                            OR3          Y        Out     0.714     2.875       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[2]                                                                                                                             Net          -        -       1.184     -           4         
+un1_data_length_0.I_30                                                                                                                                            OR3          B        In      -         4.058       -         
+un1_data_length_0.I_30                                                                                                                                            OR3          Y        Out     0.714     4.773       -         
+un1_data_length_0.U1\.DWACT_FDEC_E[6]                                                                                                                             Net          -        -       1.423     -           6         
+un1_data_length_0.I_31                                                                                                                                            OR3          A        In      -         6.196       -         
+un1_data_length_0.I_31                                                                                                                                            OR3          Y        Out     0.488     6.684       -         
+un1_data_length_0.N_7                                                                                                                                             Net          -        -       0.322     -           1         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        A        In      -         7.006       -         
+un1_data_length_0.I_32                                                                                                                                            XNOR2        Y        Out     0.488     7.494       -         
+un1_data_length_n[11]                                                                                                                                             Net          -        -       0.806     -           3         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         A        In      -         8.300       -         
+un1_data_cnt_1_0.I_25                                                                                                                                             OR2A         Y        Out     0.537     8.837       -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[1]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        B        In      -         9.159       -         
+un1_data_cnt_1_0.I_27                                                                                                                                             AOI1A        Y        Out     0.931     10.090      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO2_DWACT_COMP0_IF1_4\.IF_equal_40\.ACT_LT4_E[3]     Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        A        In      -         10.412      -         
+un1_data_cnt_1_0.I_34                                                                                                                                             AOI1A        Y        Out     0.900     11.312      -         
+un1_data_cnt_1_0.DWACT_COMP0_IF1_n\.IF_equal_n0\.DWACT_CMPLE_PO0_DWACT_COMP0_E[2]                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          B        In      -         11.634      -         
+un1_data_cnt_1_0.I_35                                                                                                                                             AO1          Y        Out     0.567     12.200      -         
+un1_data_cnt_1_0.DWACT_COMP0_E[0]                                                                                                                                 Net          -        -       0.322     -           1         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          C        In      -         12.522      -         
+un1_data_cnt_1_0.I_67                                                                                                                                             AO1          Y        Out     0.655     13.177      -         
+I_67_15                                                                                                                                                           Net          -        -       1.708     -           10        
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        B        In      -         14.885      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_a2                                                                                                     NOR3B        Y        Out     0.624     15.509      -         
+N_368                                                                                                                                                             Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          C        In      -         15.831      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0_0                                                                                                      AO1          Y        Out     0.655     16.486      -         
+un1_state_14_0_0_0_0                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          C        In      -         16.807      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.un1_state_14_0_0_0                                                                                                        AO1          Y        Out     0.655     17.463      -         
+un1_state_14_0_0_0                                                                                                                                                Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         B        In      -         17.848      -         
+un1_data_cnt_2.I_1                                                                                                                                                AND2         Y        Out     0.516     18.365      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_TMP[0]                                                                                                                              Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        A        In      -         18.750      -         
+un1_data_cnt_2.I_67                                                                                                                                               NOR2B        Y        Out     0.488     19.239      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_1[0]                                                                                                                        Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        A        In      -         20.045      -         
+un1_data_cnt_2.I_84                                                                                                                                               NOR2B        Y        Out     0.488     20.533      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_2[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        A        In      -         21.717      -         
+un1_data_cnt_2.I_81                                                                                                                                               NOR2B        Y        Out     0.488     22.205      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_3[0]                                                                                                                        Net          -        -       1.184     -           4         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        A        In      -         23.389      -         
+un1_data_cnt_2.I_90                                                                                                                                               NOR2B        Y        Out     0.488     23.877      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_10[0]                                                                                                                       Net          -        -       0.806     -           3         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        A        In      -         24.683      -         
+un1_data_cnt_2.I_75                                                                                                                                               NOR2B        Y        Out     0.488     25.172      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_11_2[0]                                                                                                                     Net          -        -       0.386     -           2         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        A        In      -         25.558      -         
+un1_data_cnt_2.I_77                                                                                                                                               NOR2B        Y        Out     0.488     26.046      -         
+un1_data_cnt_2.DWACT_ADD_CI_0_g_array_12_6[0]                                                                                                                     Net          -        -       0.322     -           1         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         B        In      -         26.367      -         
+un1_data_cnt_2.I_51                                                                                                                                               XOR2         Y        Out     0.937     27.304      -         
+I_51                                                                                                                                                              Net          -        -       0.322     -           1         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        A        In      -         27.626      -         
+flash_ctrl.flash_array\[3\]\.flash_inst.data_cnt_9[15]                                                                                                            NOR2A        Y        Out     0.516     28.142      -         
+data_cnt_9[15]                                                                                                                                                    Net          -        -       0.322     -           1         
+data_cnt[15]                                                                                                                                                      DFN1C0       D        In      -         28.463      -         
+================================================================================================================================================================================================================================
+Total path delay (propagation time + setup) of 29.002 is 14.104(48.6%) logic and 14.898(51.4%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:18s; Memory used current: 182MB peak: 249MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:18s; Memory used current: 182MB peak: 249MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P030_VQFP100_STD
+Report for cell top_cmd_process.verilog
+  Core Cell usage:
+              cell count     area count*area
+              AND2   281      1.0      281.0
+             AND2A     4      1.0        4.0
+              AND3     7      1.0        7.0
+               AO1   496      1.0      496.0
+              AO1A   204      1.0      204.0
+              AO1B    15      1.0       15.0
+              AO1C    45      1.0       45.0
+              AO1D    46      1.0       46.0
+              AOI1    10      1.0       10.0
+             AOI1A     8      1.0        8.0
+             AOI1B     4      1.0        4.0
+               AX1     1      1.0        1.0
+              AX1A    14      1.0       14.0
+              AX1B    47      1.0       47.0
+              AX1C     3      1.0        3.0
+              AX1D   158      1.0      158.0
+              AXO2     1      1.0        1.0
+             AXOI5     2      1.0        2.0
+            CLKINT     4      0.0        0.0
+               GND    36      0.0        0.0
+              MAJ3     4      1.0        4.0
+               MX2   969      1.0      969.0
+              MX2A    68      1.0       68.0
+              MX2B     1      1.0        1.0
+              MX2C     1      1.0        1.0
+              NOR2   664      1.0      664.0
+             NOR2A  1328      1.0     1328.0
+             NOR2B  1498      1.0     1498.0
+              NOR3   199      1.0      199.0
+             NOR3A   421      1.0      421.0
+             NOR3B   557      1.0      557.0
+             NOR3C   306      1.0      306.0
+               OA1   250      1.0      250.0
+              OA1A    74      1.0       74.0
+              OA1B    15      1.0       15.0
+              OA1C   117      1.0      117.0
+               OR2   441      1.0      441.0
+              OR2A   221      1.0      221.0
+              OR2B    54      1.0       54.0
+               OR3   862      1.0      862.0
+              OR3A    59      1.0       59.0
+              OR3B     1      1.0        1.0
+              OR3C     1      1.0        1.0
+               VCC    36      0.0        0.0
+               XA1    57      1.0       57.0
+              XA1A     6      1.0        6.0
+              XA1B    49      1.0       49.0
+              XA1C   194      1.0      194.0
+              XAI1    11      1.0       11.0
+             XAI1A    14      1.0       14.0
+             XNOR2   128      1.0      128.0
+               XO1     5      1.0        5.0
+              XO1A     6      1.0        6.0
+              XOR2   574      1.0      574.0
+              XOR3     3      1.0        3.0
+              ZOR3    11      1.0       11.0
+
+
+              DFN1   941      1.0      941.0
+            DFN1C0    76      1.0       76.0
+            DFN1E0    64      1.0       64.0
+          DFN1E0C0    19      1.0       19.0
+            DFN1E1  1426      1.0     1426.0
+          DFN1E1C0    45      1.0       45.0
+            DFN1P0     3      1.0        3.0
+                   -----          ----------
+             TOTAL 13165             13089.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF     2
+            OUTBUF    10
+                   -----
+             TOTAL    14
+
+
+Core Cells         : 13089 of 768 (1704%)
+IO Cells           : 14
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:19s; Memory used current: 39MB peak: 249MB)
+
+Process took 0h:00m:20s realtime, 0h:00m:19s cputime
+# Mon Mar 24 10:24:50 2025
+
+###########################################################]

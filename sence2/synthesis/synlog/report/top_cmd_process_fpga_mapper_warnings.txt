@@ -1,0 +1,7 @@
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: FP107 :"d:\files\fpga\sence2\hdl\top_cmd_process.v":181:4:181:9|Not enough number of ram blocks left to decompose data_buffer[7:0] 
+@W: MT420 |Found inferred clock top_cmd_process|sys_clk with period 10.00ns. Please declare a user-defined clock on object "p:sys_clk"

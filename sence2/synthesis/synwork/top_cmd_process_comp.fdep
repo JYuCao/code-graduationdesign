@@ -1,0 +1,40 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\files\\fpga\\sence2\\synthesis\\synwork\\top_cmd_process_comp.srs|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|D:\\files\\fpga\\sence2\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1479953424
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v":1487916450
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487916586
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\flash_a.v":1737350643
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\flash_b.v":1742381604
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\flash_c.v":1742381604
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\uart_rx.v":1741684656
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\uart_tx.v":1742554188
+#CUR:"D:\\files\\fpga\\sence2\\hdl\\top_cmd_process.v":1742783063
+0			"D:\files\fpga\sence2\hdl\flash_a.v" verilog
+1			"D:\files\fpga\sence2\hdl\flash_b.v" verilog
+2			"D:\files\fpga\sence2\hdl\flash_c.v" verilog
+3			"D:\files\fpga\sence2\hdl\uart_rx.v" verilog
+4			"D:\files\fpga\sence2\hdl\uart_tx.v" verilog
+5			"D:\files\fpga\sence2\hdl\top_cmd_process.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 0
+2 1
+3 -1
+4 -1
+5 2 4 3
+#Dependency Lists(Users Of)
+0 1
+1 2
+2 5
+3 5
+4 5
+5 -1
+#Design Unit to File Association
+module work top_cmd_process 5
+module work uart_tx 4
+module work uart_rx 3
+module work flash_c 2
+module work flash_b 1
+module work flash_a 0

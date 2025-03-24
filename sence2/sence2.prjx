@@ -1,6 +1,7 @@
 KEY LIBERO "11.8"
 KEY CAPTURE "11.8.2.4"
 KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
 KEY ProjectID "0"
 KEY HDLTechnology "VERILOG"
 KEY VERILOGMODE "VERILOG2001"
@@ -12,10 +13,15 @@ KEY VendorTechnology_Package "vq100"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
 KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IQ2X1M0"
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
@@ -24,16 +30,103 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\sence2"
+KEY ProjectLocation "D:\files\fpga\sence2"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
+KEY ActiveRoot "top_cmd_process::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
-CURREV=1
+VALUE="Impl2",NUM=2
+CURREV=2
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl2\scene2_module.ide_des,ide_des"
+STATE="utd"
+TIME="1742700377"
+SIZE="185"
+ENDFILE
+VALUE "<project>\designer\impl2\top.ide_des,ide_des"
+STATE="utd"
+TIME="1742700382"
+SIZE="175"
+ENDFILE
+VALUE "<project>\designer\impl2\top_cmd_process.ide_des,ide_des"
+STATE="utd"
+TIME="1742700403"
+SIZE="187"
+ENDFILE
+VALUE "<project>\hdl\flash_a.v,hdl"
+STATE="utd"
+TIME="1737350643"
+SIZE="4083"
+ENDFILE
+VALUE "<project>\hdl\flash_b.v,hdl"
+STATE="utd"
+TIME="1742381604"
+SIZE="10689"
+ENDFILE
+VALUE "<project>\hdl\flash_c.v,hdl"
+STATE="utd"
+TIME="1742381604"
+SIZE="3136"
+ENDFILE
+VALUE "<project>\hdl\top_cmd_process.v,hdl"
+STATE="utd"
+TIME="1742791244"
+SIZE="20216"
+ENDFILE
+VALUE "<project>\hdl\uart_rx.v,hdl"
+STATE="utd"
+TIME="1741684656"
+SIZE="3337"
+ENDFILE
+VALUE "<project>\hdl\uart_tx.v,hdl"
+STATE="utd"
+TIME="1742554188"
+SIZE="3304"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1742742741"
+SIZE="987"
+ENDFILE
+VALUE "<project>\simulation\tb_cmd_process_presynth_simulation.log,log"
+STATE="utd"
+TIME="1742791265"
+SIZE="3140"
+ENDFILE
+VALUE "<project>\stimulus\tb_cmd_process.v,tb_hdl"
+STATE="utd"
+TIME="1742789242"
+SIZE="11375"
+ENDFILE
+VALUE "<project>\synthesis\synwork\layer0.so,so"
+STATE="utd"
+TIME="1742783025"
+SIZE="159"
+ENDFILE
+VALUE "<project>\synthesis\top_cmd_process.edn,syn_edn"
+STATE="ood"
+TIME="1742783090"
+SIZE="5551805"
+ENDFILE
+VALUE "<project>\synthesis\top_cmd_process.so,so"
+STATE="utd"
+TIME="1742783090"
+SIZE="220"
+ENDFILE
+VALUE "<project>\synthesis\top_cmd_process_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1742783090"
+SIZE="412"
+ENDFILE
+VALUE "<project>\synthesis\top_cmd_process_syn.prj,prj"
+STATE="utd"
+TIME="1742783023"
+SIZE="878"
+ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
@@ -109,8 +202,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -118,7 +211,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_cmd_process_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -157,11 +250,32 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Project Summary:sence2.log
+ReportsCurrentItem;Synthesize:top_cmd_process.areasrr
 StartPage;StartPage;0
-ACTIVEVIEW;Reports
+HDL;stimulus\tb_cmd_process.v;0
+ACTIVEVIEW;stimulus\tb_cmd_process.v
 ENDLIST
 LIST ModuleSubBlockList
+LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
+ENDLIST
+LIST "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+SUBBLOCK "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
+ENDLIST
+LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+ENDLIST
+LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_cmd_process::work","stimulus\tb_cmd_process.v","FALSE","TRUE"
+SUBBLOCK "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
 ENDLIST

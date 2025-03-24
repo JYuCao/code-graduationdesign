@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\sence2\synthesis   -part A3P030  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\sence2\synthesis\synlog\report\top_cmd_process_fpga_mapper.xml  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  D:\files\fpga\sence2\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  D:\files\fpga\sence2\synthesis\top_cmd_process.edn   -freq 100.000   D:\files\fpga\sence2\synthesis\synwork\top_cmd_process_prem.srd  -sap  D:\files\fpga\sence2\synthesis\top_cmd_process.sap  -otap  D:\files\fpga\sence2\synthesis\top_cmd_process.tap  -omap  D:\files\fpga\sence2\synthesis\top_cmd_process.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -sap  D:\files\fpga\sence2\synthesis\top_cmd_process.sap  -ologparam  D:\files\fpga\sence2\synthesis\syntmp\top_cmd_process.plg  -osyn  D:\files\fpga\sence2\synthesis\top_cmd_process.srm  -prjdir  D:\files\fpga\sence2\synthesis\  -prjname  top_cmd_process_syn  -log  D:\files\fpga\sence2\synthesis\synlog\top_cmd_process_fpga_mapper.srr 
+rc:1 success:1 runtime:20
+file:D:\files\fpga\sence2\synthesis\scratchproject.prs|io:o|time:1742783053|size:1938|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.edn|io:o|time:1742783090|size:5551805|exec:0
+file:D:\files\fpga\sence2\synthesis\synwork\top_cmd_process_prem.srd|io:i|time:1742783069|size:50066|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.sap|io:o|time:1742783070|size:3793|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.tap|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.map|io:o|time:1742783090|size:28|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.sap|io:o|time:1742783070|size:3793|exec:0
+file:D:\files\fpga\sence2\synthesis\syntmp\top_cmd_process.plg|io:o|time:1742783090|size:1278|exec:0
+file:D:\files\fpga\sence2\synthesis\top_cmd_process.srm|io:o|time:1742783089|size:119914|exec:0
+file:D:\files\fpga\sence2\synthesis\synlog\top_cmd_process_fpga_mapper.srr|io:o|time:1742783090|size:133374|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1
