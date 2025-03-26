@@ -1,0 +1,76 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:24:18 on Mar 25,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_a.v 
+# -- Compiling module flash_a
+# 
+# Top level modules:
+# 	flash_a
+# End time: 20:24:18 on Mar 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:24:18 on Mar 25,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_b.v 
+# -- Compiling module flash_b
+# 
+# Top level modules:
+# 	flash_b
+# End time: 20:24:18 on Mar 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:24:18 on Mar 25,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/flash_test/stimulus" -vlog01compat -work presynth D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v 
+# -- Compiling module tb_flash_b_die_erase
+# 
+# Top level modules:
+# 	tb_flash_b_die_erase
+# End time: 20:24:18 on Mar 25,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_flash_b_die_erase 
+# Start time: 20:24:18 on Mar 25,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_flash_b_die_erase
+# Loading presynth.flash_b
+# Loading presynth.flash_a
+# Time=0 cmd_dieerase=0 addr=000000 length=0000 done=x status=xxxx
+# Time=25000 cmd_dieerase=0 addr=000000 length=0000 done=0 status=xxxx
+# Time=200000 cmd_dieerase=1 addr=000000 length=0001 done=0 status=xxxx
+# Time=225000 cmd_dieerase=1 addr=000000 length=0001 done=0 status=0001
+# Time=250000 cmd_dieerase=0 addr=000000 length=0001 done=0 status=0001
+run -all
+# Time=10125000 cmd_dieerase=0 addr=000000 length=0001 done=0 status=0000
+# Time=20325000 cmd_dieerase=0 addr=000000 length=0001 done=1 status=ffff
+# Time=20375000 cmd_dieerase=0 addr=000000 length=0001 done=0 status=ffff
+# Time=20525000 cmd_dieerase=1 addr=400000 length=0002 done=0 status=0002
+# Time=20575000 cmd_dieerase=0 addr=400000 length=0002 done=0 status=0002
+# Time=30525000 cmd_dieerase=0 addr=400000 length=0002 done=0 status=0001
+# Time=40725000 cmd_dieerase=0 addr=400000 length=0002 done=0 status=0000
+# Time=50925000 cmd_dieerase=0 addr=400000 length=0002 done=1 status=ffff
+# Time=50975000 cmd_dieerase=0 addr=400000 length=0002 done=0 status=ffff
+# Die Erase 测试完成
+# ** Note: $finish    : D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v(116)
+#    Time: 51125 ns  Iteration: 0  Instance: /tb_flash_b_die_erase
+# 1
+# Break in Module tb_flash_b_die_erase at D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v line 116
+# End time: 20:25:11 on Mar 25,2025, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0

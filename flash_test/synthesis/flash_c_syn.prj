@@ -1,13 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
-#--  Project file C:\Users\jycao\Desktop\1\code-graduationdesign\flash_test\synthesis\flash_c_syn.prj
+#--  Project file D:\files\fpga\flash_test\synthesis\flash_c_syn.prj
 #--  Written on Wed Mar 19 15:38:25 2025
 
 
 #project files
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_a.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_b.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_c.v"
+add_file -verilog "D:/files/fpga/flash_test/hdl/flash_a.v"
+add_file -verilog "D:/files/fpga/flash_test/hdl/flash_b.v"
+add_file -verilog "D:/files/fpga/flash_test/hdl/flash_c.v"
 
 
 
