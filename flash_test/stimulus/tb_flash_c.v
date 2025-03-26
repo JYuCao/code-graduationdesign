@@ -53,7 +53,7 @@ module tb_flash_c;
     // Clock generation
     initial begin
         clk = 0;
-        forever #5 clk = ~clk; // 100MHz clock
+        forever #25 clk = ~clk; // 100MHz clock
     end
     
     // Simulate Flash response
@@ -76,54 +76,54 @@ module tb_flash_c;
         flash_q = 0;
         
         // Release reset
-        #100;
+        #500;
         reset = 0;
-        #20;
+        #100;
         
         // Test 1: Erase a sector in chip 0
         addr = 32'h00000000; // Select chip 0
         length = 16'd1;      // Erase 1 sector
         cmd_erasedies = 1;
-        #10;
+        #50;
         cmd_erasedies = 0;
         
         // Wait for operation completion
         wait(done);
-        #20;
+        #100;
         
         // Test 2: Write data to chip 1
         addr = 32'h10000100; // Select chip 1, address 0x100
         length = 16'd1;      // Write 1 page
         din = 8'hA5;         // Test data
         cmd_write = 1;
-        #10;
+        #50;
         cmd_write = 0;
         
         // Wait for operation completion
         wait(done);
-        #20;
+        #100;
         
         // Test 3: Read data from chip 1
         addr = 32'h10000100; // Select chip 1, address 0x100
         length = 16'd1;      // Read 1 page
         cmd_read = 1;
-        #10;
+        #50;
         cmd_read = 0;
         
         // Wait for operation completion
         wait(done);
-        #20;
+        #100;
         
         // Test 4: Erase a sector in chip 15
         addr = 32'hF0000000; // Select chip 15
         length = 16'd1;      // Erase 1 sector
         cmd_erasedies = 1;
-        #10;
+        #50;
         cmd_erasedies = 0;
         
         // Wait for operation completion
         wait(done);
-        #20;
+        #100;
         
         // Simulation end
         $display("Simulation completed");
