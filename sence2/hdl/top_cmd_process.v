@@ -39,65 +39,63 @@ module top_cmd_process(
     wire flash_error;
 
     // Command list
-    localparam CMD_READ = 8'h01;
-    localparam CMD_WRITE = 8'h02;
-    localparam CMD_ERASE = 8'h03;
+    localparam CMD_GET_FRAME_COUNT = 8'hA1;
+    localparam CMD_ERASE_ALL = 8'hA2;
     localparam CMD_BAUD_SET = 8'hA9;
     localparam CMD_ECHO = 8'hFF;
 
     // Main state machine
-    // Main state machine
-    localparam STAT_IDLE = 6'd0;         // Idle state
-    localparam STAT_GET_ADDR = 6'd1;     // Get address
-    localparam STAT_ADDR_CHECK1 = 6'd2;  // Address check 1
-    localparam STAT_ADDR_CHECK2 = 6'd3;  // Address check 2
-    localparam STAT_GET_LEN_L = 6'd4;    // Get data length low byte
-    localparam STAT_GET_LEN_L_CRC8 = 6'd5;    // CRC8 check for length low byte
-    localparam STAT_GET_LEN_H = 6'd6;    // Get data length high byte
-    localparam STAT_GET_LEN_H_CRC8 = 6'd7;    // CRC8 check for length high byte
-    localparam STAT_GET_CMD = 6'd8;      // Get command
-    localparam STAT_GET_CMD_CRC8 = 6'd9;      // CRC8 check for command
-    localparam STAT_GET_DATA = 6'd10;     // Get data
-    localparam STAT_GET_DATA_CRC8 = 6'd11;     // CRC8 check for data
-    localparam STAT_CRC8_check = 6'd12;         // Final CRC8 verification
-    localparam STAT_ERROR = 6'd13;       // Error state
-    localparam STAT_DONE = 6'd14;        // Complete state
-
-    // Read state machine
-    localparam READ_IDLE = 6'd15;        // Read idle
-    localparam READ_ADDR = 6'd16;        // Read address
-    localparam READ_WAIT = 6'd17;        // Wait for read
-    localparam READ_DATA = 6'd18;        // Read data
-    localparam READ_SEND = 6'd19;        // Send data
-
-    // Write state machine
-    localparam WRITE_IDLE = 6'd20;       // Write idle
-    localparam WRITE_ADDR = 6'd21;       // Write address
-    localparam WRITE_DATA = 6'd22;       // Write data
-    localparam WRITE_WAIT = 6'd23;       // Wait for write
-    localparam WRITE_DONE = 6'd24;       // Write complete
-
-    // Erase state machine
-    localparam ERASE_IDLE = 6'd25;       // Erase idle
-    localparam ERASE_ADDR = 6'd26;       // Erase address
-    localparam ERASE_WAIT = 6'd27;       // Wait for erase
-    localparam ERASE_DONE = 6'd28;       // Erase complete 
+    localparam STAT_IDLE = 32'd0;         // Idle state
+    localparam STAT_GET_ADDR = 32'd1;     // Get address
+    localparam STAT_ADDR_CHECK1 = 32'd2;  // Address check 1
+    localparam STAT_ADDR_CHECK2 = 32'd3;  // Address check 2
+    localparam STAT_GET_LEN_L = 32'd4;    // Get data length low byte
+    localparam STAT_GET_LEN_L_CRC8 = 32'd5;    // CRC8 check for length low byte
+    localparam STAT_GET_LEN_H = 32'd6;    // Get data length high byte
+    localparam STAT_GET_LEN_H_CRC8 = 32'd7;    // CRC8 check for length high byte
+    localparam STAT_GET_CMD = 32'd8;      // Get command
+    localparam STAT_GET_CMD_CRC8 = 32'd9;      // CRC8 check for command
+    localparam STAT_GET_DATA = 32'd10;     // Get data
+    localparam STAT_GET_DATA_CRC8 = 32'd11;     // CRC8 check for data
+    localparam STAT_CRC8_check = 32'd12;         // Final CRC8 verification
+    localparam STAT_ERROR = 32'd13;       // Error state
+    localparam STAT_DONE = 32'd14;        // Complete state
 
     // Baud set state machine
-    localparam STAT_BAUD_SET = 6'd29;
+    localparam STAT_BAUD_SET = 32'd29;
+
+    // Get frame count states
+    localparam GET_FRAME_COUNT_CHECK = 32'd30;
+    localparam GET_FRAME_COUNT_CALC = 32'd31;
+    localparam GET_FRAME_COUNT_SEND = 32'd32;
+
+    // Erase All state machine
+    localparam ERASE_ALL_CHECK = 32'd33;      
+    localparam ERASE_ALL_START = 32'd34;      
+    localparam ERASE_ALL_WAIT = 32'd35;      
+    localparam ERASE_ALL_NEXT = 32'd36;       
+    localparam ERASE_ALL_DONE = 32'd37;
+    localparam ERASE_SEND_1 = 32'd48;
+    localparam ERASE_SEND_2 = 32'd49;
+    localparam ERASE_SEND_3 = 32'd42;
 
     // ECHO state machine for test
-    localparam STAT_ECHO1 = 6'd58;
-    localparam STAT_ECHO2 = 6'd59;
-    localparam STAT_ECHO3 = 6'd60;
-    localparam STAT_ECHO4 = 6'd61;
+    localparam STAT_ECHO1 = 32'hFFFFFFFC;
+    localparam STAT_ECHO2 = 32'hFFFFFFFD;
+    localparam STAT_ECHO3 = 32'hFFFFFFFE;
+    localparam STAT_ECHO4 = 32'hFFFFFFFF;
     
-    reg [5:0] state;
+    reg [31:0] state;
     reg [15:0] data_length;
     reg [7:0] cmd;
     reg [15:0] data_cnt;
     reg [7:0] data_buffer [15:0];
-    reg [7:0] calc_crc8;     
+    reg [7:0] calc_crc8;
+
+    reg [15:0] flash_erase_mask;  // Track which Flash chips have been erased
+    reg [15:0] flash_error_mask;  // Track which Flash chips failed during erase
+    reg [3:0] current_flash;      // Currently erasing Flash chip
+    reg erase_all_busy;
     
     // CRC8Table(x^8 + x^2 + x^1 + 1)
     reg [7:0] crc8_table [255:0];
@@ -200,6 +198,7 @@ module top_cmd_process(
             tx_start <= 1'b0;
             tx_data <= 8'd0;
             calc_crc8 <= 8'd0;
+            erase_all_busy <= 1'b0;
         end
         else begin
             case(state)
@@ -212,6 +211,7 @@ module top_cmd_process(
                     tx_start <= 1'b0;
                     tx_data <= 8'd0;
                     calc_crc8 <= 8'd0;
+                    erase_all_busy <= 1'b0;
                     if(rx_done)
                         state <= STAT_GET_ADDR;
                 end
@@ -286,11 +286,10 @@ module top_cmd_process(
                     if(rx_done) begin
                         if(calc_crc8 == rx_data) begin
                             case(cmd)
-                                CMD_READ: state <= READ_ADDR;
-                                CMD_WRITE: state <= WRITE_ADDR;
-                                CMD_ERASE: state <= ERASE_ADDR;
                                 CMD_ECHO: state <= STAT_ECHO1;
+                                CMD_GET_FRAME_COUNT: state <= GET_FRAME_COUNT_CHECK;
                                 CMD_BAUD_SET: state <= STAT_BAUD_SET;
+                                CMD_ERASE_ALL: state <= ERASE_ALL_CHECK;
                                 default: state <= STAT_ERROR;
                             endcase
                         end
@@ -307,83 +306,6 @@ module top_cmd_process(
                 STAT_DONE: begin
                     done <= 1'b1;
                     state <= STAT_IDLE;
-                end
-
-                // STATE READ
-                READ_IDLE: begin
-                    cmd_read <= 1'b0;
-                end
-
-                READ_ADDR: begin
-                    flash_addr <= {data_buffer[3], data_buffer[2], 
-                                 data_buffer[1], data_buffer[0]};
-                    flash_length <= data_length;
-                    cmd_read <= 1'b1;
-                    state <= READ_WAIT;
-                end
-
-                READ_WAIT: begin
-                    if(flash_done) begin
-                        tx_data <= flash_dout;
-                        tx_start <= 1'b1;
-                        state <= READ_SEND;
-                    end
-                end
-
-                READ_SEND: begin
-                    tx_start <= 1'b0;
-                    if(tx_done) begin
-                        if(data_cnt < flash_length - 1) begin
-                            data_cnt <= data_cnt + 1'b1;
-                            state <= READ_DATA;
-                        end
-                        else
-                            state <= STAT_DONE;
-                    end
-                end
-
-                // STATE WRITE
-                WRITE_IDLE: begin
-                    cmd_write <= 1'b0;
-                end
-
-                WRITE_ADDR: begin
-                    flash_addr <= {data_buffer[3], data_buffer[2], 
-                                 data_buffer[1], data_buffer[0]};
-                    state <= WRITE_DATA;
-                end
-
-                WRITE_DATA: begin
-                    flash_din <= data_buffer[0];
-                    cmd_write <= 1'b1;
-                    state <= WRITE_WAIT;
-                end
-
-                WRITE_WAIT: begin
-                    if(flash_done) begin
-                        cmd_write <= 1'b0;
-                        state <= STAT_DONE;
-                    end
-                end
-
-                // STATE ERASE
-                ERASE_IDLE: begin
-                    cmd_erasedies <= 1'b0;
-                end
-
-                ERASE_ADDR: begin
-                    flash_addr <= {data_buffer[3], data_buffer[2], 
-                                 data_buffer[1], data_buffer[0]};
-                    flash_length <= data_length;
-                    cmd_erasedies <= 1'b1;
-                    state <= ERASE_WAIT;
-                end
-
-                ERASE_WAIT: begin
-                    if(flash_done) begin
-                        cmd_erasedies <= 1'b0;
-                        state <= STAT_DONE;
-                    end
                 end
 
                 // STATE BAUD SET
@@ -421,6 +343,115 @@ module top_cmd_process(
 
                 STAT_ECHO4: begin
                     state <= STAT_DONE;
+                end
+
+                
+                // STATE GET FRAME COUNT
+                GET_FRAME_COUNT_CHECK: begin
+                    if(data_length == 16'd4) begin
+                        state <= GET_FRAME_COUNT_CALC;
+                    end else begin
+                        state <= STAT_ERROR;
+                    end
+                end
+                
+                GET_FRAME_COUNT_CALC: begin
+                    data_buffer[3] <= 32'h00001000 / 8;         // high 8
+                    data_buffer[2] <= (32'h00001000 / 8) >> 8;  
+                    data_buffer[1] <= (32'h00001000 / 8) >> 16; 
+                    data_buffer[0] <= (32'h00001000 / 8) >> 24; // low 8
+                    state <= GET_FRAME_COUNT_SEND;
+                end
+                
+                GET_FRAME_COUNT_SEND: begin
+                    state <= STAT_ECHO1;
+                end
+
+
+                // STATE ERASE ALL FLASH
+                ERASE_ALL_CHECK: begin
+                    if(data_length == 16'd4) begin
+                        flash_erase_mask <= 16'h0000;  
+                        flash_error_mask <= 16'h0000;  
+                        current_flash <= 4'd0;   
+                        erase_all_busy <= 1'b1;
+                        
+                        state <= ERASE_ALL_START;
+                    end else begin
+                        state <= STAT_ERROR;
+                    end
+                end
+                
+                ERASE_ALL_START: begin
+                    if (flash_erase_mask != 16'hFFFF) begin
+                        flash_addr <= {current_flash, 28'h0000000};
+                        cmd_erasedies <= 1'b1;
+                        state <= ERASE_ALL_WAIT;
+                    end else begin
+                        state <= ERASE_ALL_DONE;
+                    end
+                end
+                
+                ERASE_ALL_WAIT: begin
+                    cmd_erasedies <= 1'b0;
+                    if(flash_done) begin
+                        flash_erase_mask[current_flash] <= 1'b1;
+                        
+                        data_buffer[0] <= 8'hFF;
+                        data_buffer[1] <= 8'hEE;
+                        data_buffer[2] <= 8'hDD;
+                        data_buffer[3] <= 8'hCC;
+                        tx_data <= data_buffer[0];
+                        tx_start <= 1'b1;
+                        current_flash <= current_flash + 1'b1;
+                        state <= ERASE_SUCCESS_1;
+                    end else if (flash_error) begin
+                        flash_erase_mask[current_flash] <= 1'b1;
+                        flash_error_mask[current_flash] <= 1'b1;
+                        data_buffer[0] <= 8'h0E;
+                        data_buffer[1] <= 8'h0E;
+                        data_buffer[2] <= 8'h0E;
+                        data_buffer[3] <= {4'h0, current_flash};
+                        tx_data <= data_buffer[0];
+                        tx_start <= 1'b1;
+                        state <= ERASE_SUCCESS_1;
+                    end
+                end
+                
+                ERASE_ALL_NEXT: begin
+                    tx_start <= 1'b0;
+                    current_flash <= current_flash + 1'b1;
+                    state <= ERASE_ALL_START;
+                end
+                
+                ERASE_ALL_DONE: begin
+                    done <= 1'b1;
+                    state <= STAT_IDLE;
+                end
+
+                ERASE_SEND_1: begin
+                    tx_start <= 1'b0;
+                    if(tx_done) begin
+                        tx_data <= data_buffer[1];
+                        tx_start <= 1'b1;
+                        state <= ERASE_SEND_2;
+                    end
+                end
+                ERASE_SEND_2: begin
+                    tx_start <= 1'b0;
+                    if(tx_done) begin
+                        tx_data <= data_buffer[2];
+                        tx_start <= 1'b1;
+                        state <= ERASE_SEND_3;
+                    end
+                end
+                ERASE_SEND_3: begin
+                    tx_start <= 1'b0;
+                    if(tx_done) begin
+                        tx_data <= data_buffer[3];
+                        tx_start <= 1'b1;
+                        state <= ERASE_ALL_NEXT;
+                    end
                 end
                 
                 default: state <= STAT_IDLE;

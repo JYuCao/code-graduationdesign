@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 
-module tb_cmd_process();
+module tb_cmd_process_echo();
 
     reg sys_clk;
     wire sys_rst_n;
