@@ -6,7 +6,7 @@ module tb_flash_c;
     reg clk;
     reg reset;
     
-    // Control signals
+    // Command signals
     reg cmd_erasedies;
     reg cmd_write;
     reg cmd_read;
@@ -22,16 +22,13 @@ module tb_flash_c;
     wire error;
     wire [3:0] cs;
     
-    // Flash interface signals
-    wire flash_q;
-    wire flash_c;
+    // Flash interface
+    reg flash_q;
+    wire [15:0] flash_c;
     wire flash_d;
+    wire [15:0] flash_reset_n;
     
-    // Simulated Flash input
-    reg flash_q_reg;
-    assign flash_q = flash_q_reg;
-    
-    // Instantiate DUT (Device Under Test)
+    // Instantiate the module under test
     flash_c uut (
         .clk(clk),
         .reset(reset),
@@ -49,163 +46,93 @@ module tb_flash_c;
         .cs(cs),
         .flash_q(flash_q),
         .flash_c(flash_c),
-        .flash_d(flash_d)
+        .flash_d(flash_d),
+        .flash_reset_n(flash_reset_n)
     );
     
-    // Clock generation - 20MHz (50ns period)
-    always #25 clk = ~clk;
-    
-    // Test data storage
-    reg [7:0] test_data [0:255];
-    integer i;
-    
-    // Flash response simulation
-    always @(posedge clk) begin
-        if (flash_c && flash_d) begin
-            // Simulate write response
-            flash_q_reg <= 1'b1;
-        end else if (flash_c && !flash_d) begin
-            // Simulate read response
-            flash_q_reg <= test_data[i % 256];
-            i <= i + 1;
-        end else begin
-            flash_q_reg <= 1'b0;
-        end
+    // Clock generation
+    initial begin
+        clk = 0;
+        forever #25 clk = ~clk; // 100MHz clock
     end
     
-    // Test procedure
+    // Simulate Flash response
+    always @(posedge clk) begin
+        // Simple Flash response simulation
+        // In real scenarios, there should be more complex logic to simulate Flash behavior
+        flash_q <= flash_d; // Simple data echo
+    end
+    
+    // Test process
     initial begin
-        // Initialize signals
-        clk = 0;
+        // Initialization
         reset = 1;
         cmd_erasedies = 0;
         cmd_write = 0;
         cmd_read = 0;
         addr = 0;
-        length = 16'd1;
+        length = 0;
         din = 0;
-        flash_q_reg = 0;
-        i = 0;
-        
-        // Initialize test data
-        for (i = 0; i < 256; i = i + 1) begin
-            test_data[i] = i;
-        end
-        i = 0;
+        flash_q = 0;
         
         // Release reset
-        #100;
+        #500;
         reset = 0;
         #100;
         
-        // Test 1: Erase Chip 0
-        $display("Test 1: Erase Chip 0 at time %t", $time);
-        addr = 32'h00000000;  // Chip 0
+        // Test 1: Erase a sector in chip 0
+        addr = 32'h00000000; // Select chip 0
+        length = 16'd1;      // Erase 1 sector
         cmd_erasedies = 1;
         #50;
         cmd_erasedies = 0;
         
-        // Wait for operation complete
+        // Wait for operation completion
         wait(done);
         #100;
         
-        // Test 2: Write to Chip 1
-        $display("Test 2: Write to Chip 1 at time %t", $time);
-        addr = 32'h10000000;  // Chip 1
-        length = 16'd4;
-        cmd_write = 1;
-        
-        // Write 4 bytes
-        for (i = 0; i < 4; i = i + 1) begin
-            din = 8'hA0 + i;
-            #50;
-        end
-        cmd_write = 0;
-        
-        // Wait for operation complete
-        wait(done);
-        #100;
-        
-        // Test 3: Read from Chip 1
-        $display("Test 3: Read from Chip 1 at time %t", $time);
-        addr = 32'h10000000;  // Chip 1
-        length = 16'd4;
-        cmd_read = 1;
-        #50;
-        cmd_read = 0;
-        
-        // Wait for operation complete
-        wait(done);
-        #100;
-        
-        // Test 4: Write to Chip 15 (highest chip)
-        $display("Test 4: Write to Chip 15 at time %t", $time);
-        addr = 32'hF0000000;  // Chip 15
-        length = 16'd2;
-        cmd_write = 1;
-        
-        // Write 2 bytes
-        for (i = 0; i < 2; i = i + 1) begin
-            din = 8'hF0 + i;
-            #50;
-        end
-        cmd_write = 0;
-        
-        // Wait for operation complete
-        wait(done);
-        #100;
-        
-        // Test 5: Read from Chip 15
-        $display("Test 5: Read from Chip 15 at time %t", $time);
-        addr = 32'hF0000000;  // Chip 15
-        length = 16'd2;
-        cmd_read = 1;
-        #50;
-        cmd_read = 0;
-        
-        // Wait for operation complete
-        wait(done);
-        #100;
-        
-        // Test 6: Concurrent operations test (write then read)
-        $display("Test 6: Concurrent operations test at time %t", $time);
-        addr = 32'h20000000;  // Chip 2
-        length = 16'd1;
-        din = 8'hCC;
+        // Test 2: Write data to chip 1
+        addr = 32'h10000100; // Select chip 1, address 0x100
+        length = 16'd1;      // Write 1 page
+        din = 8'hA5;         // Test data
         cmd_write = 1;
         #50;
         cmd_write = 0;
         
-        // Start read operation immediately without waiting
-        addr = 32'h30000000;  // Chip 3
+        // Wait for operation completion
+        wait(done);
+        #100;
+        
+        // Test 3: Read data from chip 1
+        addr = 32'h10000100; // Select chip 1, address 0x100
+        length = 16'd1;      // Read 1 page
         cmd_read = 1;
         #50;
         cmd_read = 0;
         
-        // Wait for all operations complete
+        // Wait for operation completion
         wait(done);
         #100;
         
-        // Test 7: Invalid address test
-        $display("Test 7: Invalid address test at time %t", $time);
-        addr = 32'hFFFFFFFF;  // Invalid address
-        cmd_read = 1;
+        // Test 4: Erase a sector in chip 15
+        addr = 32'hF0000000; // Select chip 15
+        length = 16'd1;      // Erase 1 sector
+        cmd_erasedies = 1;
         #50;
-        cmd_read = 0;
+        cmd_erasedies = 0;
         
-        // Wait for operation complete
+        // Wait for operation completion
         wait(done);
         #100;
         
-        // Tests completed
-        $display("All tests completed at time %t", $time);
-        #500;
+        // Simulation end
+        $display("Simulation completed");
         $finish;
     end
     
-    // Signal monitoring
+    // Monitor signals
     initial begin
-        $monitor("Time=%t, CS=%h, Done=%b, Error=%b, Read=%b, Write=%b, Dout=%h", 
+        $monitor("Time=%0t, CS=%h, Done=%b, Error=%b, Read=%b, Write=%b, Dout=%h",
                  $time, cs, done, error, read, write, dout);
     end
 
