@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\sence2"
+KEY ProjectLocation "D:\files\fpga\sence2"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -44,88 +44,78 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl2\scene2_module.ide_des,ide_des"
 STATE="utd"
-TIME="1742796307"
+TIME="1742700377"
 SIZE="185"
 ENDFILE
 VALUE "<project>\designer\impl2\top.ide_des,ide_des"
 STATE="utd"
-TIME="1742796307"
+TIME="1742700382"
 SIZE="175"
 ENDFILE
 VALUE "<project>\designer\impl2\top_cmd_process.ide_des,ide_des"
 STATE="utd"
-TIME="1742796307"
+TIME="1742700403"
 SIZE="187"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1742796307"
+TIME="1737350643"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1742796307"
+TIME="1742381604"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1742796307"
+TIME="1742381604"
 SIZE="3136"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1742796307"
-SIZE="20216"
+TIME="1743666099"
+SIZE="21802"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1742796307"
+TIME="1741684656"
 SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1742796307"
+TIME="1742554188"
 SIZE="3304"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1742796307"
+TIME="1742791260"
 SIZE="987"
-ENDFILE
-VALUE "<project>\simulation\tb_cmd_process_presynth_simulation.log,log"
-STATE="utd"
-TIME="1742796307"
-SIZE="4385"
-ENDFILE
-VALUE "<project>\stimulus\tb_cmd_process.v,tb_hdl"
-STATE="utd"
-TIME="1742796307"
-SIZE="11375"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1742796307"
+TIME="1742783053"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_cmd_process.edn,syn_edn"
 STATE="ood"
-TIME="1742796307"
+TIME="1742783090"
 SIZE="5551805"
 ENDFILE
 VALUE "<project>\synthesis\top_cmd_process.so,so"
 STATE="utd"
-TIME="1742796307"
+TIME="1742783090"
 SIZE="220"
 ENDFILE
 VALUE "<project>\synthesis\top_cmd_process_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1742796307"
+TIME="1742783090"
 SIZE="412"
 ENDFILE
 VALUE "<project>\synthesis\top_cmd_process_syn.prj,prj"
 STATE="utd"
-TIME="1742796307"
-SIZE="1937"
+TIME="1743664105"
+SIZE="2168"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -252,8 +242,8 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Synthesize:top_cmd_process.areasrr
 StartPage;StartPage;0
-HDL;stimulus\tb_cmd_process.v;0
-ACTIVEVIEW;stimulus\tb_cmd_process.v
+HDL;hdl\top_cmd_process.v;0
+ACTIVEVIEW;hdl\top_cmd_process.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
@@ -272,9 +262,6 @@ ENDLIST
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 ENDLIST
 LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
-ENDLIST
-LIST "tb_cmd_process::work","stimulus\tb_cmd_process.v","FALSE","TRUE"
-SUBBLOCK "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

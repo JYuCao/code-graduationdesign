@@ -37,6 +37,7 @@ module top_cmd_process(
     wire flash_write;
     wire flash_done;
     wire flash_error;
+    wire flash_busy;
 
     // Command list
     localparam CMD_GET_FRAME_COUNT = 8'hA1;
@@ -95,7 +96,6 @@ module top_cmd_process(
     reg [15:0] flash_erase_mask;  // Track which Flash chips have been erased
     reg [15:0] flash_error_mask;  // Track which Flash chips failed during erase
     reg [3:0] current_flash;      // Currently erasing Flash chip
-    reg erase_all_busy;
     
     // CRC8Table(x^8 + x^2 + x^1 + 1)
     reg [7:0] crc8_table [255:0];
@@ -198,7 +198,6 @@ module top_cmd_process(
             tx_start <= 1'b0;
             tx_data <= 8'd0;
             calc_crc8 <= 8'd0;
-            erase_all_busy <= 1'b0;
         end
         else begin
             case(state)
@@ -211,7 +210,6 @@ module top_cmd_process(
                     tx_start <= 1'b0;
                     tx_data <= 8'd0;
                     calc_crc8 <= 8'd0;
-                    erase_all_busy <= 1'b0;
                     if(rx_done)
                         state <= STAT_GET_ADDR;
                 end
@@ -373,8 +371,7 @@ module top_cmd_process(
                     if(data_length == 16'd4) begin
                         flash_erase_mask <= 16'h0000;  
                         flash_error_mask <= 16'h0000;  
-                        current_flash <= 4'd0;   
-                        erase_all_busy <= 1'b1;
+                        current_flash <= 4'd0;
                         
                         state <= ERASE_ALL_START;
                     end else begin
@@ -404,7 +401,7 @@ module top_cmd_process(
                         tx_data <= data_buffer[0];
                         tx_start <= 1'b1;
                         current_flash <= current_flash + 1'b1;
-                        state <= ERASE_SUCCESS_1;
+                        state <= ERASE_SEND_1;
                     end else if (flash_error) begin
                         flash_erase_mask[current_flash] <= 1'b1;
                         flash_error_mask[current_flash] <= 1'b1;
@@ -414,7 +411,7 @@ module top_cmd_process(
                         data_buffer[3] <= {4'h0, current_flash};
                         tx_data <= data_buffer[0];
                         tx_start <= 1'b1;
-                        state <= ERASE_SUCCESS_1;
+                        state <= ERASE_SEND_1;
                     end
                 end
                 
@@ -496,7 +493,8 @@ module top_cmd_process(
         .cs(flash_cs),
         .flash_q(flash_q),
         .flash_c(flash_c),
-        .flash_d(flash_d)
+        .flash_d(flash_d),
+        .busy(flash_busy)
     );
 
 endmodule

@@ -16,6 +16,7 @@ module flash_c(
     output reg         done,
     output reg         error,
     output wire [3:0]  cs,
+    output wire        busy,
 
     // Flash Interface
     input  wire        flash_q,
@@ -45,6 +46,9 @@ module flash_c(
     
     // Each chip has independent flash_c clock line
     assign flash_c = flash_c_array;
+
+    // Busy
+    assign busy = (state == s_operate);
     
     // Generate reset signal, reset corresponding chip when system reset or not selected
     genvar r;

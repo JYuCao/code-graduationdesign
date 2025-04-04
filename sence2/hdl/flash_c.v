@@ -15,12 +15,14 @@ module flash_c(
     output reg         write,
     output reg         done,
     output reg         error,
-    output wire  [3:0]  cs,
+    output wire [3:0]  cs,
+    output wire        busy,
 
-    // Flash interface
-	input  wire        flash_q,
-	output wire        flash_c,
-	output wire        flash_d
+    // Flash Interface
+    input  wire        flash_q,
+    output wire [15:0] flash_c,
+    output wire        flash_d,
+    output wire [15:0] flash_reset_n  // 16-bit reset output
     );
 
     
@@ -37,10 +39,24 @@ module flash_c(
     wire [15:0] flash_s_n_array;
 
     wire [15:0] flash_c_array;
-    wire [15:0] flash_d_array;
+    wire flash_d_wire;  // Single flash_d line
     
-    assign flash_c = flash_c_array[chip_select];
-    assign flash_d = flash_d_array[chip_select];
+    // All chips share the same flash_d
+    assign flash_d = flash_d_wire;
+    
+    // Each chip has independent flash_c clock line
+    assign flash_c = flash_c_array;
+
+    // Busy
+    assign busy = (state == s_operate);
+    
+    // Generate reset signal, reset corresponding chip when system reset or not selected
+    genvar r;
+    generate
+        for (r = 0; r < 16; r = r + 1) begin : reset_gen
+            assign flash_reset_n[r] = reset ? 1'b0 : 1'b1;
+        end
+    endgenerate
 
     genvar i;
     generate
@@ -48,7 +64,7 @@ module flash_c(
             flash_b flash_inst (
                 .clk(clk),
                 .reset(reset),
-                .cmd_erasedies(cmd_erasedies && (chip_select == i)),
+                .cmd_dieerase(cmd_erasedies && (chip_select == i)),
                 .cmd_write(cmd_write && (chip_select == i)),
                 .cmd_read(cmd_read && (chip_select == i)),
                 .addr(addr[27:0]),
@@ -62,7 +78,7 @@ module flash_c(
                 .flash_q(flash_q),
                 .flash_c(flash_c_array[i]),
                 .flash_s_n(flash_s_n_array[i]),
-                .flash_d(flash_d_array[i])
+                .flash_d(flash_d_wire)  // All instances share the same flash_d
             );
         end
     endgenerate
