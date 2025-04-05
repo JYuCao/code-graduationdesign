@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  D:\files\fpga\storage\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\storage\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\storage\synthesis\synlog\report\top_storage_premap.xml  -oedif  D:\files\fpga\storage\synthesis\top_storage.edn  -conchk_prepass  D:\files\fpga\storage\synthesis\top_storage_cck.rpt   -freq 100.000   D:\files\fpga\storage\synthesis\synwork\top_storage_mult.srs  -flow prepass  -gcc_prepass  -osrd  D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd  -qsap  D:\files\fpga\storage\synthesis\top_storage.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -ologparam  D:\files\fpga\storage\synthesis\syntmp\top_storage.plg  -osyn  D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd  -prjdir  D:\files\fpga\storage\synthesis\  -prjname  top_storage_syn  -log  D:\files\fpga\storage\synthesis\synlog\top_storage_premap.srr 
+rc:1 success:1 runtime:2
+file:D:\files\fpga\storage\synthesis\scratchproject.prs|io:o|time:1743837384|size:2309|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.edn|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage_cck.rpt|io:o|time:1743838967|size:20720|exec:0
+file:D:\files\fpga\storage\synthesis\synwork\top_storage_mult.srs|io:i|time:1743838965|size:7137|exec:0
+file:D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd|io:o|time:1743838966|size:172932|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.sap|io:o|time:1743838967|size:6735|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\storage\synthesis\syntmp\top_storage.plg|io:o|time:1743838965|size:0|exec:0
+file:D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd|io:o|time:1743838966|size:172932|exec:0
+file:D:\files\fpga\storage\synthesis\synlog\top_storage_premap.srr|io:o|time:1743838967|size:210731|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1

@@ -1,0 +1,59 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\files\fpga\storage\hdl\eeprom.v":2:7:2:16|Synthesizing module spi_eeprom in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\can_level_bit.v":10:7:10:19|Synthesizing module can_level_bit in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\can_level_packet.v":10:7:10:22|Synthesizing module can_level_packet in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\can_top.v":11:7:11:13|Synthesizing module can_top in library work.
+@N: CL134 :"D:\files\fpga\storage\hdl\can_top.v":98:0:98:5|Found RAM buffer, depth=1024, width=32
+@N: CG364 :"D:\files\fpga\storage\hdl\top_can_flash.v":10:7:10:19|Synthesizing module top_can_flash in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\uart_rx.v":2:7:2:13|Synthesizing module uart_rx in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\uart_tx.v":2:7:2:13|Synthesizing module uart_tx in library work.
+@N: CG179 :"D:\files\fpga\storage\hdl\uart_tx.v":51:22:51:27|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\storage\hdl\top_cmd_process.v":1:7:1:21|Synthesizing module top_cmd_process in library work.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[0] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[1] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[2] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[3] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[4] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[5] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[6] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[7] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[8] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[9] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[10] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[11] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[12] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[13] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[14] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[15] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[16] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[17] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[18] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[19] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[20] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[21] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[22] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[23] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[24] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[25] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[26] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Register bit flash_addr[27] is always 0.
+@N: CG364 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Synthesizing module top_storage in library work.
+@N: CL201 :"D:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
+@N: CL201 :"D:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\eeprom.v":41:4:41:9|Trying to extract state machine for register state.
+@N: CL159 :"D:\files\fpga\storage\hdl\eeprom.v":9:21:9:27|Input data_in is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\eeprom.v":11:22:11:25|Input addr is unused.
+@N|Running in 64-bit mode
+@N: NF107 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Selected library: work cell: top_storage view verilog as top level
+@N: NF107 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Selected library: work cell: top_storage view verilog as top level
+

@@ -1,0 +1,2 @@
+@W: MO156 :"d:\files\fpga\storage\hdl\can_top.v":98:0:98:5|RAM buffer[31:0] removed due to constant propagation. 
+@W: MT530 :"d:\files\fpga\storage\hdl\eeprom.v":41:4:41:9|Found inferred clock top_storage|clk which controls 6694 sequential elements including u_can_flash.eeprom_ctrl.state[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 

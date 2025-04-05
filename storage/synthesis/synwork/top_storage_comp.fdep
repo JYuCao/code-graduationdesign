@@ -1,0 +1,70 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\files\\fpga\\storage\\synthesis\\synwork\\top_storage_comp.srs|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|D:\\files\\fpga\\storage\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1479953424
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v":1487916450
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487916586
+#CUR:"D:\\files\\fpga\\storage\\hdl\\uart_rx.v":1741684656
+#CUR:"D:\\files\\fpga\\storage\\hdl\\uart_tx.v":1742554188
+#CUR:"D:\\files\\fpga\\storage\\hdl\\flash_a.v":1737350643
+#CUR:"D:\\files\\fpga\\storage\\hdl\\flash_b.v":1743838885
+#CUR:"D:\\files\\fpga\\storage\\hdl\\flash_c.v":1743838957
+#CUR:"D:\\files\\fpga\\storage\\hdl\\top_cmd_process.v":1743766343
+#CUR:"D:\\files\\fpga\\storage\\hdl\\can_level_bit.v":1740298947
+#CUR:"D:\\files\\fpga\\storage\\hdl\\can_level_packet.v":1740811746
+#CUR:"D:\\files\\fpga\\storage\\hdl\\can_top.v":1740298947
+#CUR:"D:\\files\\fpga\\storage\\hdl\\eeprom.v":1743837518
+#CUR:"D:\\files\\fpga\\storage\\hdl\\top_can_flash.v":1743837448
+#CUR:"D:\\files\\fpga\\storage\\hdl\\top_storage.v":1743836480
+0			"D:\files\fpga\storage\hdl\uart_rx.v" verilog
+1			"D:\files\fpga\storage\hdl\uart_tx.v" verilog
+2			"D:\files\fpga\storage\hdl\flash_a.v" verilog
+3			"D:\files\fpga\storage\hdl\flash_b.v" verilog
+4			"D:\files\fpga\storage\hdl\flash_c.v" verilog
+5			"D:\files\fpga\storage\hdl\top_cmd_process.v" verilog
+6			"D:\files\fpga\storage\hdl\can_level_bit.v" verilog
+7			"D:\files\fpga\storage\hdl\can_level_packet.v" verilog
+8			"D:\files\fpga\storage\hdl\can_top.v" verilog
+9			"D:\files\fpga\storage\hdl\eeprom.v" verilog
+10			"D:\files\fpga\storage\hdl\top_can_flash.v" verilog
+11			"D:\files\fpga\storage\hdl\top_storage.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 -1
+3 2
+4 3
+5 4 1 0
+6 -1
+7 6
+8 7
+9 -1
+10 8 4 9
+11 5 10
+#Dependency Lists(Users Of)
+0 5
+1 5
+2 3
+3 4
+4 10 5
+5 11
+6 7
+7 8
+8 10
+9 10
+10 11
+11 -1
+#Design Unit to File Association
+module work top_storage 11
+module work top_can_flash 10
+module work spi_eeprom 9
+module work can_top 8
+module work can_level_packet 7
+module work can_level_bit 6
+module work top_cmd_process 5
+module work flash_c 4
+module work flash_b 3
+module work flash_a 2
+module work uart_tx 1
+module work uart_rx 0

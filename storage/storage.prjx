@@ -1,0 +1,283 @@
+KEY LIBERO "11.8"
+KEY CAPTURE "11.8.2.4"
+KEY DEFAULT_IMPORT_LOC ""
+KEY DEFAULT_OPEN_LOC ""
+KEY ProjectID "0"
+KEY HDLTechnology "VERILOG"
+KEY VERILOGMODE "VERILOG2001"
+KEY VHDLMODE "VHDL2008"
+KEY UseConstraintFlowTechnology "FALSE"
+KEY VendorTechnology_Family "ProASIC3"
+KEY VendorTechnology_Die "IS4X4M1"
+KEY VendorTechnology_Package "vq100"
+KEY VendorTechnology_Speed "STD"
+KEY VendorTechnology_DieVoltage "1.5"
+KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
+KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
+KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
+KEY VendorTechnology_RESTRICTPROBEPINS "1"
+KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
+KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IS4X4M1"
+KEY VendorTechnology_TEMPR "COM"
+KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
+KEY VendorTechnology_VCCI_1.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
+KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
+KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
+KEY VendorTechnology_VOLTR "COM"
+KEY ProjectLocation "D:\files\fpga\storage"
+KEY ProjectDescription ""
+KEY Pa4PeripheralNewSeq "GOOD"
+KEY SimulationType "VERILOG"
+KEY Vendor "Actel"
+KEY ActiveRoot "flash_a::work"
+LIST REVISIONS
+VALUE="Impl1",NUM=1
+CURREV=1
+ENDLIST
+LIST FileManager
+VALUE "<project>\designer\impl1\flash_a.ide_des,ide_des"
+STATE="utd"
+TIME="1743832754"
+SIZE="180"
+ENDFILE
+VALUE "<project>\hdl\can_level_bit.v,hdl"
+STATE="utd"
+TIME="1740298947"
+SIZE="4061"
+ENDFILE
+VALUE "<project>\hdl\can_level_packet.v,hdl"
+STATE="utd"
+TIME="1740811746"
+SIZE="13213"
+ENDFILE
+VALUE "<project>\hdl\can_top.v,hdl"
+STATE="utd"
+TIME="1740298947"
+SIZE="9224"
+ENDFILE
+VALUE "<project>\hdl\eeprom.v,hdl"
+STATE="utd"
+TIME="1742106218"
+SIZE="3810"
+ENDFILE
+VALUE "<project>\hdl\flash_a.v,hdl"
+STATE="utd"
+TIME="1737350643"
+SIZE="4083"
+ENDFILE
+VALUE "<project>\hdl\flash_b.v,hdl"
+STATE="utd"
+TIME="1742381604"
+SIZE="10689"
+ENDFILE
+VALUE "<project>\hdl\flash_c.v,hdl"
+STATE="utd"
+TIME="1743766229"
+SIZE="3693"
+ENDFILE
+VALUE "<project>\hdl\top_can_flash.v,hdl"
+STATE="utd"
+TIME="1743768021"
+SIZE="22294"
+ENDFILE
+VALUE "<project>\hdl\top_cmd_process.v,hdl"
+STATE="utd"
+TIME="1743766343"
+SIZE="21852"
+ENDFILE
+VALUE "<project>\hdl\top_storage.v,hdl"
+STATE="utd"
+TIME="1743836480"
+SIZE="2949"
+ENDFILE
+VALUE "<project>\hdl\uart_rx.v,hdl"
+STATE="utd"
+TIME="1741684656"
+SIZE="3337"
+ENDFILE
+VALUE "<project>\hdl\uart_tx.v,hdl"
+STATE="utd"
+TIME="1742554188"
+SIZE="3304"
+ENDFILE
+ENDLIST
+LIST UsedFile
+ENDLIST
+LIST NewModulesInfo
+ENDLIST
+LIST AssociatedStimulus
+ENDLIST
+LIST Other_Association
+ENDLIST
+LIST SimulationOptions
+UseAutomaticDoFile=true
+IncludeWaveDo=false
+Type=max
+RunTime=1000ns
+Resolution=1ps
+VsimOpt=
+EntityName=testbench
+TopInstanceName=<top>_0
+DoFileName=
+DoFileName2=wave.do
+DoFileParams=
+DisplayDUTWave=false
+LogAllSignals=false
+DisablePulseFiltering=false
+DumpVCD=false
+VCDFileName=power.vcd
+VHDL2008=false
+Verilog2001=false
+SystemVerilog=false
+TimeUnit=1
+TimeUnitBase=ns
+Precision=100
+PrecisionBase=ps
+ENDLIST
+LIST ModelSimLibPath
+UseCustomPath=FALSE
+LibraryPath=
+ENDLIST
+LIST GlobalFlowOptions
+GenerateHDLAfterSynthesis=FALSE
+GenerateHDLAfterPhySynthesis=FALSE
+RunDRCAfterSynthesis=FALSE
+AutoCheckConstraints=TRUE
+UpdateModelSimIni=TRUE
+NoIOMode=FALSE
+PeriInitStandalone=FALSE
+EnableViewDraw=FALSE
+UpdateViewDrawIni=TRUE
+GenerateHDLFromSchematic=TRUE
+VmNetlistFlowOn=FALSE
+EnableDesignSeparationOn=FALSE
+EnableSETMitigationOn=FALSE
+DisplayFanoutLimit=10
+AbortFlowOnPDCErrorsOn=TRUE
+AbortFlowOnSDCErrorsOn=TRUE
+InstantiateInSmartDesign=TRUE
+FlashProInputFile=pdb
+SmartGenCompileReport=T
+ENDLIST
+LIST PhySynthesisOptions
+ENDLIST
+LIST Profiles
+NAME="SoftConsole"
+FUNCTION="SoftwareIDE"
+TOOL="SoftConsole"
+LOCATION="eclipse.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Synplify Pro ME"
+FUNCTION="Synthesis"
+TOOL="Synplify Pro ME"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="ModelSim ME"
+FUNCTION="Simulation"
+TOOL="ModelSim"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="FPExpress"
+FUNCTION="Program"
+TOOL="FlashPro"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Designer\bin\FPExpress.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+NAME="Identify Debugger"
+FUNCTION="IdentifyDebugger"
+TOOL="Identify Debugger"
+LOCATION="C:\Microsemi\Libero_SoC_v11.8\Identify\bin\identify_debugger.exe"
+PARAM=""
+BATCH=0
+LICENSE=""
+IS32BIT="1"
+EndProfile
+ENDLIST
+LIST ProjectState5.1
+ENDLIST
+LIST ExcludePackageForSimulation
+ENDLIST
+LIST ExcludePackageForSynthesis
+ENDLIST
+LIST IncludeModuleForSimulation
+ENDLIST
+LIST CDBOrder
+ENDLIST
+LIST UserCustomizedFileList
+ENDLIST
+LIST OpenedFileList
+ORIENTATION;HORIZONTAL
+StartPage;StartPage;0
+ACTIVEVIEW;StartPage
+ENDLIST
+LIST ModuleSubBlockList
+LIST "can_flash_top::work","hdl\top_can_flash.v","FALSE","FALSE"
+SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
+ENDLIST
+LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
+ENDLIST
+LIST "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
+SUBBLOCK "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
+ENDLIST
+LIST "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
+ENDLIST
+LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
+ENDLIST
+LIST "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+SUBBLOCK "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
+ENDLIST
+LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+ENDLIST
+LIST "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
+ENDLIST
+LIST "top_can_flash::work","","FALSE","FALSE"
+ENDLIST
+LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "top_storage::work","hdl\top_storage.v","FALSE","FALSE"
+SUBBLOCK "top_can_flash::work","","FALSE","FALSE"
+SUBBLOCK "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+ENDLIST
+LIST ActiveTestBenchList
+ENDLIST
+LIST IOTabList
+ENDLIST
+LIST FPTabList
+ENDLIST
+LIST TimingTabList
+ENDLIST
+LIST FDCTabList
+ENDLIST

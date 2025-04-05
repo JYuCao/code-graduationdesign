@@ -1,0 +1,15 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\storage\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\storage\synthesis\synlog\report\top_storage_fpga_mapper.xml  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  D:\files\fpga\storage\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  D:\files\fpga\storage\synthesis\top_storage.edn   -freq 100.000   D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd  -sap  D:\files\fpga\storage\synthesis\top_storage.sap  -otap  D:\files\fpga\storage\synthesis\top_storage.tap  -omap  D:\files\fpga\storage\synthesis\top_storage.map  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -sap  D:\files\fpga\storage\synthesis\top_storage.sap  -ologparam  D:\files\fpga\storage\synthesis\syntmp\top_storage.plg  -osyn  D:\files\fpga\storage\synthesis\top_storage.srm  -prjdir  D:\files\fpga\storage\synthesis\  -prjname  top_storage_syn  -log  D:\files\fpga\storage\synthesis\synlog\top_storage_fpga_mapper.srr 
+rc:1 success:1 runtime:49
+file:D:\files\fpga\storage\synthesis\scratchproject.prs|io:o|time:1743837384|size:2309|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.edn|io:o|time:1743839015|size:8046318|exec:0
+file:D:\files\fpga\storage\synthesis\synwork\top_storage_prem.srd|io:i|time:1743838966|size:172932|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.sap|io:o|time:1743838967|size:6735|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.tap|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.map|io:o|time:1743839016|size:28|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.sap|io:o|time:1743838967|size:6735|exec:0
+file:D:\files\fpga\storage\synthesis\syntmp\top_storage.plg|io:o|time:1743839016|size:2201|exec:0
+file:D:\files\fpga\storage\synthesis\top_storage.srm|io:o|time:1743839014|size:77466|exec:0
+file:D:\files\fpga\storage\synthesis\synlog\top_storage_fpga_mapper.srr|io:o|time:1743839016|size:164678|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1
