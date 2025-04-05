@@ -11,7 +11,7 @@ module top_cmd_process(
     input wire flash_q,
     output wire flash_c,
     output wire flash_d,
-    output wire [3:0] flash_cs
+    output wire [15:0] flash_s_n
 );
 
     reg [2:0] baud_set;
@@ -490,11 +490,11 @@ module top_cmd_process(
         .write(flash_write),
         .done(flash_done),
         .error(flash_error),
-        .cs(flash_cs),
         .flash_q(flash_q),
         .flash_c(flash_c),
         .flash_d(flash_d),
-        .busy(flash_busy)
+        .busy(flash_busy),
+        .flash_s_n(flash_s_n)
     );
 
 endmodule

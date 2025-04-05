@@ -42,7 +42,6 @@ module spi_eeprom (
         if (rst) begin
             state <= IDLE;
             busy <= 0;
-            data_out <= 8'b0;
         end else begin
             state <= next_state;
             if (state == IDLE) begin
@@ -88,6 +87,7 @@ module spi_eeprom (
             bit_cnt <= 4'b0;
             addr_reg <= 16'b0;
             data_reg <= 8'b0;
+            data_out <= 8'b0;
         end else begin
             case (state)
                 IDLE: begin

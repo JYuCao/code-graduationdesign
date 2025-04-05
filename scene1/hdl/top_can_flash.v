@@ -7,7 +7,7 @@
 //           Records the last written address in EEPROM
 //--------------------------------------------------------------------------------------------------------
 
-module can_flash_top #(
+module top_can_flash #(
     // CAN parameters
     parameter [10:0] LOCAL_ID      = 11'h456,
     parameter [10:0] RX_ID_SHORT_FILTER = 11'h123,
@@ -19,7 +19,7 @@ module can_flash_top #(
     parameter [15:0] default_c_PBS2 = 16'd10,
     
     // Storage parameters
-    parameter [9:0]  L = 10'd1024,  // Number of address records in EEPROM
+    parameter [10:0] L = 11'd1024,  // Number of address records in EEPROM
     parameter [31:0] M = 32'd1024   // Default frame size in bytes
 ) (
     input  wire        clk,        // System clock
@@ -34,6 +34,7 @@ module can_flash_top #(
     output wire [15:0] flash_c,    // Flash clock
     output wire        flash_d,    // Flash data output
     output wire [15:0] flash_reset_n, // Flash reset
+    output wire [15:0] flash_s_n,
     
     // EEPROM interface
     input  wire        spi_miso,   // EEPROM data input
@@ -51,31 +52,32 @@ localparam [31:0] FRAME_HEADER = 32'h0F0F0F0F;
 localparam [31:0] FRAME_FOOTER = 32'hF0F0F0F0;
 
 // State machine states
-localparam [3:0] INIT_STATE         = 5'd0;
-localparam [3:0] WAIT_CAN_STATE     = 5'd3;
-localparam [3:0] RECEIVE_HEADER     = 5'd4;
+localparam [4:0] INIT_STATE         = 5'd0;
+localparam [4:0] WAIT_CAN_STATE     = 5'd3;
+localparam [4:0] RECEIVE_HEADER     = 5'd4;
 
-localparam [3:0] RECEIVE_FOOTER     = 5'd8;
-localparam [3:0] WRITE_EEPROM       = 5'd9;
-localparam [3:0] WRITE_FLASH        = 5'd10;
-localparam [3:0] UPDATE_ADDR        = 5'd11;
-localparam [3:0] READ_EEPROM_STATE1 = 5'd12;
-localparam [3:0] READ_EEPROM_STATE2 = 5'd13;
-localparam [3:0] READ_EEPROM_STATE3 = 5'd14;
-localparam [3:0] RECEIVE_FRAME_INFO1 = 5'd5;
-localparam [3:0] RECEIVE_FRAME_INFO2 = 5'd15;
-localparam [3:0] RECEIVE_FRAME_INFO3 = 5'd16;
-localparam [3:0] RECEIVE_FRAME_INFO4 = 5'd17;
-localparam [3:0] RECEIVE_FRAME_INFO5 = 5'd18;
-localparam [3:0] RECEIVE_TIME1 = 5'd6;
-localparam [3:0] RECEIVE_TIME2 = 5'd19;
-localparam [3:0] RECEIVE_TIME3 = 5'd20;
-localparam [3:0] RECEIVE_DATA1 = 5'd7;
-localparam [3:0] RECEIVE_DATA2 = 5'd21;
-localparam [3:0] WRITE_EEPROM1 = 4'd22;
-localparam [3:0] WRITE_EEPROM2 = 4'd23;
-localparam [3:0] WRITE_EEPROM3 = 4'd24;
-localparam [3:0] WRITE_EEPROM4 = 4'd25;
+localparam [4:0] RECEIVE_FOOTER     = 5'd8;
+localparam [4:0] WRITE_EEPROM       = 5'd9;
+localparam [4:0] UPDATE_ADDR        = 5'd11;
+localparam [4:0] READ_EEPROM_STATE1 = 5'd12;
+localparam [4:0] READ_EEPROM_STATE2 = 5'd13;
+localparam [4:0] READ_EEPROM_STATE3 = 5'd14;
+localparam [4:0] RECEIVE_FRAME_INFO1 = 5'd5;
+localparam [4:0] RECEIVE_FRAME_INFO2 = 5'd15;
+localparam [4:0] RECEIVE_FRAME_INFO3 = 5'd16;
+localparam [4:0] RECEIVE_FRAME_INFO4 = 5'd17;
+localparam [4:0] RECEIVE_FRAME_INFO5 = 5'd18;
+localparam [4:0] RECEIVE_TIME1 = 5'd6;
+localparam [4:0] RECEIVE_TIME2 = 5'd19;
+localparam [4:0] RECEIVE_TIME3 = 5'd20;
+localparam [4:0] RECEIVE_DATA1 = 5'd7;
+localparam [4:0] RECEIVE_DATA2 = 5'd21;
+localparam [4:0] WRITE_EEPROM1 = 5'd22;
+localparam [4:0] WRITE_EEPROM2 = 5'd23;
+localparam [4:0] WRITE_EEPROM3 = 5'd24;
+localparam [4:0] WRITE_EEPROM4 = 5'd25;
+localparam [4:0] WRITE_FLASH1  = 5'd10;
+localparam [4:0] WRITE_FLASH2  = 5'd26;
 
 // Registers
 reg [4:0]  state;
@@ -122,7 +124,6 @@ wire       flash_read;
 wire       flash_write;
 wire       flash_done;
 wire       flash_error;
-wire [3:0] flash_cs;
 wire       flash_busy;
 
 // CAN interface signals
@@ -144,6 +145,7 @@ reg [31:0] buffer_write_index; // Current write index in buffer
 reg [31:0] last_addr;       // last address be read
 reg [1:0]  eeprom_byte_counter;    // Byte counter for reading address bytes
 reg [31:0] eeprom_addr_bytes;  // Temporary storage for address bytes
+reg [10:0] eeprom_index;
 
 // Instantiate EEPROM controller
 spi_eeprom eeprom_ctrl (
@@ -176,12 +178,12 @@ flash_c flash_ctrl (
     .write(flash_write),
     .done(flash_done),
     .error(flash_error),
-    .cs(flash_cs),
     .flash_q(flash_q),
     .flash_c(flash_c),
     .flash_d(flash_d),
     .flash_reset_n(flash_reset_n),
-    .busy(flash_busy)
+    .busy(flash_busy),
+    .flash_s_n(flash_s_n)
 );
 
 // Instantiate CAN controller
@@ -222,6 +224,7 @@ initial begin
     valid_frame = 1'b0;
     frame_size = M;  // Default frame size
     write_address = 32'h0;
+    eeprom_index = 11'd0;
 end
 
 // Main state machine
@@ -264,10 +267,9 @@ always @(posedge clk or negedge rstn) begin
         flash_length <= 16'h0;
         flash_din <= 8'h0;
 
-        current_addr <= 32'h0;
-        next_addr <= 32'h0; 
         eeprom_byte_counter <= 2'h0;
         eeprom_addr_bytes <= 32'h0;
+        eeprom_index <= 11'd0;
     end else begin
         // Default signal values
         eeprom_read <= 1'b0;
@@ -279,8 +281,6 @@ always @(posedge clk or negedge rstn) begin
         case (state)
             INIT_STATE: begin
                 eeprom_read_counter <= 32'h0;
-                current_addr <= 32'h0;
-                next_addr <= 32'h0;
                 eeprom_byte_counter <= 2'h0;
                 state <= READ_EEPROM_STATE1;
             end
@@ -409,7 +409,7 @@ always @(posedge clk or negedge rstn) begin
                 if (byte_counter == 2) begin
                     expected_data_size <= {frame_info[23:0], can_rx_data};
                     byte_counter <= 0;
-                    state <= RECEIVE_TIME;
+                    state <= RECEIVE_TIME1;
                 end else begin
                     state <= RECEIVE_FRAME_INFO3;
                 end
@@ -437,7 +437,7 @@ always @(posedge clk or negedge rstn) begin
                 if (byte_counter == 7) begin 
                     byte_counter <= 0;
                     received_data_size <= 0;
-                    state <= RECEIVE_DATA;
+                    state <= RECEIVE_DATA1;
                 end else begin
                     state <= RECEIVE_TIME1;
                 end
@@ -536,8 +536,11 @@ always @(posedge clk or negedge rstn) begin
             end
             WRITE_EEPROM4: begin
                 if (~eeprom_busy) begin
-                    eeprom_index <= (eeprom_index + 1) % L;  // loop write in
-                    state <= WRITE_FLASH;
+                    if (eeprom_index < L-1)
+                        eeprom_index <= eeprom_index + 11'd1;
+                    else
+                        eeprom_index <= 11'd0;
+                    state <= WRITE_FLASH1;
                 end
             end
             
@@ -572,7 +575,6 @@ always @(posedge clk or negedge rstn) begin
             UPDATE_ADDR: begin
                 // Update write address and buffer status
                 write_address <= write_address + frame_size;
-                eeprom_index <= (eeprom_index + 1) % L;
                 
                 // Clear buffer ready flag
                 if (buffer_a_ready) begin
