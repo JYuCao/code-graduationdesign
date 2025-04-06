@@ -64,18 +64,18 @@ SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1742381604"
-SIZE="10689"
+TIME="1743916118"
+SIZE="10664"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1742381604"
-SIZE="3136"
+TIME="1743906528"
+SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1743666099"
-SIZE="21802"
+TIME="1743916542"
+SIZE="25535"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
@@ -91,6 +91,11 @@ VALUE "<project>\simulation\run.do,do"
 STATE="utd"
 TIME="1742791260"
 SIZE="987"
+ENDFILE
+VALUE "<project>\stimulus\tb_cmd_process_echo.v,tb_hdl"
+STATE="utd"
+TIME="1743909713"
+SIZE="11462"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
@@ -114,8 +119,8 @@ SIZE="412"
 ENDFILE
 VALUE "<project>\synthesis\top_cmd_process_syn.prj,prj"
 STATE="utd"
-TIME="1743664105"
-SIZE="2168"
+TIME="1743666061"
+SIZE="1937"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -201,7 +206,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_cmd_process_echo_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -239,9 +244,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:top_cmd_process.areasrr
 StartPage;StartPage;0
+HDL;stimulus\tb_cmd_process_echo.v;0
 HDL;hdl\top_cmd_process.v;0
 ACTIVEVIEW;hdl\top_cmd_process.v
 ENDLIST
@@ -262,6 +266,9 @@ ENDLIST
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 ENDLIST
 LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_cmd_process_echo::work","stimulus\tb_cmd_process_echo.v","FALSE","TRUE"
+SUBBLOCK "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList

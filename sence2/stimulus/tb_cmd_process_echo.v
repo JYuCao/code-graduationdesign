@@ -12,9 +12,10 @@ module tb_cmd_process_echo();
     wire re;
 
     wire flash_q = 1'b0;
-    wire flash_c;
+    wire [15:0] flash_c;
     wire flash_d;
-    wire [3:0] flash_cs;
+    wire [15:0] flash_s_n;
+    wire [15:0] flash_reset_n;
 
     reg [3:0] baud_set;
 
@@ -70,7 +71,8 @@ module tb_cmd_process_echo();
         .flash_q     (flash_q),
         .flash_c     (flash_c),
         .flash_d     (flash_d),
-        .flash_cs    (flash_cs)
+        .flash_s_n   (flash_s_n),
+        .flash_reset_n(flash_reset_n)
     );
 
     reg [7:0] crc8_table [255:0];

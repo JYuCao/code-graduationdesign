@@ -9,9 +9,10 @@ module top_cmd_process(
     
     // Flash interface
     input wire flash_q,
-    output wire flash_c,
+    output wire [15:0] flash_c,
     output wire flash_d,
-    output wire [15:0] flash_s_n
+    output wire [15:0] flash_s_n,
+    output wire [15:0] flash_reset_n
 );
 
     reg [2:0] baud_set;
@@ -42,7 +43,9 @@ module top_cmd_process(
     // Command list
     localparam CMD_GET_FRAME_COUNT = 8'hA1;
     localparam CMD_ERASE_ALL = 8'hA2;
+    localparam CMD_READ_FLASH = 8'hA4;
     localparam CMD_BAUD_SET = 8'hA9;
+    localparam CMD_SET_READ_FRAMES = 8'hAA;
     localparam CMD_ECHO = 8'hFF;
 
     // Main state machine
@@ -80,18 +83,38 @@ module top_cmd_process(
     localparam ERASE_SEND_2 = 32'd49;
     localparam ERASE_SEND_3 = 32'd42;
 
+    // SEND CONTENT TO PC
+    localparam SEND_ADDR = 32'd50;
+    localparam SEND_ADDR_CHECK = 32'd51;
+    localparam SEND_DATA1 = 32'd52;
+    localparam SEND_DATA2 = 32'd53;
+    localparam SEND_CRC = 32'd54;
+
+    // READ FLASH
+    localparam READ_FLASH_CHECK = 32'd70;
+    localparam READ_FLASH_START = 32'd71;
+    localparam READ_FLASH_WAIT1 = 32'd72;
+    localparam READ_FLASH_WAIT2 = 32'd73;
+    localparam READ_FLASH_WAIT3 = 32'd74;
+    localparam READ_FLASH_NEXT = 32'd75;
+
+    // SET READ FRAMES
+    localparam SET_READ_FRAMES_CHECK = 32'd60;
+    localparam SET_READ_FRAMES_SET = 32'd61;
+
     // ECHO state machine for test
-    localparam STAT_ECHO1 = 32'hFFFFFFFC;
-    localparam STAT_ECHO2 = 32'hFFFFFFFD;
-    localparam STAT_ECHO3 = 32'hFFFFFFFE;
-    localparam STAT_ECHO4 = 32'hFFFFFFFF;
+    localparam STAT_ECHO = 32'hFFFFFFFF;
     
     reg [31:0] state;
+    reg [31:0] state_after_send;
     reg [15:0] data_length;
     reg [7:0] cmd;
     reg [15:0] data_cnt;
     reg [7:0] data_buffer [15:0];
     reg [7:0] calc_crc8;
+    reg [15:0] read_frame_count;
+    reg [15:0] frame_read_cnt;    // frames read count
+    reg [2:0]  byte_read_cnt;     // single frame byte count
 
     reg [15:0] flash_erase_mask;  // Track which Flash chips have been erased
     reg [15:0] flash_error_mask;  // Track which Flash chips failed during erase
@@ -190,6 +213,7 @@ module top_cmd_process(
         if(!sys_rst_n || power_on_rst) begin
             baud_set <= 3'd0;
             state <= STAT_IDLE;
+            state_after_send <= STAT_DONE;
             cmd <= 8'd0;
             data_length <= 16'd0;
             error <= 1'b0;
@@ -198,6 +222,7 @@ module top_cmd_process(
             tx_start <= 1'b0;
             tx_data <= 8'd0;
             calc_crc8 <= 8'd0;
+            read_frame_count <= 16'd1;
         end
         else begin
             case(state)
@@ -284,10 +309,12 @@ module top_cmd_process(
                     if(rx_done) begin
                         if(calc_crc8 == rx_data) begin
                             case(cmd)
-                                CMD_ECHO: state <= STAT_ECHO1;
+                                CMD_ECHO: state <= STAT_ECHO;
                                 CMD_GET_FRAME_COUNT: state <= GET_FRAME_COUNT_CHECK;
                                 CMD_BAUD_SET: state <= STAT_BAUD_SET;
                                 CMD_ERASE_ALL: state <= ERASE_ALL_CHECK;
+                                CMD_SET_READ_FRAMES: state <= SET_READ_FRAMES_CHECK;
+                                CMD_READ_FLASH: state <= READ_FLASH_CHECK;
                                 default: state <= STAT_ERROR;
                             endcase
                         end
@@ -313,36 +340,10 @@ module top_cmd_process(
                 end
 
                 // STATE ECHO
-                STAT_ECHO1: begin
-                    data_cnt <= 16'd0;
-                    tx_data <= data_buffer[0];
-                    state <= STAT_ECHO2;
+                STAT_ECHO: begin
+                    state <= SEND_ADDR;
+                    state_after_send <= STAT_DONE;
                 end
-
-                STAT_ECHO2: begin
-                    tx_start <= 1'b1;
-                    state <= STAT_ECHO3;
-                end
-
-                STAT_ECHO3: begin
-                    tx_start <= 1'b0;
-                    if (tx_done) begin
-                        if (data_cnt >= data_length - 1) begin
-                            done <= 1'b1;
-                            state <= STAT_ECHO4;
-                        end
-                        else begin
-                            data_cnt <= data_cnt + 1'b1;
-                            tx_data <= data_buffer[data_cnt + 1];
-                            state <= STAT_ECHO2;
-                        end
-                    end
-                end
-
-                STAT_ECHO4: begin
-                    state <= STAT_DONE;
-                end
-
                 
                 // STATE GET FRAME COUNT
                 GET_FRAME_COUNT_CHECK: begin
@@ -362,7 +363,8 @@ module top_cmd_process(
                 end
                 
                 GET_FRAME_COUNT_SEND: begin
-                    state <= STAT_ECHO1;
+                    state <= SEND_ADDR;
+                    state_after_send <= STAT_DONE;
                 end
 
 
@@ -385,7 +387,7 @@ module top_cmd_process(
                         cmd_erasedies <= 1'b1;
                         state <= ERASE_ALL_WAIT;
                     end else begin
-                        state <= ERASE_ALL_DONE;
+                        state <= STAT_DONE;
                     end
                 end
                 
@@ -393,25 +395,28 @@ module top_cmd_process(
                     cmd_erasedies <= 1'b0;
                     if(flash_done) begin
                         flash_erase_mask[current_flash] <= 1'b1;
-                        
+
                         data_buffer[0] <= 8'hFF;
                         data_buffer[1] <= 8'hEE;
                         data_buffer[2] <= 8'hDD;
                         data_buffer[3] <= 8'hCC;
-                        tx_data <= data_buffer[0];
-                        tx_start <= 1'b1;
                         current_flash <= current_flash + 1'b1;
-                        state <= ERASE_SEND_1;
+                        data_length <= 16'd4;
+                        data_cnt <= 16'd0;
+                        state_after_send <= ERASE_ALL_NEXT;
+                        state <= SEND_ADDR;
                     end else if (flash_error) begin
                         flash_erase_mask[current_flash] <= 1'b1;
                         flash_error_mask[current_flash] <= 1'b1;
+
                         data_buffer[0] <= 8'h0E;
                         data_buffer[1] <= 8'h0E;
                         data_buffer[2] <= 8'h0E;
                         data_buffer[3] <= {4'h0, current_flash};
-                        tx_data <= data_buffer[0];
-                        tx_start <= 1'b1;
-                        state <= ERASE_SEND_1;
+                        data_length <= 16'd4;
+                        data_cnt <= 16'd0;
+                        state_after_send <= ERASE_ALL_NEXT;
+                        state <= SEND_ADDR;
                     end
                 end
                 
@@ -420,34 +425,118 @@ module top_cmd_process(
                     current_flash <= current_flash + 1'b1;
                     state <= ERASE_ALL_START;
                 end
+
+                // STATE SET READ FRAMES
+                SET_READ_FRAMES_CHECK: begin
+                    if(data_length == 16'd2) begin
+                        state <= SET_READ_FRAMES_SET;
+                    end else begin
+                        state <= STAT_ERROR;
+                    end
+                end
                 
-                ERASE_ALL_DONE: begin
-                    done <= 1'b1;
-                    state <= STAT_IDLE;
+                SET_READ_FRAMES_SET: begin
+                    read_frame_count <= {data_buffer[0], data_buffer[1]};
+                    data_buffer[0] <= calc_crc8;
+                    data_length <= 16'd1;
+                    state <= SEND_ADDR;
+                    state_after_send <= STAT_DONE;
                 end
 
-                ERASE_SEND_1: begin
-                    tx_start <= 1'b0;
-                    if(tx_done) begin
-                        tx_data <= data_buffer[1];
-                        tx_start <= 1'b1;
-                        state <= ERASE_SEND_2;
+                READ_FLASH_CHECK: begin
+                    if(data_length == 16'd4) begin
+                        frame_read_cnt <= 16'd0;
+                        byte_read_cnt <= 3'd0;
+                        flash_addr <= {data_buffer[0], data_buffer[1], data_buffer[2], data_buffer[3]};
+                        state <= READ_FLASH_START;
+                    end else begin
+                        state <= STAT_ERROR;
                     end
                 end
-                ERASE_SEND_2: begin
-                    tx_start <= 1'b0;
-                    if(tx_done) begin
-                        tx_data <= data_buffer[2];
-                        tx_start <= 1'b1;
-                        state <= ERASE_SEND_3;
+
+                READ_FLASH_START: begin
+                    cmd_read <= 1'b1;
+                    state <= READ_FLASH_WAIT1;
+                end
+
+                READ_FLASH_WAIT1: begin
+                    cmd_read <= 1'b0;
+                    if(flash_done) begin
+                        if(flash_error) begin
+                            state <= STAT_ERROR;
+                        end else begin
+                            data_buffer[byte_read_cnt] <= flash_dout;
+                            state <= READ_FLASH_WAIT2;
+                        end
                     end
                 end
-                ERASE_SEND_3: begin
+                READ_FLASH_WAIT2: begin
+                    byte_read_cnt <= byte_read_cnt + 1'b1;
+                    if(byte_read_cnt == 3'd7) begin
+                        state <= READ_FLASH_WAIT3;
+                    end else begin
+                        state <= READ_FLASH_START;
+                    end
+                end
+                READ_FLASH_WAIT3: begin
+                    byte_read_cnt <= 3'd0;
+                    frame_read_cnt <= frame_read_cnt + 1'b1;
+                    flash_addr <= flash_addr + 1'b1;
+                    data_length <= 16'd8;
+                    state <= SEND_ADDR;
+                    state_after_send <= READ_FLASH_NEXT;
+                end
+
+                READ_FLASH_NEXT: begin
+                    if(frame_read_cnt >= read_frame_count) begin
+                        state <= STAT_DONE;
+                    end else begin
+                        state <= READ_FLASH_START;
+                    end
+                end
+
+                // STATE SEND CONTENT TO PC
+                SEND_ADDR: begin
+                    data_cnt <= 16'd0;
+                    calc_crc8 <= 8'd0;
+                    tx_start <= 1'b1;
+                    tx_data <= 8'hAA;
+                    state <= SEND_ADDR_CHECK;
+                end
+
+                SEND_ADDR_CHECK: begin
                     tx_start <= 1'b0;
                     if(tx_done) begin
-                        tx_data <= data_buffer[3];
+                        tx_data <= 8'h56;
                         tx_start <= 1'b1;
-                        state <= ERASE_ALL_NEXT;
+                        state <= SEND_DATA1;
+                    end
+                end
+
+                SEND_DATA1: begin
+                    tx_start <= 1'b0;
+                    if(tx_done) begin
+                        if(data_cnt >= data_length) begin
+                            tx_data <= calc_crc8;
+                            tx_start <= 1'b1;
+                            state <= SEND_CRC;
+                        end else begin
+                            tx_data <= data_buffer[data_cnt];
+                            calc_crc8 <= crc8_table[data_buffer[data_cnt] ^ calc_crc8];
+                            state <= SEND_DATA2;
+                        end
+                    end
+                end
+                SEND_DATA2:begin
+                    tx_start <= 1'b1;
+                    data_cnt <= data_cnt + 1'b1;
+                    state <= SEND_DATA1;
+                end
+
+                SEND_CRC: begin
+                    tx_start <= 1'b0;
+                    if(tx_done) begin
+                        state <= state_after_send;
                     end
                 end
                 
@@ -494,7 +583,8 @@ module top_cmd_process(
         .flash_c(flash_c),
         .flash_d(flash_d),
         .busy(flash_busy),
-        .flash_s_n(flash_s_n)
+        .flash_s_n(flash_s_n),
+        .flash_reset_n(flash_reset_n)
     );
 
 endmodule

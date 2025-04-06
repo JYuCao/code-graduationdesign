@@ -40,6 +40,9 @@ module flash_c(
 
     wire [15:0] flash_c_array;
     wire [15:0] flash_d_array;
+
+    parameter s_idle = 0, s_operate = 1;
+    reg [1:0] state;
     
     // All chips share the same flash_d
     assign flash_d = flash_d_array[chip_select];
@@ -82,10 +85,6 @@ module flash_c(
             );
         end
     endgenerate
-
-    
-    parameter s_idle = 0, s_operate = 1;
-    reg [1:0] state;
 
     always @(posedge clk) begin
         if (reset == 1'b1) begin

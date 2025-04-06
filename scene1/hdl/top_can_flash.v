@@ -20,7 +20,7 @@ module top_can_flash #(
     
     // Storage parameters
     parameter [10:0] L = 11'd1024,  // Number of address records in EEPROM
-    parameter [31:0] M = 32'd1024   // Default frame size in bytes
+    parameter [31:0] M = 32'd28   // Default frame size in bytes
 ) (
     input  wire        clk,        // System clock
     input  wire        rstn,       // Active low reset

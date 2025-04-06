@@ -83,7 +83,8 @@ module top_storage (
         .flash_q        (flash_q),
         .flash_c        (flash_c_cmd[3:0]),
         .flash_d        (flash_d_cmd),
-        .flash_s_n      (flash_s_n)
+        .flash_s_n      (flash_s_n),
+        .flash_reset_n  (flash_reset_n)
     );
 
     // Flash interface multiplexing
