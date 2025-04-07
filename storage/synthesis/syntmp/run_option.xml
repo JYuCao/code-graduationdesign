@@ -3,14 +3,14 @@
   Synopsys, Inc.
   Version L-2016.09M-2
   Project file D:\files\fpga\storage\synthesis\syntmp\run_option.xml
-  Written on Sat Apr 05 15:42:42 2025
+  Written on Sun Apr 06 13:27:08 2025
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
      <option name="project_name" display_name="Project Name">top_storage_syn</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module"></option>
+     <option name="top_module" display_name="Top Module">top_storage</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">24</option>

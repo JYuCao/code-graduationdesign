@@ -32,6 +32,7 @@ module top_storage (
     // Flash control signals
     wire [15:0] flash_c_can, flash_c_cmd;
     wire flash_d_can, flash_d_cmd;
+    wire [15:0] flash_s_n_can, flash_s_n_cmd;
     wire [15:0] flash_reset_n_can, flash_reset_n_cmd;
     wire [3:0] flash_cs_cmd;
     
@@ -71,7 +72,7 @@ module top_storage (
         .spi_mosi       (spi_mosi),
         .spi_sck        (spi_sck),
         .spi_cs         (spi_cs),
-        .flash_s_n(flash_s_n)
+        .flash_s_n(flash_s_n_can)
     );
 
     // Instantiate command processing module
@@ -83,13 +84,14 @@ module top_storage (
         .flash_q        (flash_q),
         .flash_c        (flash_c_cmd[3:0]),
         .flash_d        (flash_d_cmd),
-        .flash_s_n      (flash_s_n),
-        .flash_reset_n  (flash_reset_n)
+        .flash_s_n      (flash_s_n_cmd),
+        .flash_reset_n  (flash_reset_n_cmd)
     );
 
     // Flash interface multiplexing
     assign flash_c = work_mode ? flash_c_can : {12'b0, flash_c_cmd[3:0]};
     assign flash_d = work_mode ? flash_d_can : flash_d_cmd;
-    assign flash_reset_n = work_mode ? flash_reset_n_can : {12'b0, flash_cs_cmd};
+    assign flash_reset_n = work_mode ? flash_reset_n_can : flash_reset_n_cmd;
+    assign flash_s_n = work_mode ? flash_s_n_can : flash_s_n_cmd;
 
 endmodule

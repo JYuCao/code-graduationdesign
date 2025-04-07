@@ -83,23 +83,23 @@ SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743841167"
-SIZE="3675"
+TIME="1743906568"
+SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1743841260"
-SIZE="22941"
+TIME="1743913323"
+SIZE="22939"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1743841280"
-SIZE="21862"
+TIME="1743916535"
+SIZE="25535"
 ENDFILE
 VALUE "<project>\hdl\top_storage.v,hdl"
 STATE="utd"
-TIME="1743841372"
-SIZE="3078"
+TIME="1743917224"
+SIZE="3239"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
@@ -113,7 +113,7 @@ SIZE="3304"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1743836747"
+TIME="1743838702"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.edn,syn_edn"
@@ -123,8 +123,8 @@ SIZE="8046318"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.so,so"
 STATE="utd"
-TIME="1743837606"
-SIZE="267"
+TIME="1743839015"
+SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_sdc.sdc,syn_sdc"
 STATE="ood"
@@ -133,8 +133,8 @@ SIZE="400"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_syn.prj,prj"
 STATE="utd"
-TIME="1743836744"
-SIZE="1243"
+TIME="1743839016"
+SIZE="2302"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -261,7 +261,9 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-ACTIVEVIEW;Reports
+HDL;hdl\eeprom.v;0
+HDL;hdl\can_level_bit.v;0
+ACTIVEVIEW;hdl\can_level_bit.v
 ENDLIST
 LIST ModuleSubBlockList
 LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"

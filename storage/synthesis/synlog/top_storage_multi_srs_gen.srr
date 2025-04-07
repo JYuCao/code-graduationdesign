@@ -1,14 +1,12 @@
 Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016
 @N|Running in 64-bit mode
 File D:\files\fpga\storage\synthesis\synwork\top_storage_comp.srs changed - recompiling
-@N: NF107 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Selected library: work cell: top_storage view verilog as top level
-@N: NF107 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Selected library: work cell: top_storage view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 71MB peak: 72MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Apr 05 15:42:45 2025
+# Sun Apr 06 13:27:12 2025
 
 ###########################################################]

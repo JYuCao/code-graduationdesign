@@ -3,17 +3,17 @@
 #--  Project file D:\files\fpga\storage\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "D:/files/fpga/storage/hdl/uart_rx.v"
-add_file -verilog "D:/files/fpga/storage/hdl/uart_tx.v"
-add_file -verilog "D:/files/fpga/storage/hdl/flash_a.v"
-add_file -verilog "D:/files/fpga/storage/hdl/flash_b.v"
-add_file -verilog "D:/files/fpga/storage/hdl/flash_c.v"
-add_file -verilog "D:/files/fpga/storage/hdl/top_cmd_process.v"
 add_file -verilog "D:/files/fpga/storage/hdl/can_level_bit.v"
 add_file -verilog "D:/files/fpga/storage/hdl/can_level_packet.v"
 add_file -verilog "D:/files/fpga/storage/hdl/can_top.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_a.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_b.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_c.v"
 add_file -verilog "D:/files/fpga/storage/hdl/eeprom.v"
 add_file -verilog "D:/files/fpga/storage/hdl/top_can_flash.v"
+add_file -verilog "D:/files/fpga/storage/hdl/uart_rx.v"
+add_file -verilog "D:/files/fpga/storage/hdl/uart_tx.v"
+add_file -verilog "D:/files/fpga/storage/hdl/top_cmd_process.v"
 add_file -verilog "D:/files/fpga/storage/hdl/top_storage.v"
 
 
@@ -35,6 +35,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
+set_option -top_module "top_storage"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

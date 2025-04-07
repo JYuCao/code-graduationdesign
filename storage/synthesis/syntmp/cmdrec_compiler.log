@@ -1,19 +1,19 @@
-C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  D:\files\fpga\storage\synthesis\synwork\top_storage_comp.srs  -hdllog  D:\files\fpga\storage\synthesis\synlog\top_storage_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I D:\files\fpga\storage\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -encrypt  -pro  -dmgen  D:\files\fpga\storage\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work D:\files\fpga\storage\hdl\uart_rx.v -lib work D:\files\fpga\storage\hdl\uart_tx.v -lib work D:\files\fpga\storage\hdl\flash_a.v -lib work D:\files\fpga\storage\hdl\flash_b.v -lib work D:\files\fpga\storage\hdl\flash_c.v -lib work D:\files\fpga\storage\hdl\top_cmd_process.v -lib work D:\files\fpga\storage\hdl\can_level_bit.v -lib work D:\files\fpga\storage\hdl\can_level_packet.v -lib work D:\files\fpga\storage\hdl\can_top.v -lib work D:\files\fpga\storage\hdl\eeprom.v -lib work D:\files\fpga\storage\hdl\top_can_flash.v -lib work D:\files\fpga\storage\hdl\top_storage.v 
-rc:0 success:1 runtime:3
-file:D:\files\fpga\storage\synthesis\synwork\top_storage_comp.srs|io:o|time:1743838964|size:72408|exec:0
-file:D:\files\fpga\storage\synthesis\synlog\top_storage_compiler.srr|io:o|time:1743838964|size:142754|exec:0
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  D:\files\fpga\storage\synthesis\synwork\top_storage_comp.srs  -top  top_storage  -hdllog  D:\files\fpga\storage\synthesis\synlog\top_storage_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I D:\files\fpga\storage\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -encrypt  -pro  -dmgen  D:\files\fpga\storage\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work D:\files\fpga\storage\hdl\can_level_bit.v -lib work D:\files\fpga\storage\hdl\can_level_packet.v -lib work D:\files\fpga\storage\hdl\can_top.v -lib work D:\files\fpga\storage\hdl\flash_a.v -lib work D:\files\fpga\storage\hdl\flash_b.v -lib work D:\files\fpga\storage\hdl\flash_c.v -lib work D:\files\fpga\storage\hdl\eeprom.v -lib work D:\files\fpga\storage\hdl\top_can_flash.v -lib work D:\files\fpga\storage\hdl\uart_rx.v -lib work D:\files\fpga\storage\hdl\uart_tx.v -lib work D:\files\fpga\storage\hdl\top_cmd_process.v -lib work D:\files\fpga\storage\hdl\top_storage.v 
+rc:0 success:1 runtime:4
+file:D:\files\fpga\storage\synthesis\synwork\top_storage_comp.srs|io:o|time:1743917231|size:76475|exec:0
+file:D:\files\fpga\storage\synthesis\synlog\top_storage_compiler.srr|io:o|time:1743917231|size:138122|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
-file:D:\files\fpga\storage\hdl\uart_rx.v|io:i|time:1741684656|size:3337|exec:0
-file:D:\files\fpga\storage\hdl\uart_tx.v|io:i|time:1742554188|size:3304|exec:0
-file:D:\files\fpga\storage\hdl\flash_a.v|io:i|time:1737350643|size:4083|exec:0
-file:D:\files\fpga\storage\hdl\flash_b.v|io:i|time:1743838885|size:10689|exec:0
-file:D:\files\fpga\storage\hdl\flash_c.v|io:i|time:1743838957|size:3657|exec:0
-file:D:\files\fpga\storage\hdl\top_cmd_process.v|io:i|time:1743766343|size:21852|exec:0
 file:D:\files\fpga\storage\hdl\can_level_bit.v|io:i|time:1740298947|size:4061|exec:0
 file:D:\files\fpga\storage\hdl\can_level_packet.v|io:i|time:1740811746|size:13213|exec:0
 file:D:\files\fpga\storage\hdl\can_top.v|io:i|time:1740298947|size:9224|exec:0
+file:D:\files\fpga\storage\hdl\flash_a.v|io:i|time:1737350643|size:4083|exec:0
+file:D:\files\fpga\storage\hdl\flash_b.v|io:i|time:1743838885|size:10689|exec:0
+file:D:\files\fpga\storage\hdl\flash_c.v|io:i|time:1743906568|size:3669|exec:0
 file:D:\files\fpga\storage\hdl\eeprom.v|io:i|time:1743837518|size:3810|exec:0
-file:D:\files\fpga\storage\hdl\top_can_flash.v|io:i|time:1743837448|size:22920|exec:0
-file:D:\files\fpga\storage\hdl\top_storage.v|io:i|time:1743836480|size:2949|exec:0
+file:D:\files\fpga\storage\hdl\top_can_flash.v|io:i|time:1743913323|size:22939|exec:0
+file:D:\files\fpga\storage\hdl\uart_rx.v|io:i|time:1741684656|size:3337|exec:0
+file:D:\files\fpga\storage\hdl\uart_tx.v|io:i|time:1742554188|size:3304|exec:0
+file:D:\files\fpga\storage\hdl\top_cmd_process.v|io:i|time:1743916535|size:25535|exec:0
+file:D:\files\fpga\storage\hdl\top_storage.v|io:i|time:1743917224|size:3239|exec:0
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479348364|size:1337856|exec:1
 file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479348568|size:1973248|exec:1

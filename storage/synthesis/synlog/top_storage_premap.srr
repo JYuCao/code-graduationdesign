@@ -1,4 +1,4 @@
-# Sat Apr 05 15:42:45 2025
+# Sun Apr 06 13:27:12 2025
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34
 Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -12,10 +12,10 @@ Printing clock  summary report in "D:\files\fpga\storage\synthesis\top_storage_s
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 107MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 108MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 107MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 105MB peak: 108MB)
 
 @W: MO156 :"d:\files\fpga\storage\hdl\can_top.v":98:0:98:5|RAM buffer[31:0] removed due to constant propagation. 
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance eeprom_addr[15:0] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -99,68 +99,35 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @N: BN362 :"d:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Removing sequential instance rx_id_1[6:3] (in view: work.can_top_1110_291_2047_305419896_536870911_34_5_10_32s_10s_Z2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Removing sequential instance rx_id_1[28:8] (in view: work.can_top_1110_291_2047_305419896_536870911_34_5_10_32s_10s_Z2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Removing sequential instance rx_ide (in view: work.can_top_1110_291_2047_305419896_536870911_34_5_10_32s_10s_Z2(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance dout[7:0] (in view: work.flash_c_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance read (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance write (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance done (in view: work.flash_c_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance error (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance dout[7:0] (in view: work.flash_c_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance read (in view: work.flash_c_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|Removing sequential instance write (in view: work.flash_c_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":169:4:169:9|Removing sequential instance re (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Removing sequential instance done (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|Removing sequential instance error (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_0(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_1(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance dout[7:0] (in view: work.flash_c_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance read (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance write (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance done (in view: work.flash_c_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance error (in view: work.flash_c_0(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance read (in view: work.flash_c_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Removing sequential instance write (in view: work.flash_c_1(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":192:4:192:9|Removing sequential instance re (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Removing sequential instance done (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Removing sequential instance error (in view: work.top_cmd_process(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_2(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_2(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_3(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_3(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_4(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_4(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_5(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_5(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_6(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_6(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_7(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_7(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_8(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_8(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_9(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_9(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_10(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_10(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_11(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_11(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_12(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_12(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_13(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_13(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_14(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_14(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_15(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_d (in view: work.flash_a_15_15(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_0(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_1(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_2(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_3(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_4(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_5(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_6(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_7(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_8(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_9(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_10(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_11(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_12(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_13(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_14(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_s_n (in view: work.flash_a_15_16(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_9(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_14(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_2(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance read (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance write (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance error (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_8(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_5(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_15_16(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
@@ -173,57 +140,6 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_12(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_6(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance flash_c (in view: work.flash_a_11(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_0(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_2(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_3(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_4(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_5(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_6(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_7(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_8(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_9(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_10(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_11(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_12(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_13(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_14(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_15(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance read (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance write (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance error (in view: work.flash_b_15_15(verilog)) of type view:PrimLib.sdffr(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_0(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_1(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_2(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_3(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_4(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_5(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_6(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_7(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_8(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_9(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_10(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_11(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_12(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_13(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_14(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance des (in view: work.flash_a_15_16(verilog)) of type view:PrimLib.sdffre(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance dout[7:0] (in view: work.flash_b_15_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance read (in view: work.flash_b_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance write (in view: work.flash_b_4(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance read (in view: work.flash_b_9(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
@@ -257,7 +173,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance read (in view: work.flash_b_15_16(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance write (in view: work.flash_b_15_16(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 128MB peak: 131MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 129MB peak: 132MB)
 
 
 
@@ -267,15 +183,15 @@ Clock Summary
 Start               Requested     Requested     Clock        Clock                   Clock
 Clock               Frequency     Period        Type         Group                   Load 
 ------------------------------------------------------------------------------------------
-top_storage|clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     6694 
+top_storage|clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     6994 
 ==========================================================================================
 
-@W: MT530 :"d:\files\fpga\storage\hdl\eeprom.v":41:4:41:9|Found inferred clock top_storage|clk which controls 6694 sequential elements including u_can_flash.eeprom_ctrl.state[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"d:\files\fpga\storage\hdl\eeprom.v":41:4:41:9|Found inferred clock top_storage|clk which controls 6994 sequential elements including u_can_flash.eeprom_ctrl.state[4:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file D:\files\fpga\storage\synthesis\top_storage.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 125MB peak: 131MB)
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 124MB peak: 132MB)
 
 Encoding state machine state[4:0] (in view: work.spi_eeprom(verilog))
 original code -> new code
@@ -360,7 +276,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_14(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_14(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -427,7 +343,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_13(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_13(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -494,7 +410,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_12(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_12(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -561,7 +477,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_11(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_11(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -628,7 +544,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_10(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_10(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -695,7 +611,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_9(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_9(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -762,7 +678,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_8(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_8(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -829,7 +745,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_7(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_7(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -896,7 +812,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_6(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_6(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -963,7 +879,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_5(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_5(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1030,7 +946,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_4(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_4(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1097,7 +1013,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_3(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_3(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1164,7 +1080,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_2(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_2(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1231,7 +1147,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_1(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_1(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1298,7 +1214,7 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_0_0(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_1_0(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -1360,7 +1276,7 @@ Encoding state machine state[1:0] (in view: work.flash_c_0(verilog))
 original code -> new code
    00 -> 0
    01 -> 1
-@N: MO225 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c_0(verilog)); safe FSM implementation is not required.
+@N: MO225 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c_0(verilog)); safe FSM implementation is not required.
 Encoding state machine stat[2:0] (in view: work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog))
 original code -> new code
    00 -> 00
@@ -1409,810 +1325,6 @@ original code -> new code
    011 -> 01000
    100 -> 10000
 Encoding state machine state[6:0] (in view: work.flash_a_0(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_15_16(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_2(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_15(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_3(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_14(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_4(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_13(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_5(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_12(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_6(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_11(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_7(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_10(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_8(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_9(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_9(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_8(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_10(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_7(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_11(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_6(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_12(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 0000000
-   00000000000000000000000000000001 -> 0000011
-   00000000000000000000000000000010 -> 0000101
-   00000000000000000000000000000011 -> 0001001
-   00000000000000000000000000000100 -> 0010001
-   00000000000000000000000000000101 -> 0100001
-   00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_5(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 000000
-   00000000000000000000000000000001 -> 000001
-   00000000000000000000000000000010 -> 000011
-   00000000000000000000000000000011 -> 000010
-   00000000000000000000000000000100 -> 000110
-   00000000000000000000000000000101 -> 000111
-   00000000000000000000000000000110 -> 000101
-   00000000000000000000000000000111 -> 000100
-   00000000000000000000000000001000 -> 001100
-   00000000000000000000000000001001 -> 001101
-   00000000000000000000000000001010 -> 001111
-   00000000000000000000000000001011 -> 001110
-   00000000000000000000000000001100 -> 001010
-   00000000000000000000000000001101 -> 001011
-   00000000000000000000000000001110 -> 001001
-   00000000000000000000000000001111 -> 001000
-   00000000000000000000000000010000 -> 011000
-   00000000000000000000000000010001 -> 011001
-   00000000000000000000000000010010 -> 011011
-   00000000000000000000000000010011 -> 011010
-   00000000000000000000000000010100 -> 011110
-   00000000000000000000000000010101 -> 011111
-   00000000000000000000000000010110 -> 011101
-   00000000000000000000000000010111 -> 011100
-   00000000000000000000000000011000 -> 010100
-   00000000000000000000000000011001 -> 010101
-   00000000000000000000000000011010 -> 010111
-   00000000000000000000000000011011 -> 010110
-   00000000000000000000000000011100 -> 010010
-   00000000000000000000000000011101 -> 010011
-   00000000000000000000000000011110 -> 010001
-   00000000000000000000000000011111 -> 010000
-   00000000000000000000000000100000 -> 110000
-   00000000000000000000000000100001 -> 110001
-   00000000000000000000000000100010 -> 110011
-   00000000000000000000000000100011 -> 110010
-   00000000000000000000000000100100 -> 110110
-   00000000000000000000000000100101 -> 110111
-   00000000000000000000000000100110 -> 110101
-   00000000000000000000000000100111 -> 110100
-   00000000000000000000000000101000 -> 111100
-   00000000000000000000000000101001 -> 111101
-   00000000000000000000000000101010 -> 111111
-   00000000000000000000000000101011 -> 111110
-   00000000000000000000000000101100 -> 111010
-   00000000000000000000000000101101 -> 111011
-   00000000000000000000000000101110 -> 111001
-   00000000000000000000000000101111 -> 111000
-   00000000000000000000000000110000 -> 101000
-   00000000000000000000000000110001 -> 101001
-   00000000000000000000000000110010 -> 101011
-   00000000000000000000000000110011 -> 101010
-   00000000000000000000000000110100 -> 101110
-   00000000000000000000000000110101 -> 101111
-   00000000000000000000000000110110 -> 101101
-   00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_13(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0000000
    00000000000000000000000000000001 -> 0000011
@@ -2279,7 +1391,74 @@ original code -> new code
    00000000000000000000000000110101 -> 101111
    00000000000000000000000000110110 -> 101101
    00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_14(verilog))
+Encoding state machine state[6:0] (in view: work.flash_a_0_0(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_11(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_2(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0000000
    00000000000000000000000000000001 -> 0000011
@@ -2346,7 +1525,409 @@ original code -> new code
    00000000000000000000000000110101 -> 101111
    00000000000000000000000000110110 -> 101101
    00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_15(verilog))
+Encoding state machine state[6:0] (in view: work.flash_a_0_1(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_10(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_2(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_9(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_3(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_8(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_4(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_7(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_5(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_6(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_6(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_5(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_3(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0000000
    00000000000000000000000000000001 -> 0000011
@@ -2413,7 +1994,7 @@ original code -> new code
    00000000000000000000000000110101 -> 101111
    00000000000000000000000000110110 -> 101101
    00000000000000000000000000110111 -> 101100
-Encoding state machine state[6:0] (in view: work.flash_a_16(verilog))
+Encoding state machine state[6:0] (in view: work.flash_a_0_7(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 0000000
    00000000000000000000000000000001 -> 0000011
@@ -2422,7 +2003,342 @@ original code -> new code
    00000000000000000000000000000100 -> 0010001
    00000000000000000000000000000101 -> 0100001
    00000000000000000000000000000110 -> 1000001
-Encoding state machine state[55:0] (in view: work.flash_b_1(verilog))
+Encoding state machine state[55:0] (in view: work.flash_b_0_4(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_8(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_3(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_9(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_2(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_10(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_1(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_4(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 000000
+   00000000000000000000000000000001 -> 000001
+   00000000000000000000000000000010 -> 000011
+   00000000000000000000000000000011 -> 000010
+   00000000000000000000000000000100 -> 000110
+   00000000000000000000000000000101 -> 000111
+   00000000000000000000000000000110 -> 000101
+   00000000000000000000000000000111 -> 000100
+   00000000000000000000000000001000 -> 001100
+   00000000000000000000000000001001 -> 001101
+   00000000000000000000000000001010 -> 001111
+   00000000000000000000000000001011 -> 001110
+   00000000000000000000000000001100 -> 001010
+   00000000000000000000000000001101 -> 001011
+   00000000000000000000000000001110 -> 001001
+   00000000000000000000000000001111 -> 001000
+   00000000000000000000000000010000 -> 011000
+   00000000000000000000000000010001 -> 011001
+   00000000000000000000000000010010 -> 011011
+   00000000000000000000000000010011 -> 011010
+   00000000000000000000000000010100 -> 011110
+   00000000000000000000000000010101 -> 011111
+   00000000000000000000000000010110 -> 011101
+   00000000000000000000000000010111 -> 011100
+   00000000000000000000000000011000 -> 010100
+   00000000000000000000000000011001 -> 010101
+   00000000000000000000000000011010 -> 010111
+   00000000000000000000000000011011 -> 010110
+   00000000000000000000000000011100 -> 010010
+   00000000000000000000000000011101 -> 010011
+   00000000000000000000000000011110 -> 010001
+   00000000000000000000000000011111 -> 010000
+   00000000000000000000000000100000 -> 110000
+   00000000000000000000000000100001 -> 110001
+   00000000000000000000000000100010 -> 110011
+   00000000000000000000000000100011 -> 110010
+   00000000000000000000000000100100 -> 110110
+   00000000000000000000000000100101 -> 110111
+   00000000000000000000000000100110 -> 110101
+   00000000000000000000000000100111 -> 110100
+   00000000000000000000000000101000 -> 111100
+   00000000000000000000000000101001 -> 111101
+   00000000000000000000000000101010 -> 111111
+   00000000000000000000000000101011 -> 111110
+   00000000000000000000000000101100 -> 111010
+   00000000000000000000000000101101 -> 111011
+   00000000000000000000000000101110 -> 111001
+   00000000000000000000000000101111 -> 111000
+   00000000000000000000000000110000 -> 101000
+   00000000000000000000000000110001 -> 101001
+   00000000000000000000000000110010 -> 101011
+   00000000000000000000000000110011 -> 101010
+   00000000000000000000000000110100 -> 101110
+   00000000000000000000000000110101 -> 101111
+   00000000000000000000000000110110 -> 101101
+   00000000000000000000000000110111 -> 101100
+Encoding state machine state[6:0] (in view: work.flash_a_0_11(verilog))
+original code -> new code
+   00000000000000000000000000000000 -> 0000000
+   00000000000000000000000000000001 -> 0000011
+   00000000000000000000000000000010 -> 0000101
+   00000000000000000000000000000011 -> 0001001
+   00000000000000000000000000000100 -> 0010001
+   00000000000000000000000000000101 -> 0100001
+   00000000000000000000000000000110 -> 1000001
+Encoding state machine state[55:0] (in view: work.flash_b_0_0(verilog))
 original code -> new code
    00000000000000000000000000000000 -> 000000
    00000000000000000000000000000001 -> 000001
@@ -2484,137 +2400,7 @@ Encoding state machine state[1:0] (in view: work.flash_c_1(verilog))
 original code -> new code
    00 -> 0
    01 -> 1
-@N: MO225 :"d:\files\fpga\storage\hdl\flash_c.v":90:4:90:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c_1(verilog)); safe FSM implementation is not required.
-@N: MO223 :"d:\files\fpga\storage\hdl\top_cmd_process.v":189:4:189:9|In FSM state[30:0] (in view: work.top_cmd_process(verilog)), reset input is driving data input. 
-Encoding state machine state[30:0] (in view: work.top_cmd_process(verilog))
-original code -> new code
-   00000000000000000000000000000000 -> 00000
-   00000000000000000000000000000001 -> 00001
-   00000000000000000000000000000010 -> 00011
-   00000000000000000000000000000011 -> 00010
-   00000000000000000000000000000100 -> 00110
-   00000000000000000000000000000101 -> 00111
-   00000000000000000000000000000110 -> 00101
-   00000000000000000000000000000111 -> 00100
-   00000000000000000000000000001000 -> 01100
-   00000000000000000000000000001001 -> 01101
-   00000000000000000000000000001010 -> 01111
-   00000000000000000000000000001011 -> 01110
-   00000000000000000000000000001100 -> 01010
-   00000000000000000000000000001101 -> 01011
-   00000000000000000000000000001110 -> 01001
-   00000000000000000000000000011101 -> 01000
-   00000000000000000000000000011110 -> 11000
-   00000000000000000000000000011111 -> 11001
-   00000000000000000000000000100000 -> 11011
-   00000000000000000000000000100001 -> 11010
-   00000000000000000000000000100010 -> 11110
-   00000000000000000000000000100011 -> 11111
-   00000000000000000000000000100100 -> 11101
-   00000000000000000000000000100101 -> 11100
-   00000000000000000000000000101010 -> 10100
-   00000000000000000000000000110000 -> 10101
-   00000000000000000000000000110001 -> 10111
-   11111111111111111111111111111100 -> 10110
-   11111111111111111111111111111101 -> 10010
-   11111111111111111111111111111110 -> 10011
-   11111111111111111111111111111111 -> 10001
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_16(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_15(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_14(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_13(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_12(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_11(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_10(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_9(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_8(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_7(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_6(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_5(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_4(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_3(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_2(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[1] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[2] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[3] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[4] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[6] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Removing sequential instance dout[7] (in view: work.flash_a_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: MO225 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c_1(verilog)); safe FSM implementation is not required.
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance frame_info[16] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance frame_info[17] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance frame_info[18] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffre(prim) because it does not drive other instances.
@@ -2769,13 +2555,13 @@ original code -> new code
 None
 None
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 161MB peak: 171MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 162MB peak: 172MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 64MB peak: 171MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 65MB peak: 172MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sat Apr 05 15:42:47 2025
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sun Apr 06 13:27:14 2025
 
 ###########################################################]
