@@ -148,18 +148,18 @@ reg [31:0] eeprom_addr_bytes;  // Temporary storage for address bytes
 reg [10:0] eeprom_index;
 
 // Instantiate EEPROM controller
-spi_eeprom eeprom_ctrl (
+eeprom_b eeprom_ctrl (
     .clk(clk),
-    .rst(~rstn),
-    .spi_miso(spi_miso),
-    .spi_mosi(spi_mosi),
-    .spi_sck(spi_sck),
-    .spi_cs(spi_cs),
-    .data_in(eeprom_data_in),
-    .data_out(eeprom_data_out),
+    .reset(~rstn),
+    .eeprom_q(spi_miso),
+    .eeprom_d(spi_mosi),
+    .eeprom_c(spi_sck),
+    .eeprom_s_n(spi_cs),
+    .din(eeprom_data_in),
+    .dout(eeprom_data_out),
     .addr(eeprom_addr),
-    .read(eeprom_read),
-    .write(eeprom_write),
+    .cmd_read(eeprom_read),
+    .cmd_write(eeprom_write),
     .busy(eeprom_busy)
 );
 

@@ -336,7 +336,7 @@ always @(posedge clk) begin
 			s_read6: begin
 				a_read <= 1'b1;
 				state <= s_read6w;
-				if (count_c == 0) begin
+				if (count_b == 0 && count_c == 1) begin
 					a_deselect <= 1'b1;
 				end
 			end
