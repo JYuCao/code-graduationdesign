@@ -12,8 +12,9 @@ vmap proasic3 "C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/v
 
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/flash_a.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/flash_b.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_flash_b_wr.v"
+vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/flash_c.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_flash_c.v"
 
-vsim -L proasic3 -L presynth  -t 1ps presynth.tb_flash_b_wr
-add wave /tb_flash_b_wr/*
+vsim -L proasic3 -L presynth  -t 1ps presynth.tb_flash_c
+add wave /tb_flash_c/*
 run 1000ns

@@ -1,125 +1,147 @@
 `timescale 1ns / 1ps
 
-module tb_flash_b_die_erase();
+module tb_flash_b_die_erase;
 
-// 时钟和复位信号
-reg clk;
-reg reset;
+    // 时钟周期定义
+    parameter CLK_PERIOD = 50;
 
-// 控制信号
-reg cmd_dieerase;
-reg [23:0] addr;
-reg [15:0] length;
-reg [7:0] din;
-wire [7:0] dout;
-wire read;
-wire write;
-wire done;
-wire [15:0] status;
+    // 测试信号定义
+    reg         clk;
+    reg         reset;
+    reg         cmd_erasedies;
+    reg         cmd_write;
+    reg         cmd_read;
+    reg  [27:0] addr;
+    reg  [15:0] length;
+    reg  [7:0]  din;
+    wire [7:0]  dout;
+    wire        read;
+    wire        write;
+    wire        done;
+    wire        error;
+    wire        flash_q;
+    wire        flash_c;
+    wire        flash_s_n;
+    wire        flash_d;
 
-// Flash 接口信号
-reg flash_q;
-wire flash_c;
-wire flash_s_n;
-wire flash_d;
+    // 实例化被测试模块
+    flash_b uut (
+        .clk(clk),
+        .reset(reset),
+        .cmd_erasedies(cmd_erasedies),
+        .cmd_write(cmd_write),
+        .cmd_read(cmd_read),
+        .addr(addr),
+        .length(length),
+        .din(din),
+        .dout(dout),
+        .read(read),
+        .write(write),
+        .done(done),
+        .error(error),
+        .flash_q(flash_q),
+        .flash_c(flash_c),
+        .flash_s_n(flash_s_n),
+        .flash_d(flash_d)
+    );
 
-// 其他控制信号（未使用但需要连接）
-reg cmd_erasesectors;
-reg cmd_write;
-reg cmd_read;
-
-// 实例化被测模块
-flash_b uut (
-    .clk(clk),
-    .reset(reset),
-    .cmd_dieerase(cmd_dieerase),
-    .cmd_erasesectors(cmd_erasesectors),
-    .cmd_write(cmd_write),
-    .cmd_read(cmd_read),
-    .addr(addr),
-    .length(length),
-    .din(din),
-    .dout(dout),
-    .read(read),
-    .write(write),
-    .done(done),
-    .status(status),
-    .flash_q(flash_q),
-    .flash_c(flash_c),
-    .flash_s_n(flash_s_n),
-    .flash_d(flash_d)
-);
-
-// 时钟生成，20MHz
-initial begin
-    clk = 0;
-    forever #25 clk = ~clk;
-end
-
-// 测试激励
-initial begin
-    // 初始化
-    reset = 1;
-    cmd_dieerase = 0;
-    cmd_erasesectors = 0;
-    cmd_write = 0;
-    cmd_read = 0;
-    addr = 24'h0;
-    length = 16'h0;
-    din = 8'h0;
-    flash_q = 0;
-
-    // 等待复位完成
-    #100;
-    reset = 0;
-    #100;
-
-    // 测试场景1：擦除Die 0
-    addr = 24'h000000;  // Die 0 地址
-    length = 16'h1;     // 擦除1个Die
-    cmd_dieerase = 1;
-    #50;
-    cmd_dieerase = 0;
-    
-    // 等待RDSR返回不忙
-    repeat(10) begin
-        @(posedge flash_c);
-        if(~flash_s_n) begin
-            flash_q = 0;  // WIP位为0，表示不忙
-        end
+    // 时钟生成
+    initial begin
+        clk = 0;
+        forever #(CLK_PERIOD/2) clk = ~clk;
     end
-    
-    wait(done);
-    #200;
 
-    // 测试场景2：擦除多个Die
-    addr = 24'h400000;  // 从Die 1开始
-    length = 16'h2;     // 擦除2个Die
-    cmd_dieerase = 1;
-    #50;
-    cmd_dieerase = 0;
-    
-    // 模拟每个Die的擦除过程
-    repeat(2) begin
-        repeat(10) begin
-            @(posedge flash_c);
-            if(~flash_s_n) begin
-                flash_q = 0;
-            end
+    // 模拟Flash响应
+    reg flash_q_reg;
+    assign flash_q = flash_q_reg;
+
+    // 测试激励
+    initial begin
+        // 初始化信号
+        reset = 1;
+        cmd_erasedies = 0;
+        cmd_write = 0;
+        cmd_read = 0;
+        addr = 0;
+        length = 0;
+        din = 0;
+        flash_q_reg = 0;
+
+        // 等待5个时钟周期后释放复位
+        #(CLK_PERIOD * 5);
+        reset = 0;
+        #(CLK_PERIOD * 5);
+
+        // 测试用例1：擦除一个Die
+        $display("Test Case 1: Erase Single Die at %0t", $time);
+        addr = 28'h0000000;  // Die 0
+        length = 16'h0001;   // 擦除1个Die
+        cmd_erasedies = 1;
+        #(CLK_PERIOD);
+        cmd_erasedies = 0;
+
+        // 模拟Flash响应
+        wait(!flash_s_n);  // 等待片选信号激活
+        
+        // 等待WREN命令完成
+        #(CLK_PERIOD * 10);
+        
+        // 模拟状态寄存器读取
+        // 首先返回忙状态
+        repeat(5) begin
+            flash_q_reg = 1;  // WIP=1，表示正在擦除
+            #(CLK_PERIOD * 20);
         end
+        
+        // 然后返回就绪状态
+        flash_q_reg = 0;  // WIP=0，表示擦除完成
+        #(CLK_PERIOD * 10);
+        
+        // 等待操作完成
+        wait(done);
+        
+        if (!error)
+            $display("Die Erase Test Passed at %0t", $time);
+        else
+            $display("Die Erase Test Failed at %0t", $time);
+
+        // 测试用例2：擦除多个Die
+        #(CLK_PERIOD * 100);
+        $display("Test Case 2: Erase Multiple Dies at %0t", $time);
+        addr = 28'h0000000;  // 起始Die
+        length = 16'h0003;   // 擦除3个Die
+        cmd_erasedies = 1;
+        #(CLK_PERIOD);
+        cmd_erasedies = 0;
+
+        // 对每个Die重复模拟Flash响应
+        repeat(3) begin
+            wait(!flash_s_n);
+            #(CLK_PERIOD * 10);
+            flash_q_reg = 1;  // WIP=1
+            #(CLK_PERIOD * 20);
+            flash_q_reg = 0;  // WIP=0
+            #(CLK_PERIOD * 10);
+        end
+
+        // 等待操作完成
+        wait(done);
+        
+        if (!error)
+            $display("Multiple Die Erase Test Passed at %0t", $time);
+        else
+            $display("Multiple Die Erase Test Failed at %0t", $time);
+
+        // 结束仿真
+        #(CLK_PERIOD * 100);
+        $display("Simulation completed at %0t", $time);
+        $finish;
     end
-    
-    wait(done);
-    #200;
 
-    $display("Die Erase 测试完成");
-    $finish;
-end
-
-// 监控关键信号
-initial begin
-    $monitor("Time=%0t cmd_dieerase=%b addr=%h length=%h done=%b status=%h",
-             $time, cmd_dieerase, addr, length, done, status);
-end
+    // 监视关键信号
+    initial begin
+        $monitor("Time=%0t cs_n=%b sck=%b mosi=%b miso=%b busy=%b done=%b error=%b",
+                 $time, flash_s_n, flash_c, flash_d, flash_q, write|read, done, error);
+    end
 
 endmodule

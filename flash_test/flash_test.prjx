@@ -56,35 +56,35 @@ STATE="utd"
 TIME="1737350643"
 SIZE="4083"
 ENDFILE
-VALUE "<project>\hdl\flash_b copy.v,hdl"
-STATE="utd"
-TIME="1742891799"
-SIZE="10689"
-ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1742913377"
-SIZE="11046"
+TIME="1744028623"
+SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1742381604"
-SIZE="3136"
+TIME="1743906557"
+SIZE="3669"
+ENDFILE
+VALUE "<project>\simulation\flash_b_wr_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744028078"
+SIZE="2219"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1742905450"
-SIZE="737"
+TIME="1744029543"
+SIZE="716"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_a_presynth_simulation.log,log"
 STATE="utd"
-TIME="1742890482"
+TIME="1744027318"
 SIZE="3326"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_b_die_erase_presynth_simulation.log,log"
 STATE="utd"
-TIME="1742905513"
-SIZE="3912"
+TIME="1744027966"
+SIZE="137891"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_b_presynth_simulation.log,log"
 STATE="utd"
@@ -93,18 +93,18 @@ SIZE="5409"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_b_wr_presynth_simulation.log,log"
 STATE="utd"
-TIME="1742913391"
-SIZE="133"
+TIME="1744029556"
+SIZE="1168"
+ENDFILE
+VALUE "<project>\simulation\tb_flash_c_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744030324"
+SIZE="2941"
 ENDFILE
 VALUE "<project>\simulation\tf_presynth_simulation.log,log"
 STATE="utd"
 TIME="1737974177"
 SIZE="2611"
-ENDFILE
-VALUE "<project>\stimulus\tb_flashc.v,tb_hdl"
-STATE="utd"
-TIME="1742117971"
-SIZE="1464"
 ENDFILE
 VALUE "<project>\stimulus\tb_flash_a.v,tb_hdl"
 STATE="utd"
@@ -113,18 +113,18 @@ SIZE="1502"
 ENDFILE
 VALUE "<project>\stimulus\tb_flash_b_die_erase.v,tb_hdl"
 STATE="utd"
-TIME="1742905366"
-SIZE="2436"
+TIME="1744027586"
+SIZE="3911"
 ENDFILE
 VALUE "<project>\stimulus\tb_flash_b_wr.v,tb_hdl"
 STATE="utd"
-TIME="1742913557"
-SIZE="2569"
+TIME="1744029562"
+SIZE="4715"
 ENDFILE
 VALUE "<project>\stimulus\tb_flash_c.v,tb_hdl"
 STATE="utd"
-TIME="1742381604"
-SIZE="5332"
+TIME="1744031063"
+SIZE="4137"
 ENDFILE
 VALUE "<project>\stimulus\test_tf.v,tb_hdl"
 STATE="utd"
@@ -158,11 +158,31 @@ SIZE="159"
 ENDFILE
 ENDLIST
 LIST UsedFile
-VALUE "<project>\hdl\flash_b.v,flash_b"
 ENDLIST
 LIST NewModulesInfo
+LIST "flash_c::work"
+FILE "<project>\hdl\flash_c.v,hdl"
+LIST AssociatedStimulus
+VALUE "<project>\stimulus\tb_flash_c.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
+LIST flash_c
+VALUE "<project>\stimulus\tb_flash_c.v,tb_hdl"
+ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -173,7 +193,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=testbench
+EntityName=tb_flash_c
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -241,7 +261,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_flash_b_wr_presynth_simulation.log "
+PARAM=" -l tb_flash_c_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -266,6 +286,18 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "flash_c::work"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -282,8 +314,7 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-HDL;stimulus\tb_flash_b_wr.v;0
-ACTIVEVIEW;stimulus\tb_flash_b_wr.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
@@ -306,14 +337,14 @@ ENDLIST
 LIST "tb_flash_c::work","stimulus\tb_flash_c.v","FALSE","TRUE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
-LIST "tb_flash_c::work","stimulus\tb_flashc.v","FALSE","TRUE"
-SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
-ENDLIST
 LIST "tf::work","stimulus\test_tf.v","FALSE","TRUE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
+LIST "flash_c::work"
+ACTIVETESTBENCH "tb_flash_c::work","stimulus\tb_flash_c.v","FALSE"
+ENDLIST
 ENDLIST
 LIST IOTabList
 ENDLIST

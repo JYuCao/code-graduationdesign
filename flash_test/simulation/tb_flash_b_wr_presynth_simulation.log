@@ -1,41 +1,40 @@
 # Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
 # do run.do
-# INFO: Simulation library presynth already exists
 # Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
 # vmap presynth presynth 
-# Modifying modelsim.ini
+# Modifying C:/Microsemi/Libero_SoC_v11.8/Modelsim/win32acoem/../modelsim.ini
 # Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
 # vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
-# Modifying modelsim.ini
+# Modifying C:/Microsemi/Libero_SoC_v11.8/Modelsim/win32acoem/../modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:41:55 on Mar 25,2025
+# Start time: 20:43:09 on Apr 07,2025
 # vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_a.v 
 # -- Compiling module flash_a
 # 
 # Top level modules:
 # 	flash_a
-# End time: 22:41:55 on Mar 25,2025, Elapsed time: 0:00:00
+# End time: 20:43:10 on Apr 07,2025, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:41:55 on Mar 25,2025
+# Start time: 20:43:10 on Apr 07,2025
 # vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_b.v 
 # -- Compiling module flash_b
 # 
 # Top level modules:
 # 	flash_b
-# End time: 22:41:55 on Mar 25,2025, Elapsed time: 0:00:00
+# End time: 20:43:10 on Apr 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 22:41:55 on Mar 25,2025
+# Start time: 20:43:10 on Apr 07,2025
 # vlog -reportprogress 300 "+incdir+D:/files/fpga/flash_test/stimulus" -vlog01compat -work presynth D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v 
 # -- Compiling module tb_flash_b_wr
 # 
 # Top level modules:
 # 	tb_flash_b_wr
-# End time: 22:41:55 on Mar 25,2025, Elapsed time: 0:00:00
+# End time: 20:43:10 on Apr 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -L proasic3 -L presynth -t 1ps presynth.tb_flash_b_wr 
-# Start time: 22:41:55 on Mar 25,2025
+# Start time: 20:43:10 on Apr 07,2025
 # //  ModelSim Microsemi 10.5c Jul 21 2016
 # //
 # //  Copyright 1991-2016 Mentor Graphics Corporation
@@ -52,13 +51,441 @@
 # Loading presynth.tb_flash_b_wr
 # Loading presynth.flash_b
 # Loading presynth.flash_a
-# Starting write test...
-# Write data: a5
-add wave -position end  sim:/tb_flash_b_wr/uut/count_b
-add wave -position end  sim:/tb_flash_b_wr/uut/count_c
-add wave -position end  sim:/tb_flash_b_wr/uut/state
+# Time=0 cs_n=x sck=x mosi=x miso=0 busy=x done=x error=x
+# Time=25000 cs_n=1 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Test Case 1: Write Data at 500000
+# Time=625000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=875000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
 run -all
-# Starting read test...
-# Read data: xx
-# End time: 22:59:32 on Mar 25,2025, Elapsed time: 0:17:37
+# Time=1025000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1075000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1125000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1175000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=1225000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=1275000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=1325000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=1375000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1475000 cs_n=1 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=1625000 cs_n=1 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2125000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2225000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2275000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2325000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2375000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2425000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2475000 cs_n=0 sck=0 mosi=1 miso=1 busy=0 done=0 error=0
+# Time=2525000 cs_n=0 sck=1 mosi=1 miso=1 busy=0 done=0 error=0
+# Time=2575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2625000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2675000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2725000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2775000 cs_n=0 sck=0 mosi=1 miso=1 busy=0 done=0 error=0
+# Time=2825000 cs_n=0 sck=1 mosi=1 miso=1 busy=0 done=0 error=0
+# Time=2875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2925000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=2975000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3225000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3275000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3325000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3375000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3425000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3475000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3525000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3625000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3675000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3725000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3775000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3925000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=3975000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4225000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4275000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4325000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4375000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4425000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4475000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4525000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=4625000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4675000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4875000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=4975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5225000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5275000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5325000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5375000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5475000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5525000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5575000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5625000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5675000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=5875000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=5925000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=5975000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=6075000 cs_n=0 sck=0 mosi=1 miso=0 busy=1 done=0 error=0
+# Time=6125000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=6175000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6225000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6275000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6325000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6375000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6475000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6525000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6575000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6625000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6675000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6875000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=6975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7225000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7275000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7325000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7375000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7475000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7525000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7575000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7625000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7675000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7725000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=7875000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7925000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=7975000 cs_n=1 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=8625000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=8675000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8825000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8875000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=8975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9025000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9075000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9125000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9175000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9225000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9275000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9325000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=9375000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9425000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9475000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9725000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9775000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9875000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=9925000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10025000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10075000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10175000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10225000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10325000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10375000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10475000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10525000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10625000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10675000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10775000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10825000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=10875000 cs_n=1 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=11475000 cs_n=1 sck=0 mosi=1 miso=0 busy=0 done=1 error=0
+# Time=11525000 cs_n=1 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Test Case 2: Read Data at 16475000
+# Time=16575000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=16625000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=16975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17025000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=17075000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=17125000 cs_n=0 sck=0 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=17175000 cs_n=0 sck=1 mosi=1 miso=0 busy=0 done=0 error=0
+# Time=17225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=17975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18175000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=18975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19175000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=19975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20175000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=20975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21175000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=21675000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=21725000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=21825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=21875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=21975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22125000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22175000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22475000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22575000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22625000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22725000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=22875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23075000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23125000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23225000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=23275000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=23375000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23425000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23525000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=23725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=23825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=23975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=24025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Read byte: 0xxx at 24125000
+# Time=24125000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=24175000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=24275000 cs_n=0 sck=0 mosi=0 miso=0 busy=1 done=0 error=0
+# Time=24325000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=24525000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=24575000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=24675000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=24725000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=24825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=24875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=24975000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25025000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25125000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=25175000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=25275000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25325000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25475000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Read byte: 0xda at 25575000
+# Time=25575000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25625000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25725000 cs_n=0 sck=0 mosi=0 miso=0 busy=1 done=0 error=0
+# Time=25775000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=25975000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26025000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26125000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=26175000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=26275000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26325000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26425000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26475000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26575000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26625000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26725000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26775000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=26875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=26925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Read byte: 0xb4 at 27025000
+# Time=27025000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27075000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27175000 cs_n=0 sck=0 mosi=0 miso=0 busy=1 done=0 error=0
+# Time=27225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27425000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27475000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27575000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27625000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27725000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=27775000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=27875000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=27925000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=28025000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28075000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28175000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28225000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28325000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28375000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Read byte: 0x5e at 28475000
+# Time=28475000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28525000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28625000 cs_n=0 sck=0 mosi=0 miso=1 busy=1 done=0 error=0
+# Time=28675000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28875000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=28925000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29025000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29075000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29175000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29225000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29325000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29375000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29475000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29525000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29625000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29675000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=29775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Read byte: 0x17 at 29925000
+# Time=29925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=29975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30075000 cs_n=0 sck=0 mosi=0 miso=0 busy=1 done=0 error=0
+# Time=30125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30325000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30375000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30475000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30525000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30625000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30675000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30775000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=30825000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=30925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=30975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31225000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=31275000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Read byte: 0xce at 31375000
+# Time=31375000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=31425000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=31525000 cs_n=0 sck=0 mosi=0 miso=1 busy=1 done=0 error=0
+# Time=31575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=31775000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31825000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31925000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=31975000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32075000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32125000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32225000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32275000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32375000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32425000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=32525000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=32575000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=32675000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=32725000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Read byte: 0x09 at 32825000
+# Time=32825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=32875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=32975000 cs_n=0 sck=0 mosi=0 miso=1 busy=1 done=0 error=0
+# Time=33025000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33225000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33275000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33375000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33425000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33525000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=33575000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=33675000 cs_n=0 sck=1 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=33725000 cs_n=0 sck=0 mosi=0 miso=0 busy=0 done=0 error=0
+# Time=33825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=33975000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34025000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34125000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34175000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Read byte: 0x83 at 34275000
+# Time=34275000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34325000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34425000 cs_n=0 sck=0 mosi=0 miso=1 busy=1 done=0 error=0
+# Time=34475000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34675000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34725000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34825000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34875000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=34975000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35025000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35125000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35175000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35275000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35325000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35425000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35475000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35575000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35625000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35725000 cs_n=0 sck=1 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35775000 cs_n=0 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=35825000 cs_n=1 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Time=36375000 cs_n=1 sck=0 mosi=0 miso=1 busy=1 done=0 error=0
+# Time=36425000 cs_n=1 sck=0 mosi=0 miso=1 busy=0 done=1 error=0
+# Time=36475000 cs_n=1 sck=0 mosi=0 miso=1 busy=0 done=0 error=0
+# Simulation completed at 41425000
+# ** Note: $finish    : D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v(173)
+#    Time: 41425 ns  Iteration: 0  Instance: /tb_flash_b_wr
+# 1
+# Break in Module tb_flash_b_wr at D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v line 173
+# End time: 20:45:33 on Apr 07,2025, Elapsed time: 0:02:23
 # Errors: 0, Warnings: 0

@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/files/fpga/flash_test/simulation
 vflash_a
-Z1 !s110 1742913715
+Z1 !s110 1744031072
 !i10b 1
 !s100 mhG]mIUedD5a<=U>j]Bn30
 IZ;UA7J=3@AQnY^:Dgmg8c3
@@ -23,7 +23,7 @@ Z3 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z4 !s108 1742913715.000000
+Z4 !s108 1744031072.000000
 !s107 D:/files/fpga/flash_test/hdl/flash_a.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/hdl/flash_a.v|
 !s101 -O0
@@ -33,14 +33,14 @@ Z6 tCvgOpt 0
 vflash_b
 R1
 !i10b 1
-!s100 3aXli>9lOO=7ClSFO^lnd1
-I[DJm_39jMaj8eB9H8<=Y;2
+!s100 4K=SDHBoAC;ReG1R4=`7S3
+I2T8WRYcYEbN1dlT<zzJ2M3
 R2
 R0
-w1742913377
+w1744028623
 8D:/files/fpga/flash_test/hdl/flash_b.v
 FD:/files/fpga/flash_test/hdl/flash_b.v
-L0 44
+L0 4
 R3
 r1
 !s85 0
@@ -53,29 +53,29 @@ R4
 R5
 R6
 vflash_c
-Z7 !s110 1742373291
+R1
 !i10b 1
-!s100 DJmH4c_4PL;EEmQ>FE;[l1
-IM7E67KJ6DNW2YlnQzm`<e2
+!s100 =6LLe8bR1<WPPDd6DiN0D2
+IRnz2DmB8afiVcNL=@jL2K0
 R2
-Z8 dC:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/simulation
-w1742369958
-8C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_c.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_c.v
+R0
+w1743906557
+8D:/files/fpga/flash_test/hdl/flash_c.v
+FD:/files/fpga/flash_test/hdl/flash_c.v
 L0 3
 R3
 r1
 !s85 0
 31
-Z9 !s108 1742373291.000000
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_c.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/hdl/flash_c.v|
+R4
+!s107 D:/files/fpga/flash_test/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/hdl/flash_c.v|
 !s101 -O0
 !i113 1
 R5
 R6
 vtb_flash_a
-!s110 1742890457
+!s110 1744029996
 !i10b 1
 !s100 aoc>R55z2;ch7Xzo;HFI<1
 I6zciKUMOG_ZAcMBU;KZf]0
@@ -89,68 +89,22 @@ R3
 r1
 !s85 0
 31
-!s108 1742890457.000000
+!s108 1744029996.000000
 !s107 D:/files/fpga/flash_test/stimulus/tb_flash_a.v|
 !s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flash_a.v|
 !s101 -O0
 !i113 1
 R5
-Z10 !s92 +incdir+D:/files/fpga/flash_test/stimulus -vlog01compat -work presynth -O0
-R6
-vtb_flash_b
-!s110 1742899496
-!i10b 1
-!s100 @;3mPXl78ToK]E@KccXP^2
-I^cghXYOGi@M:aj`;6g7hL1
-R2
-R0
-w1742899450
-8D:/files/fpga/flash_test/stimulus/tb_flash_b.v
-FD:/files/fpga/flash_test/stimulus/tb_flash_b.v
-L0 3
-R3
-r1
-!s85 0
-31
-!s108 1742899496.000000
-!s107 D:/files/fpga/flash_test/stimulus/tb_flash_b.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flash_b.v|
-!s101 -O0
-!i113 1
-R5
-R10
-R6
-vtb_flash_b_die_erase
-!s110 1742905458
-!i10b 1
-!s100 UDOWNV:b3E2SA<703Ckn@1
-ImiXFoiZ`3W0c;HL0`P2h]3
-R2
-R0
-w1742905366
-8D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v
-FD:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v
-L0 3
-R3
-r1
-!s85 0
-31
-!s108 1742905458.000000
-!s107 D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flash_b_die_erase.v|
-!s101 -O0
-!i113 1
-R5
-R10
+Z7 !s92 +incdir+D:/files/fpga/flash_test/stimulus -vlog01compat -work presynth -O0
 R6
 vtb_flash_b_wr
-R1
+!s110 1744029790
 !i10b 1
-!s100 joT?C8`lFi^@9LU7VNQ9N2
-IHl_2M2W407alVSgIE8DV=1
+!s100 AFS@P>DU^MRJGiO_2AIkl3
+IZjXUk_Zl<EOXNm_8DYl9C1
 R2
 R0
-w1742913557
+w1744029562
 8D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v
 FD:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v
 L0 3
@@ -158,57 +112,34 @@ R3
 r1
 !s85 0
 31
-R4
+!s108 1744029790.000000
 !s107 D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v|
 !s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flash_b_wr.v|
 !s101 -O0
 !i113 1
 R5
-R10
+R7
 R6
 vtb_flash_c
-R7
+R1
 !i10b 1
-!s100 Ek6lIzgUF[lK2EmA2FR=h2
-IiMYW9T>j?fUWmgHW[:EEQ3
+!s100 ASi0Si8@gH;j]HS0nn4BV1
+IBi<Xe^VOoYX3c3cFi0zMV1
 R2
-R8
-w1742370344
-8C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus/tb_flash_c.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus/tb_flash_c.v
+R0
+w1744031063
+8D:/files/fpga/flash_test/stimulus/tb_flash_c.v
+FD:/files/fpga/flash_test/stimulus/tb_flash_c.v
 L0 3
 R3
 r1
 !s85 0
 31
-R9
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus/tb_flash_c.v|
-!s90 -reportprogress|300|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus/tb_flash_c.v|
+R4
+!s107 D:/files/fpga/flash_test/stimulus/tb_flash_c.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/tb_flash_c.v|
 !s101 -O0
 !i113 1
 R5
-!s92 +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/flash_test/stimulus -vlog01compat -work presynth -O0
-R6
-vtf
-!s110 1737973976
-!i10b 1
-!s100 e1X:89`[2Q;>@bh3EZo_70
-If?o[@U_2?VdA5EOhdWnKe2
-R2
-R0
-w1737973907
-8D:/files/fpga/flash_test/stimulus/test_tf.v
-FD:/files/fpga/flash_test/stimulus/test_tf.v
-L0 33
-R3
-r1
-!s85 0
-31
-!s108 1737973976.000000
-!s107 D:/files/fpga/flash_test/stimulus/test_tf.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/flash_test/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/flash_test/stimulus/test_tf.v|
-!s101 -O0
-!i113 1
-R5
-R10
+R7
 R6
