@@ -13,7 +13,7 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>311</data>
+<data>310</data>
 <report_link name="more">
 <data>D:\files\fpga\storage\synthesis\synlog\report\top_storage_premap_notes.txt</data>
 </report_link>
@@ -34,13 +34,13 @@ The file contains the job information from mapper to be displayed as part of the
 <data>0h:00m:02s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:02s</data>
+<data>0h:00m:03s</data>
 </info>
 <info name="Peak Memory">
-<data>172MB</data>
+<data>175MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1743917234</data>
+<data type="timestamp">1744018423</data>
 </info>
 </job_info>
 </job_run_status>

@@ -19,7 +19,7 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="Warnings">
-<data>101</data>
+<data>102</data>
 <report_link name="more">
 <data>D:\files\fpga\storage\synthesis\synlog\report\top_storage_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:01m:07s</data>
+<data>0h:01m:06s</data>
 </info>
 <info name="Real Time">
-<data>0h:01m:09s</data>
+<data>0h:01m:08s</data>
 </info>
 <info name="Peak Memory">
-<data>318MB</data>
+<data>321MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1743917303</data>
+<data type="timestamp">1744018492</data>
 </info>
 </job_info>
 </job_run_status>

@@ -62,7 +62,7 @@
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance received_data_size[2] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance received_data_size[1] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Removing sequential instance received_data_size[0] (in view: work.top_can_flash(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
-@N: MO231 :"d:\files\fpga\storage\hdl\eeprom.v":84:4:84:9|Found counter in view:work.spi_eeprom(verilog) instance bit_cnt[3:0] 
+@N: MO231 :"d:\files\fpga\storage\hdl\eeprom_a.v":41:0:41:5|Found counter in view:work.eeprom_a(verilog) instance count[3:0] 
 @N: MO225 :"d:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|There are no possible illegal states for state machine state[1:0] (in view: work.flash_c_0(verilog)); safe FSM implementation is not required.
 @N: MO231 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Found counter in view:work.flash_b_15_15(verilog) instance count_c[29:0] 
 @N: MO231 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Found counter in view:work.flash_b_15_15(verilog) instance count_b[15:0] 
@@ -225,11 +225,11 @@
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance u_can_flash.flash_ctrl.flash_array\[9\]\.flash_inst.a_din[5] (in view: work.top_storage(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance u_can_flash.flash_ctrl.flash_array\[9\]\.flash_inst.a_din[6] (in view: work.top_storage(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN362 :"d:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Removing sequential instance u_can_flash.flash_ctrl.flash_array\[9\]\.flash_inst.a_din[7] (in view: work.top_storage(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: FP130 |Promoting Net clk_c_c on CLKBUF  clk_pad 
-@N: FP130 |Promoting Net flash_reset_n_can[0] on CLKINT  I_2058 
-@N: FP130 |Promoting Net flash_reset_n_cmd[0] on CLKINT  I_2059 
-@N: FP130 |Promoting Net u_can_flash.can_ctrl.u_can_level_packet.stat[1] on CLKINT  I_2060 
-@N: FP130 |Promoting Net u_cmd_process.flash_addr[31] on CLKINT  I_2061 
-@N: FP130 |Promoting Net rstn_c on CLKINT  I_2062 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net flash_reset_n_can[0] on CLKINT  I_2054 
+@N: FP130 |Promoting Net flash_reset_n_cmd[0] on CLKINT  I_2055 
+@N: FP130 |Promoting Net u_can_flash.can_ctrl.u_can_level_packet.stat[1] on CLKINT  I_2056 
+@N: FP130 |Promoting Net u_cmd_process.flash_addr[31] on CLKINT  I_2057 
+@N: FP130 |Promoting Net rstn_c on CLKINT  I_2058 
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 @N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

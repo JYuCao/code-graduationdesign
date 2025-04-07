@@ -1,5 +1,6 @@
-@W: CL169 :"D:\files\fpga\storage\hdl\eeprom.v":84:4:84:9|Pruning unused register addr_reg[15:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\eeprom.v":84:4:84:9|Pruning unused register data_reg[7:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register done. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register read. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register write. Make sure that there are no unused intermediate registers.
 @W: CG532 :"D:\files\fpga\storage\hdl\can_level_bit.v":27:0:27:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @W: CG532 :"D:\files\fpga\storage\hdl\can_level_bit.v":28:0:28:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @W: CG532 :"D:\files\fpga\storage\hdl\can_level_bit.v":29:0:29:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
@@ -11,6 +12,7 @@
 @W: CL260 :"D:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Pruning register bit 7 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL260 :"D:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Pruning register bit 2 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CG532 :"D:\files\fpga\storage\hdl\top_can_flash.v":215:0:215:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG781 :"D:\files\fpga\storage\hdl\top_can_flash.v":151:9:151:19|Input length on instance eeprom_ctrl is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
 @W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":84:11:84:20|Object next_state is declared but not assigned. Either assign a value or remove the declaration.
 @W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register valid_frame. Make sure that there are no unused intermediate registers.
 @W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register header_state[1:0]. Make sure that there are no unused intermediate registers.

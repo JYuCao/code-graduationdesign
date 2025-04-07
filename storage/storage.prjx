@@ -66,10 +66,15 @@ STATE="utd"
 TIME="1740298947"
 SIZE="9224"
 ENDFILE
-VALUE "<project>\hdl\eeprom.v,hdl"
+VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1743837518"
-SIZE="3810"
+TIME="1744011393"
+SIZE="2734"
+ENDFILE
+VALUE "<project>\hdl\eeprom_b.v,hdl"
+STATE="utd"
+TIME="1744017833"
+SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
@@ -78,18 +83,18 @@ SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1743838885"
+TIME="1744018286"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743906568"
+TIME="1744018336"
 SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1743913323"
-SIZE="22939"
+TIME="1744017886"
+SIZE="22944"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
@@ -117,29 +122,45 @@ TIME="1743838702"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.edn,syn_edn"
-STATE="ood"
-TIME="1743839015"
-SIZE="8046318"
+STATE="utd"
+TIME="1743917303"
+SIZE="8977205"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.so,so"
 STATE="utd"
-TIME="1743839015"
+TIME="1743917303"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_sdc.sdc,syn_sdc"
-STATE="ood"
-TIME="1743839015"
+STATE="utd"
+TIME="1743917303"
 SIZE="400"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_syn.prj,prj"
 STATE="utd"
-TIME="1743839016"
-SIZE="2302"
+TIME="1743917304"
+SIZE="2340"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "top_storage::work"
+FILE "<project>\hdl\top_storage.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\top_storage.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 ENDLIST
@@ -220,7 +241,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_eeprom_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -245,6 +266,19 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "top_storage::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\top_storage.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -261,9 +295,7 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-HDL;hdl\eeprom.v;0
-HDL;hdl\can_level_bit.v;0
-ACTIVEVIEW;hdl\can_level_bit.v
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
@@ -274,6 +306,11 @@ ENDLIST
 LIST "can_top::work","hdl\can_top.v","FALSE","FALSE"
 SUBBLOCK "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
 ENDLIST
+LIST "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
+LIST "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
+SUBBLOCK "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
 ENDLIST
 LIST "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
@@ -282,17 +319,15 @@ ENDLIST
 LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
-ENDLIST
 LIST "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
-SUBBLOCK "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
 ENDLIST
 LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
-SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
 LIST "top_storage::work","hdl\top_storage.v","FALSE","FALSE"
 SUBBLOCK "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"

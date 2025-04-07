@@ -1,2 +1,2 @@
-@E: CG906 :"D:\files\fpga\storage\hdl\flash_b.v":39:30:39:40|Reference to unknown variable flash_d_reg.
+@E: CS168 :"D:\files\fpga\storage\hdl\flash_c.v":80:22:80:22|Port error does not exist
 
