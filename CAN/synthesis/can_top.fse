@@ -1,0 +1,46 @@
+
+fsm_encoding {614201421} onehot
+
+fsm_state_encoding {614201421} INIT {0000000000000001}
+
+fsm_state_encoding {614201421} IDLE {0000000000000010}
+
+fsm_state_encoding {614201421} TX_ID_MSB {0000000000000100}
+
+fsm_state_encoding {614201421} TRX_ID_BASE {0000000000001000}
+
+fsm_state_encoding {614201421} TX_PAYLOAD {0000000000010000}
+
+fsm_state_encoding {614201421} TX_ACK_DEL {0000000000100000}
+
+fsm_state_encoding {614201421} TX_ACK {0000000001000000}
+
+fsm_state_encoding {614201421} TX_EOF {0000000010000000}
+
+fsm_state_encoding {614201421} RX_IDE_BIT {0000000100000000}
+
+fsm_state_encoding {614201421} RX_ID_EXTEND {0000001000000000}
+
+fsm_state_encoding {614201421} RX_RESV1_BIT {0000010000000000}
+
+fsm_state_encoding {614201421} RX_CTRL {0000100000000000}
+
+fsm_state_encoding {614201421} RX_DATA {0001000000000000}
+
+fsm_state_encoding {614201421} RX_CRC {0010000000000000}
+
+fsm_state_encoding {614201421} RX_ACK {0100000000000000}
+
+fsm_state_encoding {614201421} 1111 {1000000000000000}
+
+fsm_registers {614201421} {stat[15]}  {stat[14]}  {stat[13]}  {stat[12]}  {stat[11]}  {stat[10]}  {stat[9]}  {stat[8]}  {stat[7]}  {stat[6]}  {stat[5]}  {stat[4]}  {stat[3]}  {stat[2]}  {stat[1]}  {stat[0]} 
+
+fsm_encoding {5600602} sequential
+
+fsm_state_encoding {5600602} STAT_PTS {00}
+
+fsm_state_encoding {5600602} STAT_PBS1 {01}
+
+fsm_state_encoding {5600602} 10 {10}
+
+fsm_registers {5600602} {stat[1]}  {stat[0]} 

@@ -1,0 +1,27 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\files\\fpga\\CAN\\synthesis\\synwork\\can_top_comp.srs|-top|can_top|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|D:\\files\\fpga\\CAN\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\bin64\\c_ver.exe":1479953424
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\proasic\\proasic3.v":1487916450
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\hypermods.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\umr_capim.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1487916586
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.8\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1487916586
+#CUR:"D:\\files\\fpga\\CAN\\hdl\\can_level_bit.v":1740298947
+#CUR:"D:\\files\\fpga\\CAN\\hdl\\can_level_packet.v":1740811746
+#CUR:"D:\\files\\fpga\\CAN\\hdl\\can_top.v":1740298947
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\files\fpga\CAN\hdl\can_level_bit.v" verilog
+1			"D:\files\fpga\CAN\hdl\can_level_packet.v" verilog
+2			"D:\files\fpga\CAN\hdl\can_top.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 0
+2 1
+#Dependency Lists(Users Of)
+0 1
+1 2
+2 -1
+#Design Unit to File Association
+module work can_level_bit 0
+module work can_level_packet 1
+module work can_top 2

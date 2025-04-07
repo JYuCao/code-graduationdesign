@@ -1,0 +1,10 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe  -osyn  D:\files\fpga\CAN\synthesis\synwork\can_top_comp.srs  -top  can_top  -hdllog  D:\files\fpga\CAN\synthesis\synlog\can_top_compiler.srr  -encrypt  -mp  4  -verification_mode 0  -verilog  -prodtype  synplify_pro  -nram -fixsmult -divnmod   -I D:\files\fpga\CAN\synthesis\  -I C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib   -v2001  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -encrypt  -pro  -dmgen  D:\files\fpga\CAN\synthesis\dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -lib work D:\files\fpga\CAN\hdl\can_level_bit.v -lib work D:\files\fpga\CAN\hdl\can_level_packet.v -lib work D:\files\fpga\CAN\hdl\can_top.v 
+rc:0 success:1 runtime:3
+file:D:\files\fpga\CAN\synthesis\synwork\can_top_comp.srs|io:o|time:1743995322|size:21698|exec:0
+file:D:\files\fpga\CAN\synthesis\synlog\can_top_compiler.srr|io:o|time:1743995322|size:6966|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\CAN\hdl\can_level_bit.v|io:i|time:1740298947|size:4061|exec:0
+file:D:\files\fpga\CAN\hdl\can_level_packet.v|io:i|time:1740811746|size:13213|exec:0
+file:D:\files\fpga\CAN\hdl\can_top.v|io:i|time:1740298947|size:9224|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\c_hdl.exe|io:i|time:1479348364|size:1337856|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\c_hdl.exe|io:i|time:1479348568|size:1973248|exec:1

@@ -1,0 +1,13 @@
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_level_bit.v":27:0:27:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_level_bit.v":28:0:28:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_level_bit.v":29:0:29:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_level_packet.v":42:0:42:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_level_packet.v":43:0:43:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG532 :"D:\files\fpga\CAN\hdl\can_top.v":48:0:48:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CL190 :"D:\files\fpga\CAN\hdl\can_top.v":162:0:162:5|Optimizing register bit rx_id[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\CAN\hdl\can_top.v":162:0:162:5|Optimizing register bit rx_id[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"D:\files\fpga\CAN\hdl\can_top.v":162:0:162:5|Pruning register bit 7 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL260 :"D:\files\fpga\CAN\hdl\can_top.v":162:0:162:5|Pruning register bit 2 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL249 :"D:\files\fpga\CAN\hdl\can_level_packet.v":142:0:142:5|Initial value is not supported on state machine stat
+@W: CL249 :"D:\files\fpga\CAN\hdl\can_level_bit.v":60:0:60:5|Initial value is not supported on state machine stat
+

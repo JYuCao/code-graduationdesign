@@ -1,0 +1,14 @@
+C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  D:\files\fpga\CAN\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\files\fpga\CAN\synthesis   -part A3P250  -package VQFP100  -grade STD    -maxfan 24 -globalthreshold 50 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\files\fpga\CAN\synthesis\synlog\report\can_top_premap.xml  -top_level_module  can_top  -oedif  D:\files\fpga\CAN\synthesis\can_top.edn  -conchk_prepass  D:\files\fpga\CAN\synthesis\can_top_cck.rpt   -freq 100.000   D:\files\fpga\CAN\synthesis\synwork\can_top_mult.srs  -flow prepass  -gcc_prepass  -osrd  D:\files\fpga\CAN\synthesis\synwork\can_top_prem.srd  -qsap  D:\files\fpga\CAN\synthesis\can_top.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v  -ologparam  D:\files\fpga\CAN\synthesis\syntmp\can_top.plg  -osyn  D:\files\fpga\CAN\synthesis\synwork\can_top_prem.srd  -prjdir  D:\files\fpga\CAN\synthesis\  -prjname  can_top_syn  -log  D:\files\fpga\CAN\synthesis\synlog\can_top_premap.srr 
+rc:1 success:1 runtime:1
+file:D:\files\fpga\CAN\synthesis\scratchproject.prs|io:o|time:1743995321|size:1785|exec:0
+file:D:\files\fpga\CAN\synthesis\can_top.edn|io:o|time:0|size:0|exec:0
+file:D:\files\fpga\CAN\synthesis\can_top_cck.rpt|io:o|time:1743995325|size:21066|exec:0
+file:D:\files\fpga\CAN\synthesis\synwork\can_top_mult.srs|io:i|time:1743995324|size:8097|exec:0
+file:D:\files\fpga\CAN\synthesis\synwork\can_top_prem.srd|io:o|time:1743995324|size:34757|exec:0
+file:D:\files\fpga\CAN\synthesis\can_top.sap|io:o|time:1743995325|size:1642|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v|io:i|time:1487916450|size:49355|exec:0
+file:D:\files\fpga\CAN\synthesis\syntmp\can_top.plg|io:o|time:1743995324|size:0|exec:0
+file:D:\files\fpga\CAN\synthesis\synwork\can_top_prem.srd|io:o|time:1743995324|size:34757|exec:0
+file:D:\files\fpga\CAN\synthesis\synlog\can_top_premap.srr|io:o|time:1743995325|size:3611|exec:0
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\m_proasic.exe|io:i|time:1479349034|size:10978304|exec:1
+file:C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin64\m_proasic.exe|io:i|time:1479350440|size:14125056|exec:1

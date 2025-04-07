@@ -1,0 +1,10 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"D:\files\fpga\CAN\hdl\can_level_bit.v":10:7:10:19|Synthesizing module can_level_bit in library work.
+@N: CG364 :"D:\files\fpga\CAN\hdl\can_level_packet.v":10:7:10:22|Synthesizing module can_level_packet in library work.
+@N: CG364 :"D:\files\fpga\CAN\hdl\can_top.v":11:7:11:13|Synthesizing module can_top in library work.
+@N: CL134 :"D:\files\fpga\CAN\hdl\can_top.v":98:0:98:5|Found RAM buffer, depth=1024, width=32
+@N: CL201 :"D:\files\fpga\CAN\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
+@N: CL201 :"D:\files\fpga\CAN\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
+@N|Running in 64-bit mode
+

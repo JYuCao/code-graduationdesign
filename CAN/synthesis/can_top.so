@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>can_top</design>
+	<target_edif>D:\files\fpga\CAN\synthesis\can_top.edn</target_edif>
+</SynplifyOutput>

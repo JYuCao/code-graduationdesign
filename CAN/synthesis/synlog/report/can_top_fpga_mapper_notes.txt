@@ -1,0 +1,19 @@
+@N: MF248 |Running in 64-bit mode.
+@N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
+@N: MF179 :"d:\files\fpga\can\hdl\can_top.v":178:25:178:37|Found 4 by 4 bit less-than operator ('<') un1_rx_valid (in view: work.can_top(verilog))
+@N: MO231 :"d:\files\fpga\can\hdl\can_level_packet.v":142:0:142:5|Found counter in view:work.can_level_packet_Z1(verilog) instance cnt[7:0] 
+@N: MF179 :"d:\files\fpga\can\hdl\can_level_packet.v":324:27:324:37|Found 8 by 8 bit less-than operator ('<') cnt68 (in view: work.can_level_packet_Z1(verilog))
+@N: MF239 :"d:\files\fpga\can\hdl\can_level_packet.v":104:41:104:67|Found 5-bit decrementor, 'un1_rx_len[7:3]'
+@N: MO231 :"d:\files\fpga\can\hdl\can_level_bit.v":60:0:60:5|Found counter in view:work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog) instance cnt[16:0] 
+@N: MO231 :"d:\files\fpga\can\hdl\can_level_bit.v":60:0:60:5|Found counter in view:work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog) instance cnt_high[2:0] 
+@N: MF179 :"d:\files\fpga\can\hdl\can_level_bit.v":95:23:95:41|Found 17 by 17 bit less-than operator ('<') un1_cnt_1 (in view: work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog))
+@N: MF794 |RAM buffer[31:0] required 52 registers during mapping 
+@N: MF794 |RAM buffer[31:0] required 52 registers during mapping 
+@N: FP130 |Promoting Net rstn_c on CLKBUF  rstn_pad 
+@N: FP130 |Promoting Net clk_c on CLKBUF  clk_pad 
+@N: FP130 |Promoting Net u_can_level_packet.stat[1] on CLKINT  I_271 
+@N: FP130 |Promoting Net rx_valid4 on CLKINT  I_272 
+@N: FP130 |Promoting Net u_can_level_packet.un1_rx_history6_4 on CLKINT  I_273 
+@N: FP130 |Promoting Net rdack on CLKINT  I_274 
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.

@@ -1,0 +1,877 @@
+<html><body><samp><pre>
+<!@TC:1743995321>
+#Build: Synplify Pro L-2016.09M-2, Build 065R, Nov 16 2016
+#install: C:\Microsemi\Libero_SoC_v11.8\SynplifyPro
+#OS: Windows 8 6.2
+#Hostname: DESKTOP-ONDGHL5
+
+# Mon Apr 07 11:08:41 2025
+
+#Implementation: synthesis
+
+<a name=compilerReport1></a>Synopsys HDL Compiler, version comp2016q3p1, Build 117R, built Nov 17 2016</a>
+@N: : <!@TM:1743995323> | Running in 64-bit mode 
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+<a name=compilerReport2></a>Synopsys Verilog Compiler, version comp2016q3p1, Build 127R, built Nov 24 2016</a>
+@N: : <!@TM:1743995323> | Running in 64-bit mode 
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\proasic\proasic3.v" (library work)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\files\fpga\CAN\hdl\can_level_bit.v" (library work)
+@I::"D:\files\fpga\CAN\hdl\can_level_packet.v" (library work)
+@I::"D:\files\fpga\CAN\hdl\can_top.v" (library work)
+Verilog syntax check successful!
+Selecting top level module can_top
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:10:7:10:20:@N:CG364:@XP_MSG">can_level_bit.v(10)</a><!@TM:1743995323> | Synthesizing module can_level_bit in library work.
+
+	default_c_PTS=16'b0000000000100010
+	default_c_PBS1=16'b0000000000000101
+	default_c_PBS2=16'b0000000000001010
+	default_c_PTS_e=17'b00000000000100010
+	default_c_PBS1_e=17'b00000000000000101
+	default_c_PBS2_e=17'b00000000000001010
+	STAT_PTS=2'b00
+	STAT_PBS1=2'b01
+	STAT_PBS2=2'b10
+   Generated name = can_level_bit_34_5_10_34_5_10_0_1_2
+
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:27:0:27:7:@W:CG532:@XP_MSG">can_level_bit.v(27)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:28:0:28:7:@W:CG532:@XP_MSG">can_level_bit.v(28)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:29:0:29:7:@W:CG532:@XP_MSG">can_level_bit.v(29)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\files\fpga\CAN\hdl\can_level_packet.v:10:7:10:23:@N:CG364:@XP_MSG">can_level_packet.v(10)</a><!@TM:1743995323> | Synthesizing module can_level_packet in library work.
+
+	TX_RTR=1'b0
+	TX_ID=11'b10001010110
+	default_c_PTS=16'b0000000000100010
+	default_c_PBS1=16'b0000000000000101
+	default_c_PBS2=16'b0000000000001010
+	INIT=4'b0000
+	IDLE=4'b0001
+	TX_ID_MSB=4'b0010
+	TRX_ID_BASE=4'b0011
+	TX_PAYLOAD=4'b0100
+	TX_ACK_DEL=4'b0101
+	TX_ACK=4'b0110
+	TX_EOF=4'b0111
+	RX_IDE_BIT=4'b1000
+	RX_ID_EXTEND=4'b1001
+	RX_RESV1_BIT=4'b1010
+	RX_CTRL=4'b1011
+	RX_DATA=4'b1100
+	RX_CRC=4'b1101
+	RX_ACK=4'b1110
+	RX_EOF=4'b1111
+   Generated name = can_level_packet_Z1
+
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_level_packet.v:42:0:42:7:@W:CG532:@XP_MSG">can_level_packet.v(42)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_level_packet.v:43:0:43:7:@W:CG532:@XP_MSG">can_level_packet.v(43)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:11:7:11:14:@N:CG364:@XP_MSG">can_top.v(11)</a><!@TM:1743995323> | Synthesizing module can_top in library work.
+
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:48:0:48:7:@W:CG532:@XP_MSG">can_top.v(48)</a><!@TM:1743995323> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+@N:<a href="@N:CL134:@XP_HELP">CL134</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:98:0:98:6:@N:CL134:@XP_MSG">can_top.v(98)</a><!@TM:1743995323> | Found RAM buffer, depth=1024, width=32
+<font color=#A52A2A>@W:<a href="@W:CL190:@XP_HELP">CL190</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:162:0:162:6:@W:CL190:@XP_MSG">can_top.v(162)</a><!@TM:1743995323> | Optimizing register bit rx_id[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:CL190:@XP_HELP">CL190</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:162:0:162:6:@W:CL190:@XP_MSG">can_top.v(162)</a><!@TM:1743995323> | Optimizing register bit rx_id[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:162:0:162:6:@W:CL260:@XP_MSG">can_top.v(162)</a><!@TM:1743995323> | Pruning register bit 7 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
+<font color=#A52A2A>@W:<a href="@W:CL260:@XP_HELP">CL260</a> : <a href="D:\files\fpga\CAN\hdl\can_top.v:162:0:162:6:@W:CL260:@XP_MSG">can_top.v(162)</a><!@TM:1743995323> | Pruning register bit 2 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.</font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="D:\files\fpga\CAN\hdl\can_level_packet.v:142:0:142:6:@N:CL201:@XP_MSG">can_level_packet.v(142)</a><!@TM:1743995323> | Trying to extract state machine for register stat.
+Extracted state machine for register stat
+State machine has 16 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
+   1100
+   1101
+   1110
+   1111
+<font color=#A52A2A>@W:<a href="@W:CL249:@XP_HELP">CL249</a> : <a href="D:\files\fpga\CAN\hdl\can_level_packet.v:142:0:142:6:@W:CL249:@XP_MSG">can_level_packet.v(142)</a><!@TM:1743995323> | Initial value is not supported on state machine stat</font>
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:60:0:60:6:@N:CL201:@XP_MSG">can_level_bit.v(60)</a><!@TM:1743995323> | Trying to extract state machine for register stat.
+Extracted state machine for register stat
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+<font color=#A52A2A>@W:<a href="@W:CL249:@XP_HELP">CL249</a> : <a href="D:\files\fpga\CAN\hdl\can_level_bit.v:60:0:60:6:@W:CL249:@XP_MSG">can_level_bit.v(60)</a><!@TM:1743995323> | Initial value is not supported on state machine stat</font>
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 85MB peak: 86MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Apr 07 11:08:42 2025
+
+###########################################################]
+<a name=compilerReport3></a>Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016</a>
+@N: : <!@TM:1743995323> | Running in 64-bit mode 
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Apr 07 11:08:42 2025
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Apr 07 11:08:42 2025
+
+###########################################################]
+<a name=compilerReport4></a>Synopsys Netlist Linker, version comp2016q3p1, Build 117R, built Nov 17 2016</a>
+@N: : <!@TM:1743995324> | Running in 64-bit mode 
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 68MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Mon Apr 07 11:08:44 2025
+
+###########################################################]
+Pre-mapping Report
+
+# Mon Apr 07 11:08:44 2025
+
+<a name=mapperReport5></a>Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1743995325> | No constraint file specified. 
+Linked File: <a href="D:\files\fpga\CAN\synthesis\can_top_scck.rpt:@XP_FILE">can_top_scck.rpt</a>
+Printing clock  summary report in "D:\files\fpga\CAN\synthesis\can_top_scck.rpt" file 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1743995325> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1743995325> | Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 103MB)
+
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+
+<a name=mapperReport6></a>Clock Summary</a>
+*****************
+
+Start           Requested     Requested     Clock        Clock                   Clock
+Clock           Frequency     Period        Type         Group                   Load 
+--------------------------------------------------------------------------------------
+can_top|clk     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     538  
+======================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT530:@XP_HELP">MT530</a> : <a href="d:\files\fpga\can\hdl\can_level_bit.v:60:0:60:6:@W:MT530:@XP_MSG">can_level_bit.v(60)</a><!@TM:1743995325> | Found inferred clock can_top|clk which controls 538 sequential elements including u_can_level_packet.u_can_level_bit.cnt[16:0]. This clock has no specified timing constraint which may adversely impact design performance. </font>
+
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1743995325> | Writing default property annotation file D:\files\fpga\CAN\synthesis\can_top.sap. 
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+Encoding state machine stat[2:0] (in view: work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+Encoding state machine stat[15:0] (in view: work.can_level_packet_Z1(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 119MB peak: 146MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 26MB peak: 146MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Mon Apr 07 11:08:45 2025
+
+###########################################################]
+Map & Optimize Report
+
+# Mon Apr 07 11:08:45 2025
+
+<a name=mapperReport7></a>Synopsys Microsemi Technology Mapper, Version mapact, Build 1920R, Built Nov 17 2016 09:40:34</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09M-2
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1743995329> | Running in 64-bit mode. 
+@N:<a href="@N:MF667:@XP_HELP">MF667</a> : <!@TM:1743995329> | Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 109MB peak: 110MB)
+
+
+ Ram Decomposition Statistics for buffer[31:0]
+
+ RAM 512x9 : 0
+ RAM 512x9 : 0
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_0[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_1[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_2[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_3[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_4[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_5[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+<font color=#A52A2A>@W:<a href="@W:FX107:@XP_HELP">FX107</a> : <a href="d:\files\fpga\can\hdl\can_top.v:98:0:98:6:@W:FX107:@XP_MSG">can_top.v(98)</a><!@TM:1743995329> | RAM buffer_tile_6[8:0] (in view: work.can_top(verilog)) does not have a read/write conflict check. Possible simulation mismatch. To resolve a read/write conflict, either set syn_ramstyle = rw_check, or enable the "Read Write Check on RAM" Implementation Option. For more information, search for "read/write conflict check" in Online Help.</font>
+@N:<a href="@N:MF179:@XP_HELP">MF179</a> : <a href="d:\files\fpga\can\hdl\can_top.v:178:25:178:38:@N:MF179:@XP_MSG">can_top.v(178)</a><!@TM:1743995329> | Found 4 by 4 bit less-than operator ('<') un1_rx_valid (in view: work.can_top(verilog))
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="d:\files\fpga\can\hdl\can_level_packet.v:142:0:142:6:@N:MO231:@XP_MSG">can_level_packet.v(142)</a><!@TM:1743995329> | Found counter in view:work.can_level_packet_Z1(verilog) instance cnt[7:0] 
+Encoding state machine stat[15:0] (in view: work.can_level_packet_Z1(verilog))
+original code -> new code
+   0000 -> 0000000000000001
+   0001 -> 0000000000000010
+   0010 -> 0000000000000100
+   0011 -> 0000000000001000
+   0100 -> 0000000000010000
+   0101 -> 0000000000100000
+   0110 -> 0000000001000000
+   0111 -> 0000000010000000
+   1000 -> 0000000100000000
+   1001 -> 0000001000000000
+   1010 -> 0000010000000000
+   1011 -> 0000100000000000
+   1100 -> 0001000000000000
+   1101 -> 0010000000000000
+   1110 -> 0100000000000000
+   1111 -> 1000000000000000
+@N:<a href="@N:MF179:@XP_HELP">MF179</a> : <a href="d:\files\fpga\can\hdl\can_level_packet.v:324:27:324:38:@N:MF179:@XP_MSG">can_level_packet.v(324)</a><!@TM:1743995329> | Found 8 by 8 bit less-than operator ('<') cnt68 (in view: work.can_level_packet_Z1(verilog))
+@N:<a href="@N:MF239:@XP_HELP">MF239</a> : <a href="d:\files\fpga\can\hdl\can_level_packet.v:104:41:104:68:@N:MF239:@XP_MSG">can_level_packet.v(104)</a><!@TM:1743995329> | Found 5-bit decrementor, 'un1_rx_len[7:3]'
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="d:\files\fpga\can\hdl\can_level_bit.v:60:0:60:6:@N:MO231:@XP_MSG">can_level_bit.v(60)</a><!@TM:1743995329> | Found counter in view:work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog) instance cnt[16:0] 
+@N:<a href="@N:MO231:@XP_HELP">MO231</a> : <a href="d:\files\fpga\can\hdl\can_level_bit.v:60:0:60:6:@N:MO231:@XP_MSG">can_level_bit.v(60)</a><!@TM:1743995329> | Found counter in view:work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog) instance cnt_high[2:0] 
+Encoding state machine stat[2:0] (in view: work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog))
+original code -> new code
+   00 -> 00
+   01 -> 01
+   10 -> 10
+@N:<a href="@N:MF179:@XP_HELP">MF179</a> : <a href="d:\files\fpga\can\hdl\can_level_bit.v:95:23:95:42:@N:MF179:@XP_MSG">can_level_bit.v(95)</a><!@TM:1743995329> | Found 17 by 17 bit less-than operator ('<') un1_cnt_1 (in view: work.can_level_bit_34_5_10_34_5_10_0_1_2(verilog))
+@N:<a href="@N:MF794:@XP_HELP">MF794</a> : <!@TM:1743995329> | RAM buffer[31:0] required 52 registers during mapping  
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 118MB peak: 137MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 126MB peak: 137MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 123MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+@N:<a href="@N:MF794:@XP_HELP">MF794</a> : <!@TM:1743995329> | RAM buffer[31:0] required 52 registers during mapping  
+
+Finished preparing to map (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 124MB peak: 137MB)
+
+
+High Fanout Net Report
+**********************
+
+Driver Instance / Pin Name                      Fanout, notes                   
+--------------------------------------------------------------------------------
+rdack / Q                                       64                              
+u_can_level_packet.pkt_tx_data_0_sqmuxa / Y     33                              
+u_can_level_packet.G_7_i_a2 / Y                 76                              
+buffer_reg_8 / Q                                32                              
+u_can_level_packet.u_can_level_bit.req / Q      46                              
+u_can_level_packet.stat[1] / Q                  187                             
+rstn_pad / Y                                    473 : 473 asynchronous set/reset
+u_can_level_packet.rx_ben / Y                   26                              
+u_can_level_packet.un1_rx_history6_1 / Y        64                              
+u_can_level_packet.un1_rx_history6_5 / Y        29                              
+u_can_level_packet.G_3_0_a2 / Y                 29                              
+u_can_level_packet.un1_rx_history6_4 / Y        65                              
+u_can_level_packet.G_4_i_a2 / Y                 64                              
+================================================================================
+
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net rstn_c on CLKBUF  rstn_pad  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net clk_c on CLKBUF  clk_pad  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net u_can_level_packet.stat[1] on CLKINT  I_271  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net rx_valid4 on CLKINT  I_272  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net u_can_level_packet.un1_rx_history6_4 on CLKINT  I_273  
+@N:<a href="@N:FP130:@XP_HELP">FP130</a> : <!@TM:1743995329> | Promoting Net rdack on CLKINT  I_274  
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 125MB peak: 137MB)
+
+Replicating Combinational Instance u_can_level_packet.G_4_i_a2, fanout 64 segments 3
+Replicating Combinational Instance u_can_level_packet.G_3_0_a2, fanout 29 segments 2
+Replicating Combinational Instance u_can_level_packet.un1_rx_history6_5, fanout 29 segments 2
+Replicating Combinational Instance u_can_level_packet.un1_rx_history6_1, fanout 64 segments 3
+Replicating Combinational Instance u_can_level_packet.rx_ben, fanout 26 segments 2
+Replicating Sequential Instance u_can_level_packet.u_can_level_bit.req, fanout 47 segments 2
+Replicating Sequential Instance buffer_reg_8, fanout 32 segments 2
+Replicating Combinational Instance u_can_level_packet.pkt_tx_data_0_sqmuxa, fanout 33 segments 2
+
+Added 0 Buffers
+Added 10 Cells via replication
+	Added 2 Sequential Cells via replication
+	Added 8 Combinational Cells via replication
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 126MB peak: 137MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+<a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+Clock optimization not enabled
+1 non-gated/non-generated clock tree(s) driving 535 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+<a href="@|S:clk@|E:buffer_reg_8_0@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       clk                 port                   535        buffer_reg_8_0 
+=======================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 123MB peak: 137MB)
+
+Writing Analyst data base D:\files\fpga\CAN\synthesis\synwork\can_top_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 123MB peak: 137MB)
+
+Writing EDIF Netlist and constraint files
+L-2016.09M-2
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 124MB peak: 137MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 124MB peak: 137MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1743995329> | Found inferred clock can_top|clk with period 10.00ns. Please declare a user-defined clock on object "p:clk"</font> 
+
+
+<a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
+# Timing Report written on Mon Apr 07 11:08:49 2025
+#
+
+
+Top view:               can_top
+Library name:           PA3
+Operating conditions:   COMWCSTD ( T = 70.0, V = 1.42, P = 1.74, tree_type = balanced_tree )
+Requested Frequency:    100.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3
+Paths requested:        5
+Constraint File(s):    
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1743995329> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1743995329> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary10></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: -6.000
+
+                   Requested     Estimated     Requested     Estimated                Clock        Clock              
+Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group              
+----------------------------------------------------------------------------------------------------------------------
+can_top|clk        100.0 MHz     62.5 MHz      10.000        16.000        -6.000     inferred     Inferred_clkgroup_0
+======================================================================================================================
+
+
+
+
+
+<a name=clockRelationships11></a>Clock Relationships</a>
+*******************
+
+Clocks                    |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-----------------------------------------------------------------------------------------------------------------
+Starting     Ending       |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-----------------------------------------------------------------------------------------------------------------
+can_top|clk  can_top|clk  |  10.000      -6.000  |  No paths    -      |  No paths    -      |  No paths    -    
+=================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo12></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport13></a>Detailed Report for Clock: can_top|clk</a>
+====================================
+
+
+
+<a name=startingSlack14></a>Starting Points with Worst Slack</a>
+********************************
+
+                                            Starting                                               Arrival           
+Instance                                    Reference       Type         Pin     Net               Time        Slack 
+                                            Clock                                                                    
+---------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[6]                   can_top|clk     DFN1E1C0     Q       cnt[6]            0.737       -6.000
+u_can_level_packet.bit_tx                   can_top|clk     DFN1E1P0     Q       bit_tx            0.737       -5.801
+u_can_level_packet.cnt[7]                   can_top|clk     DFN1E1C0     Q       cnt[7]            0.737       -5.758
+rptr[0]                                     can_top|clk     DFN1C0       Q       rptr[0]           0.737       -5.711
+rptr[4]                                     can_top|clk     DFN1C0       Q       rptr[4]           0.737       -5.702
+u_can_level_packet.rx_history[2]            can_top|clk     DFN1E1C0     Q       rx_history[2]     0.737       -5.678
+u_can_level_packet.rx_history[0]            can_top|clk     DFN1E1C0     Q       rx_history[0]     0.737       -5.565
+u_can_level_packet.rx_history[3]            can_top|clk     DFN1E1C0     Q       rx_history[3]     0.737       -5.565
+u_can_level_packet.rx_history[1]            can_top|clk     DFN1E1C0     Q       rx_history[1]     0.737       -5.452
+u_can_level_packet.u_can_level_bit.rbit     can_top|clk     DFN1E0P0     Q       bit_rx            0.737       -5.381
+=====================================================================================================================
+
+
+<a name=endingSlack15></a>Ending Points with Worst Slack</a>
+******************************
+
+                              Starting                                            Required           
+Instance                      Reference       Type         Pin     Net            Time         Slack 
+                              Clock                                                                  
+-----------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[3]     can_top|clk     DFN1E1C0     D       cnt_n3         9.461        -6.000
+u_can_level_packet.cnt[4]     can_top|clk     DFN1E1C0     D       cnt_n4         9.461        -6.000
+u_can_level_packet.cnt[5]     can_top|clk     DFN1E1C0     D       cnt_n5         9.461        -6.000
+u_can_level_packet.cnt[7]     can_top|clk     DFN1E1C0     D       cnt_n7         9.461        -6.000
+wptr[9]                       can_top|clk     DFN1C0       D       wptr_3[9]      9.461        -5.711
+wptr[10]                      can_top|clk     DFN1C0       D       wptr_3[10]     9.461        -5.711
+rptr[9]                       can_top|clk     DFN1C0       D       rptr_3[9]      9.461        -5.488
+rptr[10]                      can_top|clk     DFN1C0       D       rptr_3[10]     9.461        -5.488
+wptr[7]                       can_top|clk     DFN1C0       D       wptr_3[7]      9.461        -5.290
+u_can_level_packet.cnt[0]     can_top|clk     DFN1E1C0     E       cnte           9.392        -5.151
+=====================================================================================================
+
+
+
+<a name=worstPaths16></a>Worst Path Information</a>
+<a href="D:\files\fpga\CAN\synthesis\can_top.srr:srsfD:\files\fpga\CAN\synthesis\can_top.srs:fp:30853:34012:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      15.461
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.000
+
+    Number of logic level(s):                8
+    Starting point:                          u_can_level_packet.cnt[6] / Q
+    Ending point:                            u_can_level_packet.cnt[3] / D
+    The start point is clocked by            can_top|clk [rising] on pin CLK
+    The end   point is clocked by            can_top|clk [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[6]                            DFN1E1C0     Q        Out     0.737     0.737       -         
+cnt[6]                                               Net          -        -       1.526     -           7         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          B        In      -         2.263       -         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          Y        Out     0.646     2.909       -         
+un24lto7_2                                           Net          -        -       1.423     -           6         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        C        In      -         4.333       -         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        Y        Out     0.716     5.049       -         
+un24lto7_N_5_mux                                     Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         C        In      -         6.232       -         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         Y        Out     0.655     6.888       -         
+N_14                                                 Net          -        -       1.279     -           5         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        A        In      -         8.167       -         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        Y        Out     0.514     8.681       -         
+stat_1_sqmuxa_1_1                                    Net          -        -       1.279     -           5         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          B        In      -         9.960       -         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          Y        Out     0.598     10.558      -         
+un1_cnt_0_sqmuxa_1_0                                 Net          -        -       0.322     -           1         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          C        In      -         10.880      -         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          Y        Out     0.751     11.631      -         
+un1_cnt_0_sqmuxa_1_1                                 Net          -        -       1.184     -           4         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          B        In      -         12.814      -         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          Y        Out     0.652     13.466      -         
+N_659                                                Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNO[3]                        XA1B         C        In      -         14.649      -         
+u_can_level_packet.cnt_RNO[3]                        XA1B         Y        Out     0.490     15.140      -         
+cnt_n3                                               Net          -        -       0.322     -           1         
+u_can_level_packet.cnt[3]                            DFN1E1C0     D        In      -         15.461      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 16.000 is 6.298(39.4%) logic and 9.702(60.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      15.461
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.000
+
+    Number of logic level(s):                8
+    Starting point:                          u_can_level_packet.cnt[6] / Q
+    Ending point:                            u_can_level_packet.cnt[7] / D
+    The start point is clocked by            can_top|clk [rising] on pin CLK
+    The end   point is clocked by            can_top|clk [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[6]                            DFN1E1C0     Q        Out     0.737     0.737       -         
+cnt[6]                                               Net          -        -       1.526     -           7         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          B        In      -         2.263       -         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          Y        Out     0.646     2.909       -         
+un24lto7_2                                           Net          -        -       1.423     -           6         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        C        In      -         4.333       -         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        Y        Out     0.716     5.049       -         
+un24lto7_N_5_mux                                     Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         C        In      -         6.232       -         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         Y        Out     0.655     6.888       -         
+N_14                                                 Net          -        -       1.279     -           5         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        A        In      -         8.167       -         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        Y        Out     0.514     8.681       -         
+stat_1_sqmuxa_1_1                                    Net          -        -       1.279     -           5         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          B        In      -         9.960       -         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          Y        Out     0.598     10.558      -         
+un1_cnt_0_sqmuxa_1_0                                 Net          -        -       0.322     -           1         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          C        In      -         10.880      -         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          Y        Out     0.751     11.631      -         
+un1_cnt_0_sqmuxa_1_1                                 Net          -        -       1.184     -           4         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          B        In      -         12.814      -         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          Y        Out     0.652     13.466      -         
+N_659                                                Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNO[7]                        XA1B         C        In      -         14.649      -         
+u_can_level_packet.cnt_RNO[7]                        XA1B         Y        Out     0.490     15.140      -         
+cnt_n7                                               Net          -        -       0.322     -           1         
+u_can_level_packet.cnt[7]                            DFN1E1C0     D        In      -         15.461      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 16.000 is 6.298(39.4%) logic and 9.702(60.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 3: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      15.461
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.000
+
+    Number of logic level(s):                8
+    Starting point:                          u_can_level_packet.cnt[6] / Q
+    Ending point:                            u_can_level_packet.cnt[5] / D
+    The start point is clocked by            can_top|clk [rising] on pin CLK
+    The end   point is clocked by            can_top|clk [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[6]                            DFN1E1C0     Q        Out     0.737     0.737       -         
+cnt[6]                                               Net          -        -       1.526     -           7         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          B        In      -         2.263       -         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          Y        Out     0.646     2.909       -         
+un24lto7_2                                           Net          -        -       1.423     -           6         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        C        In      -         4.333       -         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        Y        Out     0.716     5.049       -         
+un24lto7_N_5_mux                                     Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         C        In      -         6.232       -         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         Y        Out     0.655     6.888       -         
+N_14                                                 Net          -        -       1.279     -           5         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        A        In      -         8.167       -         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        Y        Out     0.514     8.681       -         
+stat_1_sqmuxa_1_1                                    Net          -        -       1.279     -           5         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          B        In      -         9.960       -         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          Y        Out     0.598     10.558      -         
+un1_cnt_0_sqmuxa_1_0                                 Net          -        -       0.322     -           1         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          C        In      -         10.880      -         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          Y        Out     0.751     11.631      -         
+un1_cnt_0_sqmuxa_1_1                                 Net          -        -       1.184     -           4         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          B        In      -         12.814      -         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          Y        Out     0.652     13.466      -         
+N_659                                                Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNO[5]                        XA1B         C        In      -         14.649      -         
+u_can_level_packet.cnt_RNO[5]                        XA1B         Y        Out     0.490     15.140      -         
+cnt_n5                                               Net          -        -       0.322     -           1         
+u_can_level_packet.cnt[5]                            DFN1E1C0     D        In      -         15.461      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 16.000 is 6.298(39.4%) logic and 9.702(60.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 4: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      15.461
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -6.000
+
+    Number of logic level(s):                8
+    Starting point:                          u_can_level_packet.cnt[6] / Q
+    Ending point:                            u_can_level_packet.cnt[4] / D
+    The start point is clocked by            can_top|clk [rising] on pin CLK
+    The end   point is clocked by            can_top|clk [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.cnt[6]                            DFN1E1C0     Q        Out     0.737     0.737       -         
+cnt[6]                                               Net          -        -       1.526     -           7         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          B        In      -         2.263       -         
+u_can_level_packet.cnt_RNIB2G6[7]                    OR2          Y        Out     0.646     2.909       -         
+un24lto7_2                                           Net          -        -       1.423     -           6         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        C        In      -         4.333       -         
+u_can_level_packet.cnt_RNILQFJ_0[2]                  NOR3A        Y        Out     0.716     5.049       -         
+un24lto7_N_5_mux                                     Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         C        In      -         6.232       -         
+u_can_level_packet.cnt_RNI6E7T[3]                    AO1B         Y        Out     0.655     6.888       -         
+N_14                                                 Net          -        -       1.279     -           5         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        A        In      -         8.167       -         
+u_can_level_packet.cnt_RNICQ543[3]                   NOR2B        Y        Out     0.514     8.681       -         
+stat_1_sqmuxa_1_1                                    Net          -        -       1.279     -           5         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          B        In      -         9.960       -         
+u_can_level_packet.stat_RNIBPOTB[3]                  AO1          Y        Out     0.598     10.558      -         
+un1_cnt_0_sqmuxa_1_0                                 Net          -        -       0.322     -           1         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          C        In      -         10.880      -         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          Y        Out     0.751     11.631      -         
+un1_cnt_0_sqmuxa_1_1                                 Net          -        -       1.184     -           4         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          B        In      -         12.814      -         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          Y        Out     0.652     13.466      -         
+N_659                                                Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNO[4]                        XA1B         C        In      -         14.649      -         
+u_can_level_packet.cnt_RNO[4]                        XA1B         Y        Out     0.490     15.140      -         
+cnt_n4                                               Net          -        -       0.322     -           1         
+u_can_level_packet.cnt[4]                            DFN1E1C0     D        In      -         15.461      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 16.000 is 6.298(39.4%) logic and 9.702(60.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 5: 
+      Requested Period:                      10.000
+    - Setup time:                            0.539
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         9.461
+
+    - Propagation time:                      15.263
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -5.802
+
+    Number of logic level(s):                9
+    Starting point:                          u_can_level_packet.bit_tx / Q
+    Ending point:                            u_can_level_packet.cnt[3] / D
+    The start point is clocked by            can_top|clk [rising] on pin CLK
+    The end   point is clocked by            can_top|clk [rising] on pin CLK
+
+Instance / Net                                                    Pin      Pin               Arrival     No. of    
+Name                                                 Type         Name     Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------------------------
+u_can_level_packet.bit_tx                            DFN1E1P0     Q        Out     0.737     0.737       -         
+bit_tx                                               Net          -        -       1.639     -           8         
+u_can_level_packet.tx_history_RNIU2LA_0[3]           NOR3         C        In      -         2.376       -         
+u_can_level_packet.tx_history_RNIU2LA_0[3]           NOR3         Y        Out     0.751     3.127       -         
+un1_bit_tx_1_2                                       Net          -        -       0.322     -           1         
+u_can_level_packet.tx_history_RNIEJ4H_0[2]           NOR3A        A        In      -         3.448       -         
+u_can_level_packet.tx_history_RNIEJ4H_0[2]           NOR3A        Y        Out     0.664     4.112       -         
+un1_bit_tx_1                                         Net          -        -       1.184     -           4         
+u_can_level_packet.bit_tx_RNI4QVG1                   NOR3         B        In      -         5.296       -         
+u_can_level_packet.bit_tx_RNI4QVG1                   NOR3         Y        Out     0.641     5.937       -         
+stat35                                               Net          -        -       1.279     -           5         
+u_can_level_packet.stat_RNI3C7I2[4]                  NOR2B        B        In      -         7.216       -         
+u_can_level_packet.stat_RNI3C7I2[4]                  NOR2B        Y        Out     0.627     7.843       -         
+stat_2_sqmuxa_2                                      Net          -        -       0.386     -           2         
+u_can_level_packet.u_can_level_bit.rbit_RNIFNVB4     OR2          B        In      -         8.229       -         
+u_can_level_packet.u_can_level_bit.rbit_RNIFNVB4     OR2          Y        Out     0.646     8.876       -         
+un1_cnt_0_sqmuxa_4_0                                 Net          -        -       0.322     -           1         
+u_can_level_packet.stat_RNIV3EOB[7]                  OR3          B        In      -         9.197       -         
+u_can_level_packet.stat_RNIV3EOB[7]                  OR3          Y        Out     0.714     9.912       -         
+un1_cnt_0_sqmuxa_4_3                                 Net          -        -       0.806     -           3         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          B        In      -         10.718      -         
+u_can_level_packet.stat_RNITKVLQ[11]                 OR3          Y        Out     0.714     11.432      -         
+un1_cnt_0_sqmuxa_1_1                                 Net          -        -       1.184     -           4         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          B        In      -         12.616      -         
+u_can_level_packet.u_can_level_bit.req_RNI4KFG91     OA1          Y        Out     0.652     13.268      -         
+N_659                                                Net          -        -       1.184     -           4         
+u_can_level_packet.cnt_RNO[3]                        XA1B         C        In      -         14.451      -         
+u_can_level_packet.cnt_RNO[3]                        XA1B         Y        Out     0.490     14.941      -         
+cnt_n3                                               Net          -        -       0.322     -           1         
+u_can_level_packet.cnt[3]                            DFN1E1C0     D        In      -         15.263      -         
+===================================================================================================================
+Total path delay (propagation time + setup) of 15.802 is 7.176(45.4%) logic and 8.626(54.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 124MB peak: 137MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 124MB peak: 137MB)
+
+--------------------------------------------------------------------------------
+Target Part: A3P250_VQFP100_STD
+<a name=cellReport17></a>Report for cell can_top.verilog</a>
+  Core Cell usage:
+              cell count     area count*area
+              AND2    15      1.0       15.0
+             AND2A     6      1.0        6.0
+              AND3     6      1.0        6.0
+               AO1    21      1.0       21.0
+              AO1A    16      1.0       16.0
+              AO1B     2      1.0        2.0
+              AO1C    10      1.0       10.0
+              AO1D     4      1.0        4.0
+              AOI1     2      1.0        2.0
+             AOI1A    10      1.0       10.0
+             AOI1B     2      1.0        2.0
+              AX1B     1      1.0        1.0
+              AX1C    13      1.0       13.0
+              AX1D     1      1.0        1.0
+            CLKINT     4      0.0        0.0
+               GND     3      0.0        0.0
+               INV     1      1.0        1.0
+               MX2   165      1.0      165.0
+              MX2A     1      1.0        1.0
+              NOR2    38      1.0       38.0
+             NOR2A   203      1.0      203.0
+             NOR2B    86      1.0       86.0
+              NOR3    16      1.0       16.0
+             NOR3A    22      1.0       22.0
+             NOR3B    22      1.0       22.0
+             NOR3C    33      1.0       33.0
+               OA1     9      1.0        9.0
+              OA1A    14      1.0       14.0
+              OA1B     2      1.0        2.0
+              OA1C     3      1.0        3.0
+              OAI1     7      1.0        7.0
+               OR2    32      1.0       32.0
+              OR2A    39      1.0       39.0
+              OR2B    12      1.0       12.0
+               OR3    40      1.0       40.0
+              OR3A     7      1.0        7.0
+              OR3B     5      1.0        5.0
+               VCC     3      0.0        0.0
+               XA1     1      1.0        1.0
+              XA1A     1      1.0        1.0
+              XA1B    23      1.0       23.0
+             XNOR2    20      1.0       20.0
+               XO1     2      1.0        2.0
+              XOR2    53      1.0       53.0
+
+
+              DFN1    45      1.0       45.0
+            DFN1C0    67      1.0       67.0
+          DFN1E0C0   149      1.0      149.0
+          DFN1E0P0    52      1.0       52.0
+          DFN1E1C0   196      1.0      196.0
+          DFN1E1P0     6      1.0        6.0
+            DFN1P0     4      1.0        4.0
+         RAM512X18     8      0.0        0.0
+                   -----          ----------
+             TOTAL  1503              1485.0
+
+
+  IO Cell usage:
+              cell count
+            CLKBUF     2
+             INBUF    34
+            OUTBUF    42
+                   -----
+             TOTAL    78
+
+
+Core Cells         : 1485 of 6144 (24%)
+IO Cells           : 78
+
+  RAM/ROM Usage Summary
+Block Rams : 8 of 8 (100%)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:03s; Memory used current: 28MB peak: 137MB)
+
+Process took 0h:00m:04s realtime, 0h:00m:03s cputime
+# Mon Apr 07 11:08:49 2025
+
+###########################################################]
+
+</pre></samp></body></html>

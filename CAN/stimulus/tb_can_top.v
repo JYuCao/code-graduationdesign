@@ -16,8 +16,7 @@ module tb_can_top();
 // -----------------------------------------------------------------------------------------------------------------------------
 initial $dumpvars(0, tb_can_top);
 // initial #10000000000 $finish;              // simulation for 10ms
-initial #1410065408 $finish; 
-
+// initial #1410065408 $finish; 
 
 
 
@@ -46,7 +45,7 @@ wire  [ 7:0] can1_rx_data;   // a data byte in the packet
 wire  [28:0] can1_rx_id;     // the ID of a packet
 wire         can1_rx_ide;    // whether the ID is LONG or SHORT
 
-tb_gen_clkrst #(10100) can1_clkrst(can1_rstn, can1_clk);  // 50MHz clock, skew = +1%
+tb_gen_clkrst #(50500) can1_clkrst(can1_rstn, can1_clk);  // 50MHz clock, skew = +1%
 
 tb_can_phy can1_phy(can1_tx, can1_rx, can_bus);
 
@@ -75,7 +74,7 @@ can_top #(
 );
 
 // CAN1 TX Periodically
-assign can1_tx_valid = (can1_tx_cnt==80000);
+assign can1_tx_valid = (can1_tx_cnt==400000);
 always @ (posedge can1_clk or negedge can1_rstn)
     if(~can1_rstn) begin
         can1_tx_cnt <= 0;
@@ -118,7 +117,7 @@ wire  [ 7:0] can2_rx_data;   // a data byte in the packet
 wire  [28:0] can2_rx_id;     // the ID of a packet
 wire         can2_rx_ide;    // whether the ID is LONG or SHORT
 
-tb_gen_clkrst #(9900) can2_clkrst(can2_rstn, can2_clk);  // 50MHz clock, skew = -1%
+tb_gen_clkrst #(49500) can2_clkrst(can2_rstn, can2_clk);  // 50MHz clock, skew = -1%
 
 tb_can_phy can2_phy(can2_tx, can2_rx, can_bus);
 
@@ -147,7 +146,7 @@ can_top #(
 );
 
 // CAN2 TX Periodically
-assign can2_tx_valid = (can2_tx_cnt==50000);
+assign can2_tx_valid = (can2_tx_cnt==250000);
 always @ (posedge can2_clk or negedge can2_rstn)
     if(~can2_rstn) begin
         can2_tx_cnt <= 0;
@@ -190,7 +189,7 @@ wire  [ 7:0] can3_rx_data;   // a data byte in the packet
 wire  [28:0] can3_rx_id;     // the ID of a packet
 wire         can3_rx_ide;    // whether the ID is LONG or SHORT
 
-tb_gen_clkrst #(10000) can3_clkrst(can3_rstn, can3_clk);  // 50MHz clock, skew = 0%
+tb_gen_clkrst #(50000) can3_clkrst(can3_rstn, can3_clk);  // 50MHz clock, skew = 0%
 
 tb_can_phy can3_phy(can3_tx, can3_rx, can_bus);
 
@@ -219,7 +218,7 @@ can_top #(
 );
 
 // CAN3 TX Periodically
-assign can3_tx_valid = (can3_tx_cnt==60000);
+assign can3_tx_valid = (can3_tx_cnt==300000);
 always @ (posedge can3_clk or negedge can3_rstn)
     if(~can3_rstn) begin
         can3_tx_cnt <= 0;
@@ -262,7 +261,7 @@ wire  [ 7:0] can4_rx_data;   // a data byte in the packet
 wire  [28:0] can4_rx_id;     // the ID of a packet
 wire         can4_rx_ide;    // whether the ID is LONG or SHORT
 
-tb_gen_clkrst #(9900) can4_clkrst(can4_rstn, can4_clk);  // 50MHz clock, skew = -1%
+tb_gen_clkrst #(49500) can4_clkrst(can4_rstn, can4_clk);  // 50MHz clock, skew = -1%
 
 tb_can_phy can4_phy(can4_tx, can4_rx, can_bus);
 
@@ -291,7 +290,7 @@ can_top #(
 );
 
 // CAN4 TX Periodically
-assign can4_tx_valid = (can4_tx_cnt==50000);
+assign can4_tx_valid = (can4_tx_cnt==250000);
 always @ (posedge can4_clk or negedge can4_rstn)
     if(~can4_rstn) begin
         can4_tx_cnt <= 0;
@@ -327,7 +326,7 @@ endmodule
 //  Module: Generate Clock and reset
 // ---------------------------------------------------------------------------------------------------------------------------------------
 module tb_gen_clkrst #(
-    parameter PERIOD = 10000
+    parameter PERIOD = 50000
 ) (
     output reg  rstn,
     output reg  clk

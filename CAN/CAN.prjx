@@ -35,7 +35,7 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "can_level_bit::work"
+KEY ActiveRoot "can_top::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
@@ -45,6 +45,11 @@ VALUE "<project>\designer\impl1\can_level_bit.ide_des,ide_des"
 STATE="utd"
 TIME="1740818369"
 SIZE="182"
+ENDFILE
+VALUE "<project>\designer\impl1\can_top.ide_des,ide_des"
+STATE="utd"
+TIME="1743995317"
+SIZE="176"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
@@ -78,13 +83,49 @@ SIZE="3498"
 ENDFILE
 VALUE "<project>\stimulus\tb_can_top.v,tb_hdl"
 STATE="utd"
-TIME="1740818489"
-SIZE="13166"
+TIME="1743995900"
+SIZE="13173"
+ENDFILE
+VALUE "<project>\synthesis\can_top.edn,syn_edn"
+STATE="utd"
+TIME="1743995329"
+SIZE="783641"
+ENDFILE
+VALUE "<project>\synthesis\can_top.so,so"
+STATE="utd"
+TIME="1743995329"
+SIZE="201"
+ENDFILE
+VALUE "<project>\synthesis\can_top_sdc.sdc,syn_sdc"
+STATE="utd"
+TIME="1743995329"
+SIZE="396"
+ENDFILE
+VALUE "<project>\synthesis\can_top_syn.prj,prj"
+STATE="utd"
+TIME="1743995330"
+SIZE="1782"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
+LIST "can_top::work"
+FILE "<project>\hdl\can_top.v,hdl"
+LIST ProjectState5.1
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\can_top.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
+ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 ENDLIST
@@ -156,8 +197,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -165,7 +206,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_flash_c_presynth_simulation.log "
+PARAM=" -l tb_can_top_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -190,6 +231,19 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
+LIST "can_top::work"
+LIST Impl1
+LiberoState=Post_Synthesis
+ideSYNTHESIS(<project>\synthesis\can_top.edn,syn_edn)=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -204,10 +258,8 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Project Summary:CAN.log
+ReportsCurrentItem;Synthesize:synplify.log
 StartPage;StartPage;0
-HDL;hdl\can_level_bit.v;0
-HDL;hdl\can_level_packet.v;0
 HDL;stimulus\tb_can_top.v;0
 ACTIVEVIEW;stimulus\tb_can_top.v
 ENDLIST
