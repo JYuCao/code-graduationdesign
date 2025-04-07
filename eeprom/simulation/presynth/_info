@@ -8,48 +8,204 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/files/fpga/eeprom/simulation
-vspi_eeprom
-Z1 !s110 1741425508
+veeprom_a
+Z1 !s110 1744016144
 !i10b 1
-!s100 ?6;n:4EI_I0;d_Ah1fU`S3
-I]9@FH;GHk=[V6jkb[odPM2
+!s100 IKj_TOamoL>LXc8<1JAMW1
+I?`31D0gRCGY:8D6fB`gEz1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1741073133
-8D:/files/fpga/eeprom/hdl/eeprom.v
-FD:/files/fpga/eeprom/hdl/eeprom.v
-L0 2
+w1744011393
+8D:/files/fpga/eeprom/hdl/eeprom_a.v
+FD:/files/fpga/eeprom/hdl/eeprom_a.v
+L0 9
 Z3 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z4 !s108 1741425508.000000
-!s107 D:/files/fpga/eeprom/hdl/eeprom.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/hdl/eeprom.v|
+Z4 !s108 1744016144.000000
+!s107 D:/files/fpga/eeprom/hdl/eeprom_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/hdl/eeprom_a.v|
 !s101 -O0
 !i113 1
 Z5 o-vlog01compat -work presynth -O0
 Z6 tCvgOpt 0
+veeprom_b
+R1
+!i10b 1
+!s100 NmO>h?jC>LF0nK@E0]f1i1
+Ic86o5CeS:2^_Cg3;6E3VL2
+R2
+R0
+w1744015950
+8D:/files/fpga/eeprom/hdl/eeprom_b.v
+FD:/files/fpga/eeprom/hdl/eeprom_b.v
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/files/fpga/eeprom/hdl/eeprom_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/hdl/eeprom_b.v|
+!s101 -O0
+!i113 1
+R5
+R6
+veeprom_controller
+!s110 1744000835
+!i10b 1
+!s100 jP393l>W5M:_PY86Y4]QA3
+ISVbHjz2hSlHAP6?QbhWM50
+R2
+R0
+w1744000668
+Z7 8D:/files/fpga/eeprom/hdl/eeprom.v
+Z8 FD:/files/fpga/eeprom/hdl/eeprom.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1744000835.000000
+Z9 !s107 D:/files/fpga/eeprom/hdl/eeprom.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/hdl/eeprom.v|
+!s101 -O0
+!i113 1
+R5
+R6
+veeprom_ctrl
+!s110 1744001790
+!i10b 1
+!s100 5c5lM87PVQ5T3YV6aJAng2
+I::2KJQf<]fii[751>n0La0
+R2
+R0
+w1744001496
+R7
+R8
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1744001790.000000
+R9
+R10
+!s101 -O0
+!i113 1
+R5
+R6
+vnv25640_controller
+Z11 !s110 1744009900
+!i10b 1
+!s100 RYJkXWk6i`2D:P0RbQln30
+ILd2lUlSlo?2E335<Jb?n50
+R2
+R0
+w1744009553
+R7
+R8
+L0 1
+R3
+r1
+!s85 0
+31
+Z12 !s108 1744009900.000000
+R9
+R10
+!s101 -O0
+!i113 1
+R5
+R6
+vnv25640_controller_tb
+R11
+!i10b 1
+!s100 AjS9AmHZ1A@<3PEHUlSEd0
+IH@;?FG9dLFLR[h9[om:z:3
+R2
+R0
+w1744009876
+Z13 8D:/files/fpga/eeprom/stimulus/tb_eeprom.v
+Z14 FD:/files/fpga/eeprom/stimulus/tb_eeprom.v
+L0 3
+R3
+r1
+!s85 0
+31
+R12
+Z15 !s107 D:/files/fpga/eeprom/stimulus/tb_eeprom.v|
+Z16 !s90 -reportprogress|300|+incdir+D:/files/fpga/eeprom/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/stimulus/tb_eeprom.v|
+!s101 -O0
+!i113 1
+R5
+Z17 !s92 +incdir+D:/files/fpga/eeprom/stimulus -vlog01compat -work presynth -O0
+R6
+vspi_eeprom
+!s110 1743997861
+!i10b 1
+!s100 3Chj8:<kSnYajURH<dJ[71
+IZhnXD:bV<VPTY8iDf;>9K0
+R2
+R0
+w1743997837
+R7
+R8
+L0 2
+R3
+r1
+!s85 0
+31
+!s108 1743997861.000000
+R9
+R10
+!s101 -O0
+!i113 1
+R5
+R6
 vtb_eeprom
 R1
 !i10b 1
-!s100 `KVCQH22Q<e0]JnzTdQaA1
-Ic:iWE[CR>ccCI@4S=fkDE0
+!s100 0@hIMA=L@317hQAU[1Y4g3
+Idkj2ZJY7TimFR81DWVkYa2
 R2
 R0
-w1741073401
-8D:/files/fpga/eeprom/stimulus/tb_eeprom.v
-FD:/files/fpga/eeprom/stimulus/tb_eeprom.v
+w1744016137
+R13
+R14
 L0 3
 R3
 r1
 !s85 0
 31
 R4
-!s107 D:/files/fpga/eeprom/stimulus/tb_eeprom.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/eeprom/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/eeprom/stimulus/tb_eeprom.v|
+R15
+R16
 !s101 -O0
 !i113 1
 R5
-!s92 +incdir+D:/files/fpga/eeprom/stimulus -vlog01compat -work presynth -O0
+R17
+R6
+vtb_nv25640_controller
+!s110 1744003237
+!i10b 1
+!s100 6hJ3_AFi=k;C]c5n]bmdA3
+Ieh954S@=iWSLLaj^iUbO:0
+R2
+R0
+w1744002809
+R13
+R14
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1744003237.000000
+R15
+R16
+!s101 -O0
+!i113 1
+R5
+R17
 R6

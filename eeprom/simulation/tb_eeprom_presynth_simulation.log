@@ -8,25 +8,34 @@
 # vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
 # Modifying modelsim.ini
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:18:28 on Mar 08,2025
-# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/eeprom.v 
-# -- Compiling module spi_eeprom
+# Start time: 16:55:44 on Apr 07,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/eeprom_a.v 
+# -- Compiling module eeprom_a
 # 
 # Top level modules:
-# 	spi_eeprom
-# End time: 17:18:28 on Mar 08,2025, Elapsed time: 0:00:00
+# 	eeprom_a
+# End time: 16:55:44 on Apr 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
-# Start time: 17:18:28 on Mar 08,2025
+# Start time: 16:55:44 on Apr 07,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/eeprom_b.v 
+# -- Compiling module eeprom_b
+# 
+# Top level modules:
+# 	eeprom_b
+# End time: 16:55:44 on Apr 07,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 16:55:44 on Apr 07,2025
 # vlog -reportprogress 300 "+incdir+D:/files/fpga/eeprom/stimulus" -vlog01compat -work presynth D:/files/fpga/eeprom/stimulus/tb_eeprom.v 
 # -- Compiling module tb_eeprom
 # 
 # Top level modules:
 # 	tb_eeprom
-# End time: 17:18:28 on Mar 08,2025, Elapsed time: 0:00:00
+# End time: 16:55:44 on Apr 07,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -L proasic3 -L presynth -t 1ps presynth.tb_eeprom 
-# Start time: 17:18:28 on Mar 08,2025
+# Start time: 16:55:44 on Apr 07,2025
 # //  ModelSim Microsemi 10.5c Jul 21 2016
 # //
 # //  Copyright 1991-2016 Mentor Graphics Corporation
@@ -41,11 +50,28 @@
 # //  18 U.S.C. Section 1905.
 # //
 # Loading presynth.tb_eeprom
-# Loading presynth.spi_eeprom
-# Read/Write operation failed
-# ** Note: $finish    : D:/files/fpga/eeprom/stimulus/tb_eeprom.v(82)
-#    Time: 320 ns  Iteration: 0  Instance: /tb_eeprom
+# Loading presynth.eeprom_b
+# Loading presynth.eeprom_a
+# Starting write test
+run -all
+# Starting read test
+# Time             25075000: Read data: xx
+# Test completed
+# ** Note: $finish    : D:/files/fpga/eeprom/stimulus/tb_eeprom.v(188)
+#    Time: 32575 ns  Iteration: 0  Instance: /tb_eeprom
 # 1
-# Break in Module tb_eeprom at D:/files/fpga/eeprom/stimulus/tb_eeprom.v line 82
-# End time: 17:18:50 on Mar 08,2025, Elapsed time: 0:00:22
+# Break in Module tb_eeprom at D:/files/fpga/eeprom/stimulus/tb_eeprom.v line 188
+add wave -position end  sim:/tb_eeprom/uut/a_din
+add wave -position end  sim:/tb_eeprom/uut/state
+restart -f
+run -all
+# Starting write test
+# Starting read test
+# Time             25075000: Read data: xx
+# Test completed
+# ** Note: $finish    : D:/files/fpga/eeprom/stimulus/tb_eeprom.v(188)
+#    Time: 32575 ns  Iteration: 0  Instance: /tb_eeprom
+# 1
+# Break in Module tb_eeprom at D:/files/fpga/eeprom/stimulus/tb_eeprom.v line 188
+# End time: 17:24:50 on Apr 07,2025, Elapsed time: 0:29:06
 # Errors: 0, Warnings: 0

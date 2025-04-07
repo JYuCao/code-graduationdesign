@@ -10,7 +10,8 @@ if {[file exists presynth/_info]} {
 vmap presynth presynth
 vmap proasic3 "C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3"
 
-vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/eeprom.v"
+vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/eeprom_a.v"
+vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/eeprom_b.v"
 vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_eeprom.v"
 
 vsim -L proasic3 -L presynth  -t 1ps presynth.tb_eeprom

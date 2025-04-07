@@ -35,64 +35,88 @@ KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
 KEY Vendor "Actel"
-KEY ActiveRoot "spi_eeprom::work"
+KEY ActiveRoot "eeprom_a::work"
 LIST REVISIONS
 VALUE="Impl1",NUM=1
 CURREV=1
 ENDLIST
 LIST FileManager
+VALUE "<project>\designer\impl1\eeprom_a.ide_des,ide_des"
+STATE="utd"
+TIME="1744003764"
+SIZE="180"
+ENDFILE
+VALUE "<project>\designer\impl1\eeprom_controller.ide_des,ide_des"
+STATE="utd"
+TIME="1743998464"
+SIZE="189"
+ENDFILE
+VALUE "<project>\designer\impl1\eeprom_ctrl.ide_des,ide_des"
+STATE="utd"
+TIME="1744001497"
+SIZE="183"
+ENDFILE
+VALUE "<project>\designer\impl1\nv25640_controller.ide_des,ide_des"
+STATE="utd"
+TIME="1744002090"
+SIZE="190"
+ENDFILE
 VALUE "<project>\designer\impl1\spi_eeprom.ide_des,ide_des"
 STATE="utd"
 TIME="1741071677"
 SIZE="182"
 ENDFILE
-VALUE "<project>\hdl\eeprom.v,hdl"
+VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1741073133"
-SIZE="3810"
+TIME="1744011393"
+SIZE="2734"
+ENDFILE
+VALUE "<project>\hdl\eeprom_b.v,hdl"
+STATE="utd"
+TIME="1744017805"
+SIZE="6428"
+ENDFILE
+VALUE "<project>\simulation\eeprom_test.vcd,vcd"
+STATE="utd"
+TIME="1744002653"
+SIZE="10135"
+ENDFILE
+VALUE "<project>\simulation\nv25640_controller_tb_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744010040"
+SIZE="9280"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1741073410"
-SIZE="633"
+TIME="1744013386"
+SIZE="702"
+ENDFILE
+VALUE "<project>\simulation\tb_eeprom.vcd,vcd"
+STATE="utd"
+TIME="1743997686"
+SIZE="13026"
 ENDFILE
 VALUE "<project>\simulation\tb_eeprom_presynth_simulation.log,log"
 STATE="utd"
-TIME="1741073437"
-SIZE="2360"
+TIME="1744014074"
+SIZE="2954"
+ENDFILE
+VALUE "<project>\simulation\tb_nv25640_controller_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744004073"
+SIZE="11885"
 ENDFILE
 VALUE "<project>\stimulus\tb_eeprom.v,tb_hdl"
 STATE="utd"
-TIME="1741073401"
-SIZE="1705"
+TIME="1744018005"
+SIZE="5349"
 ENDFILE
 ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "spi_eeprom::work"
-FILE "<project>\hdl\eeprom.v,hdl"
-LIST AssociatedStimulus
-VALUE "<project>\stimulus\tb_eeprom.v,tb_hdl"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-ENDLIST
 ENDLIST
 LIST AssociatedStimulus
-LIST spi_eeprom
-VALUE "<project>\stimulus\tb_eeprom.v,tb_hdl"
-ENDLIST
 ENDLIST
 LIST Other_Association
 ENDLIST
@@ -103,7 +127,7 @@ Type=max
 RunTime=1000ns
 Resolution=1ps
 VsimOpt=
-EntityName=tb_eeprom
+EntityName=testbench
 TopInstanceName=<top>_0
 DoFileName=
 DoFileName2=wave.do
@@ -196,18 +220,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "spi_eeprom::work"
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -224,21 +236,20 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Project Summary:eeprom.log
 StartPage;StartPage;0
-HDL;hdl\eeprom.v;0
 HDL;stimulus\tb_eeprom.v;0
 ACTIVEVIEW;stimulus\tb_eeprom.v
 ENDLIST
 LIST ModuleSubBlockList
-LIST "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
+LIST "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
+LIST "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
+SUBBLOCK "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_eeprom::work","stimulus\tb_eeprom.v","FALSE","TRUE"
-SUBBLOCK "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
+SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
-LIST "spi_eeprom::work"
-ACTIVETESTBENCH "tb_eeprom::work","stimulus\tb_eeprom.v","FALSE"
-ENDLIST
 ENDLIST
 LIST IOTabList
 ENDLIST
