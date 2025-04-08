@@ -16,8 +16,8 @@ vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/flash_c.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_rx.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/uart_tx.v"
 vlog -vlog01compat -work presynth "${PROJECT_DIR}/hdl/top_cmd_process.v"
-vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_cmd_process_echo.v"
+vlog "+incdir+${PROJECT_DIR}/stimulus" -vlog01compat -work presynth "${PROJECT_DIR}/stimulus/tb_top_cmd_process.v"
 
-vsim -L proasic3 -L presynth  -t 1ps presynth.tb_cmd_process_echo
-add wave /tb_cmd_process_echo/*
+vsim -L proasic3 -L presynth  -t 1ps presynth.tb_top_cmd_process
+add wave /tb_top_cmd_process/*
 run 1000ns

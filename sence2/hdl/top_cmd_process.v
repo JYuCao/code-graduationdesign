@@ -374,7 +374,6 @@ module top_cmd_process(
                         flash_erase_mask <= 16'h0000;  
                         flash_error_mask <= 16'h0000;  
                         current_flash <= 4'd0;
-                        
                         state <= ERASE_ALL_START;
                     end else begin
                         state <= STAT_ERROR;
@@ -385,6 +384,7 @@ module top_cmd_process(
                     if (flash_erase_mask != 16'hFFFF) begin
                         flash_addr <= {current_flash, 28'h0000000};
                         cmd_erasedies <= 1'b1;
+                        flash_length <= 16'd4;
                         state <= ERASE_ALL_WAIT;
                     end else begin
                         state <= STAT_DONE;
@@ -400,7 +400,6 @@ module top_cmd_process(
                         data_buffer[1] <= 8'hEE;
                         data_buffer[2] <= 8'hDD;
                         data_buffer[3] <= 8'hCC;
-                        current_flash <= current_flash + 1'b1;
                         data_length <= 16'd4;
                         data_cnt <= 16'd0;
                         state_after_send <= ERASE_ALL_NEXT;
