@@ -168,10 +168,4 @@ begin
 end
 endtask
 
-// 生成波形文件
-initial begin
-    $dumpfile("tb_top_can_flash.vcd");
-    $dumpvars(0, tb_top_can_flash);
-end
-
 endmodule
