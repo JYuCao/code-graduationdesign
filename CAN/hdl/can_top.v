@@ -19,9 +19,9 @@ module can_top #(
     parameter [28:0] RX_ID_LONG_MASK    = 29'h1fffffff,
     
     // CAN timing parameters
-    parameter [15:0] default_c_PTS  = 16'd34,
-    parameter [15:0] default_c_PBS1 = 16'd5,
-    parameter [15:0] default_c_PBS2 = 16'd10
+    parameter [15:0] default_c_PTS  = 16'd12,
+    parameter [15:0] default_c_PBS1 = 16'd2,
+    parameter [15:0] default_c_PBS2 = 16'd5
 ) (
     input  wire        rstn,      // set to 1 while working
     input  wire        clk,       // system clock

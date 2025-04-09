@@ -53,41 +53,66 @@ SIZE="176"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
-TIME="1740298947"
-SIZE="4061"
+TIME="1744165477"
+SIZE="4060"
 ENDFILE
 VALUE "<project>\hdl\can_level_packet.v,hdl"
 STATE="utd"
-TIME="1740811746"
-SIZE="13213"
+TIME="1744165525"
+SIZE="13212"
 ENDFILE
 VALUE "<project>\hdl\can_top.v,hdl"
 STATE="utd"
-TIME="1740298947"
-SIZE="9224"
+TIME="1744165536"
+SIZE="9223"
 ENDFILE
 VALUE "<project>\simulation\dump.vcd,vcd"
 STATE="utd"
-TIME="1740908871"
-SIZE="19342612"
+TIME="1744110044"
+SIZE="17559686235"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1740894092"
-SIZE="781"
+TIME="1744114653"
+SIZE="724"
+ENDFILE
+VALUE "<project>\simulation\tb_can_level_bit.vcd,vcd"
+STATE="utd"
+TIME="1744110422"
+SIZE="20255"
+ENDFILE
+VALUE "<project>\simulation\tb_can_level_bit_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744110722"
+SIZE="2803"
+ENDFILE
+VALUE "<project>\simulation\tb_can_packet_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744114677"
+SIZE="2580"
 ENDFILE
 VALUE "<project>\simulation\tb_can_top_presynth_simulation.log,log"
 STATE="utd"
-TIME="1740908872"
-SIZE="3498"
+TIME="1744165563"
+SIZE="2996"
+ENDFILE
+VALUE "<project>\stimulus\tb_can_bit.v,tb_hdl"
+STATE="utd"
+TIME="1744110417"
+SIZE="1824"
+ENDFILE
+VALUE "<project>\stimulus\tb_can_packet.v,tb_hdl"
+STATE="utd"
+TIME="1744165114"
+SIZE="3602"
 ENDFILE
 VALUE "<project>\stimulus\tb_can_top.v,tb_hdl"
 STATE="utd"
-TIME="1743995900"
-SIZE="13173"
+TIME="1744166462"
+SIZE="13169"
 ENDFILE
 VALUE "<project>\synthesis\can_top.edn,syn_edn"
-STATE="utd"
+STATE="ood"
 TIME="1743995329"
 SIZE="783641"
 ENDFILE
@@ -97,7 +122,7 @@ TIME="1743995329"
 SIZE="201"
 ENDFILE
 VALUE "<project>\synthesis\can_top_sdc.sdc,syn_sdc"
-STATE="utd"
+STATE="ood"
 TIME="1743995329"
 SIZE="396"
 ENDFILE
@@ -110,22 +135,6 @@ ENDLIST
 LIST UsedFile
 ENDLIST
 LIST NewModulesInfo
-LIST "can_top::work"
-FILE "<project>\hdl\can_top.v,hdl"
-LIST ProjectState5.1
-LIST Impl1
-LiberoState=Post_Synthesis
-ideSYNTHESIS(<project>\synthesis\can_top.edn,syn_edn)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-ENDLIST
 ENDLIST
 LIST AssociatedStimulus
 ENDLIST
@@ -197,8 +206,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -231,19 +240,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "can_top::work"
-LIST Impl1
-LiberoState=Post_Synthesis
-ideSYNTHESIS(<project>\synthesis\can_top.edn,syn_edn)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -258,10 +254,9 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
+ReportsCurrentItem;can_level_bit:tb_can_level_bit_presynth_simulation.log
 StartPage;StartPage;0
-HDL;stimulus\tb_can_top.v;0
-ACTIVEVIEW;stimulus\tb_can_top.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
@@ -270,6 +265,12 @@ LIST "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
 SUBBLOCK "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
 ENDLIST
 LIST "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_can_level_bit::work","stimulus\tb_can_bit.v","FALSE","TRUE"
+SUBBLOCK "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_can_packet::work","stimulus\tb_can_packet.v","FALSE","TRUE"
 SUBBLOCK "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_can_phy::work","stimulus\tb_can_top.v","FALSE","TRUE"

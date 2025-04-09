@@ -1,0 +1,65 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:07:12 on Apr 08,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/CAN/hdl/can_level_bit.v 
+# -- Compiling module can_level_bit
+# 
+# Top level modules:
+# 	can_level_bit
+# End time: 19:07:12 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 19:07:12 on Apr 08,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/CAN/stimulus" -vlog01compat -work presynth D:/files/fpga/CAN/stimulus/tb_can_bit.v 
+# -- Compiling module tb_can_level_bit
+# 
+# Top level modules:
+# 	tb_can_level_bit
+# End time: 19:07:12 on Apr 08,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_can_level_bit 
+# Start time: 19:07:12 on Apr 08,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_can_level_bit
+# Loading presynth.can_level_bit
+run -all
+# Time=2075000 req=1 rbit=0
+# Time=4575000 req=1 rbit=1
+# Time=7075000 req=1 rbit=0
+# Time=9575000 req=1 rbit=1
+# Time=12075000 req=1 rbit=1
+# Time=14575000 req=1 rbit=1
+# Time=17075000 req=1 rbit=1
+# Time=19575000 req=1 rbit=1
+# Time=22075000 req=1 rbit=1
+# Time=24575000 req=1 rbit=1
+# Time=27075000 req=1 rbit=1
+# Time=29575000 req=1 rbit=1
+# Time=32075000 req=1 rbit=1
+# Time=34575000 req=1 rbit=1
+# ** Note: $finish    : D:/files/fpga/CAN/stimulus/tb_can_bit.v(72)
+#    Time: 35200 ns  Iteration: 0  Instance: /tb_can_level_bit
+# 1
+# Break in Module tb_can_level_bit at D:/files/fpga/CAN/stimulus/tb_can_bit.v line 72
+# End time: 19:12:01 on Apr 08,2025, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 0
