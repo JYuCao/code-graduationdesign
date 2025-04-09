@@ -7,224 +7,224 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dD:/files/fpga/scene1/simulation
+dD:/files/fpga/scene1/simulation
 vcan_level_bit
-Z1 !s110 1744107965
+Z0 !s110 1744185716
 !i10b 1
-!s100 M0bPDIHaMK2MoOfZgfO]g3
-I]?Z[0^1^?TL:FgdKhCdNo3
-Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-Z3 w1740298947
-8D:/files/fpga/scene1/hdl/can_level_bit.v
-FD:/files/fpga/scene1/hdl/can_level_bit.v
+!s100 LMc]:=F4z;DHGLOlR1>830
+I_fT7eolBoXQ>m`ZP:ILXb0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/simulation
+Z3 w1744179299
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v
 Z4 L0 10
 Z5 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z6 !s108 1744107965.000000
-!s107 D:/files/fpga/scene1/hdl/can_level_bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_bit.v|
+Z6 !s108 1744185716.000000
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v|
 !s101 -O0
 !i113 1
 Z7 o-vlog01compat -work presynth -O0
 Z8 tCvgOpt 0
 vcan_level_packet
-R1
-!i10b 1
-!s100 GW?S8]9zE28YEfY74Yf_d2
-IfXaH=jcb1RhFf=DZzVP3[1
-R2
 R0
-w1740811746
-8D:/files/fpga/scene1/hdl/can_level_packet.v
-FD:/files/fpga/scene1/hdl/can_level_packet.v
+!i10b 1
+!s100 ?J1PPJRh<[[G4zCE]NOHn0
+I7oo4d;^[LR;bdWFbQ7SVQ2
+R1
+R2
+R3
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v
 R4
 R5
 r1
 !s85 0
 31
 R6
-!s107 D:/files/fpga/scene1/hdl/can_level_packet.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_packet.v|
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v|
 !s101 -O0
 !i113 1
 R7
 R8
 vcan_top
-R1
-!i10b 1
-!s100 @9A^4<DUVV0>B@EOiom1a3
-IeN;V0UKMIP<f^dWHj[f>90
-R2
 R0
+!i10b 1
+!s100 =BH]mz3@1n7QAPNT]eB6@1
+Ia44`BiJSa2bHNXDXkOfGR3
+R1
+R2
 R3
-8D:/files/fpga/scene1/hdl/can_top.v
-FD:/files/fpga/scene1/hdl/can_top.v
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v
 L0 11
 R5
 r1
 !s85 0
 31
 R6
-!s107 D:/files/fpga/scene1/hdl/can_top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_top.v|
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v|
 !s101 -O0
 !i113 1
 R7
 R8
 veeprom_a
-R1
+R0
 !i10b 1
 !s100 IKj_TOamoL>LXc8<1JAMW1
-IF>gB4V]L@z7aiTGb@SK313
+IU[<jZTDb;CS45maI>FeT70
+R1
 R2
-R0
-w1744011393
-8D:/files/fpga/scene1/hdl/eeprom_a.v
-FD:/files/fpga/scene1/hdl/eeprom_a.v
+R3
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v
 L0 9
 R5
 r1
 !s85 0
 31
 R6
-!s107 D:/files/fpga/scene1/hdl/eeprom_a.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_a.v|
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v|
 !s101 -O0
 !i113 1
 R7
 R8
 veeprom_b
-R1
+Z9 !s110 1744185717
 !i10b 1
 !s100 KgSzPTGDmcAKnzQI=l3Qh2
-IzbSONDYNkY;RQBa@c1f8T3
+IjZW=6i2A]PTBL;f;@kI6_2
+R1
 R2
-R0
-w1744017833
-8D:/files/fpga/scene1/hdl/eeprom_b.v
-FD:/files/fpga/scene1/hdl/eeprom_b.v
+R3
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v
 L0 18
 R5
 r1
 !s85 0
 31
 R6
-!s107 D:/files/fpga/scene1/hdl/eeprom_b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_b.v|
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v|
 !s101 -O0
 !i113 1
 R7
 R8
 vflash_a
-R1
+R9
 !i10b 1
 !s100 mhG]mIUedD5a<=U>j]Bn30
-I3:5_U=nCDiRN4KljYm2^i3
+Ih=>@[oHF6ZeKP_@VcNUO@3
+R1
 R2
-R0
-w1737350643
-8D:/files/fpga/scene1/hdl/flash_a.v
-FD:/files/fpga/scene1/hdl/flash_a.v
+Z10 w1743989144
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v
 L0 34
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/files/fpga/scene1/hdl/flash_a.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_a.v|
+Z11 !s108 1744185717.000000
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v|
 !s101 -O0
 !i113 1
 R7
 R8
 vflash_b
-R1
+R9
 !i10b 1
 !s100 4K=SDHBoAC;ReG1R4=`7S3
-IFO0Ef]0P3GR<2To1]`TnQ2
+IP8XPK_Z305RScOgeB^eEB1
+R1
 R2
-R0
-w1744106002
-8D:/files/fpga/scene1/hdl/flash_b.v
-FD:/files/fpga/scene1/hdl/flash_b.v
+R3
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v
 L0 4
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/files/fpga/scene1/hdl/flash_b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_b.v|
+R11
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v|
 !s101 -O0
 !i113 1
 R7
 R8
 vflash_c
-R1
+R9
 !i10b 1
 !s100 =6LLe8bR1<WPPDd6DiN0D2
-I2ZaK?E<87<mWC=URjCj^:2
+IgITW^G7<N]go]4`Ke_kHT1
+R1
 R2
-R0
-w1743906544
-8D:/files/fpga/scene1/hdl/flash_c.v
-FD:/files/fpga/scene1/hdl/flash_c.v
+R10
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v
 L0 3
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/files/fpga/scene1/hdl/flash_c.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_c.v|
+R11
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v|
 !s101 -O0
 !i113 1
 R7
 R8
 vtb_top_can_flash
-R1
+R9
 !i10b 1
-!s100 UV:I8LAmHBHe7lIJLBL<B3
-I`SWed_6TIfz=KQ8Ez85[M0
+!s100 <gU=eRQPAB;M]JzQ^6LDQ0
+I:YiK>C>e[A3h[IRO?LmhZ0
+R1
 R2
-R0
-w1744107954
-8D:/files/fpga/scene1/stimulus/tb_top_can_flash.v
-FD:/files/fpga/scene1/stimulus/tb_top_can_flash.v
+w1744185673
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v
 L0 3
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
-!s90 -reportprogress|300|+incdir+D:/files/fpga/scene1/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+R11
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v|
+!s90 -reportprogress|300|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v|
 !s101 -O0
 !i113 1
 R7
-!s92 +incdir+D:/files/fpga/scene1/stimulus -vlog01compat -work presynth -O0
+!s92 +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus -vlog01compat -work presynth -O0
 R8
 vtop_can_flash
-R1
+R9
 !i10b 1
 !s100 Z9en>;]7DbK>@Jl2<ZH=S2
-I7?Z`llUzD4_K`5jb9_WB]3
+IC:5?ddOQbN_BkLno9YY`E0
+R1
 R2
-R0
-w1744017631
-8D:/files/fpga/scene1/hdl/top_can_flash.v
-FD:/files/fpga/scene1/hdl/top_can_flash.v
+w1744184709
+8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v
+FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v
 R4
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/files/fpga/scene1/hdl/top_can_flash.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/top_can_flash.v|
+R11
+!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v|
 !s101 -O0
 !i113 1
 R7

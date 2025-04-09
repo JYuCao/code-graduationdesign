@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\files\fpga\scene1"
+KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\scene1"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,73 +43,68 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\can_level_bit.ide_des,ide_des"
 STATE="utd"
-TIME="1743666358"
+TIME="1743989144"
 SIZE="185"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
-TIME="1740298947"
-SIZE="4061"
+TIME="1744179299"
+SIZE="4060"
 ENDFILE
 VALUE "<project>\hdl\can_level_packet.v,hdl"
 STATE="utd"
-TIME="1740811746"
-SIZE="13213"
+TIME="1744179299"
+SIZE="13212"
 ENDFILE
 VALUE "<project>\hdl\can_top.v,hdl"
 STATE="utd"
-TIME="1740298947"
-SIZE="9224"
+TIME="1744179299"
+SIZE="9223"
 ENDFILE
 VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1744011393"
+TIME="1744179299"
 SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744017833"
+TIME="1744179299"
 SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1737350643"
+TIME="1743989144"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1744106002"
+TIME="1744179299"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743906544"
+TIME="1743989144"
 SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744017631"
+TIME="1744179299"
 SIZE="22944"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1744106029"
-SIZE="1072"
-ENDFILE
-VALUE "<project>\simulation\tb_top_can_flash.vcd,vcd"
-STATE="utd"
-TIME="1744106428"
-SIZE="2928635"
+TIME="1744180698"
+SIZE="1239"
 ENDFILE
 VALUE "<project>\simulation\tb_top_can_flash_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744106041"
-SIZE="5102"
+TIME="1744181710"
+SIZE="10630"
 ENDFILE
 VALUE "<project>\stimulus\tb_top_can_flash.v,tb_hdl"
 STATE="utd"
-TIME="1744107954"
-SIZE="3291"
+TIME="1744180424"
+SIZE="3345"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -233,8 +228,6 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Project Summary:scene1.log
 StartPage;StartPage;0
 ACTIVEVIEW;StartPage
 ENDLIST

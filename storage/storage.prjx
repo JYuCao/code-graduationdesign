@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\files\fpga\storage"
+KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\storage"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,103 +43,103 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\flash_a.ide_des,ide_des"
 STATE="utd"
-TIME="1743832754"
+TIME="1743989144"
 SIZE="180"
 ENDFILE
 VALUE "<project>\designer\impl1\top_storage.ide_des,ide_des"
 STATE="utd"
-TIME="1743836741"
+TIME="1743989144"
 SIZE="184"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
-TIME="1740298947"
+TIME="1743989144"
 SIZE="4061"
 ENDFILE
 VALUE "<project>\hdl\can_level_packet.v,hdl"
 STATE="utd"
-TIME="1740811746"
+TIME="1743989144"
 SIZE="13213"
 ENDFILE
 VALUE "<project>\hdl\can_top.v,hdl"
 STATE="utd"
-TIME="1740298947"
+TIME="1743989144"
 SIZE="9224"
 ENDFILE
 VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1744011393"
+TIME="1744179299"
 SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744017833"
+TIME="1744179299"
 SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1737350643"
+TIME="1743989144"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1744018286"
+TIME="1743989144"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1744018336"
+TIME="1743989144"
 SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744017886"
+TIME="1744179299"
 SIZE="22944"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1743916535"
+TIME="1743989144"
 SIZE="25535"
 ENDFILE
 VALUE "<project>\hdl\top_storage.v,hdl"
 STATE="utd"
-TIME="1743917224"
-SIZE="3239"
+TIME="1743989144"
+SIZE="3336"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1741684656"
+TIME="1743989144"
 SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1742554188"
+TIME="1743989144"
 SIZE="3304"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1743838702"
+TIME="1743989144"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.edn,syn_edn"
 STATE="utd"
-TIME="1743917303"
-SIZE="8977205"
+TIME="1744179299"
+SIZE="9081198"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.so,so"
 STATE="utd"
-TIME="1743917303"
+TIME="1743989144"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1743917303"
+TIME="1743989144"
 SIZE="400"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_syn.prj,prj"
 STATE="utd"
-TIME="1743917304"
-SIZE="2340"
+TIME="1744179299"
+SIZE="2400"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -232,8 +232,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -241,7 +241,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_eeprom_presynth_simulation.log "
+PARAM=" -l tb_top_can_flash_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -293,7 +293,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
+ReportsCurrentItem;Synthesize:top_storage.areasrr
 StartPage;StartPage;0
 ACTIVEVIEW;Reports
 ENDLIST
@@ -325,9 +325,9 @@ SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
 LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
-SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
 LIST "top_storage::work","hdl\top_storage.v","FALSE","FALSE"
 SUBBLOCK "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
