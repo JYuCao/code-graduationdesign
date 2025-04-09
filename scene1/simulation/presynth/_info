@@ -1,0 +1,231 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/files/fpga/scene1/simulation
+vcan_level_bit
+Z1 !s110 1744107965
+!i10b 1
+!s100 M0bPDIHaMK2MoOfZgfO]g3
+I]?Z[0^1^?TL:FgdKhCdNo3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1740298947
+8D:/files/fpga/scene1/hdl/can_level_bit.v
+FD:/files/fpga/scene1/hdl/can_level_bit.v
+Z4 L0 10
+Z5 OW;L;10.5c;63
+r1
+!s85 0
+31
+Z6 !s108 1744107965.000000
+!s107 D:/files/fpga/scene1/hdl/can_level_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_bit.v|
+!s101 -O0
+!i113 1
+Z7 o-vlog01compat -work presynth -O0
+Z8 tCvgOpt 0
+vcan_level_packet
+R1
+!i10b 1
+!s100 GW?S8]9zE28YEfY74Yf_d2
+IfXaH=jcb1RhFf=DZzVP3[1
+R2
+R0
+w1740811746
+8D:/files/fpga/scene1/hdl/can_level_packet.v
+FD:/files/fpga/scene1/hdl/can_level_packet.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/can_level_packet.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_packet.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vcan_top
+R1
+!i10b 1
+!s100 @9A^4<DUVV0>B@EOiom1a3
+IeN;V0UKMIP<f^dWHj[f>90
+R2
+R0
+R3
+8D:/files/fpga/scene1/hdl/can_top.v
+FD:/files/fpga/scene1/hdl/can_top.v
+L0 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/can_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_top.v|
+!s101 -O0
+!i113 1
+R7
+R8
+veeprom_a
+R1
+!i10b 1
+!s100 IKj_TOamoL>LXc8<1JAMW1
+IF>gB4V]L@z7aiTGb@SK313
+R2
+R0
+w1744011393
+8D:/files/fpga/scene1/hdl/eeprom_a.v
+FD:/files/fpga/scene1/hdl/eeprom_a.v
+L0 9
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/eeprom_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_a.v|
+!s101 -O0
+!i113 1
+R7
+R8
+veeprom_b
+R1
+!i10b 1
+!s100 KgSzPTGDmcAKnzQI=l3Qh2
+IzbSONDYNkY;RQBa@c1f8T3
+R2
+R0
+w1744017833
+8D:/files/fpga/scene1/hdl/eeprom_b.v
+FD:/files/fpga/scene1/hdl/eeprom_b.v
+L0 18
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/eeprom_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_b.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vflash_a
+R1
+!i10b 1
+!s100 mhG]mIUedD5a<=U>j]Bn30
+I3:5_U=nCDiRN4KljYm2^i3
+R2
+R0
+w1737350643
+8D:/files/fpga/scene1/hdl/flash_a.v
+FD:/files/fpga/scene1/hdl/flash_a.v
+L0 34
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/flash_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_a.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vflash_b
+R1
+!i10b 1
+!s100 4K=SDHBoAC;ReG1R4=`7S3
+IFO0Ef]0P3GR<2To1]`TnQ2
+R2
+R0
+w1744106002
+8D:/files/fpga/scene1/hdl/flash_b.v
+FD:/files/fpga/scene1/hdl/flash_b.v
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/flash_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_b.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vflash_c
+R1
+!i10b 1
+!s100 =6LLe8bR1<WPPDd6DiN0D2
+I2ZaK?E<87<mWC=URjCj^:2
+R2
+R0
+w1743906544
+8D:/files/fpga/scene1/hdl/flash_c.v
+FD:/files/fpga/scene1/hdl/flash_c.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_c.v|
+!s101 -O0
+!i113 1
+R7
+R8
+vtb_top_can_flash
+R1
+!i10b 1
+!s100 UV:I8LAmHBHe7lIJLBL<B3
+I`SWed_6TIfz=KQ8Ez85[M0
+R2
+R0
+w1744107954
+8D:/files/fpga/scene1/stimulus/tb_top_can_flash.v
+FD:/files/fpga/scene1/stimulus/tb_top_can_flash.v
+L0 3
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+!s90 -reportprogress|300|+incdir+D:/files/fpga/scene1/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+!s101 -O0
+!i113 1
+R7
+!s92 +incdir+D:/files/fpga/scene1/stimulus -vlog01compat -work presynth -O0
+R8
+vtop_can_flash
+R1
+!i10b 1
+!s100 Z9en>;]7DbK>@Jl2<ZH=S2
+I7?Z`llUzD4_K`5jb9_WB]3
+R2
+R0
+w1744017631
+8D:/files/fpga/scene1/hdl/top_can_flash.v
+FD:/files/fpga/scene1/hdl/top_can_flash.v
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/files/fpga/scene1/hdl/top_can_flash.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/top_can_flash.v|
+!s101 -O0
+!i113 1
+R7
+R8

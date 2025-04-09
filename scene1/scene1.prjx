@@ -13,10 +13,15 @@ KEY VendorTechnology_Package "vq100"
 KEY VendorTechnology_Speed "STD"
 KEY VendorTechnology_DieVoltage "1.5"
 KEY VendorTechnology_PART_RANGE "COM"
+KEY VendorTechnology_DSW_VCCA_VOLTAGE_RAMP_RATE ""
 KEY VendorTechnology_IO_DEFT_STD "LVCMOS33"
+KEY VendorTechnology_OPCONR ""
+KEY VendorTechnology_PLL_SUPPLY ""
+KEY VendorTechnology_RAD_EXPOSURE ""
 KEY VendorTechnology_RESERVEMIGRATIONPINS "1"
 KEY VendorTechnology_RESTRICTPROBEPINS "1"
 KEY VendorTechnology_RESTRICTSPIPINS "0"
+KEY VendorTechnology_SYSTEM_CONTROLLER_SUSPEND_MODE ""
 KEY VendorTechnology_TARGETDEVICESFORMIGRATION "IS4X4M1"
 KEY VendorTechnology_TEMPR "COM"
 KEY VendorTechnology_UNUSED_MSS_IO_RESISTOR_PULL "None"
@@ -56,10 +61,15 @@ STATE="utd"
 TIME="1740298947"
 SIZE="9224"
 ENDFILE
-VALUE "<project>\hdl\eeprom.v,hdl"
+VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1742106218"
-SIZE="3810"
+TIME="1744011393"
+SIZE="2734"
+ENDFILE
+VALUE "<project>\hdl\eeprom_b.v,hdl"
+STATE="utd"
+TIME="1744017833"
+SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
@@ -68,18 +78,38 @@ SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1742914790"
-SIZE="11046"
+TIME="1744106002"
+SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743664105"
-SIZE="3607"
+TIME="1743906544"
+SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1743674028"
-SIZE="23090"
+TIME="1744017631"
+SIZE="22944"
+ENDFILE
+VALUE "<project>\simulation\run.do,do"
+STATE="utd"
+TIME="1744106029"
+SIZE="1072"
+ENDFILE
+VALUE "<project>\simulation\tb_top_can_flash.vcd,vcd"
+STATE="utd"
+TIME="1744106428"
+SIZE="2928635"
+ENDFILE
+VALUE "<project>\simulation\tb_top_can_flash_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744106041"
+SIZE="5102"
+ENDFILE
+VALUE "<project>\stimulus\tb_top_can_flash.v,tb_hdl"
+STATE="utd"
+TIME="1744107954"
+SIZE="3291"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -165,7 +195,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_top_can_flash_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -206,8 +236,7 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Project Summary:scene1.log
 StartPage;StartPage;0
-HDL;hdl\top_can_flash.v;0
-ACTIVEVIEW;hdl\top_can_flash.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"
@@ -218,6 +247,11 @@ ENDLIST
 LIST "can_top::work","hdl\can_top.v","FALSE","FALSE"
 SUBBLOCK "can_level_packet::work","hdl\can_level_packet.v","FALSE","FALSE"
 ENDLIST
+LIST "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
+LIST "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
+SUBBLOCK "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
 ENDLIST
 LIST "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
@@ -226,12 +260,13 @@ ENDLIST
 LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
-LIST "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
-ENDLIST
 LIST "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
-SUBBLOCK "spi_eeprom::work","hdl\eeprom.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_top_can_flash::work","stimulus\tb_top_can_flash.v","FALSE","TRUE"
+SUBBLOCK "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 ENDLIST
 ENDLIST
 LIST ActiveTestBenchList
