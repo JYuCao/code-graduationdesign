@@ -7,225 +7,294 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dD:/files/fpga/scene1/simulation
+Z0 dD:/files/fpga/scene1/simulation
 vcan_level_bit
-Z0 !s110 1744185716
+Z1 !s110 1744262328
 !i10b 1
 !s100 LMc]:=F4z;DHGLOlR1>830
-I_fT7eolBoXQ>m`ZP:ILXb0
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/simulation
-Z3 w1744179299
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v
-Z4 L0 10
-Z5 OW;L;10.5c;63
+I5?@b:dCW@OCXnFUJB@aDU2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1744168585
+8D:/files/fpga/scene1/hdl/can_level_bit.v
+FD:/files/fpga/scene1/hdl/can_level_bit.v
+Z3 L0 10
+Z4 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z6 !s108 1744185716.000000
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_bit.v|
+Z5 !s108 1744262328.000000
+!s107 D:/files/fpga/scene1/hdl/can_level_bit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_bit.v|
 !s101 -O0
 !i113 1
-Z7 o-vlog01compat -work presynth -O0
-Z8 tCvgOpt 0
+Z6 o-vlog01compat -work presynth -O0
+Z7 tCvgOpt 0
 vcan_level_packet
-R0
+R1
 !i10b 1
 !s100 ?J1PPJRh<[[G4zCE]NOHn0
-I7oo4d;^[LR;bdWFbQ7SVQ2
-R1
+I78QH]?a2]7Tm6L^6n?0V=1
 R2
+R0
+w1744168605
+8D:/files/fpga/scene1/hdl/can_level_packet.v
+FD:/files/fpga/scene1/hdl/can_level_packet.v
 R3
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v
 R4
-R5
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_level_packet.v|
+R5
+!s107 D:/files/fpga/scene1/hdl/can_level_packet.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_level_packet.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vcan_top
-R0
+R1
 !i10b 1
 !s100 =BH]mz3@1n7QAPNT]eB6@1
-Ia44`BiJSa2bHNXDXkOfGR3
-R1
+IZ:^1nJY;jlYd`PLI=KEgh2
 R2
-R3
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v
+R0
+w1744168615
+8D:/files/fpga/scene1/hdl/can_top.v
+FD:/files/fpga/scene1/hdl/can_top.v
 L0 11
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/can_top.v|
+R5
+!s107 D:/files/fpga/scene1/hdl/can_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/can_top.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 veeprom_a
-R0
+Z8 !s110 1744262329
 !i10b 1
 !s100 IKj_TOamoL>LXc8<1JAMW1
-IU[<jZTDb;CS45maI>FeT70
-R1
+IF>gB4V]L@z7aiTGb@SK313
 R2
-R3
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v
+R0
+w1744011393
+8D:/files/fpga/scene1/hdl/eeprom_a.v
+FD:/files/fpga/scene1/hdl/eeprom_a.v
 L0 9
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_a.v|
+Z9 !s108 1744262329.000000
+!s107 D:/files/fpga/scene1/hdl/eeprom_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_a.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 veeprom_b
-Z9 !s110 1744185717
+R8
 !i10b 1
-!s100 KgSzPTGDmcAKnzQI=l3Qh2
-IjZW=6i2A]PTBL;f;@kI6_2
-R1
+!s100 `4UMPQljK8<KdB_JeM1>D2
+IUUXLJ6:kZ;e2_PT3<WOQW3
 R2
-R3
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v
+R0
+w1744262158
+8D:/files/fpga/scene1/hdl/eeprom_b.v
+FD:/files/fpga/scene1/hdl/eeprom_b.v
 L0 18
-R5
+R4
 r1
 !s85 0
 31
-R6
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/eeprom_b.v|
+R9
+!s107 D:/files/fpga/scene1/hdl/eeprom_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/eeprom_b.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vflash_a
-R9
+R1
 !i10b 1
 !s100 mhG]mIUedD5a<=U>j]Bn30
-Ih=>@[oHF6ZeKP_@VcNUO@3
-R1
+I3:5_U=nCDiRN4KljYm2^i3
 R2
-Z10 w1743989144
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v
+R0
+w1737350643
+8D:/files/fpga/scene1/hdl/flash_a.v
+FD:/files/fpga/scene1/hdl/flash_a.v
 L0 34
-R5
+R4
 r1
 !s85 0
 31
-Z11 !s108 1744185717.000000
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_a.v|
+R5
+!s107 D:/files/fpga/scene1/hdl/flash_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_a.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vflash_b
-R9
+R1
 !i10b 1
 !s100 4K=SDHBoAC;ReG1R4=`7S3
-IP8XPK_Z305RScOgeB^eEB1
-R1
+IFO0Ef]0P3GR<2To1]`TnQ2
 R2
-R3
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v
+R0
+w1744106002
+8D:/files/fpga/scene1/hdl/flash_b.v
+FD:/files/fpga/scene1/hdl/flash_b.v
 L0 4
-R5
+R4
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_b.v|
+R5
+!s107 D:/files/fpga/scene1/hdl/flash_b.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_b.v|
 !s101 -O0
 !i113 1
+R6
 R7
-R8
 vflash_c
-R9
+R1
 !i10b 1
 !s100 =6LLe8bR1<WPPDd6DiN0D2
-IgITW^G7<N]go]4`Ke_kHT1
-R1
+I2ZaK?E<87<mWC=URjCj^:2
 R2
-R10
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v
+R0
+w1743906544
+8D:/files/fpga/scene1/hdl/flash_c.v
+FD:/files/fpga/scene1/hdl/flash_c.v
 L0 3
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/flash_c.v|
-!s101 -O0
-!i113 1
-R7
-R8
-vtb_top_can_flash
-R9
-!i10b 1
-!s100 <gU=eRQPAB;M]JzQ^6LDQ0
-I:YiK>C>e[A3h[IRO?LmhZ0
-R1
-R2
-w1744185673
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v
-L0 3
-R5
-r1
-!s85 0
-31
-R11
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v|
-!s90 -reportprogress|300|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl|+incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus/tb_top_can_flash.v|
-!s101 -O0
-!i113 1
-R7
-!s92 +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl +incdir+C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/stimulus -vlog01compat -work presynth -O0
-R8
-vtop_can_flash
-R9
-!i10b 1
-!s100 Z9en>;]7DbK>@Jl2<ZH=S2
-IC:5?ddOQbN_BkLno9YY`E0
-R1
-R2
-w1744184709
-8C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v
-FC:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v
 R4
-R5
 r1
 !s85 0
 31
-R11
-!s107 C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v|
-!s90 -reportprogress|300|-vlog01compat|-work|presynth|C:/Users/jycao/Desktop/1/code-graduationdesign/scene1/hdl/top_can_flash.v|
+R5
+!s107 D:/files/fpga/scene1/hdl/flash_c.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/flash_c.v|
 !s101 -O0
 !i113 1
+R6
 R7
+vtb_can_phy
+Z10 !s110 1744202507
+!i10b 1
+!s100 NY7So:m;hVM7aiX^DOC2I0
+IUDjVNQYaH1ABdo249DT8C1
+R2
+R0
+Z11 w1744202486
+Z12 8D:/files/fpga/scene1/stimulus/tb_top_can_flash.v
+Z13 FD:/files/fpga/scene1/stimulus/tb_top_can_flash.v
+L0 194
+R4
+r1
+!s85 0
+31
+Z14 !s108 1744202507.000000
+Z15 !s107 D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+Z16 !s90 -reportprogress|300|+incdir+D:/files/fpga/scene1/stimulus|+incdir+D:/files/fpga/scene1/hdl|-vlog01compat|-work|presynth|D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+!s101 -O0
+!i113 1
+R6
+Z17 !s92 +incdir+D:/files/fpga/scene1/stimulus +incdir+D:/files/fpga/scene1/hdl -vlog01compat -work presynth -O0
+R7
+vtb_can_top
+R10
+!i10b 1
+!s100 V<URJ:[4kUN1^n9FN@I:_3
+IJcmP_ndNjXLDI5C^Qm2Cj1
+R2
+R0
+R11
+R12
+R13
+L0 3
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R6
+R17
+R7
+vtb_gen_clkrst
+R10
+!i10b 1
+!s100 fJ^C:]e<]N7@OGO8XJZ;k3
+IVP5RM8cda[zbn2k51;KEh2
+R2
+R0
+R11
+R12
+R13
+L0 181
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!s101 -O0
+!i113 1
+R6
+R17
+R7
+vtb_top_can_flash
 R8
+!i10b 1
+!s100 Dnabc>1c2?fkFJi?;XLgR1
+I^`@nK_o]ah:?DQUihV5WE0
+R2
+R0
+w1744262321
+R12
+R13
+L0 3
+R4
+r1
+!s85 0
+31
+R9
+R15
+!s90 -reportprogress|300|+incdir+D:/files/fpga/scene1/hdl|+incdir+D:/files/fpga/scene1/stimulus|-vlog01compat|-work|presynth|D:/files/fpga/scene1/stimulus/tb_top_can_flash.v|
+!s101 -O0
+!i113 1
+R6
+!s92 +incdir+D:/files/fpga/scene1/hdl +incdir+D:/files/fpga/scene1/stimulus -vlog01compat -work presynth -O0
+R7
+vtop_can_flash
+R8
+!i10b 1
+!s100 ^cg]m<CUS13Ojg<1FPEin3
+Ilm?Kg:^NRUk^iZ_oVPnIX3
+R2
+R0
+w1744261325
+8D:/files/fpga/scene1/hdl/top_can_flash.v
+FD:/files/fpga/scene1/hdl/top_can_flash.v
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/files/fpga/scene1/hdl/top_can_flash.v|
+!s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/scene1/hdl/top_can_flash.v|
+!s101 -O0
+!i113 1
+R6
+R7

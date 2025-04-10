@@ -14,9 +14,9 @@ module top_can_flash #(
     parameter [10:0] RX_ID_SHORT_MASK   = 11'h7ff,
     parameter [28:0] RX_ID_LONG_FILTER  = 29'h12345678,
     parameter [28:0] RX_ID_LONG_MASK    = 29'h1fffffff,
-    parameter [15:0] default_c_PTS  = 16'd34,
-    parameter [15:0] default_c_PBS1 = 16'd5,
-    parameter [15:0] default_c_PBS2 = 16'd10,
+    parameter [15:0] default_c_PTS  = 16'd12,
+    parameter [15:0] default_c_PBS1 = 16'd2,
+    parameter [15:0] default_c_PBS2 = 16'd5,
     
     // Storage parameters
     parameter [10:0] L = 11'd1024,  // Number of address records in EEPROM
@@ -52,35 +52,28 @@ localparam [31:0] FRAME_HEADER = 32'h0F0F0F0F;
 localparam [31:0] FRAME_FOOTER = 32'hF0F0F0F0;
 
 // State machine states
-localparam [4:0] INIT_STATE         = 5'd0;
-localparam [4:0] WAIT_CAN_STATE     = 5'd3;
-localparam [4:0] RECEIVE_HEADER     = 5'd4;
+localparam [31:0] INIT_STATE         = 5'd0;
+localparam [31:0] WAIT_CAN_STATE     = 5'd3;
+localparam [31:0] RECEIVE_HEADER     = 5'd4;
 
-localparam [4:0] RECEIVE_FOOTER     = 5'd8;
-localparam [4:0] WRITE_EEPROM       = 5'd9;
-localparam [4:0] UPDATE_ADDR        = 5'd11;
-localparam [4:0] READ_EEPROM_STATE1 = 5'd12;
-localparam [4:0] READ_EEPROM_STATE2 = 5'd13;
-localparam [4:0] READ_EEPROM_STATE3 = 5'd14;
-localparam [4:0] RECEIVE_FRAME_INFO1 = 5'd5;
-localparam [4:0] RECEIVE_FRAME_INFO2 = 5'd15;
-localparam [4:0] RECEIVE_FRAME_INFO3 = 5'd16;
-localparam [4:0] RECEIVE_FRAME_INFO4 = 5'd17;
-localparam [4:0] RECEIVE_FRAME_INFO5 = 5'd18;
-localparam [4:0] RECEIVE_TIME1 = 5'd6;
-localparam [4:0] RECEIVE_TIME2 = 5'd19;
-localparam [4:0] RECEIVE_TIME3 = 5'd20;
-localparam [4:0] RECEIVE_DATA1 = 5'd7;
-localparam [4:0] RECEIVE_DATA2 = 5'd21;
-localparam [4:0] WRITE_EEPROM1 = 5'd22;
-localparam [4:0] WRITE_EEPROM2 = 5'd23;
-localparam [4:0] WRITE_EEPROM3 = 5'd24;
-localparam [4:0] WRITE_EEPROM4 = 5'd25;
-localparam [4:0] WRITE_FLASH1  = 5'd10;
-localparam [4:0] WRITE_FLASH2  = 5'd26;
+localparam [31:0] RECEIVE_FOOTER     = 5'd8;
+localparam [31:0] WRITE_EEPROM       = 5'd9;
+localparam [31:0] UPDATE_ADDR        = 5'd11;
+localparam [31:0] READ_EEPROM_STATE1 = 5'd12;
+localparam [31:0] READ_EEPROM_STATE2 = 5'd13;
+localparam [31:0] READ_EEPROM_STATE3 = 5'd14;
+localparam [31:0] RECEIVE_FRAME_INFO = 5'd5;
+localparam [31:0] RECEIVE_TIME = 5'd6;
+localparam [31:0] RECEIVE_DATA = 5'd7;
+localparam [31:0] WRITE_EEPROM1 = 5'd22;
+localparam [31:0] WRITE_EEPROM2 = 5'd23;
+localparam [31:0] WRITE_EEPROM3 = 5'd24;
+localparam [31:0] WRITE_EEPROM4 = 5'd25;
+localparam [31:0] WRITE_FLASH1  = 5'd10;
+localparam [31:0] WRITE_FLASH2  = 5'd26;
 
 // Registers
-reg [4:0]  state;
+reg [31:0]  state;
 reg [3:0]  next_state;
 reg [31:0] frame_size;         // Size of each frame in bytes
 reg [31:0] write_address;      // Current flash write address
@@ -250,7 +243,7 @@ always @(posedge clk or negedge rstn) begin
         header_buffer <= 32'h0;
         footer_buffer <= 32'h0;
         frame_info <= 32'h0;
-        expected_data_size <= 32'h0;
+        expected_data_size <= 32'd12;
         received_data_size <= 32'h0;
         
         // Reset EEPROM control signals
@@ -369,102 +362,69 @@ always @(posedge clk or negedge rstn) begin
                         end
                         
                         buffer_write_index <= 4; // Next position after header
-                        state <= RECEIVE_FRAME_INFO1;
+                        state <= RECEIVE_FRAME_INFO;
                     end
                 end
             end
             
-            RECEIVE_FRAME_INFO1: begin
+            RECEIVE_FRAME_INFO: begin
                 if (can_rx_valid) begin
                     frame_info <= {frame_info[23:0], can_rx_data};
-                    state <= RECEIVE_FRAME_INFO2;
-                end
-            end
-            RECEIVE_FRAME_INFO2: begin
-                if (buffer_select == 1'b0) begin
-                    buffer_a[buffer_write_index] <= can_rx_data;
-                end else begin
-                    buffer_b[buffer_write_index] <= can_rx_data;
-                end
-                state <= RECEIVE_FRAME_INFO3;
-            end
-            RECEIVE_FRAME_INFO3: begin
-                buffer_write_index <= buffer_write_index + 1;
-                if (can_rx_valid) begin
-                    frame_info <= {frame_info[23:0], can_rx_data};
-                    state <= RECEIVE_FRAME_INFO4;
-                end
-            end
-            RECEIVE_FRAME_INFO4: begin
-                if (buffer_select == 1'b0) begin
-                    buffer_a[buffer_write_index] <= can_rx_data;
-                end else begin
-                    buffer_b[buffer_write_index] <= can_rx_data;
-                end
-                byte_counter <= byte_counter + 1;
-                state <= RECEIVE_FRAME_INFO5;
-            end
-            RECEIVE_FRAME_INFO5: begin
-                buffer_write_index <= buffer_write_index + 1;
-                if (byte_counter == 2) begin
-                    expected_data_size <= {frame_info[23:0], can_rx_data};
-                    byte_counter <= 0;
-                    state <= RECEIVE_TIME1;
-                end else begin
-                    state <= RECEIVE_FRAME_INFO3;
+                    buffer_write_index <= buffer_write_index + 1'b1;
+                    if (buffer_select == 1'b0) begin
+                            buffer_a[buffer_write_index] <= can_rx_data;
+                        end else begin
+                            buffer_b[buffer_write_index] <= can_rx_data;
+                        end
+                    if (byte_counter < 3) begin
+                        byte_counter <= byte_counter + 1;
+                    end else begin
+                        byte_counter <= 0;
+                        state <= RECEIVE_TIME;
+                    end
                 end
             end
             
-            RECEIVE_TIME1: begin
+            RECEIVE_TIME: begin
                 // Receive timestamp byte 1
                 if (can_rx_valid) begin
                     if (buffer_select == 1'b0) begin
-                        buffer_a[buffer_write_index] <= can_rx_data;
+                            buffer_a[buffer_write_index] <= can_rx_data;
+                            buffer_write_index <= buffer_write_index + 1'b1;
+                        end else begin
+                            buffer_b[buffer_write_index] <= can_rx_data;
+                            buffer_write_index <= buffer_write_index + 1'b1;
+                        end
+                    if (byte_counter < 7) begin
+                        byte_counter <= byte_counter + 1;
                     end else begin
-                        buffer_b[buffer_write_index] <= can_rx_data;
+                        byte_counter <= 0;
+                        received_data_size <= 0;
+                        state <= RECEIVE_DATA;
                     end
-                    state <= RECEIVE_TIME2;
-                end
-            end
-            RECEIVE_TIME2: begin
-                // Receive timestamp byte 2
-                byte_counter <= byte_counter + 1;
-                buffer_write_index <= buffer_write_index + 1;
-                state <= RECEIVE_TIME3;
-            end
-            RECEIVE_TIME3: begin
-                // Receive timestamp byte 3
-                if (byte_counter == 7) begin 
-                    byte_counter <= 0;
-                    received_data_size <= 0;
-                    state <= RECEIVE_DATA1;
-                end else begin
-                    state <= RECEIVE_TIME1;
                 end
             end
             
-            RECEIVE_DATA1: begin
+            RECEIVE_DATA: begin
                 // Receive N data bytes
                 if (can_rx_valid) begin
                     // Store data in buffer
                     if (buffer_select == 1'b0) begin
                         buffer_a[buffer_write_index] <= can_rx_data;
+                        buffer_write_index <= buffer_write_index + 1;
                     end else begin
                         buffer_b[buffer_write_index] <= can_rx_data;
+                        buffer_write_index <= buffer_write_index + 1;
                     end
+                    footer_buffer <= {footer_buffer[23:0], can_rx_data};
                     received_data_size <= received_data_size + 1;
+                    if ({footer_buffer[23:0], can_rx_data} == FRAME_FOOTER && 
+                        received_data_size >= expected_data_size) begin
+                        state <= RECEIVE_FOOTER;
+                    end
                 end
-            end
-            RECEIVE_DATA2: begin
-                buffer_write_index <= buffer_write_index + 1;
-                
-                // Update footer detection buffer
-                footer_buffer <= {footer_buffer[23:0], can_rx_data};
-                
-                // Check if we have frame footer
-                if ({footer_buffer[23:0], can_rx_data} == FRAME_FOOTER && 
+                if (footer_buffer == FRAME_FOOTER && 
                     received_data_size >= expected_data_size) begin
-                    // Footer detected, frame complete
                     state <= RECEIVE_FOOTER;
                 end
             end

@@ -263,7 +263,7 @@ always @(posedge clk) begin
 				if (a_done == 1'b1) begin
 					write <= 1'b1;
 					dout <= a_dout;
-					state <= s_read4;
+					state <= s_read5;
 				end
 			end
 			

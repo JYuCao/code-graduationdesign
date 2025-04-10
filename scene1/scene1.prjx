@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\scene1"
+KEY ProjectLocation "D:\files\fpga\scene1"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,68 +43,83 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\can_level_bit.ide_des,ide_des"
 STATE="utd"
-TIME="1743989144"
+TIME="1743666358"
 SIZE="185"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744168585"
 SIZE="4060"
 ENDFILE
 VALUE "<project>\hdl\can_level_packet.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744168605"
 SIZE="13212"
 ENDFILE
 VALUE "<project>\hdl\can_top.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744168615"
 SIZE="9223"
 ENDFILE
 VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744011393"
 SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744017833"
 SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1737350643"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744106002"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1743906544"
 SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744179299"
-SIZE="22944"
+TIME="1744247809"
+SIZE="21835"
+ENDFILE
+VALUE "<project>\simulation\dump.vcd,vcd"
+STATE="utd"
+TIME="1744202591"
+SIZE="11219274"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1744180698"
-SIZE="1239"
+TIME="1744211351"
+SIZE="1235"
+ENDFILE
+VALUE "<project>\simulation\tb_can_top_presynth_simulation.log,log"
+STATE="utd"
+TIME="1744202592"
+SIZE="6161"
+ENDFILE
+VALUE "<project>\simulation\tb_top_can_flash.vcd,vcd"
+STATE="utd"
+TIME="1744205344"
+SIZE="6295403"
 ENDFILE
 VALUE "<project>\simulation\tb_top_can_flash_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744181710"
-SIZE="10630"
+TIME="1744212484"
+SIZE="13280"
 ENDFILE
 VALUE "<project>\stimulus\tb_top_can_flash.v,tb_hdl"
 STATE="utd"
-TIME="1744180424"
-SIZE="3345"
+TIME="1744209380"
+SIZE="6316"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -190,7 +205,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_top_can_flash_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -258,7 +273,14 @@ SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
 SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 ENDLIST
+LIST "tb_can_phy::work","","FALSE","FALSE"
+ENDLIST
+LIST "tb_gen_clkrst::work","","FALSE","FALSE"
+ENDLIST
 LIST "tb_top_can_flash::work","stimulus\tb_top_can_flash.v","FALSE","TRUE"
+SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
+SUBBLOCK "tb_can_phy::work","","FALSE","FALSE"
+SUBBLOCK "tb_gen_clkrst::work","","FALSE","FALSE"
 SUBBLOCK "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 ENDLIST
 ENDLIST

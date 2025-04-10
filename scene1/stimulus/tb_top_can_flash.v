@@ -2,74 +2,88 @@
 
 module tb_top_can_flash();
 
-// 时钟和复位信号
+// 时钟和复位
 reg clk;
 reg rstn;
 
-// CAN总线信号
-wire can_bus;
-wire can_tx_sender;
-wire can_tx_receiver;
+// CAN总线
+tri      can_bus;    // can_bus = CAN_H - CAN_L
+pulldown(can_bus);   // 上拉电阻
 
-// Flash接口信号
+// 发送端CAN控制器信号
+wire         can_tx_rstn;
+wire         can_tx_clk;
+wire         can_tx_rx;
+wire         can_tx_tx;
+reg          can_tx_valid;
+wire         can_tx_ready;
+reg   [31:0] can_tx_data;
+wire         rx_valid;
+wire         rx_last;
+wire  [7:0]  rx_data;
+wire  [28:0] rx_id;
+wire         rx_ide;
+
+// 接收端信号 (top_can_flash)
+wire         can_rx;
+wire         can_tx_out;
+
+// Flash接口
 reg  flash_q;
 wire [15:0] flash_c;
 wire flash_d;
 wire [15:0] flash_reset_n;
 wire [15:0] flash_s_n;
 
-// EEPROM接口信号
+// EEPROM接口
 reg  spi_miso;
 wire spi_mosi;
 wire spi_sck;
 wire spi_cs;
 
-// 状态输出信号
+// 状态输出
 wire [31:0] status_a;
 wire [31:0] status_b;
 
-// 模拟CAN总线（线与）
-assign can_bus = can_tx_sender & can_tx_receiver;
+// 发送端时钟生成
+tb_gen_clkrst #(25000) can_tx_clkrst(can_tx_rstn, can_tx_clk);  // 20MHz时钟
 
-// 发送方CAN控制器信号
-reg         tx_start_sender = 1'b0;
-reg  [31:0] tx_data_sender = 32'h0;
-wire        tx_done_sender;
-wire        tx_acked_sender;
-wire        rx_valid_sender;
-wire [28:0] rx_id_sender;
-wire        rx_ide_sender;
-wire        rx_rtr_sender;
-wire [ 3:0] rx_len_sender;
-wire [63:0] rx_data_sender;
-reg         rx_ack_sender = 1'b1;
+// CAN PHY模拟
+tb_can_phy can_tx_phy(can_tx_tx, can_tx_rx, can_bus);
+tb_can_phy can_rx_phy(can_tx_out, can_rx, can_bus);
 
-// 实例化发送方CAN控制器
-can_level_packet #(
-    .TX_RTR         ( 1'b0     ),
-    .TX_ID          ( 11'h123  ),  // 使用接收方期望的ID
-    .default_c_PTS  ( 16'd12   ),
-    .default_c_PBS1 ( 16'd2    ),
-    .default_c_PBS2 ( 16'd5    )
-) u_can_sender (
-    .rstn           ( rstn     ),
-    .clk            ( clk      ),
-    .can_rx         ( can_bus  ),
-    .can_tx         ( can_tx_sender ),
-    .tx_start       ( tx_start_sender ),
-    .tx_data        ( tx_data_sender ),
-    .tx_done        ( tx_done_sender ),
-    .tx_acked       ( tx_acked_sender ),
-    .rx_valid       ( rx_valid_sender ),
-    .rx_id          ( rx_id_sender ),
-    .rx_ide         ( rx_ide_sender ),
-    .rx_rtr         ( rx_rtr_sender ),
-    .rx_len         ( rx_len_sender ),
-    .rx_data        ( rx_data_sender ),
-    .rx_ack         ( rx_ack_sender )
+// 发送端CAN控制器
+can_top #(
+    .LOCAL_ID(11'h123),           // 发送方ID
+    .RX_ID_SHORT_FILTER(11'h456), // 不关心接收
+    .RX_ID_SHORT_MASK(11'h7ff),
+    .RX_ID_LONG_FILTER(29'h12345678),
+    .RX_ID_LONG_MASK(29'h1fffffff),
+    .default_c_PTS(16'd12),
+    .default_c_PBS1(16'd2),
+    .default_c_PBS2(16'd5)
+) can_tx_ctrl (
+    .rstn(can_tx_rstn),
+    .clk(can_tx_clk),
+    .can_rx(can_tx_rx),
+    .can_tx(can_tx_tx),
+    .tx_valid(can_tx_valid),
+    .tx_ready(can_tx_ready),
+    .tx_data(can_tx_data),
+    .rx_valid(rx_valid),
+    .rx_last(rx_last),
+    .rx_data(rx_data),
+    .rx_id(rx_id),
+    .rx_ide(rx_ide)
 );
 
-// 实例化被测试模块
+// 系统时钟生成
+initial begin
+    clk = 0;
+    forever #25 clk = ~clk;  // 50MHz时钟
+end
+
+// 实例化被测模块
 top_can_flash #(
     .LOCAL_ID(11'h456),
     .RX_ID_SHORT_FILTER(11'h123),
@@ -84,203 +98,161 @@ top_can_flash #(
 ) u_top_can_flash (
     .clk(clk),
     .rstn(rstn),
-    
-    // CAN接口
-    .can_rx(can_bus),
-    .can_tx(can_tx_receiver),
-    
-    // Flash接口
+    .can_rx(can_rx),
+    .can_tx(can_tx_out),
     .flash_q(flash_q),
     .flash_c(flash_c),
     .flash_d(flash_d),
     .flash_reset_n(flash_reset_n),
     .flash_s_n(flash_s_n),
-    
-    // EEPROM接口
     .spi_miso(spi_miso),
     .spi_mosi(spi_mosi),
     .spi_sck(spi_sck),
     .spi_cs(spi_cs),
-    
-    // 状态输出
     .status_a(status_a),
     .status_b(status_b)
 );
 
-// 20MHz时钟生成（周期50ns）
+// 测试过程
 initial begin
-    clk = 0;
-    forever #25 clk = ~clk;
-end
-
-// 测试激励
-initial begin
-    // 初始化信号
+    // 初始化
     rstn = 0;
-    tx_start_sender = 0;
-    tx_data_sender = 0;
+    can_tx_valid = 0;
+    can_tx_data = 0;
     flash_q = 0;
     spi_miso = 0;
     
-    // 等待100ns后释放复位
-    #100;
-    rstn = 1;
+    // 复位
+    #500 rstn = 1;
     
-    // 等待系统稳定，确保进入WAIT_CAN_STATE状态
+    // 等待EEPROM初始化完成
     wait(u_top_can_flash.state == u_top_can_flash.WAIT_CAN_STATE);
-    #1000;
+    #2500;
     
-    // 等待CAN控制器准备好发送数据
-    wait(u_can_sender.stat == 4'd1); // 等待IDLE状态
-    wait(u_can_sender.cnt >= 20);    // 等待计数器
-    wait(u_can_sender.bit_req);      // 等待位请求
+    // 等待发送端准备就绪
+    wait(can_tx_ready);
     
-    // 发送第一帧数据
-    // 帧头: 0F0F0F0F
-    send_frame_data(32'h0F0F0F0F, 32'h00000010, 64'h0000000000000000, 128'hAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, 32'hF0F0F0F0);
-    
-    // 等待处理完成
-    wait(u_top_can_flash.state == u_top_can_flash.WAIT_CAN_STATE);
-    #5000;
-    
-    // 发送第二帧数据
-    wait(u_can_sender.stat == 4'd1); // 等待IDLE状态
-    wait(u_can_sender.cnt >= 20);    // 等待计数器
-    wait(u_can_sender.bit_req);      // 等待位请求
-    
-    // 帧头: 0F0F0F0F, 帧信息: 数据长度8字节, 时间戳, 数据, 帧尾: F0F0F0F0
-    send_frame_data(32'h0F0F0F0F, 32'h00000008, 64'h0102030405060708, 64'h5555555555555555, 32'hF0F0F0F0);
-    
-    // 等待处理完成
-    wait(u_top_can_flash.state == u_top_can_flash.WAIT_CAN_STATE);
+    // 1. 发送帧头 (0F0F0F0F)
+    can_tx_valid = 1;
+    can_tx_data = 32'h0F0F0F0F;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
     #10000;
     
+    // 2. 发送帧信息 (数据长度=16字节)
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'h00000010;  // 16字节数据
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    #10000;
+    
+    // 3. 发送时间戳 (8字节, 全0)
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'h00000000;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    #10000;
+    
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'h00000000;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    #10000;
+    
+    // 4. 发送数据 (8字节)
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'hAAAAAAAA;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    #10000;
+    
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'hBBBBBBBB;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    #10000;
+    
+    // 5. 发送帧尾 (F0F0F0F0)
+    wait(can_tx_ready);
+    can_tx_valid = 1;
+    can_tx_data = 32'hF0F0F0F0;
+    @(posedge can_tx_clk);
+    can_tx_valid = 0;
+    @(posedge clk) wait(u_top_can_flash.can_rx_valid);
+    @(posedge clk) wait(!u_top_can_flash.can_rx_valid);
+    
+    // 等待传输完成
+    #50000;
+    
     // 结束仿真
-    $display("Simulation completed successfully");
     $finish;
 end
 
 // 模拟EEPROM响应
-reg [3:0] spi_counter = 0;
-reg spi_active = 0;
-
 always @(negedge spi_cs) begin
-    spi_active <= 1;
-    spi_counter <= 0;
-end
-
-always @(posedge spi_sck) begin
-    if (spi_active) begin
-        spi_counter <= spi_counter + 1;
-        if (spi_counter == 7) begin
-            spi_miso <= 1'b1;
-            spi_active <= 0;
-        end
-    end
+    spi_miso <= 0;
 end
 
 // 模拟Flash响应
-reg [3:0] flash_counter = 0;
-reg flash_active = 0;
-
-always @(flash_s_n) begin
-    if (flash_s_n != 16'hFFFF) begin
-        flash_active <= 1;
-        flash_counter <= 0;
-    end
-end
-
-always @(posedge flash_c[0]) begin
-    if (flash_active) begin
-        flash_counter <= flash_counter + 1;
-        if (flash_counter == 7) begin
-            flash_q <= 1'b1;
-            flash_active <= 0;
-        end
-    end
+always @(negedge flash_s_n[0]) begin
+    flash_q <= 0;
 end
 
 // 监控状态
 always @(posedge clk) begin
-    if (status_a != 0 || status_b != 0) begin
-        $display("Status changed - A: %h, B: %h", status_a, status_b);
+    if(status_a != 0) begin
+        $display("Status A changed: %h", status_a);
+    end
+    if(status_b != 0) begin
+        $display("Status B changed: %h", status_b);
     end
 end
 
-// 监控状态机状态变化
-always @(u_top_can_flash.state) begin
-    $display("Time: %t, State changed to: %d", $time, u_top_can_flash.state);
-end
-
-// 监控CAN发送完成信号
 always @(posedge clk) begin
-    if (tx_done_sender) begin
-        $display("Time: %t, CAN TX completed, ACKed=%b", $time, tx_acked_sender);
+    if(u_top_can_flash.can_rx_valid) begin
+        $display("Time=%0t: Received CAN data: %h", $time, u_top_can_flash.can_rx_data);
     end
 end
 
-// 发送一帧CAN数据的任务
-task send_frame_data;
-    input [31:0] header;    // 帧头
-    input [31:0] frame_info; // 帧信息
-    input [63:0] timestamp;  // 时间戳
-    input [127:0] data;      // 数据（最多16字节）
-    input [31:0] footer;     // 帧尾
-    
-    integer i, data_bytes;
-    reg [7:0] current_byte;
-begin
-    // 计算数据字节数
-    data_bytes = frame_info[7:0];
-    
-    // 发送帧头
-    for (i = 0; i < 4; i = i + 1) begin
-        current_byte = header[8*i +: 8];
-        send_can_data_byte(current_byte);
-    end
-    
-    // 发送帧信息
-    for (i = 0; i < 4; i = i + 1) begin
-        current_byte = frame_info[8*i +: 8];
-        send_can_data_byte(current_byte);
-    end
-    
-    // 发送时间戳
-    for (i = 0; i < 8; i = i + 1) begin
-        current_byte = timestamp[8*i +: 8];
-        send_can_data_byte(current_byte);
-    end
-    
-    // 发送数据
-    for (i = 0; i < data_bytes; i = i + 1) begin
-        current_byte = data[8*i +: 8];
-        send_can_data_byte(current_byte);
-    end
-    
-    // 发送帧尾
-    for (i = 0; i < 4; i = i + 1) begin
-        current_byte = footer[8*i +: 8];
-        send_can_data_byte(current_byte);
+// 监控CAN总线状态
+always @(posedge clk) begin
+    if(can_bus !== can_bus) begin  // 检测总线冲突
+        $display("Time=%0t: CAN bus contention detected!", $time);
     end
 end
-endtask
 
-// 通过CAN控制器发送一个字节的任务
-task send_can_data_byte;
-    input [7:0] byte_data;
+// 发送32位数据的任务
+task send_data;
+    input [31:0] data;
 begin
-    // 设置发送数据
-    tx_data_sender = {24'h0, byte_data};
-    
-    // 启动发送
-    tx_start_sender = 1'b1;
-    @(posedge clk);
-    tx_start_sender = 1'b0;
-    
-    // 等待发送完成
-    wait(tx_done_sender);
-    @(posedge clk);
-    @(posedge clk);
+    // 发送4个字节
+    repeat(4) begin
+        wait(can_tx_ready);
+        @(posedge can_tx_clk);
+        can_tx_valid <= 1;
+        can_tx_data <= data[31:24];
+        data <= {data[23:0], 8'h00};
+        @(posedge can_tx_clk);
+        can_tx_valid <= 0;
+        #5000; // 等待发送完成
+    end
 end
 endtask
 

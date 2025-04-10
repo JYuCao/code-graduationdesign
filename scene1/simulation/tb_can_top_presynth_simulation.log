@@ -1,0 +1,138 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/can_level_bit.v 
+# -- Compiling module can_level_bit
+# 
+# Top level modules:
+# 	can_level_bit
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/can_level_packet.v 
+# -- Compiling module can_level_packet
+# 
+# Top level modules:
+# 	can_level_packet
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/can_top.v 
+# -- Compiling module can_top
+# 
+# Top level modules:
+# 	can_top
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/eeprom_a.v 
+# -- Compiling module eeprom_a
+# 
+# Top level modules:
+# 	eeprom_a
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/eeprom_b.v 
+# -- Compiling module eeprom_b
+# 
+# Top level modules:
+# 	eeprom_b
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/flash_a.v 
+# -- Compiling module flash_a
+# 
+# Top level modules:
+# 	flash_a
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/flash_b.v 
+# -- Compiling module flash_b
+# 
+# Top level modules:
+# 	flash_b
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/flash_c.v 
+# -- Compiling module flash_c
+# 
+# Top level modules:
+# 	flash_c
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/scene1/hdl/top_can_flash.v 
+# -- Compiling module top_can_flash
+# 
+# Top level modules:
+# 	top_can_flash
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 20:41:47 on Apr 09,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/scene1/stimulus" "+incdir+D:/files/fpga/scene1/hdl" -vlog01compat -work presynth D:/files/fpga/scene1/stimulus/tb_top_can_flash.v 
+# -- Compiling module tb_can_top
+# -- Compiling module tb_gen_clkrst
+# -- Compiling module tb_can_phy
+# 
+# Top level modules:
+# 	tb_can_top
+# End time: 20:41:47 on Apr 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_can_top 
+# Start time: 20:41:48 on Apr 09,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_can_top
+# Loading presynth.tb_gen_clkrst
+# Loading presynth.tb_can_phy
+# Loading presynth.top_can_flash
+# Loading presynth.eeprom_b
+# Loading presynth.eeprom_a
+# Loading presynth.flash_c
+# Loading presynth.can_top
+# Loading presynth.can_level_packet
+# Loading presynth.can_level_bit
+# Loading presynth.flash_b
+# Loading presynth.flash_a
+# ** Warning: (vsim-3017) D:/files/fpga/scene1/hdl/top_can_flash.v(151): [TFMPC] - Too few port connections. Expected 13, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_can_top/u_top_can_flash/eeprom_ctrl File: D:/files/fpga/scene1/hdl/eeprom_b.v
+# ** Warning: (vsim-3722) D:/files/fpga/scene1/hdl/top_can_flash.v(151): [TFMPC] - Missing connection for port 'length'.
+run -all
+# ** Note: $finish    : D:/files/fpga/scene1/stimulus/tb_top_can_flash.v(159)
+#    Time: 1410065408 ps  Iteration: 0  Instance: /tb_can_top
+# 1
+# Break in Module tb_can_top at D:/files/fpga/scene1/stimulus/tb_top_can_flash.v line 159
+# End time: 20:43:11 on Apr 09,2025, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 2
