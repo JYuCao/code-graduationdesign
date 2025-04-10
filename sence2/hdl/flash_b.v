@@ -140,8 +140,9 @@ always @(posedge clk) begin
                 else if (cmd_read == 1'b1) begin
 					state <= s_read1;
                     count_a <= {16'h0000, addr[27:16]};
+					count_b <= length;
                     //count_c <= 30'h20000000;
-                    count_c <= 30'h00001000;
+                    count_c <= 30'h00000008;
 				end
 			end
 

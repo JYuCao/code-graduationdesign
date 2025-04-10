@@ -8,9 +8,9 @@
 //--------------------------------------------------------------------------------------------------------
 
 module can_level_bit #(
-    parameter [15:0] default_c_PTS  = 16'd34,
-    parameter [15:0] default_c_PBS1 = 16'd5,
-    parameter [15:0] default_c_PBS2 = 16'd10
+    parameter [15:0] default_c_PTS  = 16'd12,
+    parameter [15:0] default_c_PBS1 = 16'd2,
+    parameter [15:0] default_c_PBS2 = 16'd5
 ) (
     input  wire        rstn,  // set to 1 while working
     input  wire        clk,   // system clock, eg, when clk=50000kHz, can baud rate = 50000/(1+default_c_PTS+default_c_PBS1+default_c_PBS2) = 100kHz

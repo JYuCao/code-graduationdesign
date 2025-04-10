@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/files/fpga/CAN/simulation
 vcan_level_bit
-Z1 !s110 1744166470
+Z1 !s110 1744203408
 !i10b 1
 !s100 LMc]:=F4z;DHGLOlR1>830
 I=8[[?BE?CSQe5Z9MB5Ub?3
@@ -23,7 +23,7 @@ Z4 OW;L;10.5c;63
 r1
 !s85 0
 31
-Z5 !s108 1744166470.000000
+Z5 !s108 1744203408.000000
 !s107 D:/files/fpga/CAN/hdl/can_level_bit.v|
 !s90 -reportprogress|300|-vlog01compat|-work|presynth|D:/files/fpga/CAN/hdl/can_level_bit.v|
 !s101 -O0
@@ -127,7 +127,7 @@ R1
 IiC_S>aFGneOWLl[mgmT4a3
 R2
 R0
-Z10 w1744166462
+Z10 w1744168451
 Z11 8D:/files/fpga/CAN/stimulus/tb_can_top.v
 Z12 FD:/files/fpga/CAN/stimulus/tb_can_top.v
 L0 350

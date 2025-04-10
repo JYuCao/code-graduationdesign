@@ -10,9 +10,9 @@
 module can_level_packet #(
     parameter [ 0:0] TX_RTR         = 1'b0,
     parameter [10:0] TX_ID          = 11'h456,
-    parameter [15:0] default_c_PTS  = 16'd34,
-    parameter [15:0] default_c_PBS1 = 16'd5,
-    parameter [15:0] default_c_PBS2 = 16'd10
+    parameter [15:0] default_c_PTS  = 16'd12,
+    parameter [15:0] default_c_PBS1 = 16'd2,
+    parameter [15:0] default_c_PBS2 = 16'd5
 ) (
     input  wire        rstn,      // set to 1 while working
     input  wire        clk,       // system clock
