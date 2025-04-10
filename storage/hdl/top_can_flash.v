@@ -26,21 +26,47 @@ module top_can_flash #(
     input  wire        rstn,       // Active low reset
     
     // CAN interface
-    input  wire        can_rx,     // CAN RX
-    output wire        can_tx,     // CAN TX
-    
+    input  wire        can_rx,
+    input  wire        can_tx_valid,
+    input  wire [31:0] can_tx_data,
+    output wire        can_tx,
+    output wire        can_tx_ready,
+    output reg         can_rx_valid,
+    output reg         can_rx_last,
+    output reg  [7:0]  can_rx_data,
+    output reg  [28:0] can_rx_id,
+    output reg         can_rx_ide,
+
     // Flash interface
-    input  wire        flash_q,    // Flash data input
-    output wire [15:0] flash_c,    // Flash clock
-    output wire        flash_d,    // Flash data output
-    output wire [15:0] flash_reset_n, // Flash reset
+    input  wire        flash_q,
+    input  wire [7:0]  flash_dout,
+    input  wire        flash_done,
+    input  wire        flash_error,
+    input  wire        flash_busy,
+    output reg         flash_cmd_erasedies,
+    output reg         flash_cmd_write,
+    output reg         flash_cmd_read,
+    output reg  [31:0] flash_addr,
+    output reg  [15:0] flash_length,
+    output reg  [7:0]  flash_din,
+    output wire        flash_read,
+    output wire        flash_write,
+    output wire [15:0] flash_c,
+    output wire        flash_d,
+    output wire [15:0] flash_reset_n,
     output wire [15:0] flash_s_n,
-    
+
     // EEPROM interface
-    input  wire        spi_miso,   // EEPROM data input
-    output wire        spi_mosi,   // EEPROM data output
-    output wire        spi_sck,    // EEPROM clock
-    output wire        spi_cs,     // EEPROM chip select
+    input  wire        spi_miso,
+    input  wire [7:0]  eeprom_data_out,
+    input  wire        eeprom_busy,
+    output reg  [7:0]  eeprom_data_in,
+    output reg  [15:0] eeprom_addr,
+    output reg         eeprom_read,
+    output reg         eeprom_write,
+    output wire        spi_mosi,
+    output wire        spi_sck,
+    output wire        spi_cs,
     
     // Status outputs
     output reg  [31:0] status_a,   // Status register A
@@ -73,7 +99,7 @@ localparam [31:0] WRITE_FLASH1  = 5'd10;
 localparam [31:0] WRITE_FLASH2  = 5'd26;
 
 // Registers
-reg [31:0]  state;
+reg [31:0] state;
 reg [3:0]  next_state;
 reg [31:0] frame_size;         // Size of each frame in bytes
 reg [31:0] write_address;      // Current flash write address
@@ -97,35 +123,6 @@ reg [31:0] frame_info;         // Frame information
 reg [7:0]  buffer_a [0:31];  // Buffer A - 32B
 reg [7:0]  buffer_b [0:31];  // Buffer B - 32B
 
-// EEPROM control signals
-reg        eeprom_read;
-reg        eeprom_write;
-reg [15:0] eeprom_addr;
-reg [7:0]  eeprom_data_in;
-wire [7:0] eeprom_data_out;
-wire       eeprom_busy;
-
-// Flash control signals
-reg        flash_cmd_write;
-reg        flash_cmd_read;
-reg        flash_cmd_erasedies;
-reg [31:0] flash_addr;
-reg [15:0] flash_length;
-reg [7:0]  flash_din;
-wire [7:0] flash_dout;
-wire       flash_read;
-wire       flash_write;
-wire       flash_done;
-wire       flash_error;
-wire       flash_busy;
-
-// CAN interface signals
-wire       can_rx_valid;
-wire       can_rx_last;
-wire [7:0] can_rx_data;
-wire [28:0] can_rx_id;
-wire       can_rx_ide;
-
 // Counters
 reg [31:0] byte_counter;       // Counter for bytes in current frame
 reg [31:0] eeprom_read_counter; // Counter for EEPROM read operations
@@ -139,70 +136,6 @@ reg [31:0] last_addr;       // last address be read
 reg [1:0]  eeprom_byte_counter;    // Byte counter for reading address bytes
 reg [31:0] eeprom_addr_bytes;  // Temporary storage for address bytes
 reg [10:0] eeprom_index;
-
-// Instantiate EEPROM controller
-eeprom_b eeprom_ctrl (
-    .clk(clk),
-    .reset(~rstn),
-    .eeprom_q(spi_miso),
-    .eeprom_d(spi_mosi),
-    .eeprom_c(spi_sck),
-    .eeprom_s_n(spi_cs),
-    .din(eeprom_data_in),
-    .dout(eeprom_data_out),
-    .addr(eeprom_addr),
-    .cmd_read(eeprom_read),
-    .cmd_write(eeprom_write),
-    .busy(eeprom_busy)
-);
-
-// Instantiate Flash controller
-flash_c flash_ctrl (
-    .clk(clk),
-    .reset(~rstn),
-    .cmd_erasedies(flash_cmd_erasedies),
-    .cmd_write(flash_cmd_write),
-    .cmd_read(flash_cmd_read),
-    .addr(flash_addr),
-    .length(flash_length),
-    .din(flash_din),
-    .dout(flash_dout),
-    .read(flash_read),
-    .write(flash_write),
-    .done(flash_done),
-    .error(flash_error),
-    .flash_q(flash_q),
-    .flash_c(flash_c),
-    .flash_d(flash_d),
-    .flash_reset_n(flash_reset_n),
-    .busy(flash_busy),
-    .flash_s_n(flash_s_n)
-);
-
-// Instantiate CAN controller
-can_top #(
-    .LOCAL_ID(LOCAL_ID),
-    .RX_ID_SHORT_FILTER(RX_ID_SHORT_FILTER),
-    .RX_ID_SHORT_MASK(RX_ID_SHORT_MASK),
-    .RX_ID_LONG_FILTER(RX_ID_LONG_FILTER),
-    .RX_ID_LONG_MASK(RX_ID_LONG_MASK),
-    .default_c_PTS(default_c_PTS),
-    .default_c_PBS1(default_c_PBS1),
-    .default_c_PBS2(default_c_PBS2)
-) can_ctrl (
-    .rstn(rstn),
-    .clk(clk),
-    .can_rx(can_rx),
-    .can_tx(can_tx),
-    .tx_valid(1'b0),           // We're only receiving, not transmitting
-    .tx_ready(),
-    .tx_data(32'h0),
-    .rx_valid(can_rx_valid),
-    .rx_last(can_rx_last),
-    .rx_data(can_rx_data),
-    .rx_id(can_rx_id),
-    .rx_ide(can_rx_ide)
-);
 
 // Initialize status registers
 initial begin
@@ -245,20 +178,6 @@ always @(posedge clk or negedge rstn) begin
         frame_info <= 32'h0;
         expected_data_size <= 32'd12;
         received_data_size <= 32'h0;
-        
-        // Reset EEPROM control signals
-        eeprom_read <= 1'b0;
-        eeprom_write <= 1'b0;
-        eeprom_addr <= 16'h0;
-        eeprom_data_in <= 8'h0;
-        
-        // Reset Flash control signals
-        flash_cmd_write <= 1'b0;
-        flash_cmd_read <= 1'b0;
-        flash_cmd_erasedies <= 1'b0;
-        flash_addr <= 32'h0;
-        flash_length <= 16'h0;
-        flash_din <= 8'h0;
 
         eeprom_byte_counter <= 2'h0;
         eeprom_addr_bytes <= 32'h0;

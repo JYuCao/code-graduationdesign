@@ -1,30 +1,69 @@
 @N|Running in 64-bit mode
 @N|Running in 64-bit mode
-@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_a.v":9:7:9:14|Synthesizing module eeprom_a in library work.
-@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_b.v":18:7:18:14|Synthesizing module eeprom_b in library work.
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\can_level_bit.v":10:7:10:19|Synthesizing module can_level_bit in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\can_level_packet.v":10:7:10:22|Synthesizing module can_level_packet in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\can_top.v":11:7:11:13|Synthesizing module can_top in library work.
 @N: CL134 :"D:\files\fpga\storage\hdl\can_top.v":98:0:98:5|Found RAM buffer, depth=1024, width=32
-@N: CG364 :"D:\files\fpga\storage\hdl\top_can_flash.v":10:7:10:19|Synthesizing module top_can_flash in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\uart_rx.v":2:7:2:13|Synthesizing module uart_rx in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\uart_tx.v":2:7:2:13|Synthesizing module uart_tx in library work.
 @N: CG179 :"D:\files\fpga\storage\hdl\uart_tx.v":51:22:51:27|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_a.v":9:7:9:14|Synthesizing module eeprom_a in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_b.v":18:7:18:14|Synthesizing module eeprom_b in library work.
 @N: CG364 :"D:\files\fpga\storage\hdl\top_cmd_process.v":1:7:1:21|Synthesizing module top_cmd_process in library work.
+@N: CG364 :"D:\files\fpga\storage\hdl\top_can_flash.v":10:7:10:19|Synthesizing module top_can_flash in library work.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_erasedies is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_read is always 0.
 @N: CG364 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Synthesizing module top_storage in library work.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[0] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[1] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[2] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[3] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[4] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[5] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[6] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[7] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[0] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[1] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[2] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[3] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[4] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[5] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[6] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[7] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[8] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[9] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[10] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[11] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[12] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[13] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[14] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[15] is always 0.
+@N: CL201 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Trying to extract state machine for register state.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_write is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit eeprom_write is always 0.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":29:23:29:28|Input can_rx is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":30:23:30:34|Input can_tx_valid is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":31:23:31:33|Input can_tx_data is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":41:23:41:29|Input flash_q is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":42:23:42:32|Input flash_dout is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":43:23:43:32|Input flash_done is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":44:23:44:33|Input flash_error is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":60:23:60:30|Input spi_miso is unused.
 @N: CL201 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Trying to extract state machine for register state.
-@N: CL201 :"D:\files\fpga\storage\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
-@N: CL201 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Trying to extract state machine for register state.
-@N: CL201 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
-@N: CL201 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":6:24:6:25|Input rx is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":10:24:10:30|Input tx_busy is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":18:24:18:30|Input flash_q is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":22:24:22:33|Input flash_busy is unused.
+@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_b.v":98:0:98:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_a.v":41:0:41:5|Trying to extract state machine for register state.
 @N: CL201 :"D:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
 @N: CL201 :"D:\files\fpga\storage\hdl\flash_a.v":66:0:66:5|Trying to extract state machine for register state.
 @N: CL201 :"D:\files\fpga\storage\hdl\flash_c.v":89:4:89:9|Trying to extract state machine for register state.
-@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Trying to extract state machine for register state.
-@N: CL159 :"D:\files\fpga\storage\hdl\eeprom_b.v":25:20:25:25|Input length is unused.
-@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_a.v":41:0:41:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
 @N|Running in 64-bit mode
 

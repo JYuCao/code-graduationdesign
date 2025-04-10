@@ -1,2 +1,2 @@
-@E: CS168 :"D:\files\fpga\storage\hdl\flash_c.v":80:22:80:22|Port error does not exist
+@E: CS168 :"D:\files\fpga\storage\hdl\top_storage.v":150:14:150:14|Port write does not exist
 

@@ -12,9 +12,9 @@ add_file -verilog "D:/files/fpga/storage/hdl/flash_a.v"
 add_file -verilog "D:/files/fpga/storage/hdl/flash_b.v"
 add_file -verilog "D:/files/fpga/storage/hdl/flash_c.v"
 add_file -verilog "D:/files/fpga/storage/hdl/top_can_flash.v"
+add_file -verilog "D:/files/fpga/storage/hdl/top_cmd_process.v"
 add_file -verilog "D:/files/fpga/storage/hdl/uart_rx.v"
 add_file -verilog "D:/files/fpga/storage/hdl/uart_tx.v"
-add_file -verilog "D:/files/fpga/storage/hdl/top_cmd_process.v"
 add_file -verilog "D:/files/fpga/storage/hdl/top_storage.v"
 
 

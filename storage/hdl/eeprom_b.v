@@ -22,7 +22,6 @@ module eeprom_b(
 	input  wire        cmd_write,
 	input  wire        cmd_read,
 	input  wire [15:0] addr,      // NV25640有8K字节，使用13位地址即可
-	input  wire [15:0] length,
 	input  wire [7:0]  din,
 	output reg  [7:0]  dout,
 	output reg         busy,

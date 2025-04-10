@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\jycao\Desktop\1\code-graduationdesign\storage"
+KEY ProjectLocation "D:\files\fpga\storage"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -43,103 +43,103 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\designer\impl1\flash_a.ide_des,ide_des"
 STATE="utd"
-TIME="1743989144"
+TIME="1743832754"
 SIZE="180"
 ENDFILE
 VALUE "<project>\designer\impl1\top_storage.ide_des,ide_des"
 STATE="utd"
-TIME="1743989144"
+TIME="1743836741"
 SIZE="184"
 ENDFILE
 VALUE "<project>\hdl\can_level_bit.v,hdl"
 STATE="utd"
-TIME="1743989144"
-SIZE="4061"
+TIME="1744168585"
+SIZE="4060"
 ENDFILE
 VALUE "<project>\hdl\can_level_packet.v,hdl"
 STATE="utd"
-TIME="1743989144"
-SIZE="13213"
+TIME="1744168605"
+SIZE="13212"
 ENDFILE
 VALUE "<project>\hdl\can_top.v,hdl"
 STATE="utd"
-TIME="1743989144"
-SIZE="9224"
+TIME="1744168615"
+SIZE="9223"
 ENDFILE
 VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744011393"
 SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744179299"
+TIME="1744262158"
 SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1737350643"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1744106002"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1743906544"
 SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744179299"
-SIZE="22944"
+TIME="1744261325"
+SIZE="21596"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1743916535"
 SIZE="25535"
 ENDFILE
 VALUE "<project>\hdl\top_storage.v,hdl"
 STATE="utd"
-TIME="1743989144"
-SIZE="3336"
+TIME="1743917224"
+SIZE="3239"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1741684656"
 SIZE="3337"
 ENDFILE
 VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
-TIME="1743989144"
+TIME="1742554188"
 SIZE="3304"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1743989144"
+TIME="1744018205"
 SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.edn,syn_edn"
 STATE="utd"
-TIME="1744179299"
+TIME="1744018491"
 SIZE="9081198"
 ENDFILE
 VALUE "<project>\synthesis\top_storage.so,so"
 STATE="utd"
-TIME="1743989144"
+TIME="1744018491"
 SIZE="213"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1743989144"
+TIME="1744018491"
 SIZE="400"
 ENDFILE
 VALUE "<project>\synthesis\top_storage_syn.prj,prj"
 STATE="utd"
-TIME="1744179299"
-SIZE="2400"
+TIME="1744200237"
+SIZE="2862"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -292,10 +292,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Synthesize:top_storage.areasrr
 StartPage;StartPage;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "can_level_bit::work","hdl\can_level_bit.v","FALSE","FALSE"

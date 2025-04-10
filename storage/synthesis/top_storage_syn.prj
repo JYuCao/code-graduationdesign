@@ -1,23 +1,23 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-2
-#--  Project file C:\Users\jycao\Desktop\1\code-graduationdesign\storage\synthesis\top_storage_syn.prj
-#--  Written on Mon Apr 07 17:34:52 2025
+#--  Project file D:\files\fpga\storage\synthesis\top_storage_syn.prj
+#--  Written on Thu Apr 10 22:00:11 2025
 
 
 #project files
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/can_level_bit.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/can_level_packet.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/can_top.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/eeprom_a.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/eeprom_b.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/flash_a.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/flash_b.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/flash_c.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/top_can_flash.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/uart_rx.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/uart_tx.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/top_cmd_process.v"
-add_file -verilog "C:/Users/jycao/Desktop/1/code-graduationdesign/storage/hdl/top_storage.v"
+add_file -verilog "D:/files/fpga/storage/hdl/can_level_bit.v"
+add_file -verilog "D:/files/fpga/storage/hdl/can_level_packet.v"
+add_file -verilog "D:/files/fpga/storage/hdl/can_top.v"
+add_file -verilog "D:/files/fpga/storage/hdl/eeprom_a.v"
+add_file -verilog "D:/files/fpga/storage/hdl/eeprom_b.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_a.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_b.v"
+add_file -verilog "D:/files/fpga/storage/hdl/flash_c.v"
+add_file -verilog "D:/files/fpga/storage/hdl/top_can_flash.v"
+add_file -verilog "D:/files/fpga/storage/hdl/top_cmd_process.v"
+add_file -verilog "D:/files/fpga/storage/hdl/uart_rx.v"
+add_file -verilog "D:/files/fpga/storage/hdl/uart_tx.v"
+add_file -verilog "D:/files/fpga/storage/hdl/top_storage.v"
 
 
 

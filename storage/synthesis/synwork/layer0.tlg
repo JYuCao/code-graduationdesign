@@ -1,29 +1,16 @@
 Selecting top level module top_storage
-@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_a.v":9:7:9:14|Synthesizing module eeprom_a in library work.
-
-@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_b.v":18:7:18:14|Synthesizing module eeprom_b in library work.
-
-@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register done. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register read. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Pruning unused register write. Make sure that there are no unused intermediate registers.
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
-
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
-
-@N: CG364 :"D:\files\fpga\storage\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
-
 @N: CG364 :"D:\files\fpga\storage\hdl\can_level_bit.v":10:7:10:19|Synthesizing module can_level_bit in library work.
 
-	default_c_PTS=16'b0000000000100010
-	default_c_PBS1=16'b0000000000000101
-	default_c_PBS2=16'b0000000000001010
-	default_c_PTS_e=17'b00000000000100010
-	default_c_PBS1_e=17'b00000000000000101
-	default_c_PBS2_e=17'b00000000000001010
+	default_c_PTS=16'b0000000000001100
+	default_c_PBS1=16'b0000000000000010
+	default_c_PBS2=16'b0000000000000101
+	default_c_PTS_e=17'b00000000000001100
+	default_c_PBS1_e=17'b00000000000000010
+	default_c_PBS2_e=17'b00000000000000101
 	STAT_PTS=2'b00
 	STAT_PBS1=2'b01
 	STAT_PBS2=2'b10
-   Generated name = can_level_bit_34_5_10_34_5_10_0_1_2
+   Generated name = can_level_bit_12_2_5_12_2_5_0_1_2
 
 @W: CG532 :"D:\files\fpga\storage\hdl\can_level_bit.v":27:0:27:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @W: CG532 :"D:\files\fpga\storage\hdl\can_level_bit.v":28:0:28:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
@@ -32,9 +19,9 @@ Selecting top level module top_storage
 
 	TX_RTR=1'b0
 	TX_ID=11'b10001010110
-	default_c_PTS=16'b0000000000100010
-	default_c_PBS1=16'b0000000000000101
-	default_c_PBS2=16'b0000000000001010
+	default_c_PTS=16'b0000000000001100
+	default_c_PBS1=16'b0000000000000010
+	default_c_PBS2=16'b0000000000000101
 	INIT=4'b0000
 	IDLE=4'b0001
 	TX_ID_MSB=4'b0010
@@ -62,12 +49,12 @@ Selecting top level module top_storage
 	RX_ID_SHORT_MASK=11'b11111111111
 	RX_ID_LONG_FILTER=29'b10010001101000101011001111000
 	RX_ID_LONG_MASK=29'b11111111111111111111111111111
-	default_c_PTS=16'b0000000000100010
-	default_c_PBS1=16'b0000000000000101
-	default_c_PBS2=16'b0000000000001010
+	default_c_PTS=16'b0000000000001100
+	default_c_PBS1=16'b0000000000000010
+	default_c_PBS2=16'b0000000000000101
 	DSIZE=32'b00000000000000000000000000100000
 	ASIZE=32'b00000000000000000000000000001010
-   Generated name = can_top_1110_291_2047_305419896_536870911_34_5_10_32s_10s_Z2
+   Generated name = can_top_1110_291_2047_305419896_536870911_12_2_5_32s_10s_Z2
 
 @W: CG532 :"D:\files\fpga\storage\hdl\can_top.v":48:0:48:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
 @N: CL134 :"D:\files\fpga\storage\hdl\can_top.v":98:0:98:5|Found RAM buffer, depth=1024, width=32
@@ -75,101 +62,37 @@ Selecting top level module top_storage
 @W: CL190 :"D:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Optimizing register bit rx_id[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL260 :"D:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Pruning register bit 7 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @W: CL260 :"D:\files\fpga\storage\hdl\can_top.v":162:0:162:5|Pruning register bit 2 of rx_id[28:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CG364 :"D:\files\fpga\storage\hdl\top_can_flash.v":10:7:10:19|Synthesizing module top_can_flash in library work.
-
-@W: CG532 :"D:\files\fpga\storage\hdl\top_can_flash.v":215:0:215:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
-@W: CG781 :"D:\files\fpga\storage\hdl\top_can_flash.v":151:9:151:19|Input length on instance eeprom_ctrl is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
-@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":84:11:84:20|Object next_state is declared but not assigned. Either assign a value or remove the declaration.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register valid_frame. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register header_state[1:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register footer_state[1:0]. Make sure that there are no unused intermediate registers.
-@W: CL271 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused bits 31 to 24 of header_buffer[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL271 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused bits 31 to 24 of footer_buffer[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL271 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused bits 31 to 24 of frame_info[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal status_b[31:20]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal status_a[31:17]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal status_a[15:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal last_addr[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@W: CL207 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|All reachable assignments to flash_cmd_read assign 0, register removed by optimization.
-@W: CL207 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|All reachable assignments to flash_cmd_erasedies assign 0, register removed by optimization.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_31_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_30_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_29_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_28_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_27_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_26_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_25_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_24_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_23_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_22_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_21_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_20_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_19_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_18_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_17_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_16_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_15_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_14_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_13_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_12_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_11_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_10_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_9_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_8_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_7_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_6_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_5_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_4_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_3_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_2_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_1_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_b_0_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_31_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_30_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_29_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_28_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_27_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_26_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_25_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_24_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_23_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_22_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_21_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_20_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_19_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_18_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_17_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_16_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_15_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_14_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_13_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_12_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_11_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_10_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_9_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_8_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_7_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_6_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_5_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_4_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_3_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_2_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_1_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Feedback mux created for signal buffer_a_0_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|All reachable assignments to status_a[31:17] assign 0, register removed by optimization
-@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|All reachable assignments to status_a[15:0] assign 0, register removed by optimization
-@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|All reachable assignments to status_b[31:20] assign 0, register removed by optimization
 @N: CG364 :"D:\files\fpga\storage\hdl\uart_rx.v":2:7:2:13|Synthesizing module uart_rx in library work.
 
 @N: CG364 :"D:\files\fpga\storage\hdl\uart_tx.v":2:7:2:13|Synthesizing module uart_tx in library work.
 
 @N: CG179 :"D:\files\fpga\storage\hdl\uart_tx.v":51:22:51:27|Removing redundant assignment.
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_c.v":3:7:3:13|Synthesizing module flash_c in library work.
+
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_a.v":34:7:34:13|Synthesizing module flash_a in library work.
+
+@N: CG364 :"D:\files\fpga\storage\hdl\flash_b.v":4:7:4:13|Synthesizing module flash_b in library work.
+
+@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_a.v":9:7:9:14|Synthesizing module eeprom_a in library work.
+
+@N: CG364 :"D:\files\fpga\storage\hdl\eeprom_b.v":18:7:18:14|Synthesizing module eeprom_b in library work.
+
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":98:0:98:5|Pruning unused register done. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":98:0:98:5|Pruning unused register read. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\eeprom_b.v":98:0:98:5|Pruning unused register write. Make sure that there are no unused intermediate registers.
 @N: CG364 :"D:\files\fpga\storage\hdl\top_cmd_process.v":1:7:1:21|Synthesizing module top_cmd_process in library work.
 
 @W: CG532 :"D:\files\fpga\storage\hdl\top_cmd_process.v":125:4:125:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
-@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":31:8:31:16|Object cmd_write is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":34:15:34:26|Object flash_length is declared but not assigned. Either assign a value or remove the declaration.
-@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":35:14:35:22|Object flash_din is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":15:24:15:25|Removing wire tx, as there is no assignment to it.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":24:24:24:38|Object flash_cmd_write is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":27:24:27:35|Object flash_length is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":28:24:28:32|Object flash_din is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":29:24:29:33|Removing wire flash_read, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":30:24:30:34|Removing wire flash_write, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":31:24:31:30|Removing wire flash_c, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":32:24:32:30|Removing wire flash_d, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":33:24:33:32|Removing wire flash_s_n, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_cmd_process.v":34:24:34:36|Removing wire flash_reset_n, as there is no assignment to it.
 @W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":124:14:124:23|Object crc8_table_0_ is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":124:14:124:23|Object crc8_table_1_ is declared but not assigned. Either assign a value or remove the declaration.
 @W: CG133 :"D:\files\fpga\storage\hdl\top_cmd_process.v":124:14:124:23|Object crc8_table_2_ is declared but not assigned. Either assign a value or remove the declaration.
@@ -430,6 +353,8 @@ Selecting top level module top_storage
 @W: CL169 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Pruning unused register flash_error_mask[15:0]. Make sure that there are no unused intermediate registers.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal frame_read_cnt[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal flash_erase_mask[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal flash_cmd_read. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal flash_cmd_erasedies. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal flash_addr[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal data_buffer[15][7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal data_buffer[14][7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
@@ -448,8 +373,6 @@ Selecting top level module top_storage
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal data_buffer[1][7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal data_buffer[0][7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal current_flash[3:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal cmd_read. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
-@A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal cmd_erasedies. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal byte_read_cnt[2:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal addr_check[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
 @A: CL282 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Feedback mux created for signal addr[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
@@ -462,338 +385,515 @@ Selecting top level module top_storage
 @W: CL190 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Optimizing register bit calc_crc8[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL190 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Optimizing register bit calc_crc8[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
 @W: CL169 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Pruning unused register calc_crc8[7:0]. Make sure that there are no unused intermediate registers.
+@N: CG364 :"D:\files\fpga\storage\hdl\top_can_flash.v":10:7:10:19|Synthesizing module top_can_flash in library work.
+
+	LOCAL_ID=11'b10001010110
+	RX_ID_SHORT_FILTER=11'b00100100011
+	RX_ID_SHORT_MASK=11'b11111111111
+	RX_ID_LONG_FILTER=29'b10010001101000101011001111000
+	RX_ID_LONG_MASK=29'b11111111111111111111111111111
+	default_c_PTS=16'b0000000000001100
+	default_c_PBS1=16'b0000000000000010
+	default_c_PBS2=16'b0000000000000101
+	L=11'b10000000000
+	M=32'b00000000000000000000000000011100
+	FRAME_HEADER=32'b00001111000011110000111100001111
+	FRAME_FOOTER=32'b11110000111100001111000011110000
+	INIT_STATE=32'b00000000000000000000000000000000
+	WAIT_CAN_STATE=32'b00000000000000000000000000000011
+	RECEIVE_HEADER=32'b00000000000000000000000000000100
+	RECEIVE_FOOTER=32'b00000000000000000000000000001000
+	WRITE_EEPROM=32'b00000000000000000000000000001001
+	UPDATE_ADDR=32'b00000000000000000000000000001011
+	READ_EEPROM_STATE1=32'b00000000000000000000000000001100
+	READ_EEPROM_STATE2=32'b00000000000000000000000000001101
+	READ_EEPROM_STATE3=32'b00000000000000000000000000001110
+	RECEIVE_FRAME_INFO=32'b00000000000000000000000000000101
+	RECEIVE_TIME=32'b00000000000000000000000000000110
+	RECEIVE_DATA=32'b00000000000000000000000000000111
+	WRITE_EEPROM1=32'b00000000000000000000000000010110
+	WRITE_EEPROM2=32'b00000000000000000000000000010111
+	WRITE_EEPROM3=32'b00000000000000000000000000011000
+	WRITE_EEPROM4=32'b00000000000000000000000000011001
+	WRITE_FLASH1=32'b00000000000000000000000000001010
+	WRITE_FLASH2=32'b00000000000000000000000000011010
+   Generated name = top_can_flash_Z3
+
+@W: CG532 :"D:\files\fpga\storage\hdl\top_can_flash.v":141:0:141:6|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":32:23:32:28|Removing wire can_tx, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":33:23:33:34|Removing wire can_tx_ready, as there is no assignment to it.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":34:23:34:34|Object can_rx_valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":35:23:35:33|Object can_rx_last is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":36:23:36:33|Object can_rx_data is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":37:23:37:31|Object can_rx_id is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":38:23:38:32|Object can_rx_ide is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":52:23:52:32|Removing wire flash_read, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":53:23:53:33|Removing wire flash_write, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":54:23:54:29|Removing wire flash_c, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":55:23:55:29|Removing wire flash_d, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":56:23:56:35|Removing wire flash_reset_n, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":57:23:57:31|Removing wire flash_s_n, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":67:23:67:30|Removing wire spi_mosi, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":68:23:68:29|Removing wire spi_sck, as there is no assignment to it.
+@W: CG360 :"D:\files\fpga\storage\hdl\top_can_flash.v":69:23:69:28|Removing wire spi_cs, as there is no assignment to it.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_can_flash.v":103:11:103:20|Object next_state is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register valid_frame. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register header_state[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register footer_state[1:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register frame_info[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL271 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused bits 31 to 24 of header_buffer[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register header_buffer[23:0]. Make sure that there are no unused intermediate registers.
+@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal status_b[31:20]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal status_a[31:17]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal status_a[15:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal last_addr[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_length[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_din[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_cmd_write. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_cmd_read. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_cmd_erasedies. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal flash_addr[31:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL113 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal expected_data_size[31:0]. To avoid the feedback mux, assign values explicitly under all conditions of conditional assignment statements.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal eeprom_write. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal eeprom_read. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal eeprom_data_in[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal eeprom_addr[15:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_31_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_30_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_29_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_28_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_27_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_26_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_25_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_24_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_23_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_22_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_21_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_20_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_19_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_18_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_17_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_16_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_15_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_14_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_13_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_12_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_11_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_10_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_9_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_8_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_7_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_6_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_5_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_4_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_3_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_2_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_1_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_b_0_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_31_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_30_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_29_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_28_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_27_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_26_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_25_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_24_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_23_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_22_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_21_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_20_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_19_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_18_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_17_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_16_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_15_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_14_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_13_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_12_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_11_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_10_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_9_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_8_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_7_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_6_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_5_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_4_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_3_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_2_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_1_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Feedback mux created for signal buffer_a_0_[7:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to expected_data_size[31:4] assign 0, register removed by optimization
+@W: CL251 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to expected_data_size[3:2] assign 1, register removed by optimization
+@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to expected_data_size[1:0] assign 0, register removed by optimization
+@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to status_a[31:17] assign 0, register removed by optimization
+@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to status_a[15:0] assign 0, register removed by optimization
+@W: CL250 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|All reachable assignments to status_b[31:20] assign 0, register removed by optimization
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_write_index[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit byte_counter[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_erasedies is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_read is always 0.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit footer_buffer[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit received_data_size[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register buffer_write_index[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register byte_counter[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register footer_buffer[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register received_data_size[31:0]. Make sure that there are no unused intermediate registers.
 @N: CG364 :"D:\files\fpga\storage\hdl\top_storage.v":1:7:1:17|Synthesizing module top_storage in library work.
 
-@W: CS263 :"D:\files\fpga\storage\hdl\top_storage.v":85:25:85:41|Port-width mismatch for port flash_c. The port definition is 16 bits, but the actual port connection bit width is 4. Adjust either the definition or the instantiation of this port.
-@W: CG360 :"D:\files\fpga\storage\hdl\top_storage.v":37:15:37:26|Removing wire flash_cs_cmd, as there is no assignment to it.
-@N: CL201 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Trying to extract state machine for register state.
-@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":31:8:31:16|*Unassigned bits of cmd_write are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":34:15:34:26|*Unassigned bits of flash_length[15:0] are referenced and tied to 0 -- simulation mismatch possible.
-@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":35:14:35:22|*Unassigned bits of flash_din[7:0] are referenced and tied to 0 -- simulation mismatch possible.
-@N: CL201 :"D:\files\fpga\storage\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
+@W: CG532 :"D:\files\fpga\storage\hdl\top_storage.v":259:4:259:10|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CS263 :"D:\files\fpga\storage\hdl\top_storage.v":138:14:138:23|Port-width mismatch for port addr. The port definition is 32 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\files\fpga\storage\hdl\top_storage.v":139:16:139:27|Port-width mismatch for port length. The port definition is 16 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"D:\files\fpga\storage\hdl\top_storage.v":140:13:140:21|Port-width mismatch for port din. The port definition is 8 bits, but the actual port connection bit width is 1. Adjust either the definition or the instantiation of this port.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_storage.v":28:16:28:27|Object can_tx_valid is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG133 :"D:\files\fpga\storage\hdl\top_storage.v":30:16:30:26|Object can_tx_data is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Optimizing register bit can_idle_cnt[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Optimizing register bit can_idle_cnt[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Optimizing register bit can_idle_cnt[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Optimizing register bit can_idle_cnt[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Optimizing register bit can_idle_cnt[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL279 :"D:\files\fpga\storage\hdl\top_storage.v":268:4:268:9|Pruning register bits 19 to 15 of can_idle_cnt[19:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_storage.v":28:16:28:27|*Unassigned bits of can_tx_valid are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_storage.v":30:16:30:26|*Unassigned bits of can_tx_data[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL305 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing flip-flop that can only be initialized externally (flip-flop that drives itself)
+@W: CL138 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Removing register 'buffer_a_size' because it is only assigned 0 or its original value.
+@W: CL138 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Removing register 'buffer_b_size' because it is only assigned 0 or its original value.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit buffer_b_ready to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[0] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[1] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[2] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[3] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[4] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[5] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[6] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_din[7] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[0] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[1] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[2] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[3] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[4] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[5] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[6] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[7] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[8] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[9] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[10] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[11] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[12] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[13] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[14] is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_length[15] is always 0.
+@W: CL260 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning register bit 10 of eeprom_index[10:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register buffer_b_ready. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register buffer_a_ready. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register flash_write_counter[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 5 reachable states with original encodings of:
-   000
-   001
-   010
-   011
-   100
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL260 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning register bit 10 of eeprom_index[10:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
-@N: CL201 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Trying to extract state machine for register state.
+   00000000000000000000000000000000
+   00000000000000000000000000000011
+   00000000000000000000000000001100
+   00000000000000000000000000001101
+   00000000000000000000000000001110
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit flash_cmd_write is always 0.
+@N: CL189 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Register bit eeprom_write is always 0.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit eeprom_index[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Optimizing register bit status_b[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register write_address[31:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register status_b[19:0]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register eeprom_index[9:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning register bits 7 to 1 of eeprom_data_in[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":157:0:157:5|Pruning unused register frame_size[31:0]. Make sure that there are no unused intermediate registers.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_can_flash.v":34:23:34:34|*Unassigned bits of can_rx_valid are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_can_flash.v":35:23:35:33|*Unassigned bits of can_rx_last are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_can_flash.v":36:23:36:33|*Unassigned bits of can_rx_data[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_can_flash.v":37:23:37:31|*Unassigned bits of can_rx_id[28:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_can_flash.v":38:23:38:32|*Unassigned bits of can_rx_ide are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":32:23:32:28|*Output can_tx has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":33:23:33:34|*Output can_tx_ready has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":52:23:52:32|*Output flash_read has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":53:23:53:33|*Output flash_write has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":54:23:54:29|*Output flash_c has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":55:23:55:29|*Output flash_d has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":56:23:56:35|*Output flash_reset_n has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":57:23:57:31|*Output flash_s_n has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":67:23:67:30|*Output spi_mosi has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":68:23:68:29|*Output spi_sck has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_can_flash.v":69:23:69:28|*Output spi_cs has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":29:23:29:28|Input can_rx is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":30:23:30:34|Input can_tx_valid is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":31:23:31:33|Input can_tx_data is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":41:23:41:29|Input flash_q is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":42:23:42:32|Input flash_dout is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":43:23:43:32|Input flash_done is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":44:23:44:33|Input flash_error is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_can_flash.v":60:23:60:30|Input spi_miso is unused.
+@N: CL201 :"D:\files\fpga\storage\hdl\top_cmd_process.v":212:4:212:9|Trying to extract state machine for register state.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":24:24:24:38|*Unassigned bits of flash_cmd_write are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":27:24:27:35|*Unassigned bits of flash_length[15:0] are referenced and tied to 0 -- simulation mismatch possible.
+@A: CL153 :"D:\files\fpga\storage\hdl\top_cmd_process.v":28:24:28:32|*Unassigned bits of flash_din[7:0] are referenced and tied to 0 -- simulation mismatch possible.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":15:24:15:25|*Output tx has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":29:24:29:33|*Output flash_read has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":30:24:30:34|*Output flash_write has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":31:24:31:30|*Output flash_c has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":32:24:32:30|*Output flash_d has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":33:24:33:32|*Output flash_s_n has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"D:\files\fpga\storage\hdl\top_cmd_process.v":34:24:34:36|*Output flash_reset_n has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":6:24:6:25|Input rx is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":10:24:10:30|Input tx_busy is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":18:24:18:30|Input flash_q is unused.
+@N: CL159 :"D:\files\fpga\storage\hdl\top_cmd_process.v":22:24:22:33|Input flash_busy is unused.
+@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_b.v":98:0:98:5|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 14 reachable states with original encodings of:
-   00000
-   00011
-   00101
-   00110
-   00111
-   01100
-   01101
-   01110
-   01111
-   10000
-   10001
-   10010
-   10011
-   10100
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_cmd_write to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit footer_buffer[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_size[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_size[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_addr[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_write to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_a_ready to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit buffer_b_ready to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit eeprom_index[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit flash_write_counter[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_b[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL190 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Optimizing register bit status_a[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register write_address[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_write_index[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_0_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_1_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_2_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_3_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_4_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_5_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_6_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_7_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_8_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_9_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_10_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_11_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_12_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_13_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_14_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_15_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_16_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_17_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_18_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_19_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_20_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_21_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_22_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_23_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_24_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_25_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_26_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_27_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_28_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_29_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_30_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_31_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_0_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_1_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_2_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_3_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_4_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_5_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_6_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_7_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_8_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_9_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_10_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_11_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_12_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_13_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_14_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_15_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_16_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_17_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_18_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_19_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_20_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_21_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_22_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_23_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_24_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_25_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_26_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_27_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_28_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_29_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_30_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_31_[7:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_select. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register flash_write_counter[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register status_b[19:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register eeprom_index[9:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register footer_buffer[23:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_size[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_size[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register flash_addr[31:0]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register status_a[16]. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register eeprom_write. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register flash_cmd_write. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_a_ready. Make sure that there are no unused intermediate registers.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register buffer_b_ready. Make sure that there are no unused intermediate registers.
-@W: CL279 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning register bits 7 to 1 of eeprom_data_in[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning register bits 7 to 1 of flash_din[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL279 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning register bits 15 to 1 of flash_length[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
-@W: CL169 :"D:\files\fpga\storage\hdl\top_can_flash.v":231:0:231:5|Pruning unused register frame_size[31:0]. Make sure that there are no unused intermediate registers.
-@N: CL201 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
-Extracted state machine for register stat
-State machine has 16 reachable states with original encodings of:
-   0000
-   0001
-   0010
-   0011
-   0100
-   0101
-   0110
-   0111
-   1000
-   1001
-   1010
-   1011
-   1100
-   1101
-   1110
-   1111
-@W: CL249 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Initial value is not supported on state machine stat
-@N: CL201 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
-Extracted state machine for register stat
-State machine has 3 reachable states with original encodings of:
-   00
-   01
-   10
-@W: CL249 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Initial value is not supported on state machine stat
+State machine has 23 reachable states with original encodings of:
+   00000000
+   00000001
+   00000010
+   00000011
+   00000100
+   00000101
+   00000110
+   00000111
+   00001000
+   00001001
+   00001010
+   00001101
+   00001110
+   00001111
+   00010000
+   00010001
+   00010010
+   00010011
+   00010100
+   00010101
+   00010110
+   00010111
+   00011000
+@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_a.v":41:0:41:5|Trying to extract state machine for register state.
+Extracted state machine for register state
+State machine has 7 reachable states with original encodings of:
+   00000000000000000000000000000000
+   00000000000000000000000000000001
+   00000000000000000000000000000010
+   00000000000000000000000000000011
+   00000000000000000000000000000100
+   00000000000000000000000000000101
+   00000000000000000000000000000110
 @N: CL201 :"D:\files\fpga\storage\hdl\flash_b.v":113:0:113:5|Trying to extract state machine for register state.
 Extracted state machine for register state
 State machine has 56 reachable states with original encodings of:
@@ -868,39 +968,38 @@ Extracted state machine for register state
 State machine has 2 reachable states with original encodings of:
    00
    01
-@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_b.v":99:0:99:5|Trying to extract state machine for register state.
+@N: CL201 :"D:\files\fpga\storage\hdl\uart_rx.v":88:1:88:6|Trying to extract state machine for register state.
 Extracted state machine for register state
-State machine has 22 reachable states with original encodings of:
-   00000000
-   00000001
-   00000010
-   00000011
-   00000100
-   00000101
-   00000110
-   00000111
-   00001000
-   00001001
-   00001010
-   00001101
-   00001110
-   00001111
-   00010000
-   00010001
-   00010010
-   00010011
-   00010100
-   00010101
-   00010110
-   00010111
-@N: CL159 :"D:\files\fpga\storage\hdl\eeprom_b.v":25:20:25:25|Input length is unused.
-@N: CL201 :"D:\files\fpga\storage\hdl\eeprom_a.v":41:0:41:5|Trying to extract state machine for register state.
-Extracted state machine for register state
-State machine has 7 reachable states with original encodings of:
-   00000000000000000000000000000000
-   00000000000000000000000000000001
-   00000000000000000000000000000010
-   00000000000000000000000000000011
-   00000000000000000000000000000100
-   00000000000000000000000000000101
-   00000000000000000000000000000110
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Trying to extract state machine for register stat.
+Extracted state machine for register stat
+State machine has 16 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
+   1100
+   1101
+   1110
+   1111
+@W: CL249 :"D:\files\fpga\storage\hdl\can_level_packet.v":142:0:142:5|Initial value is not supported on state machine stat
+@N: CL201 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Trying to extract state machine for register stat.
+Extracted state machine for register stat
+State machine has 3 reachable states with original encodings of:
+   00
+   01
+   10
+@W: CL249 :"D:\files\fpga\storage\hdl\can_level_bit.v":60:0:60:5|Initial value is not supported on state machine stat

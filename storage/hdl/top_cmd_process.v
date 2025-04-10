@@ -1,49 +1,49 @@
 module top_cmd_process(
-    input wire sys_clk,
-    input wire sys_rst_n,
-    input wire rx,
-    output wire tx,
-    output reg re,
-    output reg done,
-    output reg error,
-    
+    input  wire         sys_clk,
+    input  wire         sys_rst_n,
+
+    // UART interface
+    input  wire         rx,
+    input  wire [7:0]   rx_data,
+    input  wire         rx_done,
+    input  wire         tx_done,
+    input  wire         tx_busy,
+    output reg          re,
+    output reg  [2:0]   baud_set,
+    output reg          tx_start,
+    output reg  [7:0]   tx_data,
+    output wire         tx,
+
     // Flash interface
-    input wire flash_q,
-    output wire [15:0] flash_c,
-    output wire flash_d,
-    output wire [15:0] flash_s_n,
-    output wire [15:0] flash_reset_n
+    input  wire         flash_q,
+    input  wire [7:0]   flash_dout,
+    input  wire         flash_done,
+    input  wire         flash_error,
+    input  wire         flash_busy,
+    output reg          flash_cmd_erasedies,
+    output reg          flash_cmd_write,
+    output reg          flash_cmd_read,
+    output reg  [31:0]  flash_addr,
+    output reg  [15:0]  flash_length,
+    output reg  [7:0]   flash_din,
+    output wire         flash_read,
+    output wire         flash_write,
+    output wire [15:0]  flash_c,
+    output wire         flash_d,
+    output wire [15:0]  flash_s_n,
+    output wire [15:0]  flash_reset_n,
+
+    output reg          done,
+    output reg          error
 );
 
-    reg [2:0] baud_set;
-
-    wire [7:0] rx_data;
-    wire rx_done;
-    reg [7:0] tx_data;
-    reg tx_start;
-    wire tx_done;
-    wire tx_busy;
     reg [7:0] addr;
     reg [7:0] addr_check;
-    
-    // Flash control signals
-    reg cmd_erasedies;
-    reg cmd_write;
-    reg cmd_read;
-    reg [31:0] flash_addr;
-    reg [15:0] flash_length;
-    reg [7:0] flash_din;
-    wire [7:0] flash_dout;
-    wire flash_read;
-    wire flash_write;
-    wire flash_done;
-    wire flash_error;
-    wire flash_busy;
 
     // Command list
     localparam CMD_GET_FRAME_COUNT = 8'hA1;
     localparam CMD_ERASE_ALL = 8'hA2;
-    localparam CMD_READ_FLASH = 8'hA4;
+    localparam flash_cmd_read_FLASH = 8'hA4;
     localparam CMD_BAUD_SET = 8'hA9;
     localparam CMD_SET_READ_FRAMES = 8'hAA;
     localparam CMD_ECHO = 8'hFF;
@@ -314,7 +314,7 @@ module top_cmd_process(
                                 CMD_BAUD_SET: state <= STAT_BAUD_SET;
                                 CMD_ERASE_ALL: state <= ERASE_ALL_CHECK;
                                 CMD_SET_READ_FRAMES: state <= SET_READ_FRAMES_CHECK;
-                                CMD_READ_FLASH: state <= READ_FLASH_CHECK;
+                                flash_cmd_read_FLASH: state <= READ_FLASH_CHECK;
                                 default: state <= STAT_ERROR;
                             endcase
                         end
@@ -384,7 +384,7 @@ module top_cmd_process(
                 ERASE_ALL_START: begin
                     if (flash_erase_mask != 16'hFFFF) begin
                         flash_addr <= {current_flash, 28'h0000000};
-                        cmd_erasedies <= 1'b1;
+                        flash_cmd_erasedies <= 1'b1;
                         state <= ERASE_ALL_WAIT;
                     end else begin
                         state <= STAT_DONE;
@@ -392,7 +392,7 @@ module top_cmd_process(
                 end
                 
                 ERASE_ALL_WAIT: begin
-                    cmd_erasedies <= 1'b0;
+                    flash_cmd_erasedies <= 1'b0;
                     if(flash_done) begin
                         flash_erase_mask[current_flash] <= 1'b1;
 
@@ -455,12 +455,12 @@ module top_cmd_process(
                 end
 
                 READ_FLASH_START: begin
-                    cmd_read <= 1'b1;
+                    flash_cmd_read <= 1'b1;
                     state <= READ_FLASH_WAIT1;
                 end
 
                 READ_FLASH_WAIT1: begin
-                    cmd_read <= 1'b0;
+                    flash_cmd_read <= 1'b0;
                     if(flash_done) begin
                         if(flash_error) begin
                             state <= STAT_ERROR;
@@ -544,47 +544,5 @@ module top_cmd_process(
             endcase
         end
     end
-
-    uart_rx uart_rx_inst(
-        .sys_clk(sys_clk),
-        .sys_rst_n(sys_rst_n),
-        .baud_set(baud_set),
-        .rx(rx),
-        .data(rx_data),
-        .Rx_Done(rx_done)
-    );
-    
-    uart_tx uart_tx_inst(
-        .sys_clk(sys_clk),
-        .sys_rst_n(sys_rst_n),
-        .data(tx_data),
-        .send_en(tx_start),
-        .baud_set(baud_set),
-        .tx(tx),
-        .Tx_Done(tx_done),
-        .uart_state(tx_busy)
-    );
-
-    flash_c flash_ctrl(
-        .clk(sys_clk),
-        .reset(!sys_rst_n),
-        .cmd_erasedies(cmd_erasedies),
-        .cmd_write(cmd_write),
-        .cmd_read(cmd_read),
-        .addr(flash_addr),
-        .length(flash_length),
-        .din(flash_din),
-        .dout(flash_dout),
-        .read(flash_read),
-        .write(flash_write),
-        .done(flash_done),
-        .error(flash_error),
-        .flash_q(flash_q),
-        .flash_c(flash_c),
-        .flash_d(flash_d),
-        .busy(flash_busy),
-        .flash_s_n(flash_s_n),
-        .flash_reset_n(flash_reset_n)
-    );
 
 endmodule
