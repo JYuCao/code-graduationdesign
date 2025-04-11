@@ -1,0 +1,247 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_a.v 
+# -- Compiling module flash_a
+# 
+# Top level modules:
+# 	flash_a
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/flash_b.v 
+# -- Compiling module flash_b
+# 
+# Top level modules:
+# 	flash_b
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/flash_test/hdl/top.v 
+# -- Compiling module flash_cmd_process
+# 
+# Top level modules:
+# 	flash_cmd_process
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 23:26:29 on Apr 10,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/flash_test/stimulus" -vlog01compat -work presynth D:/files/fpga/flash_test/stimulus/tb_top.v 
+# -- Compiling module tb_flash_cmd_process
+# 
+# Top level modules:
+# 	tb_flash_cmd_process
+# End time: 23:26:29 on Apr 10,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_flash_cmd_process 
+# Start time: 23:26:29 on Apr 10,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_flash_cmd_process
+# Loading presynth.flash_cmd_process
+# Loading presynth.uart_rx
+# Loading presynth.uart_tx
+# Loading presynth.flash_b
+# Loading presynth.flash_a
+# Time=0 rx=1 tx=1 flash_s_n=x flash_c=x flash_d=x flash_q=0
+# Time=25000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+run -all
+# Time=200000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=252080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=260760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=269440000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=296800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=374920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=393600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=471720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=490400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=568520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=587200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=665320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=684000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=762120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=780800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=789480000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=798160000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=858920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1067600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1076280000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1084960000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1119680000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1128360000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1137040000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1164400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1242520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1261200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1339320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1358000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1436120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1454800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1532920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1551600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1629720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1648400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1657080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1665760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1726520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1745200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1753880000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1762560000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1771240000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1779920000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1788600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1797280000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1805960000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1814640000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1823320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2032000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2049360000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2058040000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2084080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2092760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2101440000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2128800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2206920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2225600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2303720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2322400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2400520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2419200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2497320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2516000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2594120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2612800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2638840000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2647520000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2690920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2749600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=1
+# Time=2759600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2769600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=1
+# Time=2779600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# ** Note: $finish    : D:/files/fpga/flash_test/stimulus/tb_top.v(144)
+#    Time: 2979600 ns  Iteration: 0  Instance: /tb_flash_cmd_process
+# 1
+# Break in Module tb_flash_cmd_process at D:/files/fpga/flash_test/stimulus/tb_top.v line 144
+add wave -position end sim:/tb_flash_cmd_process/flash_cmd_process_inst/*
+restart -f
+# Closing VCD file "flash_cmd_process.vcd"
+run -all
+# Time=0 rx=1 tx=1 flash_s_n=x flash_c=x flash_d=x flash_q=0
+# Time=25000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=200000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=252080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=260760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=269440000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=296800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=374920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=393600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=471720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=490400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=568520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=587200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=665320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=684000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=762120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=780800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=789480000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=798160000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=858920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1067600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1076280000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1084960000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1119680000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1128360000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1137040000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1164400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1242520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1261200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1339320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1358000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1436120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1454800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1532920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1551600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1629720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1648400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1657080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1665760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1726520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1745200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1753880000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1762560000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1771240000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1779920000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1788600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1797280000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1805960000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1814640000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=1823320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2032000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2049360000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2058040000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2084080000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2092760000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2101440000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2128800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2206920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2225600000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2303720000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2322400000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2400520000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2419200000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2497320000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2516000000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2594120000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2612800000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2638840000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2647520000 rx=0 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2690920000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2749600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=1
+# Time=2759600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# Time=2769600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=1
+# Time=2779600000 rx=1 tx=1 flash_s_n=1 flash_c=0 flash_d=0 flash_q=0
+# ** Note: $finish    : D:/files/fpga/flash_test/stimulus/tb_top.v(144)
+#    Time: 2979600 ns  Iteration: 0  Instance: /tb_flash_cmd_process
+# 1
+# Break in Module tb_flash_cmd_process at D:/files/fpga/flash_test/stimulus/tb_top.v line 144
+# End time: 23:27:03 on Apr 10,2025, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 0

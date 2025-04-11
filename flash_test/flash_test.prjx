@@ -51,60 +51,75 @@ STATE="utd"
 TIME="1742381604"
 SIZE="216"
 ENDFILE
+VALUE "<project>\hdl\cmd_process.v,hdl"
+STATE="utd"
+TIME="1744333309"
+SIZE="9406"
+ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
-TIME="1737350643"
+TIME="1744298301"
 SIZE="4083"
 ENDFILE
 VALUE "<project>\hdl\flash_b.v,hdl"
 STATE="utd"
-TIME="1744028623"
+TIME="1744298303"
 SIZE="10689"
 ENDFILE
 VALUE "<project>\hdl\flash_c.v,hdl"
 STATE="utd"
-TIME="1743906557"
+TIME="1744298306"
 SIZE="3669"
 ENDFILE
-VALUE "<project>\simulation\flash_b_wr_tb_presynth_simulation.log,log"
+VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
-TIME="1744028078"
-SIZE="2219"
+TIME="1741684656"
+SIZE="3337"
+ENDFILE
+VALUE "<project>\hdl\uart_tx.v,hdl"
+STATE="utd"
+TIME="1742554188"
+SIZE="3304"
+ENDFILE
+VALUE "<project>\simulation\flash_cmd_process.vcd,vcd"
+STATE="utd"
+TIME="1744298823"
+SIZE="3454147"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1744029543"
-SIZE="716"
+TIME="1744298786"
+SIZE="917"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_a_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744027318"
-SIZE="3326"
-ENDFILE
-VALUE "<project>\simulation\tb_flash_b_die_erase_presynth_simulation.log,log"
-STATE="utd"
-TIME="1744027966"
-SIZE="137891"
-ENDFILE
-VALUE "<project>\simulation\tb_flash_b_presynth_simulation.log,log"
-STATE="utd"
-TIME="1742904573"
-SIZE="5409"
+TIME="1744030015"
+SIZE="3432"
 ENDFILE
 VALUE "<project>\simulation\tb_flash_b_wr_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744029556"
-SIZE="1168"
+TIME="1744029934"
+SIZE="30765"
 ENDFILE
-VALUE "<project>\simulation\tb_flash_c_presynth_simulation.log,log"
+VALUE "<project>\simulation\tb_flash_cmd_process_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744030324"
-SIZE="2941"
+TIME="1744298824"
+SIZE="14860"
 ENDFILE
-VALUE "<project>\simulation\tf_presynth_simulation.log,log"
+VALUE "<project>\simulation\tb_top_presynth_simulation.log,log"
 STATE="utd"
-TIME="1737974177"
-SIZE="2611"
+TIME="1744295707"
+SIZE="3792"
+ENDFILE
+VALUE "<project>\simulation\top_test.vcd,vcd"
+STATE="utd"
+TIME="1744295706"
+SIZE="17931089"
+ENDFILE
+VALUE "<project>\stimulus\tb_cmd_process.v,tb_hdl"
+STATE="utd"
+TIME="1744333564"
+SIZE="4210"
 ENDFILE
 VALUE "<project>\stimulus\tb_flash_a.v,tb_hdl"
 STATE="utd"
@@ -261,7 +276,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_flash_c_presynth_simulation.log "
+PARAM=""
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -317,6 +332,11 @@ StartPage;StartPage;0
 ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
+LIST "cmd_process::work","hdl\cmd_process.v","FALSE","FALSE"
+SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
 LIST "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
 ENDLIST
 LIST "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
@@ -324,6 +344,13 @@ SUBBLOCK "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
 ENDLIST
 LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_cmd_process::work","stimulus\tb_cmd_process.v","FALSE","TRUE"
+SUBBLOCK "cmd_process::work","hdl\cmd_process.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_flash_a::work","stimulus\tb_flash_a.v","FALSE","TRUE"
 SUBBLOCK "flash_a::work","hdl\flash_a.v","FALSE","FALSE"
