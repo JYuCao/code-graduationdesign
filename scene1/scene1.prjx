@@ -68,7 +68,7 @@ SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744017833"
+TIME="1744262158"
 SIZE="6428"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
@@ -88,8 +88,8 @@ SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744247809"
-SIZE="21835"
+TIME="1744261325"
+SIZE="21596"
 ENDFILE
 VALUE "<project>\simulation\dump.vcd,vcd"
 STATE="utd"
@@ -118,8 +118,8 @@ SIZE="13280"
 ENDFILE
 VALUE "<project>\stimulus\tb_top_can_flash.v,tb_hdl"
 STATE="utd"
-TIME="1744209380"
-SIZE="6316"
+TIME="1744262321"
+SIZE="6314"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -205,7 +205,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=""
+PARAM=" -l tb_top_can_flash_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -270,8 +270,8 @@ SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
 LIST "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
-SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
+SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_can_phy::work","","FALSE","FALSE"
 ENDLIST

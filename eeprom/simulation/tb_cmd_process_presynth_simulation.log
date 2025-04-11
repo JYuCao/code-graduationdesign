@@ -1,0 +1,230 @@
+# Reading C:/Microsemi/Libero_SoC_v11.8/Modelsim/tcl/vsim/pref.tcl
+# do run.do
+# INFO: Simulation library presynth already exists
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap presynth presynth 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vmap 10.5c Lib Mapping Utility 2016.07 Jul 21 2016
+# vmap proasic3 C:/Microsemi/Libero_SoC_v11.8/Designer/lib/modelsim/precompiled/vlog/proasic3 
+# Modifying modelsim.ini
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/eeprom_a.v 
+# -- Compiling module eeprom_a
+# 
+# Top level modules:
+# 	eeprom_a
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/eeprom_b.v 
+# -- Compiling module eeprom_b
+# 
+# Top level modules:
+# 	eeprom_b
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 -vlog01compat -work presynth D:/files/fpga/eeprom/hdl/cmd_process.v 
+# -- Compiling module cmd_process
+# 
+# Top level modules:
+# 	cmd_process
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim Microsemi vlog 10.5c Compiler 2016.07 Jul 21 2016
+# Start time: 11:24:11 on Apr 11,2025
+# vlog -reportprogress 300 "+incdir+D:/files/fpga/eeprom/stimulus" -vlog01compat -work presynth D:/files/fpga/eeprom/stimulus/tb_cmd_process.v 
+# -- Compiling module tb_cmd_process
+# 
+# Top level modules:
+# 	tb_cmd_process
+# End time: 11:24:11 on Apr 11,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L proasic3 -L presynth -t 1ps presynth.tb_cmd_process 
+# Start time: 11:24:11 on Apr 11,2025
+# //  ModelSim Microsemi 10.5c Jul 21 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim Microsemi and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading presynth.tb_cmd_process
+# Loading presynth.cmd_process
+# Loading presynth.uart_rx
+# Loading presynth.uart_tx
+# Loading presynth.eeprom_b
+# Loading presynth.eeprom_a
+# Time=0 cmd=00 done=0 error=0 data_length=x eeprom_s_n=x eeprom_c=x eeprom_d=x eeprom_q=x
+# Time=25000 cmd=00 done=0 error=0 data_length=x eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=x
+add wave -position end sim:/tb_cmd_process/cmd_process_inst/*
+run -all
+# Time=104160000 cmd=00 done=0 error=0 data_length=x eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=4166475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=6145525000 cmd=a0 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12082725000 cmd=a0 done=1 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12082775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12082825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12082925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12082975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12083025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12083075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12083125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12083175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12083225000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12083275000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12083325000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12083375000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12083425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12083475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12083525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12083575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12083625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12083675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084325000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12084925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12084975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12085025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12085075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12085725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12085775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12085925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12085975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12086025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12086075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12086125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12086175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12086425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12086475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12086525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12086575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12086625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12086675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12086725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12086775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12086825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12086875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12086925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12086975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12087025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12087075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12087125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12087175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12087425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12087475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12087525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12087575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12087625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12087675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12087725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12087775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12087825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12087875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12087925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12087975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12088025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12088075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12088125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12088175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12088825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12088875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12088925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12088975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12089025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12089075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12089125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12089175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12089225000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12089275000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12089325000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12089375000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12089425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12089475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=0 eeprom_q=0
+# Time=12089525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=0 eeprom_q=0
+# Time=12089575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12089625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12089675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12089925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12089975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090125000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090225000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090275000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090375000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090425000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090575000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12090875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12090975000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12091025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12091075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12091625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12091725000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12091775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12091875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12091925000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092025000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092075000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092175000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092225000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092325000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092375000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092475000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092525000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092625000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092675000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092775000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=1 eeprom_d=1 eeprom_q=0
+# Time=12092825000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=0 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# Time=12092875000 cmd=00 done=0 error=0 data_length=3 eeprom_s_n=1 eeprom_c=0 eeprom_d=1 eeprom_q=0
+# End time: 12:15:42 on Apr 11,2025, Elapsed time: 0:51:31
+# Errors: 0, Warnings: 0

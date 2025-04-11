@@ -66,6 +66,11 @@ STATE="utd"
 TIME="1741071677"
 SIZE="182"
 ENDFILE
+VALUE "<project>\hdl\cmd_process.v,hdl"
+STATE="utd"
+TIME="1744337198"
+SIZE="8620"
+ENDFILE
 VALUE "<project>\hdl\eeprom_a.v,hdl"
 STATE="utd"
 TIME="1744011393"
@@ -73,8 +78,18 @@ SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744017805"
+TIME="1744262158"
 SIZE="6428"
+ENDFILE
+VALUE "<project>\hdl\uart_rx.v,hdl"
+STATE="utd"
+TIME="1741684656"
+SIZE="3337"
+ENDFILE
+VALUE "<project>\hdl\uart_tx.v,hdl"
+STATE="utd"
+TIME="1742554188"
+SIZE="3304"
 ENDFILE
 VALUE "<project>\simulation\eeprom_test.vcd,vcd"
 STATE="utd"
@@ -88,7 +103,7 @@ SIZE="9280"
 ENDFILE
 VALUE "<project>\simulation\run.do,do"
 STATE="utd"
-TIME="1744013386"
+TIME="1744016141"
 SIZE="702"
 ENDFILE
 VALUE "<project>\simulation\tb_eeprom.vcd,vcd"
@@ -98,13 +113,18 @@ SIZE="13026"
 ENDFILE
 VALUE "<project>\simulation\tb_eeprom_presynth_simulation.log,log"
 STATE="utd"
-TIME="1744014074"
-SIZE="2954"
+TIME="1744017892"
+SIZE="3290"
 ENDFILE
 VALUE "<project>\simulation\tb_nv25640_controller_presynth_simulation.log,log"
 STATE="utd"
 TIME="1744004073"
 SIZE="11885"
+ENDFILE
+VALUE "<project>\stimulus\tb_cmd_process.v,tb_hdl"
+STATE="utd"
+TIME="1744337955"
+SIZE="3826"
 ENDFILE
 VALUE "<project>\stimulus\tb_eeprom.v,tb_hdl"
 STATE="utd"
@@ -195,7 +215,7 @@ NAME="ModelSim ME"
 FUNCTION="Simulation"
 TOOL="ModelSim"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\Modelsim\win32acoem\modelsim.exe"
-PARAM=" -l tb_eeprom_presynth_simulation.log "
+PARAM=" -l tb_cmd_process_presynth_simulation.log "
 BATCH=0
 LICENSE=""
 IS32BIT="1"
@@ -236,14 +256,25 @@ ORIENTATION;HORIZONTAL
 Reports;Reports;0
 ReportsCurrentItem;Project Summary:eeprom.log
 StartPage;StartPage;0
-HDL;stimulus\tb_eeprom.v;0
-ACTIVEVIEW;stimulus\tb_eeprom.v
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
+LIST "cmd_process::work","hdl\cmd_process.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
+ENDLIST
 LIST "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
 ENDLIST
 LIST "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "eeprom_a::work","hdl\eeprom_a.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+ENDLIST
+LIST "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
+ENDLIST
+LIST "tb_cmd_process::work","stimulus\tb_cmd_process.v","FALSE","TRUE"
+SUBBLOCK "cmd_process::work","hdl\cmd_process.v","FALSE","FALSE"
 ENDLIST
 LIST "tb_eeprom::work","stimulus\tb_eeprom.v","FALSE","TRUE"
 SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"

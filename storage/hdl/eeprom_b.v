@@ -109,7 +109,6 @@ always @(posedge clk) begin
 		a_write <= 1'b0;
 		a_read  <= 1'b0;
 		a_deselect <= 1'b0;
-        busy <= 1'b0;
 
 		case (state)
 			s_idle: begin

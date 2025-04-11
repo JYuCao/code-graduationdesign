@@ -73,8 +73,8 @@ SIZE="2734"
 ENDFILE
 VALUE "<project>\hdl\eeprom_b.v,hdl"
 STATE="utd"
-TIME="1744262158"
-SIZE="6428"
+TIME="1744289110"
+SIZE="6399"
 ENDFILE
 VALUE "<project>\hdl\flash_a.v,hdl"
 STATE="utd"
@@ -93,18 +93,18 @@ SIZE="3669"
 ENDFILE
 VALUE "<project>\hdl\top_can_flash.v,hdl"
 STATE="utd"
-TIME="1744261325"
-SIZE="21596"
+TIME="1744293215"
+SIZE="19640"
 ENDFILE
 VALUE "<project>\hdl\top_cmd_process.v,hdl"
 STATE="utd"
-TIME="1743916535"
-SIZE="25535"
+TIME="1744293222"
+SIZE="24845"
 ENDFILE
 VALUE "<project>\hdl\top_storage.v,hdl"
 STATE="utd"
-TIME="1743917224"
-SIZE="3239"
+TIME="1744293580"
+SIZE="8901"
 ENDFILE
 VALUE "<project>\hdl\uart_rx.v,hdl"
 STATE="utd"
@@ -115,6 +115,11 @@ VALUE "<project>\hdl\uart_tx.v,hdl"
 STATE="utd"
 TIME="1742554188"
 SIZE="3304"
+ENDFILE
+VALUE "<project>\stimulus\tb_top_storage.v,tb_hdl"
+STATE="utd"
+TIME="1744294301"
+SIZE="19"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
@@ -232,8 +237,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.8\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -292,6 +297,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Synthesize:top_storage.areasrr
 StartPage;StartPage;0
 ACTIVEVIEW;StartPage
 ENDLIST
@@ -318,18 +325,17 @@ LIST "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
 SUBBLOCK "flash_b::work","hdl\flash_b.v","FALSE","FALSE"
 ENDLIST
 LIST "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
+ENDLIST
+LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+ENDLIST
+LIST "top_storage::work","hdl\top_storage.v","FALSE","FALSE"
 SUBBLOCK "can_top::work","hdl\can_top.v","FALSE","FALSE"
 SUBBLOCK "eeprom_b::work","hdl\eeprom_b.v","FALSE","FALSE"
 SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
-ENDLIST
-LIST "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
-SUBBLOCK "flash_c::work","hdl\flash_c.v","FALSE","FALSE"
-SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
-SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
-ENDLIST
-LIST "top_storage::work","hdl\top_storage.v","FALSE","FALSE"
 SUBBLOCK "top_can_flash::work","hdl\top_can_flash.v","FALSE","FALSE"
 SUBBLOCK "top_cmd_process::work","hdl\top_cmd_process.v","FALSE","FALSE"
+SUBBLOCK "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
+SUBBLOCK "uart_tx::work","hdl\uart_tx.v","FALSE","FALSE"
 ENDLIST
 LIST "uart_rx::work","hdl\uart_rx.v","FALSE","FALSE"
 ENDLIST

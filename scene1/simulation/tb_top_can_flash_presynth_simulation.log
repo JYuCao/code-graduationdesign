@@ -160,3 +160,5 @@ run -all
 #    Time: 1352725 ns  Iteration: 0  Instance: /tb_top_can_flash
 # 1
 # Break in Module tb_top_can_flash at D:/files/fpga/scene1/stimulus/tb_top_can_flash.v line 205
+# End time: 13:24:57 on Apr 10,2025, Elapsed time: 0:06:08
+# Errors: 0, Warnings: 2

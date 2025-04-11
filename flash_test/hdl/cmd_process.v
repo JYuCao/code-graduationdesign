@@ -179,7 +179,7 @@ module cmd_process(
                         FLASH_READ: begin
                             flash_addr <= {data_buffer[0], data_buffer[1], 
                                          data_buffer[2], data_buffer[3]};
-                            flash_length <= {data_buffer[5], data_buffer[4]};
+                            flash_length <= {data_buffer[4], data_buffer[5]};
                             flash_cmd_read <= 1'b1;
                             state <= STAT_FLASH_WAIT;
                         end
